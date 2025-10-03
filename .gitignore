@@ -1,0 +1,9 @@
+# Scripts de administración
+actualizar_precios.js
+agregar_productos.js
+generar_lista_precios.js
+verificar_nombres.js
+
+# Archivos temporales
+nuevos_productos.json
+precios_nuevos.csv
