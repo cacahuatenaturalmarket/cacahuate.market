@@ -538,16 +538,20 @@
         @media (max-width: 1200px) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
         @media (max-width: 992px) {
             .cards-grid { grid-template-columns: repeat(2, 1fr); }
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%; left: 0;
-                width: 100%;
-                background-color: rgba(26, 26, 26, 0.95);
-                flex-direction: column;
-                align-items: center;
-                padding: 10px 0;
-            }
+           .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%; left: 0;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.95);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 80px 0; /* Espacio extra abajo */
+
+    /* --- LÍNEAS NUEVAS --- */
+    max-height: calc(100vh - 70px); /* Límite de altura */
+    overflow-y: auto; /* Activa el scroll vertical */
+}
             .nav-links.active { display: flex; }
             .hamburger-menu { display: block; }
         }
