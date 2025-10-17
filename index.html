@@ -538,49 +538,41 @@
         @media (max-width: 1200px) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
         @media (max-width: 992px) {
             .cards-grid { grid-template-columns: repeat(2, 1fr); }
-           .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%; left: 0;
-    width: 100%;
-    background-color: rgba(26, 26, 26, 0.95);
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0 80px 0; /* Espacio extra abajo */
-
-    /* --- LÍNEAS NUEVAS --- */
-    max-height: calc(100vh - 70px); /* Límite de altura */
-    overflow-y: auto; /* Activa el scroll vertical */
-}
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%; left: 0;
+                width: 100%;
+                background-color: rgba(26, 26, 26, 0.95);
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 0 80px 0;
+                max-height: calc(100vh - 70px);
+                overflow-y: auto;
+            }
             .nav-links.active { display: flex; }
             .hamburger-menu { display: block; }
+
+            /* --- CÓDIGO PARA ARREGLAR SUBMENÚS MÓVILES --- */
+            .dropdown {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .dropdown-content {
+                position: static;
+                box-shadow: none;
+                background-color: rgba(0, 0, 0, 0.2);
+                width: 100%;
+                border-radius: 0;
+                padding: 0;
+            }
+            .dropdown-content a {
+                text-align: center;
+                color: var(--azul-terroso-claro);
+            }
         }
-
-        /* --- NUEVO CÓDIGO PARA ARREGLAR SUBMENÚS MÓVILES --- */
-
-/* Hacemos que el contenedor del dropdown ocupe todo el ancho */
-.dropdown {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Cambiamos el submenú de "pop-up" a un bloque normal */
-.dropdown-content {
-    position: static; /* Esta es la línea clave */
-    box-shadow: none;
-    background-color: rgba(0, 0, 0, 0.2); /* Fondo sutil para diferenciar */
-    width: 100%;
-    border-radius: 0;
-    padding: 0;
-}
-
-/* Mejoramos la apariencia de los enlaces del submenú */
-.dropdown-content a {
-    text-align: center;
-    color: var(--azul-terroso-claro); /* Un color diferente para que se distingan */
-}
         @media (max-width: 768px) {
             .content-section h1 { font-size: 3em; }
             .logo-container { max-width: 180px; }
@@ -599,10 +591,10 @@
                 <img src="https://i.imgur.com/QPR06jn.png" alt="Logo de CACAHUATE NATURAL MARKET">
             </div>
             <div class="address-container">
-    <a href="https://www.google.com/maps/search/?api=1&query=CACAHUATE+NATURAL+MARKET,+Coronel+D'Elia+2039,+Lanús" target="_blank" style="text-decoration: none; color: inherit;">
-        <p class="address-header"><i class="fas fa-map-marker-alt"></i> Coronel D' Elia 2039, Lanús, Buenos Aires</p>
-    </a>
-</div>
+                <a href="https://www.google.com/maps/search/?api=1&query=CACAHUATE+NATURAL+MARKET+Coronel+D%27+Elia+2039%2C+Lan%C3%BAs" target="_blank" style="text-decoration: none; color: inherit;">
+                    <p class="address-header"><i class="fas fa-map-marker-alt"></i> Coronel D' Elia 2039, Lanús, Buenos Aires</p>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -675,7 +667,7 @@
             data: null,
             async fetchData() {
                 try {
-                    const response = await fetch('productos.json');
+                    const response = await fetch('./productos.json'); // RUTA CORREGIDA
                     if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
                     this.data = await response.json();
                     return true;
@@ -1000,6 +992,28 @@
                 
                 UI.elements.hamburgerMenu.addEventListener('click', () => UI.elements.navLinks.classList.toggle('active'));
                 UI.elements.globalSearchInput.addEventListener('input', () => App.handleSearch());
+
+                // --- CÓDIGO PARA MENÚ DESPLEGABLE MÓVIL ---
+                document.querySelectorAll('.dropdown .dropbtn').forEach(button => {
+                    button.addEventListener('click', function(event) {
+                        // Solo aplicamos esta lógica en pantallas móviles
+                        if (window.innerWidth <= 992) {
+                            event.preventDefault();
+                            const dropdownContent = this.nextElementSibling;
+                            const isVisible = dropdownContent.style.display === 'block';
+                            
+                            // Ocultamos todos los otros submenús que no sean el actual
+                            document.querySelectorAll('.dropdown-content').forEach(content => {
+                                if (content !== dropdownContent) {
+                                    content.style.display = 'none';
+                                }
+                            });
+                            
+                            // Mostramos u ocultamos el submenú actual
+                            dropdownContent.style.display = isVisible ? 'none' : 'block';
+                        }
+                    });
+                });
             },
             handleSearch() {
                 const searchTerm = UI.elements.globalSearchInput.value.toLowerCase().trim();
