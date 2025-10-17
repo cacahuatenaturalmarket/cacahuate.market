@@ -536,7 +536,10 @@
             transform: translateY(0);
         }
         @media (max-width: 1200px) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
-        @media (max-width: 992px) {
+       @media (max-width: 992px) {
+            body.menu-open {
+                overflow: hidden; /* Bloquea el scroll del fondo */
+            }
             .cards-grid { grid-template-columns: repeat(2, 1fr); }
             .nav-links {
                 display: none;
@@ -553,7 +556,6 @@
             .nav-links.active { display: flex; }
             .hamburger-menu { display: block; }
 
-            /* --- CÓDIGO PARA ARREGLAR SUBMENÚS MÓVILES --- */
             .dropdown {
                 width: 100%;
                 display: flex;
@@ -573,6 +575,7 @@
                 color: var(--azul-terroso-claro);
             }
         }
+        
         @media (max-width: 768px) {
             .content-section h1 { font-size: 3em; }
             .logo-container { max-width: 180px; }
@@ -902,7 +905,7 @@
             }
         };
 
-        const App = {
+      const App = {
             async init() {
                 const dataLoaded = await API.fetchData();
                 if (!dataLoaded) return;
@@ -917,7 +920,7 @@
             setupEventListeners() {
                 document.body.addEventListener('click', (e) => {
                     const card = e.target.closest('.card');
-                    if (card) { // Solo ejecutar si se hizo clic dentro de una card
+                    if (card) {
                         if (e.target.matches('.thumbnail')) {
                             const mainImage = card.querySelector('.main-image');
                             const newSrc = e.target.dataset.imgSrc;
@@ -992,26 +995,27 @@
                     UI.toggleModal(UI.elements.cartModal, true);
                 });
                 
-                UI.elements.hamburgerMenu.addEventListener('click', () => UI.elements.navLinks.classList.toggle('active'));
+                UI.elements.hamburgerMenu.addEventListener('click', () => {
+                    UI.elements.navLinks.classList.toggle('active');
+                    document.body.classList.toggle('menu-open'); // Activa/desactiva el bloqueo de scroll
+                });
+                
                 UI.elements.globalSearchInput.addEventListener('input', () => App.handleSearch());
 
-                // --- CÓDIGO PARA MENÚ DESPLEGABLE MÓVIL ---
+                // --- CÓDIGO MEJORADO PARA MENÚ DESPLEGABLE MÓVIL ---
                 document.querySelectorAll('.dropdown .dropbtn').forEach(button => {
                     button.addEventListener('click', function(event) {
-                        // Solo aplicamos esta lógica en pantallas móviles
                         if (window.innerWidth <= 992) {
                             event.preventDefault();
                             const dropdownContent = this.nextElementSibling;
                             const isVisible = dropdownContent.style.display === 'block';
                             
-                            // Ocultamos todos los otros submenús que no sean el actual
                             document.querySelectorAll('.dropdown-content').forEach(content => {
                                 if (content !== dropdownContent) {
                                     content.style.display = 'none';
                                 }
                             });
                             
-                            // Mostramos u ocultamos el submenú actual
                             dropdownContent.style.display = isVisible ? 'none' : 'block';
                         }
                     });
