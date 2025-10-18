@@ -917,7 +917,8 @@
                 UI.initScrollAnimations();
                 this.setupEventListeners();
             },
-            setupEventListeners() {
+           setupEventListeners() {
+                // Eventos para las tarjetas de productos (sin cambios)
                 document.body.addEventListener('click', (e) => {
                     const card = e.target.closest('.card');
                     if (card) {
@@ -936,11 +937,7 @@
                             const quantityInput = card.querySelector('.quantity-input');
                             const quantity = parseInt(quantityInput.value, 10);
                             if (quantity > 0) {
-                                const product = {
-                                    name: card.dataset.name,
-                                    img: JSON.parse(card.dataset.img),
-                                    price: parseFloat(card.dataset.price)
-                                };
+                                const product = { name: card.dataset.name, img: JSON.parse(card.dataset.img), price: parseFloat(card.dataset.price) };
                                 Store.addProduct(product, quantity);
                                 UI.updateCartCounter();
                                 quantityInput.value = 1;
@@ -957,6 +954,7 @@
                     }
                 });
 
+                // Eventos para cerrar los modales (sin cambios)
                 document.addEventListener('click', (e) => {
                      if (e.target.closest('.close-button') || e.target.classList.contains('modal')) {
                         UI.toggleModal(UI.elements.productModal, false);
@@ -965,6 +963,7 @@
                     }
                 });
 
+                // Eventos del carrito (sin cambios)
                 UI.elements.cartModal.addEventListener('click', (e) => {
                     const cartItem = e.target.closest('.cart-item');
                     if (!cartItem) return;
@@ -979,7 +978,6 @@
                     UI.renderCartItems();
                     UI.updateCartCounter();
                 });
-
                 UI.elements.cartModal.addEventListener('change', (e) => {
                     if (e.target.matches('.quantity-input')) {
                         const productName = e.target.closest('.cart-item').dataset.name;
@@ -989,17 +987,16 @@
                         UI.updateCartCounter();
                     }
                 });
-
                 document.getElementById('cartBtn').addEventListener('click', () => {
                     UI.renderCartItems();
                     UI.toggleModal(UI.elements.cartModal, true);
                 });
                 
+                // Eventos de la navegación principal (sin cambios)
                 UI.elements.hamburgerMenu.addEventListener('click', () => {
                     UI.elements.navLinks.classList.toggle('active');
-                    document.body.classList.toggle('menu-open'); // Activa/desactiva el bloqueo de scroll
+                    document.body.classList.toggle('menu-open');
                 });
-                
                 UI.elements.globalSearchInput.addEventListener('input', () => App.handleSearch());
 
                 // --- CÓDIGO MEJORADO PARA MENÚ DESPLEGABLE MÓVIL ---
@@ -1011,12 +1008,14 @@
                             const isVisible = dropdownContent.style.display === 'block';
                             
                             document.querySelectorAll('.dropdown-content').forEach(content => {
-                                if (content !== dropdownContent) {
-                                    content.style.display = 'none';
-                                }
+                                content.style.display = 'none';
                             });
                             
-                            dropdownContent.style.display = isVisible ? 'none' : 'block';
+                            if (!isVisible) {
+                                dropdownContent.style.display = 'block';
+                                // --- ¡ESTA ES LA LÍNEA NUEVA Y CLAVE! ---
+                                this.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                            }
                         }
                     });
                 });
