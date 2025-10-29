@@ -536,60 +536,56 @@
             transform: translateY(0);
         }
         @media (max-width: 1200px) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
-  @media (max-width: 992px) {
+ @media (max-width: 992px) {
             body.menu-open {
-                overflow: hidden; /* Bloquea el scroll del fondo */
+                overflow: hidden; /* Mantiene el bloqueo del scroll del fondo */
             }
             .cards-grid { grid-template-columns: repeat(2, 1fr); }
-            
-            .nav-links {
-                /* --- CAMBIOS CLAVE --- */
-                display: none; 
-                background-color: red !important; /* TEMPORAL */
-                position: fixed; /* 1. Cambiamos a 'fixed' para pegarlo a la pantalla */
-                z-index: 998; /* 2. Lo ponemos justo debajo de la barra de navegación */
-                top: 60px; /* 3. Asumimos 60px de altura de la barra. Ajustable si es necesario. */
-                left: 0;
-                width: 100%; 
-                
-                /* 4. Calculamos la altura restante de la pantalla */
-                height: calc(100vh - 60px); 
-                
-                background-color: rgba(26, 26, 26, 0.98); /* Un poco más opaco */
-                flex-direction: column; 
-                align-items: stretch; /* Estira los hijos al 100% del ancho */
-                
-                padding: 10px 0 80px 0; /* Padding (80px abajo para que no choque con el carrito) */
-                overflow-y: auto; /* ¡El scroll vertical! */
-                box-sizing: border-box; /* El padding no afecta el ancho/alto */
-            }
-            .nav-links.active { display: flex; } 
-            .hamburger-menu { display: block; }
 
-            /* --- Alineación de los elementos del menú --- */
+            /* --- Contenedor principal del menú desplegable --- */
+            .nav-links {
+                display: none; /* Oculto por defecto */
+                position: fixed; /* Fijo a la pantalla */
+                z-index: 1000; /* Aseguramos que esté por encima de casi todo */
+                top: 60px; /* Distancia desde arriba (ajusta si tu barra es diferente) */
+                left: 0;
+                bottom: 0; /* <<< CAMBIO CLAVE: Lo estiramos hasta abajo */
+                width: 100%;
+                background-color: rgba(26, 26, 26, 0.98); /* Fondo oscuro */
+                flex-direction: column; /* Apila verticalmente */
+                align-items: stretch; /* Estira hijos al 100% */
+                padding: 10px 0 80px 0; /* Padding (importante el inferior) */
+                overflow-y: auto; /* ¡El scroll vertical! */
+                box-sizing: border-box;
+                -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+            }
+            .nav-links.active { display: flex; } /* Muestra el menú */
+            .hamburger-menu { display: block; } /* Muestra el botón hamburguesa */
+
+            /* --- Elementos dentro del menú (Sin cambios respecto a la versión anterior) --- */
             .main-nav a, .dropdown .dropbtn {
-                 width: 100%; 
-                 text-align: center; 
-                 padding: 12px 15px; 
-                 box-sizing: border-box; 
+                 width: 100%;
+                 text-align: center;
+                 padding: 12px 15px;
+                 box-sizing: border-box;
             }
             .dropdown {
                  position: static;
                  width: 100%;
             }
             .dropdown-content {
-                position: static; 
+                position: static;
                 box-shadow: none;
-                background-color: rgba(0, 0, 0, 0.2); 
+                background-color: rgba(0, 0, 0, 0.2);
                 width: 100%;
                 border-radius: 0;
                 padding: 0;
                 display: none; /* Controlado por JS */
             }
             .dropdown-content a {
-                text-align: center; 
-                color: var(--azul-terroso-claro); 
-                padding: 10px 15px; 
+                text-align: center;
+                color: var(--azul-terroso-claro);
+                padding: 10px 15px;
             }
         }
         
