@@ -536,56 +536,59 @@
             transform: translateY(0);
         }
         @media (max-width: 1200px) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
-   @media (max-width: 992px) {
+  @media (max-width: 992px) {
             body.menu-open {
                 overflow: hidden; /* Bloquea el scroll del fondo */
             }
             .cards-grid { grid-template-columns: repeat(2, 1fr); }
+            
             .nav-links {
-                /* --- Contenedor principal del menú desplegable --- */
-                display: none; /* Oculto por defecto */
-                position: absolute; /* Posicionado debajo de la barra de navegación */
-                top: 100%; left: 0;
-                width: 100%; /* Ocupa todo el ancho */
-                background-color: rgba(26, 26, 26, 0.95); /* Fondo oscuro semitransparente */
-                flex-direction: column; /* Apila los elementos verticalmente */
-                align-items: stretch; /* <<< CAMBIO CLAVE: Estira los hijos para ocupar todo el ancho */
-                padding: 10px 0 80px 0; /* Espaciado interno (más abajo para que no tape el carrito) */
-                max-height: calc(100vh - 60px); /* Altura máxima (ajustado un poco) */
-                overflow-y: auto; /* Activa el scroll vertical si el contenido se desborda */
-                box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
+                /* --- CAMBIOS CLAVE --- */
+                display: none; 
+                position: fixed; /* 1. Cambiamos a 'fixed' para pegarlo a la pantalla */
+                z-index: 998; /* 2. Lo ponemos justo debajo de la barra de navegación */
+                top: 60px; /* 3. Asumimos 60px de altura de la barra. Ajustable si es necesario. */
+                left: 0;
+                width: 100%; 
+                
+                /* 4. Calculamos la altura restante de la pantalla */
+                height: calc(100vh - 60px); 
+                
+                background-color: rgba(26, 26, 26, 0.98); /* Un poco más opaco */
+                flex-direction: column; 
+                align-items: stretch; /* Estira los hijos al 100% del ancho */
+                
+                padding: 10px 0 80px 0; /* Padding (80px abajo para que no choque con el carrito) */
+                overflow-y: auto; /* ¡El scroll vertical! */
+                box-sizing: border-box; /* El padding no afecta el ancho/alto */
             }
-            .nav-links.active { display: flex; } /* Muestra el menú cuando está activo */
-            .hamburger-menu { display: block; } /* Muestra el botón de hamburguesa */
+            .nav-links.active { display: flex; } 
+            .hamburger-menu { display: block; }
 
-            /* --- Estilos para los elementos dentro del menú --- */
-            /* Ajusta los enlaces directos y los botones de dropdown */
+            /* --- Alineación de los elementos del menú --- */
             .main-nav a, .dropdown .dropbtn {
-                 width: 100%; /* Ocupan todo el ancho */
-                 text-align: center; /* Centra el texto */
-                 padding: 12px 15px; /* Ajusta el padding vertical */
-                 box-sizing: border-box; /* Evita que el padding aumente el ancho */
+                 width: 100%; 
+                 text-align: center; 
+                 padding: 12px 15px; 
+                 box-sizing: border-box; 
             }
-             /* Quita el margen relativo del dropdown */
             .dropdown {
-                 position: static; /* Cambiado de relative a static */
-                 width: 100%; /* Asegura que ocupe todo el ancho */
+                 position: static;
+                 width: 100%;
             }
-            /* Estilos del submenú desplegable */
             .dropdown-content {
-                position: static; /* Se muestra como parte del flujo normal */
+                position: static; 
                 box-shadow: none;
-                background-color: rgba(0, 0, 0, 0.2); /* Fondo sutil */
-                width: 100%; /* Ocupa todo el ancho */
+                background-color: rgba(0, 0, 0, 0.2); 
+                width: 100%;
                 border-radius: 0;
                 padding: 0;
-                display: none; /* Oculto por defecto (lo controla JS) */
+                display: none; /* Controlado por JS */
             }
-            /* Estilos de los enlaces dentro del submenú */
             .dropdown-content a {
-                text-align: center; /* Centra el texto */
-                color: var(--azul-terroso-claro); /* Color distintivo */
-                padding: 10px 15px; /* Padding ajustado */
+                text-align: center; 
+                color: var(--azul-terroso-claro); 
+                padding: 10px 15px; 
             }
         }
         
