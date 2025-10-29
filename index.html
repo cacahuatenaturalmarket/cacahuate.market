@@ -536,46 +536,56 @@
             transform: translateY(0);
         }
         @media (max-width: 1200px) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
-      @media (max-width: 992px) {
+   @media (max-width: 992px) {
             body.menu-open {
                 overflow: hidden; /* Bloquea el scroll del fondo */
             }
             .cards-grid { grid-template-columns: repeat(2, 1fr); }
             .nav-links {
-                display: none;
-                position: absolute;
+                /* --- Contenedor principal del menú desplegable --- */
+                display: none; /* Oculto por defecto */
+                position: absolute; /* Posicionado debajo de la barra de navegación */
                 top: 100%; left: 0;
-                width: 100%;
-                background-color: rgba(26, 26, 26, 0.95);
-                flex-direction: column;
-                align-items: center;
-                padding: 10px 0 80px 0; /* Espacio extra abajo */
-                max-height: calc(100vh - 70px); /* Límite de altura */
-                overflow-y: auto; /* Activa el scroll vertical */
+                width: 100%; /* Ocupa todo el ancho */
+                background-color: rgba(26, 26, 26, 0.95); /* Fondo oscuro semitransparente */
+                flex-direction: column; /* Apila los elementos verticalmente */
+                align-items: stretch; /* <<< CAMBIO CLAVE: Estira los hijos para ocupar todo el ancho */
+                padding: 10px 0 80px 0; /* Espaciado interno (más abajo para que no tape el carrito) */
+                max-height: calc(100vh - 60px); /* Altura máxima (ajustado un poco) */
+                overflow-y: auto; /* Activa el scroll vertical si el contenido se desborda */
+                box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
             }
-            .nav-links.active { display: flex; }
-            .hamburger-menu { display: block; }
+            .nav-links.active { display: flex; } /* Muestra el menú cuando está activo */
+            .hamburger-menu { display: block; } /* Muestra el botón de hamburguesa */
 
-            /* --- CÓDIGO PARA ARREGLAR SUBMENÚS MÓVILES --- */
-            .dropdown {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            /* --- Estilos para los elementos dentro del menú --- */
+            /* Ajusta los enlaces directos y los botones de dropdown */
+            .main-nav a, .dropdown .dropbtn {
+                 width: 100%; /* Ocupan todo el ancho */
+                 text-align: center; /* Centra el texto */
+                 padding: 12px 15px; /* Ajusta el padding vertical */
+                 box-sizing: border-box; /* Evita que el padding aumente el ancho */
             }
+             /* Quita el margen relativo del dropdown */
+            .dropdown {
+                 position: static; /* Cambiado de relative a static */
+                 width: 100%; /* Asegura que ocupe todo el ancho */
+            }
+            /* Estilos del submenú desplegable */
             .dropdown-content {
-                position: static; /* Cambia a bloque normal */
+                position: static; /* Se muestra como parte del flujo normal */
                 box-shadow: none;
                 background-color: rgba(0, 0, 0, 0.2); /* Fondo sutil */
-                width: 100%;
+                width: 100%; /* Ocupa todo el ancho */
                 border-radius: 0;
                 padding: 0;
-                /* Aseguramos que inicialmente esté oculto */
-                display: none;
+                display: none; /* Oculto por defecto (lo controla JS) */
             }
+            /* Estilos de los enlaces dentro del submenú */
             .dropdown-content a {
-                text-align: center;
+                text-align: center; /* Centra el texto */
                 color: var(--azul-terroso-claro); /* Color distintivo */
+                padding: 10px 15px; /* Padding ajustado */
             }
         }
         
