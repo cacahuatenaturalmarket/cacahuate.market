@@ -538,33 +538,36 @@
         }
         @media (max-width: 1200px) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
         
-        @media (max-width: 992px) {
+       @media (max-width: 992px) {
             body.menu-open {
                 overflow: hidden; /* Bloquea scroll del fondo */
             }
             .cards-grid { grid-template-columns: repeat(2, 1fr); }
 
-            /* --- Contenedor principal del menú (Define posición y scroll) --- */
+            /* --- Contenedor principal del menú (Define TODO menos el display) --- */
             .nav-links {
                 display: none; /* Oculto por defecto */
                 position: fixed; /* Fijo a la pantalla */
                 z-index: 1000;
-                top: 60px; /* Distancia desde arriba (ajusta si tu barra es diferente) */
+                top: 60px; /* Distancia desde arriba (altura de tu .main-nav) */
                 left: 0;
                 bottom: 0; /* Se estira hasta abajo */
                 width: 100%;
                 background-color: rgba(26, 26, 26, 0.98); /* Fondo real */
+                
+                /* --- Propiedades de Layout y Scroll --- */
+                flex-direction: column; /* APILA VERTICALMENTE */
+                align-items: stretch; /* Estira hijos al 100% */
+                overflow-y: auto; /* ¡EL SCROLL VERTICAL! */
+                
                 padding: 10px 0 80px 0; /* Padding (importante el inferior) */
-                overflow-y: auto; /* Scroll vertical SIEMPRE disponible si hay overflow */
                 box-sizing: border-box;
                 -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
             }
 
-            /* --- Menú cuando está ACTIVO (Define altura y display) --- */
+            /* --- Menú cuando está ACTIVO --- */
             .nav-links.active {
-                display: flex; /* Lo hace visible */
-                flex-direction: column; /* Apila verticalmente */
-                align-items: stretch; /* Estira hijos */
+                display: flex; /* ¡Lo único que hace es hacerlo visible! */
             }
 
             .hamburger-menu { display: block; }
@@ -577,10 +580,9 @@
                  box-sizing: border-box;
             }
             .dropdown {
-                 position: static; /* Importante para el flujo */
+                 position: static;
                  width: 100%;
             }
-            /* Submenú */
             .dropdown-content {
                 position: static;
                 box-shadow: none;
@@ -590,7 +592,6 @@
                 padding: 0;
                 display: none; /* Controlado por JS */
             }
-            /* Enlaces del submenú */
             .dropdown-content a {
                 text-align: center;
                 color: var(--azul-terroso-claro);
