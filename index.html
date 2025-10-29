@@ -542,7 +542,7 @@
             }
             .cards-grid { grid-template-columns: repeat(2, 1fr); }
 
-            /* Contenedor principal del menú (Define posición y scroll) */
+            /* --- Contenedor principal del menú (Define posición y scroll) --- */
             .nav-links {
                 display: none; /* Oculto por defecto */
                 position: fixed; /* Fijo a la pantalla */
@@ -558,17 +558,16 @@
                 -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
             }
 
-            /* Menú cuando está ACTIVO (Define altura y display) */
+            /* --- Menú cuando está ACTIVO (Define altura y display) --- */
             .nav-links.active {
                 display: flex; /* Lo hace visible */
                 flex-direction: column; /* Apila verticalmente */
                 align-items: stretch; /* Estira hijos */
-                /* Ya no necesitamos top/bottom aquí, están en .nav-links base */
             }
 
             .hamburger-menu { display: block; }
 
-            /* Hijos del menú (Sin cambios) */
+            /* --- Hijos del menú --- */
             .main-nav a, .dropdown .dropbtn {
                  width: 100%;
                  text-align: center;
@@ -576,9 +575,10 @@
                  box-sizing: border-box;
             }
             .dropdown {
-                 position: static;
+                 position: static; /* Importante para el flujo */
                  width: 100%;
             }
+            /* Submenú */
             .dropdown-content {
                 position: static;
                 box-shadow: none;
@@ -588,6 +588,7 @@
                 padding: 0;
                 display: none; /* Controlado por JS */
             }
+            /* Enlaces del submenú */
             .dropdown-content a {
                 text-align: center;
                 color: var(--azul-terroso-claro);
@@ -1034,7 +1035,7 @@
 
                             // Cerramos TODOS los otros submenús primero
                             document.querySelectorAll('.dropdown-content').forEach(content => {
-                                if (content !== dropdownContent) {
+                                if (content !== dropdownContent) { // No cerrar el actual todavía
                                    content.style.display = 'none';
                                 }
                             });
@@ -1050,6 +1051,7 @@
                                 dropdownContent.style.display = 'none';
                             }
                         }
+                        // Si la pantalla es > 992px, no hacemos nada y dejamos que el :hover del CSS funcione
                     });
                 });
             }, // Fin de setupEventListeners
@@ -1081,5 +1083,7 @@
         App.init();
     });
     </script>
+</body>
+</html>
 </body>
 </html>
