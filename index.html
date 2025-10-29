@@ -99,6 +99,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            min-height: 40px; /* Altura mínima para que 60px sea consistente */
         }
         .nav-links {
             display: flex;
@@ -536,7 +537,8 @@
             transform: translateY(0);
         }
         @media (max-width: 1200px) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 992px) {
+        
+        @media (max-width: 992px) {
             body.menu-open {
                 overflow: hidden; /* Bloquea scroll del fondo */
             }
@@ -595,7 +597,7 @@
                 padding: 10px 15px;
             }
         }
-        
+                
         @media (max-width: 768px) {
             .content-section h1 { font-size: 3em; }
             .logo-container { max-width: 180px; }
@@ -622,7 +624,7 @@
     </header>
 
     <nav class="main-nav">
-        <a href="#" class="nav-logo" style="font-weight: bold; font-family: 'Merriweather', serif; font-size: 1.2em;">CACAHUATEv2
+        <a href="#" class="nav-logo" style="font-weight: bold; font-family: 'Merriweather', serif; font-size: 1.2em;">CACAHUATE v2</a>
         <div class="nav-links" id="navLinks"></div>
         <button class="hamburger-menu" id="hamburgerMenu" aria-label="Abrir menú de navegación">
             <i class="fas fa-bars"></i>
@@ -1081,10 +1083,7 @@
         }; // Fin del objeto App
         
         App.init();
-
     });
     </script>
-</body>
-</html>
 </body>
 </html>
