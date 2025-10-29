@@ -538,59 +538,60 @@
         @media (max-width: 1200px) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 992px) {
             body.menu-open {
-                overflow: hidden; /* Bloquea el scroll del fondo */
+                overflow: hidden; /* Bloquea scroll del fondo */
             }
             .cards-grid { grid-template-columns: repeat(2, 1fr); }
 
-            /* --- Contenedor principal del menú (Oculto) --- */
+            /* Contenedor principal del menú (Define posición y scroll) */
             .nav-links {
-                display: none; 
-                position: fixed; 
-                z-index: 1000; 
-                top: 60px; /* Distancia desde arriba */
+                display: none; /* Oculto por defecto */
+                position: fixed; /* Fijo a la pantalla */
+                z-index: 1000;
                 left: 0;
-                bottom: 0; /* Se estira hasta abajo */
                 width: 100%;
-                background-color: rgba(26, 26, 26, 0.98); /* Fondo real */
-                padding: 10px 0 80px 0; /* Padding (importante el inferior) */
-                overflow-y: auto; /* ¡El scroll vertical! */
+                background-color: rgba(26, 26, 26, 0.98);
+                padding: 10px 0 80px 0; /* Padding inferior importante */
+                overflow-y: auto; /* Scroll vertical SIEMPRE disponible si hay overflow */
                 box-sizing: border-box;
-                -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+                -webkit-overflow-scrolling: touch;
+                /* Quitamos top y bottom de aquí */
             }
-            
-            /* --- Menú cuando está ACTIVO --- */
-            .nav-links.active { 
-                display: flex; /* 1. Lo hacemos visible */
-                flex-direction: column; /* 2. Le decimos que apile verticalmente */
-                align-items: stretch; /* 3. Estiramos los hijos */
-            } 
-            
+
+            /* Menú cuando está ACTIVO (Define altura y display) */
+            .nav-links.active {
+                display: flex; /* Lo hace visible */
+                flex-direction: column; /* Apila verticalmente */
+                align-items: stretch; /* Estira hijos */
+                top: 60px; /* Distancia desde arriba - SOLO CUANDO ACTIVO */
+                bottom: 0; /* Se estira hasta abajo - SOLO CUANDO ACTIVO */
+            }
+
             .hamburger-menu { display: block; }
 
-            /* --- Hijos del menú --- */
+            /* Hijos del menú (Sin cambios) */
             .main-nav a, .dropdown .dropbtn {
-                 width: 100%; 
-                 text-align: center; 
-                 padding: 12px 15px; 
-                 box-sizing: border-box; 
+                 width: 100%;
+                 text-align: center;
+                 padding: 12px 15px;
+                 box-sizing: border-box;
             }
             .dropdown {
                  position: static;
                  width: 100%;
             }
             .dropdown-content {
-                position: static; 
+                position: static;
                 box-shadow: none;
-                background-color: rgba(0, 0, 0, 0.2); 
+                background-color: rgba(0, 0, 0, 0.2);
                 width: 100%;
                 border-radius: 0;
                 padding: 0;
                 display: none; /* Controlado por JS */
             }
             .dropdown-content a {
-                text-align: center; 
-                color: var(--azul-terroso-claro); 
-                padding: 10px 15px; 
+                text-align: center;
+                color: var(--azul-terroso-claro);
+                padding: 10px 15px;
             }
         }
         
