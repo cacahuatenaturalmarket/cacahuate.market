@@ -919,7 +919,7 @@
         };
 
       
-         const App = {
+        const App = {
             async init() {
                 const dataLoaded = await API.fetchData();
                 if (!dataLoaded) return;
@@ -932,10 +932,10 @@
                 this.setupEventListeners();
             },
             setupEventListeners() {
-                // Eventos para las tarjetas de productos
+                // Eventos para las tarjetas de productos (sin cambios)
                 document.body.addEventListener('click', (e) => {
                     const card = e.target.closest('.card');
-                    if (card) { // Solo si el clic fue dentro de una card
+                    if (card) {
                         if (e.target.matches('.thumbnail')) {
                             const mainImage = card.querySelector('.main-image');
                             const newSrc = e.target.dataset.imgSrc;
@@ -968,7 +968,7 @@
                     }
                 });
 
-                // Eventos para cerrar los modales
+                // Eventos para cerrar los modales (sin cambios)
                 document.addEventListener('click', (e) => {
                      if (e.target.closest('.close-button') || e.target.classList.contains('modal')) {
                         UI.toggleModal(UI.elements.productModal, false);
@@ -977,7 +977,7 @@
                     }
                 });
 
-                // Eventos del carrito
+                // Eventos del carrito (sin cambios)
                 UI.elements.cartModal.addEventListener('click', (e) => {
                     const cartItem = e.target.closest('.cart-item');
                     if (!cartItem) return;
@@ -1005,36 +1005,37 @@
                     UI.renderCartItems();
                     UI.toggleModal(UI.elements.cartModal, true);
                 });
-                
-                // Eventos de la navegación principal
+
+                // Eventos de la navegación principal (sin cambios en estas líneas)
                 UI.elements.hamburgerMenu.addEventListener('click', () => {
                     UI.elements.navLinks.classList.toggle('active');
                     document.body.classList.toggle('menu-open'); // Activa/desactiva el bloqueo de scroll
                 });
                 UI.elements.globalSearchInput.addEventListener('input', () => App.handleSearch());
 
-                // --- CÓDIGO MEJORADO PARA MENÚ DESPLEGABLE MÓVIL ---
+                // --- CÓDIGO FINAL PARA MENÚ DESPLEGABLE MÓVIL ---
                 document.querySelectorAll('.dropdown .dropbtn').forEach(button => {
                     button.addEventListener('click', function(event) {
-                        // Solo aplicamos esta lógica en pantallas móviles
-                        if (window.innerWidth <= 992) {
-                            event.preventDefault(); // Evita que el enlace # intente navegar
-                            const dropdownContent = this.nextElementSibling; // El submenú
-                            const currentlyVisible = dropdownContent.style.display === 'block';
+                        // Ya no necesitamos comprobar el ancho aquí, el CSS se encarga
+                        event.preventDefault(); // Evita que el enlace # intente navegar
+                        const dropdownContent = this.nextElementSibling; // El submenú
+                        const currentlyVisible = dropdownContent.style.display === 'block';
 
-                            // Cerramos TODOS los submenús primero
-                            document.querySelectorAll('.dropdown-content').forEach(content => {
-                                content.style.display = 'none';
-                            });
+                        // Cerramos TODOS los submenús primero
+                        document.querySelectorAll('.dropdown-content').forEach(content => {
+                            content.style.display = 'none';
+                        });
 
-                            // Si el que tocamos NO estaba visible, lo mostramos y hacemos scroll
-                            if (!currentlyVisible) {
-                                dropdownContent.style.display = 'block';
-                                // Hacemos scroll suave para que la categoría tocada quede visible
+                        // Si el que tocamos NO estaba visible, lo mostramos y hacemos scroll
+                        if (!currentlyVisible) {
+                            dropdownContent.style.display = 'block';
+                            // Hacemos scroll suave para que la categoría tocada quede visible
+                            // Usamos setTimeout para darle tiempo al navegador a mostrar el submenú antes de hacer scroll
+                            setTimeout(() => {
                                 this.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                            }
-                            // Si ya estaba visible, al cerrar todos, este también se cerrará
+                            }, 50); // Un pequeño retraso de 50 milisegundos
                         }
+                        // Si ya estaba visible, al cerrar todos, este también se cerrará
                     });
                 });
             }, // Fin de setupEventListeners
