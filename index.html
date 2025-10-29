@@ -547,14 +547,15 @@
                 display: none; /* Oculto por defecto */
                 position: fixed; /* Fijo a la pantalla */
                 z-index: 1000;
+                top: 60px; /* Distancia desde arriba (ajusta si tu barra es diferente) */
                 left: 0;
+                bottom: 0; /* Se estira hasta abajo */
                 width: 100%;
-                background-color: rgba(26, 26, 26, 0.98);
-                padding: 10px 0 80px 0; /* Padding inferior importante */
+                background-color: rgba(26, 26, 26, 0.98); /* Fondo real */
+                padding: 10px 0 80px 0; /* Padding (importante el inferior) */
                 overflow-y: auto; /* Scroll vertical SIEMPRE disponible si hay overflow */
                 box-sizing: border-box;
-                -webkit-overflow-scrolling: touch;
-                /* Quitamos top y bottom de aquí */
+                -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
             }
 
             /* Menú cuando está ACTIVO (Define altura y display) */
@@ -562,8 +563,7 @@
                 display: flex; /* Lo hace visible */
                 flex-direction: column; /* Apila verticalmente */
                 align-items: stretch; /* Estira hijos */
-                top: 60px; /* Distancia desde arriba - SOLO CUANDO ACTIVO */
-                bottom: 0; /* Se estira hasta abajo - SOLO CUANDO ACTIVO */
+                /* Ya no necesitamos top/bottom aquí, están en .nav-links base */
             }
 
             .hamburger-menu { display: block; }
@@ -682,7 +682,7 @@
         </div>
     </div>
 
-    <script>
+   <script>
     document.addEventListener('DOMContentLoaded', () => {
 
         const API = {
@@ -898,10 +898,10 @@
                 const name = card.dataset.name;
                 const price = card.dataset.price;
                 const desc = card.dataset.desc;
-                const images = JSON.parse(card.dataset.img);
+                const images = JSON.parse(card.dataset.img || '[]');
                 document.getElementById("modalTitle").textContent = name;
-                document.getElementById("modalImg").src = images[0];
-                document.getElementById("modalDesc").innerHTML = `${desc}<br><br><strong style='font-size:1.2em;'>Precio: ${this.formatCurrency(parseFloat(price))}</strong>`;
+                document.getElementById("modalImg").src = images[0] || 'https://placehold.co/400x400/2F2F2F/FFFFFF?text=Imagen+no+disponible';
+                document.getElementById("modalDesc").innerHTML = `${desc}<br><br><strong style='font-size:1.2em;'>Precio: ${this.formatCurrency(parseFloat(price || '0'))}</strong>`;
                 const whatsappLink = `https://wa.me/${API.getPhoneNumber()}?text=${encodeURIComponent(`Hola, quisiera consultar sobre el producto: ${name}`)}`;
                 document.getElementById("modalWhatsappBtn").href = whatsappLink;
                 this.toggleModal(this.elements.productModal, true);
@@ -923,8 +923,7 @@
                 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
             }
         };
-
-      
+        
         const App = {
             async init() {
                 const dataLoaded = await API.fetchData();
@@ -938,14 +937,14 @@
                 this.setupEventListeners();
             },
             setupEventListeners() {
-                // Eventos para las tarjetas de productos (sin cambios)
+                // Eventos para las tarjetas de productos
                 document.body.addEventListener('click', (e) => {
                     const card = e.target.closest('.card');
-                    if (card) {
+                    if (card) { // Solo si el clic fue dentro de una card
                         if (e.target.matches('.thumbnail')) {
                             const mainImage = card.querySelector('.main-image');
                             const newSrc = e.target.dataset.imgSrc;
-                            mainImage.src = newSrc;
+                            if (mainImage && newSrc) mainImage.src = newSrc;
                             card.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
                             e.target.classList.add('active');
                         } else if (e.target.closest('.main-image-container, .image-wrapper')) {
@@ -957,24 +956,26 @@
                             const quantityInput = card.querySelector('.quantity-input');
                             const quantity = parseInt(quantityInput.value, 10);
                             if (quantity > 0) {
-                                const product = { name: card.dataset.name, img: JSON.parse(card.dataset.img), price: parseFloat(card.dataset.price) };
+                                const product = { name: card.dataset.name, img: JSON.parse(card.dataset.img || '[]'), price: parseFloat(card.dataset.price || '0') };
                                 Store.addProduct(product, quantity);
                                 UI.updateCartCounter();
-                                quantityInput.value = 1;
+                                if(quantityInput) quantityInput.value = 1;
                             }
                         } else if (e.target.matches('.quantity-btn')) {
                             const input = card.querySelector('.quantity-input');
-                            let currentValue = parseInt(input.value, 10);
-                            if (e.target.matches('.increase-qty')) {
-                                input.value = currentValue + 1;
-                            } else if (e.target.matches('.decrease-qty') && currentValue > 1) {
-                                input.value = currentValue - 1;
+                            if(input){
+                                let currentValue = parseInt(input.value, 10);
+                                if (e.target.matches('.increase-qty')) {
+                                    input.value = currentValue + 1;
+                                } else if (e.target.matches('.decrease-qty') && currentValue > 1) {
+                                    input.value = currentValue - 1;
+                                }
                             }
                         }
                     }
                 });
 
-                // Eventos para cerrar los modales (sin cambios)
+                // Eventos para cerrar los modales
                 document.addEventListener('click', (e) => {
                      if (e.target.closest('.close-button') || e.target.classList.contains('modal')) {
                         UI.toggleModal(UI.elements.productModal, false);
@@ -983,12 +984,13 @@
                     }
                 });
 
-                // Eventos del carrito (sin cambios)
+                // Eventos del carrito
                 UI.elements.cartModal.addEventListener('click', (e) => {
                     const cartItem = e.target.closest('.cart-item');
                     if (!cartItem) return;
                     const productName = cartItem.dataset.name;
                     const input = cartItem.querySelector('.quantity-input');
+                    if(!input) return;
                     let quantity = parseInt(input.value, 10);
                     if (e.target.matches('.increase-qty')) {
                         Store.updateQuantity(productName, quantity + 1);
@@ -999,8 +1001,10 @@
                     UI.updateCartCounter();
                 });
                 UI.elements.cartModal.addEventListener('change', (e) => {
-                    if (e.target.matches('.quantity-input')) {
-                        const productName = e.target.closest('.cart-item').dataset.name;
+                    if (e.target.matches('.quantity-input[name="cart-quantity"]')) {
+                        const cartItem = e.target.closest('.cart-item');
+                        if(!cartItem) return;
+                        const productName = cartItem.dataset.name;
                         const newQuantity = parseInt(e.target.value, 10);
                         Store.updateQuantity(productName, newQuantity);
                         UI.renderCartItems();
@@ -1012,7 +1016,7 @@
                     UI.toggleModal(UI.elements.cartModal, true);
                 });
 
-                // Eventos de la navegación principal (sin cambios en estas líneas)
+                // Eventos de la navegación principal
                 UI.elements.hamburgerMenu.addEventListener('click', () => {
                     UI.elements.navLinks.classList.toggle('active');
                     document.body.classList.toggle('menu-open'); // Activa/desactiva el bloqueo de scroll
@@ -1022,45 +1026,47 @@
                 // --- CÓDIGO FINAL PARA MENÚ DESPLEGABLE MÓVIL ---
                 document.querySelectorAll('.dropdown .dropbtn').forEach(button => {
                     button.addEventListener('click', function(event) {
-                        // Ya no necesitamos comprobar el ancho aquí, el CSS se encarga
-                        event.preventDefault(); // Evita que el enlace # intente navegar
-                        const dropdownContent = this.nextElementSibling; // El submenú
-                        const currentlyVisible = dropdownContent.style.display === 'block';
+                        const dropdownContent = this.nextElementSibling;
+                        // Solo ejecutamos lógica móvil si estamos en < 992px
+                        if (window.innerWidth <= 992 && dropdownContent && dropdownContent.classList.contains('dropdown-content')) {
+                            event.preventDefault(); // Evita navegar
+                            const currentlyVisible = dropdownContent.style.display === 'block';
 
-                        // Cerramos TODOS los submenús primero
-                        document.querySelectorAll('.dropdown-content').forEach(content => {
-                            content.style.display = 'none';
-                        });
+                            // Cerramos TODOS los otros submenús primero
+                            document.querySelectorAll('.dropdown-content').forEach(content => {
+                                if (content !== dropdownContent) {
+                                   content.style.display = 'none';
+                                }
+                            });
 
-                        // Si el que tocamos NO estaba visible, lo mostramos y hacemos scroll
-                        if (!currentlyVisible) {
-                            dropdownContent.style.display = 'block';
-                            // Hacemos scroll suave para que la categoría tocada quede visible
-                            // Usamos setTimeout para darle tiempo al navegador a mostrar el submenú antes de hacer scroll
-                            setTimeout(() => {
-                                this.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                            }, 50); // Un pequeño retraso de 50 milisegundos
+                            // Si el que tocamos NO estaba visible, lo mostramos y hacemos scroll
+                            if (!currentlyVisible) {
+                                dropdownContent.style.display = 'block';
+                                setTimeout(() => {
+                                    this.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                                }, 50);
+                            } else {
+                                // Si ya estaba visible, lo ocultamos
+                                dropdownContent.style.display = 'none';
+                            }
                         }
-                        // Si ya estaba visible, al cerrar todos, este también se cerrará
                     });
                 });
             }, // Fin de setupEventListeners
 
             handleSearch() {
-                const searchTerm = UI.elements.globalSearchInput.value.toLowerCase().trim();
+                const searchTerm = (UI.elements.globalSearchInput.value || '').toLowerCase().trim();
                 let totalVisibleCards = 0;
                 document.querySelectorAll('.cards-grid').forEach(grid => {
                     let visibleCardsInGrid = 0;
                     grid.querySelectorAll('.card').forEach(card => {
-                        const name = card.dataset.name.toLowerCase();
-                        const desc = card.dataset.desc.toLowerCase();
+                        const name = (card.dataset.name || '').toLowerCase();
+                        const desc = (card.dataset.desc || '').toLowerCase();
                         const isMatch = name.includes(searchTerm) || desc.includes(searchTerm);
-                        if (isMatch) {
-                            card.style.display = 'flex';
+                        card.style.display = isMatch ? 'flex' : 'none';
+                        if(isMatch) {
                             visibleCardsInGrid++;
                             totalVisibleCards++;
-                        } else {
-                            card.style.display = 'none';
                         }
                     });
                     const section = grid.previousElementSibling;
