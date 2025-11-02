@@ -539,7 +539,7 @@
         @media (max-width: 1200px) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
         
        @media (max-width: 992px) {
-          body.menu-open, html.menu-open {
+          body.menu-open  {
     overflow: hidden; /* Bloquea scroll del fondo */
 }
             .cards-grid { grid-template-columns: repeat(2, 1fr); }
@@ -547,7 +547,7 @@
             /* --- Contenedor principal del menú (Define TODO menos el display) --- */
           
                .nav-links {
-               
+                display: none;
                 position: fixed; /* Fijo a la pantalla */
                 z-index: 1000;
                 top: 60px; /* Distancia desde arriba (altura de tu .main-nav) */
@@ -1026,7 +1026,7 @@
                 UI.elements.hamburgerMenu.addEventListener('click', () => {
                     UI.elements.navLinks.classList.toggle('active');
                     document.body.classList.toggle('menu-open'); // Activa/desactiva el bloqueo de scroll
-                    document.documentElement.classList.toggle('menu-open'); // Añadir esto para <html>
+                    
                 });
                 UI.elements.globalSearchInput.addEventListener('input', () => App.handleSearch());
 
