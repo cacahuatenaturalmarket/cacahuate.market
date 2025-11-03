@@ -729,6 +729,19 @@
     margin: 0;
     border-bottom: 1px solid var(--fondo-claro-secundario);
 }
+
+/*
+========================================
+--- FIX: CORRECCIÓN DE DESCRIPCIÓN CORTADA EN MODAL ---
+========================================
+*/
+#productModal #modalDesc {
+    height: auto;           /* Permite que el párrafo crezca lo que necesite */
+    max-height: none;       /* Anula cualquier regla de 'max-height' */
+    overflow: visible;      /* Anula cualquier regla de 'overflow: hidden' */
+    -webkit-line-clamp: none; /* Anula cualquier regla de 'line-clamp' */
+    line-clamp: none;
+}
     </style>
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
