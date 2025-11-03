@@ -605,6 +605,113 @@
             .logo-container { max-width: 180px; }
             .cards-grid { grid-template-columns: 1fr; padding: 25px; gap: 30px; }
         }
+
+        /*
+========================================
+--- LÓGICA DEL NUEVO MENÚ MÓVIL (PANELES) ---
+========================================
+*/
+
+/* 1. Ocultar el menú de escritorio en móviles */
+@media (max-width: 992px) {
+    .main-nav .nav-links {
+        display: none !important; /* Ocultamos el menú de escritorio (el .nav-links original) */
+    }
+}
+
+/* 2. Estilo del Contenedor/Bandeja Principal */
+#mobile-menu-container {
+    display: block;
+    position: fixed;
+    top: 60px; /* Altura de tu barra de nav */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.98);
+    z-index: 1000;
+    
+    /* Empieza oculto fuera de la pantalla (a la izquierda) */
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease-out;
+
+    /* Importante: Oculta los paneles que se "salen" */
+    overflow-x: hidden;
+}
+
+/* 3. Estado "Abierto" del Contenedor */
+#mobile-menu-container.open {
+    transform: translateX(0); /* Lo trae a la pantalla */
+}
+
+/* 4. Estilo de CADA Panel (Categorías y Subcategorías) */
+.mobile-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ocupa toda la bandeja */
+    
+    /* Cada panel tendrá su propio scroll vertical */
+    overflow-y: auto;
+    padding: 10px 0 80px 0;
+    box-sizing: border-box;
+    
+    /* Animación de deslizamiento */
+    transition: transform 0.3s ease-out;
+}
+
+/* 5. Posición de los Paneles */
+.mobile-panel.main-panel {
+    transform: translateX(0); /* El panel principal está en 0 */
+}
+.mobile-panel.sub-panel {
+    transform: translateX(100%); /* Los subpaneles están ocultos a la derecha */
+}
+
+/* 6. Estado "Activo" de los Paneles */
+/* Cuando un subpanel está activo, se mueve a 0 */
+.mobile-panel.sub-panel.active {
+    transform: translateX(0);
+}
+/* Cuando un subpanel está activo, el panel principal se mueve a la izquierda */
+#mobile-menu-container.sub-panel-active .main-panel {
+    transform: translateX(-100%);
+}
+
+/* 7. Estilos de los Enlaces del Menú Móvil */
+.mobile-panel a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color: var(--texto-claro);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    border-bottom: 1px solid var(--fondo-claro-secundario);
+}
+.mobile-panel a:hover {
+    background-color: var(--naranja-cacahuate);
+    color: var(--fondo-oscuro);
+}
+
+/* Estilo del botón "Volver" */
+.mobile-nav-back {
+    color: var(--naranja-cacahuate) !important;
+    font-size: 1em !important;
+    border-bottom: 2px solid var(--naranja-cacahuate) !important;
+}
+.mobile-nav-back i {
+    margin-right: 10px;
+}
+.mobile-panel-title {
+    padding: 10px 20px;
+    font-family: 'Merriweather', serif;
+    color: var(--naranja-cacahuate);
+    font-size: 1.5em;
+    margin: 0;
+    border-bottom: 1px solid var(--fondo-claro-secundario);
+}
     </style>
 </head>
 
@@ -634,6 +741,7 @@
         </button>
     </nav>
 
+    <div id="mobile-menu-container"></div>
     <div class="search-bar-container">
         <i class="fas fa-search"></i>
         <input type="text" id="globalSearchInput" placeholder="Buscar en todo el catálogo...">
@@ -687,8 +795,7 @@
             <a id="checkoutBtn" href="#" target="_blank" class="modal-whatsapp-btn"><i class="fab fa-whatsapp"></i> Realizar Pedido</a>
         </div>
     </div>
-
-   <script>
+<script>
     document.addEventListener('DOMContentLoaded', () => {
 
         const API = {
@@ -871,6 +978,7 @@
                 this.elements.cartCounter.style.display = totalItems > 0 ? 'flex' : 'none';
             },
             renderLayout() {
+                // Esta función ahora SOLO renderiza el menú de escritorio
                 API.data.categories.sort((a, b) => a.title.localeCompare(b.title));
                 API.data.categories.forEach(category => {
                     if (category.subcategories) {
@@ -884,6 +992,50 @@
                     }
                 });
             },
+
+            // --- [NUEVA FUNCIÓN] ---
+            // Esta función construye el nuevo menú móvil de paneles
+            buildMobileMenu() {
+                const container = document.getElementById('mobile-menu-container');
+                if (!container) return;
+
+                let mainPanelHTML = `<div class="mobile-panel main-panel active">`;
+                let subPanelsHTML = '';
+
+                API.data.categories.forEach(category => {
+                    if (category.subcategories) {
+                        // 1. Enlace que "dispara" el subpanel
+                        mainPanelHTML += `<a href="#" class="mobile-nav-trigger" data-target-panel="panel-${category.id}">
+                                            ${category.title}
+                                            <i class="fas fa-chevron-right"></i>
+                                          </a>`;
+                        
+                        // 2. Construir el subpanel
+                        subPanelsHTML += `<div class="mobile-panel sub-panel" id="panel-${category.id}">`;
+                        // Botón de Volver
+                        subPanelsHTML += `<a href="#" class="mobile-nav-back">
+                                            <i class="fas fa-chevron-left"></i>
+                                            Volver a Categorías
+                                         </a>`;
+                        // Título del panel
+                        subPanelsHTML += `<h4 class="mobile-panel-title">${category.title}</h4>`;
+                        // Lista de subcategorías
+                        category.subcategories.forEach(sub => {
+                            subPanelsHTML += `<a href="#${sub.id}-section" class="mobile-nav-link">${sub.title}</a>`;
+                        });
+                        subPanelsHTML += `</div>`;
+                    
+                    } else {
+                        // Enlace final (sin submenú)
+                        mainPanelHTML += `<a href="#${category.id}-section" class="mobile-nav-link">${category.title}</a>`;
+                    }
+                });
+
+                mainPanelHTML += `</div>`;
+                container.innerHTML = mainPanelHTML + subPanelsHTML;
+            },
+            // --- [FIN DE NUEVA FUNCIÓN] ---
+
             renderSection(id, title, desc) {
                 const sectionHTML = `<section id="${id}-section" class="content-section fade-in"><h1>${title}</h1><p>${desc || ''}</p></section><div id="${id}-grid" class="cards-grid"></div>`;
                 this.elements.productSectionsContainer.innerHTML += sectionHTML;
@@ -936,6 +1088,11 @@
                 if (!dataLoaded) return;
                 Store.loadCart();
                 UI.renderLayout();
+                
+                // --- [LÍNEA AÑADIDA] ---
+                UI.buildMobileMenu(); // Construye el nuevo menú móvil
+                // --- [FIN DE LÍNEA AÑADIDA] ---
+
                 UI.renderAllProducts();
                 UI.updateCartCounter();
                 UI.showMainContent();
@@ -946,7 +1103,7 @@
                 // Eventos para las tarjetas de productos
                 document.body.addEventListener('click', (e) => {
                     const card = e.target.closest('.card');
-                    if (card) { // Solo si el clic fue dentro de una card
+                    if (card) { 
                         if (e.target.matches('.thumbnail')) {
                             const mainImage = card.querySelector('.main-image');
                             const newSrc = e.target.dataset.imgSrc;
@@ -1022,44 +1179,71 @@
                     UI.toggleModal(UI.elements.cartModal, true);
                 });
 
-                // Eventos de la navegación principal
+                // --- [BLOQUE REEMPLAZADO] ---
+                // Eventos de la navegación principal (NUEVA LÓGICA)
                 UI.elements.hamburgerMenu.addEventListener('click', () => {
-                    UI.elements.navLinks.classList.toggle('active');
-                    document.body.classList.toggle('menu-open'); // Activa/desactiva el bloqueo de scroll
+                    const container = document.getElementById('mobile-menu-container');
+                    if (!container) return; // Seguridad por si no existe
                     
+                    const isOpen = container.classList.toggle('open');
+                    document.body.classList.toggle('menu-open', isOpen);
+                    document.documentElement.classList.toggle('menu-open', isOpen);
+
+                    // Si cerramos, forzamos el regreso al panel principal
+                    if (!isOpen) {
+                        container.classList.remove('sub-panel-active');
+                        const mainPanel = container.querySelector('.mobile-panel.main-panel');
+                        if (mainPanel) mainPanel.classList.add('active');
+                        container.querySelectorAll('.mobile-panel.sub-panel').forEach(p => p.classList.remove('active'));
+                    }
                 });
+                // --- [FIN DEL BLOQUE REEMPLAZADO] ---
+
                 UI.elements.globalSearchInput.addEventListener('input', () => App.handleSearch());
 
-                // --- CÓDIGO FINAL PARA MENÚ DESPLEGABLE MÓVIL ---
-                document.querySelectorAll('.dropdown .dropbtn').forEach(button => {
-                    button.addEventListener('click', function(event) {
-                        const dropdownContent = this.nextElementSibling;
-                        // Solo ejecutamos lógica móvil si estamos en < 992px
-                        if (window.innerWidth <= 992 && dropdownContent && dropdownContent.classList.contains('dropdown-content')) {
-                            event.preventDefault(); // Evita navegar
-                            const currentlyVisible = dropdownContent.style.display === 'block';
+                // --- [NUEVO LISTENER AÑADIDO] ---
+                // Listener para los clics DENTRO del nuevo menú móvil
+                document.getElementById('mobile-menu-container').addEventListener('click', (e) => {
+                    const container = document.getElementById('mobile-menu-container');
+                    
+                    // 1. Clic en un "disparador" (ej. "Alfajores")
+                    const trigger = e.target.closest('.mobile-nav-trigger');
+                    if (trigger) {
+                        e.preventDefault();
+                        const targetPanelId = trigger.dataset.targetPanel;
+                        container.classList.add('sub-panel-active'); // Desliza el panel principal
+                        const targetPanel = container.querySelector(`#${targetPanelId}`);
+                        if (targetPanel) targetPanel.classList.add('active'); // Muestra el subpanel
+                    }
 
-                            // Cerramos TODOS los otros submenús primero
-                            document.querySelectorAll('.dropdown-content').forEach(content => {
-                                if (content !== dropdownContent) { // No cerrar el actual todavía
-                                   content.style.display = 'none';
-                                }
-                            });
-
-                            // Si el que tocamos NO estaba visible, lo mostramos y hacemos scroll
-                            if (!currentlyVisible) {
-                                dropdownContent.style.display = 'block';
-                                setTimeout(() => {
-                                    this.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                                }, 50);
-                            } else {
-                                // Si ya estaba visible, lo ocultamos
-                                dropdownContent.style.display = 'none';
-                            }
+                    // 2. Clic en "Volver"
+                    const backButton = e.target.closest('.mobile-nav-back');
+                    if (backButton) {
+                        e.preventDefault();
+                        container.classList.remove('sub-panel-active'); // Regresa el panel principal
+                        if (backButton.closest('.mobile-panel')) {
+                            backButton.closest('.mobile-panel').classList.remove('active'); // Oculta este subpanel
                         }
-                        // Si la pantalla es > 992px, no hacemos nada y dejamos que el :hover del CSS funcione
-                    });
+                    }
+
+                    // 3. Clic en un enlace final (ej. "#situ-natural" o "#especias")
+                    const finalLink = e.target.closest('.mobile-nav-link');
+                    if (finalLink) {
+                        // El enlace navegará al #id... solo cerramos el menú.
+                        container.classList.remove('open');
+                        document.body.classList.remove('menu-open');
+                        document.documentElement.classList.remove('menu-open');
+                        
+                        // Forzar el reseteo al panel principal para la próxima vez que se abra
+                        container.classList.remove('sub-panel-active');
+                        container.querySelectorAll('.sub-panel').forEach(p => p.classList.remove('active'));
+                    }
                 });
+                // --- [FIN DEL NUEVO LISTENER] ---
+                
+                // --- [BLOQUE BORRADO] ---
+                // El antiguo 'document.querySelectorAll('.dropdown .dropbtn')...' ha sido eliminado.
+
             }, // Fin de setupEventListeners
 
             handleSearch() {
@@ -1089,6 +1273,4 @@
         App.init();
 
     });
-    </script>
-</body>
-</html>
+</script>
