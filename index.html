@@ -732,15 +732,16 @@
 
 /*
 ========================================
---- FIX: CORRECCIÓN DE DESCRIPCIÓN CORTADA EN MODAL ---
+--- FIX: CORRECCIÓN DE DESCRIPCIÓN CORTADA EN MODAL (v2) ---
 ========================================
 */
 #productModal #modalDesc {
-    height: auto;           /* Permite que el párrafo crezca lo que necesite */
-    max-height: none;       /* Anula cualquier regla de 'max-height' */
-    overflow: visible;      /* Anula cualquier regla de 'overflow: hidden' */
-    -webkit-line-clamp: none; /* Anula cualquier regla de 'line-clamp' */
-    line-clamp: none;
+    height: auto !important;           /* Permite que el párrafo crezca lo que necesite */
+    max-height: none !important;       /* Anula CUALQUIER regla de 'max-height' */
+    overflow: visible !important;      /* Anula CUALQUIER regla de 'overflow: hidden' */
+    display: block !important;         /* Anula CUALQUIER 'display: -webkit-box' */
+    -webkit-line-clamp: none !important; /* Anula CUALQUIER regla de 'line-clamp' */
+    line-clamp: none !important;
 }
     </style>
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
