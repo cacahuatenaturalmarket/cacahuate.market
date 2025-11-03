@@ -1069,6 +1069,7 @@
 
                 mainPanelHTML += `</div>`;
                 container.innerHTML = mainPanelHTML + subPanelsHTML;
+                
             },
             // --- [FIN DE NUEVA FUNCIÓN] ---
 
@@ -1087,6 +1088,7 @@
             },
             toggleModal(modal, show) {
                 modal.style.display = show ? "flex" : "none";
+
             },
             openProductModal(card) {
                 const name = card.dataset.name;
