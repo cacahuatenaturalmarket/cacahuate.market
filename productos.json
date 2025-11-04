@@ -518,6 +518,11 @@
           "id": "cuarto-creciente-mermeladas",
           "title": "Cuarto Creciente",
           "desc": "Mermeladas dietéticas endulzadas con Stevia, libres de gluten."
+        },
+        {
+          "id": "mani-king",
+          "title": "Mani King",
+          "desc": "Pastas de maní 100% naturales, fuente de energía pura."
         }
       ]
     },
@@ -5167,6 +5172,15 @@
           "https://cuartocreciente.com.ar/wp-content/uploads/2025/07/web_cuarto-creciente-11.jpg"
         ],
         "desc": "Descubre un sabor gourmet y sofisticado en su versión más saludable. La Mermelada Dietética de Higo ofrece un dulzor único y una textura deliciosa, ideal para acompañar tanto tostadas como tablas de quesos y frutos secos. Al estar endulzada con Stevia, puedes darte un gusto refinado y diferente, cuidando tu alimentación y disfrutando de un producto sin gluten."
+      }
+    ],
+    "mani-king": [
+      {
+        "name": "Pasta de Maní Natural Maní King - 485g",
+        "img": [
+          "https://www.maniking.com.ar/storage/categorias/13/IpRA0ZVmhltZGpscwqDRyd8pymoBDLLQiUfYGSEp.png"
+        ],
+        "desc": "Disfruta de la fuente de energía más pura y deliciosa para tus días. Esta pasta de maní 100% natural está elaborada únicamente con maní de alto oleico, sin sodio añadido y libre de gluten, conservando todos sus beneficios. Es el untable perfecto para tus desayunos, smoothies o para comer directo del frasco. Solo revuelve para integrar su aceite natural y prepárate para un sabor auténtico y una textura increíblemente cremosa."
       }
     ]
   }
