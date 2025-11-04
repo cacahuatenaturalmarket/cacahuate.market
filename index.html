@@ -1495,6 +1495,15 @@
     margin-top: 15px;
     margin-bottom: 20px; /* Espacio antes del botón de WhatsApp */
 }
+/*
+========================================
+--- FIX: ANULAR ENLACE FANTASMA EN DESCRIPCIÓN ---
+========================================
+*/
+.section-description {
+    text-decoration: none !important; /* ¡Quita cualquier subrayado! */
+    color: var(--naranja-cacahuate) !important; /* ¡Fuerza el color correcto! */
+}
 
     </style>
 
@@ -2150,7 +2159,7 @@
 
             renderSection(id, title, desc) {
 
-                const sectionHTML = `<section id="${id}-section" class="content-section fade-in"><h1>${title}</h1><p>${desc || ''}</p></section><div id="${id}-grid" class="cards-grid"></div>`;
+                const sectionHTML = `<section id="${id}-section" class="content-section fade-in"><h1>${title}</h1><p class="section-description">${desc || ''}</p></section><div id="${id}-grid" class="cards-grid"></div>`;
 
                 this.elements.productSectionsContainer.innerHTML += sectionHTML;
 
