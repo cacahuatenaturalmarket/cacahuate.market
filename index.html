@@ -244,13 +244,11 @@
 
         }
 
-        .main-nav a:hover, .dropdown:hover .dropbtn {
-
-            background-color: var(--naranja-cacahuate);
-
-            color: var(--fondo-oscuro);
-
-        }
+       /* REEMPLAZO SUGERIDO (Línea 197) */
+.main-nav a:hover, .dropdown:hover .dropbtn {
+    background-color: var(--fondo-claro-secundario); /* Un gris oscuro en lugar de amarillo */
+    color: var(--naranja-cacahuate); /* Mantenemos el texto naranja */
+}
 
         .dropdown { position: relative; display: inline-block; }
 
@@ -1557,7 +1555,7 @@
 
     <nav class="main-nav">
 
-        <a href="#" class="nav-logo" style="font-weight: bold; font-family: 'Merriweather', serif; font-size: 1.2em;">
+       <a href="#" class="nav-logo" style="font-weight: bold; font-family: 'Merriweather', serif; font-size: 1.2em;"></a>
 
         <div class="nav-links" id="navLinks"></div>
 
