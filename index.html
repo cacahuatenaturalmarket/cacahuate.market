@@ -1541,7 +1541,7 @@
 
     <nav class="main-nav">
 
-        <a href="#" class="nav-logo" style="font-weight: bold; font-family: 'Merriweather', serif; font-size: 1.2em;">CACAHUATE v99-TEST </a>
+        <a href="#" class="nav-logo" style="font-weight: bold; font-family: 'Merriweather', serif; font-size: 1.2em;">
 
         <div class="nav-links" id="navLinks"></div>
 
@@ -1891,7 +1891,7 @@
 
                 return `
 
-                    <div class="card fade-in" data-name="${item.name}" data-desc="${item.desc}" data-price="${item.price || 0}" data-img='${JSON.stringify(images)}'>
+                   <div class="card fade-in" data-name="${item.name}" data-price="${item.price || 0}" data-img='${JSON.stringify(images)}'>
 
                         ${imageHtml}
 
@@ -2173,30 +2173,38 @@
 
             },
 
-     openProductModal(card) {
-                const name = card.dataset.name;
-                const price = card.dataset.price;
-                const desc = card.dataset.desc;
-                const images = JSON.parse(card.dataset.img || '[]');
-                
-                document.getElementById("modalTitle").textContent = name;
-                document.getElementById("modalImg").src = images[0] || 'https://placehold.co/400x400/2F2F2F/FFFFFF?text=Imagen+no+disponible';
-                
-                // --- LÓGICA NUEVA ---
-                // Ponemos la descripción en su propio párrafo
-                document.getElementById("modalDescriptionText").textContent = desc;
-                
-                // Ponemos el precio en su propio párrafo
-                const priceElement = document.getElementById("modalPriceText");
-                priceElement.innerHTML = `<strong style='font-size:1.2em;'>Precio: ${this.formatCurrency(parseFloat(price || '0'))}</strong>`;
-                // --- FIN DE LÓGICA NUEVA ---
+openProductModal(card) {
+    const name = card.dataset.name; // 1. Obtenemos el nombre del producto
+    const price = card.dataset.price;
+    const images = JSON.parse(card.dataset.img || '[]');
 
-                const whatsappLink = `https://wa.me/${API.getPhoneNumber()}?text=${encodeURIComponent(`Hola, quisiera consultar sobre el producto: ${name}`)}`;
-                document.getElementById("modalWhatsappBtn").href = whatsappLink;
-                
-                this.toggleModal(this.elements.productModal, true);
-            },
+    // --- ¡NUEVA LÓGICA INTELIGENTE! ---
+    // 2. Buscamos el producto en la base de datos completa
+    let fullDescription = 'Descripción no encontrada.'; // Texto por defecto
+    for (const categoryId in API.data.products) {
+        const product = API.data.products[categoryId].find(p => p.name === name);
+        if (product) {
+            fullDescription = product.desc; // 3. ¡Obtenemos la descripción COMPLETA y LIMPIA!
+            break;
+        }
+    }
+    // --- FIN DE LA NUEVA LÓGICA ---
 
+    document.getElementById("modalTitle").textContent = name;
+    document.getElementById("modalImg").src = images[0] || 'https://placehold.co/400x400/2F2F2F/FFFFFF?text=Imagen+no+disponible';
+
+    // 4. Ponemos la descripción completa en su párrafo
+    document.getElementById("modalDescriptionText").textContent = fullDescription;
+
+    // 5. Ponemos el precio en su párrafo
+    const priceElement = document.getElementById("modalPriceText");
+    priceElement.innerHTML = `<strong style='font-size:1.2em;'>Precio: ${this.formatCurrency(parseFloat(price || '0'))}</strong>`;
+
+    const whatsappLink = `https://wa.me/${API.getPhoneNumber()}?text=${encodeURIComponent(`Hola, quisiera consultar sobre el producto: ${name}`)}`;
+    document.getElementById("modalWhatsappBtn").href = whatsappLink;
+
+    this.toggleModal(this.elements.productModal, true);
+},
             showMainContent() {
 
                 this.elements.loadingIndicator.style.display = 'none';
