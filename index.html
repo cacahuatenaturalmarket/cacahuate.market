@@ -1555,7 +1555,7 @@
 
     <nav class="main-nav">
 
-       <a href="#" class="nav-logo" style="font-weight: bold; font-family: 'Merriweather', serif; font-size: 1.2em;"></a>
+      <a href="#" class="nav-logo" style="font-weight: bold; font-family: 'Merriweather', serif; font-size: 1.2em;">CACAHUATE</a>
 
         <div class="nav-links" id="navLinks"></div>
 
@@ -2568,6 +2568,38 @@ openProductModal(card) {
                 // --- [BLOQUE BORRADO] ---
 
                 // El antiguo 'document.querySelectorAll('.dropdown .dropbtn')...' ha sido eliminado.
+
+                // --- [NUEVO BLOQUE] ---
+                // Evento para cerrar el menú móvil al hacer clic fuera
+                document.body.addEventListener('click', (e) => {
+                    const container = document.getElementById('mobile-menu-container');
+                    
+                    // 1. Salir si el menú no existe o ya está cerrado
+                    if (!container || !container.classList.contains('open')) {
+                        return;
+                    }
+
+                    // 2. Salir si el clic fue en el botón de hamburguesa (o su icono)
+                    // (closest() revisa el elemento y sus padres)
+                    if (e.target.closest('#' + UI.elements.hamburgerMenu.id)) {
+                        return; // Dejamos que el listener de la hamburguesa se encargue
+                    }
+
+                    // 3. Salir si el clic fue DENTRO del menú
+                    if (e.target.closest('#' + container.id)) {
+                        return; // El usuario está interactuando con el menú
+                    }
+                    
+                    // 4. Si llegamos aquí, el clic fue "fuera". Cerramos el menú.
+                    container.classList.remove('open');
+                    document.body.classList.remove('menu-open');
+                    document.documentElement.classList.remove('menu-open');
+
+                    // 5. (Opcional pero recomendado) Reseteamos al panel principal
+                    container.classList.remove('sub-panel-active');
+                    container.querySelectorAll('.sub-panel').forEach(p => p.classList.remove('active'));
+                });
+                // --- [FIN DEL NUEVO BLOQUE] ---
 
 
 
