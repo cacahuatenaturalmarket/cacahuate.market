@@ -520,6 +520,11 @@
           "desc": "Mermeladas dietéticas endulzadas con Stevia, libres de gluten."
         },
         {
+          "id": "entrenuts",
+          "title": "Entrenuts",
+          "desc": "Pastas de maní naturales y saborizadas, ideales para potenciar tu energía."
+        },
+        {
           "id": "mani-king",
           "title": "Mani King",
           "desc": "Pastas de maní 100% naturales, fuente de energía pura."
@@ -5181,6 +5186,50 @@
           "https://www.maniking.com.ar/storage/categorias/13/IpRA0ZVmhltZGpscwqDRyd8pymoBDLLQiUfYGSEp.png"
         ],
         "desc": "Disfruta de la fuente de energía más pura y deliciosa para tus días. Esta pasta de maní 100% natural está elaborada únicamente con maní de alto oleico, sin sodio añadido y libre de gluten, conservando todos sus beneficios. Es el untable perfecto para tus desayunos, smoothies o para comer directo del frasco. Solo revuelve para integrar su aceite natural y prepárate para un sabor auténtico y una textura increíblemente cremosa."
+      }
+    ],
+    "entrenuts": [
+      {
+        "name": "Pasta de Maní Ahumada Entrenuts - 370g",
+        "img": [
+          "https://distribuidorafresh.com.ar/wp-content/uploads/2024/04/ahumada.webp"
+        ],
+        "desc": "Sorprende a tu paladar con un sabor innovador y versátil. La Pasta de Maní Ahumada es el ingrediente secreto para tus platos salados, ideal para crear salsas, aderezos o para untar en sándwiches gourmet. Su distintivo toque ahumado transforma el sabor tradicional del maní en una experiencia gastronómica única. Perfecta para quienes aman experimentar en la cocina."
+      },
+      {
+        "name": "Pasta de Maní Cacao Entrenuts - 370g",
+        "img": [
+          "https://distribuidorafresh.com.ar/wp-content/uploads/2024/04/cacao.webp"
+        ],
+        "desc": "Satisface tus antojos de chocolate de la forma más saludable. La Pasta de Maní con Cacao es perfecta para tus postres, rellenar panqueques o para untar en frutas, dándote un placer sin culpas. Su distintiva mezcla de maní tostado y cacao puro, endulzada naturalmente con stevia, la hace irresistible. Un capricho nutritivo y libre de gluten."
+      },
+      {
+        "name": "Pasta de Maní Coco Entrenuts - 370g",
+        "img": [
+          "https://distribuidorafresh.com.ar/wp-content/uploads/2024/04/coco.webp"
+        ],
+        "desc": "Disfruta de una energía tropical en cada cucharada. La Pasta de Maní con Coco es ideal para tus bowls de desayuno, para untar en tostadas o para darle un toque dulce a tus frutas. Su combinación única de maní cremoso y el sabor exótico del coco la convierte en un untable delicioso y diferente. Una forma saludable de escapar de la rutina, libre de gluten."
+      },
+      {
+        "name": "Pasta de Maní Crocante Entrenuts - 370g",
+        "img": [
+          "https://distribuidorafresh.com.ar/wp-content/uploads/2024/04/crocante.webp"
+        ],
+        "desc": "Siente el poder del maní con una textura que te encantará. La Pasta de Maní Crocante es la opción ideal para quienes buscan un bocado extra en sus tostadas, sándwiches o recetas de repostería. A diferencia de las cremosas, esta versión está cargada con trocitos de maní tostado que explotan en tu boca. Pura energía y sabor en su estado más auténtico."
+      },
+      {
+        "name": "Pasta de Maní Mix Semillas Entrenuts - 370g",
+        "img": [
+          "https://distribuidorafresh.com.ar/wp-content/uploads/2024/04/semillas.webp"
+        ],
+        "desc": "Potencia tu nutrición con un untable cargado de superalimentos. La Pasta de Maní con Mix de Semillas es perfecta para enriquecer tus desayunos, bowls de avena o tostadas, aportando fibra y textura. Su innovadora mezcla de maní cremoso con semillas seleccionadas la convierte en una fuente de energía superior. El bocado ideal para un día activo."
+      },
+      {
+        "name": "Pasta de Maní Stevia Entrenuts - 370g",
+        "img": [
+          "https://distribuidorafresh.com.ar/wp-content/uploads/2024/04/stevia.webp"
+        ],
+        "desc": "Disfruta del equilibrio perfecto entre lo dulce y lo natural. La Pasta de Maní con Stevia te ofrece el sabor clásico del maní con un ligero toque dulce, pero sin azúcar añadida. Es el untable ideal para tus desayunos, snacks o para preparar postres saludables. Su fórmula endulzada naturalmente la convierte en la opción inteligente para cuidarte sin sacrificar el sabor."
       }
     ]
   }
