@@ -510,6 +510,18 @@
       ]
     },
     {
+      "id": "untables",
+      "title": "Untables",
+      "desc": "Mermeladas dietéticas endulzadas con Stevia, libres de gluten.",
+      "subcategories": [
+        {
+          "id": "cuarto-creciente-mermeladas",
+          "title": "Cuarto Creciente",
+          "desc": "Mermeladas dietéticas endulzadas con Stevia, libres de gluten."
+        }
+      ]
+    },
+    {
       "id": "veganos",
       "title": "Veganos",
       "desc": "El sabor y la textura del pollo, ahora en una versión hecha 100% a base de plantas.",
@@ -1745,7 +1757,6 @@
         "desc": "Un clásico de la hidratación suave y efectiva. Perfecto para todo tipo de piel, especialmente las más sensibles, este aceite emoliente suaviza, nutre y protege la piel de la resequedad, dejándola tersa y elástica."
       },
       {
-        
         "name": "Aceite de Argán",
         "img": [
           "https://i.ibb.co/ZzwcqMD9/SITU-ACEITE-DE-ARGAN.png"
@@ -5112,6 +5123,50 @@
           "https://i.ibb.co/LdqxGDtD/PANKO-500.png"
         ],
         "desc": "Asegura la crocancia perfecta en todas tus comidas con el formato familiar de Panko Naranja. Su característico tono anaranjado y su textura de hojuelas grandes garantizan un apanado dorado y profesional que se mantiene ligero y no grasoso. Ideal para los amantes de la cocina que lo usan con frecuencia, este envase de 500g te permite tener siempre a mano el ingrediente clave para platos inolvidables."
+      }
+    ],
+    "cuarto-creciente-mermeladas": [
+      {
+        "name": "Mermelada Dietética de Arándano Cuarto Creciente - 300g",
+        "img": [
+          "https://cuartocreciente.com.ar/wp-content/uploads/2025/07/web_cuarto-creciente-13.jpg"
+        ],
+        "desc": "Disfruta del intenso sabor del bosque en una versión que cuida tu figura. La Mermelada Dietética de Arándano es ideal para coronar tus postres, yogures o tostadas de pan integral. Su dulzor, proveniente de la Stevia, y su receta libre de gluten te permiten saborear el poder antioxidante del arándano de forma deliciosa y sin culpas."
+      },
+      {
+        "name": "Mermelada Dietética de Ciruela Cuarto Creciente - 300g",
+        "img": [
+          "https://cuartocreciente.com.ar/wp-content/uploads/2025/07/web_cuarto-creciente-12.jpg"
+        ],
+        "desc": "Disfruta de la dulzura profunda y el sabor tradicional de la ciruela en esta mermelada dietética. Es la opción perfecta para añadir fibra y un toque dulce a tus desayunos, combinando de maravilla con panes integrales y galletas de arroz. Su receta, endulzada con Stevia y libre de gluten, respeta tu bienestar y te permite gozar de un clásico de la repostería sin culpas."
+      },
+      {
+        "name": "Mermelada Dietética de Durazno Cuarto Creciente - 300g",
+        "img": [
+          "https://cuartocreciente.com.ar/wp-content/uploads/2025/07/web_cuarto-creciente-16.jpg"
+        ],
+        "desc": "Siente el auténtico sabor del durazno fresco y jugoso en cada cucharada. La Mermelada Dietética de Durazno es perfecta para darle un toque frutal a tus mañanas o para combinar con quesos. Su fórmula endulzada con Stevia y sin T.A.C.C. te ofrece todo el dulzor del verano en un formato saludable. Un capricho ligero que se adapta a tu estilo de vida."
+      },
+      {
+        "name": "Mermelada Dietética de Frutilla Cuarto Creciente - 300g",
+        "img": [
+          "https://cuartocreciente.com.ar/wp-content/uploads/2025/07/web_cuarto-creciente-14.jpg"
+        ],
+        "desc": "Vuelve al sabor clásico de la frutilla sin salirte de tu plan. La Mermelada Dietética de Frutilla es la compañera perfecta para tus desayunos y meriendas, aportando un toque dulce y natural. Endulzada con Stevia y libre de gluten, te permite disfrutar de un untable tradicional y delicioso mientras cuidas tu bienestar. El placer de siempre, reinventado para ti."
+      },
+      {
+        "name": "Mermelada Dietética de Frutos Rojos Cuarto Creciente - 300g",
+        "img": [
+          "https://cuartocreciente.com.ar/wp-content/uploads/2025/07/web_cuarto-creciente-15.jpg"
+        ],
+        "desc": "Una vibrante explosión de sabor que combina frutilla, mora, frambuesa y arándanos. La Mermelada Dietética de Frutos Rojos es ideal para realzar tus bowls de avena o como topping de postres saludables. Endulzada con Stevia, esta mezcla te da un toque antioxidante y delicioso, permitiéndote un gusto sin remordimientos y apto para celíacos."
+      },
+      {
+        "name": "Mermelada Dietética de Higo Cuarto Creciente - 300g",
+        "img": [
+          "httpsVía: https://cuartocreciente.com.ar/wp-content/uploads/2025/07/web_cuarto-creciente-11.jpg"
+        ],
+        "desc": "Descubre un sabor gourmet y sofisticado en su versión más saludable. La Mermelada Dietética de Higo ofrece un dulzor único y una textura deliciosa, ideal para acompañar tanto tostadas como tablas de quesos y frutos secos. Al estar endulzada con Stevia, puedes darte un gusto refinado y diferente, cuidando tu alimentación y disfrutando de un producto sin gluten."
       }
     ]
   }
