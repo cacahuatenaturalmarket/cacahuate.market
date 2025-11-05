@@ -228,11 +228,11 @@
 
 
 
-        const Store = {
-
-            state: { cart: [] },
-
-            loadCart() {
+       const Store = {
+    state: { cart: [] },
+    productMap: new Map(), // <-- AÑADE ESTA LÍNEA
+    loadCart() {
+// ...
 
                 const savedCart = localStorage.getItem('cacahuateCart');
 
@@ -707,17 +707,11 @@ openProductModal(card) {
     const price = card.dataset.price;
     const images = JSON.parse(card.dataset.img || '[]');
 
-    // --- ¡NUEVA LÓGICA INTELIGENTE! ---
-    // 2. Buscamos el producto en la base de datos completa
-    let fullDescription = 'Descripción no encontrada.'; // Texto por defecto
-    for (const categoryId in API.data.products) {
-        const product = API.data.products[categoryId].find(p => p.name === name);
-        if (product) {
-            fullDescription = product.desc; // 3. ¡Obtenemos la descripción COMPLETA y LIMPIA!
-            break;
-        }
-    }
-    // --- FIN DE LA NUEVA LÓGICA ---
+   // --- ¡NUEVA LÓGICA OPTIMIZADA! ---
+// 2. Buscamos el producto en el mapa (acceso instantáneo O(1))
+const product = Store.productMap.get(name);
+const fullDescription = product ? product.desc : 'Descripción no encontrada.';
+// --- FIN DE LA NUEVA LÓGICA ---
 
     document.getElementById("modalTitle").textContent = name;
     document.getElementById("modalImg").src = images[0] || 'https://placehold.co/400x400/2F2F2F/FFFFFF?text=Imagen+no+disponible';
@@ -785,6 +779,14 @@ openProductModal(card) {
 
 
                 UI.renderAllProducts();
+                // --- AÑADIR ESTE BLOQUE ---
+// Creamos el mapa de búsqueda de productos para un acceso O(1)
+for (const categoryId in API.data.products) {
+    API.data.products[categoryId].forEach(product => {
+        Store.productMap.set(product.name, product);
+    });
+}
+// --- FIN DEL BLOQUE AÑADIDO ---
 
                 UI.updateCartCounter();
 
