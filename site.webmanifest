@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "CACAHUATE NATURAL MARKET",
+  "short_name": "CACAHUATE",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,9 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  "theme_color": "#FFC107",
+  "background_color": "#1A1A1A",
+  "display": "standalone",
+  "start_url": ".",
+  "scope": "."
 }
