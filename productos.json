@@ -528,6 +528,11 @@
           "id": "mani-king",
           "title": "Mani King",
           "desc": "Pastas de maní 100% naturales, fuente de energía pura."
+        },
+        {
+          "id": "singluko",
+          "title": "Singluko",
+          "desc": "Dulce de leche sin azúcar agregada, libre de gluten."
         }
       ]
     },
@@ -5230,6 +5235,15 @@
           "https://distribuidorafresh.com.ar/wp-content/uploads/2024/04/stevia.webp"
         ],
         "desc": "Disfruta del equilibrio perfecto entre lo dulce y lo natural. La Pasta de Maní con Stevia te ofrece el sabor clásico del maní con un ligero toque dulce, pero sin azúcar añadida. Es el untable ideal para tus desayunos, snacks o para preparar postres saludables. Su fórmula endulzada naturalmente la convierte en la opción inteligente para cuidarte sin sacrificar el sabor."
+      }
+    ],
+    "singluko": [
+      {
+        "name": "Dulce de Leche Singluko Sin Azúcar Agregado - 440g",
+        "img": [
+          "https://http2.mlstatic.com/D_NQ_NP_2X_708172-MLA47215981008_082021-F.webp"
+        ],
+        "desc": "Disfruta del sabor clásico que te encanta sin culpas. Este dulce de leche es perfecto para rellenar alfajores, tortas y postres, gracias a su consistencia tipo repostería. Su fórmula única, endulzada con Stevia y totalmente libre de gluten, te permite un capricho delicioso y liviano con solo 32 calorías por porción. El gusto de siempre, adaptado a tu estilo de vida saludable."
       }
     ]
   }
