@@ -530,6 +530,11 @@
           "desc": "Pastas de maní 100% naturales, fuente de energía pura."
         },
         {
+          "id": "orieta",
+          "title": "Orieta",
+          "desc": "Dulces light sin azúcar agregada, el clásico postre vigilante."
+        },
+        {
           "id": "singluko",
           "title": "Singluko",
           "desc": "Dulce de leche sin azúcar agregada, libre de gluten."
@@ -5244,6 +5249,22 @@
           "https://http2.mlstatic.com/D_NQ_NP_2X_708172-MLA47215981008_082021-F.webp"
         ],
         "desc": "Disfruta del sabor clásico que te encanta sin culpas. Este dulce de leche es perfecto para rellenar alfajores, tortas y postres, gracias a su consistencia tipo repostería. Su fórmula única, endulzada con Stevia y totalmente libre de gluten, te permite un capricho delicioso y liviano con solo 32 calorías por porción. El gusto de siempre, adaptado a tu estilo de vida saludable."
+      }
+    ],
+    "orieta": [
+      {
+        "name": "Dulce de Batata Light Orieta Sin Azúcar Agregada - 400g",
+        "img": [
+          "https://bondialmundo.com/wp-content/uploads/2023/09/Gluten-free-21-600x600.png"
+        ],
+        "desc": "El compañero ideal para tu queso fresco, ahora en su versión más ligera. El Dulce de Batata Light Orieta te permite disfrutar del clásico postre \"fresco y batata\" sin azúcar agregada. Su textura suave y su dulzor equilibrado lo hacen perfecto para tus postres, colaciones o para darte un gusto saludable. El sabor de siempre, pensado para cuidarte."
+      },
+      {
+        "name": "Dulce de Membrillo Light Orieta Sin Azúcar Agregada - 400g",
+        "img": [
+          "https://bondialmundo.com/wp-content/uploads/2023/09/Gluten-free-20-600x600.png"
+        ],
+        "desc": "Disfruta del postre vigilante clásico sin culpas. El Dulce de Membrillo Light Orieta te ofrece todo el sabor tradicional para acompañar tus quesos, tostadas o preparar una pastafrola más saludable. Su fórmula sin azúcar agregada te permite disfrutar de un bocado dulce y delicioso, con menos calorías. Un clásico argentino adaptado a tu bienestar."
       }
     ]
   }
