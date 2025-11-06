@@ -442,7 +442,7 @@
 
                                     <button class="quantity-btn decrease-qty" aria-label="Disminuir cantidad">-</button>
 
-                                    <input type="number" class="quantity-input" value="1" min="1" name="quantity" aria-label="Cantidad">
+                                    <input type="number" class="quantity-input" value="0" min="0" name="quantity" aria-label="Cantidad">
 
                                     <button class="quantity-btn increase-qty" aria-label="Aumentar cantidad">+</button>
 
@@ -844,7 +844,7 @@ for (const categoryId in API.data.products) {
 
                                 UI.updateCartCounter();
 
-                                if(quantityInput) quantityInput.value = 1;
+                                if(quantityInput) quantityInput.value = 0;
 
                             }
 
@@ -860,7 +860,7 @@ for (const categoryId in API.data.products) {
 
                                     input.value = currentValue + 1;
 
-                                } else if (e.target.matches('.decrease-qty') && currentValue > 1) {
+                                } else if (e.target.matches('.decrease-qty') && currentValue > 0) {
 
                                     input.value = currentValue - 1;
 
