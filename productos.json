@@ -293,6 +293,11 @@
       "desc": "Galletitas integrales y dietéticas, con opciones sin azúcar agregado.",
       "subcategories": [
         {
+          "id": "limbus-veganas",
+          "title": "Limbus Veganas",
+          "desc": "Cookies integrales 100% vegetales, endulzadas con mascabo."
+        },
+        {
           "id": "nutresan",
           "title": "Nutresan",
           "desc": "Galletitas integrales y dietéticas, con opciones sin azúcar agregado."
@@ -5405,6 +5410,50 @@
           "https://www.casachinaoficial.com/wp-content/uploads/2020/11/Galletitas-dulces-dieteticas-de-trigo-sabor-a-naranja-light-Nutresan-7797570008064.jpg"
         ],
         "desc": "Dale un toque cítrico y dulce a tus meriendas sin culpas. Estas galletitas dietéticas de trigo integral te ofrecen el sabor clásico de la naranja en un formato saludable y sin azúcar agregada. Su textura y sabor las hacen ideales para disfrutar solas o con una infusión. Un bocado delicioso y ligero para saciar tus antojos de forma equilibrada."
+      }
+    ],
+    "limbus-veganas": [
+      {
+        "name": "Cookies Integrales con Algarroba, Cacao y Coco Limbus - 160g",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/002/069/219/products/cookies-coco-0c194faba0253d580e17371282131626-480-0.webp"
+        ],
+        "desc": "Satisface tus ganas de chocolate de la forma más nutritiva. Estas cookies veganas son el bocado ideal para los amantes del cacao, combinando su intensidad con el dulzor natural de la algarroba y la textura del coco. Hechas con harina integral y endulzadas con mascabo, son perfectas para un postre saludable o una merienda energética."
+      },
+      {
+        "name": "Cookies Integrales con Almendras, Nueces y Maní Limbus - 160g",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/002/069/219/products/cookies-fsecos-9992e84bd64681450517371278925835-480-0.webp"
+        ],
+        "desc": "Una verdadera bomba de energía y sabor en cada bocado. Estas cookies integrales son ideales para tus días más activos, cargadas con una mezcla premium de almendras, nueces y maní. Su base de avena y harina integral, 100% vegetal, te ofrece un snack saciante, crujiente y nutritivo, perfecto para recargar energías de forma saludable."
+      },
+      {
+        "name": "Cookies Integrales con Chips de Chocolate y Avena Limbus - 160g",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/002/069/219/products/cookies-chips-c6c1174795a1e1df4617371273058465-480-0.webp"
+        ],
+        "desc": "El placer de siempre, ahora más saludable y 100% de origen vegetal. Estas cookies integrales con chips de chocolate son el capricho perfecto para cualquier momento del día, sin grasas trans ni colesterol. La avena nutritiva se une a los chips de chocolate, todo endulzado con mascabo, creando el bocado ideal para acompañar tu café o leche vegetal."
+      },
+      {
+        "name": "Cookies Integrales con Dátiles, Cranberries y Avena Limbus - 160g",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/002/069/219/products/cookies-datiles-e773a39fb51b21578017371272067516-480-0.webp"
+        ],
+        "desc": "Disfruta de una pausa nutritiva y llena de sabor. Estas cookies 100% vegetales son ideales para un desayuno energético o un snack saludable entre horas. Su deliciosa combinación de avena integral, la dulzura natural de los dátiles y el toque ácido de los cranberries, todo endulzado con mascabo y melaza, las hace únicas. Un bocado saludable sin grasas trans."
+      },
+      {
+        "name": "Cookies Integrales con Limón, Jengibre y Avena Limbus - 150g",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/002/069/219/products/cookies-limon-1a2a6505066762a07317371281844298-480-0.webp"
+        ],
+        "desc": "Revitaliza tus sentidos con una cookie que despierta el paladar. Esta opción vegana y sin azúcar agregado es perfecta para acompañar tus infusiones o para una pausa refrescante. La chispeante combinación del jengibre picante y el toque cítrico del limón sobre una base de avena integral te ofrece un bocado ligero, saludable y lleno de personalidad."
+      },
+      {
+        "name": "Cookies Integrales con Pasas, Avena y Maní Limbus - 160g",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/002/069/219/products/cookies-pasas-999eaee739674e05ae17371272502384-480-0.webp"
+        ],
+        "desc": "Vuelve al sabor clásico de la galleta de avena en su mejor versión. Esta cookie integral 100% vegetal es perfecta para recargar energías a media mañana. La combinación tradicional de pasas dulces, avena y el toque crujiente del maní, endulzada con mascabo, te da la energía que necesitas en un formato delicioso, saludable y sin colesterol."
       }
     ]
   }
