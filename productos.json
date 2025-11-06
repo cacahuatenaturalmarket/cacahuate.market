@@ -288,6 +288,18 @@
       "desc": "Descubre nuestra selección de frutos secos, una fuente de energía y nutrientes."
     },
     {
+      "id": "galletas",
+      "title": "Galletas",
+      "desc": "Galletitas integrales y dietéticas, con opciones sin azúcar agregado.",
+      "subcategories": [
+        {
+          "id": "nutresan",
+          "title": "Nutresan",
+          "desc": "Galletitas integrales y dietéticas, con opciones sin azúcar agregado."
+        }
+      ]
+    },
+    {
       "id": "miel",
       "title": "Miel y Derivados",
       "subcategories": [
@@ -5363,6 +5375,36 @@
           "https://i.ibb.co/LdqxGDtD/PANKO-500.png"
         ],
         "desc": "Asegura la crocancia perfecta en todas tus comidas con el formato familiar de Panko Naranja. Su característico tono anaranjado y su textura de hojuelas grandes garantizan un apanado dorado y profesional que se mantiene ligero y no grasoso. Ideal para los amantes de la cocina que lo usan con frecuencia, este envase de 500g te permite tener siempre a mano el ingrediente clave para platos inolvidables."
+      }
+    ],
+    "nutresan": [
+      {
+        "name": "Galletitas Avena Sabor Limón Sin Azúcar Agregado - 250g",
+        "img": [
+          "https://www.casachinaoficial.com/wp-content/uploads/2020/11/Galletitas-dulces-de-avena-con-sabor-a-Limon-DIET-Nutresan-x250gr-7797570009078.jpg"
+        ],
+        "desc": "Disfruta de una galletita ligera y refrescante, ideal para tus pausas saludables. Estas galletitas dietéticas de avena integral combinan la fibra natural del cereal con un vibrante toque de limón, todo sin azúcar agregado. Son la opción perfecta para acompañar tu té o café de la tarde, ofreciéndote un bocado delicioso y liviano. Un gusto simple y reconfortante para cuidarte."
+      },
+      {
+        "name": "Galletitas Naturales Coco con Harina de Chía - 250g",
+        "img": [
+          "https://www.casachinaoficial.com/wp-content/uploads/2020/11/Galletitas-dulces-con-salvado-de-trigo-coco-rallado-y-harina-de-chia-Nutresan-7797570000105.jpg"
+        ],
+        "desc": "Transporta tus sentidos al trópico con el sabor dulce y aromático del coco. Estas galletitas naturales están hechas con harina integral y chía, ofreciendo una textura rústica y un sabor delicioso. Son la compañía perfecta para tu mate o yogur, aportando fibra y un toque dulce natural a tu día. Un capricho saludable que te encantará."
+      },
+      {
+        "name": "Galletitas Sol de Avena Algarroba con Harina de Chía - 250g",
+        "img": [
+          "https://www.casachinaoficial.com/wp-content/uploads/2020/11/Galletitas-dulces-de-avena-con-sabor-a-Algarroba-con-Harina-de-Chia-Nutresan-x250gr-7797570000600.jpg"
+        ],
+        "desc": "Descubre una galletita nutritiva con un sabor profundo y natural. Las Sol de Avena combinan la dulzura característica de la algarroba con el poder de la avena y la harina de chía, creando un snack rico en fibra. Son perfectas para un desayuno rápido que te llene de energía o para una merienda saludable. El bocado ideal para quienes buscan nutrición y un sabor diferente."
+      },
+      {
+        "name": "Galletitas Trigo Sabor Naranja Sin Azúcar Agregado - 250g",
+        "img": [
+          "https://www.casachinaoficial.com/wp-content/uploads/2020/11/Galletitas-dulces-dieteticas-de-trigo-sabor-a-naranja-light-Nutresan-7797570008064.jpg"
+        ],
+        "desc": "Dale un toque cítrico y dulce a tus meriendas sin culpas. Estas galletitas dietéticas de trigo integral te ofrecen el sabor clásico de la naranja en un formato saludable y sin azúcar agregada. Su textura y sabor las hacen ideales para disfrutar solas o con una infusión. Un bocado delicioso y ligero para saciar tus antojos de forma equilibrada."
       }
     ]
   }
