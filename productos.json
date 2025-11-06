@@ -288,18 +288,6 @@
       "desc": "Descubre nuestra selección de frutos secos, una fuente de energía y nutrientes."
     },
     {
-      "id": "premezclas-y-rebozadores",
-      "title": "Premezclas y Rebozadores",
-      "desc": "Pan rallado de estilo japonés para apanados extra crujientes, ligeros y dorados.",
-      "subcategories": [
-        {
-          "id": "panko",
-          "title": "Panko",
-          "desc": "Pan rallado de estilo japonés para apanados extra crujientes, ligeros y dorados."
-        }
-      ]
-    },
-    {
       "id": "miel",
       "title": "Miel y Derivados",
       "subcategories": [
@@ -366,6 +354,23 @@
           "id": "srisri-sudanta",
           "title": "SriSri Sudanta",
           "desc": "Cuidado bucal ayurvédico con ingredientes naturales para una sonrisa sana y radiante."
+        }
+      ]
+    },
+    {
+      "id": "premezclas-rebozadores",
+      "title": "Premezclas y Rebozadores",
+      "desc": "Premezclas y rebozadores libres de gluten para preparaciones dulces y saladas.",
+      "subcategories": [
+        {
+          "id": "delicel",
+          "title": "Delicel",
+          "desc": "Premezclas y rebozadores libres de gluten para preparaciones dulces y saladas."
+        },
+        {
+          "id": "panko",
+          "title": "Panko",
+          "desc": "Pan rallado de estilo japonés para apanados extra crujientes, ligeros y dorados."
         }
       ]
     },
@@ -5129,22 +5134,6 @@
         "desc": "Consigue una sonrisa visiblemente más luminosa con el poder de las enzimas frutales. Esta pasta dental ayurvédica utiliza las propiedades naturales de la papaya y la ananá para pulir suavemente tus dientes y devolverles su blanco natural. Su fórmula libre de flúor es ideal para un cuidado bucal efectivo que respeta el balance de tu boca. Disfruta de un aliento fresco y un blanqueamiento suave día tras día."
       }
     ],
-    "panko": [
-      {
-        "name": "Panko Naranja - Pan Rallado Japonés - 250g",
-        "img": [
-          "https://i.ibb.co/fd9jWLxk/PANKO-250.png"
-        ],
-        "desc": "Transforma tus apanados con la textura inigualable del Panko Naranja. Este pan rallado de estilo japonés te asegura una cobertura extra crujiente y un color dorado más vivo, ya que su composición aireada absorbe menos grasa. Este formato de 250g es ideal para experimentar en tus recetas favoritas, desde milanesas hasta vegetales, y descubrir el secreto de una fritura perfecta y espectacular en casa."
-      },
-      {
-        "name": "Panko Naranja - Pan Rallado Japonés - 500g",
-        "img": [
-          "https://i.ibb.co/LdqxGDtD/PANKO-500.png"
-        ],
-        "desc": "Asegura la crocancia perfecta en todas tus comidas con el formato familiar de Panko Naranja. Su característico tono anaranjado y su textura de hojuelas grandes garantizan un apanado dorado y profesional que se mantiene ligero y no grasoso. Ideal para los amantes de la cocina que lo usan con frecuencia, este envase de 500g te permite tener siempre a mano el ingrediente clave para platos inolvidables."
-      }
-    ],
     "cuarto-creciente-mermeladas": [
       {
         "name": "Mermelada Dietética de Arándano Cuarto Creciente - 300g",
@@ -5301,6 +5290,64 @@
         ],
         "desc": "Despierta tus sentidos con el sabor cítrico y el punto justo de amargor de la naranja. Esta mermelada light es la compañera perfecta para tus tostadas integrales o para glasear carnes blancas. Al no tener azúcar agregada y ser libre de gluten, es la opción ideal para quienes buscan un sabor intenso y refrescante con menos calorías."
       }
-    ]
+    ],
+    "delicel": [
+  {
+    "name": "Premezcla Pan Casero Libre de Gluten - 500g",
+    "img": [
+      "https://delicel.com.ar/wp-content/uploads/2024/06/Premezclas1.webp"
+    ],
+    "desc": "Disfruta del aroma y el sabor del pan recién horneado en tu casa, ahora sin gluten. Esta premezcla para Pan Casero Delicel te permite preparar un pan blanco clásico, esponjoso y con una miga tierna de forma muy sencilla. Es la base perfecta para tus sándwiches o para disfrutar en el desayuno. Vuelve a sentir el placer de un pan casero y apto para celíacos."
+  },
+  {
+    "name": "Premezcla Pizza Libre de Gluten - 500g",
+    "img": [
+      "https://delicel.com.ar/wp-content/uploads/2024/06/Premezclas2.webp"
+    ],
+    "desc": "Organiza la noche de pizza perfecta y apta para todos. La Premezcla para Pizza Delicel te garantiza una masa elástica y fácil de trabajar para un resultado increíble: bordes crujientes y una base suave. Solo agrega tus ingredientes favoritos y disfruta de una auténtica pizza casera, pero totalmente libre de gluten. La solución ideal para tus reuniones."
+  },
+  {
+    "name": "Premezcla Universal Libre de Gluten - 500g",
+    "img": [
+      "https://delicel.com.ar/wp-content/uploads/2024/06/Premezclas3.webp"
+    ],
+    "desc": "La solución todo en uno para tu cocina sin TACC. La Premezcla Universal Delicel es tu aliada perfecta para crear desde panes y pastas hasta repostería, todo con una sola harina. Su fórmula balanceada te garantiza resultados excelentes y una textura ideal, permitiéndote adaptar tus recetas favoritas sin complicaciones. Cocina sin límites y sin gluten."
+  },
+  {
+    "name": "Bizcochuelo Chocolate Libre de Gluten - 500g",
+    "img": [
+      "https://delicel.com.ar/wp-content/uploads/2024/06/Premezclas4.webp"
+    ],
+    "desc": "Satisface tus antojos de chocolate con la torta más fácil y deliciosa. Esta premezcla para bizcochuelo Delicel te permite crear un postre intenso y esponjoso en minutos. Es la solución ideal para un cumpleaños o una merienda, garantizando un sabor a chocolate profundo y una textura perfecta, todo libre de gluten. Disfruta del placer de un buen bizcocho sin TACC."
+  },
+  {
+    "name": "Bizcochuelo Vainilla Libre de Gluten - 500g",
+    "img": [
+      "https://delicel.com.ar/wp-content/uploads/2024/06/Premezclas5.webp"
+    ],
+    "desc": "Disfruta del sabor clásico y reconfortante de la vainilla en un bizcochuelo esponjoso y perfecto. Esta premezcla Delicel es la base ideal para tus tortas de cumpleaños o para una merienda sencilla, garantizando una miga húmeda y un aroma delicioso. Es la forma más fácil de preparar un postre casero que encantará a todos, totalmente libre de gluten."
+  },
+  {
+    "name": "Rebozador Horneados & Frituras Libre de Gluten - 500g",
+    "img": [
+      "https://delicel.com.ar/wp-content/uploads/2024/06/Premezclas6.webp"
+    ],
+    "desc": "Logra esa cobertura dorada y extra crujiente en todos tus platos. El Rebozador Delicel está diseñado para horneados y frituras, garantizando un resultado perfecto, sea en milanesas, vegetales o nuggets. Hecho a base de maíz, este rebozador vegano y libre de gluten le da a tus comidas esa textura irresistible que tanto te gusta."
+  },
+  {
+    "name": "Premezcla Pan Integral Libre de Gluten - 500g",
+    "img": [
+      "https://delicel.com.ar/wp-content/uploads/2024/06/Premezclas7.webp"
+    ],
+    "desc": "Hornea un pan integral nutritivo y delicioso en tu propia casa. Esta premezcla Delicel te da la base perfecta, combinando arroz integral, garbanzo, sarraceno y semillas para un pan con gran sabor y textura. Es la opción ideal para un desayuno o merienda saludable, libre de gluten, lácteos y sin sal agregada."
+  },
+  {
+    "name": "Bizcochuelo Naranja Libre de Gluten - 500g",
+    "img": [
+      "https://pedidos.delicel.com.ar/thumb/1739293807467_800x800.jpg"
+    ],
+    "desc": "Prepara un bizcochuelo esponjoso y lleno de sabor a naranja sin complicaciones. Esta premezcla Delicel te soluciona la merienda, ofreciéndote la base perfecta para una torta deliciosa y apta para celíacos. Solo necesitas seguir las instrucciones y tendrás un postre casero, húmedo y con un aroma increíble. La forma más fácil de disfrutar la repostería sin gluten."
+  }
+]
   }
 }

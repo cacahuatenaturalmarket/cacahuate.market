@@ -676,22 +676,22 @@
 
             },
 
-            renderAllProducts() {
-
+          renderAllProducts() {
                 for (const categoryId in API.data.products) {
-
-                    API.data.products[categoryId].sort((a, b) => a.name.localeCompare(b.name));
+                    
+                    // --- LÍNEA COMENTADA ---
+                    // Esta línea se ha comentado para permitir un orden manual de los productos
+                    // desde el archivo productos.json. Si no se comenta, la página
+                    // siempre reordenará los productos alfabéticamente.
+                    //
+                    // API.data.products[categoryId].sort((a, b) => a.name.localeCompare(b.name));
+                    // --- FIN DE LÍNEA COMENTADA ---
 
                     const grid = document.getElementById(`${categoryId}-grid`);
-
                     if (grid) {
-
                         grid.innerHTML = API.data.products[categoryId].map(item => this.createCardHTML(item)).join('');
-
                     }
-
                 }
-
             },
 
             toggleModal(modal, show) {
