@@ -293,6 +293,11 @@
       "desc": "Galletitas integrales y dietéticas, con opciones sin azúcar agregado.",
       "subcategories": [
         {
+          "id": "delicel-galletas",
+          "title": "Delicel",
+          "desc": "Cookies y galletitas clásicas, 100% libres de gluten."
+        },
+        {
           "id": "limbus-veganas",
           "title": "Limbus Veganas",
           "desc": "Cookies integrales 100% vegetales, endulzadas con mascabo."
@@ -5454,6 +5459,57 @@
           "https://acdn-us.mitiendanube.com/stores/002/069/219/products/cookies-pasas-999eaee739674e05ae17371272502384-480-0.webp"
         ],
         "desc": "Vuelve al sabor clásico de la galleta de avena en su mejor versión. Esta cookie integral 100% vegetal es perfecta para recargar energías a media mañana. La combinación tradicional de pasas dulces, avena y el toque crujiente del maní, endulzada con mascabo, te da la energía que necesitas en un formato delicioso, saludable y sin colesterol."
+      }
+    ],
+    "delicel-galletas": [
+      {
+        "name": "Cookies Pepas Batata Delicel Libres de Gluten - 150g",
+        "img": [
+          "https://delicel.com.ar/wp-content/uploads/2024/06/Paquete-pepas-batata-1.webp"
+        ],
+        "desc": "Un clásico de la infancia que vuelve en su versión libre de gluten. Las Pepas de Batata Delicel son la opción perfecta para quienes aman el sabor de este tradicional dulce. La galletita suave y dulce con un generoso centro de dulce de batata es ideal para tus desayunos y meriendas. Disfruta de un bocado lleno de ternura y apto para celíacos."
+      },
+      {
+        "name": "Cookies Pepas Membrillo Libres de Gluten - 150g",
+        "img": [
+          "https://delicel.com.ar/wp-content/uploads/2024/06/Cookies1.webp"
+        ],
+        "desc": "Vuelve a disfrutar del clásico de las meriendas argentinas, ahora sin gluten. Las Pepas de Membrillo Delicel te traen el sabor de siempre en una galletita apta para celíacos. La suave masa sabor vainilla se combina a la perfección con el corazón de dulce de membrillo. El bocado ideal para acompañar el mate o el café con un gusto tradicional."
+      },
+      {
+        "name": "Cookies Sabor Chocolate Libres de Gluten - 150g",
+        "img": [
+          "https://delicel.com.ar/wp-content/uploads/2024/06/Cookies2.webp"
+        ],
+        "desc": "Satisface tu antojo de chocolate de la forma más deliciosa y sin TACC. Estas cookies Delicel te ofrecen un sabor intenso a cacao en una galletita crujiente y liviana. Son perfectas para acompañar tu café o para darte un gusto a media tarde. Disfruta del placer del chocolate sabiendo que son totalmente libres de gluten."
+      },
+      {
+        "name": "Cookies Sabor Coco Libres de Gluten - 150g",
+        "img": [
+          "https://delicel.com.ar/wp-content/uploads/2024/06/Cookies3.webp"
+        ],
+        "desc": "Déjate llevar por el sabor dulce y tropical del coco. Estas cookies Delicel son el bocado perfecto para una pausa deliciosa y apta para celíacos. Su suave textura y su auténtico gusto a coco las hacen ideales para acompañar tu infusión favorita. Un capricho ligero, libre de gluten y lleno de sabor para disfrutar sin preocupaciones."
+      },
+      {
+        "name": "Cookies Sabor Limón Libres de Gluten - 150g",
+        "img": [
+          "https://delicel.com.ar/wp-content/uploads/2024/06/Cookies5.webp"
+        ],
+        "desc": "Dale un toque fresco y cítrico a tus meriendas. Las cookies Delicel sabor Limón son la opción ideal para quienes buscan un bocado liviano y refrescante. Su delicado equilibrio entre dulzura y acidez las hace perfectas para acompañar un té. Disfruta de una galletita deliciosa, con todo el sabor del limón y completamente libre de gluten."
+      },
+      {
+        "name": "Cookies Sabor Naranja Libres de Gluten - 150g",
+        "img": [
+          "https://delicel.com.ar/wp-content/uploads/2024/06/Cookies7.webp"
+        ],
+        "desc": "Despierta tus sentidos con el vibrante sabor de la naranja. Las cookies Delicel sabor Naranja te ofrecen una experiencia cítrica y dulce en una galletita 100% libre de gluten. Su textura liviana y su aroma inconfundible las convierten en el snack ideal para una pausa refrescante a media mañana o para acompañar tu desayuno. El gusto perfecto para cuidarte."
+      },
+      {
+        "name": "Cookies Sabor Vainilla & Chips Libres de Gluten - 150g",
+        "img": [
+          "https://delicel.com.ar/wp-content/uploads/2024/06/Cookies8.webp"
+        ],
+        "desc": "Disfruta del clásico favorito de todos, ahora en su versión sin TACC. Las cookies Delicel de Vainilla con Chips de Chocolate son la combinación perfecta para un momento de placer. Su base de vainilla y la generosa cantidad de chips de chocolate las hacen irresistibles. Ideales para la merienda o para darte un gusto, con la confianza de ser 100% libres de gluten."
       }
     ]
   }
