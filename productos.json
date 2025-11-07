@@ -614,6 +614,11 @@
           "id": "roapipo",
           "title": "Roapipo",
           "desc": "Yerba mate orgánica de alta calidad en diferentes intensidades para cada tipo de matero."
+        },
+        {
+          "id": "verdeflor",
+          "title": "Verdeflor",
+          "desc": "Yerba mate tradicional y saborizada con hierbas."
         }
       ]
     },
@@ -5587,6 +5592,64 @@
           "https://static.wixstatic.com/media/fdb90a_4ac7f461813f40dabe7e34a6155f9cbd~mv2.png/v1/fill/w_630,h_694,al_c,lg_1,q_90,enc_avif,quality_auto/fdb90a_4ac7f461813f40dabe7e34a6155f9cbd~mv2.png"
         ],
         "desc": "Descubre una experiencia de mate más pura y aromática. La yerba mate Buenas y Santas es ideal para quienes buscan un sabor herbal refrescante en sus rondas diarias. Su gran diferencial es que está elaborada con una selección de hierbas reales, como burrito, menta y cedrón, en lugar de saborizantes artificiales. Disfruta de una infusión 100% natural, sin TACC y con un gusto auténtico que cuida tu bienestar."
+      }
+    ],
+    "verdeflor": [
+      {
+        "name": "Boldo - 500g",
+        "img": [
+          "https://yerbaverdeflor.com/wp-content/uploads/2025/08/2025-04-10-R01-RENDER-Verdeflor-3-4-500g-Boldo-copia-de-tamano-grande.jpeg"
+        ],
+        "desc": "Cuida tu bienestar digestivo sin dejar de disfrutar un buen mate. Esta yerba está pensada para después de las comidas, combinando yerba mate, poleo, menta y las reconocidas propiedades del boldo. Es la opción ideal para quienes buscan una infusión que ayude a sentirse más liviano, con un sabor herbal y refrescante. Tu aliado perfecto para una sobremesa placentera."
+      },
+      {
+        "name": "Cedrón - 500g",
+        "img": [
+          "https://yerbaverdeflor.com/wp-content/uploads/2025/08/2025-04-10-R01-RENDER-Verdeflor-3-4-500g-Cedron-copia-de-tamano-grande.jpeg"
+        ],
+        "desc": "Disfruta de una pausa relajante con el aroma cítrico y suave del cedrón. Esta yerba combina la yerba mate con poleo y cedrón, creando una infusión delicada y reconfortante. Es la elección ideal para quienes buscan un mate con propiedades digestivas y un sabor herbal suave con notas alimonadas. El equilibrio perfecto para tu momento de calma."
+      },
+      {
+        "name": "Hierbas Serranas - 500g",
+        "img": [
+          "https://yerbaverdeflor.com/wp-content/uploads/2025/08/2025-04-10-R01-RENDER-Verdeflor-3-4-500g-Hierbas-copia-de-tamano-grande.jpeg"
+        ],
+        "desc": "Renueva tu mate con el sabor fresco y natural de las sierras. Esta yerba combina una selección de poleo, menta, cedrón y burro, creando una infusión aromática y digestiva. Es ideal para quienes buscan un sabor más suave y herbal que el de la yerba tradicional. La mezcla perfecta para disfrutar de un mate reconfortante y ligero a cualquier hora."
+      },
+      {
+        "name": "Melisa - 500g",
+        "img": [
+          "https://yerbaverdeflor.com/wp-content/uploads/2025/08/2025-04-10-R01-RENDER-Verdeflor-3-4-500g-Melisa-copia-de-tamano-grande.jpeg"
+        ],
+        "desc": "Encuentra tu momento de tranquilidad con esta suave combinación. Esta yerba mezcla la yerba mate con poleo y melisa, conocida por sus propiedades calmantes. Es la infusión ideal para disfrutar de un mate reconfortante y con un sabor delicado, perfecto para bajar revoluciones al final del día. Una caricia herbal en tu mate de siempre."
+      },
+      {
+        "name": "Menta - 500g",
+        "img": [
+          "https://yerbaverdeflor.com/wp-content/uploads/2025/08/2025-04-10-R01-RENDER-Verdeflor-3-4-500g-Menta-copia-de-tamano-grande.jpeg"
+        ],
+        "desc": "Refresca tus sentidos con la infusión más estimulante. Esta yerba te ofrece una mezcla vibrante de yerba mate, poleo y un toque dominante de menta. Es la opción perfecta para un mate con una frescura intensa que despeja el paladar, ideal tanto para beber caliente como para preparar un tereré revitalizante. El sabor que te renueva en cada cebada."
+      },
+      {
+        "name": "Naranja - 500g",
+        "img": [
+          "https://yerbaverdeflor.com/wp-content/uploads/2025/08/2025-04-10-R01-RENDER-Verdeflor-3-4-500g-Naranja-copia-de-tamano-grande.jpeg"
+        ],
+        "desc": "Dale un giro cítrico y dulce a tus mates con esta deliciosa combinación. Esta yerba fusiona la yerba mate con hierbas serranas y un intenso sabor a naranja. Es la opción perfecta para quienes buscan una infusión aromática, frutal y menos amarga que la tradicional. Ideal para disfrutar en el desayuno o en una ronda de tereré bien frío."
+      },
+      {
+        "name": "Peperina - 500g",
+        "img": [
+          "https://yerbaverdeflor.com/wp-content/uploads/2025/08/2025-04-10-R01-RENDER-Verdeflor-3-4-500g-.Peperina-copia-de-tamano-grande.jpeg"
+        ],
+        "desc": "Siente la frescura clásica de la peperina en cada mate. Esta yerba combina la intensidad de la yerba mate con el aroma inconfundible de la peperina, el poleo y la menta. Es la elección ideal para quienes disfrutan de un mate vigorizante, refrescante y con un sabor mentolado que perdura. Una de las mezclas más elegidas por su equilibrio y frescura."
+      },
+      {
+        "name": "Tradicional - 1Kg",
+        "img": [
+          "https://yerbaverdeflor.com/wp-content/uploads/2025/08/2025-04-14-RR01-RENDER-Verdeflor-3-4-1Kg-TRadicional-copia-de-tamano-grande.jpeg"
+        ],
+        "desc": "Disfruta del auténtico sabor del mate argentino con la calidad de siempre. Esta yerba 100% tradicional y elaborada con palo te ofrece el gusto equilibrado y el amargor justo que buscas para tus rondas diarias. Su molienda garantiza un mate rendidor que acompaña tus momentos. El formato de 1kg es ideal para que nunca te falte tu compañera de todos los días."
       }
     ]
   }
