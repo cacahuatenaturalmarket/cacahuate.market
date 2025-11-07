@@ -5535,7 +5535,7 @@
       {
         "name": "Diabest Dietéticas Algarroba - 200g",
         "img": [
-          "https://acdn-us.mitiendanube.com/stores/001/172/573/products/1000786331-68e2d2c97f94c8849517610821614552-1024-1024.webp"
+          "https://http2.mlstatic.com/D_NQ_NP_2X_731576-MLA90838192972_082025-F.webp"
         ],
         "desc": "Descubre la dulzura natural de la algarroba en una galletita dietética y a base de plantas. Las Diabest de Algarroba te ofrecen un sabor profundo y distintivo, ideal para quienes buscan una alternativa al chocolate. Su fórmula sin azúcar agregada es perfecta para un snack nutritivo y diferente. Un bocado lleno de fibra para disfrutar en cualquier momento del día."
       },
@@ -5545,6 +5545,34 @@
           "https://integraliaalimentos.com.ar/wp-content/uploads/2019/06/IntegraliaDiabestLimon.png"
         ],
         "desc": "Refresca tus pausas con el toque cítrico del limón. Las galletitas Diabest de Limón y Avena son la alternativa ideal para una colación ligera y llena de sabor, sin azúcar agregada. La combinación de la avena con la frescura del limón las hace deliciosas y nutritivas. Un bocado saludable, sin conservantes ni grasas trans, para disfrutar sin culpas."
+      },
+      {
+        "name": "Galletitas Integralia de Avena y Limón - 220g",
+        "img": [
+          "https://integraliaalimentos.com.ar/wp-content/uploads/2019/06/IntegraliaAritos-AvenaLimon.png"
+        ],
+        "desc": "Empieza tu día con energía y un toque refrescante. Estas galletitas integrales de Avena y Limón son perfectas para un desayuno nutritivo o una pausa saludable a media mañana. Su base de avena aporta fibra saciante, mientras que la ralladura natural de limón les da un sabor cítrico inigualable. Un bocado delicioso, sin grasas trans, para cuidarte con todo el gusto."
+      },
+      {
+        "name": "Galletitas Integralia de Cacao y Naranja - 220g",
+        "img": [
+          "https://integraliaalimentos.com.ar/wp-content/uploads/2019/06/IntegraliaAritosCacao.png"
+        ],
+        "desc": "Descubre una combinación de sabor irresistible y nutritiva. Estas galletitas integrales de Cacao y Naranja son el snack perfecto para los amantes del chocolate con un toque gourmet. El cacao intenso se equilibra con la frescura de la ralladura de naranja natural. Una opción deliciosa, 100% vegana y sin grasas trans para una merienda con personalidad."
+      },
+      {
+        "name": "Galletitas Integralia de Coco - 220g",
+        "img": [
+          "https://integraliaalimentos.com.ar/wp-content/uploads/2019/06/IntegraliaAritosCoco.png"
+        ],
+        "desc": "Satisface tus ganas de algo dulce de la forma más natural. Las galletitas integrales de Coco son el bocado ideal para acompañar tu café o para sumar a un bowl de frutas y yogur. Hechas con ralladura natural de coco, te ofrecemos un sabor tropical auténtico y una textura crujiente. Una fuente de fibra deliciosa y sin grasas trans para tus pausas diarias."
+      },
+      {
+        "name": "Galletitas Integralia de Salvado y Limón - 220g",
+        "img": [
+          "https://integraliaalimentos.com.ar/wp-content/uploads/2019/06/IntegraliaAritosSalvado.png"
+        ],
+        "desc": "Potencia tu bienestar con un extra de fibra en cada bocado. Las galletitas integrales de Salvado y Limón son la opción ideal para un desayuno ligero o una merienda que te ayude a sentirte saciado. La base de salvado aporta beneficios digestivos, mientras que la ralladura de limón natural le da un sabor fresco y delicioso. La galletita perfecta para cuidarte por dentro."
       }
     ]
   }
