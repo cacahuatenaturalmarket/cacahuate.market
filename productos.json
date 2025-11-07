@@ -606,6 +606,11 @@
       "desc": "Yerba mate orgánica de alta calidad en diferentes intensidades para cada tipo de matero.",
       "subcategories": [
         {
+          "id": "9-yuyos",
+          "title": "9 Yuyos",
+          "desc": "Yerba mate funcional con mezclas de hierbas 100% naturales."
+        },
+        {
           "id": "buenas-y-santas",
           "title": "Buenas y Santas",
           "desc": "Yerba mate elaborada con hierbas reales, 100% natural y sin TACC."
@@ -5650,6 +5655,50 @@
           "https://yerbaverdeflor.com/wp-content/uploads/2025/08/2025-04-14-RR01-RENDER-Verdeflor-3-4-1Kg-TRadicional-copia-de-tamano-grande.jpeg"
         ],
         "desc": "Disfruta del auténtico sabor del mate argentino con la calidad de siempre. Esta yerba 100% tradicional y elaborada con palo te ofrece el gusto equilibrado y el amargor justo que buscas para tus rondas diarias. Su molienda garantiza un mate rendidor que acompaña tus momentos. El formato de 1kg es ideal para que nunca te falte tu compañera de todos los días."
+      }
+    ],
+    "9-yuyos": [
+      {
+        "name": "9 Yuyos Yerba Mate Burrito - 500g",
+        "img": [
+          "https://elpastorcito.com.ar/wp-content/uploads/2023/12/yerba-burrito.png"
+        ],
+        "desc": "Disfruta de la frescura digestiva de las sierras en tu mate. Esta mezcla combina la yerba mate con el aroma inconfundible del burrito, té verde, menta y peperina. Es la opción ideal para quienes buscan un mate más suave, libre de acidez y con propiedades que ayudan a la digestión. Un blend 100% vegano y natural para una pausa reconfortante."
+      },
+      {
+        "name": "9 Yuyos Yerba Mate con Jengibre, Limón y Miel - 500g",
+        "img": [
+          "https://elpastorcito.com.ar/wp-content/uploads/2021/11/YERBA-JENGIBRE-500x500.png"
+        ],
+        "desc": "Revitaliza tu día con una combinación de sabores vibrante y reconfortante. Esta yerba fusiona el mate y el té verde con el toque picante del jengibre, el cítrico del limón y una nota dulce de miel. Es la mezcla perfecta para fortalecer tus defensas o para disfrutar de un mate con una personalidad única. Un blend funcional y delicioso."
+      },
+      {
+        "name": "9 Yuyos Yerba Mate Guaraná - 500g",
+        "img": [
+          "https://elpastorcito.com.ar/wp-content/uploads/2023/12/Guarana.png"
+        ],
+        "desc": "Activa tu energía al máximo con esta potente mezcla estimulante. Esta yerba combina el mate con té verde y el poder natural del guaraná, creando la infusión ideal para arrancar la mañana o potenciar tu rendimiento. Es un blend 100% vegano, libre de acidez y Sin TACC, diseñado para darte ese \"Natural Power\" que necesitas."
+      },
+      {
+        "name": "9 Yuyos Yerba Mate Sabor Limón - 500g",
+        "img": [
+          "https://elpastorcito.com.ar/wp-content/uploads/2021/11/YERBA-LIMON-768x768.png"
+        ],
+        "desc": "Dale un giro refrescante a tus mates con esta mezcla cítrica y natural. Esta yerba combina el mate con té verde, carqueja y un blend de 9 hierbas, destacando la frescura de la cáscara de limón y pomelo. Es la opción perfecta para quienes buscan una infusión que ayude al bienestar digestivo y ofrezca un sabor vibrante."
+      },
+      {
+        "name": "9 Yuyos Yerba Mate Sabor Naranja - 500g",
+        "img": [
+          "https://elpastorcito.com.ar/wp-content/uploads/2021/11/YERBA-NARANJA-500x500.png"
+        ],
+        "desc": "Disfruta de una infusión cítrica y funcional que cuida tu bienestar. Esta yerba combina la energía del mate con una mezcla de 9 hierbas, té verde y el toque aromático de la naranja y pomelo. Es ideal para quienes buscan un mate con un perfil de sabor refrescante y propiedades beneficiosas. Un blend 100% natural, pensado para ayudarte a sentirte más liviano."
+      },
+      {
+        "name": "9 Yuyos Yerba Mate Tradicional - 500g",
+        "img": [
+          "https://elpastorcito.com.ar/wp-content/uploads/2021/11/yerbamate-9-yuyos-1.png"
+        ],
+        "desc": "Disfruta de la mezcla original que lo empezó todo, ideal para sentirte bien y liviano. Esta yerba combina el mate con un blend de 9 hierbas seleccionadas como carqueja, té verde y rosa mosqueta, diseñada para ofrecer beneficios digestivos y depurativos. Es la opción perfecta para quienes buscan una infusión 100% natural, sin acidez y con todo el sabor de las sierras."
       }
     ]
   }
