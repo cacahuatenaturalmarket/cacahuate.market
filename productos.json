@@ -606,6 +606,11 @@
       "desc": "Yerba mate orgánica de alta calidad en diferentes intensidades para cada tipo de matero.",
       "subcategories": [
         {
+          "id": "buenas-y-santas",
+          "title": "Buenas y Santas",
+          "desc": "Yerba mate elaborada con hierbas reales, 100% natural y sin TACC."
+        },
+        {
           "id": "roapipo",
           "title": "Roapipo",
           "desc": "Yerba mate orgánica de alta calidad en diferentes intensidades para cada tipo de matero."
@@ -5573,6 +5578,15 @@
           "https://integraliaalimentos.com.ar/wp-content/uploads/2019/06/IntegraliaAritosSalvado.png"
         ],
         "desc": "Potencia tu bienestar con un extra de fibra en cada bocado. Las galletitas integrales de Salvado y Limón son la opción ideal para un desayuno ligero o una merienda que te ayude a sentirte saciado. La base de salvado aporta beneficios digestivos, mientras que la ralladura de limón natural le da un sabor fresco y delicioso. La galletita perfecta para cuidarte por dentro."
+      }
+    ],
+    "buenas-y-santas": [
+      {
+        "name": "Buenas y Santas con Hierbas Reales - 500g",
+        "img": [
+          "https://static.wixstatic.com/media/fdb90a_4ac7f461813f40dabe7e34a6155f9cbd~mv2.png/v1/fill/w_630,h_694,al_c,lg_1,q_90,enc_avif,quality_auto/fdb90a_4ac7f461813f40dabe7e34a6155f9cbd~mv2.png"
+        ],
+        "desc": "Descubre una experiencia de mate más pura y aromática. La yerba mate Buenas y Santas es ideal para quienes buscan un sabor herbal refrescante en sus rondas diarias. Su gran diferencial es que está elaborada con una selección de hierbas reales, como burrito, menta y cedrón, en lugar de saborizantes artificiales. Disfruta de una infusión 100% natural, sin TACC y con un gusto auténtico que cuida tu bienestar."
       }
     ]
   }
