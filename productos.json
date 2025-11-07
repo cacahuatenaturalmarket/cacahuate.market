@@ -298,6 +298,11 @@
           "desc": "Cookies y galletitas clásicas, 100% libres de gluten."
         },
         {
+          "id": "integralia-diabest",
+          "title": "Integralia-Diabest",
+          "desc": "Galletitas dietéticas de avena y algarroba, sin azúcar agregada."
+        },
+        {
           "id": "limbus-veganas",
           "title": "Limbus Veganas",
           "desc": "Cookies integrales 100% vegetales, endulzadas con mascabo."
@@ -5510,6 +5515,36 @@
           "https://delicel.com.ar/wp-content/uploads/2024/06/Cookies8.webp"
         ],
         "desc": "Disfruta del clásico favorito de todos, ahora en su versión sin TACC. Las cookies Delicel de Vainilla con Chips de Chocolate son la combinación perfecta para un momento de placer. Su base de vainilla y la generosa cantidad de chips de chocolate las hacen irresistibles. Ideales para la merienda o para darte un gusto, con la confianza de ser 100% libres de gluten."
+      }
+    ],
+    "integralia-diabest": [
+      {
+        "name": "Diabest Chocolate y Avena Sin Azúcar Agregada - 200g",
+        "img": [
+          "https://integraliaalimentos.com.ar/wp-content/uploads/2019/06/IntegraliaDiabestChocoate.png"
+        ],
+        "desc": "Date el gusto de un sabor clásico y saludable. Las galletitas Diabest de Chocolate y Avena están especialmente formuladas sin azúcar agregada, siendo ideales para quienes buscan controlar su ingesta. Su base de avena aporta fibra, mientras que el chocolate da ese toque delicioso. Son perfectas para una merienda o colación nutritiva, sin grasas trans ni conservantes."
+      },
+      {
+        "name": "Diabest Coco y Avena Sin Azúcar Agregada - 200g",
+        "img": [
+          "https://integraliaalimentos.com.ar/wp-content/uploads/2019/06/IntegraliaDiabestCoco.png"
+        ],
+        "desc": "Disfruta del sabor tropical del coco en una galletita pensada para tu bienestar. Las Diabest de Coco y Avena combinan la fibra de la avena con el dulzor natural del coco, sin azúcar agregada. Son la opción perfecta para acompañar tus infusiones, ofreciéndote un bocado liviano, libre de grasas trans y sin colorantes artificiales. El snack ideal para cuidarte con gusto."
+      },
+      {
+        "name": "Diabest Dietéticas Algarroba - 200g",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/172/573/products/1000786331-68e2d2c97f94c8849517610821614552-1024-1024.webp"
+        ],
+        "desc": "Descubre la dulzura natural de la algarroba en una galletita dietética y a base de plantas. Las Diabest de Algarroba te ofrecen un sabor profundo y distintivo, ideal para quienes buscan una alternativa al chocolate. Su fórmula sin azúcar agregada es perfecta para un snack nutritivo y diferente. Un bocado lleno de fibra para disfrutar en cualquier momento del día."
+      },
+      {
+        "name": "Diabest Limón y Avena Sin Azúcar Agregada - 200g",
+        "img": [
+          "https://integraliaalimentos.com.ar/wp-content/uploads/2019/06/IntegraliaDiabestLimon.png"
+        ],
+        "desc": "Refresca tus pausas con el toque cítrico del limón. Las galletitas Diabest de Limón y Avena son la alternativa ideal para una colación ligera y llena de sabor, sin azúcar agregada. La combinación de la avena con la frescura del limón las hace deliciosas y nutritivas. Un bocado saludable, sin conservantes ni grasas trans, para disfrutar sin culpas."
       }
     ]
   }
