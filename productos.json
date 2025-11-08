@@ -293,6 +293,11 @@
       "desc": "Galletitas integrales y dietéticas, con opciones sin azúcar agregado.",
       "subcategories": [
         {
+          "id": "alimentos-naturales",
+          "title": "Alimentos Naturales",
+          "desc": "Galletitas de avena y semillas, 0% grasas trans y colesterol."
+        },
+        {
           "id": "crelech-galletas",
           "title": "Crelech",
           "desc": "Materitas light, 0% azúcares, -70% grasas y fuente de fibra."
@@ -5874,6 +5879,29 @@
           "https://acdn-us.mitiendanube.com/stores/093/780/products/galletitassantamariavainilla-1a12d39dd66900339e17488179468537-480-0.webp"
         ],
         "desc": "El sabor clásico de la vainilla, ahora apto para todos. Estas galletitas son la compañía ideal para cualquier infusión o para la leche de los más chicos. Su receta simple y deliciosa, totalmente libre de gluten, lactosa y grasas trans, las convierte en la opción segura y confiable para tus desayunos y meriendas de todos los días."
+      }
+    ],
+    "alimentos-naturales": [
+      {
+        "name": "Avena y Pasas - 180g",
+        "img": [
+          "https://marinozzisa.com/wp-content/uploads/2021/07/AVENA-Y-PASAS-1.png"
+        ],
+        "desc": "Disfruta del sabor clásico que nunca falla, en su versión más saludable. Estas galletitas de Avena y Pasas te ofrecen un bocado dulce y nutritivo, ideal para recargar energías a media tarde. Su alto contenido en fibra, junto al dulzor natural de las pasas, las hace perfectas para un gusto sin culpa. Una opción 0% colesterol y 0% grasas trans."
+      },
+      {
+        "name": "Avena, Copos de Maíz y Salvado - 180g",
+        "img": [
+          "https://marinozzisa.com/wp-content/uploads/2021/07/AVENA-1.png"
+        ],
+        "desc": "Comienza tu día con la máxima energía y fibra. Estas galletitas combinan avena, copos de maíz y salvado para una nutrición superior, siendo perfectas para un desayuno saciante que te acompaña toda la mañana. Su textura rústica y su dulzor equilibrado, sin grasas trans ni colesterol, las convierten en tu aliado saludable para cada día."
+      },
+      {
+        "name": "Sésamo y Lino - 180g",
+        "img": [
+          "https://marinozzisa.com/wp-content/uploads/2021/07/SESAMO-Y-LINO-1.png"
+        ],
+        "desc": "Enriquece tus pausas con el poder de las semillas. Estas galletitas de Sésamo y Lino son ideales para una merienda nutritiva, aportando un alto contenido de fibra y Omega 9. Su textura crujiente y su sabor tostado las hacen perfectas para acompañar el mate o un yogur. Una opción deliciosa para cuidarte, 0% grasas trans y 0% colesterol."
       }
     ]
   }
