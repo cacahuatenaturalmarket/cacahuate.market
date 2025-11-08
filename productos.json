@@ -293,6 +293,11 @@
       "desc": "Galletitas integrales y dietéticas, con opciones sin azúcar agregado.",
       "subcategories": [
         {
+          "id": "crelech-galletas",
+          "title": "Crelech",
+          "desc": "Materitas light, 0% azúcares, -70% grasas y fuente de fibra."
+        },
+        {
           "id": "delicel-galletas",
           "title": "Delicel",
           "desc": "Cookies y galletitas clásicas, 100% libres de gluten."
@@ -5699,6 +5704,29 @@
           "https://elpastorcito.com.ar/wp-content/uploads/2021/11/yerbamate-9-yuyos-1.png"
         ],
         "desc": "Disfruta de la mezcla original que lo empezó todo, ideal para sentirte bien y liviano. Esta yerba combina el mate con un blend de 9 hierbas seleccionadas como carqueja, té verde y rosa mosqueta, diseñada para ofrecer beneficios digestivos y depurativos. Es la opción perfecta para quienes buscan una infusión 100% natural, sin acidez y con todo el sabor de las sierras."
+      }
+    ],
+    "crelech-galletas": [
+      {
+        "name": "Materitas Crelech Light Coco - 180g",
+        "img": [
+          "https://www.crelech.com/wp-content/uploads/2018/05/Materitas2-300x300.png"
+        ],
+        "desc": "Dale un toque tropical a tu ritual del mate sin descuidar tu línea. Las Materitas Crelech Light de Coco son la opción perfecta para disfrutar sin remordimientos, gracias a su fórmula 0% azúcares, -70% grasas y su aporte de fibra. El delicioso y aromático sabor a coco realza tu pausa matera, convirtiéndola en un momento de placer saludable."
+      },
+      {
+        "name": "Materitas Crelech Light Naranja - 180g",
+        "img": [
+          "https://www.crelech.com/wp-content/uploads/2018/05/Materitas1-300x300.png"
+        ],
+        "desc": "Refresca tu ronda de mates con un toque cítrico y ligero. Las Materitas Crelech Light de Naranja son el snack dietético ideal para cuidarte, ya que son 0% azúcares, -70% grasas y fuente de fibra. Su vibrante sabor a naranja las hace perfectas para cortar el amargor del mate y disfrutar de una pausa deliciosa y sin culpas."
+      },
+      {
+        "name": "Materitas Crelech Light Vainilla - 180g",
+        "img": [
+          "https://www.crelech.com/wp-content/uploads/2018/05/Materitas3-300x300.png"
+        ],
+        "desc": "Acompaña tus mates de la forma más saludable. Las Materitas Crelech Light de Vainilla son el bocado ideal para disfrutar sin culpas, ya que tienen 0% azúcares, -70% grasas y son fuente de fibra. Su clásico y suave sabor a vainilla las convierte en la compañía dietética perfecta para tu infusión favorita, cuidando tu bienestar en cada ronda."
       }
     ]
   }
