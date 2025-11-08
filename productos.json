@@ -313,6 +313,11 @@
           "desc": "Cookies integrales 100% vegetales, endulzadas con mascabo."
         },
         {
+          "id": "moms",
+          "title": "Mom's",
+          "desc": "Galletas artesanales de avena, plant-based y proteicas."
+        },
+        {
           "id": "nutresan",
           "title": "Nutresan",
           "desc": "Galletitas integrales y dietéticas, con opciones sin azúcar agregado."
@@ -5727,6 +5732,99 @@
           "https://www.crelech.com/wp-content/uploads/2018/05/Materitas3-300x300.png"
         ],
         "desc": "Acompaña tus mates de la forma más saludable. Las Materitas Crelech Light de Vainilla son el bocado ideal para disfrutar sin culpas, ya que tienen 0% azúcares, -70% grasas y son fuente de fibra. Su clásico y suave sabor a vainilla las convierte en la compañía dietética perfecta para tu infusión favorita, cuidando tu bienestar en cada ronda."
+      }
+    ],
+    "moms": [
+      {
+        "name": "Cookie + Proteína Mom's Sabor Chocolate y Nuez - 60g",
+        "img": [
+          "https://moms.com.ar/wp-content/uploads/2025/05/Galletas-de-Avena-Proteicas-sabor-Chocolate-y-Nuez-moms-1080px.jpg"
+        ],
+        "desc": "Potencia tu rendimiento con el snack funcional perfecto. Esta cookie artesanal está diseñada para la recuperación, cargada con 12 gramos de proteína a base de avena y soja. Su delicioso sabor a chocolate y nuez la convierte en el bocado ideal post-entrenamiento o para un día exigente. Energía y nutrición en una sola galleta."
+      },
+      {
+        "name": "Cookie + Proteína Mom's Sabor Lemón Pie - 60g",
+        "img": [
+          "https://moms.com.ar/wp-content/uploads/2025/05/Galletas-de-Avena-Proteicas-sabor-Lemon-Pie-moms-1080px.jpg"
+        ],
+        "desc": "Dale un gusto refrescante a tus músculos. Esta cookie proteica artesanal te ofrece 12 gramos de proteína con el sabor inconfundible del lemon pie. Hecha a base de avena, soja y maní, es el snack ideal para recuperarte después de entrenar o para una colación saciante y nutritiva. El sabor de un postre, con la nutrición que necesitas."
+      },
+      {
+        "name": "Mom's de Avena Sabor Almendra - 60g",
+        "img": [
+          "https://moms.com.ar/wp-content/uploads/2024/07/Galletas-de-Avena-sabor-ALMENDRA-paquete-moms-1080px.jpg"
+        ],
+        "desc": "Disfruta de un sabor delicado y nutritivo. Esta galleta de avena artesanal resalta el gusto sutil y natural de la almendra. Es la compañía perfecta para una infusión, ofreciéndote un bocado saludable, fuente de fibra y proteínas, y sin conservantes. La opción ideal para un snack simple y reconfortante."
+      },
+      {
+        "name": "Mom's de Avena Sabor Arándanos - 60g",
+        "img": [
+          "https://moms.com.ar/wp-content/uploads/2024/03/Galleta-de-Avena-sabor-Arandanos-Paquete-moms-1080px.jpg"
+        ],
+        "desc": "Dale un toque frutal y antioxidante a tu pausa. Esta galleta de avena artesanal resalta el sabor agridulce de los arándanos en una base nutritiva. Es la opción ideal para una merienda ligera o para acompañar un yogur, aportando fibra y proteínas en un delicioso bocado plant-based y sin conservantes."
+      },
+      {
+        "name": "Mom's de Avena Sabor Cacao y Naranja - 60g",
+        "img": [
+          "https://moms.com.ar/wp-content/uploads/2024/05/Galletas-de-Avena-sabor-Cacao-y-Naranja-paquete-moms-1080px.jpg"
+        ],
+        "desc": "Descubre una combinación gourmet y energizante. Esta galleta de avena une la intensidad del cacao puro con la frescura aromática de la naranja. Es el bocado perfecto para elevar tu pausa de café, ofreciéndote un sabor sofisticado en una galleta artesanal, plant-based y fuente de fibra."
+      },
+      {
+        "name": "Mom's de Avena Sabor Chocolate - 60g",
+        "img": [
+          "https://moms.com.ar/wp-content/uploads/2024/03/Galleta-de-avena-y-chispas-de-chocolate-paquete-1080px-1.jpg"
+        ],
+        "desc": "Satisface tu antojo de dulce con el clásico sabor a chocolate. Esta galleta artesanal de avena es ideal para acompañar tu café o como un snack a media tarde. Su fórmula plant-based, con avena y proteínas, la convierte en un capricho delicioso, sin conservantes y con toda la fibra que necesitas para seguir tu día."
+      },
+      {
+        "name": "Mom's de Avena Sabor Crumble de Coco - 60g",
+        "img": [
+          "https://moms.com.ar/wp-content/uploads/2024/05/Galletas-de-Avena-sabor-crumble-de-coco-paquete-moms-1080px.jpg"
+        ],
+        "desc": "Transporta tus sentidos al trópico con esta galleta artesanal. El sabor Crumble de Coco combina la textura rústica de la avena con el dulzor y aroma del coco rallado. Es la opción ideal para una pausa dulce, 100% plant-based y fuente de fibra. El gusto de un postre de coco en un snack nutritivo y sin conservantes."
+      },
+      {
+        "name": "Mom's de Avena Sabor Dulce de Leche - 60g",
+        "img": [
+          "https://moms.com.ar/wp-content/uploads/2024/05/Galletas-de-Avena-sabor-Dulce-de-Leche-Paquete-moms-1080px.jpg"
+        ],
+        "desc": "Date el gusto más argentino con esta galleta artesanal de avena. El sabor a Dulce de Leche le da el toque de postre perfecto a una base nutritiva. Es ideal para acompañar el mate, el café o como un capricho dulce a media tarde, ofreciéndote fibra y proteínas sin conservantes. El equilibrio perfecto entre lo saludable y lo delicioso."
+      },
+      {
+        "name": "Mom's de Avena Sabor Granola - 60g",
+        "img": [
+          "https://moms.com.ar/wp-content/uploads/2024/03/Galletas-de-Avena-sabor-Granola-Paquete-moms-1080px.jpg"
+        ],
+        "desc": "Disfruta de toda la energía de un bowl de granola en una sola galleta. Esta galleta de avena artesanal sabor Granola es perfecta para un desayuno al paso o para recargar fuerzas antes de entrenar. Su mezcla de cereales y semillas, 100% plant-based, te ofrece una fuente de fibra y proteínas en un formato práctico y delicioso. El desayuno hecho galleta."
+      },
+      {
+        "name": "Mom's de Avena Sabor Limón y Chocolate Blanco - 60g",
+        "img": [
+          "https://moms.com.ar/wp-content/uploads/2024/05/Galletas-de-Avena-Limon-con-Chocolate-Blanco_paquete-moms-1080px.jpg"
+        ],
+        "desc": "Experimenta un equilibrio de sabor único y delicioso. Esta galleta de avena artesanal combina la acidez refrescante del limón con la dulzura cremosa del chocolate blanco. Es la opción ideal para darte un gusto diferente y sofisticado, mientras te beneficias de la avena como fuente de fibra y proteínas."
+      },
+      {
+        "name": "Mom's de Avena Sabor Maní con Chocolate - 60g",
+        "img": [
+          "https://moms.com.ar/wp-content/uploads/2024/03/Galletas-de-Avena-sabor-mani-con-chocolate-Paquete-moms-1080px.jpg"
+        ],
+        "desc": "La combinación perfecta de dulce y salado en una galleta nutritiva. Esta galleta de avena artesanal une la intensidad del maní con la dulzura del chocolate. Es el snack ideal para recargar energías a media tarde, ofreciéndote proteínas y fibra en un formato delicioso, plant-based y sin conservantes."
+      },
+      {
+        "name": "Mom's de Avena Sabor Mix de Frutos Secos - 60g",
+        "img": [
+          "https://moms.com.ar/wp-content/uploads/2024/03/Galletas-de-Avena-Mix-de-Frutos-Secos-Paquete-1U-moms-1080px.jpg"
+        ],
+        "desc": "Recarga tu día con la máxima energía. Esta galleta de avena artesanal está cargada con un delicioso mix de frutos secos, ofreciendo una textura crujiente y un gran valor nutricional. Es la colación perfecta para antes de entrenar o para un día agitado, dándote proteínas y fibra de forma 100% plant-based"
+      },
+      {
+        "name": "Mom's de Avena Sabor Pasas de Uva - 60g",
+        "img": [
+          "https://moms.com.ar/wp-content/uploads/2024/05/Galleta-de-Avena-con-Pasas-de-Uva-paquete-moms-1080px.jpg"
+        ],
+        "desc": "Disfruta del sabor más tradicional y reconfortante. Esta galleta artesanal de avena con pasas de uva es la opción perfecta para un desayuno rápido que te llene de energía. Su receta plant-based te ofrece una fuente de fibra y proteínas en un bocado clásico, ideal para empezar el día de forma nutritiva."
       }
     ]
   }
