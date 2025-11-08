@@ -321,6 +321,11 @@
           "id": "nutresan",
           "title": "Nutresan",
           "desc": "Galletitas integrales y dietéticas, con opciones sin azúcar agregado."
+        },
+        {
+          "id": "santa-maria-galletas",
+          "title": "Santa Maria",
+          "desc": "Galletitas clásicas sin gluten y sin lactosa."
         }
       ]
     },
@@ -5825,6 +5830,50 @@
           "https://moms.com.ar/wp-content/uploads/2024/05/Galleta-de-Avena-con-Pasas-de-Uva-paquete-moms-1080px.jpg"
         ],
         "desc": "Disfruta del sabor más tradicional y reconfortante. Esta galleta artesanal de avena con pasas de uva es la opción perfecta para un desayuno rápido que te llene de energía. Su receta plant-based te ofrece una fuente de fibra y proteínas en un bocado clásico, ideal para empezar el día de forma nutritiva."
+      }
+    ],
+    "santa-maria-galletas": [
+      {
+        "name": "Chocolate Sin Gluten - 200g",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/093/780/products/galletitasdulceschocolatesantamaria-8c81919f35878a1fd617505393599603-480-0.webp"
+        ],
+        "desc": "Date el gusto de un sabor intenso a cacao en una galletita apta para celíacos. Estas galletitas de chocolate son la opción ideal para acompañar la leche o para una merienda deliciosa. Su receta, sin lactosa, sin grasas trans y sin conservantes, las convierte en un capricho seguro y delicioso para disfrutar sin preocupaciones."
+      },
+      {
+        "name": "Limón Sin Gluten - 200g",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/093/780/products/santamariagallesdelimon-42f955d27eca54f79517512974377487-480-0.webp"
+        ],
+        "desc": "Disfruta de un toque fresco y cítrico en tus pausas. Estas galletitas sabor limón son perfectas para acompañar un té o un café, ofreciendo un bocado liviano y refrescante. Su gran diferencial es que son totalmente libres de gluten, lactosa y grasas trans, permitiéndote disfrutar de un snack delicioso y apto para todos."
+      },
+      {
+        "name": "Marmoladas Sin Gluten - 200g",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/093/780/products/galletitassantamariamarmoladas-29ce267c1e7353610217488171997115-480-0.webp"
+        ],
+        "desc": "Disfruta de la combinación perfecta de vainilla y chocolate en una sola galletita. Las marmoladas son ideales para quienes no quieren elegir un solo sabor. Elaboradas con aceite de alto contenido oleico y libres de lactosa y gluten, son un bocado delicioso y equilibrado para tus pausas, ofreciendo lo mejor de dos mundos sin TACC."
+      },
+      {
+        "name": "Pepitas Sin Gluten - 200g",
+        "img": [
+          "https://dieteticaviamonte.com.ar/wp-content/uploads/2024/07/Screenshot_20240721_032906_Chrome.jpg"
+        ],
+        "desc": "Un clásico de la merienda que no puede faltar, ahora en su versión Sin TACC. Estas galletitas con un corazón de dulce de membrillo te ofrecen el bocado dulce perfecto para el mate o el café. Su fórmula sin lactosa, sin grasas trans y sin conservantes las hace ideales para disfrutar del sabor de siempre de forma segura y saludable."
+      },
+      {
+        "name": "Scons Sin Gluten - 200g",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/093/780/products/santamariascones-f2d8d0eb945baa27c317512976332882-480-0.webp"
+        ],
+        "desc": "Vuelve a disfrutar de la hora del té con el sabor clásico de los scons. Estas galletitas te ofrecen una textura tierna y un sabor delicado, ideal para acompañar con mermeladas o disfrutar solos. Hechos sin TACC, sin lactosa y sin grasas trans, son la opción perfecta para una merienda tradicional y apta para celíacos."
+      },
+      {
+        "name": "Vainilla Sin Gluten - 200g",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/093/780/products/galletitassantamariavainilla-1a12d39dd66900339e17488179468537-480-0.webp"
+        ],
+        "desc": "El sabor clásico de la vainilla, ahora apto para todos. Estas galletitas son la compañía ideal para cualquier infusión o para la leche de los más chicos. Su receta simple y deliciosa, totalmente libre de gluten, lactosa y grasas trans, las convierte en la opción segura y confiable para tus desayunos y meriendas de todos los días."
       }
     ]
   }
