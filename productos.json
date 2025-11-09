@@ -486,6 +486,11 @@
           "id": "nuestros-sabores",
           "title": "Nuestros Sabores",
           "desc": "Chips artesanales de vegetales con combinaciones de sabores gourmet, ideales para una picada sofisticada."
+        },
+        {
+          "id": "tostadas-alimentos-naturales",
+          "title": "Tostadas-Alimentos Naturales",
+          "desc": "Tostadas clásicas y saludables, 0% grasas trans y colesterol."
         }
       ]
     },
@@ -4750,11 +4755,25 @@
         "desc": "Para los amantes del picante, estos pita chips horneados con jalapeño son la opción ideal. El toque justo de picor del jalapeño se equilibra con el sabor de la masa madre, creando un snack adictivo y lleno de carácter. Son perfectos para acompañar con dips de queso crema, para añadir un toque crujiente a tus ensaladas o para disfrutar de un picoteo audaz y saludable, sin aditivos ni conservantes."
       },
       {
+        "name": "Pita Chips de Masa Madre Cúrcuma - 115g",
+        "img": [
+          "https://jumboargentina.vtexassets.com/arquivos/ids/877066/Pita-Chips-C-rcuma-Almadre-115gr-1-1040295.jpg?v=638887305765100000"
+        ],
+        "desc": "Descubre un snack gourmet, vegano y lleno de sabor. Estos Pita Chips de Cúrcuma son ideales para dipear en hummus o babaganush, aportando un toque exótico a tus picadas. Su gran diferencial es que están horneados y elaborados con masa madre, logrando una textura ultra crujiente y un sabor terroso único. Una alternativa artesanal y saludable a las papas fritas tradicionales."
+      },
+      {
         "name": "Pita Chips de Masa Madre Original Almadre (170g)",
         "img": [
           "https://almadrealimentos.com/assets/img/products/Chips-original.webp"
         ],
         "desc": "Estos pita chips horneados son el snack perfecto para un picoteo saludable y delicioso. Elaborados con masa madre e ingredientes 100% naturales, ofrecen una textura increíblemente crujiente y un sabor suave y versátil. Son bajos en grasas saturadas, 0% grasas trans y no contienen conservantes, convirtiéndolos en una opción inteligente para acompañar tus dips, hummus, cremas de vegetales o simplemente para disfrutar solos."
+      },
+      {
+        "name": "Pita Chips de Masa Madre Tomate y Romero - 115g",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/172/573/products/1000334851-ce8775d21d25d0134a17329166943151-1024-1024.jpg"
+        ],
+        "desc": "Eleva tus picadas con una combinación de sabores mediterráneos. Estos Pita Chips horneados son el acompañante perfecto para dips cremosos, quesos o para disfrutar solos. Hechos artesanalmente con masa madre, su irresistible sabor a tomate y romero y su textura extra crujiente los convierten en un snack vegano, delicioso y mucho más saludable que las frituras convencionales."
       },
       {
         "name": "Triangulitos de Masa Madre con Rawmesan y Remolacha Almadre (130g)",
@@ -5902,6 +5921,50 @@
           "https://marinozzisa.com/wp-content/uploads/2021/07/SESAMO-Y-LINO-1.png"
         ],
         "desc": "Enriquece tus pausas con el poder de las semillas. Estas galletitas de Sésamo y Lino son ideales para una merienda nutritiva, aportando un alto contenido de fibra y Omega 9. Su textura crujiente y su sabor tostado las hacen perfectas para acompañar el mate o un yogur. Una opción deliciosa para cuidarte, 0% grasas trans y 0% colesterol."
+      }
+    ],
+    "tostadas-alimentos-naturales": [
+      {
+        "name": "Tostadas de Mesa con sal x 200 g",
+        "img": [
+          "https://marinozzisa.com/wp-content/uploads/2021/07/TOSTADAS-DE-MESA.png"
+        ],
+        "desc": "El clásico bizcochito salado, ahora en su versión más ligera. Estas tostaditas son ideales para acompañar una picada, un queso untable o tu mate de la tarde. Su toque justo de sal y su textura crujiente las convierten en la opción perfecta para un antojo, sabiendo que son 0% grasas trans y 0% colesterol."
+      },
+      {
+        "name": "Tostadas de Salvado Light x 200 g",
+        "img": [
+          "https://marinozzisa.com/wp-content/uploads/2021/07/TOSTADAS-SALVADO.png"
+        ],
+        "desc": "Añade un plus de fibra a tus pausas diarias. Estas tostaditas de salvado son el snack ideal para quienes buscan una mayor saciedad y un mejor tránsito intestinal. Su textura rústica y su fórmula light, 0% colesterol y 0% grasas trans, las convierten en la opción inteligente para acompañar tu yogur o infusión."
+      },
+      {
+        "name": "Tostadas Dulces Light - Bajas en sodio x 200 g",
+        "img": [
+          "https://marinozzisa.com/wp-content/uploads/2021/07/TOSTADAS-DULCES.png"
+        ],
+        "desc": "Disfruta de un bocado dulce y liviano en cualquier momento. Estas tostaditas son la compañía ideal para tu desayuno o merienda, ofreciendo un sabor azucarado sutil sin excesos. Su fórmula es baja en sodio, 0% grasas trans y 0% colesterol, permitiéndote un gusto saludable para acompañar tus infusiones favoritas."
+      },
+      {
+        "name": "Tostadas Light x 200 g (Sin Gluten)",
+        "img": [
+          "https://marinozzisa.com/wp-content/uploads/2021/07/TOSTADAS-LIGHT.png"
+        ],
+        "desc": "Disfruta de un snack liviano y crujiente, ahora apto para celíacos. Estas tostaditas light están elaboradas sin TACC (Sin Gluten), permitiéndote acompañar tus infusiones o comidas sin preocupaciones. Su receta 0% grasas trans y 0% colesterol te da el gusto de un bizcochito clásico en una versión segura y saludable para tu dieta."
+      },
+      {
+        "name": "Tostadas Semillas y Cereales - 200g",
+        "img": [
+          "https://marinozzisa.com/wp-content/uploads/2021/07/TOSTADAS-CON-SEMILLAS.png"
+        ],
+        "desc": "La base perfecta para un desayuno completo y lleno de energía. Estas tostadas de semillas y cereales te ofrecen una fuente de fibra y una textura multicereal increíblemente crujiente. Son ideales para untar con palta, queso o mermelada, convirtiendo tu primera comida del día en un momento nutritivo, 0% grasas trans y 0% colesterol."
+      },
+      {
+        "name": "Tostadas Sin Sal - Light x 200 g",
+        "img": [
+          "https://marinozzisa.com/wp-content/uploads/2021/07/TOSTADAS-SIN-SAL.png"
+        ],
+        "desc": "La opción ideal para quienes buscan el placer de un bizcocho crujiente sin nada de sal. Estas tostaditas light te ofrecen una base neutra y liviana, perfecta para acompañar con mermeladas o quesos sin sodio. Son 0% colesterol y 0% grasas trans, convirtiéndose en el snack confiable para tu dieta baja en sodio."
       }
     ]
   }
