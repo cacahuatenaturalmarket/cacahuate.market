@@ -458,6 +458,45 @@
       ]
     },
     {
+      "id": "refrigerados-veganos",
+      "title": "Refrigerados Veganos",
+      "desc": "Productos veganos de heladera y freezer.",
+      "subcategories": [
+        {
+          "id": "notburger",
+          "title": "NotBurger",
+          "desc": "La experiencia de una hamburguesa de carne, jugosa y llena de sabor, ahora hecha 100% a base de plantas."
+        },
+        {
+          "id": "notchicken",
+          "title": "NotChicken",
+          "desc": "El sabor y la textura del pollo, ahora en una versión hecha 100% a base de plantas."
+        },
+        {
+          "id": "prepizza",
+          "title": "Prepizza Mundo Vegetal",
+          "desc": "Bases de pizza saludables a base de quinoa, listas para agregar tus toppings favoritos y hornear."
+        },
+        {
+          "id": "soyarroz-tofu",
+          "title": "Soyarroz Tofu",
+          "desc": "Tofu tradicional a base de soja, una proteína vegetal versátil y saludable para todo tipo de platos."
+        }
+      ]
+    },
+    {
+      "id": "salsas-aderezos-organicos",
+      "title": "Salsas y Aderezos Orgánicos",
+      "desc": "Salsas, vinagres y acetos orgánicos de calidad premium elaborados en el campo.",
+      "subcategories": [
+        {
+          "id": "pampa-gourmet",
+          "title": "PampaGourmet",
+          "desc": "Salsas, vinagres y acetos orgánicos de calidad premium elaborados en el campo."
+        }
+      ]
+    },
+    {
       "id": "snacks",
       "title": "Snacks",
       "desc": "Pita chips horneados con masa madre, un snack saludable, crujiente y delicioso en diferentes sabores.",
@@ -610,33 +649,6 @@
           "id": "singluko",
           "title": "Singluko",
           "desc": "Dulce de leche sin azúcar agregada, libre de gluten."
-        }
-      ]
-    },
-    {
-      "id": "refrigerados-veganos",
-      "title": "Refrigerados Veganos",
-      "desc": "Productos veganos de heladera y freezer.",
-      "subcategories": [
-        {
-          "id": "notburger",
-          "title": "NotBurger",
-          "desc": "La experiencia de una hamburguesa de carne, jugosa y llena de sabor, ahora hecha 100% a base de plantas."
-        },
-        {
-          "id": "notchicken",
-          "title": "NotChicken",
-          "desc": "El sabor y la textura del pollo, ahora en una versión hecha 100% a base de plantas."
-        },
-        {
-          "id": "prepizza",
-          "title": "Prepizza Mundo Vegetal",
-          "desc": "Bases de pizza saludables a base de quinoa, listas para agregar tus toppings favoritos y hornear."
-        },
-        {
-          "id": "soyarroz-tofu",
-          "title": "Soyarroz Tofu",
-          "desc": "Tofu tradicional a base de soja, una proteína vegetal versátil y saludable para todo tipo de platos."
         }
       ]
     },
@@ -6042,6 +6054,36 @@
           "https://http2.mlstatic.com/D_Q_NP_617634-MLA95676686168_102025-O.webp"
         ],
         "desc": "Descubre la versatilidad de cocinar saludable sin alterar los sabores de tus platos. Este producto neutro de Entrenuts te ofrece todos los beneficios naturales del coco, pero sin su aroma ni gusto característico. Es la alternativa vegana ideal para reemplazar mantecas en repostería o para realizar salteados y frituras, ya que soporta altas temperaturas sin oxidarse. Una opción libre de gluten y 100% natural para transformar tu alimentación diaria."
+      }
+    ],
+    "pampa-gourmet": [
+      {
+        "name": "Aceto Balsámico de Vino Malbec Orgánico - 250ml",
+        "img": [
+          "https://pampagourmet.com.ar/wp-content/uploads/2020/08/Chimichurri-1-1-6.jpg"
+        ],
+        "desc": "Realza tus ensaladas con la sofisticación de este aceto balsámico elaborado a partir de uvas Malbec orgánicas. Estacionado en barricas de roble, ofrece un equilibrio perfecto entre acidez y dulzor con notas amaderadas profundas. Es ideal para finalizar platos gourmet, marinar carnes rojas o dar un toque especial a frutillas y postres. Una experiencia de sabor auténtica, sin conservantes y certificada orgánica."
+      },
+      {
+        "name": "Salsa de Soja Orgánica - 250ml",
+        "img": [
+          "https://pampagourmet.com.ar/wp-content/uploads/2020/08/salsadesoja.png"
+        ],
+        "desc": "Descubre el verdadero sabor umami en su versión más noble. Esta salsa de soja orgánica se distingue por estar estacionada en barricas de roble, lo que le otorga una profundidad de sabor única y un aroma complejo. Es el condimento esencial para elevar tus salteados, sushi, marinadas o para dar un toque oriental refinado a tus recetas, libre de agroquímicos."
+      },
+      {
+        "name": "Vinagre de Sidra de Manzana Orgánico - 250ml",
+        "img": [
+          "https://pampagourmet.com.ar/wp-content/uploads/2020/08/Vinagre_de_Sidra_MANZANA.jpg"
+        ],
+        "desc": "Cuida tu cuerpo y tu paladar con este vinagre de sidra de manzana 100% orgánico. Al ser un producto sin filtrar ni pasteurizar, conserva la \"madre\" del vinagre y sus propiedades naturales. Su sabor suave y afrutado es perfecto para aderezar ensaladas frescas, preparar vinagretas ligeras o para consumir diluido como tónico diario. Calidad pura del campo a tu mesa."
+      },
+      {
+        "name": "Vinagre de Vino Orgánico - 250ml",
+        "img": [
+          "https://pampagourmet.com.ar/wp-content/uploads/2020/08/Vinagre-de-Vino-1.jpg"
+        ],
+        "desc": "Aporta un toque de acidez vibrante y natural a tus comidas diarias. Producido a partir de vinos orgánicos seleccionados, este vinagre destaca por su color intenso y su sabor robusto y limpio. Es el compañero ideal para aderezar ensaladas de hojas verdes, preparar escabeches caseros o realizar reducciones de salsas. Disfruta de la pureza de un producto de campo sin conservantes."
       }
     ]
   }
