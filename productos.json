@@ -481,6 +481,11 @@
           "id": "soyarroz-tofu",
           "title": "Soyarroz Tofu",
           "desc": "Tofu tradicional a base de soja, una proteína vegetal versátil y saludable para todo tipo de platos."
+        },
+        {
+          "id": "yogur-felices-las-vacas",
+          "title": "Yogur Felices las Vacas",
+          "desc": "Yogures a base de almendras, 100% veganos y sin TACC."
         }
       ]
     },
@@ -6084,6 +6089,50 @@
           "https://pampagourmet.com.ar/wp-content/uploads/2020/08/Vinagre-de-Vino-1.jpg"
         ],
         "desc": "Aporta un toque de acidez vibrante y natural a tus comidas diarias. Producido a partir de vinos orgánicos seleccionados, este vinagre destaca por su color intenso y su sabor robusto y limpio. Es el compañero ideal para aderezar ensaladas de hojas verdes, preparar escabeches caseros o realizar reducciones de salsas. Disfruta de la pureza de un producto de campo sin conservantes."
+      }
+    ],
+    "yogur-felices-las-vacas": [
+      {
+        "name": "Colchón de Frutos del Bosque - 190g",
+        "img": [
+          "https://tiendacoquitos.com.ar/wp-content/uploads/2023/05/Mock-up_Yogur-190_colchon-frutos-rojos-1-600x600.jpg"
+        ],
+        "desc": "Date un gusto gourmet con una experiencia de doble textura irresistible. Este yogur a base de almendras esconde en su fondo un generoso colchón de frutos del bosque reales, creando un contraste perfecto entre la cremosidad del \"jogurtti\" y la acidez de la fruta. Es la opción ideal para un postre saludable o un desayuno especial, 100% vegano y libre de gluten."
+      },
+      {
+        "name": "Colchón de Mango y Maracuyá - 190g",
+        "img": [
+          "https://tiendacoquitos.com.ar/wp-content/uploads/2023/05/Mock-up_Yogur-190_colchon-mango-y-maracuya-600x600.jpg"
+        ],
+        "desc": "Transporta tus sentidos al trópico con cada cucharada. Este postre combina la suavidad del yogur de almendras con un exótico colchón de mango y maracuyá, ofreciendo una explosión de sabor fresco y vibrante. Ideal para quienes buscan salir de la rutina con un snack sofisticado, naturalmente libre de lactosa y certificado Sin TACC. Un placer frutal y cremoso."
+      },
+      {
+        "name": "Sabor Durazno - 170g",
+        "img": [
+          "https://tiendacoquitos.com.ar/wp-content/uploads/2023/05/Mock-up_Yogur-170_Durazno-3-600x600.jpg"
+        ],
+        "desc": "Siente la dulzura del verano en un formato práctico y nutritivo. Este \"jogurtti\" de almendras captura el sabor jugoso del durazno en una bebida cremosa y refrescante. Es ideal para una merienda rápida que aporta saciedad y energía sin caer en los lácteos tradicionales. Una alternativa deliciosa, fortificada y segura para celíacos y veganos."
+      },
+      {
+        "name": "Sabor Frutilla - 170g",
+        "img": [
+          "https://tiendacoquitos.com.ar/wp-content/uploads/2023/05/Mock-up_Yogur-170_Frutilla-600x600.jpg"
+        ],
+        "desc": "Redescubre el clásico sabor a frutilla en su versión más saludable y consciente. Este \"jogurtti\" bebible a base de almendras te ofrece la cremosidad y el dulzor que buscas, pero libre de lácteos y gluten. Es la colación perfecta para la lonchera o para cortar la mañana con energía vegetal. Todo el sabor de la tradición, adaptado a tu estilo de vida plant-based."
+      },
+      {
+        "name": "Sabor Vainilla - 170g",
+        "img": [
+          "https://tiendacoquitos.com.ar/wp-content/uploads/2023/05/Mock-up_Yogur-170_Vainilla.jpg"
+        ],
+        "desc": "Disfruta de la versatilidad y el aroma reconfortante de la vainilla. Este yogur de almendras es la base perfecta para tus bowls de desayuno, combinando a la perfección con granola y frutas frescas. Su textura suave y sabor delicado lo convierten en un favorito para toda la familia, aportando calcio y vitaminas en una fórmula 100% vegana y sin gluten."
+      },
+      {
+        "name": "Vegano Natural - 170g",
+        "img": [
+          "https://tiendacoquitos.com.ar/wp-content/uploads/2023/05/Mock-up_Yogur-170_Natural-600x600.jpg"
+        ],
+        "desc": "La base perfecta para tu creatividad culinaria. Este yogur de almendras sabor natural te ofrece un perfil neutro y cremoso, ideal para personalizar con tus endulzantes favoritos o para usar en preparaciones saladas como aderezos. Es la elección más pura para quienes buscan nutrición vegetal sin interferencias, libre de sellos, sin TACC y totalmente vegano."
       }
     ]
   }
