@@ -16,6 +16,11 @@
           "desc": "Aceites de coco neutros y naturales para cocinar saludable."
         },
         {
+          "id": "entrenuts-aceites",
+          "title": "Entrenuts",
+          "desc": "Aceite de coco neutro para cocina saludable."
+        },
+        {
           "id": "situ-natural",
           "title": "Situ Natural",
           "desc": "Aceites puros para el cuidado natural de tu piel y cabello."
@@ -6028,6 +6033,15 @@
           "https://i0.wp.com/lepotmarket.com/wp-content/uploads/2022/09/LP-Chiagraal-Aceite-de-Coco-Neutro-90ml.png?fit=750%2C750&ssl=1"
         ],
         "desc": "Descubre la versatilidad en tu cocina con el Coco Neutro Chia Graal. Esta opción refinada es la alternativa ideal a las grasas tradicionales, permitiéndote cocinar, saltear y hornear sin aportar sabor ni aroma a tus preparaciones. Su fórmula 100% vegana, natural y libre de gluten soporta altas temperaturas sin oxidarse. Presentado en un práctico envase de 90ml, es perfecto para quienes buscan incorporar hábitos saludables sin alterar el gusto original de sus comidas."
+      }
+    ],
+    "entrenuts-aceites": [
+      {
+        "name": "Coco Neutro Entrenuts - 360cc",
+        "img": [
+          "https://http2.mlstatic.com/D_Q_NP_617634-MLA95676686168_102025-O.webp"
+        ],
+        "desc": "Descubre la versatilidad de cocinar saludable sin alterar los sabores de tus platos. Este producto neutro de Entrenuts te ofrece todos los beneficios naturales del coco, pero sin su aroma ni gusto característico. Es la alternativa vegana ideal para reemplazar mantecas en repostería o para realizar salteados y frituras, ya que soporta altas temperaturas sin oxidarse. Una opción libre de gluten y 100% natural para transformar tu alimentación diaria."
       }
     ]
   }
