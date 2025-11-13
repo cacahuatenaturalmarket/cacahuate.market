@@ -350,6 +350,18 @@
       ]
     },
     {
+      "id": "leches-bebidas-vegetales",
+      "title": "Leches y Bebidas Vegetales",
+      "desc": "Bebidas vegetales a base de almendras y coco, fortificadas y deliciosas.",
+      "subcategories": [
+        {
+          "id": "silk",
+          "title": "Silk",
+          "desc": "Bebidas vegetales a base de almendras y coco, fortificadas y deliciosas."
+        }
+      ]
+    },
+    {
       "id": "miel",
       "title": "Miel y Derivados",
       "subcategories": [
@@ -6133,6 +6145,50 @@
           "https://tiendacoquitos.com.ar/wp-content/uploads/2023/05/Mock-up_Yogur-170_Natural-600x600.jpg"
         ],
         "desc": "La base perfecta para tu creatividad culinaria. Este yogur de almendras sabor natural te ofrece un perfil neutro y cremoso, ideal para personalizar con tus endulzantes favoritos o para usar en preparaciones saladas como aderezos. Es la elección más pura para quienes buscan nutrición vegetal sin interferencias, libre de sellos, sin TACC y totalmente vegano."
+      }
+    ],
+    "silk": [
+      {
+        "name": "Almendra Chocolate - 1 Litro",
+        "img": [
+          "https://www.silkargentina.com.ar/wp-content/uploads/2025/01/Silk-Chocolate-Productos.webp"
+        ],
+        "desc": "Satisface tus ganas de chocolate de la manera más saludable y deliciosa. Esta bebida combina la cremosidad de la almendra con cacao real, creando una mezcla irresistible que encanta a grandes y chicos. Es perfecta para beber fría como un postre líquido o caliente en días de invierno. Disfruta de todo el placer del chocolate con menos calorías que la leche chocolatada tradicional y sin lactosa."
+      },
+      {
+        "name": "Almendra Original - 1 Litro",
+        "img": [
+          "https://www.silkargentina.com.ar/wp-content/uploads/2025/07/Packs-Almendra-con-Circulo.webp"
+        ],
+        "desc": "Redescubre tu desayuno con el equilibrio perfecto entre sabor y nutrición. Esta versión original ofrece una textura cremosa y un toque justo de dulzor que conquista a toda la familia. Es la alternativa ideal a la leche tradicional para tus cereales, cafés y recetas de repostería, aportando calcio y vitaminas esenciales. Una bebida vegetal deliciosa, libre de lactosa y conservantes, lista para disfrutar en cualquier momento."
+      },
+      {
+        "name": "Almendra Sin Azúcar - 1 Litro",
+        "img": [
+          "https://www.silkargentina.com.ar/wp-content/uploads/2025/07/Packs-Almendra-Sin-Azucar-con-Circulo.webp"
+        ],
+        "desc": "Disfruta de la cremosidad de la leche de almendras en su versión más pura y ligera. Esta bebida es la base vegetal perfecta para tus smoothies, cereales o café, aportando un 50% más de calcio que la leche de vaca sin sumar calorías extra. Su sabor neutro y delicado la convierte en un ingrediente versátil para cocinar tus recetas favoritas, libre de lácteos, gluten y colorantes artificiales."
+      },
+      {
+        "name": "Almendra Vainilla Sin Azúcar - 1 Litro",
+        "img": [
+          "https://www.silkargentina.com.ar/wp-content/uploads/2025/07/Packs-Almendra-Vainilla-Sin-Azucar-con-Circulo.webp"
+        ],
+        "desc": "Dale un toque dulce y aromático a tus días sin romper tu dieta. Esta bebida combina la suavidad de las almendras tostadas con notas naturales de vainilla, creando una experiencia deliciosa y ligera. Es perfecta para cortar el café, mezclar con granola o beber sola cuando tienes antojo de algo rico. Disfruta de un placer libre de culpas, fortificado con calcio y vitaminas."
+      },
+      {
+        "name": "Café Mocha - 1 Litro",
+        "img": [
+          "https://www.silkargentina.com.ar/wp-content/uploads/2025/09/Pack-Avellana-con-Circulo.webp"
+        ],
+        "desc": "Despierta tu energía con la fusión perfecta de café, chocolate y almendras. Café Mocha es la bebida lista para tomar que te ahorra tiempo en la mañana o te levanta el ánimo por la tarde. Esta edición combina el aroma del café tostado con notas de cacao en una base vegetal cremosa. La solución ideal para los amantes del café que buscan una alternativa vegetal práctica y deliciosa."
+      },
+      {
+        "name": "Coco Sin Azúcar - 1 Litro",
+        "img": [
+          "https://www.silkargentina.com.ar/wp-content/uploads/2025/01/Silk-Coco-Sin-azucar-Productos.webp"
+        ],
+        "desc": "Transporta tus sentidos al trópico con una bebida refrescante y ligera. Esta opción te ofrece todo el sabor exótico del coco real en una fórmula hidratante y baja en calorías. Es ideal para tomar sola bien fría, preparar batidos frutales o darle un toque especial a tu café de la mañana. Una opción naturalmente libre de lactosa y gluten que cuida tu figura sin sacrificar el sabor."
       }
     ]
   }
