@@ -11,6 +11,11 @@
           "desc": "Aceites de coco neutros y extra virgen, 100% puros."
         },
         {
+          "id": "chia-graal",
+          "title": "Chia Graal",
+          "desc": "Aceites de coco neutros y naturales para cocinar saludable."
+        },
+        {
           "id": "situ-natural",
           "title": "Situ Natural",
           "desc": "Aceites puros para el cuidado natural de tu piel y cabello."
@@ -6014,6 +6019,15 @@
           "https://http2.mlstatic.com/D_NQ_NP_695687-MLA85505838406_062025-O.webp"
         ],
         "desc": "El formato familiar que te da la máxima versatilidad en la cocina. Ideal para quienes cocinan a diario o en grandes cantidades, este aceite de coco neutro te permite freír, saltear y hornear sin aportar sabor ni aroma. Es la opción más económica y rendidora para integrar un ingrediente 100% puro en tu despensa saludable."
+      }
+    ],
+    "chia-graal": [
+      {
+        "name": "Coco Neutro Chia Graal - 90ml",
+        "img": [
+          "https://i0.wp.com/lepotmarket.com/wp-content/uploads/2022/09/LP-Chiagraal-Aceite-de-Coco-Neutro-90ml.png?fit=750%2C750&ssl=1"
+        ],
+        "desc": "Descubre la versatilidad en tu cocina con el Coco Neutro Chia Graal. Esta opción refinada es la alternativa ideal a las grasas tradicionales, permitiéndote cocinar, saltear y hornear sin aportar sabor ni aroma a tus preparaciones. Su fórmula 100% vegana, natural y libre de gluten soporta altas temperaturas sin oxidarse. Presentado en un práctico envase de 90ml, es perfecto para quienes buscan incorporar hábitos saludables sin alterar el gusto original de sus comidas."
       }
     ]
   }
