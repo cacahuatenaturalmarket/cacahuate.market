@@ -498,6 +498,11 @@
           "id": "yogur-felices-las-vacas",
           "title": "Yogur Felices las Vacas",
           "desc": "Yogures a base de almendras, 100% veganos y sin TACC."
+        },
+        {
+          "id": "yogur-iogo",
+          "title": "Yogur Iogo",
+          "desc": "Yogures a base de leche de coco, 100% vegetales y sin TACC."
         }
       ]
     },
@@ -6189,6 +6194,50 @@
           "https://www.silkargentina.com.ar/wp-content/uploads/2025/01/Silk-Coco-Sin-azucar-Productos.webp"
         ],
         "desc": "Transporta tus sentidos al trópico con una bebida refrescante y ligera. Esta opción te ofrece todo el sabor exótico del coco real en una fórmula hidratante y baja en calorías. Es ideal para tomar sola bien fría, preparar batidos frutales o darle un toque especial a tu café de la mañana. Una opción naturalmente libre de lactosa y gluten que cuida tu figura sin sacrificar el sabor."
+      }
+    ],
+    "yogur-iogo": [
+      {
+        "name": "Coco Iogo Arándanos",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/172/573/products/1000261859-9ff214d7e6607420bf17213242172744-480-0.webp"
+        ],
+        "desc": "Disfruta del poder antioxidante de los arándanos en una versión 100% vegetal. El Coco Iogo de Arándanos es la opción perfecta para un desayuno nutritivo o un postre saludable. Su increíble textura cremosa a base de leche de coco se fusiona con el sabor vibrante de la fruta, creando una experiencia deliciosa, libre de gluten y lactosa."
+      },
+      {
+        "name": "Coco Iogo Frutilla",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/172/573/products/1000261855-537a3ff9a096dcda3b17213231004699-480-0.webp"
+        ],
+        "desc": "Disfruta del sabor más popular en una versión 100% vegetal y cremosa. El Coco Iogo de Frutilla es el snack perfecto para un postre ligero o para recargar energías a media tarde. Su base de leche de coco le da una textura suave única, combinando la frescura de la fruta con los beneficios de un producto libre de gluten y lactosa."
+      },
+      {
+        "name": "Coco Iogo Frutos del Bosque",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/172/573/products/1000261861-59a4d3321d45da1aab17213237227573-480-0.webp"
+        ],
+        "desc": "Una explosión de sabor en cada cucharada. El Coco Iogo de Frutos del Bosque combina la dulzura y acidez de las bayas con la textura ultra cremosa de la leche de coco. Es el snack perfecto para una pausa saludable que te llena de energía. Disfruta de un postre 100% a base de plantas y libre de gluten."
+      },
+      {
+        "name": "Coco Iogo Maracuyá",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/172/573/products/1000261851-56bb38e7ab7a3a53cf17213244854569-480-0.webp"
+        ],
+        "desc": "Transporta tu paladar al trópico con esta exótica combinación. El Coco Iogo de Maracuyá te ofrece un sabor vibrante y refrescante, ideal para un postre o un snack que te saca de la rutina. La cremosidad de la leche de coco se fusiona con la acidez justa de la fruta, creando una experiencia 100% vegetal y sin gluten."
+      },
+      {
+        "name": "Coco Iogo Natural",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/172/573/products/1000261853-533db25dc63f6d9cbb17213239900861-480-0.webp"
+        ],
+        "desc": "El ingrediente más versátil para tu heladera saludable. El Coco Iogo Natural es la base perfecta para tu creatividad: ideal para bowls de desayuno con frutas, para crear aderezos salados o para reemplazar la crema en recetas. Su textura cremosa a base de leche de coco es 100% vegetal, sin TACC y lista para todo."
+      },
+      {
+        "name": "Coco Iogo Vainilla",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/172/573/products/1000261839-8521840620adef015217213243691395-480-0.webp"
+        ],
+        "desc": "El sabor clásico de la vainilla se une a la cremosidad del trópico. Este Coco Iogo es la base ideal para tus bowls de desayuno, perfecto para combinar con granola y frutas frescas. Su textura suave, a base de leche de coco, lo convierte en un postre o snack 100% vegetal y libre de gluten, lleno de sabor."
       }
     ]
   }
