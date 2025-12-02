@@ -177,18 +177,18 @@
       ]
     },
     {
-      "id": "chocolates-y-cubanitos",
-      "title": "Chocolates y Cubanitos",
+      "id": "chocolates",
+      "title": "Chocolates",
       "desc": "Chocolates de alta calidad, con opciones orgánicas, sin azúcar y para taza.",
       "subcategories": [
         {
-          "id": "arbanit",
-          "title": "Arbanit",
+          "id": "arbanit-cubanitos",
+          "title": "Arbanit-Cubanitos",
           "desc": "Crujientes barquillos rellenos con una variedad de cremas suaves y deliciosas."
         },
         {
-          "id": "colonial",
-          "title": "Colonial",
+          "id": "colonial-barra",
+          "title": "Colonial-Barra",
           "desc": "Chocolates de alta calidad, con opciones orgánicas, sin azúcar y para taza."
         }
       ]
