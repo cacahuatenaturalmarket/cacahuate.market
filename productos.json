@@ -187,6 +187,11 @@
           "desc": "Crujientes barquillos rellenos con una variedad de cremas suaves y deliciosas."
         },
         {
+          "id": "argenfrut-chocolates",
+          "title": "Argenfrut Chocolates",
+          "desc": "Variedad de chocolates y confites para repostería y snacks."
+        },
+        {
           "id": "colonial-barra",
           "title": "Colonial-Barra",
           "desc": "Chocolates de alta calidad, con opciones orgánicas, sin azúcar y para taza."
@@ -6238,6 +6243,78 @@
           "https://acdn-us.mitiendanube.com/stores/001/172/573/products/1000261839-8521840620adef015217213243691395-480-0.webp"
         ],
         "desc": "El sabor clásico de la vainilla se une a la cremosidad del trópico. Este Coco Iogo es la base ideal para tus bowls de desayuno, perfecto para combinar con granola y frutas frescas. Su textura suave, a base de leche de coco, lo convierte en un postre o snack 100% vegetal y libre de gluten, lleno de sabor."
+      }
+    ],
+    "argenfrut-chocolates": [
+      {
+        "name": "Almendras con Cobertura de Chocolate",
+        "img": [
+          "https://i.ibb.co/4RHCDhYc/Almendra-con-chocolate.png"
+        ],
+        "desc": "Date un gusto de lujo con estas almendras enteras tostadas bañadas en exquisito chocolate con leche. La calidad del fruto seco aporta un crujido perfecto que se funde con la cremosidad de la cobertura, creando una experiencia de sabor premium y texturas contrastantes. Son el detalle ideal para regalar, para servir en las fiestas o para disfrutar de un snack nutritivo y sofisticado cuando necesitas energía."
+      },
+      {
+        "name": "Arandanos con Chocolate",
+        "img": [
+          "https://i.ibb.co/TDX4grZj/Arandano-con-chocolate.png"
+        ],
+        "desc": "Experimenta el equilibrio perfecto entre la acidez frutal y la intensidad del cacao con estos cranberries bañados. Este snack gourmet combina la textura suave y el perfil antioxidante del arándano rojo real con una fina capa de chocolate semiamargo, creando un contraste de sabores sofisticado. Ideal para un antojo premium, para mezclar en un trail mix de lujo o para aportar un toque elegante a tus mesas de dulces."
+      },
+      {
+        "name": "Bananitas de Cereal con Chocolate con Leche",
+        "img": [
+          "https://i.ibb.co/N6wc1BMb/Bananitas-con-chocolate.png"
+        ],
+        "desc": "Disfruta de un bocado crujiente y lleno de sabor con estas Bananitas de Cereal bañadas en chocolate. Su centro de cereal aireado con sabor a banana se complementa a la perfección con la dulzura de la cobertura de chocolate con leche, creando un snack liviano y adictivo. Son ideales para acompañar el café, decorar postres temáticos o simplemente para disfrutar de un capricho dulce, original y con una textura inigualable."
+      },
+      {
+        "name": "Cereal con Cobertura de Chocolate",
+        "img": [
+          "https://i.ibb.co/G3HzGV9G/Cereal-con-chocolate.png"
+        ],
+        "desc": "Disfruta de la máxima crocancia con estos confites de cereal bañados en chocolate con leche. Su núcleo de cereal expandido los hace increíblemente livianos, esféricos y aireados, permitiéndote disfrutar del sabor del chocolate sin sentir pesadez. Son perfectos como topping crocante para yogures y helados, para decorar tortas modernas o para un picoteo dulce, ligero y divertido que gusta a grandes y chicos."
+      },
+      {
+        "name": "Chips de Chocolate Blanco",
+        "img": [
+          "https://i.ibb.co/cST7mwqZ/Chips-de-chocolate-blanco.png"
+        ],
+        "desc": "Aporta dulzura y luminosidad a tus postres con estos chips de chocolate blanco de alta calidad. Su textura cremosa y sus notas de vainilla y leche los hacen perfectos tanto para hornear en masas oscuras (como brownies) y generar contraste, como para decorar. Son el ingrediente secreto para elevar tus recetas, fundir para baños o simplemente para agregar un toque delicado y delicioso a tus cookies y budines."
+      },
+      {
+        "name": "Chips de Chocolate Negro",
+        "img": [
+          "https://i.ibb.co/sdBBJghP/Chips-de-chocolate-negro.png"
+        ],
+        "desc": "Dale un toque intenso y sofisticado a tus creaciones de repostería con estos chips de chocolate negro. Son el ingrediente esencial para cookies, muffins y budines, ya que mantienen su forma perfecta tras el horneado sin derretirse por completo. Su profundo sabor a cacao y su textura fundente los convierten en el aliado ideal para los amantes del chocolate que buscan calidad y definición en cada bocado."
+      },
+      {
+        "name": "Huesitos Frutales",
+        "img": [
+          "https://i.ibb.co/276wkVNK/huesitos-frutales.png"
+        ],
+        "desc": "Llena de color y diversión tus mesas dulces con estos irresistibles huesitos frutales. Estos caramelos duros se destacan por su vibrante variedad de colores y sus intensos sabores a frutas surtidas, siendo la opción favorita para cumpleaños, piñatas y candy bars. Su original forma de huesito añade un toque lúdico y alegre que encanta a los más chicos y sorprende a los grandes con su sabor duradero."
+      },
+      {
+        "name": "Maní con Cobertura de Chocolate",
+        "img": [
+          "https://i.ibb.co/R4DJgMYX/Mani-con-chocolate.png"
+        ],
+        "desc": "Redescubre el clásico de las picadas dulces con una vuelta de tuerca más intensa y sofisticada. Este maní tostado seleccionado está recubierto con una generosa capa de chocolate semiamargo, ofreciendo un balance ideal que no empalaga. Su textura crocante y su sabor robusto lo convierten en el compañero indispensable para maratones de películas, reuniones con amigos o para tener siempre un snack energético en la alacena."
+      },
+      {
+        "name": "Pasas de Uva con Chocolate",
+        "img": [
+          "https://i.ibb.co/zhMZWDP1/Pasas-con-chocolate.png"
+        ],
+        "desc": "Satisface tus ganas de algo dulce con la combinación tradicional que nunca falla. Estas pasas de uva tiernas y dulces están envueltas en suave chocolate con leche, ofreciendo una textura masticable y placentera que se deshace en la boca. Son la opción perfecta para quienes buscan un bocado energético y reconfortante, ideal para compartir en familia o para darte un gusto clásico en cualquier momento del día."
+      },
+      {
+        "name": "Rocklets",
+        "img": [
+          "https://i.ibb.co/v696DdGS/Rocklets.png"
+        ],
+        "desc": "Ponle color y alegría a tus postres con estos confites de chocolate tipo lentejas. Cada botón ofrece un centro de chocolate suave protegido por una capa de azúcar crujiente y colorida que estalla en la boca. Son el topping por excelencia para decorar tortas de cumpleaños, helados y cupcakes, o el snack divertido perfecto para los más chicos, aportando textura crocante y diversión visual a cualquier momento."
       }
     ]
   }
