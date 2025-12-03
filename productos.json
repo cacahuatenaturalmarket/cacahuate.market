@@ -70,6 +70,18 @@
       ]
     },
     {
+      "id": "alimentos",
+      "title": "Alimentos",
+      "desc": "Variedad de granos, legumbres y cereales para una nutrición completa.",
+      "subcategories": [
+        {
+          "id": "legumbres-y-cereales",
+          "title": "Legumbres y Cereales",
+          "desc": "Variedad de granos, legumbres y cereales para una nutrición completa."
+        }
+      ]
+    },
+    {
       "id": "barritas",
       "title": "Barritas",
       "desc": "Barritas de arroz crujientes y ligeras, con un mix de semillas y deliciosas coberturas de sabores.",
@@ -4428,7 +4440,7 @@
       {
         "name": "Crudda Bar Arándanos y Nuez (45g)",
         "img": [
-          "https://acdn-us.mitiendanube.com/stores/801/315/products/crudda-arandanos-y-mani-8a604e6655a680996417376436602024-1024-1024.jpg"
+          "https://acdn-us.mitiendanube.com/stores/001/434/490/products/mockup-arandanos1-a99d58c2aa7896cdb717002584683639-640-0.webp"
         ],
         "desc": "Disfruta de una combinación clásica y llena de antioxidantes con esta barrita a base de plantas. Une el sabor ácido de los arándanos con el toque crujiente de las nueces, todo sobre una base nutritiva con 9 gramos de proteína de arveja y 7 gramos de fibra. Es un snack equilibrado y delicioso, ideal para recargar energías a media mañana con ingredientes de alta calidad."
       },
@@ -6315,6 +6327,134 @@
           "https://i.ibb.co/v696DdGS/Rocklets.png"
         ],
         "desc": "Ponle color y alegría a tus postres con estos confites de chocolate tipo lentejas. Cada botón ofrece un centro de chocolate suave protegido por una capa de azúcar crujiente y colorida que estalla en la boca. Son el topping por excelencia para decorar tortas de cumpleaños, helados y cupcakes, o el snack divertido perfecto para los más chicos, aportando textura crocante y diversión visual a cualquier momento."
+      }
+    ],
+    "legumbres-y-cereales": [
+      {
+        "name": "Arveja Entera",
+        "img": [
+          "https://http2.mlstatic.com/D_NQ_NP_682509-MLA49587990917_042022-O.webp"
+        ],
+        "desc": "Redescubre el sabor de la cocina casera con la Arveja Entera seca. A diferencia de las variedades partidas, este grano conserva su forma durante la cocción, ofreciendo una textura firme y agradable ideal para guisos, estofados y guarniciones sustanciosas. Es una excelente fuente de fibra y energía que aporta un sabor dulce y terroso, perfecto para complementar carnes o para ser la protagonista de platos vegetarianos robustos."
+      },
+      {
+        "name": "Arveja Partida",
+        "img": [
+          "https://grupodelnorte.com/wp-content/uploads/2024/06/menestras15.jpg"
+        ],
+        "desc": "Prepara sopas cremosas y nutritivas en tiempo récord con la Arveja Partida. Al no tener piel, esta legumbre se cocina mucho más rápido y tiende a desarmarse naturalmente, logrando una consistencia espesa y suave perfecta para purés, cremas y rellenos sin necesidad de procesar. Es la opción práctica y reconfortante para incorporar hierro y vitaminas a tu dieta diaria de la manera más sencilla."
+      },
+      {
+        "name": "Garbanzo",
+        "img": [
+          "https://www.cono-group.com/cono-group/01_products/chickpeas/image-thumb__256__content_image/cono-health-seeds-chickpeas-alnatura-200803-phk1198_1.jpg"
+        ],
+        "desc": "Disfruta de la legumbre más versátil y amada de la cocina internacional. El Garbanzo se destaca por su textura cremosa y suave que no se desarma en la cocción, siendo el ingrediente insustituible para preparar un hummus auténtico, un falafel crujiente o cazuelas reconfortantes. Rico en fibra y proteínas, aporta saciedad y un sabor delicado a nuez que realza cualquier plato, desde ensaladas frías hasta platos de cuchara."
+      },
+      {
+        "name": "Lenteja",
+        "img": [
+          "https://alldiet.com.ar/assets/images/products/legum-37/medium.jpg"
+        ],
+        "desc": "El ingrediente esencial para el plato de cuchara más reconfortante y nutritivo. La Lenteja clásica es famosa por su alto contenido de hierro y su capacidad para espesar caldos naturalmente, creando guisos untuosos y llenos de sabor. Requiere menos tiempo de remojo que otras legumbres, facilitando la preparación de comidas caseras, sanas y energéticas para toda la familia en menos tiempo."
+      },
+      {
+        "name": "Lenteja Turca",
+        "img": [
+          "https://alldiet.com.ar/assets/images/products/promo-45/medium.jpg"
+        ],
+        "desc": "Olvídate del remojo y cocina platos nutritivos en minutos con la Lenteja Turca. Esta variedad pelada de color naranja vibrante se cocina muy rápido y se deshace para formar cremas, sopas y el clásico \"dahl\" indio con una textura aterciopelada irresistible. Su sabor suave y fácil digestión la convierten en la opción perfecta para introducir legumbres a los niños o para cenas ligeras y reconfortantes."
+      },
+      {
+        "name": "Lentejon",
+        "img": [
+          "https://alldiet.com.ar/assets/images/products/legum-38/medium.jpg"
+        ],
+        "desc": "Si buscas presencia y textura en tus platos, el Lentejón es tu mejor aliado. Esta variedad de lenteja de gran calibre se destaca por mantener su forma y firmeza luego de la cocción, lo que la hace superior para ensaladas frías, salpicones y guarniciones donde la presentación importa. Ofrece el mismo sabor terroso y nutritivo de la lenteja clásica, pero con una mordida más sustanciosa y visualmente atractiva."
+      },
+      {
+        "name": "Maíz Partido Blanco",
+        "img": [
+          "https://alldiet.com.ar/assets/images/products/legum-40/medium.jpg"
+        ],
+        "desc": "El alma de los platos patrios y la cocina andina tradicional. El Maíz Partido Blanco es fundamental para preparar un locro criollo auténtico o una mazamorra dulce, gracias a su capacidad de liberar almidón durante la cocción lenta, logrando esa cremosidad característica y envolvente. Un grano noble que conecta con las raíces culinarias, aportando energía y una textura suave inigualable."
+      },
+      {
+        "name": "Maíz Pisingallo",
+        "img": [
+          "https://http2.mlstatic.com/D_NQ_NP_953303-MLA48355472896_112021-O.webp"
+        ],
+        "desc": "Transforma tus noches de película con el snack más divertido y natural. Este Maíz Pisingallo de calidad premium garantiza un estallido perfecto, logrando unas palomitas grandes, blancas y extra crujientes con muy pocos granos sin explotar. Es una fuente de fibra integral que puedes personalizar a tu gusto, ya sea dulce, salado o con mantequilla, para disfrutar de un momento compartido irresistible."
+      },
+      {
+        "name": "Poroto Aduki",
+        "img": [
+          "https://alldiet.com.ar/assets/images/products/legum-43/medium.jpg"
+        ],
+        "desc": "Incorpora un superalimento oriental a tu dieta con el Poroto Aduki. Conocido por su fácil digestión y su sabor ligeramente dulce, es la legumbre estrella de la cocina macrobiótica y la base esencial para preparar la famosa pasta dulce \"anko\" en postres asiáticos. Su perfil nutricional superior y su textura suave lo convierten en una opción versátil y saludable para enriquecer desde guisos hasta ensaladas frescas."
+      },
+      {
+        "name": "Poroto Alubia",
+        "img": [
+          "https://alldiet.com.ar/assets/images/products/legum-44/medium.jpg"
+        ],
+        "desc": "El clásico indiscutido para tus platos de cuchara más tradicionales. El Poroto Alubia se caracteriza por su piel fina y un interior que se vuelve irresistiblemente cremoso al cocinarse, absorbiendo magistralmente los sabores del caldo y los condimentos. Es el protagonista absoluto de fabadas, locros y guisos, aunque su sabor suave y color blanco brillante también lo hacen excelente para ensaladas frías y escabeches."
+      },
+      {
+        "name": "Poroto Colorado",
+        "img": [
+          "https://alldiet.com.ar/assets/images/products/legum-45/medium.jpg"
+        ],
+        "desc": "Aporta color y sustancia a tus comidas con el Poroto Colorado. Conocido por su piel roja brillante y su forma de riñón, mantiene su firmeza perfecta incluso en cocciones largas, siendo el ingrediente insustituible del chili con carne y ensaladas de tres legumbres. Su interior harinoso y sabor suave absorben maravillosamente las especias, brindando una textura carnosa y saciante en cada plato."
+      },
+      {
+        "name": "Poroto de Soja",
+        "img": [
+          "https://saboresandinos.com/wp-content/uploads/2024/11/624.jpg"
+        ],
+        "desc": "Maximiza tu ingesta de proteínas vegetales con el Poroto de Soja. Este grano esencial es la base fundamental para elaborar tus propias leches vegetales, tofu casero o para enriquecer guisos con un aporte nutricional incomparable. Su alto contenido proteico y su versatilidad lo posicionan como el ingrediente indispensable en cualquier despensa basada en plantas, permitiéndote explorar infinitas posibilidades culinarias saludables y nutritivas."
+      },
+      {
+        "name": "Poroto Mung",
+        "img": [
+          "https://alldiet.com.ar/assets/images/products/legum-48/medium.jpg"
+        ],
+        "desc": "Incorpora a tu dieta la legumbre favorita de la medicina Ayurveda por sus propiedades desintoxicantes. El Poroto Mung es un grano verde y pequeño, famoso por su fácil digestión y por ser la semilla ideal para hacer brotes caseros frescos y crujientes. También es excelente para preparar guisos ligeros y sopas depurativas, aportando proteínas de alta calidad sin generar pesadez estomacal."
+      },
+      {
+        "name": "Poroto Negro",
+        "img": [
+          "https://alldiet.com.ar/assets/images/products/legum-49/medium.jpg"
+        ],
+        "desc": "Lleva el sabor intenso de la cocina latinoamericana a tu mesa. El Poroto Negro es famoso por su textura densa y carnosa, siendo el corazón de platos icónicos como la feijoada brasileña o los rellenos de tacos mexicanos. Rico en antioxidantes y fibra, su sabor profundo y ligeramente dulce lo hace también ideal para preparar hamburguesas vegetales con una consistencia y color sorprendentes."
+      },
+      {
+        "name": "Poroto Pallares",
+        "img": [
+          "https://http2.mlstatic.com/D_NQ_NP_817284-MLA51739822322_092022-O.webp"
+        ],
+        "desc": "Disfruta de la experiencia \"gourmet\" de las legumbres con el Poroto Pallares. Conocido por su gran tamaño y su textura excepcionalmente mantecosa y suave, es ideal para preparar al escabeche, en ensaladas tibias o como protagonista de guisos sofisticados. Su piel se vuelve tierna y su interior se deshace en la boca, ofreciendo una untuosidad única que lo diferencia de cualquier otro poroto común."
+      },
+      {
+        "name": "Poroto Pitai",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/040/363/products/poroto-colorado-31-98c665f251dd6bda6815981437898310-1024-1024.webp?w=1920"
+        ],
+        "desc": "Añade variedad y nutrición a tu mesa con el Poroto Pitai. Esta legumbre se destaca por su interesante patrón visual y un sabor que enriquece cualquier preparación, desde guisos tradicionales hasta ensaladas creativas. Al cocinarse, mantiene una textura agradable al paladar, aportando una dosis excelente de proteínas y fibra. Es la alternativa ideal para rotar tus legumbres habituales y probar nuevos matices en tu cocina diaria."
+      },
+      {
+        "name": "Poroto Regina",
+        "img": [
+          "https://alldiet.com.ar/assets/images/products/legum-51/medium.jpg"
+        ],
+        "desc": "Eleva la calidad de tus comidas con la delicadeza del Poroto Regina. Apreciado por su piel extremadamente fina y una pulpa mantecosa, este poroto ofrece un sabor suave con notas a nuez que lo hace superior para ensaladas gourmet y la clásica sopa minestrone. Se cocina de manera pareja y absorbe los sabores delicadamente, convirtiéndolo en la elección predilecta para quienes buscan una legumbre de textura premium."
+      },
+      {
+        "name": "Poroto Tape",
+        "img": [
+          "https://alldiet.com.ar/assets/images/products/legum-52/medium.jpg"
+        ],
+        "desc": "Suma carácter y color a tus preparaciones con el Poroto Tape. Esta variedad se distingue por su piel jaspeada y una textura firme que resiste cocciones largas sin perder su integridad, lo que lo hace perfecto para estofados invernales y platos de olla intensos. Su sabor robusto y terroso combina a la perfección con embutidos y vegetales, brindando una experiencia culinaria rústica y reconfortante en cada bocado."
       }
     ]
   }
