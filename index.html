@@ -1,657 +1,335 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="referrer" content="no-referrer">
-
     <title>Catálogo Mejorado - CACAHUATE NATURAL MARKET</title>
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-   <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-
-<link rel="icon" type="image/svg+xml" href="favicon.svg" />
-
-<link rel="shortcut icon" href="favicon.ico" />
-
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-
-<link rel="manifest" href="site.webmanifest" />
-
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
 </head>
-
-
 
 <body>
 
-
-
     <header>
-
         <div class="header-background">
-
             <img src="https://i.imgur.com/BCGbBgz.jpeg" alt="Fondo de especias y hierbas">
-
         </div>
-
         <div class="header-content">
-
             <div class="logo-container">
-
                 <img src="https://i.imgur.com/QPR06jn.png" alt="Logo de CACAHUATE NATURAL MARKET">
-
             </div>
-
             <div class="address-container">
-
                 <a href="https://www.google.com/maps/search/?api=1&query=CACAHUATE+NATURAL+MARKET+Coronel+D%27+Elia+2039%2C+Lan%C3%BAs" target="_blank" style="text-decoration: none; color: inherit;">
-
                     <p class="address-header"><i class="fas fa-map-marker-alt"></i> Coronel D' Elia 2039, Lanús, Buenos Aires</p>
-
                 </a>
-
             </div>
-
         </div>
-
     </header>
 
-
-
     <nav class="main-nav">
-
       <a href="#" class="nav-logo" style="font-weight: bold; font-family: 'Merriweather', serif; font-size: 1.2em;">CACAHUATE</a>
-
         <div class="nav-links" id="navLinks"></div>
-
         <button class="hamburger-menu" id="hamburgerMenu" aria-label="Abrir menú de navegación">
-
             <i class="fas fa-bars"></i>
-
         </button>
-
     </nav>
 
-
-
     <div id="mobile-menu-container"></div>
-
-    <div class="search-bar-container">
-
+  <div class="search-bar-container">
         <i class="fas fa-search"></i>
-
-        <input type="text" id="globalSearchInput" placeholder="Buscar en todo el catálogo...">
-
+        <input type="text" id="globalSearchInput" placeholder="Buscar en todo el catálogo..." autocomplete="off">
+        <button id="clearSearchBtn" class="search-clear-btn" aria-label="Borrar búsqueda" style="display: none;">
+            <i class="fas fa-times"></i>
+        </button>
+        <div id="suggestionsBox" class="suggestions-box"></div>
     </div>
-
-
 
     <p id="globalNoResultsMessage" class="no-results-message" style="text-align: center;">No se encontraron productos que coincidan con tu búsqueda.</p>
 
-
-
     <main id="main-content" style="display: none;">
-
         <div id="product-sections-container"></div>
-
     </main>
 
-
-
     <div id="loading-indicator">
-
         <p>Cargando catálogo de productos...</p>
-
     </div>
-
-
 
     <footer>
-
         <p>© 2025 CACAHUATE NATURAL MARKET. Todos los derechos reservados.</p>
-
     </footer>
 
-
-
     <a href="https://wa.me/5491133974550" target="_blank" class="whatsapp-direct-btn" title="Consulta Directa" aria-label="Contactar por WhatsApp">
-
         <i class="fab fa-whatsapp"></i>
-
     </a>
-
     <button id="cartBtn" class="cart-btn" title="Ver Pedido" aria-label="Ver carrito de pedidos">
-
         <i class="fas fa-shopping-cart"></i>
-
         <span id="cartCounter" class="cart-counter" style="display: none;">0</span>
-
     </button>
 
-
-
    <div id="productModal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">×</span>
-            <img id="modalImg" src="" alt="Imagen del producto">
-            <h3 id="modalTitle"></h3>
-
-                        <p id="modalDescriptionText" class="modal-description"></p>             <p id="modalPriceText" class="modal-price"></p>                                  <a id="modalWhatsappBtn" href="#" target="_blank" class="modal-whatsapp-btn"><i class="fab fa-whatsapp"></i> Consultar</a>
-        </div>
-    </div>
-
-    <div id="imageZoomModal" class="modal">
-
-        <span class="close-button">×</span>
-
-        <img id="zoomImg" class="modal-content" alt="Imagen ampliada">
-
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <img id="modalImg" src="" alt="Imagen del producto">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescriptionText" class="modal-description"></p>
+            <p id="modalPriceText" class="modal-price"></p>
+            <a id="modalWhatsappBtn" href="#" target="_blank" class="modal-whatsapp-btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+        </div>
     </div>
 
+    <div id="imageZoomModal" class="modal">
+        <span class="close-button">×</span>
+        <img id="zoomImg" class="modal-content" alt="Imagen ampliada">
+    </div>
     <div id="cartModal" class="modal">
-
         <div class="modal-content">
-
             <span class="close-button">×</span>
-
             <h3>Mi Pedido</h3>
-
             <div id="cartItemsContainer">
-
                 <p id="emptyCartMessage">Tu carrito está vacío.</p>
-
             </div>
-
             <div class="cart-summary">
-
                 <h4 id="cartTotal">Total: $0</h4>
-
             </div>
-
             <a id="checkoutBtn" href="#" target="_blank" class="modal-whatsapp-btn"><i class="fab fa-whatsapp"></i> Realizar Pedido</a>
-
         </div>
-
     </div>
 
 <script>
-
     document.addEventListener('DOMContentLoaded', () => {
 
-
-
         const API = {
-
             data: null,
-
             async fetchData() {
-
                 try {
-
-                    const response = await fetch('./productos.json'); // RUTA CORREGIDA
-
+                    // Anti-caché activado
+                    const response = await fetch('./productos.json?v=' + new Date().getTime());
                     if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
-
                     this.data = await response.json();
-
                     return true;
-
                 } catch (error) {
-
-                    console.error("No se pudieron cargar los datos de los productos:", error);
-
-                    document.getElementById('loading-indicator').innerHTML = '<p style="color:var(--rojo-error);">Error al cargar el catálogo. Por favor, intenta de nuevo más tarde.</p>';
-
+                    console.error("Error:", error);
+                    document.getElementById('loading-indicator').innerHTML = '<p style="color:var(--rojo-error);">Error al cargar el catálogo.</p>';
                     return false;
-
                 }
-
             },
-
             getPhoneNumber() {
-
                 return this.data ? this.data.phoneNumber : '5491133974550';
-
             }
-
         };
 
-
-
-       const Store = {
-    state: { cart: [] },
-    productMap: new Map(), // <-- AÑADE ESTA LÍNEA
-    loadCart() {
-// ...
-
+        const Store = {
+            state: { cart: [] },
+            productMap: new Map(),
+            productList: [], // Lista plana para búsquedas rápidas
+            loadCart() {
                 const savedCart = localStorage.getItem('cacahuateCart');
-
                 if (savedCart) this.state.cart = JSON.parse(savedCart);
-
             },
-
             saveCart() {
-
                 localStorage.setItem('cacahuateCart', JSON.stringify(this.state.cart));
-
             },
-
             addProduct(product, quantity) {
-
                 const cartItem = this.getProductInCart(product.name);
-
                 if (cartItem) {
-
                     cartItem.quantity += quantity;
-
                 } else {
-
                     this.state.cart.push({ product: product, quantity: quantity });
-
                 }
-
                 this.saveCart();
-
             },
-
             updateQuantity(productName, newQuantity) {
-
                 const cartItem = this.getProductInCart(productName);
-
                 if (cartItem) {
-
                     if (newQuantity > 0) {
-
                         cartItem.quantity = newQuantity;
-
                     } else {
-
                         this.removeFromCart(productName);
-
                     }
-
                 }
-
                 this.saveCart();
-
             },
-
             removeFromCart(productName) {
-
                 this.state.cart = this.state.cart.filter(item => item.product.name !== productName);
-
                 this.saveCart();
-
             },
-
             getProductInCart(productName) {
-
                 return this.state.cart.find(item => item.product.name === productName);
-
             },
-
             getCartTotal() {
-
                 return this.state.cart.reduce((total, item) => {
-
                     const price = item.product.price || 0;
-
                     return total + (price * item.quantity);
-
                 }, 0);
-
             }
-
         };
-
-
 
         const UI = {
-
             elements: {
-
                 navLinks: document.getElementById('navLinks'),
-
                 productSectionsContainer: document.getElementById('product-sections-container'),
-
                 mainContent: document.getElementById('main-content'),
-
                 loadingIndicator: document.getElementById('loading-indicator'),
-
                 hamburgerMenu: document.getElementById('hamburgerMenu'),
-
                 cartCounter: document.getElementById('cartCounter'),
-
                 cartModal: document.getElementById('cartModal'),
-
                 productModal: document.getElementById('productModal'),
-
                 imageZoomModal: document.getElementById('imageZoomModal'),
-
                 cartItemsContainer: document.getElementById('cartItemsContainer'),
-
                 emptyCartMessage: document.getElementById('emptyCartMessage'),
-
                 checkoutBtn: document.getElementById('checkoutBtn'),
-
                 globalSearchInput: document.getElementById('globalSearchInput'),
-
+                clearSearchBtn: document.getElementById('clearSearchBtn'),
+                suggestionsBox: document.getElementById('suggestionsBox'), // NUEVO
                 globalNoResultsMessage: document.getElementById('globalNoResultsMessage'),
-
                 cartTotal: document.getElementById('cartTotal'),
-
             },
-
             formatCurrency(value) {
-
                 return new Intl.NumberFormat('es-AR', {
-
                     style: 'currency',
-
                     currency: 'ARS'
-
                 }).format(value);
-
             },
 
-     createCardHTML(item) {
-                const priceText = item.price ? this.formatCurrency(item.price) : 'Consultar precio';
-                const images = Array.isArray(item.img) ? item.img : [item.img];
-                const mainImage = images[0] || '';
-               
-                // --- LIMPIEZA DE TEXTO ---
-                const safeName = (item.name || '').replace(/"/g, '&quot;');
-                const safeDesc = (item.desc || '').replace(/"/g, '&quot;');
-                const safePrice = item.price || 0;
-                const safeImages = JSON.stringify(images).replace(/"/g, '&quot;');
+            // Seguridad de HTML
+            escapeHtmlAttr(str) {
+                if (!str) return '';
+                return str.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+            },
 
-                let imageHtml;
+            // Normalización de texto (sin acentos)
+            normalizeText(str) {
+                if (!str) return '';
+                return str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            },
+
+            // Función Debounce para suavizar la búsqueda
+            debounce(func, wait) {
+                let timeout;
+                return function(...args) {
+                    const context = this;
+                    clearTimeout(timeout);
+                    timeout = setTimeout(() => func.apply(context, args), wait);
+                };
+            },
+
+            createCardHTML(item) {
+                const priceText = item.price ? this.formatCurrency(item.price) : 'Consultar precio';
+                let images = Array.isArray(item.img) ? item.img : (item.img ? [item.img] : []);
+                const mainImage = images.length > 0 ? images[0] : '';
+                const safeName = this.escapeHtmlAttr(item.name);
+                const safeImages = this.escapeHtmlAttr(JSON.stringify(images));
+
+                let imageGalleryHtml = '';
                 if (images.length > 1) {
-                    let thumbnailsHtml = `<div class="thumbnail-container">`;
-                    
-                    images.forEach((imgUrl, index) => {
-                        // Construimos la línea de la imagen por partes para evitar errores
-                        const activeClass = index === 0 ? 'active' : '';
-                        const altText = `Miniatura ${index + 1}`;
-                        
-                        thumbnailsHtml += `<img src="${imgUrl}" class="thumbnail ${activeClass}" data-img-src="${imgUrl}" alt="${altText}">`;
+                    let thumbs = '<div class="thumbnail-container">';
+                    images.forEach((url, i) => {
+                        const active = i === 0 ? 'active' : '';
+                        thumbs += '<img src="' + url + '" class="thumbnail ' + active + '" data-img-src="' + url + '" alt="miniatura">';
                     });
-                    
-                    thumbnailsHtml += `</div>`;
-                   
-                    imageHtml = `
-                        <div class="image-gallery">
-                            <div class="main-image-container">
-                                <img src="${mainImage}" class="main-image" alt="${safeName}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x400/2F2F2F/FFFFFF?text=Imagen+no+disponible';">
-                            </div>
-                            ${thumbnailsHtml}
-                        </div>`;
+                    thumbs += '</div>';
+                    imageGalleryHtml = '<div class="image-gallery"><div class="main-image-container"><img src="' + mainImage + '" class="main-image" alt="' + safeName + '" loading="lazy"></div>' + thumbs + '</div>';
                 } else {
-                    imageHtml = `
-                        <div class="image-wrapper">
-                            <img src="${mainImage}" alt="${safeName}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x400/2F2F2F/FFFFFF?text=Imagen+no+disponible';">
-                        </div>`;
+                    imageGalleryHtml = '<div class="image-wrapper"><img src="' + mainImage + '" alt="' + safeName + '" loading="lazy"></div>';
                 }
-               
-                return `
-                   <div class="card fade-in" data-name="${safeName}" data-desc="${safeDesc}" data-price="${safePrice}" data-img="${safeImages}">
-                        ${imageHtml}
-                        <div class="card-content">
-                            <h3>${item.name}</h3>
-                            <p class="description">${item.desc}</p>
-                            <div class="card-price" style="font-size: 1.4em; font-weight: bold; color: var(--azul-terroso-claro); margin-bottom: 15px;">
-                                ${priceText}
-                            </div>
-                            <div class="card-actions">
-                                <div class="quantity-selector">
-                                    <button class="quantity-btn decrease-qty" aria-label="Disminuir cantidad">-</button>
-                                    <input type="number" class="quantity-input" value="0" min="0" name="quantity" aria-label="Cantidad">
-                                    <button class="quantity-btn increase-qty" aria-label="Aumentar cantidad">+</button>
-                                </div>
-                                <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i></button>
-                                <button class="details-btn" aria-label="Ver detalles"><i class="fas fa-eye"></i></button>
-                            </div>
-                        </div>
-                    </div>`;
+
+                return '<div class="card fade-in" data-name="' + safeName + '" data-price="' + (item.price || 0) + '" data-img=\'' + safeImages + '\'>' +
+                       imageGalleryHtml +
+                       '<div class="card-content">' +
+                       '<h3>' + item.name + '</h3>' +
+                       '<p class="description">' + (item.desc || '') + '</p>' +
+                       '<div class="card-price" style="font-size: 1.4em; font-weight: bold; color: var(--azul-terroso-claro); margin-bottom: 15px;">' + priceText + '</div>' +
+                       '<div class="card-actions">' +
+                       '<div class="quantity-selector"><button class="quantity-btn decrease-qty">-</button><input type="number" class="quantity-input" value="0" min="0"><button class="quantity-btn increase-qty">+</button></div>' +
+                       '<button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i></button>' +
+                       '<button class="details-btn"><i class="fas fa-eye"></i></button>' +
+                       '</div></div></div>';
             },
 
             renderCartItems() {
-
                 if (Store.state.cart.length === 0) {
-
                     this.elements.cartItemsContainer.innerHTML = '';
-
                     this.elements.cartItemsContainer.appendChild(this.elements.emptyCartMessage);
-
                     this.elements.emptyCartMessage.style.display = 'block';
-
                     this.elements.checkoutBtn.style.display = 'none';
-
                     this.elements.cartTotal.style.display = 'none';
-
                 } else {
-
                     this.elements.emptyCartMessage.style.display = 'none';
-
                     this.elements.checkoutBtn.style.display = 'inline-block';
-
                     this.elements.cartTotal.style.display = 'block';
-
                     this.elements.cartItemsContainer.innerHTML = Store.state.cart.map(item => {
-
                         const mainImage = Array.isArray(item.product.img) ? item.product.img[0] : item.product.img;
-
-                        return `
-
-                        <div class="cart-item" data-name="${item.product.name}">
-
-                            <img src="${mainImage}" alt="${item.product.name}">
-
-                            <div class="cart-item-info">
-
-                                <h4>${item.product.name}</h4>
-
-                                <span>${this.formatCurrency(item.product.price || 0)}</span>
-
-                            </div>
-
-                            <div class="quantity-selector">
-
-                               <button class="quantity-btn decrease-qty" aria-label="Disminuir cantidad">-</button>
-
-                               <input type="number" class="quantity-input" value="${item.quantity}" min="0" name="cart-quantity" aria-label="Cantidad">
-
-                               <button class="quantity-btn increase-qty" aria-label="Aumentar cantidad">+</button>
-
-                            </div>
-
-                        </div>`;
-
+                        return `<div class="cart-item" data-name="${item.product.name}"><img src="${mainImage}" alt="${item.product.name}"><div class="cart-item-info"><h4>${item.product.name}</h4><span>${this.formatCurrency(item.product.price || 0)}</span></div><div class="quantity-selector"><button class="quantity-btn decrease-qty">-</button><input type="number" class="quantity-input" value="${item.quantity}" min="0" name="cart-quantity"><button class="quantity-btn increase-qty">+</button></div></div>`;
                     }).join('');
-
                     const total = Store.getCartTotal();
-
                     this.elements.cartTotal.textContent = `Total: ${this.formatCurrency(total)}`;
-
-                    let productList = "Hola, quisiera realizar un pedido de los siguientes productos:\n\n";
-
+                    let productList = "Hola, quisiera realizar un pedido:\n\n";
                     Store.state.cart.forEach(item => {
-
                         const price = item.product.price || 0;
-
                         productList += `- ${item.product.name} (x${item.quantity}) = ${this.formatCurrency(price * item.quantity)}\n`;
-
                     });
-
                     productList += `\n*Total estimado: ${this.formatCurrency(total)}*`;
-
-                    const message = encodeURIComponent(productList);
-
-                    this.elements.checkoutBtn.href = `https://wa.me/${API.getPhoneNumber()}?text=${message}`;
-
+                    this.elements.checkoutBtn.href = `https://wa.me/${API.getPhoneNumber()}?text=${encodeURIComponent(productList)}`;
                 }
-
             },
 
             updateCartCounter() {
-
                 const totalItems = Store.state.cart.reduce((sum, item) => sum + item.quantity, 0);
-
                 this.elements.cartCounter.textContent = totalItems;
-
                 this.elements.cartCounter.style.display = totalItems > 0 ? 'flex' : 'none';
-
             },
 
             renderLayout() {
-
-                // Esta función ahora SOLO renderiza el menú de escritorio
-
                 API.data.categories.sort((a, b) => a.title.localeCompare(b.title));
-
                 API.data.categories.forEach(category => {
-
                     if (category.subcategories) {
-
                         category.subcategories.sort((a, b) => a.title.localeCompare(b.title));
-
                         const dropdownHTML = `<div class="dropdown"><button class="dropbtn">${category.title} <i class="fas fa-caret-down"></i></button><div class="dropdown-content">${category.subcategories.map(sub => `<a href="#${sub.id}-section">${sub.title}</a>`).join('')}</div></div>`;
-
                         this.elements.navLinks.innerHTML += dropdownHTML;
-
                         category.subcategories.forEach(sub => this.renderSection(sub.id, sub.title, sub.desc));
-
                     } else {
-
                         this.elements.navLinks.innerHTML += `<a href="#${category.id}-section">${category.title}</a>`;
-
                         this.renderSection(category.id, category.title, category.desc);
-
                     }
-
                 });
-
             },
-
-
-
-            // --- [NUEVA FUNCIÓN] ---
-
-            // Esta función construye el nuevo menú móvil de paneles
 
             buildMobileMenu() {
-
                 const container = document.getElementById('mobile-menu-container');
-
                 if (!container) return;
-
-
-
                 let mainPanelHTML = `<div class="mobile-panel main-panel active">`;
-
                 let subPanelsHTML = '';
-
-
-
                 API.data.categories.forEach(category => {
-
                     if (category.subcategories) {
-
-                        // 1. Enlace que "dispara" el subpanel
-
-                        mainPanelHTML += `<a href="#" class="mobile-nav-trigger" data-target-panel="panel-${category.id}">
-
-                                            ${category.title}
-
-                                            <i class="fas fa-chevron-right"></i>
-
-                                          </a>`;
-
-                       
-
-                        // 2. Construir el subpanel
-
-                        subPanelsHTML += `<div class="mobile-panel sub-panel" id="panel-${category.id}">`;
-
-                        // Botón de Volver
-
-                        subPanelsHTML += `<a href="#" class="mobile-nav-back">
-
-                                            <i class="fas fa-chevron-left"></i>
-
-                                            Volver a Categorías
-
-                                         </a>`;
-
-                        // Título del panel
-
-                        subPanelsHTML += `<h4 class="mobile-panel-title">${category.title}</h4>`;
-
-                        // Lista de subcategorías
-
+                        mainPanelHTML += `<a href="#" class="mobile-nav-trigger" data-target-panel="panel-${category.id}">${category.title} <i class="fas fa-chevron-right"></i></a>`;
+                        subPanelsHTML += `<div class="mobile-panel sub-panel" id="panel-${category.id}"><a href="#" class="mobile-nav-back"><i class="fas fa-chevron-left"></i> Volver a Categorías</a><h4 class="mobile-panel-title">${category.title}</h4>`;
                         category.subcategories.forEach(sub => {
-
                             subPanelsHTML += `<a href="#${sub.id}-section" class="mobile-nav-link">${sub.title}</a>`;
-
                         });
-
                         subPanelsHTML += `</div>`;
-
-                   
-
                     } else {
-
-                        // Enlace final (sin submenú)
-
                         mainPanelHTML += `<a href="#${category.id}-section" class="mobile-nav-link">${category.title}</a>`;
-
                     }
-
                 });
-
-
-
                 mainPanelHTML += `</div>`;
-
                 container.innerHTML = mainPanelHTML + subPanelsHTML;
-
-               
-
             },
-
-            // --- [FIN DE NUEVA FUNCIÓN] ---
-
-
 
             renderSection(id, title, desc) {
-
                 const sectionHTML = `<section id="${id}-section" class="content-section fade-in"><h1>${title}</h1><p class="section-description">${desc || ''}</p></section><div id="${id}-grid" class="cards-grid"></div>`;
-
                 this.elements.productSectionsContainer.innerHTML += sectionHTML;
-
             },
 
-          renderAllProducts() {
+            renderAllProducts() {
                 for (const categoryId in API.data.products) {
-                    
-                    // --- LÍNEA COMENTADA ---
-                    // Esta línea se ha comentado para permitir un orden manual de los productos
-                    // desde el archivo productos.json. Si no se comenta, la página
-                    // siempre reordenará los productos alfabéticamente.
-                    //
-                    // API.data.products[categoryId].sort((a, b) => a.name.localeCompare(b.name));
-                    // --- FIN DE LÍNEA COMENTADA ---
-
                     const grid = document.getElementById(`${categoryId}-grid`);
                     if (grid) {
                         grid.innerHTML = API.data.products[categoryId].map(item => this.createCardHTML(item)).join('');
@@ -660,488 +338,335 @@
             },
 
             toggleModal(modal, show) {
-
                 modal.style.display = show ? "flex" : "none";
-
-
-
             },
 
-openProductModal(card) {
-    const name = card.dataset.name; // 1. Obtenemos el nombre del producto
-    const price = card.dataset.price;
-    const images = JSON.parse(card.dataset.img || '[]');
+            openProductModal(card) {
+                const name = card.dataset.name;
+                const price = card.dataset.price;
+                const images = JSON.parse(card.dataset.img || '[]');
+                const product = Store.productMap.get(name);
+                
+                document.getElementById("modalTitle").textContent = name;
+                document.getElementById("modalImg").src = images[0] || 'https://placehold.co/400x400/2F2F2F/FFFFFF?text=Imagen+no+disponible';
+                document.getElementById("modalDescriptionText").textContent = product ? product.desc : 'Sin descripción';
+                document.getElementById("modalPriceText").innerHTML = `<strong style='font-size:1.2em;'>Precio: ${this.formatCurrency(parseFloat(price || '0'))}</strong>`;
+                document.getElementById("modalWhatsappBtn").href = `https://wa.me/${API.getPhoneNumber()}?text=${encodeURIComponent(`Hola, quisiera consultar sobre el producto: ${name}`)}`;
+                this.toggleModal(this.elements.productModal, true);
+            },
+            
+            openZoomModal(src) {
+                const modal = this.elements.imageZoomModal;
+                const img = document.getElementById('zoomImg');
+                img.src = src;
+                this.toggleModal(modal, true);
+            },
 
-   // --- ¡NUEVA LÓGICA OPTIMIZADA! ---
-// 2. Buscamos el producto en el mapa (acceso instantáneo O(1))
-const product = Store.productMap.get(name);
-const fullDescription = product ? product.desc : 'Descripción no encontrada.';
-// --- FIN DE LA NUEVA LÓGICA ---
-
-    document.getElementById("modalTitle").textContent = name;
-    document.getElementById("modalImg").src = images[0] || 'https://placehold.co/400x400/2F2F2F/FFFFFF?text=Imagen+no+disponible';
-
-    // 4. Ponemos la descripción completa en su párrafo
-    document.getElementById("modalDescriptionText").textContent = fullDescription;
-
-    // 5. Ponemos el precio en su párrafo
-    const priceElement = document.getElementById("modalPriceText");
-    priceElement.innerHTML = `<strong style='font-size:1.2em;'>Precio: ${this.formatCurrency(parseFloat(price || '0'))}</strong>`;
-
-    const whatsappLink = `https://wa.me/${API.getPhoneNumber()}?text=${encodeURIComponent(`Hola, quisiera consultar sobre el producto: ${name}`)}`;
-    document.getElementById("modalWhatsappBtn").href = whatsappLink;
-
-    this.toggleModal(this.elements.productModal, true);
-},
             showMainContent() {
-
                 this.elements.loadingIndicator.style.display = 'none';
-
                 this.elements.mainContent.style.display = 'block';
-
             },
 
             initScrollAnimations() {
-
                 const observer = new IntersectionObserver((entries) => {
-
                     entries.forEach(entry => {
-
                         if (entry.isIntersecting) entry.target.classList.add('is-visible');
+                    });
+                }, { threshold: 0.1 });
+                document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+            },
 
+            // --- LÓGICA DE SUGERENCIAS EN VIVO ---
+            renderSuggestions(matches) {
+                const box = this.elements.suggestionsBox;
+                box.innerHTML = '';
+                
+                if (matches.length === 0) {
+                    box.style.display = 'none';
+                    return;
+                }
+
+                // Mostrar máximo 6 sugerencias para no tapar todo
+                matches.slice(0, 6).forEach(product => {
+                    const item = document.createElement('div');
+                    item.className = 'suggestion-item';
+                    
+                    const imgUrl = (Array.isArray(product.img) && product.img.length > 0) ? product.img[0] : 'https://placehold.co/50x50?text=IMG';
+                    
+                    item.innerHTML = `
+                        <img src="${imgUrl}" alt="miniatura">
+                        <span>${product.name}</span>
+                    `;
+
+                    // Al hacer click en una sugerencia
+                    item.addEventListener('click', () => {
+                        this.elements.globalSearchInput.value = product.name; // Rellenar input
+                        box.style.display = 'none'; // Ocultar sugerencias
+                        this.handleSearch(true); // Ejecutar búsqueda y hacer scroll
                     });
 
-                }, { threshold: 0.1 });
+                    box.appendChild(item);
+                });
 
-                document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+                box.style.display = 'block';
+            },
 
-            }
+            // --- BUSCADOR CENTRALIZADO ---
+            handleSearch(scrollToFirst = false) {
+                const rawSearch = UI.elements.globalSearchInput.value || '';
+                const searchTerm = this.normalizeText(rawSearch.trim());
+                let totalVisibleCards = 0;
+                let firstCardFound = null;
 
+                // 1. Gestionar botón de borrar y sugerencias
+                if(this.elements.clearSearchBtn) {
+                    this.elements.clearSearchBtn.style.display = rawSearch.length > 0 ? 'block' : 'none';
+                }
+
+                // Si está vacío, reseteamos todo
+                if (searchTerm === '') {
+                    this.elements.suggestionsBox.style.display = 'none';
+                    document.querySelectorAll('.cards-grid').forEach(grid => {
+                        grid.style.display = 'grid';
+                        grid.previousElementSibling.style.display = 'block';
+                        grid.querySelectorAll('.card').forEach(c => c.style.display = 'flex');
+                    });
+                    this.elements.globalNoResultsMessage.style.display = 'none';
+                    return;
+                }
+
+                // 2. Filtrado de Grillas (Visual)
+                document.querySelectorAll('.cards-grid').forEach(grid => {
+                    let visibleCardsInGrid = 0;
+                    let isCategoryMatch = false;
+
+                    const section = grid.previousElementSibling;
+                    if (section && section.classList.contains('content-section')) {
+                        const titleElement = section.querySelector('h1');
+                        if (titleElement) {
+                            const categoryTitle = this.normalizeText(titleElement.innerText);
+                            if (categoryTitle.includes(searchTerm)) isCategoryMatch = true;
+                        }
+                    }
+
+                    grid.querySelectorAll('.card').forEach(card => {
+                        const cardText = this.normalizeText(card.innerText);
+                        const isProductMatch = cardText.includes(searchTerm);
+                        const showCard = isProductMatch || isCategoryMatch;
+                        
+                        card.style.display = showCard ? 'flex' : 'none';
+                        
+                        if(showCard) {
+                            visibleCardsInGrid++;
+                            totalVisibleCards++;
+                            if (!firstCardFound) firstCardFound = card;
+                        }
+                    });
+
+                    if (section) section.style.display = visibleCardsInGrid > 0 ? 'block' : 'none';
+                    grid.style.display = visibleCardsInGrid > 0 ? 'grid' : 'none';
+                });
+
+                // 3. Generar Sugerencias (Dropdown)
+                // Filtramos la lista completa de productos para el dropdown
+                if (!scrollToFirst) { // Solo mostrar sugerencias si el usuario está escribiendo
+                    const suggestions = Store.productList.filter(p => 
+                        this.normalizeText(p.name).includes(searchTerm)
+                    );
+                    this.renderSuggestions(suggestions);
+                }
+
+                // 4. Mensaje de No Resultados
+                if (UI.elements.globalNoResultsMessage) {
+                    UI.elements.globalNoResultsMessage.style.display = (totalVisibleCards === 0) ? 'block' : 'none';
+                }
+
+                // 5. Scroll automático al primer resultado (si se solicita)
+                if (scrollToFirst && firstCardFound) {
+                    setTimeout(() => {
+                        const yOffset = -120; 
+                        const y = firstCardFound.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                        window.scrollTo({top: y, behavior: 'smooth'});
+                    }, 100);
+                }
+            },
         };
 
-       
-
         const App = {
-
             async init() {
-
                 const dataLoaded = await API.fetchData();
-
                 if (!dataLoaded) return;
-
                 Store.loadCart();
-
                 UI.renderLayout();
-
-               
-
-                // --- [LÍNEA AÑADIDA] ---
-
-                UI.buildMobileMenu(); // Construye el nuevo menú móvil
-
-                // --- [FIN DE LÍNEA AÑADIDA] ---
-
-
-
+                UI.buildMobileMenu();
                 UI.renderAllProducts();
-                // --- AÑADIR ESTE BLOQUE ---
-// Creamos el mapa de búsqueda de productos para un acceso O(1)
-for (const categoryId in API.data.products) {
-    API.data.products[categoryId].forEach(product => {
-        Store.productMap.set(product.name, product);
-    });
-}
-// --- FIN DEL BLOQUE AÑADIDO ---
-
+                
+                // Llenar mapa y lista plana para búsquedas
+                for (const categoryId in API.data.products) {
+                    API.data.products[categoryId].forEach(product => {
+                        Store.productMap.set(product.name, product);
+                        Store.productList.push(product); // Lista para autocompletado
+                    });
+                }
+                
                 UI.updateCartCounter();
-
                 UI.showMainContent();
-
                 UI.initScrollAnimations();
-
                 this.setupEventListeners();
-
             },
 
             setupEventListeners() {
-
-                // Eventos para las tarjetas de productos
-
+                // Eventos Globales
                 document.body.addEventListener('click', (e) => {
-
                     const card = e.target.closest('.card');
-
                     if (card) {
-
                         if (e.target.matches('.thumbnail')) {
-
                             const mainImage = card.querySelector('.main-image');
-
                             const newSrc = e.target.dataset.imgSrc;
-
                             if (mainImage && newSrc) mainImage.src = newSrc;
-
                             card.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
-
                             e.target.classList.add('active');
-
                         } else if (e.target.closest('.main-image-container, .image-wrapper')) {
-
-                            const imageToZoom = card.querySelector('.main-image') || card.querySelector('.image-wrapper img');
-
-                            if (imageToZoom) UI.openZoomModal(imageToZoom.src);
-
+                             const imageToZoom = card.querySelector('.main-image') || card.querySelector('.image-wrapper img');
+                             if (imageToZoom) UI.openZoomModal(imageToZoom.src);
                         } else if (e.target.closest('.details-btn')) {
-
                             UI.openProductModal(card);
-
                         } else if (e.target.closest('.add-to-cart-btn')) {
-
                             const quantityInput = card.querySelector('.quantity-input');
-
                             const quantity = parseInt(quantityInput.value, 10);
-
                             if (quantity > 0) {
-
                                 const product = { name: card.dataset.name, img: JSON.parse(card.dataset.img || '[]'), price: parseFloat(card.dataset.price || '0') };
-
                                 Store.addProduct(product, quantity);
-
                                 UI.updateCartCounter();
-
                                 if(quantityInput) quantityInput.value = 0;
-
                             }
-
                         } else if (e.target.matches('.quantity-btn')) {
-
                             const input = card.querySelector('.quantity-input');
-
                             if(input){
-
                                 let currentValue = parseInt(input.value, 10);
-
-                                if (e.target.matches('.increase-qty')) {
-
-                                    input.value = currentValue + 1;
-
-                                } else if (e.target.matches('.decrease-qty') && currentValue > 0) {
-
-                                    input.value = currentValue - 1;
-
-                                }
-
+                                if (e.target.matches('.increase-qty')) input.value = currentValue + 1;
+                                else if (e.target.matches('.decrease-qty') && currentValue > 0) input.value = currentValue - 1;
                             }
-
                         }
-
                     }
-
+                    
+                    // Cerrar sugerencias si clic fuera
+                    if (!e.target.closest('.search-bar-container')) {
+                        UI.elements.suggestionsBox.style.display = 'none';
+                    }
                 });
-
-
-
-                // Eventos para cerrar los modales
 
                 document.addEventListener('click', (e) => {
-
                      if (e.target.closest('.close-button') || e.target.classList.contains('modal')) {
-
                         UI.toggleModal(UI.elements.productModal, false);
-
                         UI.toggleModal(UI.elements.imageZoomModal, false);
-
                         UI.toggleModal(UI.elements.cartModal, false);
-
                     }
-
                 });
 
-
-
-                // Eventos del carrito
-
                 UI.elements.cartModal.addEventListener('click', (e) => {
-
                     const cartItem = e.target.closest('.cart-item');
-
                     if (!cartItem) return;
-
                     const productName = cartItem.dataset.name;
-
                     const input = cartItem.querySelector('.quantity-input');
-
                     if(!input) return;
-
                     let quantity = parseInt(input.value, 10);
-
-                    if (e.target.matches('.increase-qty')) {
-
-                        Store.updateQuantity(productName, quantity + 1);
-
-                    } else if (e.target.matches('.decrease-qty')) {
-
-                        Store.updateQuantity(productName, quantity - 1);
-
-                    }
-
+                    if (e.target.matches('.increase-qty')) Store.updateQuantity(productName, quantity + 1);
+                    else if (e.target.matches('.decrease-qty')) Store.updateQuantity(productName, quantity - 1);
                     UI.renderCartItems();
-
                     UI.updateCartCounter();
-
                 });
 
                 UI.elements.cartModal.addEventListener('change', (e) => {
-
                     if (e.target.matches('.quantity-input[name="cart-quantity"]')) {
-
                         const cartItem = e.target.closest('.cart-item');
-
                         if(!cartItem) return;
-
-                        const productName = cartItem.dataset.name;
-
                         const newQuantity = parseInt(e.target.value, 10);
-
-                        Store.updateQuantity(productName, newQuantity);
-
+                        Store.updateQuantity(cartItem.dataset.name, newQuantity);
                         UI.renderCartItems();
-
                         UI.updateCartCounter();
-
                     }
-
                 });
 
                 document.getElementById('cartBtn').addEventListener('click', () => {
-
                     UI.renderCartItems();
-
                     UI.toggleModal(UI.elements.cartModal, true);
-
                 });
-
-
-
-                // --- [BLOQUE REEMPLAZADO] ---
-
-                // Eventos de la navegación principal (NUEVA LÓGICA)
 
                 UI.elements.hamburgerMenu.addEventListener('click', () => {
-
                     const container = document.getElementById('mobile-menu-container');
-
-                    if (!container) return; // Seguridad por si no existe
-
-                   
-
+                    if (!container) return;
                     const isOpen = container.classList.toggle('open');
-
                     document.body.classList.toggle('menu-open', isOpen);
-
                     document.documentElement.classList.toggle('menu-open', isOpen);
-
-
-
-                    // Si cerramos, forzamos el regreso al panel principal
-
                     if (!isOpen) {
-
                         container.classList.remove('sub-panel-active');
-
                         const mainPanel = container.querySelector('.mobile-panel.main-panel');
-
                         if (mainPanel) mainPanel.classList.add('active');
-
                         container.querySelectorAll('.mobile-panel.sub-panel').forEach(p => p.classList.remove('active'));
-
                     }
-
                 });
-
-                // --- [FIN DEL BLOQUE REEMPLAZADO] ---
-
-
-
-                UI.elements.globalSearchInput.addEventListener('input', () => App.handleSearch());
-
-
-
-                // --- [NUEVO LISTENER AÑADIDO] ---
-
-                // Listener para los clics DENTRO del nuevo menú móvil
 
                 document.getElementById('mobile-menu-container').addEventListener('click', (e) => {
-
                     const container = document.getElementById('mobile-menu-container');
-
-                   
-
-                    // 1. Clic en un "disparador" (ej. "Alfajores")
-
                     const trigger = e.target.closest('.mobile-nav-trigger');
-
                     if (trigger) {
-
                         e.preventDefault();
-
-                        const targetPanelId = trigger.dataset.targetPanel;
-
-                        container.classList.add('sub-panel-active'); // Desliza el panel principal
-
-                        const targetPanel = container.querySelector(`#${targetPanelId}`);
-
-                        if (targetPanel) targetPanel.classList.add('active'); // Muestra el subpanel
-
-                    }
-
-
-
-                    // 2. Clic en "Volver"
-
-                    const backButton = e.target.closest('.mobile-nav-back');
-
-                    if (backButton) {
-
-                        e.preventDefault();
-
-                        container.classList.remove('sub-panel-active'); // Regresa el panel principal
-
-                        if (backButton.closest('.mobile-panel')) {
-
-                            backButton.closest('.mobile-panel').classList.remove('active'); // Oculta este subpanel
-
+                        const targetPanel = container.querySelector(`#${trigger.dataset.targetPanel}`);
+                        if (targetPanel) {
+                            container.classList.add('sub-panel-active');
+                            targetPanel.classList.add('active');
                         }
-
                     }
-
-
-
-                    // 3. Clic en un enlace final (ej. "#situ-natural" o "#especias")
-
-                    const finalLink = e.target.closest('.mobile-nav-link');
-
-                    if (finalLink) {
-
-                        // El enlace navegará al #id... solo cerramos el menú.
-
-                        container.classList.remove('open');
-
-                        document.body.classList.remove('menu-open');
-
-                        document.documentElement.classList.remove('menu-open');
-
-                       
-
-                        // Forzar el reseteo al panel principal para la próxima vez que se abra
-
+                    const backButton = e.target.closest('.mobile-nav-back');
+                    if (backButton) {
+                        e.preventDefault();
                         container.classList.remove('sub-panel-active');
-
-                        container.querySelectorAll('.sub-panel').forEach(p => p.classList.remove('active'));
-
+                        backButton.closest('.mobile-panel').classList.remove('active');
                     }
-
+                    const finalLink = e.target.closest('.mobile-nav-link');
+                    if (finalLink) {
+                        container.classList.remove('open');
+                        document.body.classList.remove('menu-open');
+                        document.documentElement.classList.remove('menu-open');
+                        container.classList.remove('sub-panel-active');
+                        container.querySelectorAll('.sub-panel').forEach(p => p.classList.remove('active'));
+                    }
                 });
 
-                // --- [FIN DEL NUEVO LISTENER] ---
-
-               
-
-                // --- [BLOQUE BORRADO] ---
-
-                // El antiguo 'document.querySelectorAll('.dropdown .dropbtn')...' ha sido eliminado.
-
-                // --- [NUEVO BLOQUE] ---
-                // Evento para cerrar el menú móvil al hacer clic fuera
                 document.body.addEventListener('click', (e) => {
                     const container = document.getElementById('mobile-menu-container');
-                    
-                    // 1. Salir si el menú no existe o ya está cerrado
-                    if (!container || !container.classList.contains('open')) {
-                        return;
-                    }
-
-                    // 2. Salir si el clic fue en el botón de hamburguesa (o su icono)
-                    // (closest() revisa el elemento y sus padres)
-                    if (e.target.closest('#' + UI.elements.hamburgerMenu.id)) {
-                        return; // Dejamos que el listener de la hamburguesa se encargue
-                    }
-
-                    // 3. Salir si el clic fue DENTRO del menú
-                    if (e.target.closest('#' + container.id)) {
-                        return; // El usuario está interactuando con el menú
-                    }
-                    
-                    // 4. Si llegamos aquí, el clic fue "fuera". Cerramos el menú.
+                    if (!container || !container.classList.contains('open')) return;
+                    if (e.target.closest('#' + UI.elements.hamburgerMenu.id)) return;
+                    if (e.target.closest('#' + container.id)) return;
                     container.classList.remove('open');
                     document.body.classList.remove('menu-open');
                     document.documentElement.classList.remove('menu-open');
-
-                    // 5. (Opcional pero recomendado) Reseteamos al panel principal
                     container.classList.remove('sub-panel-active');
                     container.querySelectorAll('.sub-panel').forEach(p => p.classList.remove('active'));
                 });
-                // --- [FIN DEL NUEVO BLOQUE] ---
 
-
-
-            }, // Fin de setupEventListeners
-
-
-
-            handleSearch() {
-
-                const searchTerm = (UI.elements.globalSearchInput.value || '').toLowerCase().trim();
-
-                let totalVisibleCards = 0;
-
-                document.querySelectorAll('.cards-grid').forEach(grid => {
-
-                    let visibleCardsInGrid = 0;
-
-                    grid.querySelectorAll('.card').forEach(card => {
-
-                        const name = (card.dataset.name || '').toLowerCase();
-
-                        const desc = (card.dataset.desc || '').toLowerCase();
-
-                        const isMatch = name.includes(searchTerm) || desc.includes(searchTerm);
-
-                        card.style.display = isMatch ? 'flex' : 'none';
-
-                        if(isMatch) {
-
-                            visibleCardsInGrid++;
-
-                            totalVisibleCards++;
-
-                        }
-
-                    });
-
-                    const section = grid.previousElementSibling;
-
-                    if(section && section.classList.contains('content-section')){
-
-                        section.style.display = visibleCardsInGrid > 0 ? 'block' : 'none';
-
-                    }
-
+                // --- INICIALIZACIÓN DEL BUSCADOR CON SUGERENCIAS ---
+                const debouncedSearch = UI.debounce(() => UI.handleSearch(false), 300);
+                
+                UI.elements.globalSearchInput.addEventListener('input', debouncedSearch);
+                UI.elements.globalSearchInput.addEventListener('focus', () => {
+                    // Mostrar sugerencias al hacer clic si hay texto
+                    if(UI.elements.globalSearchInput.value.trim() !== '') UI.handleSearch(false);
                 });
 
-                 UI.elements.globalNoResultsMessage.style.display = totalVisibleCards === 0 && searchTerm !== '' ? 'block' : 'none';
-
-            } // Fin de handleSearch
-
-        }; // Fin del objeto App
-
-       
+                if (UI.elements.clearSearchBtn) {
+                    UI.elements.clearSearchBtn.addEventListener('click', () => {
+                        UI.elements.globalSearchInput.value = '';
+                        UI.handleSearch(false);
+                        UI.elements.globalSearchInput.focus();
+                    });
+                }
+            },
+        };
 
         App.init();
-
-
-
     });
-
 </script>
-
+</body>
+</html>

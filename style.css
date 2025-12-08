@@ -1481,4 +1481,88 @@
     color: var(--naranja-cacahuate) !important; /* ¡Fuerza el color correcto! */
 }
 
+/* =========================================
+   --- ESTILOS DEL AUTOCOMPLETADO (NUEVO) ---
+   ========================================= */
+
+/* Ajuste para que la barra quede por encima del contenido al desplegar */
+.search-bar-container {
+    position: relative;
+    z-index: 1002; 
+}
+
+/* El botón X para borrar (ahora visible con estilos) */
+.search-clear-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--marron-oscuro-texto); /* Usa tus variables existentes */
+    cursor: pointer;
+    font-size: 1.2em;
+    display: none; 
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.search-clear-btn:hover {
+    color: var(--rojo-error);
+}
+
+/* Espacio extra en el input para que el texto no tape la X */
+.search-bar-container input {
+    padding-right: 40px; 
+}
+
+/* La caja flotante de sugerencias */
+.suggestions-box {
+    position: absolute;
+    top: 100%; /* Justo debajo del input */
+    left: 0;
+    width: 100%;
+    background-color: var(--fondo-claro-secundario); /* Fondo gris oscuro */
+    border: 1px solid var(--naranja-cacahuate); /* Borde naranja */
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    z-index: 1000;
+    max-height: 300px; /* Si hay muchos, hace scroll */
+    overflow-y: auto;
+    display: none; /* Oculto por defecto */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Cada ítem de la lista */
+.suggestion-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    color: var(--texto-claro);
+    transition: background-color 0.2s;
+    text-align: left; /* Asegura que el texto se alinee a la izquierda */
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+/* Efecto al pasar el mouse por encima */
+.suggestion-item:hover {
+    background-color: var(--naranja-cacahuate);
+    color: var(--fondo-oscuro);
+}
+
+/* La imagen pequeñita al lado del nombre */
+.suggestion-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin-right: 15px;
+    object-fit: cover;
+    background-color: #fff; /* Fondo blanco por si la imagen es transparente */
+}
+
     
