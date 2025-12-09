@@ -1565,4 +1565,38 @@
     background-color: #fff; /* Fondo blanco por si la imagen es transparente */
 }
 
+/* =========================================
+   --- NOTIFICACIONES TOAST (NUEVO) ---
+   ========================================= */
+.toast-notification {
+    visibility: hidden; /* Oculto por defecto */
+    min-width: 280px;
+    background-color: var(--verde-whatsapp); /* Tu verde corporativo */
+    color: #fff;
+    text-align: center;
+    border-radius: 50px; /* Bordes estilo "píldora" */
+    padding: 12px 24px;
+    position: fixed;
+    z-index: 2000; /* ¡Encima de todo! */
+    left: 50%;
+    bottom: 30px; /* Empieza un poco abajo */
+    transform: translateX(-50%); /* Centrado perfecto */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.4s ease, bottom 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Clase para mostrarlo */
+.toast-notification.show {
+    visibility: visible;
+    opacity: 1;
+    bottom: 50px; /* Sube un poquito al aparecer */
+}
+
     

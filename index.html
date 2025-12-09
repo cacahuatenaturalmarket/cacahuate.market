@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
+    <title>Catálogo Mejorado - CACAHUATE NATURAL MARKET</title>
+    
     <meta name="description" content="Tu tienda de confianza en Lanús. Encuentra suplementos, alimentos naturales, productos Sin TACC, cosmética y más. ¡Haz tu pedido online fácilmente!">
     <meta name="keywords" content="dietética, lanús, productos naturales, sin tacc, suplementos, mercado natural, cacahuate">
     <meta name="author" content="CACAHUATE NATURAL MARKET">
-
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://marketcacahuate.com.ar/">
     <meta property="og:title" content="CACAHUATE NATURAL MARKET | Catálogo Online">
     <meta property="og:description" content="Explora nuestro catálogo completo de productos naturales y saludables. Pide por WhatsApp y retira en Lanús o recibe en tu domicilio.">
     <meta property="og:image" content="https://i.imgur.com/BCGbBgz.jpeg">
-
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="http://marketcacahuate.com.ar/">
     <meta name="twitter:title" content="CACAHUATE NATURAL MARKET">
     <meta name="twitter:description" content="Tu tienda natural en Lanús. Suplementos, alimentos orgánicos y más.">
     <meta name="twitter:image" content="https://i.imgur.com/BCGbBgz.jpeg">
-    <title>Catálogo Mejorado - CACAHUATE NATURAL MARKET</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -58,7 +58,8 @@
     </nav>
 
     <div id="mobile-menu-container"></div>
-  <div class="search-bar-container">
+    
+    <div class="search-bar-container">
         <i class="fas fa-search"></i>
         <input type="text" id="globalSearchInput" placeholder="Buscar en todo el catálogo..." autocomplete="off">
         <button id="clearSearchBtn" class="search-clear-btn" aria-label="Borrar búsqueda" style="display: none;">
@@ -104,6 +105,7 @@
         <span class="close-button">×</span>
         <img id="zoomImg" class="modal-content" alt="Imagen ampliada">
     </div>
+    
     <div id="cartModal" class="modal">
         <div class="modal-content">
             <span class="close-button">×</span>
@@ -118,6 +120,8 @@
         </div>
     </div>
 
+    <div id="toast" class="toast-notification"></div>
+
 <script>
     document.addEventListener('DOMContentLoaded', () => {
 
@@ -125,7 +129,6 @@
             data: null,
             async fetchData() {
                 try {
-                    // Anti-caché activado
                     const response = await fetch('./productos.json?v=' + new Date().getTime());
                     if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
                     this.data = await response.json();
@@ -144,7 +147,7 @@
         const Store = {
             state: { cart: [] },
             productMap: new Map(),
-            productList: [], // Lista plana para búsquedas rápidas
+            productList: [],
             loadCart() {
                 const savedCart = localStorage.getItem('cacahuateCart');
                 if (savedCart) this.state.cart = JSON.parse(savedCart);
@@ -203,7 +206,7 @@
                 checkoutBtn: document.getElementById('checkoutBtn'),
                 globalSearchInput: document.getElementById('globalSearchInput'),
                 clearSearchBtn: document.getElementById('clearSearchBtn'),
-                suggestionsBox: document.getElementById('suggestionsBox'), // NUEVO
+                suggestionsBox: document.getElementById('suggestionsBox'),
                 globalNoResultsMessage: document.getElementById('globalNoResultsMessage'),
                 cartTotal: document.getElementById('cartTotal'),
             },
@@ -214,19 +217,16 @@
                 }).format(value);
             },
 
-            // Seguridad de HTML
             escapeHtmlAttr(str) {
                 if (!str) return '';
                 return str.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
             },
 
-            // Normalización de texto (sin acentos)
             normalizeText(str) {
                 if (!str) return '';
                 return str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
             },
 
-            // Función Debounce para suavizar la búsqueda
             debounce(func, wait) {
                 let timeout;
                 return function(...args) {
@@ -234,6 +234,20 @@
                     clearTimeout(timeout);
                     timeout = setTimeout(() => func.apply(context, args), wait);
                 };
+            },
+
+            // --- NUEVA FUNCIÓN TOAST (NOTIFICACIÓN) ---
+            showToast(message) {
+                const toast = document.getElementById("toast");
+                if (!toast) return;
+                
+                toast.innerHTML = message;
+                toast.className = "toast-notification show";
+                
+                // Ocultar automáticamente después de 3 segundos
+                setTimeout(function(){ 
+                    toast.className = toast.className.replace("show", ""); 
+                }, 3000);
             },
 
             createCardHTML(item) {
@@ -288,8 +302,7 @@
                     this.elements.cartTotal.textContent = `Total: ${this.formatCurrency(total)}`;
                     let productList = "Hola, quisiera realizar un pedido:\n\n";
                     Store.state.cart.forEach(item => {
-                        const price = item.product.price || 0;
-                        productList += `- ${item.product.name} (x${item.quantity}) = ${this.formatCurrency(price * item.quantity)}\n`;
+                        productList += `- ${item.product.name} (x${item.quantity}) = ${this.formatCurrency(item.product.price * item.quantity)}\n`;
                     });
                     productList += `\n*Total estimado: ${this.formatCurrency(total)}*`;
                     this.elements.checkoutBtn.href = `https://wa.me/${API.getPhoneNumber()}?text=${encodeURIComponent(productList)}`;
@@ -391,7 +404,6 @@
                 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
             },
 
-            // --- LÓGICA DE SUGERENCIAS EN VIVO ---
             renderSuggestions(matches) {
                 const box = this.elements.suggestionsBox;
                 box.innerHTML = '';
@@ -401,7 +413,6 @@
                     return;
                 }
 
-                // Mostrar máximo 6 sugerencias para no tapar todo
                 matches.slice(0, 6).forEach(product => {
                     const item = document.createElement('div');
                     item.className = 'suggestion-item';
@@ -413,11 +424,10 @@
                         <span>${product.name}</span>
                     `;
 
-                    // Al hacer click en una sugerencia
                     item.addEventListener('click', () => {
-                        this.elements.globalSearchInput.value = product.name; // Rellenar input
-                        box.style.display = 'none'; // Ocultar sugerencias
-                        this.handleSearch(true); // Ejecutar búsqueda y hacer scroll
+                        this.elements.globalSearchInput.value = product.name;
+                        box.style.display = 'none';
+                        this.handleSearch(true);
                     });
 
                     box.appendChild(item);
@@ -426,19 +436,16 @@
                 box.style.display = 'block';
             },
 
-            // --- BUSCADOR CENTRALIZADO ---
             handleSearch(scrollToFirst = false) {
                 const rawSearch = UI.elements.globalSearchInput.value || '';
                 const searchTerm = this.normalizeText(rawSearch.trim());
                 let totalVisibleCards = 0;
                 let firstCardFound = null;
 
-                // 1. Gestionar botón de borrar y sugerencias
                 if(this.elements.clearSearchBtn) {
                     this.elements.clearSearchBtn.style.display = rawSearch.length > 0 ? 'block' : 'none';
                 }
 
-                // Si está vacío, reseteamos todo
                 if (searchTerm === '') {
                     this.elements.suggestionsBox.style.display = 'none';
                     document.querySelectorAll('.cards-grid').forEach(grid => {
@@ -450,7 +457,6 @@
                     return;
                 }
 
-                // 2. Filtrado de Grillas (Visual)
                 document.querySelectorAll('.cards-grid').forEach(grid => {
                     let visibleCardsInGrid = 0;
                     let isCategoryMatch = false;
@@ -482,21 +488,17 @@
                     grid.style.display = visibleCardsInGrid > 0 ? 'grid' : 'none';
                 });
 
-                // 3. Generar Sugerencias (Dropdown)
-                // Filtramos la lista completa de productos para el dropdown
-                if (!scrollToFirst) { // Solo mostrar sugerencias si el usuario está escribiendo
+                if (!scrollToFirst) { 
                     const suggestions = Store.productList.filter(p => 
                         this.normalizeText(p.name).includes(searchTerm)
                     );
                     this.renderSuggestions(suggestions);
                 }
 
-                // 4. Mensaje de No Resultados
                 if (UI.elements.globalNoResultsMessage) {
                     UI.elements.globalNoResultsMessage.style.display = (totalVisibleCards === 0) ? 'block' : 'none';
                 }
 
-                // 5. Scroll automático al primer resultado (si se solicita)
                 if (scrollToFirst && firstCardFound) {
                     setTimeout(() => {
                         const yOffset = -120; 
@@ -516,11 +518,10 @@
                 UI.buildMobileMenu();
                 UI.renderAllProducts();
                 
-                // Llenar mapa y lista plana para búsquedas
                 for (const categoryId in API.data.products) {
                     API.data.products[categoryId].forEach(product => {
                         Store.productMap.set(product.name, product);
-                        Store.productList.push(product); // Lista para autocompletado
+                        Store.productList.push(product);
                     });
                 }
                 
@@ -531,7 +532,6 @@
             },
 
             setupEventListeners() {
-                // Eventos Globales
                 document.body.addEventListener('click', (e) => {
                     const card = e.target.closest('.card');
                     if (card) {
@@ -549,11 +549,20 @@
                         } else if (e.target.closest('.add-to-cart-btn')) {
                             const quantityInput = card.querySelector('.quantity-input');
                             const quantity = parseInt(quantityInput.value, 10);
+                            
+                            // --- MODIFICACIÓN AQUÍ: Notificación Toast ---
                             if (quantity > 0) {
                                 const product = { name: card.dataset.name, img: JSON.parse(card.dataset.img || '[]'), price: parseFloat(card.dataset.price || '0') };
                                 Store.addProduct(product, quantity);
                                 UI.updateCartCounter();
+                                
+                                // ¡Llamamos al Toast!
+                                UI.showToast(`<i class="fas fa-check-circle"></i> ¡Agregaste ${quantity} ${product.name}!`);
+                                
                                 if(quantityInput) quantityInput.value = 0;
+                            } else {
+                                // Opcional: Feedback si es 0
+                                UI.showToast(`<i class="fas fa-exclamation-circle"></i> Elige una cantidad primero`);
                             }
                         } else if (e.target.matches('.quantity-btn')) {
                             const input = card.querySelector('.quantity-input');
@@ -565,7 +574,6 @@
                         }
                     }
                     
-                    // Cerrar sugerencias si clic fuera
                     if (!e.target.closest('.search-bar-container')) {
                         UI.elements.suggestionsBox.style.display = 'none';
                     }
@@ -661,12 +669,10 @@
                     container.querySelectorAll('.sub-panel').forEach(p => p.classList.remove('active'));
                 });
 
-                // --- INICIALIZACIÓN DEL BUSCADOR CON SUGERENCIAS ---
                 const debouncedSearch = UI.debounce(() => UI.handleSearch(false), 300);
                 
                 UI.elements.globalSearchInput.addEventListener('input', debouncedSearch);
                 UI.elements.globalSearchInput.addEventListener('focus', () => {
-                    // Mostrar sugerencias al hacer clic si hay texto
                     if(UI.elements.globalSearchInput.value.trim() !== '') UI.handleSearch(false);
                 });
 
