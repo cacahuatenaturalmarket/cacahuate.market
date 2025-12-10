@@ -33,21 +33,48 @@
 
 <body>
 
-    <header>
-        <div class="header-background">
-            <img src="https://i.imgur.com/BCGbBgz.jpeg" alt="Fondo de especias y hierbas">
+  <header>
+  <div class="header-background" id="heroCarousel">
+    
+    <img src="https://i.imgur.com/BCGbBgz.jpeg" 
+         data-link="#main-nav-anchor" 
+         data-text="Bienvenido a Cacahuate"
+         alt="Especias y Frutos Secos" 
+         class="active">
+
+    <img src="https://i.ibb.co/d4pz33VT/fondo-carrusel-2.jpg" 
+         data-link="#infusiones-section" 
+         data-text="Ver Yerba Mate y Hierbas"
+         alt="Yerba Mate Campo">
+    
+    <img src="https://i.ibb.co/GfxhJ1GT/live-kombu.jpg" 
+         data-link="#bebidas-section" 
+         data-text="Ver Kombuchas"
+         alt="Kombucha Live">
+    
+    <img src="https://i.ibb.co/fVTyYtYm/crema-de-mani.webp" 
+         data-link="#despensa-section" 
+         data-text="Ver Cremas de Maní"
+         alt="Crema de Maní">
+    
+    <img src="https://i.ibb.co/kCbQVZh/barras.webp" 
+         data-link="#snacks-section" 
+         data-text="Ver Barras Proteicas"
+         alt="Barras">
+</div>
+
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="https://i.imgur.com/QPR06jn.png" alt="Logo de CACAHUATE NATURAL MARKET">
         </div>
-        <div class="header-content">
-            <div class="logo-container">
-                <img src="https://i.imgur.com/QPR06jn.png" alt="Logo de CACAHUATE NATURAL MARKET">
-            </div>
-            <div class="address-container">
-                <a href="https://www.google.com/maps/search/?api=1&query=CACAHUATE+NATURAL+MARKET+Coronel+D%27+Elia+2039%2C+Lan%C3%BAs" target="_blank" style="text-decoration: none; color: inherit;">
-                    <p class="address-header"><i class="fas fa-map-marker-alt"></i> Coronel D' Elia 2039, Lanús, Buenos Aires</p>
-                </a>
-            </div>
+        
+        <div class="address-container">
+            <a href="https://www.google.com/maps/search/?api=1&query=CACAHUATE+NATURAL+MARKET+Coronel+D%27+Elia+2039%2C+Lan%C3%BAs" target="_blank" style="text-decoration: none; color: inherit;">
+                <p class="address-header"><i class="fas fa-map-marker-alt"></i> Coronel D' Elia 2039, Lanús</p>
+            </a>
         </div>
-    </header>
+    </div>
+</header>
 
     <nav class="main-nav">
       <a href="#" class="nav-logo" style="font-weight: bold; font-family: 'Merriweather', serif; font-size: 1.2em;">CACAHUATE</a>
@@ -404,6 +431,26 @@
                 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
             },
 
+            // --- FUNCIÓN DEL CARRUSEL (HERO SLIDER) ---
+            initHeroCarousel() {
+                const slides = document.querySelectorAll('#heroCarousel img');
+                if (slides.length === 0) return;
+                
+                let currentSlide = 0;
+                
+                // Cambiar imagen cada 5 segundos (5000 ms)
+                setInterval(() => {
+                    // Quitamos la clase 'active' a la imagen actual
+                    slides[currentSlide].classList.remove('active');
+                    
+                    // Calculamos cuál es la siguiente (si es la última, vuelve a 0)
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    
+                    // Ponemos la clase 'active' a la nueva imagen
+                    slides[currentSlide].classList.add('active');
+                }, 5000); 
+            },
+
             renderSuggestions(matches) {
                 const box = this.elements.suggestionsBox;
                 box.innerHTML = '';
@@ -528,6 +575,7 @@
                 UI.updateCartCounter();
                 UI.showMainContent();
                 UI.initScrollAnimations();
+                UI.initHeroCarousel();
                 this.setupEventListeners();
             },
 
@@ -685,6 +733,8 @@
                 }
             },
         };
+
+        
 
         App.init();
     });
