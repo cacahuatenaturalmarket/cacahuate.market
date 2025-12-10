@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://i.imgur.com">
+    <link rel="preconnect" href="https://i.ibb.co">
+    <link rel="preconnect" href="https://acdn-us.mitiendanube.com">
+    <link rel="preconnect" href="https://http2.mlstatic.com">
+    
     <meta name="referrer" content="no-referrer">
     <title>Catálogo Mejorado - CACAHUATE NATURAL MARKET</title>
     
@@ -33,35 +39,39 @@
 
 <body>
 
-  <header>
-  <div class="header-background" id="heroCarousel">
-    
-    <img src="https://i.imgur.com/BCGbBgz.jpeg" 
-         data-link="#main-nav-anchor" 
-         data-text="Bienvenido a Cacahuate"
-         alt="Especias y Frutos Secos" 
-         class="active">
+<header>
+    <div class="header-background" id="heroCarousel">
+        <img src="https://i.imgur.com/BCGbBgz.jpeg" 
+             class="active"
+             fetchpriority="high"
+             data-link="#main-nav-anchor" 
+             data-text="Bienvenido a Cacahuate"
+             alt="Especias y Frutos Secos">
 
-    <img src="https://i.ibb.co/d4pz33VT/fondo-carrusel-2.jpg" 
-         data-link="#infusiones-section" 
-         data-text="Ver Yerba Mate y Hierbas"
-         alt="Yerba Mate Campo">
-    
-    <img src="https://i.ibb.co/GfxhJ1GT/live-kombu.jpg" 
-         data-link="#bebidas-section" 
-         data-text="Ver Kombuchas"
-         alt="Kombucha Live">
-    
-    <img src="https://i.ibb.co/fVTyYtYm/crema-de-mani.webp" 
-         data-link="#despensa-section" 
-         data-text="Ver Cremas de Maní"
-         alt="Crema de Maní">
-    
-    <img src="https://i.ibb.co/kCbQVZh/barras.webp" 
-         data-link="#snacks-section" 
-         data-text="Ver Barras Proteicas"
-         alt="Barras">
-</div>
+        <img src="https://i.ibb.co/d4pz33VT/fondo-carrusel-2.jpg" 
+             loading="lazy"
+             data-link="#infusiones-section" 
+             data-text="Ver Yerba Mate y Hierbas"
+             alt="Yerba Mate Campo">
+        
+        <img src="https://i.ibb.co/GfxhJ1GT/live-kombu.jpg" 
+             loading="lazy"
+             data-link="#bebidas-section" 
+             data-text="Ver Kombuchas"
+             alt="Kombucha Live">
+        
+        <img src="https://i.ibb.co/fVTyYtYm/crema-de-mani.webp" 
+             loading="lazy"
+             data-link="#despensa-section" 
+             data-text="Ver Cremas de Maní"
+             alt="Crema de Maní">
+        
+        <img src="https://i.ibb.co/kCbQVZh/barras.webp" 
+             loading="lazy"
+             data-link="#snacks-section" 
+             data-text="Ver Barras Proteicas"
+             alt="Barras">
+    </div>
 
     <div class="header-content">
         <div class="logo-container">
@@ -294,7 +304,8 @@
                     thumbs += '</div>';
                     imageGalleryHtml = '<div class="image-gallery"><div class="main-image-container"><img src="' + mainImage + '" class="main-image" alt="' + safeName + '" loading="lazy"></div>' + thumbs + '</div>';
                 } else {
-                    imageGalleryHtml = '<div class="image-wrapper"><img src="' + mainImage + '" alt="' + safeName + '" loading="lazy"></div>';
+                    // OPTIMIZACIÓN: Agregado decoding="async"
+                    imageGalleryHtml = '<div class="image-wrapper"><img src="' + mainImage + '" alt="' + safeName + '" loading="lazy" decoding="async"></div>';
                 }
 
                 return '<div class="card fade-in" data-name="' + safeName + '" data-price="' + (item.price || 0) + '" data-img=\'' + safeImages + '\'>' +
