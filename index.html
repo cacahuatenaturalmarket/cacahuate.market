@@ -256,7 +256,7 @@
 
             escapeHtmlAttr(str) {
                 if (!str) return '';
-                return str.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+                return str.replace(/"/g, '&quot;').replace(/'/g, '&apos;');
             },
 
             normalizeText(str) {
@@ -273,15 +273,12 @@
                 };
             },
 
-            // --- NUEVA FUNCIÓN TOAST (NOTIFICACIÓN) ---
             showToast(message) {
                 const toast = document.getElementById("toast");
                 if (!toast) return;
                 
                 toast.innerHTML = message;
                 toast.className = "toast-notification show";
-                
-                // Ocultar automáticamente después de 3 segundos
                 setTimeout(function(){ 
                     toast.className = toast.className.replace("show", ""); 
                 }, 3000);
@@ -304,7 +301,6 @@
                     thumbs += '</div>';
                     imageGalleryHtml = '<div class="image-gallery"><div class="main-image-container"><img src="' + mainImage + '" class="main-image" alt="' + safeName + '" loading="lazy"></div>' + thumbs + '</div>';
                 } else {
-                    // OPTIMIZACIÓN: Agregado decoding="async"
                     imageGalleryHtml = '<div class="image-wrapper"><img src="' + mainImage + '" alt="' + safeName + '" loading="lazy" decoding="async"></div>';
                 }
 
@@ -353,21 +349,54 @@
                 this.elements.cartCounter.style.display = totalItems > 0 ? 'flex' : 'none';
             },
 
+          // --- FUNCIÓN OPTIMIZADA: RENDER LAYOUT ---
+            // Mejora de rendimiento: Acumula el HTML en variables y lo inyecta una sola vez.
             renderLayout() {
                 API.data.categories.sort((a, b) => a.title.localeCompare(b.title));
+                
+                let navLinksHTML = '';
+                let sectionsHTML = '';
+
+                // Helper interno para crear el texto HTML de una sección
+                const createSectionString = (id, title, desc) => {
+                    return `<section id="${id}-section" class="content-section fade-in">
+                                <h1>${title}</h1>
+                                <p class="section-description">${desc || ''}</p>
+                            </section>
+                            <div id="${id}-grid" class="cards-grid"></div>`;
+                };
+
                 API.data.categories.forEach(category => {
                     if (category.subcategories) {
                         category.subcategories.sort((a, b) => a.title.localeCompare(b.title));
-                        const dropdownHTML = `<div class="dropdown"><button class="dropbtn">${category.title} <i class="fas fa-caret-down"></i></button><div class="dropdown-content">${category.subcategories.map(sub => `<a href="#${sub.id}-section">${sub.title}</a>`).join('')}</div></div>`;
-                        this.elements.navLinks.innerHTML += dropdownHTML;
-                        category.subcategories.forEach(sub => this.renderSection(sub.id, sub.title, sub.desc));
+                        
+                        // 1. Crear menú desplegable (Dropdown) para el navbar
+                        const dropdownItems = category.subcategories
+                            .map(sub => `<a href="#${sub.id}-section">${sub.title}</a>`)
+                            .join('');
+                            
+                        navLinksHTML += `<div class="dropdown">
+                                            <button class="dropbtn">${category.title} <i class="fas fa-caret-down"></i></button>
+                                            <div class="dropdown-content">${dropdownItems}</div>
+                                         </div>`;
+                        
+                        // 2. Crear las secciones en el cuerpo de la página
+                        category.subcategories.forEach(sub => {
+                            sectionsHTML += createSectionString(sub.id, sub.title, sub.desc);
+                        });
                     } else {
-                        this.elements.navLinks.innerHTML += `<a href="#${category.id}-section">${category.title}</a>`;
-                        this.renderSection(category.id, category.title, category.desc);
+                        // Caso sin subcategorías: Link simple y Sección simple
+                        navLinksHTML += `<a href="#${category.id}-section">${category.title}</a>`;
+                        sectionsHTML += createSectionString(category.id, category.title, category.desc);
                     }
                 });
-            },
 
+                // --- MOMENTO CLAVE DE LA OPTIMIZACIÓN ---
+                // Inyectamos todo el HTML al DOM una única vez al final.
+                this.elements.navLinks.innerHTML = navLinksHTML;
+                this.elements.productSectionsContainer.innerHTML = sectionsHTML;
+            },
+            
             buildMobileMenu() {
                 const container = document.getElementById('mobile-menu-container');
                 if (!container) return;
@@ -389,12 +418,9 @@
                 container.innerHTML = mainPanelHTML + subPanelsHTML;
             },
 
-            renderSection(id, title, desc) {
-                const sectionHTML = `<section id="${id}-section" class="content-section fade-in"><h1>${title}</h1><p class="section-description">${desc || ''}</p></section><div id="${id}-grid" class="cards-grid"></div>`;
-                this.elements.productSectionsContainer.innerHTML += sectionHTML;
-            },
-
             renderAllProducts() {
+                // Ya estaba optimizado usando .join(''), no requiere cambios mayores
+                // al renderizar cuadrícula por cuadrícula.
                 for (const categoryId in API.data.products) {
                     const grid = document.getElementById(`${categoryId}-grid`);
                     if (grid) {
@@ -442,22 +468,13 @@
                 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
             },
 
-            // --- FUNCIÓN DEL CARRUSEL (HERO SLIDER) ---
             initHeroCarousel() {
                 const slides = document.querySelectorAll('#heroCarousel img');
                 if (slides.length === 0) return;
-                
                 let currentSlide = 0;
-                
-                // Cambiar imagen cada 5 segundos (5000 ms)
                 setInterval(() => {
-                    // Quitamos la clase 'active' a la imagen actual
                     slides[currentSlide].classList.remove('active');
-                    
-                    // Calculamos cuál es la siguiente (si es la última, vuelve a 0)
                     currentSlide = (currentSlide + 1) % slides.length;
-                    
-                    // Ponemos la clase 'active' a la nueva imagen
                     slides[currentSlide].classList.add('active');
                 }, 5000); 
             },
@@ -474,23 +491,15 @@
                 matches.slice(0, 6).forEach(product => {
                     const item = document.createElement('div');
                     item.className = 'suggestion-item';
-                    
                     const imgUrl = (Array.isArray(product.img) && product.img.length > 0) ? product.img[0] : 'https://placehold.co/50x50?text=IMG';
-                    
-                    item.innerHTML = `
-                        <img src="${imgUrl}" alt="miniatura">
-                        <span>${product.name}</span>
-                    `;
-
+                    item.innerHTML = `<img src="${imgUrl}" alt="miniatura"><span>${product.name}</span>`;
                     item.addEventListener('click', () => {
                         this.elements.globalSearchInput.value = product.name;
                         box.style.display = 'none';
                         this.handleSearch(true);
                     });
-
                     box.appendChild(item);
                 });
-
                 box.style.display = 'block';
             },
 
@@ -572,8 +581,12 @@
                 const dataLoaded = await API.fetchData();
                 if (!dataLoaded) return;
                 Store.loadCart();
+                
+                // Primero renderizamos la estructura (Optimizado)
                 UI.renderLayout();
+                // Luego el menú móvil
                 UI.buildMobileMenu();
+                // Finalmente llenamos las grillas con productos
                 UI.renderAllProducts();
                 
                 for (const categoryId in API.data.products) {
@@ -609,18 +622,13 @@
                             const quantityInput = card.querySelector('.quantity-input');
                             const quantity = parseInt(quantityInput.value, 10);
                             
-                            // --- MODIFICACIÓN AQUÍ: Notificación Toast ---
                             if (quantity > 0) {
                                 const product = { name: card.dataset.name, img: JSON.parse(card.dataset.img || '[]'), price: parseFloat(card.dataset.price || '0') };
                                 Store.addProduct(product, quantity);
                                 UI.updateCartCounter();
-                                
-                                // ¡Llamamos al Toast!
                                 UI.showToast(`<i class="fas fa-check-circle"></i> ¡Agregaste ${quantity} ${product.name}!`);
-                                
                                 if(quantityInput) quantityInput.value = 0;
                             } else {
-                                // Opcional: Feedback si es 0
                                 UI.showToast(`<i class="fas fa-exclamation-circle"></i> Elige una cantidad primero`);
                             }
                         } else if (e.target.matches('.quantity-btn')) {
@@ -744,8 +752,6 @@
                 }
             },
         };
-
-        
 
         App.init();
     });
