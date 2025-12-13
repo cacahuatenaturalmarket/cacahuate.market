@@ -911,3 +911,69 @@ footer {
     margin: 0;
     border-bottom: 1px solid var(--fondo-claro-secundario);
 }
+/* --- ESTILOS PARA MENÚ NIVEL 4 (ACORDEÓN - MARCAS) --- */
+
+/* Contenedor del botón de categoría */
+.menu-category-wrapper {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Botón de la Categoría (Ej: Alfajores) */
+.menu-category-btn {
+    background: none;
+    border: none;
+    color: var(--naranja-cacahuate);
+    padding: 12px 16px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.menu-category-btn:hover {
+    background-color: var(--fondo-tarjeta);
+}
+
+/* Flechita del botón */
+.menu-category-btn i {
+    font-size: 0.8em;
+    transition: transform 0.3s;
+}
+
+/* Rotar flecha cuando está abierto (Clase .active se agrega con JS) */
+.menu-category-btn.active i {
+    transform: rotate(180deg);
+}
+
+/* Contenedor de las marcas (Oculto por defecto) */
+.menu-brands-container {
+    display: none; 
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Mostrar contenedor (Clase .show se agrega con JS) */
+.menu-brands-container.show {
+    display: block; 
+}
+
+/* Links de las marcas individuales (Ej: Ceral, Cerro Azul) */
+.brand-link {
+    padding: 8px 16px 8px 35px !important; /* Sangría izquierda extra para jerarquía */
+    font-size: 0.9em !important;
+    color: var(--marron-oscuro-texto) !important;
+    border-left: 3px solid transparent;
+    display: block; /* Asegura que ocupe el ancho */
+    text-decoration: none;
+}
+
+.brand-link:hover {
+    color: var(--blanco-puro) !important;
+    border-left: 3px solid var(--naranja-cacahuate);
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
