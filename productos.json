@@ -4437,34 +4437,6 @@
     ],
     "almadre": [
       {
-        "name": "Crocantes de Masa Madre con Rawmesan y Remolacha Almadre Thins (200g)",
-        "img": [
-          "https://almadrealimentos.com/assets/img/products/Thins-RawmesanyRemolacha.webp"
-        ],
-        "desc": "Estos crocantes horneados ofrecen una combinación de sabores audaz y original. La base de masa madre, harina de centeno y remolacha les da un color vibrante y un toque terroso, mientras que el \"rawmesan\" (aderezo a base de semillas) aporta un sabor intenso y único. Son una opción vegana, alta en fibra y perfecta para quienes buscan un snack gourmet y diferente."
-      },
-      {
-        "name": "Crocantes de Masa Madre con Sésamo y Sal Marina Almadre Thins (200g)",
-        "img": [
-          "https://almadrealimentos.com/assets/img/products/Thins-SesamoySalMarina.webp"
-        ],
-        "desc": "Disfruta de una textura increíblemente crujiente y un sabor clásico con estos crocantes de masa madre con sésamo y sal marina. La combinación de la harina de centeno con las semillas de sésamo tostado y el toque justo de sal marina crea un snack adictivo y delicioso. Son veganos, altos en fibra y perfectos para acompañar hummus, quesos o para disfrutar solos."
-      },
-      {
-        "name": "Crocantes de Masa Madre con Tomate y Romero Almadre Thins (200g)",
-        "img": [
-          "https://almadrealimentos.com/assets/img/products/Thins-TomateyRomero.webp"
-        ],
-        "desc": "Estos crocantes finos (thins) transportan los sabores del Mediterráneo a tu mesa en un snack saludable. Elaborados con masa madre y harina de centeno, están sazonados con tomate deshidratado y romero, logrando un sabor herbal y delicioso. Son veganos, altos en fibra y 0% grasas trans, ideales para acompañar quesos, dips o para crear canapés gourmet."
-      },
-      {
-        "name": "Crocantes de Masa Madre Integral Almadre Thins (200g)",
-        "img": [
-          "https://almadrealimentos.com/assets/img/products/Thins-Integral.webp"
-        ],
-        "desc": "Estos crocantes horneados, elaborados con masa madre y harina integral, son la base perfecta para un snack saludable y versátil. Su textura fina y extra crujiente los hace ideales para acompañar con toppings dulces o salados. Son una opción vegana, con alto contenido de fibra y 0% grasas trans, perfectos para un desayuno ligero, una merienda o para sustituir el pan en tus comidas."
-      },
-      {
         "name": "Pita Chips de Masa Madre con Cebolla Almadre (170g)",
         "img": [
           "https://almadrealimentos.com/assets/img/products/Chips-cebolla.webp"
@@ -5718,13 +5690,6 @@
         "desc": "Realza tus ensaladas con la sofisticación de este aceto balsámico elaborado a partir de uvas Malbec orgánicas. Estacionado en barricas de roble, ofrece un equilibrio perfecto entre acidez y dulzor con notas amaderadas profundas. Es ideal para finalizar platos gourmet, marinar carnes rojas o dar un toque especial a frutillas y postres. Una experiencia de sabor auténtica, sin conservantes y certificada orgánica."
       },
       {
-        "name": "Salsa de Soja Orgánica - 250ml",
-        "img": [
-          "https://pampagourmet.com.ar/wp-content/uploads/2020/08/salsadesoja.png"
-        ],
-        "desc": "Descubre el verdadero sabor umami en su versión más noble. Esta salsa de soja orgánica se distingue por estar estacionada en barricas de roble, lo que le otorga una profundidad de sabor única y un aroma complejo. Es el condimento esencial para elevar tus salteados, sushi, marinadas o para dar un toque oriental refinado a tus recetas, libre de agroquímicos."
-      },
-      {
         "name": "Vinagre de Sidra de Manzana Orgánico - 250ml",
         "img": [
           "https://pampagourmet.com.ar/wp-content/uploads/2020/08/Vinagre_de_Sidra_MANZANA.jpg"
@@ -5740,20 +5705,6 @@
       }
     ],
     "yogur-felices-las-vacas": [
-      {
-        "name": "Colchón de Frutos del Bosque - 190g",
-        "img": [
-          "https://tiendacoquitos.com.ar/wp-content/uploads/2023/05/Mock-up_Yogur-190_colchon-frutos-rojos-1-600x600.jpg"
-        ],
-        "desc": "Date un gusto gourmet con una experiencia de doble textura irresistible. Este yogur a base de almendras esconde en su fondo un generoso colchón de frutos del bosque reales, creando un contraste perfecto entre la cremosidad del \"jogurtti\" y la acidez de la fruta. Es la opción ideal para un postre saludable o un desayuno especial, 100% vegano y libre de gluten."
-      },
-      {
-        "name": "Colchón de Mango y Maracuyá - 190g",
-        "img": [
-          "https://tiendacoquitos.com.ar/wp-content/uploads/2023/05/Mock-up_Yogur-190_colchon-mango-y-maracuya-600x600.jpg"
-        ],
-        "desc": "Transporta tus sentidos al trópico con cada cucharada. Este postre combina la suavidad del yogur de almendras con un exótico colchón de mango y maracuyá, ofreciendo una explosión de sabor fresco y vibrante. Ideal para quienes buscan salir de la rutina con un snack sofisticado, naturalmente libre de lactosa y certificado Sin TACC. Un placer frutal y cremoso."
-      },
       {
         "name": "Sabor Durazno - 170g",
         "img": [
