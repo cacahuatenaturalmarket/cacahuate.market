@@ -3,62 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Cacahuate (Estructura Web)</title>
+    <title>Admin Masivo - Cacahuate</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body { font-family: 'Inter', sans-serif; background: #f0f2f5; padding: 20px; color: #333; }
         .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
-        h1 { text-align: center; color: #1a1a1a; margin-bottom: 30px; }
+        h1 { text-align: center; color: #1a1a1a; margin-bottom: 20px; }
         
-        .control-panel { position: sticky; top: 0; background: white; padding: 15px 0; border-bottom: 2px solid #eee; margin-bottom: 20px; z-index: 100; display: flex; justify-content: flex-end; }
-        .btn { padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+        /* Panel de Control Flotante */
+        .control-panel { 
+            position: sticky; top: 10px; 
+            background: rgba(255, 255, 255, 0.95); 
+            backdrop-filter: blur(5px);
+            padding: 15px; 
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px; 
+            z-index: 1000; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+
+        .btn { padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.2s; font-size: 1rem; }
+        
         .btn-save { background-color: #25D366; color: white; display: flex; align-items: center; gap: 8px; }
         .btn-save:hover { background-color: #128C7E; }
-        .btn-danger { background-color: #ff6b6b; color: white; padding: 4px 8px; font-size: 0.75em; margin-left: 8px; border-radius: 4px; }
-        .btn-danger:hover { background-color: #e74c3c; }
+        
+        .btn-bulk-delete { background-color: #ff4757; color: white; display: flex; align-items: center; gap: 8px; }
+        .btn-bulk-delete:hover { background-color: #ff6b81; }
+        .btn-bulk-delete:disabled { background-color: #ccc; cursor: not-allowed; opacity: 0.7; }
 
-        /* Estilos de Grupos (Meta-Categorías) */
+        /* Estilos generales */
         .group-section { margin-bottom: 30px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; }
-        .group-header { background-color: #2F2F2F; color: #FFC107; padding: 15px 20px; font-size: 1.2em; font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
+        .group-header { background-color: #2F2F2F; color: #FFC107; padding: 15px 20px; font-size: 1.2em; font-weight: bold; }
         
-        /* Estilos de Categorías */
         .category-block { border-bottom: 1px solid #eee; }
-        .category-block:last-child { border-bottom: none; }
         .category-header { background: #f9f9f9; padding: 12px 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; }
-        .category-header:hover { background: #eee; }
-        
-        /* Contenedor desplegable */
-        .category-content { display: none; padding: 15px 20px; background: #fff; border-top: 1px solid #f0f0f0; }
+        .category-content { display: none; padding: 10px 20px; background: #fff; }
         .category-content.open { display: block; }
 
-        /* Marcas / Subcategorías */
-        .subcategory-block { margin-left: 15px; border-left: 3px solid #FFC107; padding-left: 15px; margin-bottom: 15px; }
-        .subcategory-header { font-weight: bold; color: #555; margin-bottom: 5px; display: flex; justify-content: space-between; font-size: 0.95em; }
+        .subcategory-block { margin-left: 10px; border-left: 3px solid #FFC107; padding-left: 15px; margin-bottom: 15px; }
+        .subcategory-header { font-weight: bold; color: #555; margin-bottom: 8px; display: flex; justify-content: space-between; font-size: 0.95em; }
 
-        /* Productos */
-        .product-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px dashed #eee; font-size: 0.9em; }
-        .product-item:last-child { border-bottom: none; }
+        /* Productos y Checkboxes */
+        .product-item { 
+            display: flex; align-items: center; 
+            padding: 8px 10px; 
+            border-bottom: 1px dashed #eee; 
+            font-size: 0.95em; 
+            transition: background 0.2s;
+        }
+        .product-item:hover { background-color: #fce4ec; } /* Color rosita suave al pasar mouse */
+        
+        .product-checkbox {
+            width: 18px; height: 18px; margin-right: 15px; cursor: pointer; accent-color: #ff4757;
+        }
+        
+        .product-name { flex-grow: 1; cursor: pointer; } /* Click en nombre activa checkbox */
+
         .badge { background: #e0e0e0; color: #333; padding: 2px 6px; border-radius: 4px; font-size: 0.75em; }
-
-        .empty-msg { color: #999; font-style: italic; font-size: 0.9em; }
-        .alert-box { background: #fff3cd; color: #856404; padding: 10px; border-radius: 5px; margin-bottom: 20px; font-size: 0.9em; border: 1px solid #ffeeba; }
+        .selection-count { font-size: 0.9em; color: #666; font-weight: normal; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1><i class="fas fa-edit"></i> Administrador Visual</h1>
-    
-    <div class="alert-box">
-        <i class="fas fa-info-circle"></i> 
-        Este panel muestra la estructura igual que la página web. Si borras algo aquí y descargas el JSON, se actualizará en tu tienda.
-    </div>
+    <h1><i class="fas fa-tasks"></i> Administrador Masivo</h1>
 
     <div class="control-panel">
-        <button class="btn btn-save" onclick="downloadJSON()">
-            <i class="fas fa-download"></i> Descargar JSON Actualizado
-        </button>
+        <div>
+            <span id="selectionCounter" class="selection-count">0 productos seleccionados</span>
+        </div>
+        <div style="display: flex; gap: 10px;">
+            <button id="bulkDeleteBtn" class="btn btn-bulk-delete" onclick="deleteSelectedProducts()" disabled>
+                <i class="fas fa-trash-alt"></i> Borrar Seleccionados
+            </button>
+            <button class="btn btn-save" onclick="downloadJSON()">
+                <i class="fas fa-download"></i> Descargar JSON
+            </button>
+        </div>
     </div>
 
     <div id="catalog-tree">Cargando...</div>
@@ -67,206 +93,167 @@
 <script>
     let globalData = null;
 
-    // --- 1. DEFINICIÓN DE GRUPOS (Igual que en index.html) ---
-    // Si cambias esto en index.html, actualízalo aquí también para mantener el orden.
+    // --- 1. DEFINICIÓN DE GRUPOS ---
     const CATEGORY_GROUPS = {
         "Almacén Natural": ["aceites", "alimentos", "especias", "fideos-integrales", "harinas", "legumbres-y-cereales", "panificados", "premezclas-rebozadores", "salsas-aderezos-organicos", "yerba-mate"],
         "Dulces y Repostería": ["alfajores", "budines", "caramelos", "chocolates", "edulcorantes", "galletas", "miel", "untables", "brownie-y-bocaditos"],
         "Snacks y Frutos": ["barritas", "frutas", "frutos-secos", "mix-frutos-secos", "snacks"],
         "Salud y Bienestar": ["suplementos", "tinturas", "probioticos", "yuyos"],
         "Frescos y Congelados": ["leches-bebidas-vegetales", "refrigerados-veganos"],
-        "Higiene y Cosmética": ["cuidado-personal", "pastas-dentales"]
+        "Higiene y Estética": ["cuidado-personal", "pastas-dentales"]
     };
 
-    // --- 2. CARGA DE DATOS ---
     async function loadData() {
         try {
             const response = await fetch('./productos.json?v=' + Date.now());
-            if(!response.ok) throw new Error("No se pudo leer productos.json");
+            if(!response.ok) throw new Error("Error leyendo JSON");
             globalData = await response.json();
             renderTree();
         } catch (error) {
-            document.getElementById('catalog-tree').innerHTML = 
-                `<p style="color:red; text-align:center;">Error: No se encuentra productos.json.<br>Asegúrate de abrir este archivo con Live Server.</p>`;
+            document.getElementById('catalog-tree').innerHTML = `<p style="color:red; text-align:center;">Error: Abre esto con Live Server.</p>`;
         }
     }
 
-    // --- 3. RENDERIZADO (VISUALIZACIÓN) ---
+    // --- RENDERIZADO ---
     function renderTree() {
         const container = document.getElementById('catalog-tree');
         container.innerHTML = '';
+        updateSelectionCounter(); // Resetear contador
 
         if (!globalData || !globalData.categories) return;
-
-        // Set para rastrear qué categorías ya mostramos (para detectar huérfanas)
         const renderedCategories = new Set();
 
-        // A) Renderizar por GRUPOS (Meta-Categorías)
+        // A) Grupos
         for (const [groupName, catIds] of Object.entries(CATEGORY_GROUPS)) {
             let groupHTML = '';
             let hasContent = false;
-
-            // Filtramos las categorías que existen en el JSON real
             const groupCats = catIds.map(id => globalData.categories.find(c => c.id === id)).filter(Boolean);
 
             if (groupCats.length > 0) {
                 groupCats.sort((a, b) => a.title.localeCompare(b.title));
-                
                 groupCats.forEach(cat => {
                     renderedCategories.add(cat.id);
                     hasContent = true;
-                    
-                    // Renderizar la Categoría
                     groupHTML += renderCategoryBlock(cat);
                 });
 
-                // Solo agregar el grupo si tiene categorías dentro
                 if (hasContent) {
                     const groupSection = document.createElement('div');
                     groupSection.className = 'group-section';
-                    groupSection.innerHTML = `
-                        <div class="group-header">
-                            ${groupName}
-                        </div>
-                        <div class="group-content">
-                            ${groupHTML}
-                        </div>
-                    `;
+                    groupSection.innerHTML = `<div class="group-header">${groupName}</div><div class="group-content">${groupHTML}</div>`;
                     container.appendChild(groupSection);
                 }
             }
         }
 
-        // B) Renderizar "SIN AGRUPAR" (Por seguridad, si agregaste una categoría nueva al JSON pero no al Grupo)
+        // B) Sin Agrupar
         const orphanCats = globalData.categories.filter(c => !renderedCategories.has(c.id));
         if (orphanCats.length > 0) {
             let orphanHTML = '';
-            orphanCats.forEach(cat => {
-                orphanHTML += renderCategoryBlock(cat);
-            });
-            
+            orphanCats.forEach(cat => orphanHTML += renderCategoryBlock(cat));
             const orphanSection = document.createElement('div');
             orphanSection.className = 'group-section';
             orphanSection.style.borderColor = '#ff9800';
-            orphanSection.innerHTML = `
-                <div class="group-header" style="background:#ff9800; color:white;">
-                    <i class="fas fa-exclamation-triangle"></i> &nbsp; Otras / Sin Agrupar
-                </div>
-                <div class="group-content">
-                    ${orphanHTML}
-                </div>
-            `;
+            orphanSection.innerHTML = `<div class="group-header" style="background:#ff9800;">⚠️ Sin Agrupar</div><div class="group-content">${orphanHTML}</div>`;
             container.appendChild(orphanSection);
         }
     }
 
-    // Helper para renderizar una Categoría individual
     function renderCategoryBlock(cat) {
-        // Obtenemos el índice real en el array global para poder borrar luego
-        const realCatIndex = globalData.categories.findIndex(c => c.id === cat.id);
+        let html = `<div class="category-block">
+                        <div class="category-header" onclick="toggleContent(this)">
+                            <span>${cat.title}</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="category-content open">`; // open por defecto para ver rápido
 
-        let html = `
-            <div class="category-block">
-                <div class="category-header" onclick="toggleContent(this)">
-                    <span>${cat.title}</span>
-                    <div>
-                         ${!cat.subcategories ? `<button class="btn btn-danger" onclick="deleteCategory('${cat.id}', event)">Borrar Cat</button>` : ''}
-                         <i class="fas fa-chevron-down" style="margin-left:10px; font-size:0.8em; color:#999;"></i>
-                    </div>
-                </div>
-                <div class="category-content">
-        `;
-
-        // Caso 1: Tiene Subcategorías (Marcas)
         if (cat.subcategories && cat.subcategories.length > 0) {
-            cat.subcategories.forEach((sub, subIndex) => {
-                const products = globalData.products[sub.id] || [];
-                html += `
-                    <div class="subcategory-block">
-                        <div class="subcategory-header">
-                            <span>${sub.title} <span class="badge">${products.length}</span></span>
-                            <button class="btn btn-danger" onclick="deleteSubcategory('${cat.id}', ${subIndex})">Borrar Marca</button>
-                        </div>
-                        <div class="products-list">
-                            ${renderProductRows(sub.id)}
-                        </div>
-                    </div>
-                `;
+            cat.subcategories.forEach((sub) => {
+                html += `<div class="subcategory-block">
+                            <div class="subcategory-header">${sub.title}</div>
+                            <div class="products-list">${renderProductRows(sub.id)}</div>
+                         </div>`;
             });
-        } 
-        // Caso 2: Categoría Simple (sin marcas)
-        else {
-            html += `
-                <div class="subcategory-block" style="border-left-color: #ccc;">
-                    <div class="products-list">
-                         ${renderProductRows(cat.id)}
-                    </div>
-                </div>
-            `;
+        } else {
+            html += `<div class="subcategory-block" style="border-left-color: #ccc;">
+                        <div class="products-list">${renderProductRows(cat.id)}</div>
+                     </div>`;
         }
-
-        html += `</div></div>`; // Cierre content y block
+        html += `</div></div>`;
         return html;
     }
 
-    // Helper para renderizar lista de productos
     function renderProductRows(categoryId) {
         const products = globalData.products[categoryId];
-        if (!products || products.length === 0) return '<div class="empty-msg">No hay productos cargados.</div>';
+        if (!products || products.length === 0) return '<div style="color:#999;font-style:italic;padding:5px;">Vacío</div>';
         
+        // AQUÍ ESTÁ LA MAGIA: Checkboxes con data-cat y data-index
         return products.map((prod, index) => `
             <div class="product-item">
-                <span title="${prod.desc || ''}">${prod.name}</span>
-                <button class="btn btn-danger" onclick="deleteProduct('${categoryId}', ${index})"><i class="fas fa-trash"></i></button>
+                <input type="checkbox" class="product-checkbox" 
+                       data-cat="${categoryId}" 
+                       data-index="${index}" 
+                       onchange="updateSelectionCounter()">
+                <span class="product-name" onclick="this.previousElementSibling.click()">${prod.name}</span>
             </div>
         `).join('');
     }
 
     function toggleContent(header) {
-        const content = header.nextElementSibling;
-        content.classList.toggle('open');
-        const icon = header.querySelector('.fa-chevron-down');
-        if(icon) icon.style.transform = content.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
+        header.nextElementSibling.classList.toggle('open');
     }
 
-    // --- 4. FUNCIONES DE BORRADO ---
+    // --- NUEVA LÓGICA DE SELECCIÓN Y BORRADO MASIVO ---
 
-    window.deleteProduct = function(categoryId, index) {
-        if(!confirm('¿Eliminar este producto permanentemente?')) return;
-        globalData.products[categoryId].splice(index, 1);
-        renderTree();
-    };
+    function updateSelectionCounter() {
+        const checkedCount = document.querySelectorAll('.product-checkbox:checked').length;
+        const counterSpan = document.getElementById('selectionCounter');
+        const deleteBtn = document.getElementById('bulkDeleteBtn');
 
-    window.deleteSubcategory = function(catId, subIndex) {
-        if(!confirm('¿Estás seguro de borrar esta MARCA completa y TODOS sus productos?')) return;
-        
-        // Buscar la categoría real
-        const cat = globalData.categories.find(c => c.id === catId);
-        if(!cat) return;
-
-        const subId = cat.subcategories[subIndex].id;
-        
-        // 1. Borrar productos
-        delete globalData.products[subId];
-        // 2. Borrar subcategoría del array
-        cat.subcategories.splice(subIndex, 1);
-        
-        renderTree();
-    };
-
-    window.deleteCategory = function(catId, event) {
-        event.stopPropagation();
-        if(!confirm('¿Borrar esta categoría entera?')) return;
-        
-        const index = globalData.categories.findIndex(c => c.id === catId);
-        if(index > -1) {
-            delete globalData.products[catId];
-            globalData.categories.splice(index, 1);
-            renderTree();
+        if (checkedCount === 0) {
+            counterSpan.textContent = "0 productos seleccionados";
+            deleteBtn.disabled = true;
+            deleteBtn.innerHTML = `<i class="fas fa-trash-alt"></i> Borrar Seleccionados`;
+        } else {
+            counterSpan.textContent = `${checkedCount} productos seleccionados`;
+            deleteBtn.disabled = false;
+            deleteBtn.innerHTML = `<i class="fas fa-trash-alt"></i> Borrar (${checkedCount})`;
         }
-    };
+    }
 
-    // --- 5. DESCARGA ---
+    function deleteSelectedProducts() {
+        const checkboxes = document.querySelectorAll('.product-checkbox:checked');
+        if (checkboxes.length === 0) return;
+
+        if (!confirm(`¿Estás seguro de borrar definitivamente ${checkboxes.length} productos?`)) return;
+
+        // 1. Agrupar eliminaciones por Categoría para no romper índices
+        const toDelete = {}; // Objeto: { "aceites": [0, 2, 5], "alfajores": [1] }
+
+        checkboxes.forEach(chk => {
+            const catId = chk.dataset.cat;
+            const index = parseInt(chk.dataset.index);
+            
+            if (!toDelete[catId]) toDelete[catId] = [];
+            toDelete[catId].push(index);
+        });
+
+        // 2. Ejecutar borrado (IMPORTANTE: de atrás hacia adelante)
+        for (const catId in toDelete) {
+            // Ordenamos descendente (5, 3, 1) para que al borrar el 5, el 3 siga siendo el 3.
+            toDelete[catId].sort((a, b) => b - a);
+            
+            toDelete[catId].forEach(index => {
+                globalData.products[catId].splice(index, 1);
+            });
+        }
+
+        // 3. Refrescar
+        renderTree();
+        alert("Productos eliminados correctamente. Recuerda descargar el JSON.");
+    }
+
+    // --- DESCARGA ---
     window.downloadJSON = function() {
         const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(globalData, null, 2));
         const anchor = document.createElement('a');
@@ -275,7 +262,7 @@
         document.body.appendChild(anchor);
         anchor.click();
         anchor.remove();
-        alert("Archivo descargado. Reemplaza tu 'productos.json' original con este nuevo.");
+        alert("Archivo listo. Reemplaza tu 'productos.json' original.");
     };
 
     loadData();
