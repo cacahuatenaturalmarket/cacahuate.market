@@ -58,11 +58,6 @@
           "desc": "Alfajores sin gluten con combinaciones de sabores clásicas y gourmet para todos los gustos."
         },
         {
-          "id": "dona-magdalena",
-          "title": "Doña Magdalena",
-          "desc": "Alfajores de galleta de arroz sin azúcar, endulzados con stevia, para un gusto ligero y saludable."
-        },
-        {
           "id": "lule-muu",
           "title": "Lule Muu",
           "desc": "Alfajores de arroz sin T.A.C.C., una alternativa liviana y crujiente para una colación saludable."
@@ -102,11 +97,6 @@
           "desc": "Barras de proteína sin gluten, con 35% de blend de proteínas, ideales para la recuperación muscular."
         },
         {
-          "id": "ki-bar",
-          "title": "Ki-Bar",
-          "desc": "Barras proteicas naturales a base de claras de huevo, ideales para una recuperación ligera y sabrosa."
-        },
-        {
           "id": "laddubar",
           "title": "Laddubar",
           "desc": "Barritas raw y veganas a base de dátiles, frutos secos y cacao. Libres de gluten y sin azúcar agregada."
@@ -115,11 +105,6 @@
           "id": "lule-muu-barritas",
           "title": "Lule Muu",
           "desc": "Barritas de arroz crujientes y ligeras, con un mix de semillas y deliciosas coberturas de sabores."
-        },
-        {
-          "id": "notprotein-bar",
-          "title": "NotProtein Bar",
-          "desc": "Barras con 15 gramos de proteína 100% vegetal, ideales para la recuperación muscular y como snack funcional."
         },
         {
           "id": "wik-taste",
@@ -154,11 +139,6 @@
           "id": "angiola",
           "title": "Angiola",
           "desc": "Budines tiernos y esponjosos, completamente libres de gluten, ideales para cualquier momento del día."
-        },
-        {
-          "id": "d&d",
-          "title": "D&D",
-          "desc": "Budines artesanales e integrales, con opciones sin azúcar, para una merienda deliciosa y consciente."
         },
         {
           "id": "santa-maria",
@@ -219,11 +199,6 @@
       "id": "edulcorantes",
       "title": "Edulcorantes",
       "subcategories": [
-        {
-          "id": "cuarto-creciente",
-          "title": "Cuarto Creciente",
-          "desc": "Edulcorantes dietéticos y sin T.A.C.C. para un dulzor saludable."
-        },
         {
           "id": "dulri",
           "title": "Dulri",
@@ -322,11 +297,6 @@
           "id": "alimentos-naturales",
           "title": "Alimentos Naturales",
           "desc": "Galletitas de avena y semillas, 0% grasas trans y colesterol."
-        },
-        {
-          "id": "crelech-galletas",
-          "title": "Crelech",
-          "desc": "Materitas light, 0% azúcares, -70% grasas y fuente de fibra."
         },
         {
           "id": "delicel-galletas",
@@ -890,22 +860,6 @@
           "https://http2.mlstatic.com/D_NQ_NP_2X_730193-MLA87309838404_072025-F.webp"
         ],
         "desc": "Disfruta de la dulzura natural en un formato práctico y conveniente con la Stevia líquida de Piper Pol de 100ml. Este edulcorante de mesa dietético es la opción perfecta para quienes buscan una alternativa saludable al azúcar, con una fórmula que garantiza la ausencia de ciclamato y sacarina. Su tamaño compacto es ideal para llevarlo contigo a la oficina, de viaje o simplemente para tenerlo a mano en la cocina, permitiéndote endulzar tu café, té y otras bebidas de forma fácil y controlada. Es la elección perfecta para mantener un estilo de vida saludable sin renunciar al sabor dulce."
-      }
-    ],
-    "cuarto-creciente": [
-      {
-        "name": "Edulcorante con Stevia Cuarto Creciente (250ml)",
-        "img": [
-          "https://acdn-us.mitiendanube.com/stores/001/326/060/products/cuarto-creciente_edulcorante-dietetico-con-stevia_250ml-8968bbed8351c46eea17297181336003-1024-1024.webp"
-        ],
-        "desc": "El edulcorante líquido de Cuarto Creciente es una opción dietética endulzada con Stevia, ideal para quienes buscan controlar el consumo de azúcar en su día a día. Su fórmula está certificada como \"Sin T.A.C.C.\", lo que garantiza que es un producto completamente libre de gluten y seguro para personas celíacas. Con su práctico formato de 250ml, es perfecto para el uso diario en el hogar, permitiendo endulzar de manera sencilla y rápida todo tipo de bebidas frías o calientes. Es una alternativa confiable para integrar un dulzor saludable en tu alimentación, cuidando tu bienestar y adaptándose a tus necesidades dietéticas."
-      },
-      {
-        "name": "Edulcorante con Stevia Cuarto Creciente (500ml)",
-        "img": [
-          "https://acdn-us.mitiendanube.com/stores/001/326/060/products/cuarto-creciente_edulcorante-dietetico-con-stevia_500ml-faaf224903bd96286317297180848900-1024-1024.webp"
-        ],
-        "desc": "El edulcorante líquido Cuarto Creciente en su presentación familiar de 500ml es la solución ideal para el uso diario en el hogar. Este endulzante dietético con Stevia y libre de gluten (Sin T.A.C.C.) es perfecto para quienes buscan una alternativa saludable al azúcar sin renunciar al sabor. Su generoso tamaño lo hace económico y práctico para endulzar las bebidas y postres de toda la familia, desde el café de la mañana hasta preparaciones más elaboradas. Es una opción confiable y segura, especialmente para personas celíacas o que llevan un control estricto de su alimentación."
       }
     ],
     "pampa-miel": [
@@ -1748,13 +1702,6 @@
           "https://i.imgur.com/D8hjPbQ.png"
         ],
         "desc": "Una deliciosa mezcla de frutas confitadas cubiertas con una fina capa de azúcar, dándoles un aspecto \"nevado\". Es un ingrediente clásico y colorido, ideal para decorar y dar un toque dulce a panettones, budines y postres festivos."
-      },
-      {
-        "name": "Higos Blancos",
-        "img": [
-          "https://i.imgur.com/Dv3T2lZ.jpeg"
-        ],
-        "desc": "De sabor delicado y notas a nuez, son una fuente excepcional de fibra para una digestión feliz. Aportan calcio y potasio para tus músculos y huesos."
       },
       {
         "name": "Higos Negros",
@@ -3515,27 +3462,6 @@
     ],
     "betic": [
       {
-        "name": "Cintas de Espinaca Betic (300g)",
-        "img": [
-          "https://i.ibb.co/5hGm1N8p/BETIC-CINTA-ESPINA.png"
-        ],
-        "desc": "Dale un giro saludable y lleno de color a tus recetas con estas cintas anchas de espinaca. Elaboradas con ingredientes naturales, esta pasta dietética aporta el suave sabor y los nutrientes de la espinaca, creando una base perfecta para platos ligeros y sabrosos. Su atractivo color verde y su textura son ideales para combinar con quesos suaves, ricota, mariscos o simplemente con mantequilla y salvia, ofreciendo una comida tan nutritiva como deliciosa."
-      },
-      {
-        "name": "Cintas de Morrón Betic (300g)",
-        "img": [
-          "https://i.ibb.co/8nMN8ZzX/BETIC-CINTA-MORRON.png"
-        ],
-        "desc": "Sorprende a tu paladar con el delicado sabor de estas cintas anchas con morrón. Esta pasta dietética incorpora el dulzor característico del pimiento morrón, aportando un sabor y color únicos a tus preparaciones. Es la base perfecta para platos creativos, combinando de maravilla con salsas a base de vegetales, carnes blancas o para crear coloridas ensaladas de pasta. Es una opción saludable, sin conservantes ni colorantes, para innovar en la cocina."
-      },
-      {
-        "name": "Cintas de Sémola Betic (300g)",
-        "img": [
-          "https://i.ibb.co/kgMrXR8C/BETIC-CINTA-SEMO.png"
-        ],
-        "desc": "Estas cintas anchas, elaboradas con sémola de trigo candeal de alta calidad, son la elección perfecta para quienes aman una pasta con más cuerpo y textura. Su superficie porosa es ideal para atrapar y realzar los sabores de las salsas más robustas y cremosas, como la boloñesa, Alfredo o carbonara. Al ser un producto dietético, sin conservantes y bajo en sodio, te permite disfrutar de un auténtico plato de pasta gourmet de forma más saludable."
-      },
-      {
         "name": "Coditos de Espinaca Betic (300g)",
         "img": [
           "https://i.ibb.co/xqgzMT3y/BETIC-CODITOS-ESPINACA.png"
@@ -3680,13 +3606,6 @@
           "https://acdn-us.mitiendanube.com/stores/002/955/111/products/tirabuzonarroz-922ad14c54a1f9df9216988598527024-480-0.webp"
         ],
         "desc": "Disfruta de una pasta ligera y de fácil digestión con estos tirabuzones hechos completamente de arroz. Son la opción ideal para celíacos y personas que siguen dietas libres de alérgenos, ya que no contienen T.A.C.C., derivados de lácteos, huevo ni soja. Su sabor neutro y su textura suave los hacen increíblemente versátiles para combinar con cualquier tipo de salsa, desde las más intensas hasta las más delicadas, garantizando siempre un plato saludable, rápido de preparar y apto para todos."
-      },
-      {
-        "name": "Tirabuzones de Maíz Optima (400g)",
-        "img": [
-          "https://acdn-us.mitiendanube.com/stores/002/955/111/products/tirabuzonmaiz-d189fddbd8c38f71ee169885978397451-b2119fd94dda011e0916988598487284-480-0.webp"
-        ],
-        "desc": "Estos tirabuzones, elaborados exclusivamente a base de maíz, son la alternativa perfecta para quienes buscan una pasta libre de gluten, lácteos, huevo y soja. Su fórmula hipoalergénica y vegana los convierte en una opción segura y deliciosa para toda la familia, especialmente para personas celíacas o con diversas sensibilidades alimentarias. Tienen un sabor suave y una textura que se mantiene firme tras la cocción, siendo ideales para absorber todo el sabor de tus salsas preferidas. Además, ¡están listos en solo 5 minutos!"
       }
     ],
     "orox": [
@@ -3823,85 +3742,6 @@
           "https://acdn-us.mitiendanube.com/stores/093/780/products/smamsbudinmarmolado-f09538e257c961a67117533740157019-480-0.webp"
         ],
         "desc": "¿Por qué elegir cuando puedes tener ambos? Este budín marmolado combina la suavidad de la vainilla y la intensidad del chocolate en un solo bizcocho esponjoso y delicioso. Es la opción perfecta para quienes disfrutan de ambos sabores. Certificado como libre de gluten (Sin T.A.C.C.) y con Omega 9, es un postre ideal para compartir en familia, asegurando que todos puedan disfrutar de una merienda clásica y segura."
-      }
-    ],
-    "d&d": [
-      {
-        "name": "Budín Artesanal de Algarroba y Frutos Secos D&D (250g)",
-        "img": [
-          "https://i.ibb.co/V0Zd2hDw/D-D-ALGARROBA-Y-FRUTOS-SECOS.png"
-        ],
-        "desc": "Este budín artesanal ofrece una combinación de sabores intensa y una textura inigualable. La base de harina de algarroba le confiere un sabor profundo, similar al cacao pero con un dulzor natural característico, mientras que el tope de frutos secos troceados añade un toque crujiente y delicioso en cada bocado. Es una opción nutritiva y con un alto contenido de fibra, ideal para quienes buscan una alternativa al chocolate tradicional en un bizcocho denso, húmedo y lleno de personalidad."
-      },
-      {
-        "name": "Budín Artesanal de Banana y Chips de Dulce de Leche D&D (280g)",
-        "img": [
-          "https://www.dydpanificados.com.ar/wp-content/uploads/2024/06/DYD_BUDIN_banana_CHIPS-550x550.jpg"
-        ],
-        "desc": "Disfruta de una combinación irresistiblemente argentina con este budín artesanal de banana con chips de dulce de leche. La humedad y el dulzor natural de la banana se mezclan con mini gotas de auténtico dulce de leche, creando un bizcocho tierno, aromático y lleno de sabor. Es la merienda perfecta para recordar los sabores caseros, con una fórmula 0% grasas trans para un disfrute más consciente."
-      },
-      {
-        "name": "Budín Artesanal de Chocolate y Chips de Chocolate Blanco D&D (280g)",
-        "img": [
-          "https://www.dydpanificados.com.ar/wp-content/uploads/2024/06/DYD_BUDIN_chocolate_CHIPS-550x550.jpg"
-        ],
-        "desc": "Sumérgete en una doble experiencia de sabor con este budín artesanal de chocolate, enriquecido con chips de chocolate blanco. La base de cacao intenso se complementa a la perfección con la cremosidad y el dulzor de los trocitos de chocolate blanco, creando un bizcocho húmedo y absolutamente irresistible para los amantes del chocolate. Con 0% grasas trans, es un capricho delicioso para cualquier momento."
-      },
-      {
-        "name": "Budín Artesanal de Limón y Frutas Secas D&D (250g)",
-        "img": [
-          "https://acdn-us.mitiendanube.com/stores/001/172/573/products/dyd_budin_limon_frutas_0011-4014bda36505e86bb015906074946121-480-0.jpg"
-        ],
-        "desc": "Este budín artesanal combina la frescura del limón con la textura crujiente de las frutas secas, creando una experiencia de sabor sofisticada y deliciosa. La acidez del limón equilibra a la perfección el dulzor del bizcocho, mientras que los trocitos de frutos secos añaden un toque gourmet. Es la elección perfecta para una merienda especial o para acompañar una taza de té, ofreciendo una textura y sabor inigualables."
-      },
-      {
-        "name": "Budín Artesanal de Naranja con Chips de Chocolate Semiamargo D&D (280g)",
-        "img": [
-          "https://www.dydpanificados.com.ar/wp-content/uploads/2024/06/DYD_BUDIN_naranja_CHIPS-550x550.jpg"
-        ],
-        "desc": "Descubre la combinación perfecta de cítricos y chocolate con este budín artesanal de naranja con chips de chocolate semiamargo. La frescura y el aroma de la naranja se fusionan con la intensidad del chocolate semiamargo, creando un bizcocho equilibrado y lleno de matices. Es una opción con 0% grasas trans, ideal para quienes buscan un sabor más audaz y sofisticado en sus postres."
-      },
-      {
-        "name": "Budín Integral de Limón y Jengibre D&D (250g)",
-        "img": [
-          "https://www.dydpanificados.com.ar/wp-content/uploads/2024/06/DYD_budin-integral_limon-gengibre_mockup-550x550.jpg"
-        ],
-        "desc": "Para quienes buscan un sabor vibrante y con carácter, este budín integral de limón y jengibre es la elección perfecta. La acidez refrescante del limón se equilibra con el toque especiado y ligeramente picante del jengibre, todo sobre una base de harina integral rica en fibra. Es una opción con 0% grasas trans, ideal para despertar el paladar y disfrutar de una merienda diferente, digestiva y llena de personalidad."
-      },
-      {
-        "name": "Budín Integral de Manzana y Canela D&D (250g)",
-        "img": [
-          "https://www.dydpanificados.com.ar/wp-content/uploads/2024/06/DYD_budin-integral_manzana-canela_mockup-550x550.jpg"
-        ],
-        "desc": "Este budín integral te ofrece una combinación clásica y reconfortante, perfecta para los días fríos. Elaborado con harina integral y trocitos de manzana, su sabor se realza con un toque aromático de canela. Con 0% grasas trans y un alto contenido de fibra, es una opción más saludable para tus meriendas, aportando la humedad de la fruta y la calidez de las especias en un bizcocho tierno y delicioso."
-      },
-      {
-        "name": "Budín Integral de Zanahoria, Naranja y Canela D&D (250g)",
-        "img": [
-          "https://www.dydpanificados.com.ar/wp-content/uploads/2024/06/DYD_budin-integral_zanahoria-canela_mockup-550x550.jpg"
-        ],
-        "desc": "Disfruta de una mezcla de sabores única y saludable con este budín integral de zanahoria, naranja y canela. La dulzura de la zanahoria se complementa con el toque cítrico de la naranja y el aroma de la canela, creando un bizcocho húmedo, especiado y muy sabroso. Su base de harina integral lo convierte en una excelente fuente de fibra, siendo una opción nutritiva y deliciosa para acompañar tus desayunos o meriendas."
-      },
-      {
-        "name": "Budín Sin Azúcar de Algarroba D&D (250g)",
-        "img": [
-          "https://www.dydpanificados.com.ar/wp-content/uploads/2018/11/DYD_BUDIN_ALGARROBA_001_v4-550x550.jpg"
-        ],
-        "desc": "Experimenta un sabor único y nutritivo con este budín artesanal de algarroba, una alternativa saludable al chocolate. Su dulzor natural, complementado con sucralosa, lo convierte en una opción sin azúcar ideal para una dieta equilibrada. La harina de algarroba le aporta un color oscuro, un sabor delicioso y un extra de fibra, resultando en un bizcocho denso y lleno de personalidad para tus meriendas."
-      },
-      {
-        "name": "Budín Sin Azúcar de Naranja D&D (250g)",
-        "img": [
-          "https://www.dydpanificados.com.ar/wp-content/uploads/2018/11/DYD_BUDIN_NARANJA_SUCRALOSA_001-550x550.jpg"
-        ],
-        "desc": "Disfruta de todo el sabor refrescante y cítrico de la naranja en este budín artesanal, elaborado sin azúcar añadido. Su fórmula, endulzada con sucralosa, te permite disfrutar de un bizcocho tierno y lleno de aroma sin preocuparte por el azúcar, siendo una opción ideal para personas con diabetes o que siguen dietas bajas en carbohidratos. Es perfecto para acompañar una taza de té o café, ofreciendo una merienda ligera, deliciosa y más saludable."
-      },
-      {
-        "name": "Budín Sin Azúcar de Vainilla D&D (250g)",
-        "img": [
-          "https://www.dydpanificados.com.ar/wp-content/uploads/2019/01/DYD_BUDIN_VAINILLA_SUCRALOSA_001-550x550.jpg"
-        ],
-        "desc": "Disfruta del sabor casero y tradicional de un budín de vainilla, ahora en una versión sin azúcar añadido. Endulzado con sucralosa, este bizcocho artesanal es la opción perfecta para quienes necesitan controlar su ingesta de azúcar sin sacrificar el sabor. Su textura suave y esponjosa lo convierte en el acompañante ideal para tus desayunos y meriendas, permitiéndote un gusto delicioso y más saludable."
       }
     ],
     "d&d-pan": [
@@ -4115,32 +3955,11 @@
     ],
     "cerro-azul": [
       {
-        "name": "Alfajor de Dulce de Leche Cerro Azul (50g)",
-        "img": [
-          "https://i0.wp.com/alfajorescerroazul.com/wp-content/uploads/2023/12/Alfajor-Dulce-de-Leche-min.png?w=832&ssl=1"
-        ],
-        "desc": "Este es el alfajor clásico para los amantes del sabor tradicional, en una versión apta para celíacos. Un generoso y cremoso relleno de auténtico dulce de leche se encuentra entre dos suaves tapas, todo bañado en una deliciosa cobertura de chocolate. Es una golosina contundente y llena de sabor, perfecta para recargar energías."
-      },
-      {
         "name": "Alfajor de Dulce de Leche Sin Azúcar Cerro Azul (50g)",
         "img": [
           "https://i0.wp.com/alfajorescerroazul.com/wp-content/uploads/2023/12/Alfajor-Dulce-de-Leche-SA-min.png?w=832&ssl=1"
         ],
         "desc": "Para quienes buscan cuidarse sin renunciar al sabor, este alfajor de dulce de leche sin azúcar es la elección ideal. Mantiene todo el sabor cremoso y tradicional del dulce de leche, pero en una versión apta para diabéticos o para quienes controlan su ingesta de azúcar. Con su cobertura de chocolate, es una golosina deliciosa y libre de gluten para disfrutar sin culpas."
-      },
-      {
-        "name": "Alfajor Mousse de Chocolate con Chocolate Blanco Cerro Azul (50g)",
-        "img": [
-          "https://i0.wp.com/alfajorescerroazul.com/wp-content/uploads/2023/12/Alfajor-Chocolate-min.png?w=832&ssl=1"
-        ],
-        "desc": "Disfruta de una combinación suave y cremosa con este alfajor de mousse de chocolate cubierto de chocolate blanco. El ligero relleno de mousse de cacao se complementa a la perfección con la dulzura de la cobertura blanca, creando una golosina equilibrada y muy agradable al paladar. Es una opción sin gluten ideal para quienes prefieren los sabores más dulces y delicados."
-      },
-      {
-        "name": "Alfajor Mousse de Chocolate con Chocolate Negro Cerro Azul (50g)",
-        "img": [
-          "https://i0.wp.com/alfajorescerroazul.com/wp-content/uploads/2023/12/Alfajor-Chocolate-V-min.png?w=832&ssl=1"
-        ],
-        "desc": "Para los verdaderos fanáticos del cacao, este alfajor es una doble dosis de sabor. Presenta un relleno aireado y ligero de mousse de chocolate, cubierto por una intensa capa de chocolate negro. El resultado es una experiencia chocolatosa profunda y con diferentes texturas. Es la merienda sin gluten perfecta para satisfacer cualquier antojo de chocolate."
       },
       {
         "name": "Alfajor Mousse de Fresas Cerro Azul (50g)",
@@ -4150,34 +3969,11 @@
         "desc": "Este alfajor sin T.A.C.C. es una golosina fresca y frutal, ideal para una merienda ligera. Presenta un relleno liviano de mousse de fresas con un toque justo de dulzura, todo cubierto por una delicada capa de chocolate. Es la opción perfecta para quienes buscan un sabor diferente al clásico dulce de leche, en una presentación apta para celíacos."
       },
       {
-        "name": "Alfajor Mousse de Limón con Chocolate Blanco Cerro Azul (50g)",
-        "img": [
-          "https://i0.wp.com/alfajorescerroazul.com/wp-content/uploads/2023/12/Alfajor-Limon-min.png?w=832&ssl=1"
-        ],
-        "desc": "Esta versión del alfajor de mousse de limón ofrece una experiencia más dulce y cremosa. El relleno ligero y ácido de la mousse de limón se equilibra a la perfección con la dulzura de la cobertura de chocolate blanco. Es una golosina sin gluten que combina la frescura de la fruta con la suavidad del chocolate blanco, creando un postre delicado y delicioso."
-      },
-      {
-        "name": "Alfajor Mousse de Limón con Chocolate Negro Cerro Azul (50g)",
-        "img": [
-          "https://i0.wp.com/alfajorescerroazul.com/wp-content/uploads/2023/12/Alfajor-Limon-V-min.png?w=832&ssl=1"
-        ],
-        "desc": "Experimenta el contraste perfecto entre lo cítrico y lo amargo con este alfajor sin gluten. Un suave y aireado relleno de mousse de limón, con su acidez característica, está cubierto por una intensa capa de chocolate negro. Es una combinación refrescante y sofisticada, ideal para quienes disfrutan de los sabores audaces y buscan una golosina que despierte el paladar."
-      },
-      {
         "name": "Alfajor Mousse de Vainilla Cerro Azul (50g)",
         "img": [
           "https://i0.wp.com/alfajorescerroazul.com/wp-content/uploads/2023/12/Alfajor-Vainilla-min-1.png?w=832&ssl=1"
         ],
         "desc": "Disfruta de la suavidad y el sabor clásico de la vainilla en este alfajor sin gluten. Su relleno etéreo de mousse de vainilla se combina a la perfección con la cobertura de chocolate, creando una experiencia delicada y reconfortante. Es un producto 100% natural, ideal para acompañar un café o para un postre ligero después de la comida."
-      }
-    ],
-    "dona-magdalena": [
-      {
-        "name": "Alfajor Sin Azúcar con Stevia Doña Magdalena (60g)",
-        "img": [
-          "https://http2.mlstatic.com/D_NQ_NP_859089-MLA87302970034_072025-O.webp"
-        ],
-        "desc": "Este alfajor es la opción ideal para quienes desean disfrutar de un postre tradicional argentino sin azúcar agregado. Elaborado con galletas de arroz y endulzado con stevia, ofrece una alternativa más ligera y apta para diabéticos o personas que controlan su ingesta de azúcar. Está relleno con un delicioso dulce de leche sin azúcar y cubierto con una fina capa de chocolate, manteniendo todo el sabor clásico en una versión libre de gluten y más saludable."
       }
     ],
     "lule-muu": [
@@ -4340,29 +4136,6 @@
           "https://i0.wp.com/lepotmarket.com/wp-content/uploads/2021/09/LP-Integra-Barra-x10-Sin-Tacc-Arandano.png?fit=640%2C639&ssl=1"
         ],
         "desc": "Diseñada para ser apta para celíacos, esta barra libre de gluten es una fuente de energía natural y deliciosa. Combina una mezcla de semillas nutritivas con la dulzura y acidez de los arándanos, resultando en un snack crujiente y lleno de sabor. Con 7 gramos de fibra y 7 gramos de proteína, es una opción muy completa y equilibrada para una colación saludable, sin conservantes y apta para todos."
-      }
-    ],
-    "notprotein-bar": [
-      {
-        "name": "NotProtein Bar Almond Salted Caramel (60g)",
-        "img": [
-          "https://cdn2.notco.com/uploads/products/_480x640_fit_center-center_85_none/392674/092024-RENDER-Flowpack-Almond-Salted-Recto-6.webp"
-        ],
-        "desc": "Disfruta de la combinación irresistible de dulce y salado con esta barra de proteína de almendras y caramelo salado. Cada barra aporta 15 gramos de proteína de origen vegetal, perfecta para tus objetivos de fitness. Su textura suave, trocitos de almendra y el toque justo de sal crean un snack gourmet y funcional, ideal para satisfacer antojos de una manera inteligente y nutritiva."
-      },
-      {
-        "name": "NotProtein Bar Berry Pie (60g)",
-        "img": [
-          "https://cdn2.notco.com/uploads/products/_480x640_fit_center-center_85_none/392709/092024-RENDER-Flowpack-Berry-Pie-Recto-2.webp"
-        ],
-        "desc": "Esta barra de proteína 100% vegetal ofrece el delicioso sabor de un pastel de frutos rojos en un formato práctico y funcional. Con 15 gramos de proteína plant-based, es ideal para la recuperación muscular post-entrenamiento o como un snack saciante. Su textura suave y su relleno frutal la convierten en una opción exquisita y nutritiva para complementar tu ingesta de proteínas diarias."
-      },
-      {
-        "name": "NotProtein Bar Chocolate Brownie (60g)",
-        "img": [
-          "https://cdn2.notco.com/uploads/products/_480x640_fit_center-center_85_none/392680/092024-RENDER-Flowpack-Chocolate-Brownie-Recto-3.webp"
-        ],
-        "desc": "Para los amantes del chocolate, esta barra de proteína sabor brownie es la máxima indulgencia sin culpas. Con una textura densa y húmeda que imita a un brownie real y un intenso sabor a cacao, es el snack perfecto para después de entrenar. Aporta 15 gramos de proteína 100% vegetal para ayudar a la recuperación muscular, convirtiendo tu colación en un verdadero postre funcional."
       }
     ],
     "crudda": [
@@ -4541,50 +4314,6 @@
           "https://m.media-amazon.com/images/I/71JAVuvBswL._UF350,350_QL80_.jpg"
         ],
         "desc": "Esta barra de proteína ofrece una experiencia de sabor gourmet, con un delicioso toque de salsa de caramelo y una textura crujiente. Su fórmula contiene un 33% de blend de proteínas, convirtiéndola en un suplemento ideal para después de entrenar o como una colación saciante. Es una opción sofisticada para quienes buscan un snack funcional con un sabor y textura superiores."
-      }
-    ],
-    "ki-bar": [
-      {
-        "name": "Barra Proteica Natural Cacao KI-BAR (45g)",
-        "img": [
-          "https://i.ibb.co/PZ19wdKf/KI-BAR-CACAO.png"
-        ],
-        "desc": "Satisface tus antojos de chocolate de forma saludable con esta barra proteica natural de cacao. Con 14 gramos de proteína de alta calidad gracias a sus 3 claras de huevo y solo 151 calorías, es el snack perfecto para la recuperación post-entrenamiento. Su intenso sabor a cacao la convierte en un postre funcional que nutre tus músculos."
-      },
-      {
-        "name": "Barra Proteica Natural Café con Leche KI-BAR (45g)",
-        "img": [
-          "https://i.ibb.co/r2VGhfmJ/KI-BAR-CAFE-CON-LECHE.png"
-        ],
-        "desc": "Esta barra proteica es la opción ideal para los amantes del café. Su delicioso sabor a café con leche se combina con 14 gramos de proteína provenientes de 3 claras de huevo, todo en solo 141 calorías. Es el snack perfecto para acompañar tu café de la mañana o para una recarga de energía y proteínas a media tarde."
-      },
-      {
-        "name": "Barra Proteica Natural Coco KI-BAR (45g)",
-        "img": [
-          "https://i.ibb.co/0VZk5zFg/KI-BAR-COCO.png"
-        ],
-        "desc": "Para los amantes del coco, esta barra proteica ofrece un sabor tropical y exótico. Su base de 3 claras de huevo aporta 14 gramos de proteína en 154 calorías, ideal para la recuperación muscular. La combinación de la proteína de huevo con el coco crea una textura y sabor únicos, convirtiéndola en una opción deliciosa y saciante para después de entrenar."
-      },
-      {
-        "name": "Barra Proteica Natural Frutos Rojos KI-BAR (40g)",
-        "img": [
-          "https://i.ibb.co/zWDMMrJ1/KI-BAR-FRUTOS-ROJOS.png"
-        ],
-        "desc": "Esta barra proteica natural combina el poder de 3 claras de huevo con el sabor antioxidante de los frutos rojos. Aporta 10 gramos de proteína en una presentación de solo 130 calorías, convirtiéndose en un snack funcional, ligero y lleno de sabor. Es perfecta para quienes buscan una opción frutal y nutritiva para su recuperación muscular o como colación."
-      },
-      {
-        "name": "Barra Proteica Natural Manzana KI-BAR (40g)",
-        "img": [
-          "https://i.ibb.co/wZzxHFm4/KI-BAR-MANZANA.png"
-        ],
-        "desc": "Disfruta de un sabor frutal y refrescante con esta barra proteica natural de manzana. Con 10 gramos de proteína provenientes de 3 claras de huevo y solo 110 calorías, es una de las opciones más ligeras para un snack post-entrenamiento o una merienda saludable. Su toque a manzana la hace única y deliciosa, ideal para recargar energías de forma natural."
-      },
-      {
-        "name": "Barra Proteica Natural Vainilla KI-BAR (45g)",
-        "img": [
-          "https://i.ibb.co/Q70hnPDm/KI-BAR-VAINILLA.png"
-        ],
-        "desc": "Esta barra proteica natural destaca por su base de 3 claras de huevo, ofreciendo 13 gramos de proteína de alta calidad en solo 171 calorías. Su delicioso y clásico sabor a vainilla la convierte en una opción perfecta para una colación post-entrenamiento o para un snack saludable en cualquier momento del día. Es una forma simple y sabrosa de cumplir con tus requerimientos de proteína."
       }
     ],
     "colonial": [
@@ -5135,13 +4864,6 @@
       }
     ],
     "prepizza": [
-      {
-        "name": "Pre-Pizza de Quinoa Sabor Espinaca - 300g (2 unidades)",
-        "img": [
-          "https://dieteticamari.com/wp-content/uploads/2023/08/mundo-vegetal_pizzaespinaca.png"
-        ],
-        "desc": "Revoluciona tus noches de pizza con una base más saludable, sabrosa y lista para crear. Esta pre-pizza de quinoa y espinaca te da el punto de partida perfecto para tus recetas, ahorrándote tiempo en la cocina. Su composición a base de quinoa la hace libre de gluten y rica en nutrientes. Solo agrega tus toppings favoritos, hornea y disfruta de una pizza deliciosa y original sin complicaciones."
-      },
       {
         "name": "Pre-Pizza de Quinoa Sabor Zanahoria - 300g (2 unidades)",
         "img": [
@@ -5735,29 +5457,6 @@
         "desc": "Disfruta de la mezcla original que lo empezó todo, ideal para sentirte bien y liviano. Esta yerba combina el mate con un blend de 9 hierbas seleccionadas como carqueja, té verde y rosa mosqueta, diseñada para ofrecer beneficios digestivos y depurativos. Es la opción perfecta para quienes buscan una infusión 100% natural, sin acidez y con todo el sabor de las sierras."
       }
     ],
-    "crelech-galletas": [
-      {
-        "name": "Materitas Crelech Light Coco - 180g",
-        "img": [
-          "https://www.crelech.com/wp-content/uploads/2018/05/Materitas2-300x300.png"
-        ],
-        "desc": "Dale un toque tropical a tu ritual del mate sin descuidar tu línea. Las Materitas Crelech Light de Coco son la opción perfecta para disfrutar sin remordimientos, gracias a su fórmula 0% azúcares, -70% grasas y su aporte de fibra. El delicioso y aromático sabor a coco realza tu pausa matera, convirtiéndola en un momento de placer saludable."
-      },
-      {
-        "name": "Materitas Crelech Light Naranja - 180g",
-        "img": [
-          "https://www.crelech.com/wp-content/uploads/2018/05/Materitas1-300x300.png"
-        ],
-        "desc": "Refresca tu ronda de mates con un toque cítrico y ligero. Las Materitas Crelech Light de Naranja son el snack dietético ideal para cuidarte, ya que son 0% azúcares, -70% grasas y fuente de fibra. Su vibrante sabor a naranja las hace perfectas para cortar el amargor del mate y disfrutar de una pausa deliciosa y sin culpas."
-      },
-      {
-        "name": "Materitas Crelech Light Vainilla - 180g",
-        "img": [
-          "https://www.crelech.com/wp-content/uploads/2018/05/Materitas3-300x300.png"
-        ],
-        "desc": "Acompaña tus mates de la forma más saludable. Las Materitas Crelech Light de Vainilla son el bocado ideal para disfrutar sin culpas, ya que tienen 0% azúcares, -70% grasas y son fuente de fibra. Su clásico y suave sabor a vainilla las convierte en la compañía dietética perfecta para tu infusión favorita, cuidando tu bienestar en cada ronda."
-      }
-    ],
     "moms": [
       {
         "name": "Cookie + Proteína Sabor Chocolate y Nuez - 60g",
@@ -5964,13 +5663,6 @@
     ],
     "bio-nativa-coco-nut": [
       {
-        "name": "Coconut Oil Extra Virgen - 200cc",
-        "img": [
-          "https://i.ibb.co/93Csnjcb/coconut-200.png"
-        ],
-        "desc": "Descubre el auténtico sabor tropical en su estado más puro. Este formato de 200cc de aceite extra virgen es perfecto para quienes desean explorar su uso en cafés \"bulletproof\", smoothies o como un toque gourmet en postres. Su intenso aroma y sabor a coco también lo hacen ideal para probarlo como hidratante corporal natural."
-      },
-      {
         "name": "Coconut Oil Extra Virgen - 360cc",
         "img": [
           "https://i.ibb.co/MkQf28XD/coconut-360.png"
@@ -5983,13 +5675,6 @@
           "https://i.ibb.co/6J8c7YKz/coconut-800.png"
         ],
         "desc": "El formato definitivo para los verdaderos fanáticos del coco. Este envase de 800cc de aceite extra virgen te da la libertad de usarlo generosamente en todas tus facetas: desde la cocina saludable y repostería vegana hasta tu rutina de cuidado personal. Es la opción más rendidora para integrar el sabor y los beneficios del coco en tu vida."
-      },
-      {
-        "name": "Coconut Oil Neutro - 200cc",
-        "img": [
-          "https://acdn-us.mitiendanube.com/stores/002/228/004/products/bn-neu-200-photoroom-00288d5cd4fc52c62f17545834338926-1024-1024.jpg"
-        ],
-        "desc": "El formato ideal para descubrir los beneficios del aceite de coco sin alterar tus recetas. Esta versión neutra, 100% pura, es perfecta para salteados pequeños o para probarlo en repostería. Al no tener sabor ni aroma, reemplaza a la manteca de forma saludable en porciones justas, convirtiéndose en un básico versátil para tu cocina."
       },
       {
         "name": "Coconut Oil Neutro - 360cc",
@@ -6126,13 +5811,6 @@
           "https://www.silkargentina.com.ar/wp-content/uploads/2025/07/Packs-Almendra-Vainilla-Sin-Azucar-con-Circulo.webp"
         ],
         "desc": "Dale un toque dulce y aromático a tus días sin romper tu dieta. Esta bebida combina la suavidad de las almendras tostadas con notas naturales de vainilla, creando una experiencia deliciosa y ligera. Es perfecta para cortar el café, mezclar con granola o beber sola cuando tienes antojo de algo rico. Disfruta de un placer libre de culpas, fortificado con calcio y vitaminas."
-      },
-      {
-        "name": "Café Mocha - 1 Litro",
-        "img": [
-          "https://www.silkargentina.com.ar/wp-content/uploads/2025/09/Pack-Avellana-con-Circulo.webp"
-        ],
-        "desc": "Despierta tu energía con la fusión perfecta de café, chocolate y almendras. Café Mocha es la bebida lista para tomar que te ahorra tiempo en la mañana o te levanta el ánimo por la tarde. Esta edición combina el aroma del café tostado con notas de cacao en una base vegetal cremosa. La solución ideal para los amantes del café que buscan una alternativa vegetal práctica y deliciosa."
       },
       {
         "name": "Coco Sin Azúcar - 1 Litro",
