@@ -213,13 +213,7 @@
     {
       "id": "cuidado-personal",
       "title": "Cuidado Personal",
-      "subcategories": [
-        {
-          "id": "copea",
-          "title": "Copea",
-          "desc": "Cuidado personal y de la piel."
-        }
-      ]
+      "subcategories": []
     },
     {
       "id": "edulcorantes",
@@ -2038,50 +2032,6 @@
           "https://granerorosario.com/wp-content/uploads/2025/01/cocoon-pomelo-600x600.jpg"
         ],
         "desc": "Atrévete a probar el sabor audaz y sofisticado de Cocoon Pomelo. Esta gaseosa fusiona el característico gusto agridulce del pomelo con una efervescencia perfecta, ofreciendo una experiencia única para tu paladar. Es la alternativa ideal para quienes buscan un refresco con carácter, que además de ser delicioso, está cargado de prebióticos y probióticos para promover una digestión saludable y un sistema inmune fuerte."
-      }
-    ],
-    "copea": [
-      {
-        "name": "Agua de Alibour",
-        "img": [
-          "https://http2.mlstatic.com/D_NQ_NP_2X_717998-MLA80798771617_112024-F.webp"
-        ],
-        "desc": "El tradicional astringente y antiséptico recomendado para el cuidado especializado de la piel. El Agua de Alibour Copea posee una acción calmante y purificante, lo que la hace especialmente útil para la limpieza de pieles con tendencia grasa. Sus beneficios la convierten en la opción ideal para tratar el acné y otras pequeñas irritaciones cutáneas."
-      },
-      {
-        "name": "Agua Oxigenada",
-        "img": [
-          "https://http2.mlstatic.com/D_NQ_NP_659083-MLA82556002558_032025-O.webp"
-        ],
-        "desc": "El primer paso para una correcta desinfección y el antiséptico de confianza para tu botiquín de primeros auxilios. El Agua Oxigenada Copea es ideal para la limpieza de heridas superficiales, cortes y raspaduras. Su acción efervescente ayuda a eliminar eficazmente la suciedad y los microorganismos, previniendo infecciones y asegurando una curación limpia."
-      },
-      {
-        "name": "Bálsamo Labial",
-        "img": [
-          "https://http2.mlstatic.com/D_NQ_NP_2X_766354-MLA79965399721_102024-F.webp"
-        ],
-        "desc": "El clásico indispensable para el cuidado de tus labios. Nuestra fórmula, enriquecida con las propiedades de la manteca de cacao, humecta profundamente y crea una barrera que protege y suaviza de manera inmediata. Es ideal para el tratamiento y prevención de labios secos o agrietados por la exposición al sol y al frío, dejándolos saludables y listos para sonreír con el uso diario."
-      },
-      {
-        "name": "Bicarbonato de Sodio",
-        "img": [
-          "https://kladno.com.ar/pedidos/wp-content/uploads/2020/06/foto-final-pack-bicarbonato-de-sodio-con-troquel-y-sobre.jpg"
-        ],
-        "desc": "Un producto versátil con múltiples soluciones para la salud y el hogar. Como antiácido, el Bicarbonato de Sodio Copea proporciona un rápido y eficaz alivio a la acidez y el malestar estomacal. Además de sus beneficios para la indigestión ácida, es un conocido agente de limpieza y desodorizante, convirtiéndose en un práctico aliado en casa."
-      },
-      {
-        "name": "Pasta Lassar",
-        "img": [
-          "https://http2.mlstatic.com/D_NQ_NP_2X_864303-MLA79977795528_102024-F.webp"
-        ],
-        "desc": "La solución experta que alivia, regenera y previene irritaciones cutáneas. Nuestra Pasta Lassar combina las propiedades del óxido de zinc para crear una barrera antiséptica y absorbente, ideal para el tratamiento eficaz de la dermatitis del pañal, rozaduras y paspaduras. Su acción secante y regeneradora la convierte en un básico indispensable del cuidado dermatológico."
-      },
-      {
-        "name": "Vaselina Líquida",
-        "img": [
-          "https://http2.mlstatic.com/D_NQ_NP_2X_774325-MLA84275104816_052025-F.webp"
-        ],
-        "desc": "Un emoliente puro y versátil que funciona como un hidratante intensivo y protector cutáneo. La Vaselina Líquida Copea es perfecta para lubricar y suavizar zonas ásperas del cuerpo como codos y rodillas, además de ser un excelente desmaquillante. Su fórmula crea una capa que retiene la humedad natural, siendo ideal para el cuidado de la piel seca y la delicada piel del bebé."
       }
     ],
     "tinturas-oasis": [
@@ -3963,32 +3913,11 @@
         "desc": "Este pan de molde, elaborado con harina integral, es la base perfecta para una alimentación diaria saludable y nutritiva. Suave y consistente, es una excelente fuente de fibras que contribuyen a una mejor digestión y a una mayor sensación de saciedad. Con 0% grasas trans y enriquecido con Omega 6 y 9, es ideal para preparar sándwiches equilibrados, tostadas para el desayuno o como acompañante de cualquier comida."
       },
       {
-        "name": "Pan Integral Sin Sal D&D (420g)",
-        "img": [
-          "https://www.dydpanificados.com.ar/wp-content/uploads/2019/01/DYD_PAN_INTEGRAL_SINSAL_001-550x550.jpg"
-        ],
-        "desc": "Disfruta de todos los beneficios del pan integral en esta versión sin sal agregada, especialmente pensada para quienes buscan cuidar su presión arterial y reducir el consumo de sodio. Mantiene toda la fibra y los nutrientes del grano entero, así como su textura suave, pero con un sabor más neutro. Es la opción perfecta para dietas de control de sodio, permitiéndote disfrutar de sándwiches y tostadas de una manera más consciente y saludable."
-      },
-      {
         "name": "Pan Multicereal D&D (420g)",
         "img": [
           "https://www.dydpanificados.com.ar/wp-content/uploads/2018/10/DYD_PAN_MULTICEREAL_001_v2-550x550.jpg"
         ],
         "desc": "Para los que buscan un extra de sabor y textura, este pan multicereal es la elección ideal. Combina la suavidad de la masa con una mezcla de semillas y granos que aportan un toque crujiente y un perfil nutricional superior, rico en fibras y Omega 3 y 9. Con 0% grasas trans, es perfecto para sándwiches gourmet o tostadas que te llenarán de energía y nutrientes para empezar bien el día."
-      },
-      {
-        "name": "Pan Multicereal Sin Sal D&D (420g)",
-        "img": [
-          "https://www.dydpanificados.com.ar/wp-content/uploads/2019/01/DYD_PAN_MULTICEREAL_SINSAL_001_v2-550x550.jpg"
-        ],
-        "desc": "Esta versión del pan multicereal te ofrece toda la riqueza de las semillas y granos en una fórmula sin sal agregada. Es ideal para quienes siguen dietas bajas en sodio pero no quieren renunciar al sabor y la textura que aportan los multicereales. Enriquecido con Omega 3 y 9 y con 0% grasas trans, es una base nutritiva y deliciosa para tus comidas, cuidando tu salud cardiovascular."
-      },
-      {
-        "name": "Pan Raíces del Norte D&D (500g)",
-        "img": [
-          "https://www.dydpanificados.com.ar/wp-content/uploads/2018/10/DYD_PAN_RAICES_DEL_NORTE_001_v3-550x550.jpg"
-        ],
-        "desc": "Este pan integral está enriquecido con el poder nutritivo de la chía y la quinoa, dos superalimentos andinos. Con un alto contenido de fibra y 0% grasas trans, esta variedad \"Raíces del Norte\" no solo es deliciosa, sino también una fuente excepcional de proteínas y ácidos grasos esenciales. Su textura es rica y densa, ideal para sándwiches sustanciosos que te mantendrán satisfecho y lleno de energía durante más tiempo."
       },
       {
         "name": "Pan Rústico D&D (400g)",
