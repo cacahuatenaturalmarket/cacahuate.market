@@ -196,9 +196,24 @@
           "desc": "Variedad de chocolates y confites para repostería y snacks."
         },
         {
+          "id": "chocoleit-polvo",
+          "title": "Chocoleit-Polvo",
+          "desc": "Cacao en polvo de alta pureza para repostería y bebidas"
+        },
+        {
           "id": "colonial",
           "title": "Colonial-Barra",
           "desc": "Chocolates de alta calidad, con opciones orgánicas, sin azúcar y para taza."
+        },
+        {
+          "id": "copani",
+          "title": "Copani-Barra",
+          "desc": "Chocolates puros y artesanales de alta calidad"
+        },
+        {
+          "id": "dicomere-polvo",
+          "title": "Dicomere-Polvo",
+          "desc": "Cacao en polvo natural y nutritivo"
         }
       ]
     },
@@ -6032,6 +6047,57 @@
         "price": 0,
         "img": [
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtC9FkEarpurja7yxK0_SFuPwAorzCACGe5g&s"
+        ],
+        "stock": true
+      }
+    ],
+    "copani": [
+      {
+        "name": "Barra de Chocolate 100% Cacao - 63g",
+        "desc": "Para los verdaderos puristas del cacao. Esta barra ofrece una experiencia de sabor intensa, profunda y sin concesiones. Elaborada exclusivamente con 100% cacao, es la opción definitiva para quienes buscan evitar el azúcar por completo, ideal para dietas Keto, Low Carb o simplemente para disfrutar de los antioxidantes del chocolate en su máxima expresión.",
+        "price": 0,
+        "img": [
+          "https://copanipurochocolate.com/wp-content/uploads/2020/06/c24.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Barra de Chocolate 70% Cacao con Mix de Frutos Secos - 65g",
+        "desc": "Una explosión de energía y sabor en cada bocado. Disfruta de una base de chocolate semi-amargo al 70% enriquecida con un generoso mix de frutos secos seleccionados. La combinación de texturas crocantes con la suavidad del chocolate crea un snack 100% natural, perfecto para una pausa nutritiva a media tarde.",
+        "price": 0,
+        "img": [
+          "https://copanipurochocolate.com/wp-content/uploads/2021/01/A21.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Barra de Chocolate 80% Cacao con Almendras - 63g",
+        "desc": "Encuentra el equilibrio perfecto entre intensidad y textura. Esta variedad combina la robustez del chocolate negro al 80% cacao con el crujido irresistible de las almendras naturales. Es un snack sofisticado y saciante, cargado de grasas saludables y con el toque justo de amargor para disfrutar sin empalagar.",
+        "price": 0,
+        "img": [
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPDfQ6o7FUk7QfoO-IAXSBplRtddv9T37hvw&s"
+        ],
+        "stock": true
+      }
+    ],
+    "chocoleit-polvo": [
+      {
+        "name": "Puro Cacao Amargo en Polvo (Sin TACC) - 250g",
+        "desc": "Eleva el nivel de tu repostería con este cacao de calidad superior. Elaborado con 100% cacao ecuatoriano, reconocido mundialmente por su aroma fino y sabor profundo. Al ser un cacao de tipo alcalino, ofrece un color oscuro intenso, menos acidez y una disolución perfecta, ideal tanto para hornear como para preparar bebidas calientes. Es un producto de origen vegetal, totalmente libre de azúcar agregada y 0% grasas trans, perfecto para recetas saludables, veganas y aptas para celíacos.",
+        "price": 0,
+        "img": [
+          "https://i0.wp.com/lepotmarket.com/wp-content/uploads/2021/02/LP-Chocoleit-Cacao.png?fit=640%2C640&ssl=1"
+        ],
+        "stock": true
+      }
+    ],
+    "dicomere-polvo": [
+      {
+        "name": "Cacao Amargo Puro en Polvo (Sin TACC) - 200g",
+        "desc": "Disfruta de la intensidad y los beneficios del auténtico 100% Cacao Brasilero. Este cacao en polvo es un superalimento natural, excelente fuente de fibra, proteínas y minerales esenciales (como potasio, calcio y magnesio). Es la opción ideal para quienes buscan pureza: totalmente vegano, sin azúcar agregada, libre de sodio y certificado Gluten Free (Sin TACC). Perfecto para enriquecer tus desayunos, batidos proteicos o para una repostería saludable y llena de sabor.",
+        "price": 0,
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/058/870/products/dico26_1-ccbd859c6166afbb7717610358061151-1024-1024.webp"
         ],
         "stock": true
       }
