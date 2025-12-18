@@ -450,6 +450,11 @@
       "desc": "Premezclas y rebozadores libres de gluten para preparaciones dulces y saladas.",
       "subcategories": [
         {
+          "id": "all-rice",
+          "title": "All Rice",
+          "desc": "Rebozadores a base de arroz integral, saludables y sin gluten"
+        },
+        {
           "id": "delicel",
           "title": "Delicel",
           "desc": "Premezclas y rebozadores libres de gluten para preparaciones dulces y saladas."
@@ -463,6 +468,30 @@
           "id": "panko",
           "title": "Panko",
           "desc": "Pan rallado de estilo japonés para apanados extra crujientes, ligeros y dorados."
+        }
+      ]
+    },
+    {
+      "id": "premezclas-rebozadores",
+      "title": "Premezclas y Rebozadores",
+      "desc": "Rebozadores a base de arroz integral, saludables y sin gluten",
+      "subcategories": [
+        {
+          "id": "all-rice",
+          "title": "All Rice",
+          "desc": "Rebozadores a base de arroz integral, saludables y sin gluten"
+        }
+      ]
+    },
+    {
+      "id": "premezclas",
+      "title": "Premezclas y Rebozadores",
+      "desc": "Rebozadores a base de arroz integral, saludables y sin gluten",
+      "subcategories": [
+        {
+          "id": "all-rice",
+          "title": "All Rice",
+          "desc": "Rebozadores a base de arroz integral, saludables y sin gluten"
         }
       ]
     },
@@ -6098,6 +6127,26 @@
         "price": 0,
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/dico26_1-ccbd859c6166afbb7717610358061151-1024-1024.webp"
+        ],
+        "stock": true
+      }
+    ],
+    "all-rice": [
+      {
+        "name": "Rebozador de Arroz Integral Con Sal (Sin TACC) - 250g",
+        "desc": "Disfruta de la textura perfecta en tus comidas con el sabor justo. Este rebozador premium de arroz integral ya viene sazonado, listo para usar, ofreciendo una practicidad única para cocinar milanesas, medallones o bastones de vegetales. Al ser integral, aporta fibra a tus platos y es naturalmente 0% colesterol. Es el aliado perfecto para la cocina celíaca, garantizando un empanado crocante, sabroso y seguro (Libre de Gluten) para toda la familia.",
+        "price": 0,
+        "img": [
+          "https://saboresandinos.com/wp-content/uploads/2024/11/1880.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Rebozador de Arroz Integral Sin Sal (Sin TACC) - 250g",
+        "desc": "Logra empanados dorados y súper crujientes sin descuidar tu salud cardiovascular. Este rebozador está elaborado a base de arroz integral, lo que lo convierte en una excelente fuente de fibra con 0% colesterol y, en esta versión, totalmente 0% sodio. Es la opción ideal para hipertensos o quienes buscan reducir la sal sin perder textura en sus milanesas y vegetales. Totalmente libre de gluten, garantiza una cobertura seca y liviana que no absorbe aceite de más.",
+        "price": 0,
+        "img": [
+          "https://saboresandinos.com/wp-content/uploads/2024/11/1881.jpg"
         ],
         "stock": true
       }
