@@ -222,7 +222,12 @@
       "title": "Cuidado Personal",
       "subcategories": []
     },
-    
+    {
+      "id": "dulces-y-reposteria",
+      "title": "Dulces y Repostería",
+      "desc": "Ingredientes y esencias de alta calidad para tus creaciones de pastelería.",
+      "subcategories": []
+    },
     {
       "id": "edulcorantes",
       "title": "Edulcorantes",
@@ -252,7 +257,8 @@
     {
       "id": "especias",
       "title": "Especias y Condimentos",
-      "desc": "Aromatiza y da sabor a tus platillos con nuestra selección de especias naturales."
+      "desc": "Aromatiza y da sabor a tus platillos con nuestra selección de especias naturales.",
+      "subcategories": []
     },
     {
       "id": "fideos-integrales",
@@ -309,12 +315,14 @@
     {
       "id": "frutas",
       "title": "Frutas Deshidratadas",
-      "desc": "Disfruta de la dulzura y los beneficios de nuestras frutas deshidratadas."
+      "desc": "Disfruta de la dulzura y los beneficios de nuestras frutas deshidratadas.",
+      "subcategories": []
     },
     {
       "id": "frutos-secos",
       "title": "Frutos Secos",
-      "desc": "Descubre nuestra selección de frutos secos, una fuente de energía y nutrientes."
+      "desc": "Descubre nuestra selección de frutos secos, una fuente de energía y nutrientes.",
+      "subcategories": []
     },
     {
       "id": "galletas",
@@ -409,7 +417,8 @@
     {
       "id": "mix-frutos-secos",
       "title": "Mix de Frutos Secos",
-      "desc": "Nuestras combinaciones perfectas de frutos secos y deshidratados."
+      "desc": "Nuestras combinaciones perfectas de frutos secos y deshidratados.",
+      "subcategories": []
     },
     {
       "id": "panificados",
@@ -469,18 +478,6 @@
           "id": "panko",
           "title": "Panko",
           "desc": "Pan rallado de estilo japonés para apanados extra crujientes, ligeros y dorados."
-        }
-      ]
-    },
-    {
-      "id": "premezclas-rebozadores",
-      "title": "Premezclas y Rebozadores",
-      "desc": "Rebozadores a base de arroz integral, saludables y sin gluten",
-      "subcategories": [
-        {
-          "id": "all-rice",
-          "title": "All Rice",
-          "desc": "Rebozadores a base de arroz integral, saludables y sin gluten"
         }
       ]
     },
@@ -752,7 +749,8 @@
     {
       "id": "yuyos",
       "title": "Yuyos Medicinales",
-      "desc": "La sabiduría de la naturaleza en cada hierba. Descubre el poder ancestral para tu bienestar."
+      "desc": "La sabiduría de la naturaleza en cada hierba. Descubre el poder ancestral para tu bienestar.",
+      "subcategories": []
     }
   ],
   "products": {
@@ -6151,8 +6149,6 @@
         ],
         "stock": true
       }
-    ],
-    "procal": [],
-    "esencias-y-aromatizantes": []
+    ]
   }
 }
