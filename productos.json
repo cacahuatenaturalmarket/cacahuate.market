@@ -153,6 +153,18 @@
       ]
     },
     {
+      "id": "cafe",
+      "title": "Cafés",
+      "desc": "Calidad y tradición en café tostado",
+      "subcategories": [
+        {
+          "id": "cafe-cinco-hispanos",
+          "title": "Cinco Hispanos",
+          "desc": "Calidad y tradición en café tostado"
+        }
+      ]
+    },
+    {
       "id": "caramelos",
       "title": "Caramelos",
       "subcategories": [
@@ -339,6 +351,11 @@
           "id": "silk",
           "title": "Silk",
           "desc": "Bebidas vegetales a base de almendras y coco, fortificadas y deliciosas."
+        },
+        {
+          "id": "leches-vivet",
+          "title": "Vivet",
+          "desc": "Leches vegetales a base de maní"
         }
       ]
     },
@@ -421,6 +438,11 @@
           "id": "delicel",
           "title": "Delicel",
           "desc": "Premezclas y rebozadores libres de gluten para preparaciones dulces y saladas."
+        },
+        {
+          "id": "premezclas-dicomere",
+          "title": "Dicomere",
+          "desc": "Premezclas proteicas integrales y Sin TACC"
         },
         {
           "id": "panko",
@@ -4662,6 +4684,15 @@
         "desc": "A veces, la perfección reside en lo simple. Nuestros chips de papas rústicas celebran el sabor auténtico de la papa, cortada de forma gruesa para una crocancia superior y un gusto más intenso. Sazonadas únicamente con sal marina para realzar su esencia, son el acompañante ideal para cualquier momento, desde una picada con amigos hasta el complemento de tu sándwich favorito. El placer atemporal de un clásico bien hecho."
       },
       {
+        "name": "Chips de Papas Thai - 80g",
+        "desc": "Viaja con el paladar al sudeste asiático con esta edición especial. Estas papas fritas ofrecen una experiencia de sabor exótico inspirada en Tailandia, con un nivel de picante \"tranqui\" que aporta carácter sin invadir. Son el snack perfecto para quienes buscan salir de lo común, certificadas Sin TACC (libres de gluten) y con la crocancia artesanal que caracteriza a la marca. Ideal para elevar tu picada con un toque oriental y sofisticado.",
+        "price": 0,
+        "img": [
+          "https://saboresandinos.com/wp-content/uploads/2025/10/3235.jpg"
+        ],
+        "stock": true
+      },
+      {
         "name": "Chips de Zanahorias y Sal Marina - 80g",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/nues05_1-8abaaca9cece9fe14d16964488709236-1024-1024.jpg"
@@ -4779,35 +4810,35 @@
     ],
     "srisri-sudanta": [
       {
-        "name": "Pasta Dental Cuidado Total Canela y Clavo de Olor - 100g",
+        "name": "Pasta Dental Cuidado Total Canela y Clavo de Olor - 200g",
         "img": [
           "https://saviaconexion.com/wp-content/uploads/2023/06/img_9968.png"
         ],
         "desc": "Protege tu salud bucal con la sabiduría milenaria del Ayurveda. Esta pasta dental combina las reconocidas propiedades antibacterianas y protectoras de la canela y el clavo de olor para un cuidado completo de dientes y encías. Su fórmula libre de flúor ayuda a prevenir la caries y mantener tu boca sana de forma natural. Ideal para quienes buscan una protección integral con un sabor cálido y especiado."
       },
       {
-        "name": "Pasta Dental Efecto Blanqueador Carbón Activado y Menta - 100g",
+        "name": "Pasta Dental Efecto Blanqueador Carbón Activado y Menta - 200g",
         "img": [
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ0rjBBUbis5Dbb9o-JerP8rXfTa0DccOtsw&s"
         ],
         "desc": "Luce una sonrisa más blanca y radiante de forma natural. Esta pasta dental en gel combina el poder purificante del carbón activado para remover manchas superficiales, con el frescor de la menta para un aliento impecable. Su fórmula ayurvédica y libre de flúor te ofrece un blanqueamiento suave pero efectivo, cuidando tu boca de manera integral. La elección ideal para una limpieza profunda y un blanco natural."
       },
       {
-        "name": "Pasta Dental Encías Sanas Hinojo y Menta - 100g",
+        "name": "Pasta Dental Encías Sanas Hinojo y Menta - 200g",
         "img": [
           "https://srisritattva.com.py/cdn/shop/files/encias-sanas-100-gr-5d051985b1a94384bd17340946829326-1024-1024_5edba130-c495-4e4a-8179-5154829491ad.png?v=1750946967"
         ],
         "desc": "Bríndale a tus encías el cuidado calmante y protector que merecen. Esta pasta dental en gel está especialmente formulada con las propiedades antiinflamatorias del hinojo y el frescor de la menta para fortalecer y proteger las encías sensibles. Su uso diario ayuda a mantenerlas sanas y a prevenir la irritación. Una elección ayurvédica y libre de flúor para asegurar la base de una sonrisa saludable."
       },
       {
-        "name": "Pasta Dental Extra Fresh Pimienta y Mentol - 100g",
+        "name": "Pasta Dental Extra Fresh Pimienta y Mentol - 200g",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/004/048/745/products/50gr-e3d4fc8f780906f04917424796370075-480-0.png"
         ],
         "desc": "Siente una explosión de frescura intensa y duradera que revitaliza toda tu boca. Esta pasta dental ayurvédica fusiona el poder refrescante del mentol con las propiedades vigorizantes de la pimienta para combatir el mal aliento y dejar una sensación de limpieza inigualable. Su fórmula libre de flúor te asegura un cuidado completo y un aliento fresco que perdura mucho después del cepillado."
       },
       {
-        "name": "Pasta Dental Ultra Blanqueadora Papaya y Ananá - 100g",
+        "name": "Pasta Dental Ultra Blanqueadora Papaya y Ananá - 200g",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/735/492/products/nnnn-81-2078c4cad50174b32e17518956980929-640-0.png"
         ],
@@ -4902,6 +4933,24 @@
           "https://distribuidorafresh.com.ar/wp-content/uploads/2024/04/semillas.webp"
         ],
         "desc": "Potencia tu nutrición con un untable cargado de superalimentos. La Pasta de Maní con Mix de Semillas es perfecta para enriquecer tus desayunos, bowls de avena o tostadas, aportando fibra y textura. Su innovadora mezcla de maní cremoso con semillas seleccionadas la convierte en una fuente de energía superior. El bocado ideal para un día activo."
+      },
+      {
+        "name": "Pasta de Maní Protein Cookies and Cream (Sin TACC) - 370g",
+        "desc": "Disfruta del sabor de tu postre favorito en una versión nutritiva y saludable. Esta pasta de maní sabor Cookies and Cream transforma cualquier tostada, batido o fruta en un momento gourmet. Con un aporte superior a 14g de proteína y certificación vegana, te ofrece todo el placer de las galletitas con crema pero sin azúcar agregada y libre de gluten (Sin TACC).",
+        "price": 0,
+        "img": [
+          "https://saboresandinos.com/wp-content/uploads/2025/10/3240.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Pasta de Maní Protein Salted Caramel (Sin TACC) - 370g",
+        "desc": "Lleva tus desayunos y meriendas al siguiente nivel con esta combinación irresistible de dulce y salado. Esta pasta de maní untable sabor Salted Caramel (Caramelo Salado) no solo es deliciosa, sino que está enriquecida para aportar más de 14g de proteína vegetal. Es una opción 100% vegana, libre de gluten y con 0% azúcar agregada, ideal para quienes buscan energía y sabor sin descuidar su alimentación.",
+        "price": 0,
+        "img": [
+          "https://www.greenco.com.ar/Content/images/articulos/ENTR25_1.jpg"
+        ],
+        "stock": true
       },
       {
         "name": "Pasta de Maní Stevia Entrenuts - 370g",
@@ -5925,6 +5974,66 @@
           "https://alldiet.com.ar/assets/images/products/legum-52/medium.jpg"
         ],
         "desc": "Suma carácter y color a tus preparaciones con el Poroto Tape. Esta variedad se distingue por su piel jaspeada y una textura firme que resiste cocciones largas sin perder su integridad, lo que lo hace perfecto para estofados invernales y platos de olla intensos. Su sabor robusto y terroso combina a la perfección con embutidos y vegetales, brindando una experiencia culinaria rústica y reconfortante en cada bocado."
+      }
+    ],
+    "leches-vivet": [
+      {
+        "name": "Cacahuate Vivet Original Sin Azúcar - 1 Litro",
+        "desc": "Descubre el poder nutricional del maní en su forma más pura y cremosa. Esta leche vegetal es tu aliada perfecta para sumar proteínas a tu día, aportando 21,5g por envase sin azúcar agregada. Es ideal para cortar tu café, potenciar tus batidos post-entreno o beber sola bien fría. Una alternativa deliciosa, libre de gluten y lactosa.",
+        "price": 0,
+        "img": [
+          "https://www.vivet.com.ar/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fvivet-web.appspot.com%2Fo%2Fproducts_vivet%252F1763132042741-Cacahuate-Original-consumo3.jpg%3Falt%3Dmedia%26token%3Da2dc0d32-65e7-4d7b-b24a-ad2aac3bb2bf&w=1080&q=75"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Cacahuate Vivet Vainilla Caramel - 1 Litro",
+        "desc": "Date un gusto irresistible sin renunciar a tu nutrición diaria. Esta opción sabor Vainilla Caramel combina la cremosidad intensa del maní con notas dulces y aromáticas que transforman tu merienda. Con un impresionante aporte de 23g de proteína por envase, es la opción perfecta para un desayuno energético o postre líquido.",
+        "price": 0,
+        "img": [
+          "https://www.vivet.com.ar/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fvivet-web.appspot.com%2Fo%2Fproducts_vivet%252F1763132110489-Cacahuate-Vainilla-Caramel-consumo.png%3Falt%3Dmedia%26token%3D5013dbe3-e4ce-4db9-a6ae-3ec018cc2469&w=1080&q=75"
+        ],
+        "stock": true
+      }
+    ],
+    "premezclas-dicomere": [
+      {
+        "name": "Premezcla Proteica para Pan Integral (Sin TACC) - 450g",
+        "desc": "El pan casero, más nutritivo que nunca. Diseñada específicamente para panificados, esta premezcla combina el sabor rústico de lo integral con una textura inigualable. El ingrediente estrella, Psyllium Husk, garantiza elasticidad y humedad. Rica en fibras y con un potente aporte de 25g de proteína.",
+        "price": 0,
+        "img": [
+          "https://saboresandinos.com/wp-content/uploads/2025/12/3276.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Premezcla Proteica Universal Integral (Sin TACC) - 450g",
+        "desc": "Cocina sin límites y con un plus de nutrición. Esta premezcla \"Universal\" es tu aliada perfecta para todo tipo de recetas integrales, tanto dulces como saladas. Gracias a su fórmula enriquecida con Psyllium Husk, lograrás masas con una esponjosidad, elasticidad y humedad increíbles. Aporta 25g de proteína por cada 100g.",
+        "price": 0,
+        "img": [
+          "https://saboresandinos.com/wp-content/uploads/2025/12/3277.jpg"
+        ],
+        "stock": true
+      }
+    ],
+    "cafe-cinco-hispanos": [
+      {
+        "name": "Café Tostado Molido Intenso-500g",
+        "desc": "Despierta tus sentidos con la fuerza de un verdadero clásico argentino. Esta variedad 'Intenso' ofrece un cuerpo robusto y un aroma profundo, ideal para quienes buscan una experiencia de sabor con carácter y presencia en cada taza. Elaborado con granos seleccionados y tostado en su punto justo desde 1962.",
+        "price": 0,
+        "img": [
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoE9ZKwYNknwjvxpH_mvyP9xvHgkXTF5WdFg&s"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Café Tostado Molido Suave-500g",
+        "desc": "Disfruta del equilibrio perfecto en tu taza diaria. La variedad 'Suave' ha sido cuidadosamente elaborada para ofrecer un sabor amable y delicado, sin notas amargas agresivas. Es la elección ideal para quienes prefieren un café aromático y ligero que se puede beber en cualquier momento del día sin saturar el paladar.",
+        "price": 0,
+        "img": [
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtC9FkEarpurja7yxK0_SFuPwAorzCACGe5g&s"
+        ],
+        "stock": true
       }
     ]
   }
