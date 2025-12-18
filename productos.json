@@ -2465,13 +2465,6 @@
         "desc": "Suplemento de betacaroteno.<br><strong>Uso:</strong> Promueve salud ocular, piel y acción antioxidante."
       },
       {
-        "name": "Betacaroteno + E + B2",
-        "img": [
-          "https://lafarmen.com.ar/wp-content/uploads/2024/05/betacarotenoEB2-de-tamano-grande-800x623.jpeg"
-        ],
-        "desc": "Mezcla de vitamina A precursora, vitamina E y vitamina B2.<br><strong>Uso:</strong> Refuerza antioxidantes y fortalece piel, visión y energía."
-      },
-      {
         "name": "Café Verde Compuesto",
         "img": [
           "https://lafarmen.com.ar/wp-content/uploads/2023/12/1-31-800x623.jpg"
@@ -2500,32 +2493,11 @@
         "desc": "Extracto natural de cartílago.<br><strong>Uso:</strong> Salud articular y soporte a tejido conectivo."
       },
       {
-        "name": "Cartílago de Tiburón + Calcio de Ostras",
-        "img": [
-          "https://lafarmen.com.ar/wp-content/uploads/2023/12/cartilago-calcio-800x623.jpg"
-        ],
-        "desc": "Fórmula combinada para soporte articular y óseo."
-      },
-      {
-        "name": "Centella Asiática + B3",
-        "img": [
-          "https://lafarmen.com.ar/wp-content/uploads/2023/08/1-49-800x623.jpg"
-        ],
-        "desc": "Inclusión de centella y vitamina B3.<br><strong>Uso:</strong> Mejora de la circulación, acción regeneradora para piel y circulación."
-      },
-      {
         "name": "Centella Asiática y Ginkgo Biloba + Zinc y Vitamina B3",
         "img": [
           "https://lafarmen.com.ar/wp-content/uploads/2023/12/1-33-800x623.jpg"
         ],
         "desc": "Mezcla botánica con micronutrientes.<br><strong>Uso:</strong> Estimula circulación cerebral, antioxidantes, memoria."
-      },
-      {
-        "name": "Chito",
-        "img": [
-          "https://lafarmen.com.ar/wp-content/uploads/2023/12/1-08-800x623.jpg"
-        ],
-        "desc": "Suplemento a base de quitina/quitosano.<br><strong>Uso:</strong> Efecto saciante, apoyo al control del peso."
       },
       {
         "name": "Citrato de Magnesio",
@@ -2535,25 +2507,11 @@
         "desc": "Magnesio en forma citrato.<br><strong>Uso:</strong> Relajante muscular, salud digestiva, prevención de calambres."
       },
       {
-        "name": "Cofifrut",
-        "img": [
-          "https://lafarmen.com.ar/wp-content/uploads/2023/12/1-42-800x623.jpg"
-        ],
-        "desc": "Fórmula herbal con frutas funcionales.<br><strong>Uso:</strong> Digestión saludable, efecto antioxidante y apoyo general."
-      },
-      {
         "name": "Colágeno + C + E + Q10",
         "img": [
           "https://lafarmen.com.ar/wp-content/uploads/2023/12/1-11-800x623.jpg"
         ],
         "desc": "Amplía la fórmula anterior con vitamina E y coenzima Q10.<br><strong>Uso:</strong> Antioxidante avanzado, soporte anti‐edad y firmeza."
-      },
-      {
-        "name": "Colágeno + Vitamina C",
-        "img": [
-          "https://lafarmen.com.ar/wp-content/uploads/2023/12/1-04-1-800x623.jpg"
-        ],
-        "desc": "Colágeno con vitamina C.<br><strong>Uso:</strong> Mejora piel, articulaciones y soporte estructural."
       },
       {
         "name": "Complejo B",
@@ -2577,13 +2535,6 @@
         "desc": "Producto especializado en circulación venosa.<br><strong>Uso:</strong> Alivio de síntomas circulatorios (pesadez, varices)."
       },
       {
-        "name": "Garcinia Cambogia + Cromo",
-        "img": [
-          "https://lafarmen.com.ar/wp-content/uploads/2023/12/1-34-800x623.jpg"
-        ],
-        "desc": "Combinación para controlar peso.<br><strong>Uso:</strong> Regula apetito, metabolismo de carbohidratos y grasa."
-      },
-      {
         "name": "Garcinia Cambogia Compuesta",
         "img": [
           "https://lafarmen.com.ar/wp-content/uploads/2023/12/1-14-800x623.jpg"
@@ -2603,13 +2554,6 @@
           "https://lafarmen.com.ar/wp-content/uploads/2023/12/1-16-800x623.jpg"
         ],
         "desc": "Extracto de ginseng rojo.<br><strong>Uso:</strong> Energizante natural, resistencia física, vigor mental."
-      },
-      {
-        "name": "Ginseng Rojo + Zinc + Vitamina E",
-        "img": [
-          "https://lafarmen.com.ar/wp-content/uploads/2023/11/1-53-800x623.jpg"
-        ],
-        "desc": "Fórmula potenciadora del rendimiento.<br><strong>Uso:</strong> Energía, antioxidantes y soporte inmunológico."
       },
       {
         "name": "Glucomanam",
@@ -2645,13 +2589,6 @@
           "https://lafarmen.com.ar/wp-content/uploads/2023/12/1-41-800x623.jpg"
         ],
         "desc": "Spirulina microalga con vitamina B1.<br><strong>Uso:</strong> Nutrición densa, energía y soporte inmunológico."
-      },
-      {
-        "name": "Tripicolinato de Cromo",
-        "img": [
-          "https://lafarmen.com.ar/wp-content/uploads/2023/08/Tripicolinato-de-Cromo-800x623.jpg"
-        ],
-        "desc": "Cromo trivalente.<br><strong>Uso:</strong> Metabolismo de glucosa y regulación del azúcar."
       },
       {
         "name": "Valeriana Compuesta",
@@ -3066,13 +3003,6 @@
     ],
     "suplementos-natufarma": [
       {
-        "name": "Omega 3 (Aceite de Chía)",
-        "img": [
-          "https://dcdn-us.mitiendanube.com/stores/005/826/986/products/7795379100927-1-6de6445349070c472817404878340970-1024-1024.webp"
-        ],
-        "desc": "Una excelente alternativa vegetal al aceite de pescado para obtener Omega 3. El aceite de chía es conocido por sus propiedades para regular el colesterol y los triglicéridos. Es ideal para personas que siguen una dieta vegetariana o prefieren fuentes vegetales de ácidos grasos."
-      },
-      {
         "name": "Omega 3 (Aceite de Pescado)",
         "img": [
           "https://dcdn-us.mitiendanube.com/stores/005/826/986/products/7795379100910-35362086dbee4e3a5317405045518112-1024-1024.webp"
@@ -3080,43 +3010,7 @@
         "desc": "Este suplemento es una fuente rica en ácidos grasos esenciales EPA y DHA. Su consumo regular ayuda a mantener niveles saludables de colesterol y triglicéridos en la sangre, contribuyendo a la salud cardiovascular. Se presenta en cápsulas blandas para una fácil ingesta."
       }
     ],
-    "modelife": [
-      {
-        "name": "Aceite de Hígado de Bacalao",
-        "img": [
-          "https://http2.mlstatic.com/D_NQ_NP_2X_634031-MLA89095165491_082025-F.webp"
-        ],
-        "desc": "Descubre el poder natural del Aceite de Hígado de Bacalao de Modelife, una fuente concentrada de nutrientes vitales diseñada para fortalecer tu bienestar diario. Enriquecida con una potente combinación de Omega 3 (EPA y DHA) y Vitaminas A, D y E, nuestra fórmula ofrece un soporte integral para tu salud. Contribuye a mantener la flexibilidad y el confort de tus articulaciones, nutre tu mente para favorecer la concentración, refuerza tus defensas naturales y, gracias a su aporte de Vitamina D, es el aliado perfecto para mantener huesos fuertes. Elige un camino natural para cuidar tu cuerpo desde adentro e incorpora a tu rutina el secreto de una vida más saludable y activa."
-      },
-      {
-        "name": "Alga Diet Fibra Plus",
-        "img": [
-          "https://www.grupponaturale.com/assets/img/uploads/product/main-6081be16abb03.jpg"
-        ],
-        "desc": "Esta variante se centra en el aporte de fibra. Sus ingredientes principales son fibras naturales y fucus. Este producto busca generar una sensación de saciedad, auxiliar en la eliminación de grasas, contribuir a la reducción del colesterol y regular los procesos digestivos."
-      },
-      {
-        "name": "Alga Diet Plus Max",
-        "img": [
-          "https://modelifegroup.com/wp-content/uploads/2018/08/AlgaDiet-X100.png"
-        ],
-        "desc": "Su fórmula incluye Garcinia Cambogia, L-Carnitina, Centella Asiática, Té Verde y Fucus. Está diseñado como un suplemento para la reducción de peso, ayudando a quemar grasas y a disminuir la retención de líquidos."
-      },
-      {
-        "name": "Café Verde",
-        "img": [
-          "https://www.grupponaturale.com/assets/img/uploads/product/main-683b8d79e2fff.jpg"
-        ],
-        "desc": "Impulsa tus metas de control de peso con nuestro extracto de café verde. Obtenido de granos sin tostar para maximizar su poder, este suplemento es rico en ácido clorogénico, un potente antioxidante que acelera tu metabolismo y promueve la quema de grasa de forma natural."
-      },
-      {
-        "name": "Varistop",
-        "img": [
-          "https://http2.mlstatic.com/D_NQ_NP_695388-MLA84919849293_052025-O.webp"
-        ],
-        "desc": "Es un suplemento de origen natural especialmente formulado para el cuidado y bienestar de tus piernas. Enfocado en la salud circulatoria, su ingrediente clave, el Castaño de Indias, trabaja para aliviar eficazmente los síntomas de cansancio, dolor y pesadez. Su acción ayuda a desinflamar las venas varicosas, reduce la hinchazón y fortalece los capilares, promoviendo una mejor circulación para devolverle la ligereza y vitalidad a tus piernas."
-      }
-    ],
+    "modelife": [],
     "biofit": [
       {
         "name": "Arándano Complex",
