@@ -4370,21 +4370,24 @@
         "img": [
           "https://almadrealimentos.com/assets/img/products/Snacks-Remolacha.webp"
         ],
-        "desc": "Estos triangulitos horneados son un snack innovador y lleno de sabor. Elaborados con masa madre, harina integral y remolacha, tienen un toque dulce y terroso, complementado con el sabor único del \"rawmesan\" (un aderezo a base de semillas que imita al queso parmesano). Son una opción vegana, con alto contenido de fibra y 0% grasas trans, perfectos para un picoteo gourmet, saludable y original."
+        "desc": "Estos triangulitos horneados son un snack innovador y lleno de sabor. Elaborados con masa madre, harina integral y remolacha, tienen un toque dulce y terroso, complementado con el sabor único del \"rawmesan\" (un aderezo a base de semillas que imita al queso parmesano). Son una opción vegana, con alto contenido de fibra y 0% grasas trans, perfectos para un picoteo gourmet, saludable y original.",
+        "stock": false
       },
       {
         "name": "Triangulitos de Masa Madre con Sésamo y Sal Marina Almadre (130g)",
         "img": [
           "https://almadrealimentos.com/assets/img/products/Snacks-Sal.webp"
         ],
-        "desc": "Disfruta de un sabor clásico y adictivo con estos triangulitos horneados de sésamo y sal marina. La base de masa madre y harina integral les da una textura crujiente inigualable, mientras que las semillas de sésamo tostado y el toque justo de sal marina realzan su sabor. Son el snack perfecto para acompañar todo tipo de dips y patés, o para disfrutar solos en cualquier momento del día."
+        "desc": "Disfruta de un sabor clásico y adictivo con estos triangulitos horneados de sésamo y sal marina. La base de masa madre y harina integral les da una textura crujiente inigualable, mientras que las semillas de sésamo tostado y el toque justo de sal marina realzan su sabor. Son el snack perfecto para acompañar todo tipo de dips y patés, o para disfrutar solos en cualquier momento del día.",
+        "stock": false
       },
       {
         "name": "Triangulitos de Masa Madre con Tomate y Romero Almadre (130g)",
         "img": [
           "https://almadrealimentos.com/assets/img/products/Snacks-Tomate.webp"
         ],
-        "desc": "Transporta tu paladar al Mediterráneo con estos triangulitos horneados con tomate y romero. El sabor dulce y ligeramente ácido del tomate se combina con el aroma herbal del romero, todo sobre una base crujiente de masa madre. Son un snack vegano, alto en fibra y 0% grasas trans, ideal para acompañar una tabla de quesos, para un aperitivo o para un picoteo sabroso y saludable."
+        "desc": "Transporta tu paladar al Mediterráneo con estos triangulitos horneados con tomate y romero. El sabor dulce y ligeramente ácido del tomate se combina con el aroma herbal del romero, todo sobre una base crujiente de masa madre. Son un snack vegano, alto en fibra y 0% grasas trans, ideal para acompañar una tabla de quesos, para un aperitivo o para un picoteo sabroso y saludable.",
+        "stock": false
       }
     ],
     "carilo-molinos-del-bosque": [

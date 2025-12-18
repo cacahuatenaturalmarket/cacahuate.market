@@ -286,12 +286,29 @@
                 }, 3000);
             },
 
-            createCardHTML(item) {
+          createCardHTML(item) {
                 const priceText = item.price ? this.formatCurrency(item.price) : 'Consultar precio';
                 let images = Array.isArray(item.img) ? item.img : (item.img ? [item.img] : []);
                 const mainImage = images.length > 0 ? images[0] : '';
                 const safeName = this.escapeHtmlAttr(item.name);
                 const safeImages = this.escapeHtmlAttr(JSON.stringify(images));
+
+                // --- NUEVA LÓGICA DE STOCK ---
+                // Si stock es 'false', no hay. Si es 'true' o no existe (undefined), sí hay.
+                const hasStock = item.stock !== false; 
+                
+                // Variables visuales según el stock
+                const stockClass = hasStock ? '' : 'no-stock';
+                const stockBadge = hasStock ? '' : '<div class="out-of-stock-badge">SIN STOCK</div>';
+                
+                // Si no hay stock, deshabilitamos el botón
+                const btnDisabled = hasStock ? '' : 'disabled';
+                const btnIcon = hasStock ? '<i class="fas fa-cart-plus"></i>' : '<i class="fas fa-ban"></i>';
+
+                // Si no hay stock, mostramos texto "AGOTADO" en vez de los botones + y -
+                const quantitySelectorHtml = hasStock 
+                    ? '<div class="quantity-selector"><button class="quantity-btn decrease-qty">-</button><input type="number" class="quantity-input" value="0" min="0"><button class="quantity-btn increase-qty">+</button></div>'
+                    : '<div style="flex-grow:1; text-align:center; color:#e74c3c; font-weight:bold; font-size:0.9em; padding: 10px 0;">AGOTADO</div>';
 
                 let imageGalleryHtml = '';
                 if (images.length > 1) {
@@ -306,19 +323,20 @@
                     imageGalleryHtml = '<div class="image-wrapper"><img src="' + mainImage + '" alt="' + safeName + '" loading="lazy" decoding="async"></div>';
                 }
 
-                return '<div class="card fade-in" data-name="' + safeName + '" data-price="' + (item.price || 0) + '" data-img=\'' + safeImages + '\'>' +
+                // Armamos la tarjeta final
+                return '<div class="card fade-in ' + stockClass + '" data-name="' + safeName + '" data-price="' + (item.price || 0) + '" data-img=\'' + safeImages + '\'>' +
+                       stockBadge +
                        imageGalleryHtml +
                        '<div class="card-content">' +
                        '<h3>' + item.name + '</h3>' +
                        '<p class="description">' + (item.desc || '') + '</p>' +
                        '<div class="card-price" style="font-size: 1.4em; font-weight: bold; color: var(--azul-terroso-claro); margin-bottom: 15px;">' + priceText + '</div>' +
                        '<div class="card-actions">' +
-                       '<div class="quantity-selector"><button class="quantity-btn decrease-qty">-</button><input type="number" class="quantity-input" value="0" min="0"><button class="quantity-btn increase-qty">+</button></div>' +
-                       '<button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i></button>' +
+                       quantitySelectorHtml +
+                       '<button class="add-to-cart-btn" ' + btnDisabled + '>' + btnIcon + '</button>' +
                        '<button class="details-btn"><i class="fas fa-eye"></i></button>' +
                        '</div></div></div>';
             },
-
             renderCartItems() {
                 if (Store.state.cart.length === 0) {
                     this.elements.cartItemsContainer.innerHTML = '';

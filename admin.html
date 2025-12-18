@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Masivo - Cacahuate</title>
+    <title>Admin Supremo - Cacahuate</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body { font-family: 'Inter', sans-serif; background: #f0f2f5; padding: 20px; color: #333; }
-        .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
         h1 { text-align: center; color: #1a1a1a; margin-bottom: 20px; }
         
-        /* Panel de Control Flotante */
+        /* PANEL DE CONTROL FLOTANTE */
         .control-panel { 
             position: sticky; top: 10px; 
-            background: rgba(255, 255, 255, 0.95); 
+            background: rgba(255, 255, 255, 0.98); 
             backdrop-filter: blur(5px);
             padding: 15px; 
             border: 1px solid #ddd;
@@ -23,20 +23,29 @@
             margin-bottom: 30px; 
             z-index: 1000; 
             display: flex; 
-            justify-content: space-between; 
-            align-items: center;
+            flex-direction: column;
+            gap: 15px;
         }
 
-        .btn { padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.2s; font-size: 1rem; }
+        .cp-top-row { display: flex; justify-content: space-between; align-items: center; width: 100%; }
         
+        /* BUSCADOR */
+        .search-container { position: relative; width: 100%; }
+        .search-container i { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #999; }
+        .search-input {
+            width: 100%; padding: 12px 10px 12px 40px;
+            border: 1px solid #ccc; border-radius: 8px; font-size: 1rem; outline: none; box-sizing: border-box;
+        }
+        .search-input:focus { border-color: #25D366; box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.1); }
+
+        .btn { padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.2s; font-size: 0.95rem; }
         .btn-save { background-color: #25D366; color: white; display: flex; align-items: center; gap: 8px; }
         .btn-save:hover { background-color: #128C7E; }
-        
         .btn-bulk-delete { background-color: #ff4757; color: white; display: flex; align-items: center; gap: 8px; }
         .btn-bulk-delete:hover { background-color: #ff6b81; }
-        .btn-bulk-delete:disabled { background-color: #ccc; cursor: not-allowed; opacity: 0.7; }
+        .btn-bulk-delete:disabled { background-color: #e0e0e0; color: #999; cursor: not-allowed; }
 
-        /* Estilos generales */
+        /* Estructura del Árbol */
         .group-section { margin-bottom: 30px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; }
         .group-header { background-color: #2F2F2F; color: #FFC107; padding: 15px 20px; font-size: 1.2em; font-weight: bold; }
         
@@ -48,52 +57,68 @@
         .subcategory-block { margin-left: 10px; border-left: 3px solid #FFC107; padding-left: 15px; margin-bottom: 15px; }
         .subcategory-header { font-weight: bold; color: #555; margin-bottom: 8px; display: flex; justify-content: space-between; font-size: 0.95em; }
 
-        /* Productos y Checkboxes */
+        /* FILA DE PRODUCTO (Checkbox + Nombre + Stock + Borrar) */
         .product-item { 
             display: flex; align-items: center; 
             padding: 8px 10px; 
             border-bottom: 1px dashed #eee; 
             font-size: 0.95em; 
-            transition: background 0.2s;
         }
-        .product-item:hover { background-color: #fce4ec; } /* Color rosita suave al pasar mouse */
+        .product-item.hidden { display: none !important; }
+        .product-item:hover { background-color: #fce4ec; }
         
-        .product-checkbox {
-            width: 18px; height: 18px; margin-right: 15px; cursor: pointer; accent-color: #ff4757;
-        }
+        .product-checkbox { width: 18px; height: 18px; margin-right: 15px; cursor: pointer; accent-color: #ff4757; }
+        .product-name { flex-grow: 1; cursor: pointer; display: flex; align-items: center; gap: 10px; }
         
-        .product-name { flex-grow: 1; cursor: pointer; } /* Click en nombre activa checkbox */
+        /* SWITCH DE STOCK */
+        .stock-wrapper { display: flex; align-items: center; margin-right: 15px; }
+        .stock-label { font-size: 0.8em; font-weight: bold; margin-right: 8px; color: #ccc; }
+        .stock-label.no-stock { color: #ff4757; }
+        
+        .stock-switch { position: relative; display: inline-block; width: 36px; height: 20px; }
+        .stock-switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 20px; }
+        .slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 2px; bottom: 2px; background-color: white; transition: .4s; border-radius: 50%; }
+        input:checked + .slider { background-color: #2196F3; }
+        input:checked + .slider:before { transform: translateX(16px); }
 
-        .badge { background: #e0e0e0; color: #333; padding: 2px 6px; border-radius: 4px; font-size: 0.75em; }
+        .btn-single-delete { background: none; border: none; color: #ccc; cursor: pointer; font-size: 1.1em; transition: 0.2s; }
+        .btn-single-delete:hover { color: #ff4757; }
+        
         .selection-count { font-size: 0.9em; color: #666; font-weight: normal; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1><i class="fas fa-tasks"></i> Administrador Masivo</h1>
+    <h1><i class="fas fa-crown"></i> Admin Supremo</h1>
 
     <div class="control-panel">
-        <div>
-            <span id="selectionCounter" class="selection-count">0 productos seleccionados</span>
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" class="search-input" placeholder="Buscar por nombre..." autocomplete="off">
         </div>
-        <div style="display: flex; gap: 10px;">
-            <button id="bulkDeleteBtn" class="btn btn-bulk-delete" onclick="deleteSelectedProducts()" disabled>
-                <i class="fas fa-trash-alt"></i> Borrar Seleccionados
-            </button>
-            <button class="btn btn-save" onclick="downloadJSON()">
-                <i class="fas fa-download"></i> Descargar JSON
-            </button>
+
+        <div class="cp-top-row">
+            <span id="selectionCounter" class="selection-count">0 seleccionados</span>
+            <div style="display: flex; gap: 10px;">
+                <button id="bulkDeleteBtn" class="btn btn-bulk-delete" onclick="deleteSelectedProducts()" disabled>
+                    <i class="fas fa-trash-alt"></i> Borrar Selección
+                </button>
+                <button class="btn btn-save" onclick="downloadJSON()">
+                    <i class="fas fa-download"></i> Guardar (JSON)
+                </button>
+            </div>
         </div>
     </div>
 
-    <div id="catalog-tree">Cargando...</div>
+    <div id="catalog-tree">Cargando catálogo...</div>
 </div>
 
 <script>
     let globalData = null;
 
-    // --- 1. DEFINICIÓN DE GRUPOS ---
+    // --- GRUPOS ACTUALIZADOS ---
     const CATEGORY_GROUPS = {
         "Almacén Natural": ["aceites", "alimentos", "especias", "fideos-integrales", "harinas", "legumbres-y-cereales", "panificados", "premezclas-rebozadores", "salsas-aderezos-organicos", "yerba-mate"],
         "Dulces y Repostería": ["alfajores", "budines", "caramelos", "chocolates", "edulcorantes", "galletas", "miel", "untables", "brownie-y-bocaditos"],
@@ -106,7 +131,7 @@
     async function loadData() {
         try {
             const response = await fetch('./productos.json?v=' + Date.now());
-            if(!response.ok) throw new Error("Error leyendo JSON");
+            if(!response.ok) throw new Error("Error");
             globalData = await response.json();
             renderTree();
         } catch (error) {
@@ -118,7 +143,7 @@
     function renderTree() {
         const container = document.getElementById('catalog-tree');
         container.innerHTML = '';
-        updateSelectionCounter(); // Resetear contador
+        updateSelectionCounter(); 
 
         if (!globalData || !globalData.categories) return;
         const renderedCategories = new Set();
@@ -165,7 +190,7 @@
                             <span>${cat.title}</span>
                             <i class="fas fa-chevron-down"></i>
                         </div>
-                        <div class="category-content open">`; // open por defecto para ver rápido
+                        <div class="category-content open">`; 
 
         if (cat.subcategories && cat.subcategories.length > 0) {
             cat.subcategories.forEach((sub) => {
@@ -185,75 +210,132 @@
 
     function renderProductRows(categoryId) {
         const products = globalData.products[categoryId];
-        if (!products || products.length === 0) return '<div style="color:#999;font-style:italic;padding:5px;">Vacío</div>';
+        if (!products || products.length === 0) return '<div style="color:#999;font-style:italic;">Vacío</div>';
         
-        // AQUÍ ESTÁ LA MAGIA: Checkboxes con data-cat y data-index
-        return products.map((prod, index) => `
+        return products.map((prod, index) => {
+            const hasStock = prod.stock !== false; // True por defecto si es undefined
+            const stockText = hasStock ? '' : 'SIN STOCK';
+            const stockClass = hasStock ? '' : 'no-stock';
+
+            return `
             <div class="product-item">
                 <input type="checkbox" class="product-checkbox" 
                        data-cat="${categoryId}" 
                        data-index="${index}" 
                        onchange="updateSelectionCounter()">
-                <span class="product-name" onclick="this.previousElementSibling.click()">${prod.name}</span>
+                
+                <span class="product-name" onclick="this.previousElementSibling.click()">
+                    ${prod.name}
+                </span>
+
+                <div class="stock-wrapper">
+                    <span class="stock-label ${stockClass}">${stockText}</span>
+                    <label class="stock-switch" title="Activar/Desactivar Stock">
+                        <input type="checkbox" ${hasStock ? 'checked' : ''} onchange="toggleStock('${categoryId}', ${index}, this)">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <button class="btn-single-delete" title="Borrar este producto" onclick="deleteSingleProduct('${categoryId}', ${index})">
+                    <i class="fas fa-trash"></i>
+                </button>
             </div>
-        `).join('');
+            `;
+        }).join('');
     }
 
     function toggleContent(header) {
         header.nextElementSibling.classList.toggle('open');
     }
 
-    // --- NUEVA LÓGICA DE SELECCIÓN Y BORRADO MASIVO ---
+    // --- ACCIONES ---
 
-    function updateSelectionCounter() {
-        const checkedCount = document.querySelectorAll('.product-checkbox:checked').length;
-        const counterSpan = document.getElementById('selectionCounter');
-        const deleteBtn = document.getElementById('bulkDeleteBtn');
-
-        if (checkedCount === 0) {
-            counterSpan.textContent = "0 productos seleccionados";
-            deleteBtn.disabled = true;
-            deleteBtn.innerHTML = `<i class="fas fa-trash-alt"></i> Borrar Seleccionados`;
+    // 1. Cambiar Stock
+    window.toggleStock = function(catId, index, checkbox) {
+        // Actualizamos directamente la data global
+        globalData.products[catId][index].stock = checkbox.checked;
+        
+        // Actualizamos visualmente el texto SIN STOCK sin recargar todo
+        const label = checkbox.parentElement.previousElementSibling;
+        if(checkbox.checked) {
+            label.textContent = "";
+            label.classList.remove("no-stock");
         } else {
-            counterSpan.textContent = `${checkedCount} productos seleccionados`;
-            deleteBtn.disabled = false;
-            deleteBtn.innerHTML = `<i class="fas fa-trash-alt"></i> Borrar (${checkedCount})`;
+            label.textContent = "SIN STOCK";
+            label.classList.add("no-stock");
         }
-    }
+    };
 
-    function deleteSelectedProducts() {
+    // 2. Borrado Individual
+    window.deleteSingleProduct = function(catId, index) {
+        if(confirm("¿Borrar este producto?")) {
+            globalData.products[catId].splice(index, 1);
+            renderTree();
+        }
+    };
+
+    // 3. Borrado Masivo
+    window.deleteSelectedProducts = function() {
         const checkboxes = document.querySelectorAll('.product-checkbox:checked');
         if (checkboxes.length === 0) return;
+        if (!confirm(`¿Borrar definitivamente ${checkboxes.length} productos?`)) return;
 
-        if (!confirm(`¿Estás seguro de borrar definitivamente ${checkboxes.length} productos?`)) return;
-
-        // 1. Agrupar eliminaciones por Categoría para no romper índices
-        const toDelete = {}; // Objeto: { "aceites": [0, 2, 5], "alfajores": [1] }
-
+        const toDelete = {}; 
         checkboxes.forEach(chk => {
             const catId = chk.dataset.cat;
             const index = parseInt(chk.dataset.index);
-            
             if (!toDelete[catId]) toDelete[catId] = [];
             toDelete[catId].push(index);
         });
 
-        // 2. Ejecutar borrado (IMPORTANTE: de atrás hacia adelante)
         for (const catId in toDelete) {
-            // Ordenamos descendente (5, 3, 1) para que al borrar el 5, el 3 siga siendo el 3.
             toDelete[catId].sort((a, b) => b - a);
-            
             toDelete[catId].forEach(index => {
                 globalData.products[catId].splice(index, 1);
             });
         }
 
-        // 3. Refrescar
+        document.getElementById('searchInput').value = '';
         renderTree();
-        alert("Productos eliminados correctamente. Recuerda descargar el JSON.");
+        alert("¡Eliminados! Descarga el nuevo JSON.");
+    };
+
+    // --- BUSCADOR ---
+    document.getElementById('searchInput').addEventListener('keyup', function(e) {
+        const term = e.target.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        const allProducts = document.querySelectorAll('.product-item');
+        
+        allProducts.forEach(item => {
+            const name = item.querySelector('.product-name').textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            if (name.includes(term)) {
+                item.classList.remove('hidden');
+            } else {
+                item.classList.add('hidden');
+            }
+        });
+
+        // Limpieza visual
+        document.querySelectorAll('.subcategory-block').forEach(block => {
+            const visible = block.querySelectorAll('.product-item:not(.hidden)').length;
+            block.style.display = visible > 0 ? 'block' : 'none';
+        });
+        document.querySelectorAll('.category-block').forEach(block => {
+            const visible = block.querySelectorAll('.subcategory-block[style="display: block;"]').length;
+            block.style.display = visible > 0 ? 'block' : 'none';
+            if (term.length > 0 && visible > 0) block.querySelector('.category-content').classList.add('open');
+        });
+        document.querySelectorAll('.group-section').forEach(group => {
+            const visible = group.querySelectorAll('.category-block[style="display: block;"]').length;
+            group.style.display = visible > 0 ? 'block' : 'none';
+        });
+    });
+
+    function updateSelectionCounter() {
+        const count = document.querySelectorAll('.product-checkbox:checked').length;
+        document.getElementById('selectionCounter').textContent = `${count} seleccionados`;
+        document.getElementById('bulkDeleteBtn').disabled = count === 0;
     }
 
-    // --- DESCARGA ---
     window.downloadJSON = function() {
         const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(globalData, null, 2));
         const anchor = document.createElement('a');
@@ -262,7 +344,7 @@
         document.body.appendChild(anchor);
         anchor.click();
         anchor.remove();
-        alert("Archivo listo. Reemplaza tu 'productos.json' original.");
+        alert("Archivo listo para reemplazar.");
     };
 
     loadData();

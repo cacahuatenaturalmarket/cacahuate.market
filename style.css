@@ -977,3 +977,35 @@ footer {
     border-left: 3px solid var(--naranja-cacahuate);
     background-color: rgba(255, 255, 255, 0.05) !important;
 }
+/* --- ESTILOS SIN STOCK --- */
+.card { 
+    position: relative; /* Necesario para ubicar el cartelito */
+}
+
+.out-of-stock-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e74c3c; /* Rojo alerta */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Apariencia de la carta cuando no hay stock */
+.card.no-stock {
+    opacity: 0.7; /* Se ve un poco transparente */
+}
+
+.card.no-stock .add-to-cart-btn {
+    background-color: #ccc !important; /* Botón gris */
+    cursor: not-allowed;
+}
+
+.card.no-stock img {
+    filter: grayscale(80%); /* (Opcional) Foto en blanco y negro */
+}
