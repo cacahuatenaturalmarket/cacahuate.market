@@ -223,6 +223,23 @@
       "subcategories": []
     },
     {
+      "id": "dulces-y-reposteria",
+      "title": "Dulces y Repostería",
+      "desc": "Esencias y aromatizantes de calidad para repostería",
+      "subcategories": [
+        {
+          "id": "esencias-y-aromatizantes",
+          "title": "Esencias y Aromatizantes",
+          "desc": "Esencias y aromatizantes marca Procal para repostería"
+        },
+        {
+          "id": "procal",
+          "title": "Procal",
+          "desc": "Esencias y aromatizantes de calidad para repostería"
+        }
+      ]
+    },
+    {
       "id": "edulcorantes",
       "title": "Edulcorantes",
       "subcategories": [
@@ -6147,6 +6164,37 @@
         "price": 0,
         "img": [
           "https://saboresandinos.com/wp-content/uploads/2024/11/1881.jpg"
+        ],
+        "stock": true
+      }
+    ],
+    "procal": [
+      {
+        "name": "Aromatizante Artificial Sabor Pan Dulce (Sin TACC) - 30cc",
+        "desc": "Simplifica tu repostería festiva con el sabor exacto. Este aromatizante está formulado específicamente para recrear el perfil complejo y especiado del Pan Dulce tradicional en un solo paso. Es ideal para potenciar el sabor de tus masas, budines y roscas, asegurando un resultado delicioso y aromático. Totalmente libre de gluten (Sin TACC), es el aliado perfecto para hornear en las fiestas para todos.",
+        "price": 0,
+        "img": [
+          "https://viaveggie.com/wp-content/uploads/2020/11/Esencia-De-Pan-Dulce-Procal-30cc.jpg"
+        ],
+        "stock": true
+      }
+    ],
+    "esencias-y-aromatizantes": [
+      {
+        "name": "Aroma Azahar (Sin TACC) - 30cc",
+        "desc": "El secreto para el Pan Dulce y la Rosca de Reyes perfectos. Este aroma concentrado de Azahar captura la esencia cítrica y floral tradicional de la panadería festiva. Con solo unas gotas, lograrás ese perfume inconfundible y profesional en tus masas levadas. Es un producto certificado Sin TACC, permitiéndote crear versiones sin gluten de los clásicos festivos sin sacrificar el sabor auténtico.",
+        "price": 0,
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/326/060/products/imagen_2022-07-19_1347399241-308694c08f0abf748316582493381197-640-0.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Aromatizante Artificial Sabor Pan Dulce (Sin TACC) - 30cc",
+        "desc": "Simplifica tu repostería festiva con el sabor exacto. Este aromatizante está formulado específicamente para recrear el perfil complejo y especiado del Pan Dulce tradicional en un solo paso. Es ideal para potenciar el sabor de tus masas, budines y roscas, asegurando un resultado delicioso y aromático. Totalmente libre de gluten (Sin TACC), es el aliado perfecto para hornear en las fiestas para todos.",
+        "price": 0,
+        "img": [
+          "https://viaveggie.com/wp-content/uploads/2020/11/Esencia-De-Pan-Dulce-Procal-30cc.jpg"
         ],
         "stock": true
       }
