@@ -6179,6 +6179,38 @@
           "https://acdn-us.mitiendanube.com/stores/001/144/045/products/almohaditas-de-frutilla-0557592feaa875754315132622309696-640-01-8a15232a2dc2ad5a7715859473914169-1024-1024.webp"
         ],
         "stock": true
+      },
+      {
+        "name": "Aritos de Avena y Miel",
+        "desc": "Disfruta de un desayuno clásico y reconfortante gracias a estos crujientes anillos elaborados a base de cereales con un suave toque dulce, ideales para combinar con leches vegetales, yogur o frutas frescas aportando textura a tus mañanas.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/229/173/products/aritos-de-avena-y-miel1-a03e47c8bbefe5817015946055027700-640-0.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Aritos Frutales",
+        "desc": "Llena de color y diversión el desayuno con estos crocantes anillos de cereal que combinan sabores frutales surtidos, siendo la opción perfecta para arrancar el día con energía mezclados con leche o yogur, o simplemente para comer solos como un snack dulce.",
+        "img": [
+          "https://elbanquito.com.ar/wp-content/uploads/2020/07/granix-aritos-frutales-x-200-grs-el-banquito-market.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Quinoa Pop",
+        "desc": "Incorpora todo el poder nutricional de los superalimentos a tu rutina con esta quinoa inflada, una opción naturalmente libre de gluten que aporta proteínas vegetales y una textura extra crocante, ideal para espolvorear sobre tus yogures, batidos, frutas o para darle un toque saludable y crujiente a tus barritas de cereal caseras.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/801/315/products/d_nq_np_693867-mla74739889682_032024-o-59df4e17409d0b7a8917399910649598-640-0.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Tutucas",
+        "desc": "Un clásico infaltable en cualquier despensa, estas tutucas de maíz inflado y azucarado son el snack perfecto para calmar el antojo de algo dulce con una textura aireada y crujiente que se deshace en la boca, siendo la opción ideal y económica para acompañar las tardes de mate, compartir con los más chicos o llevar en la mochila para consumir en cualquier momento del día sin pesadez.",
+        "img": [
+          "https://encantopistacho.com.ar/wp-content/uploads/16691697690-tutucas-773x458-photoroom-69713826a6ad52c08317240282834551-1024-1024.jpg"
+        ],
+        "stock": true
       }
     ]
   }
