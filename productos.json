@@ -584,6 +584,11 @@
           "desc": "Tostadas de arroz ligeras y crujientes, ideales como base para snacks dulces o salados."
         },
         {
+          "id": "cereales",
+          "title": "Cereales",
+          "desc": "Deliciosas opciones crujientes ideales para tus desayunos o colaciones."
+        },
+        {
           "id": "crackines",
           "title": "Crackines",
           "desc": "Tostaditas de arroz artesanales, ideales para un snack versátil, ligero y libre de gluten."
@@ -605,7 +610,7 @@
         },
         {
           "id": "nuestros-sabores",
-          "title": "Nuestros Sabores",
+          "title": "Chips-Nuestros Sabores",
           "desc": "Chips artesanales de vegetales con combinaciones de sabores gourmet, ideales para una picada sofisticada."
         },
         {
@@ -6146,6 +6151,32 @@
         "price": 0,
         "img": [
           "https://saboresandinos.com/wp-content/uploads/2024/11/1881.jpg"
+        ],
+        "stock": true
+      }
+    ],
+    "cereales": [
+      {
+        "name": "Almohaditas Rellenas sabor Avellana",
+        "desc": "Un snack con un perfil de sabor más sofisticado y delicioso. La textura crujiente de estas almohaditas de cereal envuelve un corazón cremoso con el inconfundible sabor a avellanas. Disfrútalas como un capricho dulce durante el día, para acompañar tu café o té, o para darle un toque gourmet a tus desayunos diarios.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/144/045/products/almohaditas-rellenas-de-avellas-x-25-kg1-13234dd12b4d6d074915859560489991-480-0.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Almohaditas Rellenas sabor Chocolate",
+        "desc": "Un clásico irresistible para tus desayunos o meriendas. Estas crocantes almohaditas a base de cereal esconden un suave y dulce relleno sabor chocolate que se funde en la boca. Son ideales para disfrutar solas como un snack rápido, o acompañadas de leche, yogur o bebidas vegetales para empezar el día con energía.",
+        "img": [
+          "https://www.mayoristadelegumbres.com.ar/wp-content/uploads/2020/05/almohaditas-de-chocolate.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Almohaditas Rellenas sabor Frutilla",
+        "desc": "Ponle un toque dulce y frutal a tus mañanas. Estas divertidas y crujientes almohaditas de cereal están rellenas con una suave crema sabor frutilla, ofreciendo un contraste perfecto entre lo crocante del exterior y el interior cremoso. Son el complemento perfecto para tus bowls de yogur o para llevar en la mochila como una colación deliciosa a cualquier hora.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/144/045/products/almohaditas-de-frutilla-0557592feaa875754315132622309696-640-01-8a15232a2dc2ad5a7715859473914169-1024-1024.webp"
         ],
         "stock": true
       }
