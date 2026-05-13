@@ -5957,6 +5957,70 @@
         "stock": true
       },
       {
+        "name": "Arroz Inflado",
+        "desc": "Un ingrediente versátil y crujiente, perfecto para sumar ligereza a tus preparaciones diarias, ya que este cereal es una base neutra y sin agregados, ideal para mezclar en tus yogures favoritos, elaborar barritas caseras o simplemente para darle una textura aireada a tus desayunos y meriendas de forma natural, saludable y muy rendidora.",
+        "img": [
+          "https://lamejicana.mx/cdn/shop/products/Arrozinflado_460x@2x.jpg?v=1599532263"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Fibra de Salvado",
+        "desc": "Cuida tu salud digestiva incorporando esta fibra de salvado en forma de bastoncitos crujientes a tu alimentación diaria. Este noble ingrediente es una excelente fuente natural de fibra que te ayudará a mantener un tránsito intestinal regular y a prolongar la sensación de saciedad de manera efectiva. Es el complemento funcional ideal para enriquecer tus mañanas al mezclarlo de forma sencilla con yogures, leches, batidos o tazas de frutas frescas, aportando una textura firme y beneficios reales a tus comidas.",
+        "img": [
+          "https://http2.mlstatic.com/D_NQ_NP_793098-MLA91325625361_082025-O.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Granola Crocante",
+        "desc": "Una mezcla horneada irresistible que eleva la textura de tus desayunos al combinar la base tradicional de avena con bolitas de cereal expandido para lograr un nivel de crocancia superior en cada bocado, acompañada de suaves toques dulces aportados por las pasas de uva, lo que la convierte en el complemento ideal para añadir un contraste perfecto a tus yogures, licuados y postres, o simplemente para disfrutarla sola como un snack rápido y saciante durante tu jornada.",
+        "img": [
+          "https://f.fcdn.app/imgs/abac78/www.lamolienda.uy/moliuy/9812/original/catalogo/000000000046275_000000000046275_1/1500-1500/granola-crujiente-100g-granola-crujiente-granel.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Granola Mix Energético",
+        "desc": "Una combinación perfecta y revitalizante diseñada para recargar tus energías al máximo, elaborada con una mezcla crujiente de avena arrollada, copos de maíz, almendras enteras y pasas que aportan el equilibrio ideal de fibra, proteínas y carbohidratos complejos, convirtiéndose en la opción indispensable para un desayuno nutritivo, para potenciar tus yogures y batidos, o como un snack saludable y saciante que te brindará el impulso necesario para afrontar tu rutina diaria o tus entrenamientos.",
+        "img": [
+          "https://http2.mlstatic.com/D_Q_NP_2X_845236-MLA75788759164_042024-P.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Granola Sin Azúcar",
+        "desc": "Una opción nutritiva y saludable elaborada especialmente para quienes buscan cuidar su alimentación sin renunciar a una textura crujiente, combinando una base rústica de avena con semillas y trozos crujientes que aportan fibra y energía sostenida, convirtiéndose en el complemento perfecto para tus desayunos y meriendas de todos los días al mezclarla con yogures o leches vegetales de forma totalmente libre de azúcares añadidos.",
+        "img": [
+          "https://f.fcdn.app/imgs/7c03e8/www.lamolienda.uy/moliuy/8540/original/catalogo/000000000046274_000000000046274_1/2000-2000/granola-sin-azucar-100g-granola-sin-azucar-granel.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Maíz de Barbacoa",
+        "desc": "Un snack extracrujiente y lleno de carácter que captura el intenso y auténtico sabor ahumado de la parrilla tradicional en cada bocado, convirtiéndose en la opción salada ideal para darle un toque diferente a tus mesas de picadas, acompañar bebidas frías o disfrutar en cualquier momento del día cuando busques un aperitivo potente y verdaderamente adictivo.",
+        "img": [
+          "https://elbanquito.com.ar/wp-content/uploads/2020/06/Maiz-Frito-Barbacoa-x-1-Kg.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Maíz de Miel y Mostaza",
+        "desc": "Una opción atrevida y crujiente que transforma el clásico maíz tostado con una cobertura irresistible donde el dulzor suave de la miel se equilibra a la perfección con el toque intenso de la mostaza, creando un snack adictivo e ideal para sumar a tus picadas, acompañar bebidas frías o disfrutar como un aperitivo lleno de sabor y contraste durante el día.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/040/363/products/maiz-con-mostaza-y-miel-espanol-100g4-7a29bcfcba869fa22b15716232474496-1024-1024.webp?w=1920"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Maíz Natural",
+        "desc": "El ingrediente básico e indispensable en tu despensa para disfrutar de la auténtica experiencia del cine en casa, compuesto por granos de maíz pisingallo crudo cuidadosamente seleccionados que garantizan una explosión perfecta al calor, permitiéndote preparar en minutos un snack económico, súper rendidor y natural al que puedes darle tu toque personal con sal, azúcar o caramelo para compartir con toda la familia en tus tardes de películas.",
+        "img": [
+          "https://m.media-amazon.com/images/I/81X-ToAvBZS.jpg"
+        ],
+        "stock": true
+      },
+      {
         "name": "Quinoa Pop",
         "desc": "Incorpora todo el poder nutricional de los superalimentos a tu rutina con esta quinoa inflada, una opción naturalmente libre de gluten que aporta proteínas vegetales y una textura extra crocante, ideal para espolvorear sobre tus yogures, batidos, frutas o para darle un toque saludable y crujiente a tus barritas de cereal caseras.",
         "img": [
