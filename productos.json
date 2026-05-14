@@ -82,18 +82,6 @@
       ]
     },
     {
-      "id": "almacen_natural",
-      "title": "Almacén Natural",
-      "desc": "",
-      "subcategories": [
-        {
-          "id": "alimentos",
-          "title": "Semillas",
-          "desc": "Una selección premium de semillas naturales, ricas en omega 3, fibras y minerales esenciales para potenciar tus comidas y tu salud."
-        }
-      ]
-    },
-    {
       "id": "barritas",
       "title": "Barritas",
       "desc": "Barritas de arroz crujientes y ligeras, con un mix de semillas y deliciosas coberturas de sabores.",
@@ -107,11 +95,6 @@
           "id": "integra",
           "title": "Integra",
           "desc": "Barritas de avena y cereal con ingredientes naturales, ideales como snacks saludables y energéticos."
-        },
-        {
-          "id": "iron-bar",
-          "title": "Iron-bar",
-          "desc": "Barras de proteína sin gluten, con 35% de blend de proteínas, ideales para la recuperación muscular."
         },
         {
           "id": "laddubar",
@@ -156,16 +139,6 @@
           "id": "angiola",
           "title": "Angiola",
           "desc": "Budines tiernos y esponjosos, completamente libres de gluten, ideales para cualquier momento del día."
-        },
-        {
-          "id": "santa-maria",
-          "title": "Santa Maria",
-          "desc": "Budines clásicos sin gluten y sin lactosa, ideales para dietas especiales."
-        },
-        {
-          "id": "smams",
-          "title": "Smams",
-          "desc": "Budines sin gluten enriquecidos con Omega 9, ideales para una merienda saludable."
         }
       ]
     },
@@ -235,17 +208,6 @@
       ]
     },
     {
-      "id": "cuidado-personal",
-      "title": "Cuidado Personal",
-      "subcategories": []
-    },
-    {
-      "id": "dulces-y-reposteria",
-      "title": "Dulces y Repostería",
-      "desc": "Ingredientes y esencias de alta calidad para tus creaciones de pastelería.",
-      "subcategories": []
-    },
-    {
       "id": "edulcorantes",
       "title": "Edulcorantes",
       "subcategories": [
@@ -263,11 +225,6 @@
           "id": "modelife-edulcorantes",
           "title": "Modelife",
           "desc": "Endulzantes naturales y seguros para un estilo de vida saludable."
-        },
-        {
-          "id": "piper-pol",
-          "title": "Piper Pol",
-          "desc": "Edulcorantes dietéticos para una alternativa saludable al azúcar."
         }
       ]
     },
@@ -311,11 +268,6 @@
           "id": "optima",
           "title": "Optima",
           "desc": "Pastas hipoalergénicas y veganas a base de maíz y arroz, libres de gluten."
-        },
-        {
-          "id": "orox",
-          "title": "Orox",
-          "desc": "Fideos de arroz sin T.A.C.C. de cocción súper rápida, ideales para una comida saludable."
         },
         {
           "id": "soyarroz",
@@ -375,11 +327,6 @@
           "id": "nutresan",
           "title": "Nutresan",
           "desc": "Galletitas integrales y dietéticas, con opciones sin azúcar agregado."
-        },
-        {
-          "id": "santa-maria-galletas",
-          "title": "Santa Maria",
-          "desc": "Galletitas clásicas sin gluten y sin lactosa."
         }
       ]
     },
@@ -404,11 +351,6 @@
       "id": "miel",
       "title": "Miel y Derivados",
       "subcategories": [
-        {
-          "id": "bioway-miel",
-          "title": "Miel Bioway",
-          "desc": "Miel pura con certificación Kosher, en versiones líquida y untable."
-        },
         {
           "id": "emeley-miel",
           "title": "Emeley Miel",
@@ -448,11 +390,6 @@
           "desc": "Panes de molde saludables, integrales y multicereal, ideales para una dieta equilibrada."
         },
         {
-          "id": "la-francia",
-          "title": "La Francia",
-          "desc": "Panes rústicos y saludables elaborados con masa madre, harinas integrales y una gran variedad de semillas."
-        },
-        {
           "id": "smams-pan",
           "title": "Smams",
           "desc": "Panes de molde sin gluten, suaves y versátiles."
@@ -477,11 +414,6 @@
       "desc": "Premezclas y rebozadores libres de gluten para preparaciones dulces y saladas.",
       "subcategories": [
         {
-          "id": "all-rice",
-          "title": "All Rice",
-          "desc": "Rebozadores a base de arroz integral, saludables y sin gluten"
-        },
-        {
           "id": "delicel",
           "title": "Delicel",
           "desc": "Premezclas y rebozadores libres de gluten para preparaciones dulces y saladas."
@@ -499,18 +431,6 @@
       ]
     },
     {
-      "id": "premezclas",
-      "title": "Premezclas y Rebozadores",
-      "desc": "Rebozadores a base de arroz integral, saludables y sin gluten",
-      "subcategories": [
-        {
-          "id": "all-rice",
-          "title": "All Rice",
-          "desc": "Rebozadores a base de arroz integral, saludables y sin gluten"
-        }
-      ]
-    },
-    {
       "id": "probioticos",
       "title": "Probióticos",
       "subcategories": [
@@ -518,11 +438,6 @@
           "id": "cocoon",
           "title": "Cocoon",
           "desc": "Gaseosas pre y probióticas para refrescar y cuidar tu salud intestinal."
-        },
-        {
-          "id": "live-kombu",
-          "title": "Live Kombu",
-          "desc": "Bebidas fermentadas artesanales, llenas de probióticos para tu bienestar."
         },
         {
           "id": "vita-biosa",
@@ -537,24 +452,9 @@
       "desc": "Productos veganos de heladera y freezer.",
       "subcategories": [
         {
-          "id": "notburger",
-          "title": "NotBurger",
-          "desc": "La experiencia de una hamburguesa de carne, jugosa y llena de sabor, ahora hecha 100% a base de plantas."
-        },
-        {
-          "id": "notchicken",
-          "title": "NotChicken",
-          "desc": "El sabor y la textura del pollo, ahora en una versión hecha 100% a base de plantas."
-        },
-        {
           "id": "prepizza",
           "title": "Prepizza Mundo Vegetal",
           "desc": "Bases de pizza saludables a base de quinoa, listas para agregar tus toppings favoritos y hornear."
-        },
-        {
-          "id": "soyarroz-tofu",
-          "title": "Soyarroz Tofu",
-          "desc": "Tofu tradicional a base de soja, una proteína vegetal versátil y saludable para todo tipo de platos."
         },
         {
           "id": "yogur-felices-las-vacas",
@@ -647,24 +547,9 @@
           "desc": "Innovación y naturaleza para alcanzar tus metas de bienestar."
         },
         {
-          "id": "biofit",
-          "title": "Biofit",
-          "desc": "Suplementos para un bienestar integral."
-        },
-        {
-          "id": "jual",
-          "title": "Jual",
-          "desc": "Descubre los beneficios del Aloe Vera en sus diferentes sabores y combinaciones."
-        },
-        {
           "id": "suplementos-lafarmen",
           "title": "Lafarmen",
           "desc": "Potencia tu bienestar con nuestra línea de suplementos."
-        },
-        {
-          "id": "modelife",
-          "title": "Modelife",
-          "desc": "Suplementos diseñados para acompañarte en tus objetivos de bienestar."
         },
         {
           "id": "multilinea",
@@ -675,11 +560,6 @@
           "id": "natural-whey",
           "title": "Natural Whey",
           "desc": "Suplementos puros para potenciar tu rendimiento y bienestar."
-        },
-        {
-          "id": "suplementos-natufarma",
-          "title": "Natufarma",
-          "desc": "Suplementos Dietarios y Vitaminas."
         },
         {
           "id": "suplementos-original-green",
@@ -733,11 +613,6 @@
           "id": "orieta",
           "title": "Orieta",
           "desc": "Dulces light sin azúcar agregada, el clásico postre vigilante."
-        },
-        {
-          "id": "singluko",
-          "title": "Singluko",
-          "desc": "Dulce de leche sin azúcar agregada, libre de gluten."
         }
       ]
     },
@@ -959,7 +834,6 @@
         "price": 4200
       }
     ],
-    "piper-pol": [],
     "pampa-miel": [
       {
         "name": "Pampa Miel Pura Líquida x250grs",
@@ -1022,7 +896,6 @@
         "price": 7900
       }
     ],
-    "bioway-miel": [],
     "miel-carpincho": [
       {
         "name": "Jarabe de Miel con Carpincho y Eucalipto (300ml)",
@@ -2116,7 +1989,6 @@
         "price": 21500
       }
     ],
-    "live-kombu": [],
     "cocoon": [
       {
         "name": "Cocoon Sabor Lima Limón",
@@ -2614,7 +2486,6 @@
         "price": 7200
       }
     ],
-    "jual": [],
     "suplementos-lafarmen": [
       {
         "name": "Ajo + Vitamina C",
@@ -3034,9 +2905,6 @@
         "price": 15500
       }
     ],
-    "suplementos-natufarma": [],
-    "modelife": [],
-    "biofit": [],
     "suplementos-pgn": [
       {
         "name": "Cúrcuma",
@@ -3496,7 +3364,6 @@
         "price": 3900
       }
     ],
-    "orox": [],
     "wakas": [
       {
         "name": "Fusilli de Legumbres con Garbanzo, Alubia y Chía Wakas (300g)",
@@ -3573,8 +3440,6 @@
         "price": 4800
       }
     ],
-    "santa-maria": [],
-    "smams": [],
     "d&d-pan": [
       {
         "name": "Pan Multicereal D&D (420g)",
@@ -3584,7 +3449,6 @@
         "desc": "Para los que buscan un extra de sabor y textura, este pan multicereal es la elección ideal. Combina la suavidad de la masa con una mezcla de semillas y granos que aportan un toque crujiente y un perfil nutricional superior, rico en fibras y Omega 3 y 9. Con 0% grasas trans, es perfecto para sándwiches gourmet o tostadas que te llenarán de energía y nutrientes para empezar bien el día."
       }
     ],
-    "la-francia": [],
     "celi-energy": [
       {
         "name": "Alfajor de Algarroba y Zapallo Celienergy (50g)",
@@ -4084,7 +3948,6 @@
         "price": 1300
       }
     ],
-    "iron-bar": [],
     "colonial": [
       {
         "name": "Barra de Chocolate 70% Cacao con Stevia Chocolate Colonial (100g)",
@@ -4533,9 +4396,6 @@
         "price": 1700
       }
     ],
-    "notchicken": [],
-    "notburger": [],
-    "soyarroz-tofu": [],
     "prepizza": [
       {
         "name": "Pre-Pizza de Quinoa Sabor Zanahoria - 300g (2 unidades)",
@@ -4742,7 +4602,6 @@
         "price": 3300
       }
     ],
-    "singluko": [],
     "orieta": [
       {
         "name": "Mermelada de Ciruela Light Orieta Sin Azúcar Agregada - 340g",
@@ -5299,7 +5158,6 @@
         "price": 1600
       }
     ],
-    "santa-maria-galletas": [],
     "alimentos-naturales": [
       {
         "name": "Avena y Pasas - 180g",
@@ -5912,26 +5770,6 @@
         "stock": true
       }
     ],
-    "all-rice": [
-      {
-        "name": "Rebozador de Arroz Integral Con Sal (Sin TACC) - 250g",
-        "desc": "Disfruta de la textura perfecta en tus comidas con el sabor justo. Este rebozador premium de arroz integral ya viene sazonado, listo para usar, ofreciendo una practicidad única para cocinar milanesas, medallones o bastones de vegetales. Al ser integral, aporta fibra a tus platos y es naturalmente 0% colesterol. Es el aliado perfecto para la cocina celíaca, garantizando un empanado crocante, sabroso y seguro (Libre de Gluten) para toda la familia.",
-        "price": 3900,
-        "img": [
-          "https://saboresandinos.com/wp-content/uploads/2024/11/1880.jpg"
-        ],
-        "stock": true
-      },
-      {
-        "name": "Rebozador de Arroz Integral Sin Sal (Sin TACC) - 250g",
-        "desc": "Logra empanados dorados y súper crujientes sin descuidar tu salud cardiovascular. Este rebozador está elaborado a base de arroz integral, lo que lo convierte en una excelente fuente de fibra con 0% colesterol y, en esta versión, totalmente 0% sodio. Es la opción ideal para hipertensos o quienes buscan reducir la sal sin perder textura en sus milanesas y vegetales. Totalmente libre de gluten, garantiza una cobertura seca y liviana que no absorbe aceite de más.",
-        "price": 3900,
-        "img": [
-          "https://saboresandinos.com/wp-content/uploads/2024/11/1881.jpg"
-        ],
-        "stock": true
-      }
-    ],
     "cereales": [
       {
         "name": "Almohaditas Rellenas sabor Avellana",
@@ -6054,7 +5892,6 @@
         "stock": true
       }
     ],
-    "alimentos": [],
     "semillas": [
       {
         "name": "Mix de Semillas",
