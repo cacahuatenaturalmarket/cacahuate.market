@@ -70,6 +70,11 @@
       "desc": "Variedad de granos, legumbres y cereales para una nutrición completa.",
       "subcategories": [
         {
+          "id": "harinas-y-avenas",
+          "title": "Harinas y Avenas",
+          "desc": "Harinas alternativas, sin gluten y variedades de avena para tus recetas."
+        },
+        {
           "id": "legumbres-y-cereales",
           "title": "Legumbres y Cereales",
           "desc": "Variedad de granos, legumbres y cereales para una nutrición completa."
@@ -327,6 +332,18 @@
           "id": "nutresan",
           "title": "Nutresan",
           "desc": "Galletitas integrales y dietéticas, con opciones sin azúcar agregado."
+        }
+      ]
+    },
+    {
+      "id": "reposteria",
+      "title": "Insumos de Repostería",
+      "desc": "",
+      "subcategories": [
+        {
+          "id": "leudantes",
+          "title": "Leudantes y Esenciales",
+          "desc": "Productos para dar volumen y textura."
         }
       ]
     },
@@ -6026,6 +6043,170 @@
         "desc": "Semillas ricas en calcio y antioxidantes que aportan un sabor ligeramente tostado y un llamativo contraste visual a tus platos, siendo el ingrediente perfecto para decorar ensaladas, panes caseros, sushi o preparaciones al wok de forma rápida y nutritiva.",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/172/573/products/sesamo-negro1-9151926e4d2b212bf615887332611697-1024-1024.webp"
+        ],
+        "stock": true
+      }
+    ],
+    "harinas-y-avenas": [
+      {
+        "name": "Almidón de Maíz",
+        "desc": "Extra fino para espesar salsas sin grumos, lograr alfajores suaves y aportar ligereza a tus masas.",
+        "img": [
+          "https://www.cocinista.es/download/bancorecursos/ingredientes/ingrediente-almidon-maiz.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Avena Gruesa",
+        "desc": "Hojuelas enteras para granolas caseras extra crujientes, galletas rústicas o bowls con mucha textura.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/801/315/products/avena-gruesa1-78640f8b22ed6b0c2f15820487365136-1024-1024.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Avena Instantánea",
+        "desc": "Rápida hidratación para desayunos en minutos, batidos diarios o galletas saludables de forma sencilla.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/801/315/products/avena-instantanea21-64c34b262754c4beec16360380458115-1024-1024.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Cacao Amargo",
+        "desc": "Polvo puro con antioxidantes para repostería, chocolate caliente o postres saludables sin azúcar añadida.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/172/573/products/cacao-amargo-espana1-b0d2cc203aaf2ff10c15887160435540-1024-1024.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Fécula de Mandioca",
+        "desc": "Aporta elasticidad única a las masas. Indispensable para chipá, panes de queso o espesar preparaciones.",
+        "img": [
+          "https://terrunioalmacennatural.com/wp-content/uploads/2021/03/FECULA-DE-MANDIOCA-1.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Harina de Algarroba",
+        "desc": "Sustituto natural del cacao con toque dulce, ideal para budines y postres saludables con fibra natural.",
+        "img": [
+          "https://harinaslafuensanta.com/wp-content/uploads/2020/11/HARINA-DE-ALGARROBA.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Harina de Arroz",
+        "desc": "Fina y sin gluten, perfecta para espesar salsas, rebozados extra crujientes o masas ligeras.",
+        "img": [
+          "https://frutosare.com.ar/wp-content/uploads/2020/06/arroz-harina.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Harina de Arveja",
+        "desc": "Proteína vegetal libre de gluten para espesar sopas, preparar purés o enriquecer masas saladas.",
+        "img": [
+          "https://www.pehuenalimentos.cl/wp-content/uploads/2024/06/harina-de-arvejas.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Harina de Avena",
+        "desc": "Alternativa nutritiva rica en fibra para elaborar panqueques, galletitas o bizcochuelos saludables.",
+        "img": [
+          "https://www.orquidea.com.co/image/cache/catalog/Products/Nacional/1612008_3-1000x1000.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Harina de Fariña de Mandioca",
+        "desc": "Textura granulada ideal para preparar farofa, espesar guisos o dar un toque crujiente a tus platos.",
+        "img": [
+          "https://www.regionalsur.com.uy/wp-content/uploads/2025/05/Farina_de_Mandioca_Bowl_Web.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Harina de Garbanzo",
+        "desc": "Excelente alternativa libre de gluten y rica en proteínas vegetales para fainá, tortillas veganas o rebozados crujientes.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/172/573/products/harina-de-garbanzo1-6425174d6f1ccab7ac15892241611843-1024-1024.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Harina de Lenteja",
+        "desc": "Fuente de proteínas vegetales y fibra para masas saladas, sopas o hamburguesas veganas nutritivas.",
+        "img": [
+          "https://quintasaludable.com/cdn/shop/products/Harinalenteja.jpg?v=1668542693"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Harina de Lino",
+        "desc": "Rica en Omega 3 y fibra. Funciona como sustituto vegano del huevo y es ideal para panes bajos en carbohidratos.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/002/712/058/products/harina-lino1-d41f9c1af200c3879016736304476638-640-0.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Harina de Sémola",
+        "desc": "Molienda gruesa que aporta textura rústica y elasticidad a pastas caseras y bordes de pizza crujientes.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/002/625/145/products/semola-fina1-8aa9a9ab7668dc35d316792451477398-1024-1024.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Harina de Semolín",
+        "desc": "Molienda fina ideal para pastas frescas delicadas o para espolvorear masas de pizza evitando que se peguen.",
+        "img": [
+          "https://grupomolinero.com.ar/wp-content/uploads/2024/01/Semola-y-Semolin-de-Trigo_resultado-1024x439.jpeg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Harina de Trigo Sarraceno",
+        "desc": "Sabor rústico e intenso naturalmente libre de gluten, esencial para crêpes, panes con carácter o panqueques.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/172/573/products/harina-de-trigo-sarraceno1-a0d49683b9e5ce44e315892265400329-1024-1024.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Harina Paraguaya",
+        "desc": "Harina de maíz amarillo de textura intermedia para sopa paraguaya, chipa guazú o arepas rústicas.",
+        "img": [
+          "https://frutosare.com.ar/wp-content/uploads/2017/03/harina-paraguaya.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Salvado de Avena",
+        "desc": "Altísimo aporte de fibra para brindar saciedad. Ideal para yogures, batidos o recetas de panadería.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/002/625/145/products/granola-exotica-151-a69e8072432a102f3016946921636222-1024-1024.webp"
+        ],
+        "stock": true
+      }
+    ],
+    "leudantes": [
+      {
+        "name": "Bicarbonato de Sodio",
+        "desc": "Polvo blanco extra fino y versátil que actúa como leudante y neutralizador de acidez natural.",
+        "img": [
+          "https://www.recetasnestle.com.ve/sites/default/files/2023-10/cuchara-con-bicarbonato-de-sodio-para-cocinar.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Polvo para hornear",
+        "desc": "Agente leudante químico indispensable que actúa de forma rápida para aportar volumen.",
+        "img": [
+          "https://laperegrina.pe/wp-content/uploads/2026/02/Polvo-de-Hornear.jpg"
         ],
         "stock": true
       }
