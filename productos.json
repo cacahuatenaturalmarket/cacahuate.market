@@ -5515,6 +5515,62 @@
     ],
     "legumbres-y-cereales": [
       {
+        "name": "Arroz Basmati",
+        "desc": "Variedad de grano largo y fino que se caracteriza por su inconfundible aroma y textura ligera, quedando perfectamente suelto tras la cocción para convertirse en la guarnición ideal de currys, salteados o platos orientales.",
+        "img": [
+          "https://i0.wp.com/alimentoszucchi.com.ar/wp-content/uploads/2021/12/BASMATI.jpg?fit=800%2C540&ssl=1"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Arroz blanco tradicional",
+        "desc": "Clásico infaltable de consumo diario que se prepara rápidamente y ofrece una textura suave y suelta, convirtiéndose en la base versátil y más rendidora para acompañar carnes, guisos o resolver tus comidas caseras de todos los días de forma sencilla.",
+        "img": [
+          "https://png.pngtree.com/png-clipart/20240525/original/pngtree-rice-in-wooden-bowl-isolated-on-transparent-png-image_15168076.png"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Arroz Carnaroli",
+        "desc": "Variedad premium de grano corto y perlado que destaca por su extraordinaria capacidad para absorber caldos y sabores manteniendo siempre su centro firme, convirtiéndose en el ingrediente estrella e indispensable para lograr una textura perfectamente cremosa en todos tus risottos.",
+        "img": [
+          "https://www.riseriamartinotti.it/images/risi/carnaroli.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Arroz Carolina",
+        "desc": "Clásico grano de consumo diario que adquiere una consistencia tierna y ligeramente pegajosa al cocinarse, siendo el aliado infalible y más rendidor en tu cocina para dar cuerpo a guisos, sopas o preparar el tradicional arroz con leche.",
+        "img": [
+          "https://canalcocina.es/medias/_cache/zoom-763d78f94278243a26387948c912c9bc-920-518.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Arroz fino integral",
+        "desc": "Variedad de grano largo que conserva su cubierta natural para brindarte un excelente aporte de fibra y nutrientes, destacando por mantener una textura ligera y granos perfectamente sueltos tras la cocción, ideal para acompañar tus salteados o preparar ensaladas saludables.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/002/625/145/products/arroz-largo-fino-integral1-d30905c57977db83c516790801851388-1024-1024.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Arroz para Sushi",
+        "desc": "Variedad de grano corto que alcanza el nivel exacto de adherencia y humedad tras su cocción, siendo el ingrediente clave y fácilmente moldeable que necesitas para preparar auténticos rolls, nigiris o bowls japoneses en tu propia cocina.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/002/625/145/products/arroz-koshi1-8380450a76225a401a16790792137949-1024-1024.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Arroz Yamaní Integral",
+        "desc": "Variedad de grano entero que conserva su cubierta natural, aportando una excelente cantidad de fibra y nutrientes junto a una textura firme que no se pasa, convirtiéndose en la opción más saludable y rendidora para armar tus ensaladas, bowls o guarniciones diarias.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/002/625/145/products/arroz-yamani-integral-1kg1-0f0c5baa20936292a716790809933115-1024-1024.webp"
+        ],
+        "stock": true
+      },
+      {
         "name": "Arveja Entera",
         "img": [
           "https://http2.mlstatic.com/D_NQ_NP_682509-MLA49587990917_042022-O.webp"
