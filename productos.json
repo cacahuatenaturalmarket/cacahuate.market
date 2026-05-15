@@ -5730,6 +5730,30 @@
         ],
         "desc": "Suma carácter y color a tus preparaciones con el Poroto Tape. Esta variedad se distingue por su piel jaspeada y una textura firme que resiste cocciones largas sin perder su integridad, lo que lo hace perfecto para estofados invernales y platos de olla intensos. Su sabor robusto y terroso combina a la perfección con embutidos y vegetales, brindando una experiencia culinaria rústica y reconfortante en cada bocado.",
         "price": 2200
+      },
+      {
+        "name": "Salvado de trigo",
+        "desc": "Nutritiva capa externa del grano que destaca por su excepcional aporte de fibra insoluble para favorecer la digestión, convirtiéndose en el complemento diario e indispensable para espolvorear sobre tus yogures o frutas, integrar fácilmente en tus batidos y aportar una textura rústica y muy saludable a todas tus recetas de panadería casera.",
+        "img": [
+          "https://media.istockphoto.com/id/486548087/es/foto/de-salvado-de-trigo-aislado-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=BUxJ3MD92NveRhbD123oa39g40jGSGjviaFW00bp5XA="
+        ],
+        "stock": true
+      },
+      {
+        "name": "Trigo burgol fino",
+        "desc": "Nutritivo grano de trigo precocido y finamente partido que destaca por su rapidísima hidratación y suave textura, convirtiéndose en el ingrediente clásico e indispensable para elaborar el tradicional keppe, preparar ensaladas frescas de forma exprés o sumar un excelente aporte de fibra a tus comidas diarias sin necesidad de cocción.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/172/573/products/trigo-burgol-fino1-590d2539b3fc391a9d15887343267900-1024-1024.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Trigo burgol grueso",
+        "desc": "Nutritivo grano de trigo precocido y partido que destaca por su textura firme y ligero sabor a nuez, convirtiéndose en la base clásica e indispensable para elaborar el tradicional tabulé, preparar guarniciones ricas en fibra o enriquecer tus guisos diarios con un ingrediente muy rendidor y muy fácil de hidratar.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/001/003/711/products/trigo-bugol-grueso1-cf91bb19d3c9716eeb16637904799396-1024-1024.webp"
+        ],
+        "stock": true
       }
     ],
     "leches-vivet": [
