@@ -341,6 +341,11 @@
       "desc": "",
       "subcategories": [
         {
+          "id": "azucares",
+          "title": "Azúcares",
+          "desc": "Variedad de endulzantes para dar textura, humedad y el sabor perfecto a tus creaciones."
+        },
+        {
           "id": "leudantes",
           "title": "Leudantes y Esenciales",
           "desc": "Productos para dar volumen y textura."
@@ -6231,6 +6236,40 @@
         "desc": "Agente leudante químico indispensable que actúa de forma rápida para aportar volumen.",
         "img": [
           "https://laperegrina.pe/wp-content/uploads/2026/02/Polvo-de-Hornear.jpg"
+        ],
+        "stock": true
+      }
+    ],
+    "azucares": [
+      {
+        "name": "Azúcar impalpable",
+        "desc": "Polvo extra fino y sedoso que se disuelve al instante sin dejar grumos, destacando por su inigualable suavidad, convirtiéndose en el ingrediente dulce e indispensable para elaborar glaseados perfectos, decorar todos tus postres con un toque profesional o lograr alfajores y galletas con texturas que se deshacen en la boca.",
+        "img": [
+          "https://frutosare.com.ar/wp-content/uploads/2017/03/impalpable.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Azúcar mascabo",
+        "desc": "Azúcar de caña integral y sin refinar que conserva pura su melaza natural, destacando por su textura húmeda y profundo sabor acaramelado, convirtiéndose en el endulzante perfecto e indispensable para aportar una humedad excepcional a tus galletas, endulzar tus infusiones diarias o darle un toque rústico y delicioso a toda tu repostería casera.",
+        "img": [
+          "https://acdn-us.mitiendanube.com/stores/002/324/020/products/azucar-mascabo-2-e011f21f07a2c6ff1616982730517187-640-0.webp"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Azúcar negra",
+        "desc": "Azúcar de caña de textura sumamente húmeda y color oscuro intenso gracias a su alto porcentaje de melaza natural, destacando por su profundo y persistente sabor acaramelado, convirtiéndose en el endulzante ideal e indispensable para aportar una humedad insuperable a tus tortas o brownies, elaborar ricos budines de invierno y darle un toque de sabor único a tus salsas y marinadas de todos los días.",
+        "img": [
+          "https://elbanquito.com.ar/wp-content/uploads/2020/07/circe-azucar-negra.jpg"
+        ],
+        "stock": true
+      },
+      {
+        "name": "Azúcar rubia",
+        "desc": "Azúcar de caña de hermosos cristales dorados que conserva una sutil porción de melaza natural, destacando por su textura ligeramente crujiente y suave sabor acaramelado, convirtiéndose en el endulzante versátil e indispensable para aportar un toque cálido a tus infusiones diarias, lograr galletas con un dorado perfecto o enriquecer toda tu repostería casera con un dulzor más noble y equilibrado.",
+        "img": [
+          "https://tostaduriasaldana.cl/wp-content/uploads/2018/05/AZUCAR-RUBIA-2-600x450.jpg"
         ],
         "stock": true
       }
