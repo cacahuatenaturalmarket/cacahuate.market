@@ -234,10 +234,16 @@
       ]
     },
     {
-      "id": "especias",
+      "id": "especias-y-condimentos",
       "title": "Especias y Condimentos",
       "desc": "Aromatiza y da sabor a tus platillos con nuestra selección de especias naturales.",
-      "subcategories": []
+      "subcategories": [
+{
+      "id": "especias",
+      "title": "Especias y Condimentos",
+      "desc": "Selección premium de condimentos y hierbas aromáticas para tus comidas."
+}
+  ]
     },
     {
       "id": "fideos-integrales",

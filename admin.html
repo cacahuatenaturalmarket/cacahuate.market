@@ -11,7 +11,6 @@
         .container { max-width: 1000px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
         h1 { text-align: center; color: #1a1a1a; margin-bottom: 20px; }
         
-        /* PANEL DE CONTROL FLOTANTE */
         .control-panel { 
             position: sticky; top: 10px; 
             background: rgba(255, 255, 255, 0.98); 
@@ -29,7 +28,6 @@
 
         .cp-top-row { display: flex; justify-content: space-between; align-items: center; width: 100%; }
         
-        /* BUSCADOR */
         .search-container { position: relative; width: 100%; }
         .search-container i { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #999; }
         .search-input {
@@ -45,7 +43,6 @@
         .btn-bulk-delete:hover { background-color: #ff6b81; }
         .btn-bulk-delete:disabled { background-color: #e0e0e0; color: #999; cursor: not-allowed; }
 
-        /* BOTONES DE BORRADO */
         .btn-delete-node {
             background: none; border: none; color: #ff4757; cursor: pointer; font-size: 1.1em;
             padding: 0 10px; transition: 0.2s;
@@ -53,7 +50,6 @@
         .btn-delete-node:hover { color: #c0392b; transform: scale(1.1); }
         .header-actions { display: flex; align-items: center; gap: 10px; }
 
-        /* Árbol */
         .group-section { margin-bottom: 30px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; }
         .group-header { background-color: #2F2F2F; color: #FFC107; padding: 15px 20px; font-size: 1.2em; font-weight: bold; }
         
@@ -118,7 +114,7 @@
     let globalData = null;
 
     const CATEGORY_GROUPS = {
-        "Almacén Natural": ["aceites", "alimentos","cafe", "especias", "fideos-integrales", "harinas", "legumbres-y-cereales", "panificados", "premezclas-rebozadores", "salsas-aderezos-organicos", "yerba-mate"],
+        "Almacén Natural": ["aceites", "alimentos","cafe", "especias-y-condimentos", "fideos-integrales", "harinas", "legumbres-y-cereales", "panificados", "premezclas-rebozadores", "salsas-aderezos-organicos", "yerba-mate"],
         "Dulces y Repostería": ["alfajores", "budines", "caramelos", "chocolates","edulcorantes", "galletas", "miel", "untables", "brownie-y-bocaditos", "reposteria"],
         "Snacks y Frutos": ["barritas", "frutas", "frutos-secos", "mix-frutos-secos", "snacks"],
         "Salud y Bienestar": ["suplementos", "tinturas", "probioticos", "yuyos"],
@@ -192,20 +188,28 @@
                         <div class="category-content open">`; 
 
         if (cat.subcategories && cat.subcategories.length > 0) {
-            cat.subcategories.forEach((sub) => {
-                html += `<div class="subcategory-block" data-subid="${sub.id}">
-                            <div class="subcategory-header">
-                                <span>${sub.title} <small style="color:#999; font-weight:normal;">(${sub.id})</small></span>
-                                <button class="btn-delete-node" title="Borrar Subcategoría" onclick="deleteSubcategory('${cat.id}', '${sub.id}')">
-                                    <i class="fas fa-trash"></i>
-                                </button>
-                            </div>
+            // 🚀 OPTIMIZACIÓN SUPREMA: Si tiene exactamente una subcategoría, omitimos el bloque de título repetido
+            if (cat.subcategories.length === 1) {
+                const sub = cat.subcategories[0];
+                html += `<div class="subcategory-block" data-subid="${sub.id}" style="border-left-color: #ccc; margin-left: 0; padding-left: 0;">
                             <div class="products-list">${renderProductRows(sub.id)}</div>
                          </div>`;
-            });
+            } else {
+                // Si cuenta con múltiples subcategorías, renderiza de forma escalonada clásica
+                cat.subcategories.forEach((sub) => {
+                    html += `<div class="subcategory-block" data-subid="${sub.id}">
+                                <div class="subcategory-header">
+                                    <span>${sub.title} <small style="color:#999; font-weight:normal;">(${sub.id})</small></span>
+                                    <button class="btn-delete-node" title="Borrar Subcategoría" onclick="deleteSubcategory('${cat.id}', '${sub.id}')">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                                <div class="products-list">${renderProductRows(sub.id)}</div>
+                             </div>`;
+                });
+            }
         } else {
-            // Si la categoría no tiene subcategorías, intentamos renderizar sus productos directamente
-            html += `<div class="subcategory-block" style="border-left-color: #ccc;">
+            html += `<div class="subcategory-block" style="border-left-color: #ccc; margin-left: 0; padding-left: 0;">
                         <div class="products-list">${renderProductRows(cat.id)}</div>
                      </div>`;
         }
@@ -239,7 +243,7 @@
 
     window.toggleStock = function(id, index, cb) {
         globalData.products[id][index].stock = cb.checked;
-        renderTree(); // Refrescar para actualizar etiquetas
+        renderTree(); 
     };
 
     window.deleteSingleProduct = function(id, index) {
@@ -284,7 +288,6 @@
         }
     };
 
-    // BUSCADOR CORREGIDO: Muestra secciones vacías si no hay búsqueda
     document.getElementById('searchInput').addEventListener('keyup', function(e) {
         const term = e.target.value.toLowerCase().trim();
         const items = document.querySelectorAll('.product-item');
@@ -296,7 +299,6 @@
 
         document.querySelectorAll('.subcategory-block').forEach(block => {
             const hasVisibleItems = block.querySelectorAll('.product-item:not(.hidden)').length > 0;
-            // SI NO HAY BÚSQUEDA, MOSTRAR TODO (INCLUSO VACÍOS)
             block.style.display = (term === "" || hasVisibleItems) ? 'block' : 'none';
         });
 

@@ -254,11 +254,9 @@
                 }).format(value);
             },
 
-            // --- CORRECCIÓN DEFINITIVA (USANDO ENTIDADES HTML) ---
             escapeHtmlAttr(str) {
                 if (!str) return '';
-                // Esta línea ya no usa comillas dentro de comillas, es segura
-                return str.replace(/"/g, '&quot;').replace(/'/g, '');
+                return str.replace(/"/g, '"').replace(/'/g, '');
             },
 
             normalizeText(str) {
@@ -293,19 +291,14 @@
                 const safeName = this.escapeHtmlAttr(item.name);
                 const safeImages = this.escapeHtmlAttr(JSON.stringify(images));
 
-                // --- NUEVA LÓGICA DE STOCK ---
-                // Si stock es 'false', no hay. Si es 'true' o no existe (undefined), sí hay.
                 const hasStock = item.stock !== false; 
                 
-                // Variables visuales según el stock
                 const stockClass = hasStock ? '' : 'no-stock';
                 const stockBadge = hasStock ? '' : '<div class="out-of-stock-badge">SIN STOCK</div>';
                 
-                // Si no hay stock, deshabilitamos el botón
                 const btnDisabled = hasStock ? '' : 'disabled';
                 const btnIcon = hasStock ? '<i class="fas fa-cart-plus"></i>' : '<i class="fas fa-ban"></i>';
 
-                // Si no hay stock, mostramos texto "AGOTADO" en vez de los botones + y -
                 const quantitySelectorHtml = hasStock 
                     ? '<div class="quantity-selector"><button class="quantity-btn decrease-qty">-</button><input type="number" class="quantity-input" value="0" min="0"><button class="quantity-btn increase-qty">+</button></div>'
                     : '<div style="flex-grow:1; text-align:center; color:#e74c3c; font-weight:bold; font-size:0.9em; padding: 10px 0;">AGOTADO</div>';
@@ -323,7 +316,6 @@
                     imageGalleryHtml = '<div class="image-wrapper"><img src="' + mainImage + '" alt="' + safeName + '" loading="lazy" decoding="async"></div>';
                 }
 
-                // Armamos la tarjeta final
                 return '<div class="card fade-in ' + stockClass + '" data-name="' + safeName + '" data-price="' + (item.price || 0) + '" data-img=\'' + safeImages + '\'>' +
                        stockBadge +
                        imageGalleryHtml +
@@ -371,7 +363,7 @@
 
             renderLayout() {
                 const CATEGORY_GROUPS = {
-                    "Almacén Natural": ["aceites", "alimentos","cafe",  "especias", "fideos-integrales", "harinas", "legumbres-y-cereales", "panificados", "premezclas-rebozadores", "salsas-aderezos-organicos", "yerba-mate"],
+                    "Almacén Natural": ["aceites", "alimentos", "cafe", "especias-y-condimentos", "fideos-integrales", "harinas", "legumbres-y-cereales", "panificados", "premezclas-rebozadores", "salsas-aderezos-organicos", "yerba-mate"],
                     "Dulces y Repostería": ["alfajores", "budines", "caramelos", "chocolates", "edulcorantes", "galletas", "miel", "untables", "brownie-y-bocaditos", "reposteria"],
                     "Snacks y Frutos": ["barritas", "frutas", "frutos-secos", "mix-frutos-secos", "snacks"],
                     "Salud y Bienestar": ["suplementos", "tinturas", "probioticos", "yuyos"],
@@ -401,7 +393,8 @@
                         let dropdownContentHTML = '';
 
                         groupCategories.forEach(cat => {
-                            if (cat.subcategories && cat.subcategories.length > 0) {
+                            // 🚀 CASO 1: Múltiples subcategorías (Se genera el acordeón colapsado normal)
+                            if (cat.subcategories && cat.subcategories.length > 1) {
                                 const brandsLinks = cat.subcategories
                                     .map(brand => `<a href="#${brand.id}-section" class="brand-link">${brand.title}</a>`)
                                     .join('');
@@ -415,8 +408,16 @@
                                             ${brandsLinks}
                                         </div>
                                     </div>`;
-                            } else {
-                                dropdownContentHTML += `<a href="#${cat.id}-section">${cat.title}</a>`;
+                            } 
+                            // 🚀 CASO 2: Tiene EXACTAMENTE UNA subcategoría (Cafés, Especias, etc.)
+                            // CORRECCIÓN ABSOLUTA: Se renderiza como enlace de estilo directo nativo. Al hacer un único clic, viaja directo a los productos.
+                            else if (cat.subcategories && cat.subcategories.length === 1) {
+                                dropdownContentHTML += `<a href="#${cat.subcategories[0].id}-section" class="menu-category-direct-link">${cat.title}</a>`;
+                            } 
+                            // 🚀 CASO 3: Categorías sin subcategorías en el JSON (Frutas, Frutos Secos, Mixes, Yuyos)
+                            // CORRECCIÓN ABSOLUTA: Enlace directo nativo usando el ID Padre, eliminando el paso intermedio de "Ver Todo".
+                            else {
+                                dropdownContentHTML += `<a href="#${cat.id}-section" class="menu-category-direct-link">${cat.title}</a>`;
                             }
                         });
 
@@ -432,7 +433,7 @@
                 }
 
                 API.data.categories.forEach(category => {
-                    if (category.subcategories) {
+                    if (category.subcategories && category.subcategories.length > 0) {
                         category.subcategories.sort((a, b) => a.title.localeCompare(b.title));
                         category.subcategories.forEach(sub => {
                             sectionsHTML += createSectionString(sub.id, sub.title, sub.desc);
@@ -446,14 +447,13 @@
                 this.elements.productSectionsContainer.innerHTML = sectionsHTML;
             },
             
-          buildMobileMenu() {
+         buildMobileMenu() {
                 const container = document.getElementById('mobile-menu-container');
                 if (!container) return;
 
-                // 1. Definimos los mismos Grupos que en escritorio
                 const CATEGORY_GROUPS = {
-                    "Almacén Natural": ["aceites", "alimentos", "especias", "fideos-integrales", "harinas", "legumbres-y-cereales", "panificados", "premezclas-rebozadores", "salsas-aderezos-organicos", "yerba-mate"],
-                    "Dulces y Repostería": ["alfajores", "budines", "caramelos", "chocolates", "edulcorantes", "galletas", "miel", "untables", "brownie-y-bocaditos"],
+                    "Almacén Natural": ["aceites", "alimentos", "cafe", "especias-y-condimentos", "fideos-integrales", "harinas", "legumbres-y-cereales", "panificados", "premezclas-rebozadores", "salsas-aderezos-organicos", "yerba-mate"],
+                    "Dulces y Repostería": ["alfajores", "budines", "caramelos", "chocolates", "edulcorantes", "galletas", "miel", "untables", "brownie-y-bocaditos", "reposteria"],
                     "Snacks y Frutos": ["barritas", "frutas", "frutos-secos", "mix-frutos-secos", "snacks"],
                     "Salud y Bienestar": ["suplementos", "tinturas", "probioticos", "yuyos"],
                     "Frescos y Congelados": ["leches-bebidas-vegetales", "refrigerados-veganos"],
@@ -463,16 +463,13 @@
                 let mainPanelHTML = `<div class="mobile-panel main-panel active">`;
                 let subPanelsHTML = '';
 
-                // Agregamos un botón de "Inicio" o título al panel principal
                 mainPanelHTML += `<div class="mobile-panel-header">Categorías</div>`;
 
-                // 2. Iteramos por los GRUPOS (Meta-Categorías)
                 let groupIndex = 0;
                 for (const [groupName, categoryIds] of Object.entries(CATEGORY_GROUPS)) {
                     groupIndex++;
                     const groupId = `group-${groupIndex}`;
                     
-                    // Verificamos que el grupo tenga categorías válidas
                     const groupCategories = categoryIds.map(id => 
                         API.data.categories.find(c => c.id === id)
                     ).filter(item => item !== undefined);
@@ -480,21 +477,13 @@
                     if (groupCategories.length > 0) {
                         groupCategories.sort((a, b) => a.title.localeCompare(b.title));
 
-                        // Botón en el panel principal para abrir el GRUPO
                         mainPanelHTML += `<a href="#" class="mobile-nav-trigger" data-target-panel="${groupId}">
                                             ${groupName} <i class="fas fa-chevron-right"></i>
                                           </a>`;
 
-                        // Contenido del Sub-Panel (Lista de categorías reales)
                         let subPanelContent = '';
                         groupCategories.forEach(cat => {
-                            // ¿Tiene marcas (Nivel 4)?
-                            if (cat.subcategories && cat.subcategories.length > 0) {
-                                // Aquí podríamos hacer otro nivel de anidación, pero para móvil 
-                                // es mejor listar las marcas directamente debajo o hacer un link a la sección.
-                                // Estrategia simple: Link a la sección principal de la categoría
-                                // Opcional: Listar marcas con sangría visual.
-                                
+                            if (cat.subcategories && cat.subcategories.length > 1) {
                                 subPanelContent += `<div class="mobile-category-group">
                                                         <a href="#${cat.id}-section" class="mobile-nav-link strong">${cat.title}</a>`;
                                 
@@ -503,13 +492,15 @@
                                 });
                                 
                                 subPanelContent += `</div>`;
-                            } else {
-                                // Categoría simple
+                            } 
+                            else if (cat.subcategories && cat.subcategories.length === 1) {
+                                subPanelContent += `<a href="#${cat.subcategories[0].id}-section" class="mobile-nav-link">${cat.title}</a>`;
+                            } 
+                            else {
                                 subPanelContent += `<a href="#${cat.id}-section" class="mobile-nav-link">${cat.title}</a>`;
                             }
                         });
 
-                        // Construcción del HTML del Sub-Panel
                         subPanelsHTML += `<div class="mobile-panel sub-panel" id="${groupId}">
                                             <a href="#" class="mobile-nav-back">
                                                 <i class="fas fa-chevron-left"></i> Volver al Menú
@@ -520,7 +511,7 @@
                     }
                 }
 
-                mainPanelHTML += `</div>`; // Cierre main-panel
+                mainPanelHTML += `</div>`; 
                 container.innerHTML = mainPanelHTML + subPanelsHTML;
             },
 
@@ -857,7 +848,6 @@
         App.init();
     });
 
-    // --- FUNCIÓN GLOBAL PARA EL MENÚ ACORDEÓN ---
     window.toggleSubMenu = function(btn) {
         btn.classList.toggle('active');
         const container = btn.nextElementSibling;
