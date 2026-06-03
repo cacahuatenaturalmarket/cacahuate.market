@@ -19,7 +19,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://marketcacahuate.com.ar/">
     <meta property="og:title" content="CACAHUATE NATURAL MARKET | Catálogo Online">
-    <meta property="og:description" content="Explora nuestro catálogo completo de productos naturales y saludables. Pide por WhatsApp y retira en Lanús o recibe en tu domicilio.">
+    <meta property="og:description" content="Explora nuestro catálogo completo de productos naturales and saludables. Pide por WhatsApp y retira en Lanús o recibe en tu domicilio.">
     <meta property="og:image" content="https://i.imgur.com/BCGbBgz.jpeg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="http://marketcacahuate.com.ar/">
@@ -35,6 +35,97 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
+
+    <style>
+        /* Maquetación horizontal compacta para el selector de cantidad en el Carrito */
+        #cartModal .quantity-selector {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+            border: 1px solid #444;
+            border-radius: 6px;
+            overflow: hidden;
+            max-width: 90px;
+            margin-left: auto;
+        }
+
+        #cartModal .quantity-input {
+            width: 36px;
+            height: 30px;
+            text-align: center;
+            background: #fff;
+            color: #333;
+            border: none;
+            font-size: 0.95rem;
+            font-weight: bold;
+            outline: none;
+            -moz-appearance: textfield;
+            /* 🚀 CORRECCIÓN DE COMPATIBILIDAD: Se añade la propiedad estándar para limpiar la advertencia */
+            appearance: textfield;
+        }
+
+        #cartModal .quantity-input::-webkit-outer-spin-button,
+        #cartModal .quantity-input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
+
+        #cartModal .quantity-btn {
+            width: 27px;
+            height: 30px;
+            background: #3a3a3a;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        #cartModal .quantity-btn:hover {
+            background: #555;
+        }
+
+        /* Rediseño Outline para el botón Vaciar Carrito */
+        #clearCartBtn {
+            background: transparent !important;
+            border: 1px solid #ff4757 !important;
+            color: #ff4757 !important;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+            outline: none;
+        }
+
+        #clearCartBtn:hover {
+            background: #ff4757 !important;
+            color: #fff !important;
+        }
+
+        /* Estilización premium con sombra adaptativa para el botón de Realizar Pedido */
+        #checkoutBtn {
+            background: #25D366 !important;
+            color: white !important;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 12px 24px;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        #checkoutBtn:hover {
+            background: #20ba5a !important;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35);
+        }
+    </style>
 </head>
 
 <body>
@@ -60,7 +151,7 @@
              data-text="Ver Kombuchas"
              alt="Kombucha Live">
         
-        <img src="https://i.ibb.co/fVTyYtYm/crema-de-mani.webp" 
+        <img src="https://i.imgur.com/fVTyYtYm/crema-de-mani.webp" 
              loading="lazy"
              data-link="#despensa-section" 
              data-text="Ver Cremas de Maní"
@@ -150,6 +241,11 @@
             <div id="cartItemsContainer">
                 <p id="emptyCartMessage">Tu carrito está vacío.</p>
             </div>
+            <div id="clearCartContainer" style="text-align: right; margin-bottom: 15px;">
+                <button id="clearCartBtn" style="display: none;">
+                    <i class="fas fa-trash-alt"></i> Vaciar Carrito
+                </button>
+            </div>
             <div class="cart-summary">
                 <h4 id="cartTotal">Total: $0</h4>
             </div>
@@ -214,6 +310,10 @@
             },
             removeFromCart(productName) {
                 this.state.cart = this.state.cart.filter(item => item.product.name !== productName);
+                this.saveCart();
+            },
+            clearCart() {
+                this.state.cart = [];
                 this.saveCart();
             },
             getProductInCart(productName) {
@@ -330,16 +430,21 @@
                        '</div></div></div>';
             },
             renderCartItems() {
+                const clearBtn = document.getElementById('clearCartBtn');
+
                 if (Store.state.cart.length === 0) {
                     this.elements.cartItemsContainer.innerHTML = '';
                     this.elements.cartItemsContainer.appendChild(this.elements.emptyCartMessage);
                     this.elements.emptyCartMessage.style.display = 'block';
                     this.elements.checkoutBtn.style.display = 'none';
                     this.elements.cartTotal.style.display = 'none';
+                    if (clearBtn) clearBtn.style.display = 'none';
                 } else {
                     this.elements.emptyCartMessage.style.display = 'none';
                     this.elements.checkoutBtn.style.display = 'inline-block';
                     this.elements.cartTotal.style.display = 'block';
+                    if (clearBtn) clearBtn.style.display = 'inline-block';
+                    
                     this.elements.cartItemsContainer.innerHTML = Store.state.cart.map(item => {
                         const mainImage = Array.isArray(item.product.img) ? item.product.img[0] : item.product.img;
                         return `<div class="cart-item" data-name="${item.product.name}"><img src="${mainImage}" alt="${item.product.name}"><div class="cart-item-info"><h4>${item.product.name}</h4><span>${this.formatCurrency(item.product.price || 0)}</span></div><div class="quantity-selector"><button class="quantity-btn decrease-qty">-</button><input type="number" class="quantity-input" value="${item.quantity}" min="0" name="cart-quantity"><button class="quantity-btn increase-qty">+</button></div></div>`;
@@ -393,7 +498,6 @@
                         let dropdownContentHTML = '';
 
                         groupCategories.forEach(cat => {
-                            // 🚀 CASO 1: Múltiples subcategorías (Se genera el acordeón colapsado normal)
                             if (cat.subcategories && cat.subcategories.length > 1) {
                                 const brandsLinks = cat.subcategories
                                     .map(brand => `<a href="#${brand.id}-section" class="brand-link">${brand.title}</a>`)
@@ -409,13 +513,9 @@
                                         </div>
                                     </div>`;
                             } 
-                            // 🚀 CASO 2: Tiene EXACTAMENTE UNA subcategoría (Cafés, Especias, etc.)
-                            // CORRECCIÓN ABSOLUTA: Se renderiza como enlace de estilo directo nativo. Al hacer un único clic, viaja directo a los productos.
                             else if (cat.subcategories && cat.subcategories.length === 1) {
                                 dropdownContentHTML += `<a href="#${cat.subcategories[0].id}-section" class="menu-category-direct-link">${cat.title}</a>`;
                             } 
-                            // 🚀 CASO 3: Categorías sin subcategorías en el JSON (Frutas, Frutos Secos, Mixes, Yuyos)
-                            // CORRECCIÓN ABSOLUTA: Enlace directo nativo usando el ID Padre, eliminando el paso intermedio de "Ver Todo".
                             else {
                                 dropdownContentHTML += `<a href="#${cat.id}-section" class="menu-category-direct-link">${cat.title}</a>`;
                             }
@@ -770,6 +870,24 @@
                     }
                 });
 
+                // Actualiza dinámicamente el total al tipear por teclado en el input
+                UI.elements.cartModal.addEventListener('input', (e) => {
+                    if (e.target.matches('.quantity-input[name="cart-quantity"]')) {
+                        const cartItem = e.target.closest('.cart-item');
+                        if (!cartItem) return;
+                        
+                        let newQuantity = parseInt(e.target.value, 10);
+                        if (isNaN(newQuantity) || newQuantity < 0) {
+                            newQuantity = 0;
+                        }
+                        
+                        Store.updateQuantity(cartItem.dataset.name, newQuantity);
+                        const total = Store.getCartTotal();
+                        UI.elements.cartTotal.textContent = `Total: ${UI.formatCurrency(total)}`;
+                        UI.updateCartCounter();
+                    }
+                });
+
                 document.getElementById('cartBtn').addEventListener('click', () => {
                     UI.renderCartItems();
                     UI.toggleModal(UI.elements.cartModal, true);
@@ -840,6 +958,18 @@
                         UI.elements.globalSearchInput.value = '';
                         UI.handleSearch(false);
                         UI.elements.globalSearchInput.focus();
+                    });
+                }
+
+                const clearCartBtnElement = document.getElementById('clearCartBtn');
+                if (clearCartBtnElement) {
+                    clearCartBtnElement.addEventListener('click', () => {
+                        if (confirm("¿Estás seguro de que deseas vaciar todo tu pedido?")) {
+                            Store.clearCart();
+                            UI.renderCartItems();
+                            UI.updateCartCounter();
+                            UI.showToast('<i class="fas fa-trash-alt"></i> El carrito ha sido vaciado.');
+                        }
                     });
                 }
             },
