@@ -238,12 +238,12 @@
       "title": "Especias y Condimentos",
       "desc": "Aromatiza y da sabor a tus platillos con nuestra selección de especias naturales.",
       "subcategories": [
-{
-      "id": "especias",
-      "title": "Especias y Condimentos",
-      "desc": "Selección premium de condimentos y hierbas aromáticas para tus comidas."
-}
-  ]
+        {
+          "id": "especias",
+          "title": "Especias y Condimentos",
+          "desc": "Selección premium de condimentos y hierbas aromáticas para tus comidas."
+        }
+      ]
     },
     {
       "id": "fideos-integrales",
@@ -956,7 +956,8 @@
         "img": [
           "https://i.imgur.com/kQhHLET.jpeg"
         ],
-        "desc": "Expectorante y antitusígeno, ideal para afecciones respiratorias como tos, asma y bronquitis."
+        "desc": "Expectorante y antitusígeno, ideal para afecciones respiratorias como tos, asma y bronquitis.",
+        "price": 1200
       },
       {
         "name": "Arenaria",
@@ -964,7 +965,7 @@
           "https://i.imgur.com/0TQbrFW.jpeg"
         ],
         "desc": "Conocida por sus propiedades diuréticas, útil en problemas de retención de líquidos y vías urinarias.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Baila Bien",
@@ -980,7 +981,7 @@
           "https://i.imgur.com/9HGEU8T.jpeg"
         ],
         "desc": "Potente digestivo y hepatoprotector, ayuda en disfunciones hepáticas, digestiones lentas y cálculos biliares.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Burrito",
@@ -1012,7 +1013,7 @@
           "https://i.imgur.com/L6Yll80.jpeg"
         ],
         "desc": "Antiinflamatorio, antiespasmódico y digestivo, alivia dolores estomacales, cólicos y nerviosismo.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Centella Asiática",
@@ -1172,7 +1173,7 @@
           "https://i.imgur.com/t3Scr9p.jpeg"
         ],
         "desc": "Digestiva, carminativa y analgésica, alivia náuseas, gases, indigestión y dolores de cabeza.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Moringa",
@@ -1268,7 +1269,7 @@
           "https://i.imgur.com/KnVBKrA.jpeg"
         ],
         "desc": "Diurética y litolítica, tradicionalmente usada para ayudar a disolver y expulsar cálculos renales y biliares.",
-        "price": 1500
+        "price": 2000
       },
       {
         "name": "Ruda",
@@ -1276,7 +1277,7 @@
           "https://i.imgur.com/gTOE6Tr.jpeg"
         ],
         "desc": "Antiespasmódica, emenagoga y digestiva, usada con precaución para cólicos y problemas menstruales.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Salvia",
@@ -1374,7 +1375,7 @@
           "https://i.imgur.com/xmwkSER.jpeg"
         ],
         "desc": "Semillas con un sabor dulce y distintivo, similar al regaliz. Se usa en repostería, infusiones y algunas preparaciones saladas.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Anís Estrellado",
@@ -1422,7 +1423,7 @@
           "https://i.imgur.com/w7EfN5a.jpeg"
         ],
         "desc": "Cebolla deshidratada en hojuelas. Al rehidratarse, libera un sabor a cebolla concentrado, útil en sopas, guisos y aderezos.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Cebolla en polvo",
@@ -1743,7 +1744,7 @@
           "https://i.imgur.com/dxC80Vh.jpeg"
         ],
         "desc": "Un clásico dulce y jugoso para tu bienestar. Son la solución natural para una buena digestión gracias a su alto contenido de fibra. Además, aportan potasio y vitamina K para huesos fuertes.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Dátiles",
@@ -2205,7 +2206,7 @@
           "https://i.ibb.co/M58LxXjS/PASIONARIA.png"
         ],
         "desc": "Dulces sueños. Un sedante natural ideal para combatir el insomnio y los estados de nerviosismo.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Regaliz",
@@ -2544,7 +2545,8 @@
         "img": [
           "https://lafarmen.com.ar/wp-content/uploads/2023/12/1-31-800x623.jpg"
         ],
-        "desc": "Ingredientes: Café verde, algas marinas, Garcinia Cambogia, Centella Asiática.<br><strong>Uso:</strong> Sensación de saciedad, quema de grasas, efecto drenante y mejora de celulitis."
+        "desc": "Ingredientes: Café verde, algas marinas, Garcinia Cambogia, Centella Asiática.<br><strong>Uso:</strong> Sensación de saciedad, quema de grasas, efecto drenante y mejora de celulitis.",
+        "price": 8500
       },
       {
         "name": "Calcio de Ostras",
@@ -2615,7 +2617,8 @@
         "img": [
           "https://lafarmen.com.ar/wp-content/uploads/2023/12/1-60-800x623.jpg"
         ],
-        "desc": "Con levadura de cerveza más vitamina B12.<br><strong>Uso:</strong> Energía, metabolismo, nutrición general y crecimiento celular."
+        "desc": "Con levadura de cerveza más vitamina B12.<br><strong>Uso:</strong> Energía, metabolismo, nutrición general y crecimiento celular.",
+        "price": 1500
       },
       {
         "name": "Magnesio",
@@ -5330,7 +5333,8 @@
         "img": [
           "https://pampagourmet.com.ar/wp-content/uploads/2020/08/Vinagre_de_Sidra_MANZANA.jpg"
         ],
-        "desc": "Cuida tu cuerpo y tu paladar con este vinagre de sidra de manzana 100% orgánico. Al ser un producto sin filtrar ni pasteurizar, conserva la \"madre\" del vinagre y sus propiedades naturales. Su sabor suave y afrutado es perfecto para aderezar ensaladas frescas, preparar vinagretas ligeras o para consumir diluido como tónico diario. Calidad pura del campo a tu mesa."
+        "desc": "Cuida tu cuerpo y tu paladar con este vinagre de sidra de manzana 100% orgánico. Al ser un producto sin filtrar ni pasteurizar, conserva la \"madre\" del vinagre y sus propiedades naturales. Su sabor suave y afrutado es perfecto para aderezar ensaladas frescas, preparar vinagretas ligeras o para consumir diluido como tónico diario. Calidad pura del campo a tu mesa.",
+        "price": 7800
       },
       {
         "name": "Vinagre de Vino Orgánico - 250ml",
@@ -5548,7 +5552,8 @@
         "img": [
           "https://i0.wp.com/alimentoszucchi.com.ar/wp-content/uploads/2021/12/BASMATI.jpg?fit=800%2C540&ssl=1"
         ],
-        "stock": true
+        "stock": true,
+        "price": 3800
       },
       {
         "name": "Arroz blanco tradicional",
@@ -5556,7 +5561,8 @@
         "img": [
           "https://png.pngtree.com/png-clipart/20240525/original/pngtree-rice-in-wooden-bowl-isolated-on-transparent-png-image_15168076.png"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1500
       },
       {
         "name": "Arroz Carnaroli",
@@ -5564,7 +5570,8 @@
         "img": [
           "https://www.riseriamartinotti.it/images/risi/carnaroli.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 3200
       },
       {
         "name": "Arroz Carolina",
@@ -5572,7 +5579,8 @@
         "img": [
           "https://canalcocina.es/medias/_cache/zoom-763d78f94278243a26387948c912c9bc-920-518.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Arroz fino integral",
@@ -5580,7 +5588,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/002/625/145/products/arroz-largo-fino-integral1-d30905c57977db83c516790801851388-1024-1024.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1700
       },
       {
         "name": "Arroz para Sushi",
@@ -5588,7 +5597,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/002/625/145/products/arroz-koshi1-8380450a76225a401a16790792137949-1024-1024.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Arroz Yamaní Integral",
@@ -5596,7 +5606,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/002/625/145/products/arroz-yamani-integral-1kg1-0f0c5baa20936292a716790809933115-1024-1024.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Arveja Entera",
@@ -5692,7 +5703,7 @@
           "https://saboresandinos.com/wp-content/uploads/2024/11/624.jpg"
         ],
         "desc": "Maximiza tu ingesta de proteínas vegetales con el Poroto de Soja. Este grano esencial es la base fundamental para elaborar tus propias leches vegetales, tofu casero o para enriquecer guisos con un aporte nutricional incomparable. Su alto contenido proteico y su versatilidad lo posicionan como el ingrediente indispensable en cualquier despensa basada en plantas, permitiéndote explorar infinitas posibilidades culinarias saludables y nutritivas.",
-        "price": 1000
+        "price": 1500
       },
       {
         "name": "Poroto Mung",
@@ -5716,7 +5727,7 @@
           "https://http2.mlstatic.com/D_NQ_NP_817284-MLA51739822322_092022-O.webp"
         ],
         "desc": "Disfruta de la experiencia \"gourmet\" de las legumbres con el Poroto Pallares. Conocido por su gran tamaño y su textura excepcionalmente mantecosa y suave, es ideal para preparar al escabeche, en ensaladas tibias o como protagonista de guisos sofisticados. Su piel se vuelve tierna y su interior se deshace en la boca, ofreciendo una untuosidad única que lo diferencia de cualquier otro poroto común.",
-        "price": 3600
+        "price": 4400
       },
       {
         "name": "Poroto Pitai",
@@ -5732,7 +5743,7 @@
           "https://alldiet.com.ar/assets/images/products/legum-51/medium.jpg"
         ],
         "desc": "Eleva la calidad de tus comidas con la delicadeza del Poroto Regina. Apreciado por su piel extremadamente fina y una pulpa mantecosa, este poroto ofrece un sabor suave con notas a nuez que lo hace superior para ensaladas gourmet y la clásica sopa minestrone. Se cocina de manera pareja y absorbe los sabores delicadamente, convirtiéndolo en la elección predilecta para quienes buscan una legumbre de textura premium.",
-        "price": 2200
+        "price": 2500
       },
       {
         "name": "Poroto Tape",
@@ -5740,7 +5751,7 @@
           "https://alldiet.com.ar/assets/images/products/legum-52/medium.jpg"
         ],
         "desc": "Suma carácter y color a tus preparaciones con el Poroto Tape. Esta variedad se distingue por su piel jaspeada y una textura firme que resiste cocciones largas sin perder su integridad, lo que lo hace perfecto para estofados invernales y platos de olla intensos. Su sabor robusto y terroso combina a la perfección con embutidos y vegetales, brindando una experiencia culinaria rústica y reconfortante en cada bocado.",
-        "price": 2200
+        "price": 2500
       },
       {
         "name": "Salvado de trigo",
@@ -5748,7 +5759,8 @@
         "img": [
           "https://media.istockphoto.com/id/486548087/es/foto/de-salvado-de-trigo-aislado-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=BUxJ3MD92NveRhbD123oa39g40jGSGjviaFW00bp5XA="
         ],
-        "stock": true
+        "stock": true,
+        "price": 800
       },
       {
         "name": "Trigo burgol fino",
@@ -5756,7 +5768,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/172/573/products/trigo-burgol-fino1-590d2539b3fc391a9d15887343267900-1024-1024.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1800
       },
       {
         "name": "Trigo burgol grueso",
@@ -5764,7 +5777,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/003/711/products/trigo-bugol-grueso1-cf91bb19d3c9716eeb16637904799396-1024-1024.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1800
       }
     ],
     "leches-vivet": [
@@ -5885,7 +5899,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/144/045/products/almohaditas-rellenas-de-avellas-x-25-kg1-13234dd12b4d6d074915859560489991-480-0.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2200
       },
       {
         "name": "Almohaditas Rellenas sabor Chocolate",
@@ -5893,7 +5908,8 @@
         "img": [
           "https://www.mayoristadelegumbres.com.ar/wp-content/uploads/2020/05/almohaditas-de-chocolate.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2200
       },
       {
         "name": "Almohaditas Rellenas sabor Frutilla",
@@ -5901,7 +5917,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/144/045/products/almohaditas-de-frutilla-0557592feaa875754315132622309696-640-01-8a15232a2dc2ad5a7715859473914169-1024-1024.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2200
       },
       {
         "name": "Aritos de Avena y Miel",
@@ -5909,7 +5926,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/229/173/products/aritos-de-avena-y-miel1-a03e47c8bbefe5817015946055027700-640-0.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Aritos Frutales",
@@ -5917,7 +5935,8 @@
         "img": [
           "https://elbanquito.com.ar/wp-content/uploads/2020/07/granix-aritos-frutales-x-200-grs-el-banquito-market.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Arroz Inflado",
@@ -5925,7 +5944,8 @@
         "img": [
           "https://lamejicana.mx/cdn/shop/products/Arrozinflado_460x@2x.jpg?v=1599532263"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2200
       },
       {
         "name": "Fibra de Salvado",
@@ -5933,7 +5953,8 @@
         "img": [
           "https://http2.mlstatic.com/D_NQ_NP_793098-MLA91325625361_082025-O.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Granola Crocante",
@@ -5941,7 +5962,8 @@
         "img": [
           "https://f.fcdn.app/imgs/abac78/www.lamolienda.uy/moliuy/9812/original/catalogo/000000000046275_000000000046275_1/1500-1500/granola-crujiente-100g-granola-crujiente-granel.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1600
       },
       {
         "name": "Granola Mix Energético",
@@ -5949,7 +5971,8 @@
         "img": [
           "https://http2.mlstatic.com/D_Q_NP_2X_845236-MLA75788759164_042024-P.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1600
       },
       {
         "name": "Granola Sin Azúcar",
@@ -5957,7 +5980,8 @@
         "img": [
           "https://f.fcdn.app/imgs/7c03e8/www.lamolienda.uy/moliuy/8540/original/catalogo/000000000046274_000000000046274_1/2000-2000/granola-sin-azucar-100g-granola-sin-azucar-granel.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1500
       },
       {
         "name": "Maíz de Barbacoa",
@@ -5965,7 +5989,8 @@
         "img": [
           "https://elbanquito.com.ar/wp-content/uploads/2020/06/Maiz-Frito-Barbacoa-x-1-Kg.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1600
       },
       {
         "name": "Maíz de Miel y Mostaza",
@@ -5973,7 +5998,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/040/363/products/maiz-con-mostaza-y-miel-espanol-100g4-7a29bcfcba869fa22b15716232474496-1024-1024.webp?w=1920"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1600
       },
       {
         "name": "Maíz Natural",
@@ -5981,7 +6007,8 @@
         "img": [
           "https://m.media-amazon.com/images/I/81X-ToAvBZS.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1600
       },
       {
         "name": "Quinoa Pop",
@@ -5989,7 +6016,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/801/315/products/d_nq_np_693867-mla74739889682_032024-o-59df4e17409d0b7a8917399910649598-640-0.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Tutucas",
@@ -5997,7 +6025,8 @@
         "img": [
           "https://encantopistacho.com.ar/wp-content/uploads/16691697690-tutucas-773x458-photoroom-69713826a6ad52c08317240282834551-1024-1024.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1000
       }
     ],
     "semillas": [
@@ -6007,7 +6036,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/002/324/020/products/mix-semillas-1-de90ea927926d0830616982407942085-640-0.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 800
       },
       {
         "name": "Mix de Semillas de Quinoa",
@@ -6015,7 +6045,8 @@
         "img": [
           "https://frutossecosentupuerta.cl/wp-content/uploads/2021/07/SEMILLA-QUINOA-TRICOLOR-2.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Semillas de Chía",
@@ -6023,7 +6054,8 @@
         "img": [
           "https://imag.bonviveur.com/semillas-de-chia-al-natural.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1200
       },
       {
         "name": "Semillas de Girasol",
@@ -6031,7 +6063,8 @@
         "img": [
           "https://4nuts.com.uy/wp-content/uploads/2025/02/girasol-1-6b2a5feb343d4f9c5c16982410722065-640-0.png"
         ],
-        "stock": true
+        "stock": true,
+        "price": 800
       },
       {
         "name": "Semillas de Lino",
@@ -6039,7 +6072,8 @@
         "img": [
           "https://myco-foods.com/wp-content/uploads/2023/01/semillas_y_frutos_secos_semillas_lino_marron-min.png"
         ],
-        "stock": true
+        "stock": true,
+        "price": 800
       },
       {
         "name": "Semillas de Quinoa Blanca",
@@ -6047,7 +6081,8 @@
         "img": [
           "https://www.almacenesusabiaga.com/wp-content/uploads/2018/12/quinoa.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Semillas de Zapallo",
@@ -6055,7 +6090,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/002/324/020/products/zapallo-1-830725e5ecf5e714b416982410982341-640-0.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1800
       },
       {
         "name": "Sésamo Blanco",
@@ -6063,7 +6099,8 @@
         "img": [
           "https://issuperfoods.com.bo/wp-content/uploads/2021/11/sesamoblanco002.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1300
       },
       {
         "name": "Sésamo Integral",
@@ -6071,7 +6108,8 @@
         "img": [
           "https://elbanquito.com.ar/wp-content/uploads/2020/06/semillas-de-sesamo-integral-el-banquito.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1000
       },
       {
         "name": "Sésamo Negro",
@@ -6079,7 +6117,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/172/573/products/sesamo-negro1-9151926e4d2b212bf615887332611697-1024-1024.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1600
       }
     ],
     "harinas-y-avenas": [
@@ -6089,7 +6128,8 @@
         "img": [
           "https://www.cocinista.es/download/bancorecursos/ingredientes/ingrediente-almidon-maiz.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1800
       },
       {
         "name": "Avena Gruesa",
@@ -6097,7 +6137,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/801/315/products/avena-gruesa1-78640f8b22ed6b0c2f15820487365136-1024-1024.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Avena Instantánea",
@@ -6105,7 +6146,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/801/315/products/avena-instantanea21-64c34b262754c4beec16360380458115-1024-1024.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1900
       },
       {
         "name": "Cacao Amargo",
@@ -6121,7 +6163,8 @@
         "img": [
           "https://terrunioalmacennatural.com/wp-content/uploads/2021/03/FECULA-DE-MANDIOCA-1.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Harina de Algarroba",
@@ -6129,7 +6172,8 @@
         "img": [
           "https://harinaslafuensanta.com/wp-content/uploads/2020/11/HARINA-DE-ALGARROBA.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2800
       },
       {
         "name": "Harina de Arroz",
@@ -6137,7 +6181,8 @@
         "img": [
           "https://frutosare.com.ar/wp-content/uploads/2020/06/arroz-harina.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1200
       },
       {
         "name": "Harina de Arveja",
@@ -6145,7 +6190,8 @@
         "img": [
           "https://www.pehuenalimentos.cl/wp-content/uploads/2024/06/harina-de-arvejas.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1500
       },
       {
         "name": "Harina de Avena",
@@ -6153,7 +6199,8 @@
         "img": [
           "https://www.orquidea.com.co/image/cache/catalog/Products/Nacional/1612008_3-1000x1000.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Harina de Fariña de Mandioca",
@@ -6169,7 +6216,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/172/573/products/harina-de-garbanzo1-6425174d6f1ccab7ac15892241611843-1024-1024.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1200
       },
       {
         "name": "Harina de Lenteja",
@@ -6177,7 +6225,8 @@
         "img": [
           "https://quintasaludable.com/cdn/shop/products/Harinalenteja.jpg?v=1668542693"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1500
       },
       {
         "name": "Harina de Lino",
@@ -6185,7 +6234,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/002/712/058/products/harina-lino1-d41f9c1af200c3879016736304476638-640-0.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1200
       },
       {
         "name": "Harina de Sémola",
@@ -6193,7 +6243,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/002/625/145/products/semola-fina1-8aa9a9ab7668dc35d316792451477398-1024-1024.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2500
       },
       {
         "name": "Harina de Semolín",
@@ -6201,7 +6252,8 @@
         "img": [
           "https://grupomolinero.com.ar/wp-content/uploads/2024/01/Semola-y-Semolin-de-Trigo_resultado-1024x439.jpeg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Harina de Trigo Sarraceno",
@@ -6209,7 +6261,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/172/573/products/harina-de-trigo-sarraceno1-a0d49683b9e5ce44e315892265400329-1024-1024.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2500
       },
       {
         "name": "Harina Paraguaya",
@@ -6217,7 +6270,8 @@
         "img": [
           "https://frutosare.com.ar/wp-content/uploads/2017/03/harina-paraguaya.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1500
       },
       {
         "name": "Salvado de Avena",
@@ -6225,7 +6279,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/002/625/145/products/granola-exotica-151-a69e8072432a102f3016946921636222-1024-1024.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1900
       }
     ],
     "leudantes": [
@@ -6235,7 +6290,8 @@
         "img": [
           "https://www.recetasnestle.com.ve/sites/default/files/2023-10/cuchara-con-bicarbonato-de-sodio-para-cocinar.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1000
       },
       {
         "name": "Polvo para hornear",
@@ -6243,7 +6299,8 @@
         "img": [
           "https://laperegrina.pe/wp-content/uploads/2026/02/Polvo-de-Hornear.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1000
       }
     ],
     "azucares": [
@@ -6253,7 +6310,8 @@
         "img": [
           "https://frutosare.com.ar/wp-content/uploads/2017/03/impalpable.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Azúcar mascabo",
@@ -6261,7 +6319,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/002/324/020/products/azucar-mascabo-2-e011f21f07a2c6ff1616982730517187-640-0.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 3000
       },
       {
         "name": "Azúcar negra",
@@ -6269,7 +6328,8 @@
         "img": [
           "https://elbanquito.com.ar/wp-content/uploads/2020/07/circe-azucar-negra.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       },
       {
         "name": "Azúcar rubia",
@@ -6277,7 +6337,8 @@
         "img": [
           "https://tostaduriasaldana.cl/wp-content/uploads/2018/05/AZUCAR-RUBIA-2-600x450.jpg"
         ],
-        "stock": true
+        "stock": true,
+        "price": 2000
       }
     ]
   }

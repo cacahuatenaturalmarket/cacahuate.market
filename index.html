@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="http://marketcacahuate.com.ar/">
     <meta name="twitter:title" content="CACAHUATE NATURAL MARKET">
-    <meta name="twitter:description" content="Tu tienda natural en Lanús. Suplementos, alimentos orgánicos y más.">
+    <meta name="twitter:description" content="Tu tienda natural en Lanús. Suplementos, alimentos orgánicos and más.">
     <meta name="twitter:image" content="https://i.imgur.com/BCGbBgz.jpeg">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
@@ -37,17 +37,54 @@
     <link rel="manifest" href="site.webmanifest" />
 
     <style>
-        /* Maquetación horizontal compacta para el selector de cantidad en el Carrito */
+        /* DISEÑO PERFECCIONADO: Distribución simétrica en el carrito para nombres extra-largos */
+        #cartModal .cart-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 12px 5px;
+            border-bottom: 1px solid #333;
+        }
+
+        #cartModal .cart-item img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 6px;
+            flex-shrink: 0;
+        }
+
+        #cartModal .cart-item-info {
+            flex-grow: 1;
+            flex-shrink: 1;
+            min-width: 0; 
+        }
+
+        #cartModal .cart-item-info h4 {
+            margin: 0 0 4px 0;
+            font-size: 0.95rem;
+            color: #fff;
+            word-break: break-word; 
+            line-height: 1.3;
+        }
+
+        #cartModal .cart-item-info span {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        /* Maquetación rígida horizontal para el selector de cantidad en el Carrito */
         #cartModal .quantity-selector {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 0;
-            border: 1px solid #444;
+            border: 1px solid #555;
             border-radius: 6px;
             overflow: hidden;
             max-width: 90px;
-            margin-left: auto;
+            flex-shrink: 0; 
         }
 
         #cartModal .quantity-input {
@@ -61,7 +98,6 @@
             font-weight: bold;
             outline: none;
             -moz-appearance: textfield;
-            /* 🚀 CORRECCIÓN DE COMPATIBILIDAD: Se añade la propiedad estándar para limpiar la advertencia */
             appearance: textfield;
         }
 
@@ -124,6 +160,51 @@
             background: #20ba5a !important;
             transform: translateY(-1px);
             box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35);
+        }
+
+        /* 🚀 INTERFAZ V3: Fondo gris claro de alto contraste con borde definido amarillo oro para máxima visibilidad */
+        .card-actions .quantity-selector {
+            display: flex;
+            align-items: center;
+            border: 2px solid #d6a100; /* Borde más nítido con el color de tus títulos */
+            border-radius: 6px;
+            overflow: hidden;
+            background: #fff;
+            max-width: 110px;
+            flex-grow: 1;
+        }
+
+        .card-actions .quantity-btn {
+            background: #f1f3f5; /* Fondo gris claro suave para que los botones contrasten y se noten */
+            color: #d6a100;      /* Símbolos en Amarillo Oro nítido */
+            border: none;
+            width: 34px;
+            height: 34px;
+            font-size: 1.2rem;
+            font-weight: 900;    
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        /* Inversión interactiva al posicionar el cursor o pulsar */
+        .card-actions .quantity-btn:hover {
+            background: #d6a100; 
+            color: #ffffff;      
+        }
+
+        .card-actions .quantity-input {
+            width: 42px;
+            height: 34px;
+            text-align: center;
+            border: none;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #2d2d2d;      
+            outline: none;
+            background: #fff;
         }
     </style>
 </head>
@@ -241,7 +322,7 @@
             <div id="cartItemsContainer">
                 <p id="emptyCartMessage">Tu carrito está vacío.</p>
             </div>
-            <div id="clearCartContainer" style="text-align: right; margin-bottom: 15px;">
+            <div id="clearCartContainer" style="text-align: right; margin-top: 10px; margin-bottom: 15px;">
                 <button id="clearCartBtn" style="display: none;">
                     <i class="fas fa-trash-alt"></i> Vaciar Carrito
                 </button>
@@ -315,6 +396,7 @@
             clearCart() {
                 this.state.cart = [];
                 this.saveCart();
+                document.querySelectorAll('.card .quantity-input').forEach(input => input.value = 0);
             },
             getProductInCart(productName) {
                 return this.state.cart.find(item => item.product.name === productName);
@@ -385,7 +467,25 @@
             },
 
           createCardHTML(item) {
-                const priceText = item.price ? this.formatCurrency(item.price) : 'Consultar precio';
+                let rawPrice = item.price;
+                let parsedPrice = 0;
+                let hasValidPrice = false;
+
+                if (rawPrice !== undefined && rawPrice !== null) {
+                    if (typeof rawPrice === 'string') {
+                        let cleanPrice = rawPrice.replace(/\./g, '').replace(/,/g, '.').trim();
+                        parsedPrice = parseFloat(cleanPrice);
+                    } else {
+                        parsedPrice = parseFloat(rawPrice);
+                    }
+
+                    if (!isNaN(parsedPrice)) {
+                        hasValidPrice = true;
+                    }
+                }
+
+                const priceText = hasValidPrice ? this.formatCurrency(parsedPrice) : 'Consultar precio';
+                
                 let images = Array.isArray(item.img) ? item.img : (item.img ? [item.img] : []);
                 const mainImage = images.length > 0 ? images[0] : '';
                 const safeName = this.escapeHtmlAttr(item.name);
@@ -395,12 +495,16 @@
                 
                 const stockClass = hasStock ? '' : 'no-stock';
                 const stockBadge = hasStock ? '' : '<div class="out-of-stock-badge">SIN STOCK</div>';
-                
-                const btnDisabled = hasStock ? '' : 'disabled';
-                const btnIcon = hasStock ? '<i class="fas fa-cart-plus"></i>' : '<i class="fas fa-ban"></i>';
 
+                const existingItem = Store.getProductInCart(item.name);
+                const initialQty = existingItem ? existingItem.quantity : 0;
+                
                 const quantitySelectorHtml = hasStock 
-                    ? '<div class="quantity-selector"><button class="quantity-btn decrease-qty">-</button><input type="number" class="quantity-input" value="0" min="0"><button class="quantity-btn increase-qty">+</button></div>'
+                    ? `<div class="quantity-selector">
+                        <button class="quantity-btn decrease-qty">-</button>
+                        <input type="number" class="quantity-input" value="${initialQty}" min="0" readonly>
+                        <button class="quantity-btn increase-qty">+</button>
+                       </div>`
                     : '<div style="flex-grow:1; text-align:center; color:#e74c3c; font-weight:bold; font-size:0.9em; padding: 10px 0;">AGOTADO</div>';
 
                 let imageGalleryHtml = '';
@@ -416,17 +520,17 @@
                     imageGalleryHtml = '<div class="image-wrapper"><img src="' + mainImage + '" alt="' + safeName + '" loading="lazy" decoding="async"></div>';
                 }
 
-                return '<div class="card fade-in ' + stockClass + '" data-name="' + safeName + '" data-price="' + (item.price || 0) + '" data-img=\'' + safeImages + '\'>' +
+                // 🚀 CORRECCIÓN DE SINTAXIS: Se eliminó la comilla simple suelta que rompía el string literal
+                return '<div class="card fade-in ' + stockClass + '" data-name="' + safeName + '" data-price="' + parsedPrice + '" data-img=\'' + safeImages + '\'>' +
                        stockBadge +
                        imageGalleryHtml +
                        '<div class="card-content">' +
                        '<h3>' + item.name + '</h3>' +
                        '<p class="description">' + (item.desc || '') + '</p>' +
                        '<div class="card-price" style="font-size: 1.4em; font-weight: bold; color: var(--azul-terroso-claro); margin-bottom: 15px;">' + priceText + '</div>' +
-                       '<div class="card-actions">' +
+                       '<div class="card-actions" style="display:flex; align-items:center; justify-content:space-between; gap:10px;">' +
                        quantitySelectorHtml +
-                       '<button class="add-to-cart-btn" ' + btnDisabled + '>' + btnIcon + '</button>' +
-                       '<button class="details-btn"><i class="fas fa-eye"></i></button>' +
+                       '<button class="details-btn" style="flex-shrink:0; margin:0;"><i class="fas fa-eye"></i></button>' +
                        '</div></div></div>';
             },
             renderCartItems() {
@@ -458,6 +562,17 @@
                     productList += `\n*Total estimado: ${this.formatCurrency(total)}*`;
                     this.elements.checkoutBtn.href = `https://wa.me/${API.getPhoneNumber()}?text=${encodeURIComponent(productList)}`;
                 }
+            },
+
+            syncMainGridQuantities() {
+                document.querySelectorAll('.card').forEach(card => {
+                    const name = card.dataset.name;
+                    const input = card.querySelector('.quantity-input');
+                    if (input) {
+                        const cartItem = Store.getProductInCart(name);
+                        input.value = cartItem ? cartItem.quantity : 0;
+                    }
+                });
             },
 
             updateCartCounter() {
@@ -626,6 +741,9 @@
 
             toggleModal(modal, show) {
                 modal.style.display = show ? "flex" : "none";
+                if (!show && modal === this.elements.cartModal) {
+                    this.syncMainGridQuantities();
+                }
             },
 
             openProductModal(card) {
@@ -716,6 +834,7 @@
                         grid.querySelectorAll('.card').forEach(c => c.style.display = 'flex');
                     });
                     this.elements.globalNoResultsMessage.style.display = 'none';
+                    this.syncMainGridQuantities(); 
                     return;
                 }
 
@@ -810,25 +929,30 @@
                              if (imageToZoom) UI.openZoomModal(imageToZoom.src);
                         } else if (e.target.closest('.details-btn')) {
                             UI.openProductModal(card);
-                        } else if (e.target.closest('.add-to-cart-btn')) {
-                            const quantityInput = card.querySelector('.quantity-input');
-                            const quantity = parseInt(quantityInput.value, 10);
-                            
-                            if (quantity > 0) {
-                                const product = { name: card.dataset.name, img: JSON.parse(card.dataset.img || '[]'), price: parseFloat(card.dataset.price || '0') };
-                                Store.addProduct(product, quantity);
-                                UI.updateCartCounter();
-                                UI.showToast(`<i class="fas fa-check-circle"></i> ¡Agregaste ${quantity} ${product.name}!`);
-                                if(quantityInput) quantityInput.value = 0;
-                            } else {
-                                UI.showToast(`<i class="fas fa-exclamation-circle"></i> Elige una cantidad primero`);
-                            }
                         } else if (e.target.matches('.quantity-btn')) {
                             const input = card.querySelector('.quantity-input');
                             if(input){
                                 let currentValue = parseInt(input.value, 10);
-                                if (e.target.matches('.increase-qty')) input.value = currentValue + 1;
-                                else if (e.target.matches('.decrease-qty') && currentValue > 0) input.value = currentValue - 1;
+                                const productName = card.dataset.name;
+                                const productPrice = parseFloat(card.dataset.price || '0');
+                                const productImg = JSON.parse(card.dataset.img || '[]');
+                                
+                                const productObj = { name: productName, price: productPrice, img: productImg };
+
+                                if (e.target.matches('.increase-qty')) {
+                                    input.value = currentValue + 1;
+                                    Store.addProduct(productObj, 1);
+                                    UI.updateCartCounter();
+                                    UI.showToast(`<i class="fas fa-cart-plus"></i> Añadido: ${productName}`);
+                                } 
+                                else if (e.target.matches('.decrease-qty') && currentValue > 0) {
+                                    input.value = currentValue - 1;
+                                    const itemInCart = Store.getProductInCart(productName);
+                                    if (itemInCart) {
+                                        Store.updateQuantity(productName, itemInCart.quantity - 1);
+                                    }
+                                    UI.updateCartCounter();
+                                }
                             }
                         }
                     }
@@ -870,7 +994,6 @@
                     }
                 });
 
-                // Actualiza dinámicamente el total al tipear por teclado en el input
                 UI.elements.cartModal.addEventListener('input', (e) => {
                     if (e.target.matches('.quantity-input[name="cart-quantity"]')) {
                         const cartItem = e.target.closest('.cart-item');
