@@ -145,28 +145,11 @@
             color: #fff !important;
         }
 
-        /* Estilización premium con sombra adaptativa para el botón de Realizar Pedido */
-        #checkoutBtn {
-            background: #25D366 !important;
-            color: white !important;
-            font-weight: bold;
-            border-radius: 8px;
-            padding: 12px 24px;
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
-            transition: transform 0.2s, background 0.2s;
-        }
-
-        #checkoutBtn:hover {
-            background: #20ba5a !important;
-            transform: translateY(-1px);
-            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35);
-        }
-
-        /* 🚀 INTERFAZ V3: Fondo gris claro de alto contraste con borde definido amarillo oro para máxima visibilidad */
+        /* INTERFAZ DESKTOP: Controles estándar del catálogo principal */
         .card-actions .quantity-selector {
             display: flex;
             align-items: center;
-            border: 2px solid #d6a100; /* Borde más nítido con el color de tus títulos */
+            border: 2px solid #d6a100; 
             border-radius: 6px;
             overflow: hidden;
             background: #fff;
@@ -175,8 +158,8 @@
         }
 
         .card-actions .quantity-btn {
-            background: #f1f3f5; /* Fondo gris claro suave para que los botones contrasten y se noten */
-            color: #d6a100;      /* Símbolos en Amarillo Oro nítido */
+            background: #f1f3f5; 
+            color: #d6a100;      
             border: none;
             width: 34px;
             height: 34px;
@@ -189,7 +172,6 @@
             transition: all 0.2s ease;
         }
 
-        /* Inversión interactiva al posicionar el cursor o pulsar */
         .card-actions .quantity-btn:hover {
             background: #d6a100; 
             color: #ffffff;      
@@ -205,6 +187,77 @@
             color: #2d2d2d;      
             outline: none;
             background: #fff;
+        }
+
+        /* 🚀 OPTIMIZACIONES EXCLUSIVAS PARA PANTALLAS MÓVILES */
+        @media (max-width: 768px) {
+            /* Oculta la descripción corta en celulares para evitar tarjetas alargadas */
+            .card .description {
+                display: none !important;
+            }
+
+            /* Homogeneiza la altura de los títulos para que la grilla quede simétrica */
+            .card h3 {
+                min-height: 42px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 0.95rem !important;
+                margin-bottom: 8px;
+            }
+
+            /* Margen controlado para el precio */
+            .card-price {
+                margin-top: 5px !important;
+                margin-bottom: 15px !important;
+            }
+
+            /* Estructura ergonómica para las píldoras de cantidad en el catálogo móvil */
+            .card-actions {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                gap: 6px !important;
+            }
+
+            .card-actions .quantity-selector {
+                max-width: 100% !important; 
+                height: 36px;
+                border: 2px solid #d6a100;
+            }
+
+            .card-actions .quantity-btn {
+                width: 32px; 
+                height: 36px;
+                font-size: 1.2rem;
+                background: #f1f3f5; 
+            }
+
+            .card-actions .quantity-input {
+                flex-grow: 1;
+                height: 36px;
+                font-size: 1rem;
+            }
+
+            /* Márgenes de respiración para evitar solapamientos con botones flotantes */
+            .whatsapp-direct-btn {
+                bottom: 20px !important;
+                left: 20px !important;
+                z-index: 999;
+            }
+
+            .cart-btn {
+                bottom: 20px !important;
+                right: 20px !important;
+                z-index: 999;
+            }
+            
+            #product-sections-container {
+                padding-bottom: 90px !important;
+            }
         }
     </style>
 </head>
@@ -225,14 +278,8 @@
              data-link="#infusiones-section" 
              data-text="Ver Yerba Mate y Hierbas"
              alt="Yerba Mate Campo">
-        
-        <img src="https://i.ibb.co/GfxhJ1GT/live-kombu.jpg" 
-             loading="lazy"
-             data-link="#bebidas-section" 
-             data-text="Ver Kombuchas"
-             alt="Kombucha Live">
-        
-        <img src="https://i.imgur.com/fVTyYtYm/crema-de-mani.webp" 
+      
+        <img src="https://m.media-amazon.com/images/I/81sod4Fq+QL.jpg" 
              loading="lazy"
              data-link="#despensa-section" 
              data-text="Ver Cremas de Maní"
@@ -520,7 +567,6 @@
                     imageGalleryHtml = '<div class="image-wrapper"><img src="' + mainImage + '" alt="' + safeName + '" loading="lazy" decoding="async"></div>';
                 }
 
-                // 🚀 CORRECCIÓN DE SINTAXIS: Se eliminó la comilla simple suelta que rompía el string literal
                 return '<div class="card fade-in ' + stockClass + '" data-name="' + safeName + '" data-price="' + parsedPrice + '" data-img=\'' + safeImages + '\'>' +
                        stockBadge +
                        imageGalleryHtml +
