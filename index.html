@@ -718,71 +718,74 @@
     this.elements.productSectionsContainer.innerHTML = sectionsHTML;
 },
             
-         buildMobileMenu() {
-    // 1. Verificación de seguridad por si los grupos no existen en el JSON
+      buildMobileMenu() {
+    // 1. Verificación de seguridad: Validar que existan los datos estructurados en el JSON
     if (!API.data.groups || !Array.isArray(API.data.groups)) {
         console.error("No se pudieron cargar los grupos para el menú móvil.");
         return;
     }
 
-    const container = document.getElementById('mobileMenuLinks');
-    if (!container) return;
+    // CORRECCIÓN KEY: Seleccionar el contenedor real existente en el HTML original
+    const container = document.getElementById('mobile-menu-container');
+    if (!container) {
+        console.error("Error de programación: No se encontró el contenedor #mobile-menu-container en el HTML.");
+        return;
+    }
 
     let html = '';
 
-    // 2. Iterar sobre los grupos dinámicos del JSON
+    // 2. Procesamiento de Grupos dinámicos extraídos de productos.json
     API.data.groups.forEach(group => {
         const categoryIds = group.categories;
 
-        // Filtrar y obtener las categorías reales que pertenecen a este grupo
+        // Mapear e identificar las categorías reales que pertenecen a este grupo específico
         const groupCategories = categoryIds.map(id => 
             API.data.categories.find(c => c.id === id)
         ).filter(item => item !== undefined);
 
-        // Si el grupo tiene categorías válidas, construimos su interfaz móvil
         if (groupCategories.length > 0) {
-            // Ordenamos las categorías alfabéticamente
+            // Ordenamiento alfabético de las categorías del grupo
             groupCategories.sort((a, b) => a.title.localeCompare(b.title));
 
             let categoriesHTML = '';
 
             groupCategories.forEach(cat => {
-                // Caso A: La categoría tiene múltiples subcategorías/marcas
+                // Caso A: La categoría tiene múltiples subcategorías o marcas anidadas
                 if (cat.subcategories && cat.subcategories.length > 1) {
                     const brandsHTML = cat.subcategories
                         .map(brand => `
-                            <a href="#${brand.id}-section" class="mobile-sub-link" onclick="UI.toggleMobileMenu()">
+                            <a href="#${brand.id}-section" class="mobile-sub-link">
                                 ${brand.title}
                             </a>`)
                         .join('');
 
                     categoriesHTML += `
-                        <div class="mobile-category-wrapper">
-                            <button class="mobile-category-btn" onclick="window.toggleSubMenu(this)">
+                        <div class="menu-category-wrapper">
+                            <button class="menu-category-btn" onclick="window.toggleSubMenu(this)">
                                 ${cat.title} <i class="fas fa-chevron-down"></i>
                             </button>
-                            <div class="mobile-brands-container">
+                            <div class="menu-brands-container">
                                 ${brandsHTML}
                             </div>
                         </div>`;
                 } 
-                // Caso B: La categoría tiene solo una subcategoría directa
+                // Caso B: La categoría posee exactamente una subcategoría directa
                 else if (cat.subcategories && cat.subcategories.length === 1) {
                     categoriesHTML += `
-                        <a href="#${cat.subcategories[0].id}-section" class="mobile-category-direct-link" onclick="UI.toggleMobileMenu()">
+                        <a href="#${cat.subcategories[0].id}-section" class="mobile-category-direct-link">
                             ${cat.title}
                         </a>`;
                 } 
-                // Caso C: Categoría limpia sin subcategorías
+                // Caso C: Categoría directa sin subcategorías anidadas
                 else {
                     categoriesHTML += `
-                        <a href="#${cat.id}-section" class="mobile-category-direct-link" onclick="UI.toggleMobileMenu()">
+                        <a href="#${cat.id}-section" class="mobile-category-direct-link">
                             ${cat.title}
                         </a>`;
                 }
             });
 
-            // Inyectamos el bloque del Grupo Principal en el menú móvil
+            // Ensamblar el bloque visual del grupo con sus categorías hijas
             html += `
                 <div class="mobile-group-block">
                     <div class="mobile-group-title">${group.title}</div>
@@ -793,7 +796,8 @@
         }
     });
 
-    container.innerHTML = html;
+    // 3. Inyectar de forma segura el árbol HTML estructurado dentro del panel móvil original
+    container.innerHTML = `<div class="mobile-panel main-panel active">${html}</div>`;
 },
 
             renderAllProducts() {

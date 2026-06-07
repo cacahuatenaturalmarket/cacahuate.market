@@ -1031,13 +1031,18 @@ footer {
     pointer-events: none;
 }
 
-/* --- JERARQUÍA DE GRUPOS EN MÓVIL --- */
+/* ==========================================================================
+   ESTILOS FINALES UNIFICADOS PARA EL MENÚ ACORDEÓN MÓVIL
+   ========================================================================== */
+
+/* 1. Bloques por cada Grupo (Almacén, Dulces, etc.) */
 .mobile-group-block {
     margin-bottom: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     padding-bottom: 10px;
 }
 
+/* 2. Títulos de los Grupos Principales */
 .mobile-group-title {
     font-size: 0.85rem;
     text-transform: uppercase;
@@ -1049,38 +1054,66 @@ footer {
     opacity: 0.9;
 }
 
-.mobile-category-direct-link, 
-.mobile-category-btn {
+/* 3. IGUALACIÓN TOTAL: Botones con acordeón, enlaces directos y enlaces globales de primer nivel */
+.menu-category-btn, 
+.mobile-category-direct-link,
+.mobile-panel a {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     background: none;
     border: none;
-    color: var(--texto-claro);
-    padding: 10px 15px;
+    color: var(--naranja-cacahuate) !important; /* Forzamos el color corporativo */
+    padding: 12px 16px !important;              /* Mismo espacio de toque para todos */
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.05rem !important;               /* Sincronizamos el tamaño de letra exacto */
+    font-weight: 700 !important;                 /* Mismo grosor (Negrita) */
+    line-height: 1.2 !important;
     text-decoration: none;
     box-sizing: border-box;
     font-family: inherit;
     cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.mobile-brands-container {
+/* 4. Efecto de presión o selección para todo el primer nivel */
+.menu-category-btn:hover,
+.mobile-category-direct-link:hover,
+.mobile-panel a:hover {
+    background-color: var(--fondo-tarjeta) !important;
+    color: var(--naranja-cacahuate) !important;
+}
+
+/* 5. Contenedor oculto de marcas (Segundo Nivel) */
+.mobile-brands-container,
+.menu-brands-container {
     display: none;
     background-color: rgba(0, 0, 0, 0.2);
-    padding-left: 15px;
 }
 
-.mobile-brands-container.show {
+.mobile-brands-container.show,
+.menu-brands-container.show {
     display: block;
 }
 
-.mobile-sub-link {
+/* 6. Sub-enlaces de Marcas / Variedades (Hijos de los acordeones) */
+.mobile-sub-link,
+.brand-link {
     display: block;
-    padding: 8px 15px;
-    color: var(--marron-oscuro-texto);
+    font-size: 0.95rem !important;            /* Letra sutilmente más chica para jerarquía */
+    font-weight: 400 !important;              /* Letra normal (sin negrita) */
+    color: var(--marron-oscuro-texto) !important;
+    padding: 10px 16px 10px 35px !important;  /* Sangría izquierda para orden visual */
     text-decoration: none;
-    font-size: 0.9rem;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.mobile-sub-link:hover,
+.brand-link:hover {
+    color: var(--blanco-puro) !important;
+    border-left: 3px solid var(--naranja-cacahuate);
+    background-color: rgba(255, 255, 255, 0.05) !important;
 }
