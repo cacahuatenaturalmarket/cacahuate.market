@@ -218,7 +218,7 @@ header {
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     display: flex;
     align-items: center;
-    position: relative; /* Ajuste para que la barra quede por encima del contenido al desplegar */
+    position: relative;
     z-index: 1002; 
 }
 
@@ -231,7 +231,7 @@ header {
 .search-bar-container input {
     flex-grow: 1;
     padding: 12px 15px;
-    padding-right: 40px; /* Espacio extra para la X */
+    padding-right: 40px;
     border: none;
     border-radius: 8px;
     font-size: 1.1em;
@@ -289,6 +289,7 @@ header {
     transition: transform 0.4s, box-shadow 0.4s;
     display: flex;
     flex-direction: column;
+    position: relative !important;
 }
 
 .card:hover {
@@ -296,18 +297,13 @@ header {
     box-shadow: 0 18px 40px rgba(0,0,0,0.55);
 }
 
-/* --- OPTIMIZACIÓN: Contenedores de imagen (Ajustado para llenar todo el espacio) --- */
-
 .card .image-wrapper, 
 .card .main-image-container,
 .card .image-gallery {
     width: 100%;
     aspect-ratio: 1 / 1; 
-    background-color: var(--blanco-puro); /* Fondo blanco para fusionarse con la imagen */
-    
-    /* CAMBIO 1: Quitamos el padding para que la imagen toque los bordes */
+    background-color: var(--blanco-puro);
     padding: 0; 
-    
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -317,18 +313,13 @@ header {
     cursor: pointer;
 }
 
-/* CAMBIO 2: Ajustamos la imagen para que cubra mejor */
 .card .main-image, 
 .card .image-wrapper img {
     z-index: 1; 
     position: relative;
-    width: 100%;      /* Forzamos ancho completo */
-    height: 100%;     /* Forzamos alto completo */
-    
-    /* 'contain' asegura que se vea todo el producto sin cortarse.
-       Como el fondo del contenedor ya es blanco, se fusionará perfectamente. */
+    width: 100%;      
+    height: 100%;     
     object-fit: contain; 
-    
     transition: transform 0.3s ease;
 }
 
@@ -337,7 +328,6 @@ header {
     transform: scale(1.05);
 }
 
-/* 4. Definición de la animación de movimiento */
 @keyframes loading {
     0% { background-position: 200% 0; }
     100% { background-position: -200% 0; }
@@ -380,12 +370,12 @@ header {
     font-family: 'Merriweather', serif;
     color: var(--naranja-cacahuate);
     margin: 0 0 15px 0;
-    font-size: 1.6em; /* Ajustado en media queries para móviles */
+    font-size: 1.6em;
 }
 
 .card .description {
     color: var(--marron-oscuro-texto);
-    font-size: 1em; /* Ajustado en media queries para móviles */
+    font-size: 1em;
     margin-bottom: 20px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -395,11 +385,14 @@ header {
     min-height: 75px;
 }
 
+/* Nuevo contenedor flexible interno para el renglón de acciones de la tarjeta */
 .card .card-actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: auto;
+    width: 100%;
+    gap: 10px;
 }
 
 .card .add-to-cart-btn {
@@ -419,6 +412,7 @@ header {
     font-size: 1.5em;
     cursor: pointer;
     transition: transform 0.3s, color 0.3s;
+    flex-shrink: 0;
 }
 
 .card .details-btn:hover {
@@ -430,6 +424,7 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-shrink: 0;
 }
 
 .card .quantity-btn {
@@ -565,9 +560,11 @@ header {
     border-radius: 10px;
 }
 
+/* Botones flotantes inferiores optimizados con área segura */
 .cart-btn {
     position: fixed;
-    bottom: 20px; right: 20px;
+    bottom: calc(20px + env(safe-area-inset-bottom)); 
+    right: 20px;
     background-color: var(--naranja-cacahuate);
     color: var(--fondo-oscuro);
     width: 60px; height: 60px;
@@ -632,7 +629,8 @@ header {
 
 .whatsapp-direct-btn {
     position: fixed;
-    bottom: 20px; left: 20px;
+    bottom: calc(20px + env(safe-area-inset-bottom)); 
+    left: 20px;
     background-color: var(--verde-whatsapp);
     color: var(--blanco-puro);
     width: 60px; height: 60px;
@@ -655,6 +653,7 @@ footer {
     text-align: center;
     padding: 40px 20px;
     margin-top: 60px;
+    padding-bottom: calc(40px + env(safe-area-inset-bottom));
 }
 
 #loading-indicator {
@@ -747,7 +746,7 @@ footer {
 .toast-notification.show {
     visibility: visible;
     opacity: 1;
-    bottom: 50px;
+    bottom: calc(50px + env(safe-area-inset-bottom));
 }
 
 .section-description {
@@ -755,6 +754,7 @@ footer {
     color: var(--naranja-cacahuate) !important;
 }
 
+/* --- MEDIAS QUERIES ADAPTATIVAS --- */
 @media (max-width: 1200px) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
 
 @media (max-width: 992px) {
@@ -775,7 +775,7 @@ footer {
         flex-direction: column;
         align-items: stretch;
         overflow-y: auto;
-        padding: 10px 0 80px 0;
+        padding: 10px 0 calc(80px + env(safe-area-inset-bottom)) 0;
         box-sizing: border-box;
         -webkit-overflow-scrolling: touch;
     }
@@ -817,6 +817,30 @@ footer {
     .logo-container { max-width: 180px; }
     .cards-grid { padding: 25px; gap: 30px; }
 
+    /* Forzamos un respiro al final de la grilla de productos para evitar superposiciones */
+    main, .cards-grid {
+        padding-bottom: calc(100px + env(safe-area-inset-bottom)) !important;
+    }
+
+    /* Solución quirúrgica: Evita que los precios se corten o dividan */
+    .card h3 { 
+        font-size: 1.3em; 
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    /* Si inyectas el precio como texto inline o span dentro del h3 o caja */
+    .card h3 span.price-tag,
+    .product-price-container,
+    .card h3 + p + div {
+        font-size: 1.15rem !important;
+        white-space: nowrap !important;
+        flex-shrink: 0 !important;
+        color: var(--naranja-cacahuate);
+        font-weight: 700;
+    }
+
     .card .card-actions {
         flex-wrap: wrap;
         gap: 12px;
@@ -830,10 +854,15 @@ footer {
 
     .card .add-to-cart-btn {
         flex-grow: 1;
+        width: 100%;
     }
     
-    .card h3 { font-size: 1.4em; }
     .card .description { font-size: 0.95em; min-height: 70px; }
+    
+    /* Modales responsivos con margen inferior seguro */
+    .modal-content {
+        padding-bottom: calc(30px + env(safe-area-inset-bottom));
+    }
 }
 
 /* --- MENÚ MÓVIL (PANELES) --- */
@@ -868,7 +897,7 @@ footer {
     width: 100%;
     height: 100%;
     overflow-y: auto;
-    padding: 10px 0 80px 0;
+    padding: 10px 0 calc(80px + env(safe-area-inset-bottom)) 0;
     box-sizing: border-box;
     transition: transform 0.3s ease-out;
 }
@@ -911,14 +940,12 @@ footer {
     margin: 0;
     border-bottom: 1px solid var(--fondo-claro-secundario);
 }
-/* --- ESTILOS PARA MENÚ NIVEL 4 (ACORDEÓN - MARCAS) --- */
 
-/* Contenedor del botón de categoría */
+/* --- ESTILOS PARA MENÚ ACORDEÓN --- */
 .menu-category-wrapper {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Botón de la Categoría (Ej: Alfajores) */
 .menu-category-btn {
     background: none;
     border: none;
@@ -940,35 +967,30 @@ footer {
     background-color: var(--fondo-tarjeta);
 }
 
-/* Flechita del botón */
 .menu-category-btn i {
     font-size: 0.8em;
     transition: transform 0.3s;
 }
 
-/* Rotar flecha cuando está abierto (Clase .active se agrega con JS) */
 .menu-category-btn.active i {
     transform: rotate(180deg);
 }
 
-/* Contenedor de las marcas (Oculto por defecto) */
 .menu-brands-container {
     display: none; 
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Mostrar contenedor (Clase .show se agrega con JS) */
 .menu-brands-container.show {
     display: block; 
 }
 
-/* Links de las marcas individuales (Ej: Ceral, Cerro Azul) */
 .brand-link {
-    padding: 8px 16px 8px 35px !important; /* Sangría izquierda extra para jerarquía */
+    padding: 8px 16px 8px 35px !important;
     font-size: 0.9em !important;
     color: var(--marron-oscuro-texto) !important;
     border-left: 3px solid transparent;
-    display: block; /* Asegura que ocupe el ancho */
+    display: block;
     text-decoration: none;
 }
 
@@ -977,38 +999,30 @@ footer {
     border-left: 3px solid var(--naranja-cacahuate);
     background-color: rgba(255, 255, 255, 0.05) !important;
 }
-/* --- ESTILOS SIN STOCK (Versión Reforzada para Móvil) --- */
 
-/* 1. Aseguramos que la carta sea el punto de referencia */
-.card {
-    position: relative !important;
-}
-
-/* 2. El Cartel Rojo */
+/* --- ESTILOS SIN STOCK --- */
 .out-of-stock-badge {
     position: absolute;
-    top: 5px;  /* Más pegado a la esquina */
-    right: 5px; /* Más pegado a la esquina */
+    top: 5px;  
+    right: 5px; 
     background-color: #e74c3c;
     color: white;
-    padding: 3px 8px; /* Un poco más chico el relleno */
+    padding: 3px 8px; 
     border-radius: 4px;
-    font-size: 0.75rem; /* Letra un poco más chica */
+    font-size: 0.75rem; 
     font-weight: bold;
-    z-index: 100; /* Nos aseguramos que quede por encima de todo */
+    z-index: 100; 
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-/* 3. La Tonalidad Grisácea (Apicada directamente a las imágenes) */
 .card.no-stock .image-wrapper img,
 .card.no-stock .main-image-container img {
-    filter: grayscale(85%) !important; /* Forzamos el gris */
-    opacity: 0.8 !important; /* Un poco de transparencia a la imagen */
+    filter: grayscale(85%) !important; 
+    opacity: 0.8 !important; 
 }
 
-/* 4. Opacidad general de la carta y bloqueo del botón */
 .card.no-stock {
-    opacity: 0.9; /* Hacemos toda la carta sutilmente más transparente */
+    opacity: 0.9; 
 }
 
 .card.no-stock .add-to-cart-btn {
@@ -1017,7 +1031,7 @@ footer {
     pointer-events: none;
 }
 
-/* Estilos para la jerarquía de grupos en el menú del celular */
+/* --- JERARQUÍA DE GRUPOS EN MÓVIL --- */
 .mobile-group-block {
     margin-bottom: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
