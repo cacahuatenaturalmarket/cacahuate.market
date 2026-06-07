@@ -1,5 +1,37 @@
 {
   "phoneNumber": "5491133974550",
+  "groups": [
+    {
+      "id": "almacen-natural",
+      "title": "Almacén Natural",
+      "categories": ["aceites", "alimentos", "cafe", "especias-y-condimentos", "fideos-integrales", "harinas", "legumbres-y-cereales", "panificados", "premezclas-rebozadores", "salsas-aderezos-organicos", "yerba-mate"]
+    },
+    {
+      "id": "dulces-reposteria",
+      "title": "Dulces y Repostería",
+      "categories": ["alfajores", "budines", "caramelos", "chocolates", "edulcorantes", "galletas", "miel", "untables", "brownie-y-bocaditos", "reposteria"]
+    },
+    {
+      "id": "snacks-frutos",
+      "title": "Snacks y Frutos",
+      "categories": ["barritas", "frutas", "frutos-secos", "mix-frutos-secos", "snacks"]
+    },
+    {
+      "id": "salud-bienestar",
+      "title": "Salud y Bienestar",
+      "categories": ["suplementos", "tinturas", "probioticos", "yuyos"]
+    },
+    {
+      "id": "frescos-bebidas",
+      "title": "Frescos y Bebidas",
+      "categories": ["leches-bebidas-vegetales", "refrigerados-veganos"]
+    },
+    {
+      "id": "higiene-cosmetica",
+      "title": "Higiene y Cosmética",
+      "categories": ["cuidado-personal", "pastas-dentales"]
+    }
+  ],
   "categories": [
     {
       "id": "aceites",

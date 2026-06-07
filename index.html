@@ -627,154 +627,174 @@
                 this.elements.cartCounter.style.display = totalItems > 0 ? 'flex' : 'none';
             },
 
-            renderLayout() {
-                const CATEGORY_GROUPS = {
-                    "Almacén Natural": ["aceites", "alimentos", "cafe", "especias-y-condimentos", "fideos-integrales", "harinas", "legumbres-y-cereales", "panificados", "premezclas-rebozadores", "salsas-aderezos-organicos", "yerba-mate"],
-                    "Dulces y Repostería": ["alfajores", "budines", "caramelos", "chocolates", "edulcorantes", "galletas", "miel", "untables", "brownie-y-bocaditos", "reposteria"],
-                    "Snacks y Frutos": ["barritas", "frutas", "frutos-secos", "mix-frutos-secos", "snacks"],
-                    "Salud y Bienestar": ["suplementos", "tinturas", "probioticos", "yuyos"],
-                    "Frescos y Bebidas": ["leches-bebidas-vegetales", "refrigerados-veganos"],
-                    "Higiene y Cosmética": ["cuidado-personal", "pastas-dentales"]
-                };
+           renderLayout() {
+    // 1. Verificación de seguridad por si el JSON no tiene la propiedad 'groups' definida
+    if (!API.data.groups || !Array.isArray(API.data.groups)) {
+        console.error("La estructura de grupos no está definida en productos.json");
+        return;
+    }
 
-                let navLinksHTML = '';
-                let sectionsHTML = '';
+    let navLinksHTML = '';
+    let sectionsHTML = '';
 
-                const createSectionString = (id, title, desc) => {
-                    return `<section id="${id}-section" class="content-section fade-in">
-                                <h1>${title}</h1>
-                                <p class="section-description">${desc || ''}</p>
-                            </section>
-                            <div id="${id}-grid" class="cards-grid"></div>`;
-                };
+    // Función auxiliar para generar los contenedores HTML de las secciones del catálogo
+    const createSectionString = (id, title, desc) => {
+        return `<section id="${id}-section" class="content-section fade-in">
+                    <h1>${title}</h1>
+                    <p class="section-description">${desc || ''}</p>
+                </section>
+                <div id="${id}-grid" class="cards-grid"></div>`;
+    };
 
-                for (const [groupName, categoryIds] of Object.entries(CATEGORY_GROUPS)) {
-                    const groupCategories = categoryIds.map(id => 
-                        API.data.categories.find(c => c.id === id)
-                    ).filter(item => item !== undefined);
+    // 2. Procesar y renderizar el Menú de Navegación dinámicamente desde el JSON
+    API.data.groups.forEach(group => {
+        const groupName = group.title;
+        const categoryIds = group.categories;
 
-                    if (groupCategories.length > 0) {
-                        groupCategories.sort((a, b) => a.title.localeCompare(b.title));
+        // Mapeamos e identificamos las categorías que pertenecen a este grupo específico
+        const groupCategories = categoryIds.map(id => 
+            API.data.categories.find(c => c.id === id)
+        ).filter(item => item !== undefined);
 
-                        let dropdownContentHTML = '';
+        if (groupCategories.length > 0) {
+            // Ordenamos las categorías de este grupo alfabéticamente por su título
+            groupCategories.sort((a, b) => a.title.localeCompare(b.title));
 
-                        groupCategories.forEach(cat => {
-                            if (cat.subcategories && cat.subcategories.length > 1) {
-                                const brandsLinks = cat.subcategories
-                                    .map(brand => `<a href="#${brand.id}-section" class="brand-link">${brand.title}</a>`)
-                                    .join('');
+            let dropdownContentHTML = '';
 
-                                dropdownContentHTML += `
-                                    <div class="menu-category-wrapper">
-                                        <button class="menu-category-btn" onclick="window.toggleSubMenu(this)">
-                                            ${cat.title} <i class="fas fa-chevron-down"></i>
-                                        </button>
-                                        <div class="menu-brands-container">
-                                            ${brandsLinks}
-                                        </div>
-                                    </div>`;
-                            } 
-                            else if (cat.subcategories && cat.subcategories.length === 1) {
-                                dropdownContentHTML += `<a href="#${cat.subcategories[0].id}-section" class="menu-category-direct-link">${cat.title}</a>`;
-                            } 
-                            else {
-                                dropdownContentHTML += `<a href="#${cat.id}-section" class="menu-category-direct-link">${cat.title}</a>`;
-                            }
-                        });
+            groupCategories.forEach(cat => {
+                // Caso A: Si la categoría contiene múltiples marcas/subcategorías
+                if (cat.subcategories && cat.subcategories.length > 1) {
+                    const brandsLinks = cat.subcategories
+                        .map(brand => `<a href="#${brand.id}-section" class="brand-link">${brand.title}</a>`)
+                        .join('');
 
-                        navLinksHTML += `<div class="dropdown">
-                                            <button class="dropbtn">
-                                                ${groupName} <i class="fas fa-caret-down"></i>
-                                            </button>
-                                            <div class="dropdown-content">
-                                                ${dropdownContentHTML}
-                                            </div>
-                                         </div>`;
-                    }
+                    dropdownContentHTML += `
+                        <div class="menu-category-wrapper">
+                            <button class="menu-category-btn" onclick="window.toggleSubMenu(this)">
+                                ${cat.title} <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="menu-brands-container">
+                                ${brandsLinks}
+                            </div>
+                        </div>`;
+                } 
+                // Caso B: Si tiene exactamente una subcategoría directa
+                else if (cat.subcategories && cat.subcategories.length === 1) {
+                    dropdownContentHTML += `<a href="#${cat.subcategories[0].id}-section" class="menu-category-direct-link">${cat.title}</a>`;
+                } 
+                // Caso C: Si no tiene ninguna subcategoría anidada
+                else {
+                    dropdownContentHTML += `<a href="#${cat.id}-section" class="menu-category-direct-link">${cat.title}</a>`;
                 }
+            });
 
-                API.data.categories.forEach(category => {
-                    if (category.subcategories && category.subcategories.length > 0) {
-                        category.subcategories.sort((a, b) => a.title.localeCompare(b.title));
-                        category.subcategories.forEach(sub => {
-                            sectionsHTML += createSectionString(sub.id, sub.title, sub.desc);
-                        });
-                    } else {
-                        sectionsHTML += createSectionString(category.id, category.title, category.desc);
-                    }
-                });
+            // Inyección del bloque desplegable (Dropdown) en la barra de navegación superior
+            navLinksHTML += `<div class="dropdown">
+                                <button class="dropbtn">
+                                    ${groupName} <i class="fas fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    ${dropdownContentHTML}
+                                </div>
+                             </div>`;
+        }
+    });
 
-                this.elements.navLinks.innerHTML = navLinksHTML;
-                this.elements.productSectionsContainer.innerHTML = sectionsHTML;
-            },
+    // 3. Generar la estructura física de las secciones y grillas de productos en el cuerpo de la página
+    API.data.categories.forEach(category => {
+        if (category.subcategories && category.subcategories.length > 0) {
+            category.subcategories.sort((a, b) => a.title.localeCompare(b.title));
+            category.subcategories.forEach(sub => {
+                sectionsHTML += createSectionString(sub.id, sub.title, sub.desc);
+            });
+        } else {
+            sectionsHTML += createSectionString(category.id, category.title, category.desc);
+        }
+    });
+
+    // 4. Volcar el HTML generado de forma eficiente en los contenedores correspondientes del DOM
+    this.elements.navLinks.innerHTML = navLinksHTML;
+    this.elements.productSectionsContainer.innerHTML = sectionsHTML;
+},
             
          buildMobileMenu() {
-                const container = document.getElementById('mobile-menu-container');
-                if (!container) return;
+    // 1. Verificación de seguridad por si los grupos no existen en el JSON
+    if (!API.data.groups || !Array.isArray(API.data.groups)) {
+        console.error("No se pudieron cargar los grupos para el menú móvil.");
+        return;
+    }
 
-                const CATEGORY_GROUPS = {
-                    "Almacén Natural": ["aceites", "alimentos", "cafe", "especias-y-condimentos", "fideos-integrales", "harinas", "legumbres-y-cereales", "panificados", "premezclas-rebozadores", "salsas-aderezos-organicos", "yerba-mate"],
-                    "Dulces y Repostería": ["alfajores", "budines", "caramelos", "chocolates", "edulcorantes", "galletas", "miel", "untables", "brownie-y-bocaditos", "reposteria"],
-                    "Snacks y Frutos": ["barritas", "frutas", "frutos-secos", "mix-frutos-secos", "snacks"],
-                    "Salud y Bienestar": ["suplementos", "tinturas", "probioticos", "yuyos"],
-                    "Frescos y Congelados": ["leches-bebidas-vegetales", "refrigerados-veganos"],
-                    "Cuidado Personal": ["cuidado-personal", "pastas-dentales"]
-                };
+    const container = document.getElementById('mobileMenuLinks');
+    if (!container) return;
 
-                let mainPanelHTML = `<div class="mobile-panel main-panel active">`;
-                let subPanelsHTML = '';
+    let html = '';
 
-                mainPanelHTML += `<div class="mobile-panel-header">Categorías</div>`;
+    // 2. Iterar sobre los grupos dinámicos del JSON
+    API.data.groups.forEach(group => {
+        const categoryIds = group.categories;
 
-                let groupIndex = 0;
-                for (const [groupName, categoryIds] of Object.entries(CATEGORY_GROUPS)) {
-                    groupIndex++;
-                    const groupId = `group-${groupIndex}`;
-                    
-                    const groupCategories = categoryIds.map(id => 
-                        API.data.categories.find(c => c.id === id)
-                    ).filter(item => item !== undefined);
+        // Filtrar y obtener las categorías reales que pertenecen a este grupo
+        const groupCategories = categoryIds.map(id => 
+            API.data.categories.find(c => c.id === id)
+        ).filter(item => item !== undefined);
 
-                    if (groupCategories.length > 0) {
-                        groupCategories.sort((a, b) => a.title.localeCompare(b.title));
+        // Si el grupo tiene categorías válidas, construimos su interfaz móvil
+        if (groupCategories.length > 0) {
+            // Ordenamos las categorías alfabéticamente
+            groupCategories.sort((a, b) => a.title.localeCompare(b.title));
 
-                        mainPanelHTML += `<a href="#" class="mobile-nav-trigger" data-target-panel="${groupId}">
-                                            ${groupName} <i class="fas fa-chevron-right"></i>
-                                          </a>`;
+            let categoriesHTML = '';
 
-                        let subPanelContent = '';
-                        groupCategories.forEach(cat => {
-                            if (cat.subcategories && cat.subcategories.length > 1) {
-                                subPanelContent += `<div class="mobile-category-group">
-                                                        <a href="#${cat.id}-section" class="mobile-nav-link strong">${cat.title}</a>`;
-                                
-                                cat.subcategories.forEach(brand => {
-                                     subPanelContent += `<a href="#${brand.id}-section" class="mobile-nav-link brand-indent" style="padding-left: 35px; font-size: 0.9em; color: #ccc;">- ${brand.title}</a>`;
-                                });
-                                
-                                subPanelContent += `</div>`;
-                            } 
-                            else if (cat.subcategories && cat.subcategories.length === 1) {
-                                subPanelContent += `<a href="#${cat.subcategories[0].id}-section" class="mobile-nav-link">${cat.title}</a>`;
-                            } 
-                            else {
-                                subPanelContent += `<a href="#${cat.id}-section" class="mobile-nav-link">${cat.title}</a>`;
-                            }
-                        });
+            groupCategories.forEach(cat => {
+                // Caso A: La categoría tiene múltiples subcategorías/marcas
+                if (cat.subcategories && cat.subcategories.length > 1) {
+                    const brandsHTML = cat.subcategories
+                        .map(brand => `
+                            <a href="#${brand.id}-section" class="mobile-sub-link" onclick="UI.toggleMobileMenu()">
+                                ${brand.title}
+                            </a>`)
+                        .join('');
 
-                        subPanelsHTML += `<div class="mobile-panel sub-panel" id="${groupId}">
-                                            <a href="#" class="mobile-nav-back">
-                                                <i class="fas fa-chevron-left"></i> Volver al Menú
-                                            </a>
-                                            <h4 class="mobile-panel-title">${groupName}</h4>
-                                            ${subPanelContent}
-                                          </div>`;
-                    }
+                    categoriesHTML += `
+                        <div class="mobile-category-wrapper">
+                            <button class="mobile-category-btn" onclick="window.toggleSubMenu(this)">
+                                ${cat.title} <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="mobile-brands-container">
+                                ${brandsHTML}
+                            </div>
+                        </div>`;
+                } 
+                // Caso B: La categoría tiene solo una subcategoría directa
+                else if (cat.subcategories && cat.subcategories.length === 1) {
+                    categoriesHTML += `
+                        <a href="#${cat.subcategories[0].id}-section" class="mobile-category-direct-link" onclick="UI.toggleMobileMenu()">
+                            ${cat.title}
+                        </a>`;
+                } 
+                // Caso C: Categoría limpia sin subcategorías
+                else {
+                    categoriesHTML += `
+                        <a href="#${cat.id}-section" class="mobile-category-direct-link" onclick="UI.toggleMobileMenu()">
+                            ${cat.title}
+                        </a>`;
                 }
+            });
 
-                mainPanelHTML += `</div>`; 
-                container.innerHTML = mainPanelHTML + subPanelsHTML;
-            },
+            // Inyectamos el bloque del Grupo Principal en el menú móvil
+            html += `
+                <div class="mobile-group-block">
+                    <div class="mobile-group-title">${group.title}</div>
+                    <div class="mobile-group-content">
+                        ${categoriesHTML}
+                    </div>
+                </div>`;
+        }
+    });
+
+    container.innerHTML = html;
+},
 
             renderAllProducts() {
                 for (const categoryId in API.data.products) {
