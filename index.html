@@ -19,12 +19,12 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://marketcacahuate.com.ar/">
     <meta property="og:title" content="DIETÉTICA CACAHUATE NATURAL MARKET">
-    <meta property="og:description" content="Explora nuestro catálogo completo de productos naturales y saludables. Pide por WhatsApp y retira en Lanús o recibe en tu domicilio.">
+    <meta property="og:description" content="Explora nuestro catálogo completo de productos naturales and saludables. Pide por WhatsApp y retira en Lanús o recibe en tu domicilio.">
     <meta property="og:image" content="https://i.imgur.com/BCGbBgz.jpeg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="http://marketcacahuate.com.ar/">
     <meta name="twitter:title" content="CACAHUATE NATURAL MARKET">
-    <meta name="twitter:description" content="Tu tienda natural en Lanús. Suplementos, alimentos orgánicos and más.">
+    <meta name="twitter:description" content="Tu tienda natural en Lanús. Suplementos, alimentos orgánicos y más.">
     <meta name="twitter:image" content="https://i.imgur.com/BCGbBgz.jpeg">
 
     <meta name="google-site-verification" content="k2yIgNPPMwE0v0NtmsjT_UuMBEoP5_I35zSSHykV0h0" />
@@ -630,7 +630,6 @@
             },
 
            renderLayout() {
-    // 1. Verificación de seguridad por si el JSON no tiene la propiedad 'groups' definida
     if (!API.data.groups || !Array.isArray(API.data.groups)) {
         console.error("La estructura de grupos no está definida en productos.json");
         return;
@@ -639,7 +638,6 @@
     let navLinksHTML = '';
     let sectionsHTML = '';
 
-    // Función auxiliar para generar los contenedores HTML de las secciones del catálogo
     const createSectionString = (id, title, desc) => {
         return `<section id="${id}-section" class="content-section fade-in">
                     <h1>${title}</h1>
@@ -648,24 +646,20 @@
                 <div id="${id}-grid" class="cards-grid"></div>`;
     };
 
-    // 2. Procesar y renderizar el Menú de Navegación dinámicamente desde el JSON
     API.data.groups.forEach(group => {
         const groupName = group.title;
         const categoryIds = group.categories;
 
-        // Mapeamos e identificamos las categorías que pertenecen a este grupo específico
         const groupCategories = categoryIds.map(id => 
             API.data.categories.find(c => c.id === id)
         ).filter(item => item !== undefined);
 
         if (groupCategories.length > 0) {
-            // Ordenamos las categorías de este grupo alfabéticamente por su título
             groupCategories.sort((a, b) => a.title.localeCompare(b.title));
 
             let dropdownContentHTML = '';
 
             groupCategories.forEach(cat => {
-                // Caso A: Si la categoría contiene múltiples marcas/subcategorías
                 if (cat.subcategories && cat.subcategories.length > 1) {
                     const brandsLinks = cat.subcategories
                         .map(brand => `<a href="#${brand.id}-section" class="brand-link">${brand.title}</a>`)
@@ -681,17 +675,14 @@
                             </div>
                         </div>`;
                 } 
-                // Caso B: Si tiene exactamente una subcategoría directa
                 else if (cat.subcategories && cat.subcategories.length === 1) {
                     dropdownContentHTML += `<a href="#${cat.subcategories[0].id}-section" class="menu-category-direct-link">${cat.title}</a>`;
                 } 
-                // Caso C: Si no tiene ninguna subcategoría anidada
                 else {
                     dropdownContentHTML += `<a href="#${cat.id}-section" class="menu-category-direct-link">${cat.title}</a>`;
                 }
             });
 
-            // Inyección del bloque desplegable (Dropdown) en la barra de navegación superior
             navLinksHTML += `<div class="dropdown">
                                 <button class="dropbtn">
                                     ${groupName} <i class="fas fa-caret-down"></i>
@@ -703,7 +694,6 @@
         }
     });
 
-    // 3. Generar la estructura física de las secciones y grillas de productos en el cuerpo de la página
     API.data.categories.forEach(category => {
         if (category.subcategories && category.subcategories.length > 0) {
             category.subcategories.sort((a, b) => a.title.localeCompare(b.title));
@@ -715,19 +705,16 @@
         }
     });
 
-    // 4. Volcar el HTML generado de forma eficiente en los contenedores correspondientes del DOM
     this.elements.navLinks.innerHTML = navLinksHTML;
     this.elements.productSectionsContainer.innerHTML = sectionsHTML;
 },
             
-      buildMobileMenu() {
-    // 1. Verificación de seguridad: Validar que existan los datos estructurados en el JSON
+     buildMobileMenu() {
     if (!API.data.groups || !Array.isArray(API.data.groups)) {
         console.error("No se pudieron cargar los grupos para el menú móvil.");
         return;
     }
 
-    // CORRECCIÓN KEY: Seleccionar el contenedor real existente en el HTML original
     const container = document.getElementById('mobile-menu-container');
     if (!container) {
         console.error("Error de programación: No se encontró el contenedor #mobile-menu-container en el HTML.");
@@ -736,27 +723,25 @@
 
     let html = '';
 
-    // 2. Procesamiento de Grupos dinámicos extraídos de productos.json
     API.data.groups.forEach(group => {
         const categoryIds = group.categories;
 
-        // Mapear e identificar las categorías reales que pertenecen a este grupo específico
         const groupCategories = categoryIds.map(id => 
             API.data.categories.find(c => c.id === id)
         ).filter(item => item !== undefined);
 
         if (groupCategories.length > 0) {
-            // Ordenamiento alfabético de las categorías del grupo
             groupCategories.sort((a, b) => a.title.localeCompare(b.title));
 
             let categoriesHTML = '';
 
             groupCategories.forEach(cat => {
-                // Caso A: La categoría tiene múltiples subcategorías o marcas anidadas
+                // 📍 CORRECCIÓN: Agregamos la clase 'mobile-nav-link' a todos los enlaces del menú de acordeón móvil 
+                // para que el interceptor de JavaScript los identifique y ejecute la animación de cierre automático.
                 if (cat.subcategories && cat.subcategories.length > 1) {
                     const brandsHTML = cat.subcategories
                         .map(brand => `
-                            <a href="#${brand.id}-section" class="mobile-sub-link">
+                            <a href="#${brand.id}-section" class="mobile-sub-link mobile-nav-link">
                                 ${brand.title}
                             </a>`)
                         .join('');
@@ -771,23 +756,20 @@
                             </div>
                         </div>`;
                 } 
-                // Caso B: La categoría posee exactamente una subcategoría directa
                 else if (cat.subcategories && cat.subcategories.length === 1) {
                     categoriesHTML += `
-                        <a href="#${cat.subcategories[0].id}-section" class="mobile-category-direct-link">
+                        <a href="#${cat.subcategories[0].id}-section" class="mobile-category-direct-link mobile-nav-link">
                             ${cat.title}
                         </a>`;
                 } 
-                // Caso C: Categoría directa sin subcategorías anidadas
                 else {
                     categoriesHTML += `
-                        <a href="#${cat.id}-section" class="mobile-category-direct-link">
+                        <a href="#${cat.id}-section" class="mobile-category-direct-link mobile-nav-link">
                             ${cat.title}
                         </a>`;
                 }
             });
 
-            // Ensamblar el bloque visual del grupo con sus categorías hijas
             html += `
                 <div class="mobile-group-block">
                     <div class="mobile-group-title">${group.title}</div>
@@ -798,7 +780,6 @@
         }
     });
 
-    // 3. Inyectar de forma segura el árbol HTML estructurado dentro del panel móvil original
     container.innerHTML = `<div class="mobile-panel main-panel active">${html}</div>`;
 },
 

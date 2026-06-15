@@ -114,12 +114,13 @@ header {
     padding: 10px 20px;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 1020; /* El menú se impone ante la barra de búsqueda fija */
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 40px;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
 .nav-links {
@@ -209,40 +210,78 @@ header {
     margin: 15px auto;
 }
 
+/* ==========================================================================
+   BARRA DE BÚSQUEDA PREMIUM STICKY COHESIVA
+   ========================================================================== */
 .search-bar-container {
     background-color: var(--fondo-claro-secundario);
-    padding: 25px 20px;
-    max-width: 1000px;
+    padding: 15px 25px;
+    max-width: 800px;
     margin: 40px auto 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    border-radius: 50px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 1002; 
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease, opacity 0.2s ease, visibility 0.2s ease;
+
+    /* Posicionamiento fijo debajo del menú principal */
+    position: sticky;
+    top: 70px; /* Deja un respiro milimétrico debajo del nav */
+    z-index: 1010; /* Perfectamente equilibrado entre las tarjetas (1001) y el nav principal (1020) */
+}
+
+.search-bar-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 193, 7, 0.2);
+}
+
+/* Efecto Glassmorphism translúcido al desplazar la página */
+.search-bar-container:not([style*="position: static"]) {
+    background-color: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
 .search-bar-container i {
     color: var(--naranja-cacahuate);
-    font-size: 1.6em;
+    font-size: 1.3em;
     margin-right: 15px;
+    transition: transform 0.3s ease;
 }
 
 .search-bar-container input {
     flex-grow: 1;
-    padding: 12px 15px;
+    padding: 12px 5px;
     padding-right: 40px;
     border: none;
-    border-radius: 8px;
     font-size: 1.1em;
-    background-color: #3A3A3A;
+    background-color: transparent;
     color: var(--texto-claro);
     outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.search-bar-container input::placeholder {
+    color: rgba(248, 248, 248, 0.4);
+    font-weight: 400;
+}
+
+.search-bar-container:focus-within {
+    border-color: var(--naranja-cacahuate);
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.25), 0 12px 30px rgba(0, 0, 0, 0.6);
+    background-color: #2c2c2c;
+}
+
+.search-bar-container:focus-within i {
+    transform: scale(1.1);
 }
 
 .search-clear-btn {
     position: absolute;
-    right: 15px;
+    right: 25px;
     top: 50%;
     transform: translateY(-50%);
     background: none;
@@ -810,12 +849,43 @@ footer {
         color: var(--azul-terroso-claro);
         padding: 10px 15px;
     }
+    .main-nav .nav-links {
+        display: none !important;
+    }
 }
 
 @media (max-width: 768px) {
     .content-section h1 { font-size: 3em; }
     .logo-container { max-width: 180px; }
     .cards-grid { padding: 25px; gap: 30px; }
+
+    /* Adaptación para la barra de búsqueda en móvil */
+    .search-bar-container {
+        padding: 10px 18px;
+        margin: 15px 10px;
+        top: 10px;
+        border-radius: 30px;
+    }
+    .search-bar-container input {
+        font-size: 0.95rem;
+    }
+    .search-clear-btn {
+        right: 20px;
+    }
+
+    /* 📍 CORRECCIÓN DEFINTIVA INTEGRADA: 
+       Oculta físicamente tanto la barra flotante de fondo (.main-nav) como el buscador (.search-bar-container)
+       únicamente mientras el menú de acordeón esté abierto en celulares. */
+    body.menu-open .main-nav,
+    body.menu-open .search-bar-container,
+    #mobile-menu-container.open ~ .main-nav,
+    #mobile-menu-container.open ~ .search-bar-container,
+    #mobile-menu-container.open .search-bar-container {
+        z-index: 998 !important;       /* Pasan de inmediato por debajo del acordeón móvil (1000) */
+        opacity: 0 !important;           /* Desaparecen al 100% para limpiar el fondo */
+        visibility: hidden !important;   /* El navegador los descarta por completo del renderizado */
+        pointer-events: none;            /* Bloquea toques accidentales sobre la tienda de fondo */
+    }
 
     /* Forzamos un respiro al final de la grilla de productos para evitar superposiciones */
     main, .cards-grid {
@@ -830,7 +900,6 @@ footer {
         gap: 4px;
     }
     
-    /* Si inyectas el precio como texto inline o span dentro del h3 o caja */
     .card h3 span.price-tag,
     .product-price-container,
     .card h3 + p + div {
@@ -866,12 +935,6 @@ footer {
 }
 
 /* --- MENÚ MÓVIL (PANELES) --- */
-@media (max-width: 992px) {
-    .main-nav .nav-links {
-        display: none !important;
-    }
-}
-
 #mobile-menu-container {
     display: block;
     position: fixed;
@@ -1064,11 +1127,11 @@ footer {
     width: 100%;
     background: none;
     border: none;
-    color: var(--naranja-cacahuate) !important; /* Forzamos el color corporativo */
-    padding: 12px 16px !important;              /* Mismo espacio de toque para todos */
+    color: var(--naranja-cacahuate) !important; 
+    padding: 12px 16px !important;              
     text-align: left;
-    font-size: 1.05rem !important;               /* Sincronizamos el tamaño de letra exacto */
-    font-weight: 700 !important;                 /* Mismo grosor (Negrita) */
+    font-size: 1.05rem !important;               
+    font-weight: 700 !important;                 
     line-height: 1.2 !important;
     text-decoration: none;
     box-sizing: border-box;
@@ -1102,10 +1165,10 @@ footer {
 .mobile-sub-link,
 .brand-link {
     display: block;
-    font-size: 0.95rem !important;            /* Letra sutilmente más chica para jerarquía */
-    font-weight: 400 !important;              /* Letra normal (sin negrita) */
+    font-size: 0.95rem !important;            
+    font-weight: 400 !important;              
     color: var(--marron-oscuro-texto) !important;
-    padding: 10px 16px 10px 35px !important;  /* Sangría izquierda para orden visual */
+    padding: 10px 16px 10px 35px !important;  
     text-decoration: none;
     border-left: 3px solid transparent;
     transition: all 0.3s ease;
