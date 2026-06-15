@@ -4,32 +4,72 @@
     {
       "id": "almacen-natural",
       "title": "Almacén Natural",
-      "categories": ["aceites", "alimentos", "cafe", "especias-y-condimentos", "fideos-integrales", "harinas", "legumbres-y-cereales", "panificados", "premezclas-rebozadores", "salsas-aderezos-organicos", "yerba-mate"]
+      "categories": [
+        "aceites",
+        "alimentos",
+        "cafe",
+        "especias-y-condimentos",
+        "fideos-integrales",
+        "harinas",
+        "legumbres-y-cereales",
+        "panificados",
+        "premezclas-rebozadores",
+        "salsas-aderezos-organicos",
+        "yerba-mate"
+      ]
     },
     {
       "id": "dulces-reposteria",
       "title": "Dulces y Repostería",
-      "categories": ["alfajores", "budines", "caramelos", "chocolates", "edulcorantes", "galletas", "miel", "untables", "brownie-y-bocaditos", "reposteria"]
+      "categories": [
+        "alfajores",
+        "budines",
+        "caramelos",
+        "chocolates",
+        "edulcorantes",
+        "galletas",
+        "miel",
+        "untables",
+        "brownie-y-bocaditos",
+        "reposteria"
+      ]
     },
     {
       "id": "snacks-frutos",
       "title": "Snacks y Frutos",
-      "categories": ["barritas", "frutas", "frutos-secos", "mix-frutos-secos", "snacks"]
+      "categories": [
+        "barritas",
+        "frutas",
+        "frutos-secos",
+        "mix-frutos-secos",
+        "snacks"
+      ]
     },
     {
       "id": "salud-bienestar",
       "title": "Salud y Bienestar",
-      "categories": ["suplementos", "tinturas", "probioticos", "yuyos"]
+      "categories": [
+        "suplementos",
+        "tinturas",
+        "probioticos",
+        "yuyos"
+      ]
     },
     {
       "id": "frescos-bebidas",
       "title": "Frescos y Bebidas",
-      "categories": ["leches-bebidas-vegetales", "refrigerados-veganos"]
+      "categories": [
+        "leches-bebidas-vegetales",
+        "refrigerados-veganos"
+      ]
     },
     {
       "id": "higiene-cosmetica",
       "title": "Higiene y Cosmética",
-      "categories": ["cuidado-personal", "pastas-dentales"]
+      "categories": [
+        "cuidado-personal",
+        "pastas-dentales"
+      ]
     }
   ],
   "categories": [
@@ -4163,7 +4203,7 @@
           "https://i0.wp.com/lepotmarket.com/wp-content/uploads/2023/09/LP-Molinos-del-Bosque-Clasicas.png?fit=500%2C500&ssl=1"
         ],
         "desc": "Estas tostadas de arroz son la opción ideal para una base neutra, ligera y crujiente en tus comidas. Elaboradas con arroz y libres de gluten, tienen un sabor suave que las hace perfectas para acompañar con cualquier topping, tanto dulce como salado. Son 0% grasas trans y Sin T.A.C.C., convirtiéndose en un básico indispensable en tu despensa para desayunos, meriendas o como sustituto del pan.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Tostadas de Arroz Dulces sabor Vainilla Molinos del Bosque (150g)",
@@ -4171,7 +4211,7 @@
           "https://d3340tyzmtlo4u.cloudfront.net/users/864/images/detailed/17/Molinos_del_Bosque_Galletas_de_Arroz_Dulces,_150_g_ednf-ei.jpg"
         ],
         "desc": "Date un gusto dulce y ligero con estas tostadas de arroz dietéticas con sabor a vainilla. Son la opción perfecta para calmar un antojo sin culpas, con un delicado toque avainillado que las hace deliciosas por sí solas o para acompañar con frutas o yogur. Son un producto vegetariano, libre de gluten y muy livianas.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Tostadas de Arroz Integral Molinos del Bosque (150g)",
@@ -4179,7 +4219,7 @@
           "https://i0.wp.com/lepotmarket.com/wp-content/uploads/2023/09/LP-Molinos-del-Bosque-Integral.png?fit=500%2C500&ssl=1"
         ],
         "desc": "Elige la versión más nutritiva con estas tostadas de arroz integral. Al estar elaboradas con arroz integral, aportan un extra de fibra, vitaminas y minerales, contribuyendo a una mejor digestión y mayor saciedad. Tienen un sabor ligeramente más intenso y una textura igual de crujiente, siendo la base perfecta para un snack saludable y sustancioso.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Tostadas de Arroz Light sabor Vainilla Molinos del Bosque (150g)",
@@ -4187,7 +4227,7 @@
           "https://i.ibb.co/dsCc3whH/Molinos-Light-Vainilla-Optimized.png"
         ],
         "desc": "Estas tostadas de arroz light son la opción más liviana para un snack dulce. Con un suave sabor a vainilla y sin azúcar agregada, son perfectas para quienes cuentan calorías pero no quieren renunciar al placer. Su textura crujiente y su delicado sabor las convierten en la base ideal para un postre ligero o una merienda saludable.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Tostadas de Arroz Sin Azúcar Agregada sabor Vainilla Molinos del Bosque (150g)",
@@ -4195,7 +4235,7 @@
           "https://i.ibb.co/4wSPhdXT/CARILO-SIN-AZUCAR.png"
         ],
         "desc": "Disfruta del placer de un snack dulce sin preocuparte por el azúcar. Estas tostadas de arroz están suavemente endulzadas y tienen un delicioso sabor a vainilla, pero sin azúcar agregada, lo que las hace aptas para diabéticos o dietas de control de azúcar. Son la opción ideal para una merienda saludable, ligera y llena de sabor.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Tostadas de Arroz Sin Sal Agregada Molinos del Bosque (150g)",
@@ -4203,7 +4243,7 @@
           "https://i.ibb.co/RkW9T5hL/CARILO-SIN-SAL.png"
         ],
         "desc": "Para quienes buscan controlar su consumo de sodio, estas tostadas de arroz sin sal agregada son la alternativa perfecta. Mantienen toda la textura crujiente y la ligereza del arroz, pero con un sabor completamente neutro para que seas tú quien decida cómo combinarlas. Son ideales para dietas bajas en sodio, libres de gluten y 0% grasas trans.",
-        "price": 2000
+        "price": 2500
       }
     ],
     "arrocitas": [
