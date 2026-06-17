@@ -156,12 +156,33 @@ header {
     display: none;
     position: absolute;
     background-color: var(--fondo-claro-secundario);
-    min-width: 200px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    min-width: 240px;          /* Lo agrandamos un pelín para que los nombres largos respiren */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
     z-index: 1;
     border-radius: 8px;
     padding: 10px 0;
     margin-top: 5px;
+
+    /* 📍 SOLUCIÓN AL CORTE DEL MENÚ 📍 */
+    max-height: 75vh;          /* Limita el menú al 75% de la altura de la ventana del usuario */
+    overflow-y: auto;          /* Activa el scroll vertical interno automáticamente si es necesario */
+    
+    /* Opcional: Estiliza la barra de scroll interna para que sea sutil y combine con tu modo oscuro */
+    scrollbar-width: thin;
+    scrollbar-color: var(--naranja-cacahuate) var(--fondo-tarjeta);
+}
+
+/* Estilos de barra de scroll para navegadores basados en Webkit (Chrome, Safari, Edge) */
+.dropdown-content::-webkit-scrollbar {
+    width: 6px;
+}
+.dropdown-content::-webkit-scrollbar-track {
+    background: var(--fondo-tarjeta);
+    border-radius: 0 8px 8px 0;
+}
+.dropdown-content::-webkit-scrollbar-thumb {
+    background-color: var(--naranja-cacahuate);
+    border-radius: 20px;
 }
 
 .dropdown-content a {
