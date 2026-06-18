@@ -1021,7 +1021,7 @@
           "https://i.imgur.com/LJZxJ5R.jpeg"
         ],
         "desc": "Utilizada tradicionalmente como digestiva, antiespasmódica y para aliviar dolores menstruales.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Ambay",
@@ -1045,7 +1045,7 @@
           "https://i.imgur.com/a0r917s.jpeg"
         ],
         "desc": "Vigorizante y estimulante, se usa para combatir el agotamiento físico y nervioso, y como afrodisíaco.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Boldo",
@@ -1061,7 +1061,7 @@
           "https://i.imgur.com/oThUBiJ.jpeg"
         ],
         "desc": "Reconocido por sus propiedades digestivas, sedantes y ansiolíticas, alivia el \"empacho\" y el nerviosismo.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Caléndula",
@@ -1069,7 +1069,7 @@
           "https://i.imgur.com/cFrDRWi.jpeg"
         ],
         "desc": "Antiinflamatoria, cicatrizante y antiséptica, útil para heridas, quemaduras e irritaciones cutáneas.",
-        "price": 1200
+        "price": 1500
       },
       {
         "name": "Carqueja",
@@ -1125,7 +1125,7 @@
           "https://i.imgur.com/JtLDve2.jpeg"
         ],
         "desc": "Diurética y refrescante, utilizada para afecciones renales y urinarias, y para combatir la sed.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Duraznillo",
@@ -1133,7 +1133,7 @@
           "https://i.imgur.com/72635ph.jpeg"
         ],
         "desc": "Tradicionalmente usado como digestivo y para problemas de la piel.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Estragón",
@@ -1149,7 +1149,7 @@
           "https://i.imgur.com/2VNDIxw.jpeg"
         ],
         "desc": "Expectorante, antiséptico y descongestionante, esencial para aliviar resfriados, gripe, tos y bronquitis.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Harina de Vino",
@@ -1165,7 +1165,7 @@
           "https://i.imgur.com/qhTrxmY.jpeg"
         ],
         "desc": "Diurética y depurativa, se usa para afecciones urinarias y para eliminar toxinas.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Hierba dulce o Stevia (Yerba Dulce)",
@@ -1197,7 +1197,7 @@
           "https://i.imgur.com/yMdbSVV.jpeg"
         ],
         "desc": "Digestivo y antiinflamatorio, especialmente para problemas gastrointestinales y hepáticos.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Lapacho",
@@ -1221,7 +1221,7 @@
           "https://i.imgur.com/lbmmTHo.jpeg"
         ],
         "desc": "Antiinflamatorio, cicatrizante y expectorante, útil para heridas, picaduras y afecciones respiratorias.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Malva",
@@ -1285,7 +1285,7 @@
           "https://i.imgur.com/9HgboKd.jpeg"
         ],
         "desc": "Diurético, antilitiásico (previene cálculos renales) y antiinflamatorio, ayuda a limpiar los riñones.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Pasionaria (Flor de Mburucuyá)",
@@ -1301,7 +1301,7 @@
           "https://i.imgur.com/x5sqiFn.jpeg"
         ],
         "desc": "Hipoglucemiante, utilizada tradicionalmente para ayudar a controlar los niveles de azúcar en sangre en diabéticos.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Poleo",
@@ -1309,7 +1309,7 @@
           "https://i.imgur.com/NKEsz8C.png"
         ],
         "desc": "Digestivo, carminativo, antiespasmódico y emenagogo (estimula la menstruación).",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Pulmonaria",
@@ -1317,7 +1317,7 @@
           "https://i.imgur.com/vW5zqTJ.jpeg"
         ],
         "desc": "Expectorante, antiséptico y antitusígeno, ideal para afecciones respiratorias como bronquitis, tos y catarros.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Romero",
@@ -1349,7 +1349,7 @@
           "https://i.imgur.com/gTOE6Tr.jpeg"
         ],
         "desc": "Antiespasmódica, emenagoga y digestiva, usada con precaución para cólicos y problemas menstruales.",
-        "price": 1200
+        "price": 1500
       },
       {
         "name": "Salvia",
@@ -1357,7 +1357,7 @@
           "https://i.imgur.com/kcieWtE.jpeg"
         ],
         "desc": "Antiséptica, antiviral, antiinflamatoria, antioxidante y digestiva, útil para inflamaciones de garganta, problemas digestivos y sudoración excesiva.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Té Negro",
@@ -1389,7 +1389,7 @@
           "https://i.imgur.com/ZDWzufn.jpeg"
         ],
         "desc": "Planta con propiedades digestivas, sedantes y antiinflamatorias.",
-        "price": 1000
+        "price": 1200
       }
     ],
     "especias": [
@@ -1423,7 +1423,7 @@
           "https://i.imgur.com/9mrQZWq.jpeg"
         ],
         "desc": "Ajo deshidratado y molido. Una forma práctica de sumar el sabor intenso del ajo a cualquier plato, especialmente en adobos y mezclas.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Ajo triturado",
@@ -1431,7 +1431,7 @@
           "https://i.imgur.com/gqjyX6K.jpeg"
         ],
         "desc": "Ajo deshidratado y troceado. Ofrece un sabor a ajo más concentrado, ideal para guisos, sopas y marinadas.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Albahaca",
@@ -1519,7 +1519,7 @@
           "https://i.imgur.com/7FHd4OU.jpeg"
         ],
         "desc": "Botón floral seco y aromático. Se usa entero para aromatizar caldos, estofados, postres y bebidas.",
-        "price": 800
+        "price": 1000
       },
       {
         "name": "Comino en grano",
@@ -1575,7 +1575,7 @@
           "https://i.imgur.com/ISgpVTz.jpeg"
         ],
         "desc": "Raíz molida de color amarillo brillante y sabor terroso y ligeramente amargo. Fundamental en la cocina india y por sus propiedades.",
-        "price": 1000
+        "price": 3000
       },
       {
         "name": "Curry",
@@ -1599,7 +1599,7 @@
           "https://i.imgur.com/RQlL6HM.png"
         ],
         "desc": "Una mezcla variada de especias preestablecida, útil para sazonar una amplia gama de platos.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Fenogreco en grano",
@@ -1718,7 +1718,7 @@
           "https://i.imgur.com/cSmGzj2.jpg"
         ],
         "desc": "Pimiento rojo seco y ahumado antes de molerlo. Aporta un sabor ahumado, dulce y un color rojizo intenso. Ideal para paellas, guisos y embutidos.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Pimentón dulce",
@@ -1726,7 +1726,7 @@
           "https://i.imgur.com/Yea0CIR.jpg"
         ],
         "desc": "Pimiento rojo seco y molido, sin picor. Da color y un sabor suave y dulce a guisos, arroces y salsas.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Pimentón picante (páprika)",
@@ -1734,7 +1734,7 @@
           "https://i.imgur.com/AnZmCCP.jpg"
         ],
         "desc": "Pimiento rojo seco y molido con picor. Usado para añadir color y un toque picante a platos, muy popular en la cocina húngara.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Pimienta Blanca en grano",
@@ -1824,7 +1824,7 @@
           "https://i.imgur.com/QbPseBD.jpeg"
         ],
         "desc": "El endulzante de la naturaleza. Perfectos para darte un impulso de energía inmediata y saludable. Su fibra, potasio y magnesio los convierten en un snack nutritivo y delicioso.",
-        "price": 1500
+        "price": 1600
       },
       {
         "name": "Durazno (Orejones)",
@@ -1847,7 +1847,7 @@
           "https://i.imgur.com/D8hjPbQ.png"
         ],
         "desc": "Una deliciosa mezcla de frutas confitadas cubiertas con una fina capa de azúcar, dándoles un aspecto \"nevado\". Es un ingrediente clásico y colorido, ideal para decorar y dar un toque dulce a panettones, budines y postres festivos.",
-        "price": 1800
+        "price": 2000
       },
       {
         "name": "Higos Negros",
@@ -1863,7 +1863,7 @@
           "https://i.imgur.com/WiYb8Uy.jpeg"
         ],
         "desc": "Pequeñas joyas llenas de beneficios. Son una fuente concentrada de hierro para combatir la fatiga y potasio para mantener tu energía. El snack perfecto y un ingrediente versátil en tu cocina.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Pasas Rubias",
@@ -1887,7 +1887,7 @@
           "https://i.imgur.com/agIK3xE.jpeg"
         ],
         "desc": "El sabor intenso del Mediterráneo en tu plato. Cargados de licopeno, un potente antioxidante que cuida tus células. Perfectos para transformar tus pastas, ensaladas y salsas.",
-        "price": 1600
+        "price": 2000
       }
     ],
     "frutos-secos": [
@@ -1937,7 +1937,7 @@
           "https://i.ibb.co/fYMrCgxT/Man-Tostado-con-Sal.jpg"
         ],
         "desc": "El snack salado perfecto para cualquier ocasión. Tostado a la perfección con un punto de sal que realza su sabor, es ideal para reuniones o para dar un toque crujiente a tus platos.",
-        "price": 500
+        "price": 600
       },
       {
         "name": "Maní Tostado sin Sal 100grs",
@@ -1945,7 +1945,7 @@
           "https://i.ibb.co/DD7TTKs5/Man-Tostado-sin-Sal.jpg"
         ],
         "desc": "Disfruta del auténtico y robusto sabor del maní tostado sin añadidos. Es la opción perfecta para repostería y granolas, permitiéndote controlar la sal en tus recetas.",
-        "price": 500
+        "price": 600
       },
       {
         "name": "Nuez Mariposa Light 100grs",
@@ -1971,7 +1971,7 @@
           "https://i.ibb.co/fVTxrxBt/MIX-AMAZONAS-2.png"
         ],
         "desc": "Una combinación energética y clásica que incluye Pasas negras, Pasas rubias, Nuez, Almendra y Castaña de cajú. Perfecto para un snack rápido y nutritivo.",
-        "price": 1800
+        "price": 2000
       },
       {
         "name": "Mix Cacahuate 100grs",
@@ -1979,7 +1979,7 @@
           "https://i.ibb.co/4g7g3hNS/MIX-CACAHUATE.png"
         ],
         "desc": "La mezcla perfecta para los amantes del maní. Contiene Pasas Rubias, Pasas Negras, Castañas de Cajú, Almendra, Maní sin sal y Avellana. ¡Pura energía!",
-        "price": 1600
+        "price": 1800
       },
       {
         "name": "Mix Caribe 100grs",
@@ -1987,7 +1987,7 @@
           "https://i.ibb.co/spQzZQQ4/MIX-CARIBE.png"
         ],
         "desc": "Un toque tropical y exótico con Pasas Negras, Pasas Rubias, Castañas de Cajú, Nuez, Almendra, Banana Deshidratada y Fruta Deshidratada. ¡Una explosión de sabor!",
-        "price": 1800
+        "price": 2000
       },
       {
         "name": "Mix Premium 100grs",
@@ -2013,7 +2013,7 @@
           "https://i.ibb.co/ZzwcqMD9/SITU-ACEITE-DE-ARGAN.png"
         ],
         "desc": "Conocido como el \"oro líquido\", es un tratamiento intensivo para el cabello y la piel seca. Rico en nutrientes y antioxidantes, repara las puntas abiertas, controla el frizz y devuelve el brillo y la vitalidad.",
-        "price": 6400
+        "price": 7500
       },
       {
         "name": "Aceite de Citronela",
@@ -2021,7 +2021,7 @@
           "https://i.ibb.co/svVq8206/SITU-ACEITE-DE-CITRONELA.png"
         ],
         "desc": "Tu protector natural al aire libre. Reconocido por su eficaz acción como repelente de insectos, su aroma cítrico y fresco es perfecto para mantener alejados a los mosquitos de forma natural.",
-        "price": 6400
+        "price": 7500
       },
       {
         "name": "Aceite de Eucalipto",
@@ -2029,7 +2029,7 @@
           "https://i.ibb.co/JRB7h43b/SITU-EUCALIPTO.png"
         ],
         "desc": "Ideal para el bienestar respiratorio. Usado en masajes en el pecho y la espalda o en vaporizadores, su aroma refrescante ayuda a descongestionar las vías respiratorias y a crear una atmósfera de alivio.",
-        "price": 6400
+        "price": 7500
       },
       {
         "name": "Aceite de Jojoba",
@@ -2037,7 +2037,7 @@
           "https://i.ibb.co/5Wp8Gy49/SITU-JOJOBA.png"
         ],
         "desc": "El equilibrante perfecto para tu piel. Su composición es muy similar al sebo natural, lo que le permite regular la producción de grasa en pieles oleosas y, a la vez, hidratar profundamente las pieles secas.",
-        "price": 6400
+        "price": 7500
       },
       {
         "name": "Aceite de Palta",
@@ -2045,7 +2045,7 @@
           "https://i.ibb.co/Cp3RJ4LV/SITU-PALTA.png"
         ],
         "desc": "Un concentrado de nutrición para la piel y el cabello más exigentes. Su alta penetración lo hace ideal para combatir la sequedad extrema, aportando vitaminas y ácidos grasos que restauran la elasticidad y el brillo.",
-        "price": 6400
+        "price": 7500
       },
       {
         "name": "Aceite de Ricino",
@@ -2053,7 +2053,7 @@
           "https://i.ibb.co/ccXrw1Ry/SITU-RICINO.png"
         ],
         "desc": "El secreto para unas pestañas y cejas más largas y densas. Su uso regular fortalece los folículos pilosos, estimulando el crecimiento no solo de pestañas y cejas, sino también del cabello, aportando vigor y salud.",
-        "price": 6400
+        "price": 7500
       },
       {
         "name": "Aceite de Rosa Mosqueta",
@@ -2061,7 +2061,7 @@
           "https://i.ibb.co/Vp5rbnzt/SITU-ROSA-MOSQUETA.png"
         ],
         "desc": "Ideal para el cuidado facial y corporal. Este aceite es célebre por su capacidad para regenerar los tejidos de la piel, ayudando a atenuar visiblemente cicatrices, estrías y manchas, a la vez que proporciona una hidratación profunda.",
-        "price": 6400
+        "price": 7500
       }
     ],
     "vita-biosa": [
@@ -2098,7 +2098,7 @@
         ],
         "desc": "Experimenta la máxima frescura con Cocoon Lima Limón, la gaseosa que revitaliza tu cuerpo y apoya tu bienestar. Esta versión combina la acidez vibrante de la lima con el toque clásico del limón para crear una bebida intensamente refrescante y llena de vida. Mientras disfrutas de su sabor inigualable, su fórmula con prebióticos y probióticos fortalece tu flora intestinal, convirtiéndola en la opción inteligente para calmar la sed y cuidarte desde adentro.",
         "stock": false,
-        "price": 2700
+        "price": 3000
       },
       {
         "name": "Cocoon Sabor Naranja",
@@ -2107,7 +2107,7 @@
         ],
         "desc": "Disfruta de la chispeante dulzura de la naranja en esta gaseosa saludable que cuida de ti. Cada sorbo de Cocoon Naranja te ofrece el sabor cítrico y familiar que tanto te gusta, pero con el increíble beneficio añadido de prebióticos y probióticos que trabajan para equilibrar tu sistema digestivo. Es la bebida perfecta para refrescarte, mejorar tu salud intestinal y darte un impulso de vitalidad natural sin los azúcares y aditivos de los refrescos convencionales.",
         "stock": false,
-        "price": 2700
+        "price": 3000
       },
       {
         "name": "Cocoon Sabor Pomelo",
@@ -2116,7 +2116,7 @@
         ],
         "desc": "Atrévete a probar el sabor audaz y sofisticado de Cocoon Pomelo. Esta gaseosa fusiona el característico gusto agridulce del pomelo con una efervescencia perfecta, ofreciendo una experiencia única para tu paladar. Es la alternativa ideal para quienes buscan un refresco con carácter, que además de ser delicioso, está cargado de prebióticos y probióticos para promover una digestión saludable y un sistema inmune fuerte.",
         "stock": false,
-        "price": 2700
+        "price": 3000
       }
     ],
     "tinturas-oasis": [
@@ -2254,7 +2254,7 @@
           "https://i.ibb.co/RkZTfjP1/MELISA.png"
         ],
         "desc": "Calma y serenidad. Un relajante natural que ayuda a calmar la ansiedad y facilita el descanso.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Olivo",
@@ -2350,7 +2350,7 @@
           "https://i.ibb.co/r2Z2w0JV/ZARZAPARRILLA.png"
         ],
         "desc": "Limpieza profunda. Apreciada por su potente acción depurativa de la sangre.",
-        "price": 1000
+        "price": 1200
       }
     ],
     "tinturas-andino": [
@@ -2756,7 +2756,7 @@
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/AC-HIALU-2-600x600.jpg"
         ],
         "desc": "Ideal para el cuidado de la piel. Ayuda a mejorar la firmeza, luminosidad y suavidad de la piel , promoviendo la hidratación desde el interior. Sus nutrientes mejoran la elasticidad , colaboran en la prevención del envejecimiento y ayudan a mejorar la cicatrización de las heridas.<br><strong>Presentación:</strong> 30 cápsulas.",
-        "price": 12500
+        "price": 14500
       },
       {
         "name": "Ajo Negro + Vit C",
@@ -2955,7 +2955,7 @@
           "https://originalgreen.com.ar/wp-content/uploads/2020/01/UrySystem-300x300.jpeg"
         ],
         "desc": "Tratamiento para infecciones urinarias. Utilizado para cistitis, uretritis y nefritis , ayuda a reducir la acumulación de ácido úrico y facilita la eliminación de cálculos renales. También mejora los síntomas de la prostatitis.<br><strong>Presentación:</strong> 60 cápsulas.",
-        "price": 10900
+        "price": 11600
       },
       {
         "name": "Vitamina B12",
@@ -3189,7 +3189,7 @@
           "https://i.ibb.co/dsTYG7nb/DT-INTEGRAL.png"
         ],
         "desc": "Elige la opción más nutritiva para tus platos de pasta con los Fideos Integrales de Dietética Integral. Elaborados con harina 100% integral y ingredientes naturales, estos fideos son una excelente fuente de fibra, lo que contribuye a una mejor digestión y a una mayor sensación de saciedad. Su fórmula, muy baja en sodio y sin conservantes, los convierte en un pilar fundamental para una alimentación equilibrada y saludable. Con una textura firme y un delicioso sabor a nuez característico de la pasta integral, son perfectos para acompañar con pestos, salsas a base de vegetales o cualquier otra preparación saludable.",
-        "price": 3200
+        "price": 3500
       }
     ],
     "soyarroz": [
@@ -3199,7 +3199,7 @@
           "https://bio-salud.com.ar/media/catalog/product/cache/0ad1d88be377f19079fdfb8fd212df21/3/f/3f4592260c09bc1d9ab798cbecf7fddbd4fe38bf57146f302d5438c7c59fa68d.jpeg"
         ],
         "desc": "Disfruta de una pasta deliciosa y naturalmente libre de gluten con los Fideos de Arroz con Espinaca de Soyarroz. Esta alternativa saludable a la pasta de trigo está elaborada a base de arroz y espinaca, lo que le confiere un suave sabor, un atractivo color verde y un extra de nutrientes. Son ideales para personas celíacas o para quienes buscan una opción más ligera en sus comidas. Su textura es perfecta para absorber los sabores de tus salsas favoritas, y se cocinan rápidamente, convirtiéndolos en la base ideal para una comida rápida, nutritiva y llena de sabor.",
-        "price": 3600
+        "price": 3800
       },
       {
         "name": "Fideos de Arroz con Morrón Soyarroz (300g)",
@@ -3207,7 +3207,7 @@
           "https://wakomercadonatural.com/wp-content/uploads/2025/04/1207-768x768.webp"
         ],
         "desc": "Dale un toque de sabor y color a tus platos sin gluten con los Fideos de Arroz con Morrón de Soyarroz. Esta pasta, elaborada a base de arroz y pimiento morrón, es la opción perfecta para celíacos y para quienes desean experimentar nuevos sabores. El suave dulzor del morrón se integra a la perfección en la pasta, ofreciendo una base deliciosa que va más allá de lo tradicional, ideal para salteados con verduras, ensaladas o para acompañar con salsas ligeras. Se cocinan en minutos y son una forma fácil y saludable de añadir un giro creativo y nutritivo a tus comidas.",
-        "price": 3600
+        "price": 3800
       },
       {
         "name": "Fideos de Arroz Tradicional Fino Soyarroz (300g)",
@@ -3215,7 +3215,7 @@
           "https://distribuidoraliliana.com.ar/7738/fideo-de-arroz-finos-sabor-tradicional-soyarroz.jpg"
         ],
         "desc": "Descubre la versatilidad y ligereza de los Fideos de Arroz Tradicional Fino de Soyarroz, una excelente alternativa a la pasta convencional. Elaborados a base de arroz, son naturalmente libres de gluten (Sin T.A.C.C.), lo que los convierte en la opción perfecta para celíacos y para quienes prefieren una digestión más liviana. Su textura fina y delicada es ideal para una cocción rápida y para absorber el sabor de caldos, sopas y salsas orientales. Son perfectos para preparar salteados tipo wok, ensaladas frías o como un acompañamiento diferente para tus platos favoritos.",
-        "price": 3600
+        "price": 3800
       },
       {
         "name": "Fideos de Arroz Tradicionales Soyarroz (300g)",
@@ -3223,7 +3223,7 @@
           "https://bio-salud.com.ar/media/catalog/product/cache/041146212e5fd76e3bc54c6857090d34/a/e/aee65eba5e98389ce57c70310f240cbeddefbfc528a5d1ade32ed33e40006227.jpeg"
         ],
         "desc": "Los Fideos de Arroz Tradicionales de Soyarroz son la alternativa perfecta y sin gluten a la pasta de trigo de todos los días. Elaborados completamente a base de arroz, son ideales para personas celíacas y para cualquiera que busque una opción de pasta más ligera y de fácil digestión. Su grosor tradicional los hace increíblemente versátiles, funcionando a la perfección como sustituto directo del spaghetti en tus recetas italianas favoritas, desde una clásica boloñesa hasta un pesto cremoso. Se cocinan en pocos minutos, ofreciendo una base deliciosa y saludable para una comida rápida y nutritiva.",
-        "price": 3600
+        "price": 3800
       }
     ],
     "lilen": [
@@ -3335,7 +3335,7 @@
           "https://i.ibb.co/4RppQhhb/BETIC-FINO-ALBAHACA.png"
         ],
         "desc": "Infusiona tus platos con el aroma y sabor inconfundible del Mediterráneo con estos fideos finos de albahaca. Esta pasta dietética, sin conservantes y baja en sodio, incorpora la albahaca directamente en su masa, ofreciendo una base de sabor herbal y fresco que es deliciosa por sí sola. Son la elección perfecta para preparar un plato de pasta rápido y lleno de sabor, simplemente con un chorrito de aceite de oliva y queso parmesano, o para combinar con salsas de tomate fresco y vegetales.",
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Fideos Finos de Espinaca Betic (300g)",
@@ -3343,7 +3343,7 @@
           "https://i.ibb.co/TqWj8MZQ/BETIC-FINO-ESPINACA.png"
         ],
         "desc": "Añade un toque de color verde intenso y una dosis extra de nutrientes a tu alimentación con estos fideos finos de espinaca. Esta pasta dietética es una forma fácil y deliciosa de incorporar los beneficios de la espinaca en tu dieta, ofreciendo un sabor suave que complementa a la perfección una gran variedad de salsas. Son ideales para combinar con salsas blancas cremosas, ricota, salmón o para crear platos de pasta visualmente impactantes y muy saludables.",
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Fideos Finos de Morrón Betic (300g)",
@@ -3351,7 +3351,7 @@
           "https://i.ibb.co/845tcTfn/BETIC-FINO-MORR-N.png"
         ],
         "desc": "Estos fideos finos, elaborados con pimiento morrón, aportan un color vibrante y un sutil dulzor a tus comidas. Su fórmula dietética, con más proteínas, sin colorantes ni conservantes, los convierte en una opción saludable y creativa para variar tus platos de pasta. Son especialmente deliciosos en preparaciones ligeras, salteados con pollo o mariscos, y en ensaladas de pasta, donde su color y sabor pueden brillar y sorprender a todos en la mesa.",
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Fideos Finos de Sémola Betic (300g)",
@@ -3359,7 +3359,7 @@
           "https://i.ibb.co/cKpt1knr/BETIC-FINO-SEMOLA.png"
         ],
         "desc": "Disfruta del sabor tradicional de la pasta con estos fideos finos de sémola de trigo candeal, que se destacan por su alto contenido de proteínas. Su calidad premium asegura una cocción perfecta \"al dente\", ofreciendo una textura suave y un delicioso sabor que sirve como base para innumerables recetas. Son ideales para acompañar con salsas clásicas, caldos o salteados, proporcionando siempre un plato reconfortante y de calidad superior para toda la familia.",
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Fideos Finos de Zanahoria Betic (300g)",
@@ -3367,7 +3367,7 @@
           "https://i.ibb.co/GQ1Nb95j/BETIC-FINO-ZANAHORIA.png"
         ],
         "desc": "Añade un toque de color y un extra de nutrientes a tus comidas con estos fideos finos elaborados con zanahoria. Esta pasta dietética, sin colorantes ni conservantes, incorpora el dulzor natural de la zanahoria, creando una base de sabor suave y agradable, ideal para los más pequeños. Es una forma deliciosa y creativa de enriquecer tus platos, combinando a la perfección con salsas blancas, pollo o salteados de vegetales frescos.",
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Fideos Finos Integrales Betic (300g)",
@@ -3375,7 +3375,7 @@
           "https://i.ibb.co/G4hQ9Wq4/BETIC-FINO-INTEGRAL.png"
         ],
         "desc": "Estos fideos finos, elaborados con harina integral, son la base perfecta para una alimentación saludable y rica en fibra. Su composición dietética, sin conservantes y baja en sodio, los convierte en una opción nutritiva para el día a día. Poseen la textura firme y el sabor característico de la pasta integral, siendo ideales para absorber salsas ligeras a base de vegetales, pesto o simplemente un toque de aceite de oliva, garantizando un plato reconfortante y lleno de nutrientes.",
-        "price": 3200
+        "price": 3500
       }
     ],
     "ceral": [
@@ -3402,7 +3402,7 @@
         ],
         "desc": "Combina nutrición y sabor con estos tirabuzones integrales enriquecidos con espinaca. Su llamativo color verde y su alto contenido en fibra los convierten en una opción fantástica para preparar ensaladas de pasta frías, platos gratinados o para acompañar con salsas cremosas. Son una forma fácil y deliciosa de crear comidas saludables y atractivas para toda la familia.",
         "stock": false,
-        "price": 3800
+        "price": 4300
       },
       {
         "name": "Tirabuzones Integrales con Morrón Ceral (300g)",
@@ -3411,7 +3411,7 @@
         ],
         "desc": "Dale un giro de sabor a tus recetas con los tirabuzones integrales con morrón. El delicado dulzor del pimiento morrón y su atractivo color anaranjado hacen de esta pasta 'light' una base excelente para platos originales y saludables. Son perfectos para ensaladas creativas, guisos o para acompañar con salsas a base de queso, ofreciendo siempre una comida deliciosa y rica en fibra.",
         "stock": false,
-        "price": 3800
+        "price": 4300
       },
       {
         "name": "Tirabuzones Integrales Naturales Ceral (300g)",
@@ -3420,7 +3420,7 @@
         ],
         "desc": "Estos tirabuzones integrales son la opción perfecta para una comida nutritiva y sustanciosa, gracias a su alto contenido en fibra. Su divertida forma en espiral es excelente para que las salsas se adhieran, garantizando que cada bocado esté lleno de sabor. Al ser un producto 'light' y vegano, es ideal para dietas de control de peso y para quienes siguen un estilo de vida saludable.",
         "stock": false,
-        "price": 3800
+        "price": 4300
       }
     ],
     "mi-fideo": [
@@ -3430,7 +3430,7 @@
           "https://i.ibb.co/67KvRPSG/MI-FIDEO-ESPINACA.png"
         ],
         "desc": "Aporta un extra de color y nutrientes a tus comidas con este spaghetti integral enriquecido con espinaca. Hecho con 100% semolín integral, esta pasta vegana no solo te brinda los beneficios de la fibra, sino también las propiedades de la espinaca en una presentación deliciosa y atractiva. Su sabor suave es perfecto para acompañar con salsas blancas, mariscos, o simplemente con ajo y aceite de oliva, creando platos tan saludables como apetitosos.",
-        "price": 2500
+        "price": 3200
       },
       {
         "name": "Spaghetti Integral con Morrón Mi Fideo (227g)",
@@ -3438,7 +3438,7 @@
           "https://i.ibb.co/bMgMRvg8/MI-FIDEO-MORR-N.png"
         ],
         "desc": "Dale un giro de sabor a tus recetas clásicas con este spaghetti integral con morrón. La combinación del semolín 100% integral con el toque dulce del pimiento morrón resulta en una pasta con un sabor único y un hermoso color rojizo. Es una opción vegana y rica en fibra, ideal para quienes buscan una experiencia gourmet y saludable. Combina de maravilla con salsas a base de hierbas, pollo o para crear platos de pasta con un carácter distintivo y delicioso.",
-        "price": 2500
+        "price": 3200
       },
       {
         "name": "Spaghetti Integral con Tomate Mi Fideo (227g)",
@@ -3446,7 +3446,7 @@
           "https://i.ibb.co/7Jjxmfx3/MI-FIDEO-TOMATE.png"
         ],
         "desc": "Añade un toque de sabor mediterráneo a tus platos con este spaghetti integral con tomate. Elaborado con 100% semolín integral, esta pasta vegana combina el alto contenido de fibra del grano entero con el sabor vibrante y ligeramente ácido del tomate, creando una base deliciosa y saludable. Su color rojizo natural y su exquisito sabor lo hacen perfecto para combinar con salsas ligeras, mariscos, o simplemente con un chorro de aceite de oliva y hierbas frescas para una comida rápida, nutritiva y llena de carácter.",
-        "price": 2500
+        "price": 3200
       },
       {
         "name": "Spaghetti Integral Mi Fideo (227g)",
@@ -3454,7 +3454,7 @@
           "https://i.ibb.co/RpWFzFDp/MI-FIDEO-INTEGRAL.png"
         ],
         "desc": "Este spaghetti, elaborado con 100% semolín integral, es la elección perfecta para quienes buscan una pasta más nutritiva y con un auténtico sabor a grano entero. Su textura rústica y su alto contenido de fibra lo convierten en una base saludable y sustanciosa para tus platos, promoviendo una digestión saludable y una mayor sensación de saciedad. Al ser un producto vegano, se adapta a diversas preferencias alimentarias, siendo ideal para combinar con salsas robustas de vegetales, legumbres o un pesto tradicional.",
-        "price": 2500
+        "price": 3200
       }
     ],
     "optima": [
@@ -3464,7 +3464,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/955/111/products/tirabuzonarroz-922ad14c54a1f9df9216988598527024-480-0.webp"
         ],
         "desc": "Disfruta de una pasta ligera y de fácil digestión con estos tirabuzones hechos completamente de arroz. Son la opción ideal para celíacos y personas que siguen dietas libres de alérgenos, ya que no contienen T.A.C.C., derivados de lácteos, huevo ni soja. Su sabor neutro y su textura suave los hacen increíblemente versátiles para combinar con cualquier tipo de salsa, desde las más intensas hasta las más delicadas, garantizando siempre un plato saludable, rápido de preparar y apto para todos.",
-        "price": 3900
+        "price": 4500
       }
     ],
     "wakas": [
@@ -3559,7 +3559,7 @@
           "https://thefoodmarketar.vtexassets.com/arquivos/ids/164353/222856_alfajor-celienergy-algarroba-zapallo-y-relleno-de-dulce-de-leche-x-50-g_imagen-1.jpg?v=638852607597570000"
         ],
         "desc": "Este alfajor ofrece una combinación de sabores única y nutritiva, ideal para una colación saludable. Sus tapas están elaboradas con harina de algarroba y zapallo, creando una base con un dulzor natural y un extra de fibra. Relleno de cremoso dulce de leche y bañado en chocolate, es un postre libre de gluten que equilibra a la perfección lo delicioso con lo funcional, perfecto para darte un gusto sin culpas.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Alfajor de Avellana Blanco Celienergy (50g)",
@@ -3567,7 +3567,7 @@
           "https://thefoodmarketar.vtexassets.com/arquivos/ids/164356/222859_alfajor-de-avellana-blanco-celienergy-relleno-de-dulce-de-membrillo-x-50-g_imagen-1.jpg?v=638852612904930000"
         ],
         "desc": "Este alfajor combina la delicadeza de las avellanas con la cremosidad del chocolate blanco. Las tapas, elaboradas a base de avellanas, le confieren un sabor suave y una textura delicada que armoniza a la perfección con el relleno de dulce de leche. La cobertura de chocolate blanco añade un toque dulce y sedoso, creando una golosina sin gluten, elegante y perfecta para acompañar un café.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Alfajor de Avellana Negro Celienergy (50g)",
@@ -3575,7 +3575,7 @@
           "https://www.centraloeste.com.ar/media/catalog/product/cache/ddb703dc084a33c8cde56cf551816b8e/6/5/656750814383.jpeg"
         ],
         "desc": "Para los amantes del chocolate intenso, este alfajor es la opción perfecta. Sus tapas, hechas a base de avellanas, se rellenan con un suave dulce de leche y se cubren completamente con un baño de exquisito chocolate negro. Esta combinación crea un sabor profundo y una textura irresistible. Al ser libre de gluten, es un postre apto para celíacos que buscan un capricho chocolatoso y de alta calidad.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Alfajor de Maní Celienergy (50g)",
@@ -3583,7 +3583,7 @@
           "https://acdn-us.mitiendanube.com/stores/093/780/products/1000272154-9ef5f754eea2459bd717537156017968-480-0.jpg"
         ],
         "desc": "Este alfajor es un clásico irresistible para los fanáticos del maní (cacahuete). Sus tapas, con un intenso sabor a maní, se unen con un generoso relleno de dulce de leche y se bañan en chocolate, creando la combinación perfecta de dulce y salado. Es una bomba de sabor y energía, libre de gluten, ideal para una merienda sustanciosa o para recuperar fuerzas después de una actividad física.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Alfajor de Nuez Celienergy (50g)",
@@ -3591,7 +3591,7 @@
           "https://thefoodmarketar.vtexassets.com/arquivos/ids/164354/222857_alfajor-de-nuez-celienergy-relleno-de-dulce-de-leche-x-50-g_imagen-1.jpg?v=638852609320600000s"
         ],
         "desc": "Disfruta de una experiencia gourmet con este alfajor sin gluten, cuyas tapas están elaboradas a base de nuez. Este fruto seco le aporta una textura húmeda, un sabor intenso y una dosis de grasas saludables. El clásico relleno de dulce de leche se complementa a la perfección con el sabor de la nuez, todo cubierto por una fina capa de chocolate. Es el snack ideal para recargar energías con un toque sofisticado.",
-        "price": 2000
+        "price": 2500
       }
     ],
     "crelech": [
@@ -3646,7 +3646,7 @@
           "https://acdn-us.mitiendanube.com/stores/093/780/products/dantellidulcedelecheyfrutilla-5f4debc16c35e830dc17559163264377-1024-1024.jpg"
         ],
         "desc": "¿Por qué elegir cuando puedes tener ambos? Este alfajor sin gluten combina lo mejor de dos mundos con un doble relleno: por un lado, el clásico y cremoso dulce de leche, y por el otro, el vibrante y frutal dulce de frutilla. Cubierto con chocolate semiamargo, cada mordida es una sorpresa de sabores que se complementan a la perfección, ofreciendo una experiencia única.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Alfajor de Pasta de Avellanas con Chocolate Semiamargo Dantelli (60g)",
@@ -3654,7 +3654,7 @@
           "https://http2.mlstatic.com/D_NQ_NP_673261-MLA89082298063_072025-O.webp"
         ],
         "desc": "Este alfajor sin gluten está especialmente diseñado para los fanáticos de las avellanas. Un suave bizcocho de cacao alberga un intenso y cremoso relleno de pasta de avellanas, evocando el sabor de los mejores chocolates europeos. La cobertura de chocolate semiamargo realza aún más las notas de la avellana, convirtiéndolo en un postre sofisticado e irresistible.",
-        "price": 1700
+        "price": 2500
       },
       {
         "name": "Alfajor Peque de Cacao Intenso y Dulce de Leche Dantelli (45g)",
@@ -3662,7 +3662,7 @@
           "https://acdn-us.mitiendanube.com/stores/093/780/products/picsart_24-07-17_10-01-39-450-b806d31f79ac68964b17230404187136-640-0.png"
         ],
         "desc": "El alfajor \"Peque\" es la opción ideal para quienes buscan un sabor a cacao más intenso en un tamaño más pequeño. Este bizcocho, con un potente sabor a chocolate y relleno de dulce de leche, está cubierto con un baño de chocolate semiamargo. A pesar de su tamaño reducido, cada bocado es una explosión de sabor chocolatoso, perfecto para un antojo rápido, libre de gluten y lleno de carácter.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Alfajor Premium de Almendras y Dulce de Leche Dantelli (60g)",
@@ -3670,7 +3670,7 @@
           "https://http2.mlstatic.com/D_NQ_NP_889153-MLU74396987213_022024-O.webp"
         ],
         "desc": "Elevando el concepto de alfajor, esta versión premium sin gluten utiliza harina de almendras para lograr un bizcocho increíblemente húmedo, denso y sabroso. El relleno de dulce de leche de primera calidad se funde a la perfección con la delicada textura de las tapas, todo bañado en un intenso chocolate semiamargo. Es una opción gourmet para un paladar exigente.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Alfajor Premium de Almendras, Café y Avellanas Dantelli (60g)",
@@ -3678,7 +3678,7 @@
           "https://dieteticaviamonte.com.ar/wp-content/uploads/2024/03/IMG-20240311-WA0014.jpg"
         ],
         "desc": "Esta es la máxima expresión del alfajor gourmet, diseñado para una experiencia de sabor compleja y adulta. El bizcocho, elaborado con harina de almendras, se rellena con una intensa crema de café y avellanas. La cobertura de chocolate semiamargo une todos los sabores, creando un postre sin gluten con notas tostadas y un aroma increíble, ideal para maridar con un buen café.",
-        "price": 1700
+        "price": 2500
       },
       {
         "name": "Alfajor Triple de Dulce de Leche y Mousse de Vainilla Dantelli (70g)",
@@ -3686,7 +3686,7 @@
           "https://http2.mlstatic.com/D_932801-MLA84313732458_052025-C.jpg"
         ],
         "desc": "Para los verdaderamente golosos, este alfajor triple sin gluten es la máxima indulgencia. Consta de tres capas de suave bizcocho intercaladas con dos abundantes rellenos: uno de cremoso dulce de leche y otro de delicada mousse de vainilla. Todo el conjunto está cubierto por un intenso baño de chocolate semiamargo, creando una experiencia de sabor y textura inigualable y muy sustanciosa.",
-        "price": 2000
+        "price": 2500
       }
     ],
     "cerro-azul": [
@@ -3772,7 +3772,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/326/060/products/pan_molde_smams_200g-437a2802fd42fdd39c17054142726003-1024-1024.jpg"
         ],
         "desc": "Este pan de molde, especialmente formulado para ser libre de gluten, ofrece la suavidad y versatilidad del pan tradicional, siendo además una excelente fuente de fibra. Su textura tierna es perfecta para preparar sándwiches suaves que no se desarman o tostadas doradas para el desayuno, convirtiéndose en la opción ideal para el día a día de quienes siguen una dieta celíaca. Su receta incluye ingredientes como leche y huevo para lograr su consistencia, por lo que se debe tener en cuenta para otras alergias.",
-        "price": 4500
+        "price": 4800
       }
     ],
     "lule-muu-barritas": [
@@ -3906,7 +3906,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/434/490/products/mockup-arandanos1-a99d58c2aa7896cdb717002584683639-640-0.webp"
         ],
         "desc": "Disfruta de una combinación clásica y llena de antioxidantes con esta barrita a base de plantas. Une el sabor ácido de los arándanos con el toque crujiente de las nueces, todo sobre una base nutritiva con 9 gramos de proteína de arveja y 7 gramos de fibra. Es un snack equilibrado y delicioso, ideal para recargar energías a media mañana con ingredientes de alta calidad.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Crudda Bar Avellana Chocolate (45g)",
@@ -3914,7 +3914,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/crda04_1-86d65b28996c2d747f17455872420328-1024-1024.png"
         ],
         "desc": "Disfruta de un sabor sofisticado y delicioso con esta barrita de avellana y chocolate. Su fórmula a base de plantas aporta 9 gramos de proteína de arveja y 7 gramos de fibra, convirtiéndola en un snack nutritivo y saciante. La combinación de la avellana tostada con el cacao intenso la hace ideal para un gusto gourmet y saludable después de entrenar o como una colación energética.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Crudda Bar Banana Toffee (45g)",
@@ -3922,7 +3922,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/434/490/products/crudda-bar-proteica-sabor-banana-y-toffee-x-40g-crudda-d108c9b0b9859648b317456078201064-1024-1024.jpg"
         ],
         "desc": "Esta barrita a base de plantas combina la dulzura natural de la banana con el sabor acaramelado del toffee. Su fórmula, que incluye 9 gramos de proteína de arveja y 7 gramos de fibra, se complementa con pasta de maní y cacao, creando un snack complejo y delicioso. Es la opción perfecta para una colación energética con un toque de postre.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Crudda Bar Brownie (45g)",
@@ -3930,7 +3930,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/crda02_1-501dd6f754c22aa4ba17246811116405-480-0.jpg"
         ],
         "desc": "Esta barrita a base de plantas es la opción ideal para los amantes del chocolate. Con un intenso sabor a brownie y una textura suave, ofrece 9 gramos de proteína de arveja y 7 gramos de fibra. Su fórmula se complementa con quinoa y pasta de maní, creando un snack funcional, delicioso y saciante, perfecto para una colación post-entrenamiento o para satisfacer un antojo de forma nutritiva.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Crudda Bar Coco Chocolate (45g)",
@@ -3938,7 +3938,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/434/490/products/crudda-bar-proteica-sabor-coco-y-chocolate-x-40g-crudda-29adcf3477ffa2f92917456077266202-640-0.jpg"
         ],
         "desc": "Transporta tu paladar al trópico con esta barrita que fusiona el sabor exótico del coco con la intensidad del chocolate. Elaborada a base de plantas, esta barra ofrece 9 gramos de proteína de arveja y 7 gramos de fibra. Es un snack delicioso y refrescante, perfecto para quienes disfrutan de la clásica combinación del coco y el cacao en una opción nutritiva y funcional.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Crudda Bar Peanut Caramel (45g)",
@@ -3946,7 +3946,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/434/490/products/mockup-peanut-caramel1-36b3eb752dbe3671f117002587945021-1024-1024.png"
         ],
         "desc": "Esta barrita ofrece el irresistible sabor del caramelo salado y el maní en un formato saludable y funcional. Con 9 gramos de proteína de arveja y 7 gramos de fibra, es el snack perfecto para calmar el hambre y darte un impulso de energía. Su perfil de sabor, que equilibra lo dulce y lo salado, la convierte en una opción deliciosa y sustanciosa para cualquier momento del día.",
-        "price": 2000
+        "price": 2500
       }
     ],
     "laddubar": [
@@ -4040,7 +4040,7 @@
           "https://acdn-us.mitiendanube.com/stores/883/322/products/productos-16-b9040cf6c1246d043917121519315880-1024-1024.webp"
         ],
         "desc": "Este bocadito es el snack perfecto para una dosis de energía saludable en un formato pequeño. Combina la acidez de los arándanos deshidratados con la intensidad de un baño de chocolate semiamargo, todo sobre una base nutritiva de avena y maní. Es una opción rica en fibra y llena de sabor, ideal para calmar un antojo de forma inteligente o para acompañar un café.",
-        "price": 1300
+        "price": 1500
       },
       {
         "name": "Bocadito MANÍ_CHOCO Integra (25g)",
@@ -4048,7 +4048,7 @@
           "https://acdn-us.mitiendanube.com/stores/883/322/products/productos-17-1-4c275326b6bfc7303917110467912448-1024-1024.webp"
         ],
         "desc": "Disfruta de la clásica y deliciosa combinación de maní y chocolate en este práctico bocadito. Una base rica en maní tostado y avena se cubre con una generosa capa de chocolate semiamargo, creando una experiencia de sabor y textura irresistible. Es la colación perfecta para recargar energías, con el equilibrio ideal entre dulce y salado para satisfacer tus antojos.",
-        "price": 1300
+        "price": 1500
       }
     ],
     "colonial": [
@@ -4161,7 +4161,7 @@
           "https://almadrealimentos.com/assets/img/products/Chips-cebolla.webp"
         ],
         "desc": "Disfruta de una explosión de sabor con estos pita chips horneados y sazonados con cebolla. La base de masa madre les otorga una textura crocante única, que se complementa a la perfección con el toque aromático y sabroso de la cebolla. Son un snack saludable, sin conservantes, bajo en grasas y perfecto para darle un giro de sabor a tus picadas o para acompañar guacamole y otras salsas frescas.",
-        "price": 2500
+        "price": 3000
       },
       {
         "name": "Pita Chips de Masa Madre con Jalapeño Almadre (170g)",
@@ -4169,7 +4169,7 @@
           "https://almadrealimentos.com/assets/img/products/Chips-jalapeno.webp"
         ],
         "desc": "Para los amantes del picante, estos pita chips horneados con jalapeño son la opción ideal. El toque justo de picor del jalapeño se equilibra con el sabor de la masa madre, creando un snack adictivo y lleno de carácter. Son perfectos para acompañar con dips de queso crema, para añadir un toque crujiente a tus ensaladas o para disfrutar de un picoteo audaz y saludable, sin aditivos ni conservantes.",
-        "price": 2500
+        "price": 3000
       },
       {
         "name": "Pita Chips de Masa Madre Cúrcuma - 115g",
@@ -4177,7 +4177,7 @@
           "https://jumboargentina.vtexassets.com/arquivos/ids/877066/Pita-Chips-C-rcuma-Almadre-115gr-1-1040295.jpg?v=638887305765100000"
         ],
         "desc": "Descubre un snack gourmet, vegano y lleno de sabor. Estos Pita Chips de Cúrcuma son ideales para dipear en hummus o babaganush, aportando un toque exótico a tus picadas. Su gran diferencial es que están horneados y elaborados con masa madre, logrando una textura ultra crujiente y un sabor terroso único. Una alternativa artesanal y saludable a las papas fritas tradicionales.",
-        "price": 2500
+        "price": 3000
       },
       {
         "name": "Pita Chips de Masa Madre Original Almadre (170g)",
@@ -4185,7 +4185,7 @@
           "https://almadrealimentos.com/assets/img/products/Chips-original.webp"
         ],
         "desc": "Estos pita chips horneados son el snack perfecto para un picoteo saludable y delicioso. Elaborados con masa madre e ingredientes 100% naturales, ofrecen una textura increíblemente crujiente y un sabor suave y versátil. Son bajos en grasas saturadas, 0% grasas trans y no contienen conservantes, convirtiéndolos en una opción inteligente para acompañar tus dips, hummus, cremas de vegetales o simplemente para disfrutar solos.",
-        "price": 2500
+        "price": 3000
       },
       {
         "name": "Pita Chips de Masa Madre Tomate y Romero - 115g",
@@ -4193,7 +4193,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/172/573/products/1000334851-ce8775d21d25d0134a17329166943151-1024-1024.jpg"
         ],
         "desc": "Eleva tus picadas con una combinación de sabores mediterráneos. Estos Pita Chips horneados son el acompañante perfecto para dips cremosos, quesos o para disfrutar solos. Hechos artesanalmente con masa madre, su irresistible sabor a tomate y romero y su textura extra crujiente los convierten en un snack vegano, delicioso y mucho más saludable que las frituras convencionales.",
-        "price": 2500
+        "price": 3000
       }
     ],
     "carilo-molinos-del-bosque": [
@@ -4253,7 +4253,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/arro04_1-868d7050cada96f1a617610351189600-1024-1024.webp"
         ],
         "desc": "Para un antojo dulce y ligero, estas galletas de arroz integral yamaní son la opción ideal. Tienen un suave toque dulce que las hace deliciosas para comer solas o para acompañar con frutas, yogur, mermeladas o cremas de avellanas. Con solo 25 calorías por galleta y libres de gluten, son el snack perfecto para una merienda saludable y sin culpas.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Bolachas de Arroz Integral Yamani, Semillas de Sésamo y Lino Sin Sal Agregada  (101g)",
@@ -4261,7 +4261,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/arro02_1-eeb377d97338369fbf17122485917431-1024-1024.webp"
         ],
         "desc": "Esta versión de galletas de arroz integral yamaní con semillas de sésamo y lino está especialmente formulada sin sal agregada, siendo muy baja en sodio. Son la opción perfecta para quienes deben controlar su consumo de sal sin renunciar a una base crujiente y nutritiva. Su sabor neutro las hace increíblemente versátiles para combinar con cualquier tipo de alimento, dulce o salado.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Bolachas de Arroz Integral Yamani, Trigo, Avena y Sal - 3 Cereales  (101g)",
@@ -4269,7 +4269,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/arro03_1-2f50c451857985819f17610351170236-1024-1024.webp"
         ],
         "desc": "Disfruta de una experiencia más completa y nutritiva con estas galletas elaboradas con 3 cereales: arroz integral yamaní, trigo y avena. Esta combinación las convierte en una excelente fuente de fibra, con una textura robusta y un sabor más complejo. Son ideales para quienes buscan un snack más sustancioso y con un mayor aporte nutricional para sus desayunos o meriendas.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Bolachas de Arroz Integral Yamani  Con Sal, Semillas de Sesamo y Lino (101g)",
@@ -4277,7 +4277,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/arro01_1-1166f8e238fc2ce9ba17610351141206-1024-1024.webp"
         ],
         "desc": "Estas galletas de arroz yamaní integral son un snack crocante y nutritivo, enriquecido con los beneficios del sésamo (gergelim) y el lino (linho). La adición de estas semillas no solo aporta una textura y sabor deliciosos, sino también Omega 3 y 6. Son libres de gluten, horneadas y perfectas para acompañar con toppings salados como quesos crema, palta o tomates frescos, creando una base saludable y sabrosa.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Arrocitas Caramel",
@@ -4405,7 +4405,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/macr01_1-bc17cb19846534aa3c17123193669698-1024-1024.webp"
         ],
         "desc": "Disfruta de la base crujiente y versátil perfecta para tus creaciones saladas. Estas galletas de arroz con un toque justo de sal son ideales para realzar el sabor de tus ingredientes favoritos, como aguacate, quesos o fiambres. Su textura ligera y aireada las convierte en la opción inteligente para un snack rápido, una comida ligera o un canapé saludable. El bocado clásico que resuelve cualquier antojo de forma equilibrada.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Galletas de Arroz Dulces - 102g",
@@ -4413,7 +4413,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/macr04_1-4ee2a3d18fb96f1a6517123193833750-1024-1024.webp"
         ],
         "desc": "Satisface tus antojos de media tarde con un capricho ligero y delicioso. Estas galletas de arroz están delicadamente endulzadas para ofrecerte un sabor agradable directamente desde el paquete, siendo perfectas para comer solas o con toppings como frutas frescas y yogurt. Su balanceado toque dulce y su textura increíblemente crujiente las convierten en la alternativa ideal a las galletas tradicionales para un postre o snack sin culpas.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Galletas de Arroz Multicereal - 102g",
@@ -4421,7 +4421,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/macr03_1-5d416bca53d8e8ea8017575205053733-1024-1024.webp"
         ],
         "desc": "Añade un extra de nutrición y un sabor más profundo a tus snacks diarios. Estas galletas combinan la ligereza del arroz con una mezcla de granos seleccionados para una experiencia más completa y un gusto con notas a nuez. Su textura robusta es el soporte ideal para ingredientes más contundentes como hummus, patés o mantequilla de maní. La opción perfecta para quienes buscan un snack más saciante y con mayores beneficios.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Galletas de Arroz Sin Sal - 102g",
@@ -4429,7 +4429,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/macr02_1-728d10dff77916996717123193727637-1024-1024.webp"
         ],
         "desc": "Controla tu ingesta de sodio sin sacrificar el placer de un bocado crujiente. Estas galletas de arroz sin sal te ofrecen el sabor puro y natural del grano inflado, convirtiéndose en el lienzo perfecto para toppings tanto dulces como salados. Son la elección ideal para dietas bajas en sodio o para quienes prefieren personalizar el 100% del sabor de sus snacks. La opción más pura y versátil para tu despensa.",
-        "price": 1700
+        "price": 1800
       }
     ],
     "nuestros-sabores": [
@@ -4973,7 +4973,7 @@
           "https://integraliaalimentos.com.ar/wp-content/uploads/2019/06/IntegraliaDiabestChocoate.png"
         ],
         "desc": "Date el gusto de un sabor clásico y saludable. Las galletitas Diabest de Chocolate y Avena están especialmente formuladas sin azúcar agregada, siendo ideales para quienes buscan controlar su ingesta. Su base de avena aporta fibra, mientras que el chocolate da ese toque delicioso. Son perfectas para una merienda o colación nutritiva, sin grasas trans ni conservantes.",
-        "price": 3000
+        "price": 3500
       },
       {
         "name": "Diabest Coco y Avena Sin Azúcar Agregada - 200g",
@@ -4981,7 +4981,7 @@
           "https://integraliaalimentos.com.ar/wp-content/uploads/2019/06/IntegraliaDiabestCoco.png"
         ],
         "desc": "Disfruta del sabor tropical del coco en una galletita pensada para tu bienestar. Las Diabest de Coco y Avena combinan la fibra de la avena con el dulzor natural del coco, sin azúcar agregada. Son la opción perfecta para acompañar tus infusiones, ofreciéndote un bocado liviano, libre de grasas trans y sin colorantes artificiales. El snack ideal para cuidarte con gusto.",
-        "price": 3000
+        "price": 3500
       },
       {
         "name": "Diabest Dietéticas Algarroba - 200g",
@@ -4989,7 +4989,7 @@
           "https://http2.mlstatic.com/D_NQ_NP_2X_731576-MLA90838192972_082025-F.webp"
         ],
         "desc": "Descubre la dulzura natural de la algarroba en una galletita dietética y a base de plantas. Las Diabest de Algarroba te ofrecen un sabor profundo y distintivo, ideal para quienes buscan una alternativa al chocolate. Su fórmula sin azúcar agregada es perfecta para un snack nutritivo y diferente. Un bocado lleno de fibra para disfrutar en cualquier momento del día.",
-        "price": 3000
+        "price": 3500
       },
       {
         "name": "Diabest Limón y Avena Sin Azúcar Agregada - 200g",
@@ -4997,7 +4997,7 @@
           "https://integraliaalimentos.com.ar/wp-content/uploads/2019/06/IntegraliaDiabestLimon.png"
         ],
         "desc": "Refresca tus pausas con el toque cítrico del limón. Las galletitas Diabest de Limón y Avena son la alternativa ideal para una colación ligera y llena de sabor, sin azúcar agregada. La combinación de la avena con la frescura del limón las hace deliciosas y nutritivas. Un bocado saludable, sin conservantes ni grasas trans, para disfrutar sin culpas.",
-        "price": 3000
+        "price": 3500
       },
       {
         "name": "Galletitas Integralia de Avena y Limón - 220g",
@@ -5294,7 +5294,7 @@
           "https://marinozzisa.com/wp-content/uploads/2021/07/TOSTADAS-DE-MESA.png"
         ],
         "desc": "El clásico bizcochito salado, ahora en su versión más ligera. Estas tostaditas son ideales para acompañar una picada, un queso untable o tu mate de la tarde. Su toque justo de sal y su textura crujiente las convierten en la opción perfecta para un antojo, sabiendo que son 0% grasas trans y 0% colesterol.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Tostadas de Salvado Light x 200 g",
@@ -5302,7 +5302,7 @@
           "https://marinozzisa.com/wp-content/uploads/2021/07/TOSTADAS-SALVADO.png"
         ],
         "desc": "Añade un plus de fibra a tus pausas diarias. Estas tostaditas de salvado son el snack ideal para quienes buscan una mayor saciedad y un mejor tránsito intestinal. Su textura rústica y su fórmula light, 0% colesterol y 0% grasas trans, las convierten en la opción inteligente para acompañar tu yogur o infusión.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Tostadas Dulces Light - Bajas en sodio x 200 g",
@@ -5310,7 +5310,7 @@
           "https://marinozzisa.com/wp-content/uploads/2021/07/TOSTADAS-DULCES.png"
         ],
         "desc": "Disfruta de un bocado dulce y liviano en cualquier momento. Estas tostaditas son la compañía ideal para tu desayuno o merienda, ofreciendo un sabor azucarado sutil sin excesos. Su fórmula es baja en sodio, 0% grasas trans y 0% colesterol, permitiéndote un gusto saludable para acompañar tus infusiones favoritas.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Tostadas Light x 200 g (Sin Gluten)",
@@ -5318,7 +5318,7 @@
           "https://marinozzisa.com/wp-content/uploads/2021/07/TOSTADAS-LIGHT.png"
         ],
         "desc": "Disfruta de un snack liviano y crujiente, ahora apto para celíacos. Estas tostaditas light están elaboradas sin TACC (Sin Gluten), permitiéndote acompañar tus infusiones o comidas sin preocupaciones. Su receta 0% grasas trans y 0% colesterol te da el gusto de un bizcochito clásico en una versión segura y saludable para tu dieta.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Tostadas Semillas y Cereales - 200g",
@@ -5326,7 +5326,7 @@
           "https://marinozzisa.com/wp-content/uploads/2021/07/TOSTADAS-CON-SEMILLAS.png"
         ],
         "desc": "La base perfecta para un desayuno completo y lleno de energía. Estas tostadas de semillas y cereales te ofrecen una fuente de fibra y una textura multicereal increíblemente crujiente. Son ideales para untar con palta, queso o mermelada, convirtiendo tu primera comida del día en un momento nutritivo, 0% grasas trans y 0% colesterol.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Tostadas Sin Sal - Light x 200 g",
@@ -5334,7 +5334,7 @@
           "https://marinozzisa.com/wp-content/uploads/2021/07/TOSTADAS-SIN-SAL.png"
         ],
         "desc": "La opción ideal para quienes buscan el placer de un bizcocho crujiente sin nada de sal. Estas tostaditas light te ofrecen una base neutra y liviana, perfecta para acompañar con mermeladas o quesos sin sodio. Son 0% colesterol y 0% grasas trans, convirtiéndose en el snack confiable para tu dieta baja en sodio.",
-        "price": 1700
+        "price": 1800
       }
     ],
     "bio-nativa-coco-nut": [
@@ -5398,7 +5398,7 @@
           "https://pampagourmet.com.ar/wp-content/uploads/2020/08/Chimichurri-1-1-6.jpg"
         ],
         "desc": "Realza tus ensaladas con la sofisticación de este aceto balsámico elaborado a partir de uvas Malbec orgánicas. Estacionado en barricas de roble, ofrece un equilibrio perfecto entre acidez y dulzor con notas amaderadas profundas. Es ideal para finalizar platos gourmet, marinar carnes rojas o dar un toque especial a frutillas y postres. Una experiencia de sabor auténtica, sin conservantes y certificada orgánica.",
-        "price": 5100
+        "price": 6200
       },
       {
         "name": "Vinagre de Sidra de Manzana Orgánico - 250ml",
@@ -5450,7 +5450,7 @@
           "https://www.silkargentina.com.ar/wp-content/uploads/2025/01/Silk-Chocolate-Productos.webp"
         ],
         "desc": "Satisface tus ganas de chocolate de la manera más saludable y deliciosa. Esta bebida combina la cremosidad de la almendra con cacao real, creando una mezcla irresistible que encanta a grandes y chicos. Es perfecta para beber fría como un postre líquido o caliente en días de invierno. Disfruta de todo el placer del chocolate con menos calorías que la leche chocolatada tradicional y sin lactosa.",
-        "price": 4500
+        "price": 4800
       },
       {
         "name": "Almendra Original - 1 Litro",
@@ -5458,7 +5458,7 @@
           "https://www.silkargentina.com.ar/wp-content/uploads/2025/07/Packs-Almendra-con-Circulo.webp"
         ],
         "desc": "Redescubre tu desayuno con el equilibrio perfecto entre sabor y nutrición. Esta versión original ofrece una textura cremosa y un toque justo de dulzor que conquista a toda la familia. Es la alternativa ideal a la leche tradicional para tus cereales, cafés y recetas de repostería, aportando calcio y vitaminas esenciales. Una bebida vegetal deliciosa, libre de lactosa y conservantes, lista para disfrutar en cualquier momento.",
-        "price": 4500
+        "price": 4800
       },
       {
         "name": "Almendra Sin Azúcar - 1 Litro",
@@ -5466,7 +5466,7 @@
           "https://www.silkargentina.com.ar/wp-content/uploads/2025/07/Packs-Almendra-Sin-Azucar-con-Circulo.webp"
         ],
         "desc": "Disfruta de la cremosidad de la leche de almendras en su versión más pura y ligera. Esta bebida es la base vegetal perfecta para tus smoothies, cereales o café, aportando un 50% más de calcio que la leche de vaca sin sumar calorías extra. Su sabor neutro y delicado la convierte en un ingrediente versátil para cocinar tus recetas favoritas, libre de lácteos, gluten y colorantes artificiales.",
-        "price": 4500
+        "price": 4800
       },
       {
         "name": "Almendra Vainilla Sin Azúcar - 1 Litro",
@@ -5474,7 +5474,7 @@
           "https://www.silkargentina.com.ar/wp-content/uploads/2025/07/Packs-Almendra-Vainilla-Sin-Azucar-con-Circulo.webp"
         ],
         "desc": "Dale un toque dulce y aromático a tus días sin romper tu dieta. Esta bebida combina la suavidad de las almendras tostadas con notas naturales de vainilla, creando una experiencia deliciosa y ligera. Es perfecta para cortar el café, mezclar con granola o beber sola cuando tienes antojo de algo rico. Disfruta de un placer libre de culpas, fortificado con calcio y vitaminas.",
-        "price": 4500
+        "price": 4800
       },
       {
         "name": "Coco Sin Azúcar - 1 Litro",
@@ -5482,7 +5482,7 @@
           "https://www.silkargentina.com.ar/wp-content/uploads/2025/01/Silk-Coco-Sin-azucar-Productos.webp"
         ],
         "desc": "Transporta tus sentidos al trópico con una bebida refrescante y ligera. Esta opción te ofrece todo el sabor exótico del coco real en una fórmula hidratante y baja en calorías. Es ideal para tomar sola bien fría, preparar batidos frutales o darle un toque especial a tu café de la mañana. Una opción naturalmente libre de lactosa y gluten que cuida tu figura sin sacrificar el sabor.",
-        "price": 4500
+        "price": 4800
       }
     ],
     "yogur-iogo": [
@@ -5598,7 +5598,7 @@
           "https://i.ibb.co/R4DJgMYX/Mani-con-chocolate.png"
         ],
         "desc": "Redescubre el clásico de las picadas dulces con una vuelta de tuerca más intensa y sofisticada. Este maní tostado seleccionado está recubierto con una generosa capa de chocolate semiamargo, ofreciendo un balance ideal que no empalaga. Su textura crocante y su sabor robusto lo convierten en el compañero indispensable para maratones de películas, reuniones con amigos o para tener siempre un snack energético en la alacena.",
-        "price": 2500
+        "price": 2600
       },
       {
         "name": "Pasas de Uva con Chocolate",
@@ -5625,7 +5625,7 @@
           "https://i0.wp.com/alimentoszucchi.com.ar/wp-content/uploads/2021/12/BASMATI.jpg?fit=800%2C540&ssl=1"
         ],
         "stock": true,
-        "price": 3800
+        "price": 3900
       },
       {
         "name": "Arroz blanco tradicional",
@@ -5857,7 +5857,7 @@
       {
         "name": "Cacahuate Vivet Original Sin Azúcar - 1 Litro",
         "desc": "Descubre el poder nutricional del maní en su forma más pura y cremosa. Esta leche vegetal es tu aliada perfecta para sumar proteínas a tu día, aportando 21,5g por envase sin azúcar agregada. Es ideal para cortar tu café, potenciar tus batidos post-entreno o beber sola bien fría. Una alternativa deliciosa, libre de gluten y lactosa.",
-        "price": 4500,
+        "price": 4800,
         "img": [
           "https://www.vivet.com.ar/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fvivet-web.appspot.com%2Fo%2Fproducts_vivet%252F1763132042741-Cacahuate-Original-consumo3.jpg%3Falt%3Dmedia%26token%3Da2dc0d32-65e7-4d7b-b24a-ad2aac3bb2bf&w=1080&q=75"
         ],
@@ -5866,7 +5866,7 @@
       {
         "name": "Cacahuate Vivet Vainilla Caramel - 1 Litro",
         "desc": "Date un gusto irresistible sin renunciar a tu nutrición diaria. Esta opción sabor Vainilla Caramel combina la cremosidad intensa del maní con notas dulces y aromáticas que transforman tu merienda. Con un impresionante aporte de 23g de proteína por envase, es la opción perfecta para un desayuno energético o postre líquido.",
-        "price": 4500,
+        "price": 4800,
         "img": [
           "https://www.vivet.com.ar/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fvivet-web.appspot.com%2Fo%2Fproducts_vivet%252F1763132110489-Cacahuate-Vainilla-Caramel-consumo.png%3Falt%3Dmedia%26token%3D5013dbe3-e4ce-4db9-a6ae-3ec018cc2469&w=1080&q=75"
         ],
@@ -6035,7 +6035,7 @@
           "https://f.fcdn.app/imgs/abac78/www.lamolienda.uy/moliuy/9812/original/catalogo/000000000046275_000000000046275_1/1500-1500/granola-crujiente-100g-granola-crujiente-granel.jpg"
         ],
         "stock": true,
-        "price": 1600
+        "price": 1800
       },
       {
         "name": "Granola Mix Energético",
@@ -6044,7 +6044,7 @@
           "https://http2.mlstatic.com/D_Q_NP_2X_845236-MLA75788759164_042024-P.webp"
         ],
         "stock": true,
-        "price": 1600
+        "price": 1800
       },
       {
         "name": "Granola Sin Azúcar",
@@ -6053,7 +6053,7 @@
           "https://f.fcdn.app/imgs/7c03e8/www.lamolienda.uy/moliuy/8540/original/catalogo/000000000046274_000000000046274_1/2000-2000/granola-sin-azucar-100g-granola-sin-azucar-granel.jpg"
         ],
         "stock": true,
-        "price": 1500
+        "price": 1600
       },
       {
         "name": "Maíz de Barbacoa",
@@ -6219,7 +6219,7 @@
           "https://acdn-us.mitiendanube.com/stores/801/315/products/avena-instantanea21-64c34b262754c4beec16360380458115-1024-1024.webp"
         ],
         "stock": true,
-        "price": 1900
+        "price": 2000
       },
       {
         "name": "Cacao Amargo",
@@ -6227,7 +6227,8 @@
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/172/573/products/cacao-amargo-espana1-b0d2cc203aaf2ff10c15887160435540-1024-1024.webp"
         ],
-        "stock": true
+        "stock": true,
+        "price": 1000
       },
       {
         "name": "Fécula de Mandioca",
@@ -6245,7 +6246,7 @@
           "https://harinaslafuensanta.com/wp-content/uploads/2020/11/HARINA-DE-ALGARROBA.jpg"
         ],
         "stock": true,
-        "price": 2800
+        "price": 3000
       },
       {
         "name": "Harina de Arroz",
@@ -6254,7 +6255,7 @@
           "https://frutosare.com.ar/wp-content/uploads/2020/06/arroz-harina.jpg"
         ],
         "stock": true,
-        "price": 1200
+        "price": 1500
       },
       {
         "name": "Harina de Arveja",
@@ -6289,7 +6290,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/172/573/products/harina-de-garbanzo1-6425174d6f1ccab7ac15892241611843-1024-1024.webp"
         ],
         "stock": true,
-        "price": 1200
+        "price": 1500
       },
       {
         "name": "Harina de Lenteja",
@@ -6343,7 +6344,7 @@
           "https://frutosare.com.ar/wp-content/uploads/2017/03/harina-paraguaya.jpg"
         ],
         "stock": true,
-        "price": 1500
+        "price": 1700
       },
       {
         "name": "Salvado de Avena",
@@ -6352,7 +6353,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/625/145/products/granola-exotica-151-a69e8072432a102f3016946921636222-1024-1024.webp"
         ],
         "stock": true,
-        "price": 1900
+        "price": 2000
       }
     ],
     "leudantes": [
