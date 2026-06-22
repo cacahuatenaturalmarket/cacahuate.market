@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="http://marketcacahuate.com.ar/">
     <meta name="twitter:title" content="CACAHUATE NATURAL MARKET">
-    <meta name="twitter:description" content="Tu tienda natural en Lanús. Suplementos, alimentos orgánicos y más.">
+    <meta name="twitter:description" content="Tu tienda natural en Lanús. Suplementos, alimentos orgánicos and más.">
     <meta name="twitter:image" content="https://i.imgur.com/BCGbBgz.jpeg">
 
     <meta name="google-site-verification" content="k2yIgNPPMwE0v0NtmsjT_UuMBEoP5_I35zSSHykV0h0" />
@@ -244,7 +244,7 @@
                 font-size: 1rem;
             }
 
-            /* Márgenes de respiración para evitar solapamientos con botones flotantes */
+            /* Margen de respiración para evitar solapamientos con botones flotantes */
             .whatsapp-direct-btn {
                 bottom: 20px !important;
                 left: 20px !important;
@@ -384,6 +384,10 @@
     </div>
 
     <div id="toast" class="toast-notification"></div>
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" title="Volver arriba" aria-label="Volver al inicio de la página">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -736,8 +740,6 @@
             let categoriesHTML = '';
 
             groupCategories.forEach(cat => {
-                // 📍 CORRECCIÓN: Agregamos la clase 'mobile-nav-link' a todos los enlaces del menú de acordeón móvil 
-                // para que el interceptor de JavaScript los identifique y ejecute la animación de cierre automático.
                 if (cat.subcategories && cat.subcategories.length > 1) {
                     const brandsHTML = cat.subcategories
                         .map(brand => `
@@ -780,10 +782,6 @@
         }
     });
 
-    // ... Todo tu código anterior de la función se queda exactamente IGUAL ...
-    // ... Hasta llegar a esta última parte:
-
-    // Inyectamos la barra fija superior con la X de cierre y el panel de categorías abajo
     container.innerHTML = `
         <div class="mobile-menu-header" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background-color: #1a1a1a; border-bottom: 1px solid rgba(255,255,255,0.05); position: sticky; top: 0; z-index: 1005;">
             <span style="font-family: 'Merriweather', serif; color: var(--naranja-cacahuate); font-weight: bold; font-size: 1.2em;">CACAHUATE</span>
@@ -794,7 +792,6 @@
         <div class="mobile-panel main-panel active">${html}</div>
     `;
 
-    // Añadimos el evento para que la X cierre el menú al hacer clic
     setTimeout(() => {
         const closeBtn = document.getElementById('closeMobileMenuBtn');
         if (closeBtn) {
@@ -1170,6 +1167,29 @@
                             UI.updateCartCounter();
                             UI.showToast('<i class="fas fa-trash-alt"></i> El carrito ha sido vaciado.');
                         }
+                    });
+                }
+
+                /* ==========================================================================
+                   📍 NUEVO: CONTROL DINÁMICO DEL BOTÓN VOLVER ARRIBA EN EL SCRIPT
+                   ========================================================================== */
+                const scrollTopBtn = document.getElementById('scrollToTopBtn');
+                if (scrollTopBtn) {
+                    // Muestra u oculta el botón elástico según la posición del scroll
+                    window.addEventListener('scroll', () => {
+                        if (window.pageYOffset > 400) {
+                            scrollTopBtn.classList.add('show');
+                        } else {
+                            scrollTopBtn.classList.remove('show');
+                        }
+                    });
+
+                    // Gatilla la subida fluida de alta velocidad al hacer clic
+                    scrollTopBtn.addEventListener('click', () => {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
                     });
                 }
             },

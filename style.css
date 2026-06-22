@@ -12,7 +12,7 @@
     --rojo-error: #ff6b6b;
 }
 
-/* 📍 MODIFICACIÓN 1: RESETEO UNIVERSAL - Evita que paddings o bordes ensanchen la web hacia la derecha */
+/* 📍 RESETEO UNIVERSAL - Evita que paddings o bordes ensanchen la web hacia la derecha */
 *, *:before, *:after {
     box-sizing: border-box;
 }
@@ -32,7 +32,7 @@ body {
     color: var(--texto-claro);
     line-height: 1.6;
     
-    /* 📍 MODIFICACIÓN 1 (CONTINUACIÓN): CANDADO GLOBAL HORIZONTAL */
+    /* 📍 CANDADO GLOBAL HORIZONTAL */
     width: 100%;
     max-width: 100%;
     overflow-x: hidden; 
@@ -53,7 +53,7 @@ header {
 }
 
 /* --- CARRUSEL HERO --- */
-/* 📍 MODIFICACIÓN 2: BLINDAJE DEL CARRUPSEL - Fuerza el ancho exacto real de la ventana */
+/* 📍 BLINDAJE DEL CARRUSEL - Fuerza el ancho exacto real de la ventana */
 .header-background {
     position: absolute;
     top: 0; left: 0;
@@ -846,6 +846,45 @@ footer {
     color: var(--naranja-cacahuate) !important;
 }
 
+/* ==========================================================================
+   📍 NUEVO: BOTÓN FLOTANTE VOLVER ARRIBA PREMIUM (NOTEBOOKS Y DESKTOP)
+   ========================================================================== */
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: calc(90px + env(safe-area-inset-bottom)); /* Apilado simétricamente sobre el carrito */
+    right: 20px;
+    background-color: var(--fondo-tarjeta);
+    color: var(--naranja-cacahuate);
+    border: 2px solid var(--naranja-cacahuate);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1001;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transform: scale(0.8);
+}
+
+.scroll-to-top-btn:hover {
+    background-color: var(--naranja-cacahuate);
+    color: var(--fondo-oscuro);
+    transform: scale(1.1);
+}
+
+/* Clase inyectada dinámicamente al hacer scroll bajo */
+.scroll-to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
 /* --- MEDIAS QUERIES ADAPTATIVAS --- */
 @media (max-width: 1200px) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
 
@@ -908,7 +947,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /* 📍 MODIFICACIÓN 3: CANDADO DE DESBORDE DE GRILLA Y PRODUCTOS BAJOS */
+    /* 📍 CANDADO DE DESBORDE DE GRILLA Y PRODUCTOS BAJOS */
     main {
         width: 100%;
         max-width: 100%;
@@ -940,18 +979,16 @@ footer {
         right: 20px;
     }
 
-    /* 📍 CORRECCIÓN DEFINTIVA INTEGRADA: 
-       Oculta físicamente tanto la barra flotante de fondo (.main-nav) como el buscador (.search-bar-container)
-       únicamente mientras el menú de acordeón esté abierto en celulares. */
+    /* 📍 CORRECCIÓN DEFINTIVA INTEGRADA: Oculta Nav principal y Buscador al abrir acordeón */
     body.menu-open .main-nav,
     body.menu-open .search-bar-container,
     #mobile-menu-container.open ~ .main-nav,
     #mobile-menu-container.open ~ .search-bar-container,
     #mobile-menu-container.open .search-bar-container {
-        z-index: 998 !important;       /* Pasan de inmediato por debajo del acordeón móvil (1000) */
-        opacity: 0 !important;           /* Desaparecen al 100% para limpiar el fondo */
-        visibility: hidden !important;   /* El navegador los descarta por completo del renderizado */
-        pointer-events: none;            /* Bloquea toques accidentales sobre la tienda de fondo */
+        z-index: 998 !important;       
+        opacity: 0 !important;           
+        visibility: hidden !important;   
+        pointer-events: none;            
     }
 
     /* Forzamos un respiro al final de la grilla de productos para evitar superposiciones */
@@ -999,6 +1036,17 @@ footer {
     .modal-content {
         padding-bottom: calc(30px + env(safe-area-inset-bottom));
     }
+
+    /* ==========================================================================
+       📍 NUEVO: AJUSTE ERGONÓMICO DEL BOTÓN SUBIR EN CELULARES
+       ========================================================================== */
+    .scroll-to-top-btn {
+        bottom: 95px !important; /* Distancia controlada sobre el botón amarillo del carrito */
+        right: 25px !important;
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
+    }
 }
 
 /* --- MENÚ MÓVIL (PANELES) --- */
@@ -1024,15 +1072,13 @@ footer {
 .mobile-panel {
     position: absolute;
     
-    /* 📍 CORRECCIÓN MÓVIL: Cambiamos top a 60px para que nazca 
-       justo debajo de la nueva barra donde está la 'X' de cierre */
+    /* 📍 CORRECCIÓN MÓVIL: Nace debajo de la barra fija con la 'X' */
     top: 60px; 
-    
     left: 0;
     bottom: 0;
     width: 100%;
     
-    /* Calculamos la altura restando los 60px de la cabecera fija */
+    /* Altura balanceada restando la cabecera */
     height: calc(100% - 60px); 
     
     overflow-y: auto;
@@ -1041,7 +1087,6 @@ footer {
     transition: transform 0.3s ease-out;
 }
 
-/* Opcional: Nos aseguramos de que el texto de la cabecera móvil no tenga decoraciones */
 .mobile-menu-header button:focus {
     outline: none;
 }
