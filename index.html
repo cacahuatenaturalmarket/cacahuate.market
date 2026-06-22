@@ -889,71 +889,99 @@
                 });
                 box.style.display = 'block';
             },
-
-            handleSearch(scrollToFirst = false) {
+handleSearch(scrollToFirst = false) {
                 const rawSearch = UI.elements.globalSearchInput.value || '';
-                const searchTerm = this.normalizeText(rawSearch.trim());
+                
+                // Normalizamos el término de búsqueda global (minúsculas y sin acentos)
+                const searchNormalized = this.normalizeText(rawSearch.trim());
+                
+                // Dividimos la búsqueda en palabras sueltas (tokens) ignorando espacios vacíos
+                const searchWords = searchNormalized.split(/\s+/).filter(word => word.length > 0);
+                
                 let totalVisibleCards = 0;
                 let firstCardFound = null;
 
-                if(this.elements.clearSearchBtn) {
+                if (this.elements.clearSearchBtn) {
                     this.elements.clearSearchBtn.style.display = rawSearch.length > 0 ? 'block' : 'none';
                 }
 
-                if (searchTerm === '') {
+                // SI LA BARRA ESTÁ VACÍA: Reseteamos y mostramos todo el catálogo
+                if (searchWords.length === 0) {
                     this.elements.suggestionsBox.style.display = 'none';
                     document.querySelectorAll('.cards-grid').forEach(grid => {
-                        grid.style.display = 'grid';
-                        grid.previousElementSibling.style.display = 'block';
+                        grid.style.style.display = 'grid';
+                        if (grid.previousElementSibling) grid.previousElementSibling.style.display = 'block';
                         grid.querySelectorAll('.card').forEach(c => c.style.display = 'flex');
                     });
-                    this.elements.globalNoResultsMessage.style.display = 'none';
+                    if (this.elements.globalNoResultsMessage) this.elements.globalNoResultsMessage.style.display = 'none';
                     this.syncMainGridQuantities(); 
                     return;
                 }
 
+                // PROCESAMOS EL FILTRADO EN CADA GRILLA DE CATEGORÍA
                 document.querySelectorAll('.cards-grid').forEach(grid => {
                     let visibleCardsInGrid = 0;
+                    
+                    // Verificamos si las palabras coinciden con el título de la sección (ej: "Almacén Natural")
                     let isCategoryMatch = false;
-
                     const section = grid.previousElementSibling;
                     if (section && section.classList.contains('content-section')) {
                         const titleElement = section.querySelector('h1');
                         if (titleElement) {
                             const categoryTitle = this.normalizeText(titleElement.innerText);
-                            if (categoryTitle.includes(searchTerm)) isCategoryMatch = true;
+                            isCategoryMatch = searchWords.every(word => categoryTitle.includes(word));
                         }
                     }
 
+                    // Filtramos cada tarjeta de producto de forma inteligente
                     grid.querySelectorAll('.card').forEach(card => {
-                        const cardText = this.normalizeText(card.innerText);
-                        const isProductMatch = cardText.includes(searchTerm);
+                        const productName = card.dataset.name || '';
+                        
+                        // Intentamos recuperar el objeto original del mapa para leer descripción o variaciones ocultas
+                        const productData = Store.productMap.get(productName);
+                        
+                        // Consolidamos toda la información del producto en una sola cadena de texto normalizada
+                        let searchableText = productName;
+                        if (productData) {
+                            searchableText += ' ' + (productData.desc || '') + ' ' + (productData.brand || '');
+                        }
+                        const productInfoNormalized = this.normalizeText(searchableText);
+
+                        // 📍 EL CORAZÓN DE LA LOGICA: Cada palabra buscada debe existir en la info del producto o de la categoría
+                        const isProductMatch = searchWords.every(word => productInfoNormalized.includes(word));
                         const showCard = isProductMatch || isCategoryMatch;
                         
                         card.style.display = showCard ? 'flex' : 'none';
                         
-                        if(showCard) {
+                        if (showCard) {
                             visibleCardsInGrid++;
                             totalVisibleCards++;
                             if (!firstCardFound) firstCardFound = card;
                         }
                     });
 
+                    // Si no quedan productos visibles en esta grilla, ocultamos el título y el contenedor de la sección
                     if (section) section.style.display = visibleCardsInGrid > 0 ? 'block' : 'none';
                     grid.style.display = visibleCardsInGrid > 0 ? 'grid' : 'none';
                 });
 
+                // RENDERIZAMOS LAS SUGERENCIAS TIPO "GOOGLING" EN TIEMPO REAL
                 if (!scrollToFirst) { 
-                    const suggestions = Store.productList.filter(p => 
-                        this.normalizeText(p.name).includes(searchTerm)
-                    );
+                    const suggestions = Store.productList.filter(product => {
+                        const nameNormalized = this.normalizeText(product.name);
+                        const descNormalized = this.normalizeText(product.desc || '');
+                        const combined = nameNormalized + ' ' + descNormalized;
+                        return searchWords.every(word => combined.includes(word));
+                    });
                     this.renderSuggestions(suggestions);
                 }
 
+                // MENSAJE DE ERROR COHESIVO SI NO HAY COINCIDENCIAS
                 if (UI.elements.globalNoResultsMessage) {
                     UI.elements.globalNoResultsMessage.style.display = (totalVisibleCards === 0) ? 'block' : 'none';
                 }
 
+                // SCROLL SUAVE AUTOMÁTICO EN CASO DE APRETAR ENTER O CLICK EN SUGERENCIA
                 if (scrollToFirst && firstCardFound) {
                     setTimeout(() => {
                         const yOffset = -120; 
