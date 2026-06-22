@@ -12,7 +12,17 @@
     --rojo-error: #ff6b6b;
 }
 
-html { scroll-behavior: smooth; }
+/* 📍 MODIFICACIÓN 1: RESETEO UNIVERSAL - Evita que paddings o bordes ensanchen la web hacia la derecha */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html { 
+    scroll-behavior: smooth; 
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
     font-family: 'Inter', sans-serif;
@@ -21,6 +31,12 @@ body {
     background-color: var(--fondo-oscuro);
     color: var(--texto-claro);
     line-height: 1.6;
+    
+    /* 📍 MODIFICACIÓN 1 (CONTINUACIÓN): CANDADO GLOBAL HORIZONTAL */
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; 
+    position: relative;
 }
 
 header {
@@ -37,12 +53,15 @@ header {
 }
 
 /* --- CARRUSEL HERO --- */
+/* 📍 MODIFICACIÓN 2: BLINDAJE DEL CARRUPSEL - Fuerza el ancho exacto real de la ventana */
 .header-background {
     position: absolute;
     top: 0; left: 0;
-    width: 100%; height: 100%;
+    width: 100vw; 
+    height: 100%;
     z-index: 1;
     background-color: var(--fondo-oscuro);
+    overflow: hidden; 
 }
 
 .header-background img {
@@ -152,8 +171,12 @@ header {
 
 .dropdown { position: relative; display: inline-block; }
 
+/* 📍 COMPORTAMIENTO CON RETRASO PREMIUM (OPCIÓN 1 IMPLEMENTADA) */
 .dropdown-content {
-    display: none;
+    display: block !important; 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
     position: absolute;
     background-color: var(--fondo-claro-secundario);
     min-width: 240px;          /* Lo agrandamos un pelín para que los nombres largos respiren */
@@ -163,13 +186,24 @@ header {
     padding: 10px 0;
     margin-top: 5px;
 
-    /* 📍 SOLUCIÓN AL CORTE DEL MENÚ 📍 */
+    /* 📍 SOLUCIÓN AL CORTE DEL MENÚ */
     max-height: 75vh;          /* Limita el menú al 75% de la altura de la ventana del usuario */
     overflow-y: auto;          /* Activa el scroll vertical interno automáticamente si es necesario */
     
-    /* Opcional: Estiliza la barra de scroll interna para que sea sutil y combine con tu modo oscuro */
     scrollbar-width: thin;
     scrollbar-color: var(--naranja-cacahuate) var(--fondo-tarjeta);
+}
+
+/* Cuando pasas el mouse, aparece al instante */
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+/* Cuando QUITAS el mouse, espera 0.4 segundos antes de ocultarse (colchón de tiempo) */
+.dropdown:not(:hover) .dropdown-content {
+    transition-delay: 0.4s;
 }
 
 /* Estilos de barra de scroll para navegadores basados en Webkit (Chrome, Safari, Edge) */
@@ -197,8 +231,6 @@ header {
     background-color: var(--fondo-tarjeta);
     color: var(--naranja-cacahuate);
 }
-
-.dropdown:hover .dropdown-content { display: block; }
 
 .hamburger-menu {
     display: none;
@@ -876,9 +908,23 @@ footer {
 }
 
 @media (max-width: 768px) {
+    /* 📍 MODIFICACIÓN 3: CANDADO DE DESBORDE DE GRILLA Y PRODUCTOS BAJOS */
+    main {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
     .content-section h1 { font-size: 3em; }
     .logo-container { max-width: 180px; }
-    .cards-grid { padding: 25px; gap: 30px; }
+    
+    /* Adaptación métrica de la cuadrícula para evitar el desborde elástico lateral */
+    .cards-grid { 
+        padding: 15px; 
+        gap: 20px; 
+        width: 100%;
+        max-width: 100%;
+    }
 
     /* Adaptación para la barra de búsqueda en móvil */
     .search-bar-container {
