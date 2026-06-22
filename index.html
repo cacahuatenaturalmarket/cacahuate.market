@@ -780,7 +780,31 @@
         }
     });
 
-    container.innerHTML = `<div class="mobile-panel main-panel active">${html}</div>`;
+    // ... Todo tu código anterior de la función se queda exactamente IGUAL ...
+    // ... Hasta llegar a esta última parte:
+
+    // Inyectamos la barra fija superior con la X de cierre y el panel de categorías abajo
+    container.innerHTML = `
+        <div class="mobile-menu-header" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background-color: #1a1a1a; border-bottom: 1px solid rgba(255,255,255,0.05); position: sticky; top: 0; z-index: 1005;">
+            <span style="font-family: 'Merriweather', serif; color: var(--naranja-cacahuate); font-weight: bold; font-size: 1.2em;">CACAHUATE</span>
+            <button id="closeMobileMenuBtn" style="background: none; border: none; color: var(--naranja-cacahuate); font-size: 1.5em; cursor: pointer; padding: 5px 10px;">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-panel main-panel active">${html}</div>
+    `;
+
+    // Añadimos el evento para que la X cierre el menú al hacer clic
+    setTimeout(() => {
+        const closeBtn = document.getElementById('closeMobileMenuBtn');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                container.classList.remove('open');
+                document.body.classList.remove('menu-open');
+                document.documentElement.classList.remove('menu-open');
+            });
+        }
+    }, 50);
 },
 
             renderAllProducts() {

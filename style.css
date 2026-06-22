@@ -959,7 +959,7 @@ footer {
 #mobile-menu-container {
     display: block;
     position: fixed;
-    top: 60px;
+    top: 0;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -974,16 +974,30 @@ footer {
     transform: translateX(0);
 }
 
+/* --- CONFIGURACIÓN DEL PANEL DE CATEGORÍAS MÓVIL --- */
 .mobile-panel {
     position: absolute;
-    top: 0;
+    
+    /* 📍 CORRECCIÓN MÓVIL: Cambiamos top a 60px para que nazca 
+       justo debajo de la nueva barra donde está la 'X' de cierre */
+    top: 60px; 
+    
     left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
+    
+    /* Calculamos la altura restando los 60px de la cabecera fija */
+    height: calc(100% - 60px); 
+    
     overflow-y: auto;
     padding: 10px 0 calc(80px + env(safe-area-inset-bottom)) 0;
     box-sizing: border-box;
     transition: transform 0.3s ease-out;
+}
+
+/* Opcional: Nos aseguramos de que el texto de la cabecera móvil no tenga decoraciones */
+.mobile-menu-header button:focus {
+    outline: none;
 }
 
 .mobile-panel.main-panel { transform: translateX(0); }
