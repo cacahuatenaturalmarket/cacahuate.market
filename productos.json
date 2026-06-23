@@ -753,7 +753,7 @@
   "products": {
     "beck-candy": [
       {
-        "name": "Caramelos de Eucalipto Party Beck Candy",
+        "name": "Caramelos de Eucalipto Party Beck Candy 100grs",
         "img": [
           "https://distrinat.com/Content/images/articulos/ARGAL00061.jpg"
         ],
@@ -761,7 +761,7 @@
         "price": 3000
       },
       {
-        "name": "Caramelos de Fresa Party Beck Candy",
+        "name": "Caramelos de Fresa Party Beck Candy 100grs",
         "img": [
           "https://http2.mlstatic.com/D_NQ_NP_912010-MLA84872807722_052025-O.webp"
         ],
@@ -769,7 +769,7 @@
         "price": 3000
       },
       {
-        "name": "Caramelos de Jengibre Party Beck Candy",
+        "name": "Caramelos de Jengibre Party Beck Candy 100grs",
         "img": [
           "https://http2.mlstatic.com/D_NQ_NP_906169-MLA80687952580_112024-O.webp"
         ],
@@ -777,7 +777,7 @@
         "price": 3000
       },
       {
-        "name": "Caramelos de Miel Party Beck Candy",
+        "name": "Caramelos de Miel Party Beck Candy 100grs",
         "img": [
           "https://http2.mlstatic.com/D_NQ_NP_2X_702022-MLA88925460717_072025-F.webp"
         ],
@@ -785,7 +785,7 @@
         "price": 3000
       },
       {
-        "name": "Caramelos de Propóleo Fuerte Party Beck Candy",
+        "name": "Caramelos de Propóleo Fuerte Party Beck Candy 100grs",
         "img": [
           "https://distrinat.com/Content/images/articulos/ARGAL00053.jpg"
         ],
@@ -1839,8 +1839,7 @@
         "img": [
           "https://i.imgur.com/M73croO.png"
         ],
-        "desc": "El toque dulce y colorido para tus creaciones. Especialmente usada en repostería, es perfecta para dar vida a tus pasteles y postres con su sabor intenso y textura única.",
-        "stock": false
+        "desc": "El toque dulce y colorido para tus creaciones. Especialmente usada en repostería, es perfecta para dar vida a tus pasteles y postres con su sabor intenso y textura única."
       },
       {
         "name": "Fruta Nevada 100grs",
@@ -1962,8 +1961,7 @@
           "https://i.ibb.co/PyNVxXw/Nuez-Pecan.webp"
         ],
         "desc": "Con un distintivo sabor dulce y mantecoso, la nuez pecan aporta un toque gourmet a cualquier preparación. Es indispensable en postres como el \"pecan pie\" y perfecta para realzar helados o ensaladas.",
-        "price": 2100,
-        "stock": false
+        "price": 2100
       }
     ],
     "mix-frutos-secos": [
@@ -2123,7 +2121,7 @@
     ],
     "tinturas-oasis": [
       {
-        "name": "Acoro 50grs",
+        "name": "Acoro Liquido 60cc",
         "img": [
           "https://i.ibb.co/21J3M3FZ/ACORO.webp"
         ],
@@ -2131,7 +2129,7 @@
         "price": 7200
       },
       {
-        "name": "Alcachofa 50grs",
+        "name": "Alcachofa Liquido 60cc",
         "img": [
           "https://i.ibb.co/Jw5QBV5s/ALCACHOFA.png"
         ],
@@ -2139,7 +2137,7 @@
         "price": 7200
       },
       {
-        "name": "Alfalfa 50grs",
+        "name": "Alfalfa Liquida 60cc",
         "img": [
           "https://i.ibb.co/1J9Dyf3s/ALFALFA.png"
         ],
@@ -2147,7 +2145,7 @@
         "price": 7200
       },
       {
-        "name": "Cardo Mariano 50grs",
+        "name": "Cardo Mariano Liquido 60cc",
         "img": [
           "https://i.ibb.co/dwBY7c5B/CARDO-MARIANO.png"
         ],
@@ -2155,7 +2153,7 @@
         "price": 7200
       },
       {
-        "name": "Carqueja 50grs",
+        "name": "Carqueja Liquida 60cc",
         "img": [
           "https://i.ibb.co/2Y01PqY3/CARQUEJA.png"
         ],
@@ -2163,7 +2161,7 @@
         "price": 7200
       },
       {
-        "name": "Centella Asiática 50grs",
+        "name": "Centella Asiática Liquida 60cc",
         "img": [
           "https://i.ibb.co/zVZsssLL/CENTELLA-ASIATICA.png"
         ],
@@ -2171,7 +2169,7 @@
         "price": 7200
       },
       {
-        "name": "Cola de Caballo 50grs",
+        "name": "Cola de Caballo Liquida 60cc",
         "img": [
           "https://i.ibb.co/23qg0jZJ/COLA-DE-CABALLO.png"
         ],
@@ -2179,7 +2177,7 @@
         "price": 7200
       },
       {
-        "name": "Cúrcuma 50grs",
+        "name": "Cúrcuma Liquida 60cc",
         "img": [
           "https://i.ibb.co/Z6hqtHVM/CURCUMA.png"
         ],
@@ -2187,7 +2185,7 @@
         "price": 15500
       },
       {
-        "name": "Damiana 50grs",
+        "name": "Damiana Liquida 60cc",
         "img": [
           "https://i.ibb.co/sJJg0mLc/DAMIANA.png"
         ],
@@ -2195,7 +2193,7 @@
         "price": 7200
       },
       {
-        "name": "Diente de León 50grs",
+        "name": "Diente de León Liquido 60cc",
         "img": [
           "https://i.ibb.co/67NvjrNZ/DIENTE-DE-LEON.png"
         ],
@@ -2203,7 +2201,7 @@
         "price": 7200
       },
       {
-        "name": "Ginkgo Biloba",
+        "name": "Ginkgo Biloba Liquida 60cc",
         "img": [
           "https://i.ibb.co/b5RzkXF6/GINKGO-BILOBA.png"
         ],
@@ -2211,7 +2209,7 @@
         "price": 7200
       },
       {
-        "name": "Hinojo 50grs",
+        "name": "Hinojo Liquido 60cc",
         "img": [
           "https://i.ibb.co/WpzS4Pgn/HINOJO.webp"
         ],
@@ -2219,7 +2217,7 @@
         "price": 1000
       },
       {
-        "name": "Hisopo 50grs",
+        "name": "Hisopo Liquido 60cc",
         "img": [
           "https://i.ibb.co/zWqF6bjS/HISOPO.png"
         ],
@@ -2227,7 +2225,7 @@
         "price": 7200
       },
       {
-        "name": "Jengibre 50grs",
+        "name": "Jengibre Liquido 60cc",
         "img": [
           "https://i.ibb.co/GQShrbVp/JENGIBRE.webp"
         ],
@@ -2235,7 +2233,7 @@
         "price": 8500
       },
       {
-        "name": "Lapacho 50grs",
+        "name": "Lapacho Liquido 60cc",
         "img": [
           "https://i.ibb.co/NgTS1RN4/LAPACHO.png"
         ],
@@ -2243,7 +2241,7 @@
         "price": 7200
       },
       {
-        "name": "Malva 50grs",
+        "name": "Malva Liquida 60cc",
         "img": [
           "https://i.ibb.co/Txtbxkg8/MALVA.png"
         ],
@@ -2251,7 +2249,7 @@
         "price": 7200
       },
       {
-        "name": "Melisa (Toronjil) 50grs",
+        "name": "Melisa (Toronjil) liquido 60cc",
         "img": [
           "https://i.ibb.co/RkZTfjP1/MELISA.png"
         ],
@@ -2259,7 +2257,7 @@
         "price": 1200
       },
       {
-        "name": "Olivo 50grs",
+        "name": "Olivo Liquido 60cc",
         "img": [
           "https://i.ibb.co/jP9MDB1C/OLIVO.png"
         ],
@@ -2267,7 +2265,7 @@
         "price": 7200
       },
       {
-        "name": "Ortiga 50grs",
+        "name": "Ortiga Liquida 60cc",
         "img": [
           "https://i.ibb.co/0jb7h4MS/ORTIGA.png"
         ],
@@ -2275,7 +2273,7 @@
         "price": 7200
       },
       {
-        "name": "Pasionaria 50grs",
+        "name": "Pasionaria Liquida 60cc",
         "img": [
           "https://i.ibb.co/M58LxXjS/PASIONARIA.png"
         ],
@@ -2283,7 +2281,7 @@
         "price": 1200
       },
       {
-        "name": "Regaliz 50grs",
+        "name": "Regaliz Liquido 60cc",
         "img": [
           "https://i.ibb.co/7xP37XLp/REGALIZ.png"
         ],
@@ -2291,7 +2289,7 @@
         "price": 7200
       },
       {
-        "name": "Sen (Hojas) 50grs",
+        "name": "Sen (Hojas) Liquido 60cc",
         "img": [
           "https://i.ibb.co/x8tgV7DV/SEN-HOJAS.png"
         ],
@@ -2299,7 +2297,7 @@
         "price": 1000
       },
       {
-        "name": "Spirulina",
+        "name": "Spirulina Liquida 60cc",
         "img": [
           "https://i.ibb.co/vnvKjqR/SPIRULINA.webp"
         ],
@@ -2307,7 +2305,7 @@
         "price": 8700
       },
       {
-        "name": "Ulmaria",
+        "name": "Ulmaria Liquida 60cc",
         "img": [
           "https://i.ibb.co/0p1hYyy2/ULMARIA.png"
         ],
@@ -2315,7 +2313,7 @@
         "price": 7200
       },
       {
-        "name": "Uva Ursi",
+        "name": "Uva Ursi Liquida 60cc",
         "img": [
           "https://i.ibb.co/svFtZLHm/UVA-URSI.png"
         ],
@@ -2323,7 +2321,7 @@
         "price": 7200
       },
       {
-        "name": "Valeriana",
+        "name": "Valeriana Liquida 60cc",
         "img": [
           "https://i.ibb.co/QFWrSrGk/VALERIANA.png"
         ],
@@ -2331,7 +2329,7 @@
         "price": 7200
       },
       {
-        "name": "Yacón",
+        "name": "Yacón Liquido 60cc",
         "img": [
           "https://i.ibb.co/xK6hn3YJ/YACON.png"
         ],
@@ -2339,7 +2337,7 @@
         "price": 7200
       },
       {
-        "name": "Yerba Dulce (Stevia)",
+        "name": "Yerba Dulce (Stevia) Liquida 60cc",
         "img": [
           "https://i.ibb.co/NdRbvr16/YERBA-DUILCE.jpg"
         ],
@@ -2347,7 +2345,7 @@
         "price": 1500
       },
       {
-        "name": "Zarzaparrilla",
+        "name": "Zarzaparrilla Liquida 60cc",
         "img": [
           "https://i.ibb.co/r2Z2w0JV/ZARZAPARRILLA.png"
         ],
@@ -3551,8 +3549,7 @@
         "img": [
           "https://www.dydpanificados.com.ar/wp-content/uploads/2018/10/DYD_PAN_MULTICEREAL_001_v2-550x550.jpg"
         ],
-        "desc": "Para los que buscan un extra de sabor y textura, este pan multicereal es la elección ideal. Combina la suavidad de la masa con una mezcla de semillas y granos que aportan un toque crujiente y un perfil nutricional superior, rico en fibras y Omega 3 y 9. Con 0% grasas trans, es perfecto para sándwiches gourmet o tostadas que te llenarán de energía y nutrientes para empezar bien el día.",
-        "stock": false
+        "desc": "Para los que buscan un extra de sabor y textura, este pan multicereal es la elección ideal. Combina la suavidad de la masa con una mezcla de semillas y granos que aportan un toque crujiente y un perfil nutricional superior, rico en fibras y Omega 3 y 9. Con 0% grasas trans, es perfecto para sándwiches gourmet o tostadas que te llenarán de energía y nutrientes para empezar bien el día."
       }
     ],
     "celi-energy": [
@@ -5103,7 +5100,7 @@
         "price": 2800
       },
       {
-        "name": "Tradicional - 1Kg",
+        "name": "Tradicional - 500grs",
         "img": [
           "https://yerbaverdeflor.com/wp-content/uploads/2025/08/2025-04-14-RR01-RENDER-Verdeflor-3-4-1Kg-TRadicional-copia-de-tamano-grande.jpeg"
         ],
@@ -6023,7 +6020,7 @@
         "price": 2200
       },
       {
-        "name": "Fibra de Salvado",
+        "name": "Fibra de Salvado 200grs",
         "desc": "Cuida tu salud digestiva incorporando esta fibra de salvado en forma de bastoncitos crujientes a tu alimentación diaria. Este noble ingrediente es una excelente fuente natural de fibra que te ayudará a mantener un tránsito intestinal regular y a prolongar la sensación de saciedad de manera efectiva. Es el complemento funcional ideal para enriquecer tus mañanas al mezclarlo de forma sencilla con yogures, leches, batidos o tazas de frutas frescas, aportando una textura firme y beneficios reales a tus comidas.",
         "img": [
           "https://http2.mlstatic.com/D_NQ_NP_793098-MLA91325625361_082025-O.webp"
@@ -6032,7 +6029,7 @@
         "price": 2000
       },
       {
-        "name": "Granola Crocante",
+        "name": "Granola Crocante 100grs",
         "desc": "Una mezcla horneada irresistible que eleva la textura de tus desayunos al combinar la base tradicional de avena con bolitas de cereal expandido para lograr un nivel de crocancia superior en cada bocado, acompañada de suaves toques dulces aportados por las pasas de uva, lo que la convierte en el complemento ideal para añadir un contraste perfecto a tus yogures, licuados y postres, o simplemente para disfrutarla sola como un snack rápido y saciante durante tu jornada.",
         "img": [
           "https://f.fcdn.app/imgs/abac78/www.lamolienda.uy/moliuy/9812/original/catalogo/000000000046275_000000000046275_1/1500-1500/granola-crujiente-100g-granola-crujiente-granel.jpg"
@@ -6041,7 +6038,7 @@
         "price": 1800
       },
       {
-        "name": "Granola Mix Energético",
+        "name": "Granola Mix Energético 100grs",
         "desc": "Una combinación perfecta y revitalizante diseñada para recargar tus energías al máximo, elaborada con una mezcla crujiente de avena arrollada, copos de maíz, almendras enteras y pasas que aportan el equilibrio ideal de fibra, proteínas y carbohidratos complejos, convirtiéndose en la opción indispensable para un desayuno nutritivo, para potenciar tus yogures y batidos, o como un snack saludable y saciante que te brindará el impulso necesario para afrontar tu rutina diaria o tus entrenamientos.",
         "img": [
           "https://http2.mlstatic.com/D_Q_NP_2X_845236-MLA75788759164_042024-P.webp"
@@ -6050,7 +6047,7 @@
         "price": 1800
       },
       {
-        "name": "Granola Sin Azúcar",
+        "name": "Granola Sin Azúcar 100grs",
         "desc": "Una opción nutritiva y saludable elaborada especialmente para quienes buscan cuidar su alimentación sin renunciar a una textura crujiente, combinando una base rústica de avena con semillas y trozos crujientes que aportan fibra y energía sostenida, convirtiéndose en el complemento perfecto para tus desayunos y meriendas de todos los días al mezclarla con yogures o leches vegetales de forma totalmente libre de azúcares añadidos.",
         "img": [
           "https://f.fcdn.app/imgs/7c03e8/www.lamolienda.uy/moliuy/8540/original/catalogo/000000000046274_000000000046274_1/2000-2000/granola-sin-azucar-100g-granola-sin-azucar-granel.jpg"
@@ -6059,7 +6056,7 @@
         "price": 1600
       },
       {
-        "name": "Maíz de Barbacoa",
+        "name": "Maíz de Barbacoa 100grs",
         "desc": "Un snack extracrujiente y lleno de carácter que captura el intenso y auténtico sabor ahumado de la parrilla tradicional en cada bocado, convirtiéndose en la opción salada ideal para darle un toque diferente a tus mesas de picadas, acompañar bebidas frías o disfrutar en cualquier momento del día cuando busques un aperitivo potente y verdaderamente adictivo.",
         "img": [
           "https://elbanquito.com.ar/wp-content/uploads/2020/06/Maiz-Frito-Barbacoa-x-1-Kg.jpg"
@@ -6068,7 +6065,7 @@
         "price": 1600
       },
       {
-        "name": "Maíz de Miel y Mostaza",
+        "name": "Maíz de Miel y Mostaza 100grs",
         "desc": "Una opción atrevida y crujiente que transforma el clásico maíz tostado con una cobertura irresistible donde el dulzor suave de la miel se equilibra a la perfección con el toque intenso de la mostaza, creando un snack adictivo e ideal para sumar a tus picadas, acompañar bebidas frías o disfrutar como un aperitivo lleno de sabor y contraste durante el día.",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/040/363/products/maiz-con-mostaza-y-miel-espanol-100g4-7a29bcfcba869fa22b15716232474496-1024-1024.webp?w=1920"
@@ -6077,7 +6074,7 @@
         "price": 1600
       },
       {
-        "name": "Maíz Natural",
+        "name": "Maíz Natural 100grs",
         "desc": "El ingrediente básico e indispensable en tu despensa para disfrutar de la auténtica experiencia del cine en casa, compuesto por granos de maíz pisingallo crudo cuidadosamente seleccionados que garantizan una explosión perfecta al calor, permitiéndote preparar en minutos un snack económico, súper rendidor y natural al que puedes darle tu toque personal con sal, azúcar o caramelo para compartir con toda la familia en tus tardes de películas.",
         "img": [
           "https://m.media-amazon.com/images/I/81X-ToAvBZS.jpg"
@@ -6086,7 +6083,7 @@
         "price": 1600
       },
       {
-        "name": "Quinoa Pop",
+        "name": "Quinoa Pop 100grs",
         "desc": "Incorpora todo el poder nutricional de los superalimentos a tu rutina con esta quinoa inflada, una opción naturalmente libre de gluten que aporta proteínas vegetales y una textura extra crocante, ideal para espolvorear sobre tus yogures, batidos, frutas o para darle un toque saludable y crujiente a tus barritas de cereal caseras.",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/801/315/products/d_nq_np_693867-mla74739889682_032024-o-59df4e17409d0b7a8917399910649598-640-0.webp"
@@ -6095,7 +6092,7 @@
         "price": 2000
       },
       {
-        "name": "Tutucas",
+        "name": "Tutucas 100grs",
         "desc": "Un clásico infaltable en cualquier despensa, estas tutucas de maíz inflado y azucarado son el snack perfecto para calmar el antojo de algo dulce con una textura aireada y crujiente que se deshace en la boca, siendo la opción ideal y económica para acompañar las tardes de mate, compartir con los más chicos o llevar en la mochila para consumir en cualquier momento del día sin pesadez.",
         "img": [
           "https://encantopistacho.com.ar/wp-content/uploads/16691697690-tutucas-773x458-photoroom-69713826a6ad52c08317240282834551-1024-1024.jpg"
@@ -6106,7 +6103,7 @@
     ],
     "semillas": [
       {
-        "name": "Mix de Semillas",
+        "name": "Mix de Semillas 100grs",
         "desc": "Una combinación súper nutritiva y equilibrada que concentra fibra, omega 3 y grasas saludables en un solo lugar, siendo el complemento versátil y crujiente perfecto para enriquecer fácilmente tus ensaladas, yogures, batidos o preparaciones de panadería casera aportando mucha energía a tu rutina diaria.",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/002/324/020/products/mix-semillas-1-de90ea927926d0830616982407942085-640-0.webp"
@@ -6115,7 +6112,7 @@
         "price": 800
       },
       {
-        "name": "Mix de Semillas de Quinoa",
+        "name": "Mix de Semillas de Quinoa 100grs",
         "desc": "Combinación perfecta de las variedades blanca, roja y negra que aporta un llamativo contraste visual y una textura única a tus platos, ofreciendo un perfil completo de proteínas y fibra ideal para enriquecer tus ensaladas, guarniciones o bowls nutritivos de todos los días.",
         "img": [
           "https://frutossecosentupuerta.cl/wp-content/uploads/2021/07/SEMILLA-QUINOA-TRICOLOR-2.jpg"
@@ -6124,7 +6121,7 @@
         "price": 2000
       },
       {
-        "name": "Semillas de Chía",
+        "name": "Semillas de Chía 100grs",
         "desc": "Fuente de omega 3 y proteínas que prolonga la saciedad al hidratarse, convirtiéndose en un ingrediente muy versátil para espesar postres, yogures y batidos.",
         "img": [
           "https://imag.bonviveur.com/semillas-de-chia-al-natural.jpg"
@@ -6133,7 +6130,7 @@
         "price": 1200
       },
       {
-        "name": "Semillas de Girasol",
+        "name": "Semillas de Girasol 100grs",
         "desc": "Peladas y listas para disfrutar, destacan por ser una excelente fuente de energía y antioxidantes naturales que aportan un toque extra crujiente a tus preparaciones diarias, resultando el ingrediente perfecto para enriquecer tus ensaladas, masas caseras, bowls de yogur o para comer directamente como un snack saludable y saciante.",
         "img": [
           "https://4nuts.com.uy/wp-content/uploads/2025/02/girasol-1-6b2a5feb343d4f9c5c16982410722065-640-0.png"
@@ -6142,7 +6139,7 @@
         "price": 800
       },
       {
-        "name": "Semillas de Lino",
+        "name": "Semillas de Lino 100grs",
         "desc": "Superalimento rico en omega 3 y fibra que puedes agregar a tus yogures o batidos para favorecer tu salud digestiva de forma rápida y sencilla.",
         "img": [
           "https://myco-foods.com/wp-content/uploads/2023/01/semillas_y_frutos_secos_semillas_lino_marron-min.png"
@@ -6151,7 +6148,7 @@
         "price": 800
       },
       {
-        "name": "Semillas de Quinoa Blanca",
+        "name": "Semillas de Quinoa Blanca 100grs",
         "desc": "Superalimento libre de gluten y rico en proteínas completas que ofrece una textura suave y esponjosa tras su rápida cocción, convirtiéndose en el sustituto ideal y súper nutritivo del arroz para armar tus ensaladas, sopas o bowls de todos los días.",
         "img": [
           "https://www.almacenesusabiaga.com/wp-content/uploads/2018/12/quinoa.jpg"
@@ -6160,7 +6157,7 @@
         "price": 2000
       },
       {
-        "name": "Semillas de Zapallo",
+        "name": "Semillas de Zapallo 100grs",
         "desc": "Crujientes y altamente nutritivas, son una excelente fuente natural de zinc y grasas saludables que resultan perfectas para tostar y sumar textura a tus ensaladas, sopas, masas de panadería o simplemente para disfrutar directamente como un snack saciante y lleno de energía durante tu día.",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/002/324/020/products/zapallo-1-830725e5ecf5e714b416982410982341-640-0.webp"
@@ -6169,7 +6166,7 @@
         "price": 1800
       },
       {
-        "name": "Sésamo Blanco",
+        "name": "Sésamo Blanco 100grs",
         "desc": "Semillas clásicas y muy versátiles que destacan por su aporte natural de calcio, brindando un sabor suave y un toque crujiente perfecto para enriquecer tus panes caseros, ensaladas o preparaciones orientales de todos los días.",
         "img": [
           "https://issuperfoods.com.bo/wp-content/uploads/2021/11/sesamoblanco002.jpg"
@@ -6178,7 +6175,7 @@
         "price": 1300
       },
       {
-        "name": "Sésamo Integral",
+        "name": "Sésamo Integral 100grs",
         "desc": "Semillas en su versión menos procesada que conservan su cáscara natural, ofreciendo un mayor aporte de fibra y un sabor ligeramente más intenso, ideales para sumar un extra crujiente y nutritivo a tus panes caseros, ensaladas o rebozados diarios de forma muy sencilla.",
         "img": [
           "https://elbanquito.com.ar/wp-content/uploads/2020/06/semillas-de-sesamo-integral-el-banquito.jpg"
@@ -6187,7 +6184,7 @@
         "price": 1000
       },
       {
-        "name": "Sésamo Negro",
+        "name": "Sésamo Negro 100grs",
         "desc": "Semillas ricas en calcio y antioxidantes que aportan un sabor ligeramente tostado y un llamativo contraste visual a tus platos, siendo el ingrediente perfecto para decorar ensaladas, panes caseros, sushi o preparaciones al wok de forma rápida y nutritiva.",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/172/573/products/sesamo-negro1-9151926e4d2b212bf615887332611697-1024-1024.webp"
@@ -6277,6 +6274,14 @@
         ],
         "stock": true,
         "price": 2000
+      },
+      {
+        "name": "Harina de Fariña de Mandioca 500grs",
+        "desc": "Textura granulada ideal para preparar farofa, espesar guisos o dar un toque crujiente a tus platos.",
+        "img": [
+          "https://www.regionalsur.com.uy/wp-content/uploads/2025/05/Farina_de_Mandioca_Bowl_Web.jpg"
+        ],
+        "stock": true
       },
       {
         "name": "Harina de Garbanzo 500grs",
