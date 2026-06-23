@@ -1839,7 +1839,8 @@
         "img": [
           "https://i.imgur.com/M73croO.png"
         ],
-        "desc": "El toque dulce y colorido para tus creaciones. Especialmente usada en repostería, es perfecta para dar vida a tus pasteles y postres con su sabor intenso y textura única."
+        "desc": "El toque dulce y colorido para tus creaciones. Especialmente usada en repostería, es perfecta para dar vida a tus pasteles y postres con su sabor intenso y textura única.",
+        "stock": false
       },
       {
         "name": "Fruta Nevada 100grs",
@@ -1961,7 +1962,8 @@
           "https://i.ibb.co/PyNVxXw/Nuez-Pecan.webp"
         ],
         "desc": "Con un distintivo sabor dulce y mantecoso, la nuez pecan aporta un toque gourmet a cualquier preparación. Es indispensable en postres como el \"pecan pie\" y perfecta para realzar helados o ensaladas.",
-        "price": 2100
+        "price": 2100,
+        "stock": false
       }
     ],
     "mix-frutos-secos": [
@@ -3549,7 +3551,8 @@
         "img": [
           "https://www.dydpanificados.com.ar/wp-content/uploads/2018/10/DYD_PAN_MULTICEREAL_001_v2-550x550.jpg"
         ],
-        "desc": "Para los que buscan un extra de sabor y textura, este pan multicereal es la elección ideal. Combina la suavidad de la masa con una mezcla de semillas y granos que aportan un toque crujiente y un perfil nutricional superior, rico en fibras y Omega 3 y 9. Con 0% grasas trans, es perfecto para sándwiches gourmet o tostadas que te llenarán de energía y nutrientes para empezar bien el día."
+        "desc": "Para los que buscan un extra de sabor y textura, este pan multicereal es la elección ideal. Combina la suavidad de la masa con una mezcla de semillas y granos que aportan un toque crujiente y un perfil nutricional superior, rico en fibras y Omega 3 y 9. Con 0% grasas trans, es perfecto para sándwiches gourmet o tostadas que te llenarán de energía y nutrientes para empezar bien el día.",
+        "stock": false
       }
     ],
     "celi-energy": [
@@ -6274,14 +6277,6 @@
         ],
         "stock": true,
         "price": 2000
-      },
-      {
-        "name": "Harina de Fariña de Mandioca 500grs",
-        "desc": "Textura granulada ideal para preparar farofa, espesar guisos o dar un toque crujiente a tus platos.",
-        "img": [
-          "https://www.regionalsur.com.uy/wp-content/uploads/2025/05/Farina_de_Mandioca_Bowl_Web.jpg"
-        ],
-        "stock": true
       },
       {
         "name": "Harina de Garbanzo 500grs",
