@@ -593,8 +593,9 @@
       "desc": "",
       "subcategories": [
         {
-          "id": "original-green",
-          "title": "Original Green"
+          "id": "suplementos-original-green",
+          "title": "Original Green",
+          "desc": "Bienestar puro, directamente de la naturaleza."
         }
       ]
     },
@@ -2817,6 +2818,16 @@
         "price": 3000
       },
       {
+        "name": "Citrato de Magnesio",
+        "desc": "Suplemento mineral de alta biodisponibilidad que destaca por su rápida absorción, convirtiéndose en el aliado natural e indispensable para prevenir calambres, favorecer la relajación muscular y mejorar significativamente la calidad de tu descanso todos los días.",
+        "price": 0,
+        "img": [
+          "https://originalgreen.com.ar/wp-content/uploads/2024/03/citratoMagn.webp"
+        ],
+        "brand": "Original Green",
+        "stock": true
+      },
+      {
         "name": "Clorofila en Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/CLORO30-1-300x300.jpg"
@@ -3008,6 +3019,16 @@
         "price": 14500
       },
       {
+        "name": "Vitamina K2 + D3",
+        "desc": "Potente combinación sinérgica en cápsulas que asegura la correcta asimilación del calcio dirigiéndolo directamente a tus huesos, convirtiéndose en el complemento diario e indispensable para fortalecer tu sistema inmunológico, cuidar tu salud cardiovascular y mantener una estructura ósea fuerte y saludable.",
+        "price": 0,
+        "img": [
+          "https://originalgreen.com.ar/wp-content/uploads/2024/08/VITAMINA-K.webp"
+        ],
+        "brand": "Original Green",
+        "stock": true
+      },
+      {
         "name": "Zinc",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2021/08/Zinc.jpg"
@@ -3018,7 +3039,7 @@
     ],
     "suplementos-argenfarma": [
       {
-        "name": "ChiaCuore",
+        "name": "ChiaCuore-Blíster",
         "img": [
           "https://argenfarma.com.ar/wp-content/uploads/2022/09/fotos-10-573x400.jpg"
         ],
@@ -3028,7 +3049,7 @@
     ],
     "suplementos-pgn": [
       {
-        "name": "Cúrcuma",
+        "name": "Cúrcuma-Blíster",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/002/268/228/products/curcuma-_-pimienta-negra-x-100-capsulas-laboratorio-pgn-9d432206438df4c44616965509739017-1024-1024.webp"
         ],
@@ -3036,7 +3057,7 @@
         "price": 15500
       },
       {
-        "name": "Moringa",
+        "name": "Moringa-Blíster",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/002/268/228/products/fdffs-df2ba2fea93e338fc1169707129864121-47c2ba0535ffc09aea16970713448368-1024-1024.webp"
         ],
@@ -3044,7 +3065,7 @@
         "price": 3200
       },
       {
-        "name": "PharmaHepat",
+        "name": "PharmaHepat-Blíster",
         "img": [
           "https://http2.mlstatic.com/D_Q_NP_2X_725884-MLA94684699496_102025-P.webp"
         ],
@@ -3054,7 +3075,7 @@
     ],
     "multilinea": [
       {
-        "name": "Cartílago de Tiburón Reforzado con Sacha Inchi",
+        "name": "Cartílago de Tiburón Reforzado con Sacha Inchi-Polvo",
         "img": [
           "https://goodiet.com.ar/wp-content/uploads/2021/07/20210708_204312-01-scaled.jpeg"
         ],
@@ -3062,7 +3083,7 @@
         "price": 2000
       },
       {
-        "name": "Colágeno Hidrolizado Reforzado",
+        "name": "Colágeno Hidrolizado Reforzado-Polvo",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/021/255/products/fotos-productos-web-2024-12-04t120214-145-6101975839d7d1c90c17333245696720-1024-1024.png"
         ],
@@ -3070,7 +3091,7 @@
         "price": 2000
       },
       {
-        "name": "Harina de Cannabis Sativa",
+        "name": "Harina de Cannabis Sativa-Polvo",
         "img": [
           "https://www.santafe.gov.ar/noticias/media/cache/thumb_no_full/recursos/fotos/2019/03/2019-03-20NID_264819O_1.jpeg"
         ],
@@ -3078,7 +3099,7 @@
         "price": 2000
       },
       {
-        "name": "Harina de Coca Instantáneo",
+        "name": "Harina de Coca Instantáneo-Polvo",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/021/255/products/fotos-productos-web-2024-12-04t120220-482-145dd7256c790939e517333245931426-1024-1024.webp"
         ],
@@ -3086,7 +3107,7 @@
         "price": 2000
       },
       {
-        "name": "Maca Kallpa",
+        "name": "Maca Kallpa-Polvo",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/021/255/products/fotos-productos-web-2024-12-04t120503-406-87c918fac7050f53cb17333247131264-1024-1024.webp"
         ],
@@ -3094,7 +3115,7 @@
         "price": 3000
       },
       {
-        "name": "Maca Negra Kallpa",
+        "name": "Maca Negra Kallpa-Polvo",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/002/324/020/products/kallpa-3ad4ae4fdfe3f43f3317428445591896-640-0.png"
         ],
@@ -3102,7 +3123,7 @@
         "price": 2500
       },
       {
-        "name": "Maca Negra Premium en Polvo",
+        "name": "Maca Negra Premium-Polvo",
         "img": [
           "https://wakomercadonatural.com/wp-content/uploads/2025/04/825-scaled.webp"
         ],
@@ -3110,7 +3131,7 @@
         "price": 4000
       },
       {
-        "name": "Riñosan Forte",
+        "name": "Riñosan Forte-Polvo",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/631/813/products/copia-de-sin-titulo-74-a477dc99164b5c1a9517144902178017-480-0.png"
         ],
@@ -3118,7 +3139,7 @@
         "price": 2000
       },
       {
-        "name": "Super Calcio Cubano",
+        "name": "Super Calcio Cubano-Polvo",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/021/255/products/fotos-productos-web-2024-12-04t120143-498-e574e20ebf57bd11ad17333245489550-1024-1024.png"
         ],
@@ -3128,7 +3149,7 @@
     ],
     "natural-whey": [
       {
-        "name": "Bisglicinato de Magnesio Standard",
+        "name": "Bisglicinato de Magnesio Standard-Polvo",
         "img": [
           "https://naturalwheysuplementos.com/wp-content/uploads/2025/02/MAGNESIO-BISGLICINATO-DE-MAGNESIO-STANDARD-768x768.jpg"
         ],
@@ -3136,7 +3157,7 @@
         "price": 20700
       },
       {
-        "name": "Citrato de Magnesio",
+        "name": "Citrato de Magnesio-Polvo",
         "img": [
           "https://naturalwheysuplementos.com/wp-content/uploads/2025/02/MAGNESIO-CITRATO-DE-MAGNESIO-768x768.jpg"
         ],
@@ -3144,7 +3165,7 @@
         "price": 9500
       },
       {
-        "name": "Colágeno Hidrolizado Puro",
+        "name": "Colágeno Hidrolizado Puro-Polvo",
         "img": [
           "https://naturalwheysuplementos.com/wp-content/uploads/2025/02/COLAGENO-HIDROLIZADO-PURO-768x768.jpg"
         ],
@@ -3152,7 +3173,7 @@
         "price": 10500
       },
       {
-        "name": "Glicinato de Magnesio Standard",
+        "name": "Glicinato de Magnesio Standard-Polvo",
         "img": [
           "https://naturalwheysuplementos.com/wp-content/uploads/2025/02/MAGNESIO-GLICINATO-DE-MAGNESIO-STANDARD-768x768.jpg"
         ],
@@ -3160,7 +3181,7 @@
         "price": 20500
       },
       {
-        "name": "Remolacha en Polvo de Máxima Pureza",
+        "name": "Remolacha de Máxima Pureza-Polvo",
         "img": [
           "https://naturalwheysuplementos.com/wp-content/uploads/2025/02/REMOLACHA-EN-POLVO-DE-MAXIMA-PUREZA-768x768.jpg"
         ],
@@ -3168,7 +3189,7 @@
         "price": 10700
       },
       {
-        "name": "Vitamina C Pura Ácido Ascórbico",
+        "name": "Vitamina C Pura Ácido Ascórbico-Polvo",
         "img": [
           "https://naturalwheysuplementos.com/wp-content/uploads/2025/02/VITAMINA-C-PURA-ACIDO-ASCORBICO-768x768.jpg"
         ],
@@ -6430,28 +6451,6 @@
         ],
         "stock": true,
         "price": 2000
-      }
-    ],
-    "original-green": [
-      {
-        "name": "Citrato de Magnesio",
-        "desc": "Suplemento mineral de alta biodisponibilidad que destaca por su rápida absorción, convirtiéndose en el aliado natural e indispensable para prevenir calambres, favorecer la relajación muscular y mejorar significativamente la calidad de tu descanso todos los días.",
-        "price": 100,
-        "img": [
-          "https://originalgreen.com.ar/wp-content/uploads/2024/03/citratoMagn.webp"
-        ],
-        "brand": "Original Green",
-        "stock": true
-      },
-      {
-        "name": "Vitamina K2 + D3",
-        "desc": "Potente combinación sinérgica en cápsulas que asegura la correcta asimilación del calcio dirigiéndolo directamente a tus huesos, convirtiéndose en el complemento diario e indispensable para fortalecer tu sistema inmunológico, cuidar tu salud cardiovascular y mantener una estructura ósea fuerte y saludable.",
-        "price": 100,
-        "img": [
-          "https://originalgreen.com.ar/wp-content/uploads/2024/08/VITAMINA-K.webp"
-        ],
-        "brand": "Original Green",
-        "stock": true
       }
     ]
   }
