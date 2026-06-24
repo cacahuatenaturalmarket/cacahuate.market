@@ -1227,7 +1227,7 @@
         "price": 7200
       },
       {
-        "name": "Laurel 50grs",
+        "name": "Laurel 30grs",
         "img": [
           "https://i.imgur.com/mP82TAL.jpeg"
         ],
@@ -1653,7 +1653,7 @@
         "price": 1000
       },
       {
-        "name": "Hongos boletus (pino)",
+        "name": "Hongos boletus (pino) 50grs",
         "img": [
           "https://i.imgur.com/VvZ9RvZ.jpg"
         ],
@@ -1701,7 +1701,7 @@
         "price": 1000
       },
       {
-        "name": "Nuez moscada molida 50grs",
+        "name": "Nuez moscada molida 30grs",
         "img": [
           "https://i.imgur.com/CdxqqrK.jpg"
         ],
@@ -2608,7 +2608,7 @@
     ],
     "suplementos-lafarmen": [
       {
-        "name": "Ajo + Vitamina C",
+        "name": "Ajo + Vitamina C-Comprimidos",
         "img": [
           "https://cdn.batitienda.com/baticloud/images/product_picture_22ced96f04704a9296180d319ec929b6_638781750909837201_0_m.webp"
         ],
@@ -2616,7 +2616,7 @@
         "price": 3000
       },
       {
-        "name": "Arándano + Vitamina C",
+        "name": "Arándano + Vitamina C-Comprimidos",
         "img": [
           "https://http2.mlstatic.com/D_NQ_NP_808244-MLA99148974717_112025-O.webp"
         ],
@@ -2624,7 +2624,7 @@
         "price": 3000
       },
       {
-        "name": "Betacaroteno",
+        "name": "Betacaroteno-Comprimidos",
         "img": [
           "https://products-images.farmatodo.com.ar/Cp1R8PNwUMlrO0JNiriIiy6QG3gVy8OH8vcL8hRLVNV8ulxRf6s6fyWO0AiUc8-g"
         ],
@@ -2632,7 +2632,7 @@
         "price": 3200
       },
       {
-        "name": "Café Verde Compuesto",
+        "name": "Café Verde Compuesto-Comprimidos",
         "img": [
           "https://http2.mlstatic.com/D_NQ_NP_826808-MLA99597578648_122025-O.webp"
         ],
@@ -2640,7 +2640,7 @@
         "price": 8500
       },
       {
-        "name": "Calcio de Ostras",
+        "name": "Calcio de Ostras-Comprimidos",
         "img": [
           "https://acdn-us.mitiendanube.com/stores/006/012/520/products/farmamix_lafarmen_7798026674048_1-4201aa7a3c3fce1c7417642266802988-640-0.webp"
         ],
@@ -2648,7 +2648,7 @@
         "price": 2200
       },
       {
-        "name": "Centella Asiática y Ginkgo Biloba + Zinc y Vitamina B3",
+        "name": "Centella Asiática y Ginkgo Biloba + Zinc y Vitamina B3-Comprimidos",
         "img": [
           "https://distrinat.com/Content/images/articulos/LAFSD00163.jpg"
         ],
@@ -2656,7 +2656,7 @@
         "price": 3000
       },
       {
-        "name": "Citrato de Magnesio",
+        "name": "Citrato de Magnesio-Comprimidos",
         "img": [
           "https://cdn.v2.tiendanegocio.com/gallery/20409/img_20409_19422c999a4.jpeg"
         ],
@@ -2664,7 +2664,7 @@
         "price": 9500
       },
       {
-        "name": "Colágeno + C + E + Q10",
+        "name": "Colágeno + C + E + Q10-Comprimidos",
         "img": [
           "https://www.distrinat.com/Content/images/articulos/LAFSD00164.jpg"
         ],
@@ -2672,7 +2672,7 @@
         "price": 3000
       },
       {
-        "name": "Complejo B",
+        "name": "Complejo B-Comprimidos",
         "img": [
           "https://distrinat.com/Content/images/articulos/LAFSD00148.jpg"
         ],
@@ -2680,7 +2680,7 @@
         "price": 3000
       },
       {
-        "name": "Flebonat",
+        "name": "Flebonat-Comprimidos",
         "img": [
           "https://cdn.v2.tiendanegocio.com/gallery/20409/img_20409_18a5ba44f7a.jpeg"
         ],
@@ -2688,7 +2688,7 @@
         "price": 2500
       },
       {
-        "name": "Garcinia Cambogia Compuesta",
+        "name": "Garcinia Cambogia Compuesta-Comprimidos",
         "img": [
           "https://ideasysabores.com.ar/wp-content/uploads/2026/01/LAFARMEN-Garcinia-cambogia-blister-de-10-comprimidos-300x300.jpg"
         ],
@@ -2696,7 +2696,7 @@
         "price": 2700
       },
       {
-        "name": "Ginseng Rojo Forte",
+        "name": "Ginseng Rojo Forte-Comprimidos",
         "img": [
           "https://distrinat.com/Content/images/articulos/LAFSD00063.jpg"
         ],
@@ -2704,7 +2704,7 @@
         "price": 2500
       },
       {
-        "name": "Levadura de Cerveza + B12",
+        "name": "Levadura de Cerveza + B12-Comprimidos",
         "img": [
           "https://http2.mlstatic.com/D_NQ_NP_840604-MLA90177898740_082025-O.webp"
         ],
@@ -2712,7 +2712,7 @@
         "price": 1500
       },
       {
-        "name": "Magnesio",
+        "name": "Magnesio-Comprimidos",
         "img": [
           "https://farmaciasdelpueblo.vtexassets.com/arquivos/ids/160082-500-auto?v=637300268615600000&width=500&height=auto&aspect=true"
         ],
@@ -2720,7 +2720,7 @@
         "price": 3000
       },
       {
-        "name": "Multi LaFarmen",
+        "name": "Multi LaFarmen-Comprimidos",
         "img": [
           "https://distrinat.com/Content/images/articulos/LAFSD00074.jpg"
         ],
@@ -2728,7 +2728,7 @@
         "price": 3200
       },
       {
-        "name": "Spirulina + B1",
+        "name": "Spirulina + B1-Comprimidos",
         "img": [
           "https://farmaciasdelpueblo.vtexassets.com/arquivos/ids/188997/7798026677544-1.jpg?v=638494159961670000"
         ],
@@ -2736,7 +2736,7 @@
         "price": 2500
       },
       {
-        "name": "Valeriana Compuesta",
+        "name": "Valeriana Compuesta-Comprimidos",
         "img": [
           "https://http2.mlstatic.com/D_NQ_NP_975715-MLA90459695193_082025-O.webp"
         ],
@@ -2744,7 +2744,7 @@
         "price": 2600
       },
       {
-        "name": "Vitamina D",
+        "name": "Vitamina D-Comprimidos",
         "img": [
           "https://http2.mlstatic.com/D_NQ_NP_646907-MLA89304982836_082025-O.webp"
         ],
@@ -2752,7 +2752,7 @@
         "price": 8500
       },
       {
-        "name": "Vitamina E",
+        "name": "Vitamina E-Comprimidos",
         "img": [
           "https://cdn.batitienda.com/baticloud/images/product_picture_3c9f848b510a41638bbb9619fde7d031_638151121516671357_0_m.webp"
         ],
@@ -2762,7 +2762,7 @@
     ],
     "suplementos-original-green": [
       {
-        "name": "2 Arándanos",
+        "name": "2 Arándanos-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/2ARA-3-600x600.jpg"
         ],
@@ -2770,7 +2770,7 @@
         "price": 15500
       },
       {
-        "name": "Ácido Hialurónico",
+        "name": "Ácido Hialurónico-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/AC-HIALU-2-600x600.jpg"
         ],
@@ -2778,7 +2778,7 @@
         "price": 14500
       },
       {
-        "name": "Ajo Negro + Vit C",
+        "name": "Ajo Negro + Vit C-Cápsulas",
         "img": [
           "https://www.grupponaturale.com/assets/img/uploads/product/main-634d4f238714a.jpg"
         ],
@@ -2786,7 +2786,7 @@
         "price": 17200
       },
       {
-        "name": "Aloe 400",
+        "name": "Aloe 400-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2020/08/ALOE-4-1-768x768.jpg"
         ],
@@ -2794,7 +2794,7 @@
         "price": 16200
       },
       {
-        "name": "Broncea T+",
+        "name": "Broncea T+-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/BRONCEA-2-1.jpg"
         ],
@@ -2802,7 +2802,7 @@
         "price": 10500
       },
       {
-        "name": "Café Verde",
+        "name": "Café Verde-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2020/08/CAFEVERDE-1-2-600x600.jpg"
         ],
@@ -2810,7 +2810,7 @@
         "price": 9500
       },
       {
-        "name": "Cartílago de Tiburón",
+        "name": "Cartílago de Tiburón-Cápsulas",
         "img": [
           "https://http2.mlstatic.com/D_NQ_NP_2X_965682-MLA49693147816_042022-F.webp"
         ],
@@ -2818,7 +2818,7 @@
         "price": 3000
       },
       {
-        "name": "Citrato de Magnesio",
+        "name": "Citrato de Magnesio-Cápsulas",
         "desc": "Suplemento mineral de alta biodisponibilidad que destaca por su rápida absorción, convirtiéndose en el aliado natural e indispensable para prevenir calambres, favorecer la relajación muscular y mejorar significativamente la calidad de tu descanso todos los días.",
         "price": 0,
         "img": [
@@ -2828,7 +2828,7 @@
         "stock": true
       },
       {
-        "name": "Clorofila en Cápsulas",
+        "name": "Clorofila-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/CLORO30-1-300x300.jpg"
         ],
@@ -2836,7 +2836,7 @@
         "price": 15500
       },
       {
-        "name": "Colágeno Support",
+        "name": "Colágeno Support-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/COLAGEN-2-300x300.jpg"
         ],
@@ -2844,7 +2844,7 @@
         "price": 9600
       },
       {
-        "name": "Cúrcuma",
+        "name": "Cúrcuma-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2020/04/CURCUMAPIM.webp"
         ],
@@ -2852,7 +2852,7 @@
         "price": 15500
       },
       {
-        "name": "Diab 2",
+        "name": "Diab 2-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/DIAB-1.jpg"
         ],
@@ -2860,7 +2860,7 @@
         "price": 12500
       },
       {
-        "name": "Energy Vit",
+        "name": "Energy Vit-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/ENERGY-1.jpg"
         ],
@@ -2868,7 +2868,7 @@
         "price": 12500
       },
       {
-        "name": "Flexol",
+        "name": "Flexol-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/FLEXOL-300x300.webp"
         ],
@@ -2876,7 +2876,7 @@
         "price": 9500
       },
       {
-        "name": "Garcinia + Café Verde",
+        "name": "Garcinia + Café Verde-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2019/10/GARCINIA1-300x300.jpg"
         ],
@@ -2884,7 +2884,7 @@
         "price": 8500
       },
       {
-        "name": "Guayaba",
+        "name": "Guayaba-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2021/08/Guayaba.jpg"
         ],
@@ -2892,7 +2892,7 @@
         "price": 11400
       },
       {
-        "name": "Hair System",
+        "name": "Hair System-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/08/HAIR-2-300x300.jpg"
         ],
@@ -2900,7 +2900,7 @@
         "price": 11600
       },
       {
-        "name": "Hepat",
+        "name": "Hepat-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/HEPAT-3.jpg"
         ],
@@ -2908,7 +2908,7 @@
         "price": 11200
       },
       {
-        "name": "Huang Vit",
+        "name": "Huang Vit-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/HUANG-2-300x300.jpg"
         ],
@@ -2916,7 +2916,7 @@
         "price": 10500
       },
       {
-        "name": "Kale Plus",
+        "name": "Kale Plus-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2023/01/Kale-300x300.jpg"
         ],
@@ -2924,7 +2924,7 @@
         "price": 12100
       },
       {
-        "name": "Magnesio Plus",
+        "name": "Magnesio Plus-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/Magnesio-1.jpg"
         ],
@@ -2932,14 +2932,7 @@
         "price": 10800
       },
       {
-        "name": "Omega 3 + Chía",
-        "img": [
-          "https://originalgreen.com.ar/wp-content/uploads/2018/06/OMEGA-1.jpg"
-        ],
-        "desc": "Salud cardiovascular. Ayuda a reducir el colesterol, los triglicéridos y la presión arterial. La combinación de Omega 3 de origen vegetal y marino también previene enfermedades mentales como el Alzheimer.<br><strong>Presentación:</strong> 30 cápsulas."
-      },
-      {
-        "name": "Probióticos & Prebiótico",
+        "name": "Probióticos & Prebiótico-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2022/11/Probioticos.jpg"
         ],
@@ -2947,7 +2940,7 @@
         "price": 19500
       },
       {
-        "name": "Q10",
+        "name": "Q10-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2020/08/Q10-2.jpg"
         ],
@@ -2955,7 +2948,7 @@
         "price": 9500
       },
       {
-        "name": "Seda Plus",
+        "name": "Seda Plus-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/SEDAPLUS-2.jpg"
         ],
@@ -2963,7 +2956,7 @@
         "price": 8400
       },
       {
-        "name": "Spirulina",
+        "name": "Spirulina-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/SPIRU-1-300x300.jpg"
         ],
@@ -2971,7 +2964,7 @@
         "price": 8700
       },
       {
-        "name": "Ultra Resveratrol",
+        "name": "Ultra Resveratrol-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/ULTRA-2.jpg"
         ],
@@ -2979,7 +2972,7 @@
         "price": 15500
       },
       {
-        "name": "Ury System",
+        "name": "Ury System-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2020/01/UrySystem-300x300.jpeg"
         ],
@@ -2987,7 +2980,7 @@
         "price": 11600
       },
       {
-        "name": "Vitamina B12",
+        "name": "Vitamina B12-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2022/12/B12.jpg"
         ],
@@ -2995,7 +2988,7 @@
         "price": 10300
       },
       {
-        "name": "Vitamina C",
+        "name": "Vitamina C-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2018/06/VITAC-2.jpg"
         ],
@@ -3003,7 +2996,7 @@
         "price": 12600
       },
       {
-        "name": "Vitamina D",
+        "name": "Vitamina D-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2020/07/VITAMINAD-1.jpg"
         ],
@@ -3011,7 +3004,7 @@
         "price": 8500
       },
       {
-        "name": "Vitamina E",
+        "name": "Vitamina E-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2020/05/VITAE-2.jpg"
         ],
@@ -3019,7 +3012,7 @@
         "price": 14500
       },
       {
-        "name": "Vitamina K2 + D3",
+        "name": "Vitamina K2 + D3-Cápsulas",
         "desc": "Potente combinación sinérgica en cápsulas que asegura la correcta asimilación del calcio dirigiéndolo directamente a tus huesos, convirtiéndose en el complemento diario e indispensable para fortalecer tu sistema inmunológico, cuidar tu salud cardiovascular y mantener una estructura ósea fuerte y saludable.",
         "price": 0,
         "img": [
@@ -3029,7 +3022,7 @@
         "stock": true
       },
       {
-        "name": "Zinc",
+        "name": "Zinc-Cápsulas",
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2021/08/Zinc.jpg"
         ],
@@ -6050,7 +6043,7 @@
         "price": 2000
       },
       {
-        "name": "Arroz Inflado 200grs",
+        "name": "Arroz Inflado 100grs",
         "desc": "Un ingrediente versátil y crujiente, perfecto para sumar ligereza a tus preparaciones diarias, ya que este cereal es una base neutra y sin agregados, ideal para mezclar en tus yogures favoritos, elaborar barritas caseras o simplemente para darle una textura aireada a tus desayunos y meriendas de forma natural, saludable y muy rendidora.",
         "img": [
           "https://lamejicana.mx/cdn/shop/products/Arrozinflado_460x@2x.jpg?v=1599532263"
@@ -6397,7 +6390,7 @@
     ],
     "leudantes": [
       {
-        "name": "Bicarbonato de Sodio 50grs",
+        "name": "Bicarbonato de Sodio 100grs",
         "desc": "Polvo blanco extra fino y versátil que actúa como leudante y neutralizador de acidez natural.",
         "img": [
           "https://elmundodelareposteria.com/cdn/shop/files/BicarbonatoDeSodioporcionado.jpg?v=1761090138"
