@@ -70,6 +70,13 @@
         "cuidado-personal",
         "pastas-dentales"
       ]
+    },
+    {
+      "id": "salud-y-bienestar",
+      "title": "Otros",
+      "categories": [
+        "salud-y-bienestar"
+      ]
     }
   ],
   "categories": [
@@ -577,6 +584,17 @@
           "id": "pampa-gourmet",
           "title": "PampaGourmet",
           "desc": "Salsas, vinagres y acetos orgánicos de calidad premium elaborados en el campo."
+        }
+      ]
+    },
+    {
+      "id": "salud-y-bienestar",
+      "title": "Salud y Bienestar",
+      "desc": "",
+      "subcategories": [
+        {
+          "id": "original-green",
+          "title": "Original Green"
         }
       ]
     },
@@ -6412,6 +6430,28 @@
         ],
         "stock": true,
         "price": 2000
+      }
+    ],
+    "original-green": [
+      {
+        "name": "Citrato de Magnesio",
+        "desc": "Suplemento mineral de alta biodisponibilidad que destaca por su rápida absorción, convirtiéndose en el aliado natural e indispensable para prevenir calambres, favorecer la relajación muscular y mejorar significativamente la calidad de tu descanso todos los días.",
+        "price": 100,
+        "img": [
+          "https://originalgreen.com.ar/wp-content/uploads/2024/03/citratoMagn.webp"
+        ],
+        "brand": "Original Green",
+        "stock": true
+      },
+      {
+        "name": "Vitamina K2 + D3",
+        "desc": "Potente combinación sinérgica en cápsulas que asegura la correcta asimilación del calcio dirigiéndolo directamente a tus huesos, convirtiéndose en el complemento diario e indispensable para fortalecer tu sistema inmunológico, cuidar tu salud cardiovascular y mantener una estructura ósea fuerte y saludable.",
+        "price": 100,
+        "img": [
+          "https://originalgreen.com.ar/wp-content/uploads/2024/08/VITAMINA-K.webp"
+        ],
+        "brand": "Original Green",
+        "stock": true
       }
     ]
   }
