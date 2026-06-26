@@ -1187,7 +1187,7 @@
         "price": 1200
       },
       {
-        "name": "Hierba dulce o Stevia (Yerba Dulce) 50grs",
+        "name": "Hierba dulce o Stevia (Yerba Dulce) 30grs",
         "img": [
           "https://i.imgur.com/0Aq6Rm3.jpeg"
         ],
@@ -1195,7 +1195,7 @@
         "price": 1500
       },
       {
-        "name": "Hibiscus o Flor de Jamaica 50grs",
+        "name": "Hibiscus o Flor de Jamaica 30grs",
         "img": [
           "https://i.imgur.com/mz7HzBL.jpeg"
         ],
@@ -1485,7 +1485,7 @@
         "price": 1000
       },
       {
-        "name": "Canela en rama 50grs",
+        "name": "Canela en rama 30grs",
         "img": [
           "https://i.imgur.com/JN7BACv.jpeg"
         ],
@@ -1943,7 +1943,7 @@
         "price": 1600
       },
       {
-        "name": "Maní Runner 250grs",
+        "name": "Maní Runner 500grs",
         "img": [
           "https://i.ibb.co/p6vYzYNn/Man-Runner.jpg"
         ],
@@ -3179,7 +3179,8 @@
           "https://naturalwheysuplementos.com/wp-content/uploads/2025/02/REMOLACHA-EN-POLVO-DE-MAXIMA-PUREZA-768x768.jpg"
         ],
         "desc": "Este suplemento de Natural Whey Suplementos ofrece Remolacha en Polvo pura, un superalimento concentrado conocido por su capacidad para mejorar el rendimiento físico y la salud cardiovascular. La remolacha es naturalmente rica en nitratos, los cuales el cuerpo convierte en óxido nítrico, un potente vasodilatador que relaja y ensancha los vasos sanguíneos. Este proceso mejora el flujo de sangre y la oxigenación de los músculos, lo que se traduce en una mayor resistencia durante el ejercicio, una reducción de la fatiga y una recuperación más eficiente. Además de su uso en el ámbito deportivo, la remolacha en polvo es una excelente fuente de antioxidantes, vitaminas y minerales que contribuyen a la salud general.",
-        "price": 10700
+        "price": 10700,
+        "stock": false
       },
       {
         "name": "Vitamina C Pura Ácido Ascórbico-Polvo",
