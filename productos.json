@@ -1032,7 +1032,7 @@
           "https://i.imgur.com/MvSuS6g.jpeg"
         ],
         "desc": "Principalmente digestiva y hepatoprotectora, favorece la función del hígado y la vesícula biliar.",
-        "price": 7200
+        "price": 1200
       },
       {
         "name": "Altamisa 50grs",
@@ -1096,7 +1096,7 @@
           "https://i.imgur.com/GlNKdGC.jpeg"
         ],
         "desc": "Hepatoprotectora y digestiva, recomendada para problemas hepáticos, digestiones pesadas y como depurativo.",
-        "price": 7200
+        "price": 1200
       },
       {
         "name": "Cedrón 50grs",
@@ -1112,7 +1112,7 @@
           "https://i.imgur.com/OyoFT4s.jpeg"
         ],
         "desc": "Reconocida por sus propiedades cicatrizantes, regeneradoras y circulatorias, usada para heridas, varices y celulitis.",
-        "price": 7200
+        "price": 1500
       },
       {
         "name": "Cola de Caballo 50grs",
@@ -1120,7 +1120,7 @@
           "https://i.imgur.com/IISa6Xa.jpeg"
         ],
         "desc": "Diurética y remineralizante, ayuda en la retención de líquidos, infecciones urinarias y fortalece huesos y cabello.",
-        "price": 7200
+        "price": 1200
       },
       {
         "name": "Congorosa 50grs",
@@ -1136,7 +1136,7 @@
           "https://i.imgur.com/OxTuXVb.jpeg"
         ],
         "desc": "Gran depurativo hepático y renal, diurético y digestivo, favorece la eliminación de toxinas.",
-        "price": 7200
+        "price": 1200
       },
       {
         "name": "Doradilla 50grs",
@@ -1208,7 +1208,7 @@
           "https://i.imgur.com/nAkUVji.jpeg"
         ],
         "desc": "Expectorante, antiséptico y antitusígeno, útil para afecciones respiratorias como la tos y el catarro.",
-        "price": 7200
+        "price": 1200
       },
       {
         "name": "Incayuyo 50grs",
@@ -1224,7 +1224,7 @@
           "https://i.imgur.com/8LF6fWj.png"
         ],
         "desc": "Inmunoestimulante, antiinflamatorio y analgésico, usado para fortalecer las defensas y aliviar dolores.",
-        "price": 7200
+        "price": 1200
       },
       {
         "name": "Laurel 30grs",
@@ -1248,7 +1248,7 @@
           "https://i.imgur.com/Y1uo5aD.jpeg"
         ],
         "desc": "Antiinflamatoria, emoliente y laxante suave, calma irritaciones de garganta y digestivas, y favorece el tránsito intestinal.",
-        "price": 7200
+        "price": 1200
       },
       {
         "name": "Melissa (Melisa o Toronjil) 50grs",
@@ -1256,7 +1256,7 @@
           "https://i.imgur.com/X0qfPfG.jpeg"
         ],
         "desc": "Sedante, ansiolítica y antiespasmódica, ideal para nerviosismo, insomnio y problemas digestivos de origen nervioso.",
-        "price": 7200
+        "price": 1200
       },
       {
         "name": "Menta (Menta Peperina) 50grs",
@@ -1272,7 +1272,7 @@
           "https://i.imgur.com/uzD40NV.jpeg"
         ],
         "desc": "Rico en nutrientes, antioxidante y antiinflamatorio, usado para fortalecer el sistema inmune y como energizante.",
-        "price": 3200
+        "price": 1500
       },
       {
         "name": "Muérdago 50grs",
@@ -1280,7 +1280,7 @@
           "https://i.imgur.com/9uJBjJo.jpeg"
         ],
         "desc": "Hipotensor y diurético, utilizado con precaución para bajar la presión arterial y retención de líquidos.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Muña Muña 50grs",
@@ -1288,7 +1288,7 @@
           "https://i.imgur.com/IBAfp4k.jpeg"
         ],
         "desc": "Digestiva, carminativa y antimicrobiana, alivia indigestión, gases y problemas intestinales.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Ortiga 50grs",
@@ -1296,7 +1296,7 @@
           "https://i.imgur.com/rzpJIRJ.jpeg"
         ],
         "desc": "Diurética, depurativa, antiinflamatoria y remineralizante, usada para afecciones urinarias, articulares y anemia.",
-        "price": 7200
+        "price": 1200
       },
       {
         "name": "Palo Azul 50grs",
@@ -1312,7 +1312,7 @@
           "https://i.imgur.com/p8mITMh.jpeg"
         ],
         "desc": "Sedante y ansiolítica, muy efectiva para el insomnio, nerviosismo, ansiedad y estrés.",
-        "price": 7200
+        "price": 1200
       },
       {
         "name": "Pezuña de vaca 50grs",
@@ -1594,7 +1594,7 @@
           "https://i.imgur.com/ISgpVTz.jpeg"
         ],
         "desc": "Raíz molida de color amarillo brillante y sabor terroso y ligeramente amargo. Fundamental en la cocina india y por sus propiedades.",
-        "price": 3000
+        "price": 1200
       },
       {
         "name": "Curry 50grs",
@@ -1666,7 +1666,7 @@
           "https://i.imgur.com/xxGGgtx.jpg"
         ],
         "desc": "Raíz de jengibre deshidratada y molida. Proporciona un sabor picante, cálido y aromático, ideal para repostería, bebidas, adobos y platos asiáticos.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Merken 50grs",
@@ -1706,7 +1706,7 @@
           "https://i.imgur.com/CdxqqrK.jpg"
         ],
         "desc": "Nuez moscada ya rallada. Más cómoda de usar, pero pierde su aroma más rápidamente. Para los mismos usos que la nuez moscada en grano.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Orégano en hoja 50grs",
@@ -1940,7 +1940,7 @@
           "https://i.ibb.co/BKCFkqb4/Man-en-Vaina.webp"
         ],
         "desc": "La forma más natural y entretenida de comer maní. Disfruta de la experiencia de abrir la cáscara para encontrar un snack delicioso, fresco y perfecto para compartir.",
-        "price": 1500
+        "price": 1600
       },
       {
         "name": "Maní Runner 250grs",
@@ -1948,7 +1948,7 @@
           "https://i.ibb.co/p6vYzYNn/Man-Runner.jpg"
         ],
         "desc": "El maní en su estado más puro y natural. Con su sabor clásico, es una gran fuente de proteína vegetal y la base ideal para crear tu propia mantequilla de maní casera y fresca.",
-        "price": 1500
+        "price": 3000
       },
       {
         "name": "Maní Tostado con Sal 100grs",
@@ -1980,7 +1980,7 @@
           "https://i.ibb.co/PyNVxXw/Nuez-Pecan.webp"
         ],
         "desc": "Con un distintivo sabor dulce y mantecoso, la nuez pecan aporta un toque gourmet a cualquier preparación. Es indispensable en postres como el \"pecan pie\" y perfecta para realzar helados o ensaladas.",
-        "price": 2100
+        "price": 3000
       }
     ],
     "mix-frutos-secos": [
@@ -2024,7 +2024,7 @@
           "https://i.ibb.co/ns79NdT9/SITU-ACEITE-DE-ALMENDRAS-2.png"
         ],
         "desc": "Un clásico de la hidratación suave y efectiva. Perfecto para todo tipo de piel, especialmente las más sensibles, este aceite emoliente suaviza, nutre y protege la piel de la resequedad, dejándola tersa y elástica.",
-        "price": 12400
+        "price": 9800
       },
       {
         "name": "Aceite de Argán",
@@ -2032,7 +2032,7 @@
           "https://i.ibb.co/ZzwcqMD9/SITU-ACEITE-DE-ARGAN.png"
         ],
         "desc": "Conocido como el \"oro líquido\", es un tratamiento intensivo para el cabello y la piel seca. Rico en nutrientes y antioxidantes, repara las puntas abiertas, controla el frizz y devuelve el brillo y la vitalidad.",
-        "price": 7500
+        "price": 9800
       },
       {
         "name": "Aceite de Citronela",
@@ -2040,7 +2040,7 @@
           "https://i.ibb.co/svVq8206/SITU-ACEITE-DE-CITRONELA.png"
         ],
         "desc": "Tu protector natural al aire libre. Reconocido por su eficaz acción como repelente de insectos, su aroma cítrico y fresco es perfecto para mantener alejados a los mosquitos de forma natural.",
-        "price": 7500
+        "price": 9800
       },
       {
         "name": "Aceite de Eucalipto",
@@ -2048,7 +2048,7 @@
           "https://i.ibb.co/JRB7h43b/SITU-EUCALIPTO.png"
         ],
         "desc": "Ideal para el bienestar respiratorio. Usado en masajes en el pecho y la espalda o en vaporizadores, su aroma refrescante ayuda a descongestionar las vías respiratorias y a crear una atmósfera de alivio.",
-        "price": 7500
+        "price": 9800
       },
       {
         "name": "Aceite de Jojoba",
@@ -2056,7 +2056,7 @@
           "https://i.ibb.co/5Wp8Gy49/SITU-JOJOBA.png"
         ],
         "desc": "El equilibrante perfecto para tu piel. Su composición es muy similar al sebo natural, lo que le permite regular la producción de grasa en pieles oleosas y, a la vez, hidratar profundamente las pieles secas.",
-        "price": 7500
+        "price": 9800
       },
       {
         "name": "Aceite de Palta",
@@ -2064,7 +2064,7 @@
           "https://i.ibb.co/Cp3RJ4LV/SITU-PALTA.png"
         ],
         "desc": "Un concentrado de nutrición para la piel y el cabello más exigentes. Su alta penetración lo hace ideal para combatir la sequedad extrema, aportando vitaminas y ácidos grasos que restauran la elasticidad y el brillo.",
-        "price": 7500
+        "price": 9800
       },
       {
         "name": "Aceite de Ricino",
@@ -2072,7 +2072,7 @@
           "https://i.ibb.co/ccXrw1Ry/SITU-RICINO.png"
         ],
         "desc": "El secreto para unas pestañas y cejas más largas y densas. Su uso regular fortalece los folículos pilosos, estimulando el crecimiento no solo de pestañas y cejas, sino también del cabello, aportando vigor y salud.",
-        "price": 7500
+        "price": 9800
       },
       {
         "name": "Aceite de Rosa Mosqueta",
@@ -2080,7 +2080,7 @@
           "https://i.ibb.co/Vp5rbnzt/SITU-ROSA-MOSQUETA.png"
         ],
         "desc": "Ideal para el cuidado facial y corporal. Este aceite es célebre por su capacidad para regenerar los tejidos de la piel, ayudando a atenuar visiblemente cicatrices, estrías y manchas, a la vez que proporciona una hidratación profunda.",
-        "price": 7500
+        "price": 9800
       }
     ],
     "vita-biosa": [
@@ -2201,7 +2201,7 @@
           "https://i.ibb.co/Z6hqtHVM/CURCUMA.png"
         ],
         "desc": "El antiinflamatorio natural por excelencia. Un potente aliado para calmar dolores e inflamaciones.",
-        "price": 15500
+        "price": 7200
       },
       {
         "name": "Damiana Liquida 60cc",
@@ -2233,7 +2233,7 @@
           "https://i.ibb.co/WpzS4Pgn/HINOJO.webp"
         ],
         "desc": "Adiós a los gases. Eficaz para aliviar la hinchazón abdominal y las molestias digestivas.",
-        "price": 1000
+        "price": 7200
       },
       {
         "name": "Hisopo Liquido 60cc",
@@ -2273,7 +2273,7 @@
           "https://i.ibb.co/RkZTfjP1/MELISA.png"
         ],
         "desc": "Calma y serenidad. Un relajante natural que ayuda a calmar la ansiedad y facilita el descanso.",
-        "price": 1200
+        "price": 7200
       },
       {
         "name": "Olivo Liquido 60cc",
@@ -2297,7 +2297,7 @@
           "https://i.ibb.co/M58LxXjS/PASIONARIA.png"
         ],
         "desc": "Dulces sueños. Un sedante natural ideal para combatir el insomnio y los estados de nerviosismo.",
-        "price": 1200
+        "price": 7200
       },
       {
         "name": "Regaliz Liquido 60cc",
@@ -2361,7 +2361,7 @@
           "https://i.ibb.co/NdRbvr16/YERBA-DUILCE.jpg"
         ],
         "desc": "Dulzura y bienestar. Usada tradicionalmente para ayudar a regular la hipertensión y la diabetes.",
-        "price": 1500
+        "price": 8200
       },
       {
         "name": "Zarzaparrilla Liquida 60cc",
@@ -2369,7 +2369,7 @@
           "https://i.ibb.co/r2Z2w0JV/ZARZAPARRILLA.png"
         ],
         "desc": "Limpieza profunda. Apreciada por su potente acción depurativa de la sangre.",
-        "price": 1200
+        "price": 7200
       }
     ],
     "tinturas-andino": [
@@ -2661,7 +2661,7 @@
           "https://cdn.v2.tiendanegocio.com/gallery/20409/img_20409_19422c999a4.jpeg"
         ],
         "desc": "Magnesio en forma citrato.<br><strong>Uso:</strong> Relajante muscular, salud digestiva, prevención de calambres.",
-        "price": 9500
+        "price": 15500
       },
       {
         "name": "Colágeno + C + E + Q10-Comprimidos",
@@ -2820,7 +2820,7 @@
       {
         "name": "Citrato de Magnesio-Cápsulas",
         "desc": "Suplemento mineral de alta biodisponibilidad que destaca por su rápida absorción, convirtiéndose en el aliado natural e indispensable para prevenir calambres, favorecer la relajación muscular y mejorar significativamente la calidad de tu descanso todos los días.",
-        "price": 0,
+        "price": 3000,
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2024/03/citratoMagn.webp"
         ],
@@ -3014,7 +3014,7 @@
       {
         "name": "Vitamina K2 + D3-Cápsulas",
         "desc": "Potente combinación sinérgica en cápsulas que asegura la correcta asimilación del calcio dirigiéndolo directamente a tus huesos, convirtiéndose en el complemento diario e indispensable para fortalecer tu sistema inmunológico, cuidar tu salud cardiovascular y mantener una estructura ósea fuerte y saludable.",
-        "price": 0,
+        "price": 14500,
         "img": [
           "https://originalgreen.com.ar/wp-content/uploads/2024/08/VITAMINA-K.webp"
         ],
@@ -3047,7 +3047,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/268/228/products/curcuma-_-pimienta-negra-x-100-capsulas-laboratorio-pgn-9d432206438df4c44616965509739017-1024-1024.webp"
         ],
         "desc": "La cúrcuma de PGN se centra en aprovechar las propiedades de la curcumina, su compuesto activo. Es reconocida principalmente por su potente efecto antiinflamatorio natural, siendo una alternativa popular para aliviar dolores en articulaciones y músculos. También es un gran antioxidante que ayuda a neutralizar los radicales libres. La fórmula suele incluir pimienta negra porque su componente, la piperina, es clave para aumentar drásticamente la absorción de la curcumina en el organismo, asegurando así su máxima efectividad.",
-        "price": 15500
+        "price": 4000
       },
       {
         "name": "Moringa-Blíster",
@@ -3113,7 +3113,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/324/020/products/kallpa-3ad4ae4fdfe3f43f3317428445591896-640-0.png"
         ],
         "desc": "Esta es la variedad más potente de la Maca peruana orgánica, presentada por la marca Kallpa. La Maca Negra es especialmente valorada por sus beneficios específicos, que la diferencian de otras variedades de maca. Este suplemento nutricional, vigorizante y energético está formulado para ofrecer un soporte avanzado en la regulación hormonal, el aumento de la fertilidad y el vigor sexual. Además, es reconocida por mejorar la memoria, la concentración y el aprendizaje, así como por combatir eficazmente el estrés y la fatiga física y mental. Su consumo regular busca revitalizar las células y fortalecer los huesos, siendo un complemento ideal para estudiantes, deportistas y adultos que desean potenciar al máximo su rendimiento y bienestar general.",
-        "price": 2500
+        "price": 4000
       },
       {
         "name": "Maca Negra Premium-Polvo",
@@ -3121,7 +3121,7 @@
           "https://wakomercadonatural.com/wp-content/uploads/2025/04/825-scaled.webp"
         ],
         "desc": "Disfruta de la calidad de exportación con este complemento nutricional de Maca Negra Premium. Presentado en un formato micropulverizado y tostado para facilitar su disolución y mejorar su sabor, este producto se elabora a partir de la raíz Lepidium meyenii, considerada la variedad de maca más potente. Es altamente apreciada por sus propiedades energizantes y su capacidad para mejorar la resistencia física y mental, potenciar la memoria y la concentración. Su consumo está asociado al aumento de la fertilidad y el vigor, convirtiéndose en un suplemento ideal para deportistas, estudiantes y cualquier persona que busque un impulso natural para optimizar su rendimiento diario y su bienestar general.",
-        "price": 4000
+        "price": 2500
       },
       {
         "name": "Riñosan Forte-Polvo",
@@ -3462,7 +3462,7 @@
           "https://i.ibb.co/67KvRPSG/MI-FIDEO-ESPINACA.png"
         ],
         "desc": "Aporta un extra de color y nutrientes a tus comidas con este spaghetti integral enriquecido con espinaca. Hecho con 100% semolín integral, esta pasta vegana no solo te brinda los beneficios de la fibra, sino también las propiedades de la espinaca en una presentación deliciosa y atractiva. Su sabor suave es perfecto para acompañar con salsas blancas, mariscos, o simplemente con ajo y aceite de oliva, creando platos tan saludables como apetitosos.",
-        "price": 3200
+        "price": 2800
       },
       {
         "name": "Spaghetti Integral con Morrón Mi Fideo (227g)",
@@ -3470,7 +3470,7 @@
           "https://i.ibb.co/bMgMRvg8/MI-FIDEO-MORR-N.png"
         ],
         "desc": "Dale un giro de sabor a tus recetas clásicas con este spaghetti integral con morrón. La combinación del semolín 100% integral con el toque dulce del pimiento morrón resulta en una pasta con un sabor único y un hermoso color rojizo. Es una opción vegana y rica en fibra, ideal para quienes buscan una experiencia gourmet y saludable. Combina de maravilla con salsas a base de hierbas, pollo o para crear platos de pasta con un carácter distintivo y delicioso.",
-        "price": 3200
+        "price": 2800
       },
       {
         "name": "Spaghetti Integral con Tomate Mi Fideo (227g)",
@@ -3478,7 +3478,7 @@
           "https://i.ibb.co/7Jjxmfx3/MI-FIDEO-TOMATE.png"
         ],
         "desc": "Añade un toque de sabor mediterráneo a tus platos con este spaghetti integral con tomate. Elaborado con 100% semolín integral, esta pasta vegana combina el alto contenido de fibra del grano entero con el sabor vibrante y ligeramente ácido del tomate, creando una base deliciosa y saludable. Su color rojizo natural y su exquisito sabor lo hacen perfecto para combinar con salsas ligeras, mariscos, o simplemente con un chorro de aceite de oliva y hierbas frescas para una comida rápida, nutritiva y llena de carácter.",
-        "price": 3200
+        "price": 2800
       },
       {
         "name": "Spaghetti Integral Mi Fideo (227g)",
@@ -3486,7 +3486,7 @@
           "https://i.ibb.co/RpWFzFDp/MI-FIDEO-INTEGRAL.png"
         ],
         "desc": "Este spaghetti, elaborado con 100% semolín integral, es la elección perfecta para quienes buscan una pasta más nutritiva y con un auténtico sabor a grano entero. Su textura rústica y su alto contenido de fibra lo convierten en una base saludable y sustanciosa para tus platos, promoviendo una digestión saludable y una mayor sensación de saciedad. Al ser un producto vegano, se adapta a diversas preferencias alimentarias, siendo ideal para combinar con salsas robustas de vegetales, legumbres o un pesto tradicional.",
-        "price": 3200
+        "price": 2800
       }
     ],
     "optima": [
@@ -3938,7 +3938,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/434/490/products/mockup-arandanos1-a99d58c2aa7896cdb717002584683639-640-0.webp"
         ],
         "desc": "Disfruta de una combinación clásica y llena de antioxidantes con esta barrita a base de plantas. Une el sabor ácido de los arándanos con el toque crujiente de las nueces, todo sobre una base nutritiva con 9 gramos de proteína de arveja y 7 gramos de fibra. Es un snack equilibrado y delicioso, ideal para recargar energías a media mañana con ingredientes de alta calidad.",
-        "price": 2500
+        "price": 3000
       },
       {
         "name": "Crudda Bar Avellana Chocolate (45g)",
@@ -3946,7 +3946,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/crda04_1-86d65b28996c2d747f17455872420328-1024-1024.png"
         ],
         "desc": "Disfruta de un sabor sofisticado y delicioso con esta barrita de avellana y chocolate. Su fórmula a base de plantas aporta 9 gramos de proteína de arveja y 7 gramos de fibra, convirtiéndola en un snack nutritivo y saciante. La combinación de la avellana tostada con el cacao intenso la hace ideal para un gusto gourmet y saludable después de entrenar o como una colación energética.",
-        "price": 2500
+        "price": 3000
       },
       {
         "name": "Crudda Bar Banana Toffee (45g)",
@@ -3954,7 +3954,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/434/490/products/crudda-bar-proteica-sabor-banana-y-toffee-x-40g-crudda-d108c9b0b9859648b317456078201064-1024-1024.jpg"
         ],
         "desc": "Esta barrita a base de plantas combina la dulzura natural de la banana con el sabor acaramelado del toffee. Su fórmula, que incluye 9 gramos de proteína de arveja y 7 gramos de fibra, se complementa con pasta de maní y cacao, creando un snack complejo y delicioso. Es la opción perfecta para una colación energética con un toque de postre.",
-        "price": 2500
+        "price": 3000
       },
       {
         "name": "Crudda Bar Brownie (45g)",
@@ -3962,7 +3962,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/crda02_1-501dd6f754c22aa4ba17246811116405-480-0.jpg"
         ],
         "desc": "Esta barrita a base de plantas es la opción ideal para los amantes del chocolate. Con un intenso sabor a brownie y una textura suave, ofrece 9 gramos de proteína de arveja y 7 gramos de fibra. Su fórmula se complementa con quinoa y pasta de maní, creando un snack funcional, delicioso y saciante, perfecto para una colación post-entrenamiento o para satisfacer un antojo de forma nutritiva.",
-        "price": 2500
+        "price": 3000
       },
       {
         "name": "Crudda Bar Coco Chocolate (45g)",
@@ -3970,7 +3970,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/434/490/products/crudda-bar-proteica-sabor-coco-y-chocolate-x-40g-crudda-29adcf3477ffa2f92917456077266202-640-0.jpg"
         ],
         "desc": "Transporta tu paladar al trópico con esta barrita que fusiona el sabor exótico del coco con la intensidad del chocolate. Elaborada a base de plantas, esta barra ofrece 9 gramos de proteína de arveja y 7 gramos de fibra. Es un snack delicioso y refrescante, perfecto para quienes disfrutan de la clásica combinación del coco y el cacao en una opción nutritiva y funcional.",
-        "price": 2500
+        "price": 3000
       },
       {
         "name": "Crudda Bar Peanut Caramel (45g)",
@@ -3978,7 +3978,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/434/490/products/mockup-peanut-caramel1-36b3eb752dbe3671f117002587945021-1024-1024.png"
         ],
         "desc": "Esta barrita ofrece el irresistible sabor del caramelo salado y el maní en un formato saludable y funcional. Con 9 gramos de proteína de arveja y 7 gramos de fibra, es el snack perfecto para calmar el hambre y darte un impulso de energía. Su perfil de sabor, que equilibra lo dulce y lo salado, la convierte en una opción deliciosa y sustanciosa para cualquier momento del día.",
-        "price": 2500
+        "price": 3000
       }
     ],
     "laddubar": [
@@ -3988,7 +3988,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/976/439/products/laddubar-aranadnos-barrita-a-base-de-datiles-70da6a773d4213493917243570035785-1024-1024.webp"
         ],
         "desc": "Esta barra raw y vegana destaca por la simpleza y el poder de sus ingredientes. Su base está elaborada únicamente con dátiles y arándanos azules deshidratados, ofreciendo un sabor frutal intenso y una dulzura 100% natural. Es un snack libre de gluten y sin azúcar agregada, perfecto para obtener energía rápida de una fuente limpia y natural.",
-        "price": 1500
+        "price": 1600
       },
       {
         "name": "Laddubar Brownie (30g)",
@@ -3996,7 +3996,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/976/439/products/agregar-un-titulo-2-59d24da6d3c275c72917256490219254-1024-1024.jpg"
         ],
         "desc": "Para los amantes del chocolate, esta barra raw y vegana ofrece todo el sabor de un brownie en un formato saludable. Elaborada con dátiles, castañas de cajú y cacao puro, su textura es densa, húmeda y chocolatosa. Es la opción perfecta para un postre sin culpas, libre de gluten y sin azúcares añadidos, que te aportará energía y saciará tus ganas de dulce.",
-        "price": 1500
+        "price": 1600
       },
       {
         "name": "Laddubar Choco Naranja (30g)",
@@ -4004,7 +4004,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/976/439/products/caja-armada-frente-34282170a8c5d504f317133643443872-1024-1024.jpg"
         ],
         "desc": "Disfruta de la clásica y deliciosa combinación de chocolate y naranja en esta barra raw y vegana. La base de dátiles se fusiona con el intenso sabor del cacao y el toque cítrico de la naranja, creando una experiencia gustativa refrescante y energizante. Es un snack sin gluten, sin azúcar agregada y con certificación Kosher, perfecto para una pausa saludable y llena de sabor.",
-        "price": 1500
+        "price": 1600
       },
       {
         "name": "Laddubar Coco (30g)",
@@ -4012,7 +4012,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/976/439/products/laddubar-frutos-rojos-b11d7f7e71990bb17917246987694602-1024-1024.webp"
         ],
         "desc": "Disfruta del exótico sabor del coco en esta barra raw y vegana. Su receta se basa en la combinación de dátiles, coco y castañas de cajú, logrando una textura suave y un sabor tropical muy agradable. Es una opción sin gluten y sin azúcar agregada, ideal para una colación saludable que te aporta energía y te transporta a un paraíso de sabor.",
-        "price": 1500
+        "price": 1600
       },
       {
         "name": "Laddubar Coco & Choco (30g)",
@@ -4020,7 +4020,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/976/439/products/5-800cc5fe19b3715f6a17246992523584-1024-1024.webp"
         ],
         "desc": "Esta barra raw y vegana es ideal para los que aman la combinación del coco y el chocolate. La dulzura de los dátiles se mezcla con coco rallado y nibs de cacao, que aportan un toque crujiente y un sabor a chocolate más intenso. Es una golosina sin gluten y sin azúcar agregada que te transportará a sabores tropicales de una forma muy saludable.",
-        "price": 1500
+        "price": 1600
       },
       {
         "name": "Laddubar Frutos Rojos (30g)",
@@ -4028,7 +4028,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/976/439/products/laddubar-frutos-rojos-1-9fb893700b0fc2727717246963674998-1024-1024.webp"
         ],
         "desc": "Esta barra raw y vegana está llena de antioxidantes gracias a su mezcla de frutos rojos. Combina la dulzura de los dátiles con la acidez de los arándanos rojos y un toque de cacao, creando un snack con un equilibrio de sabor perfecto. Es una opción sin gluten y sin azúcar agregada, ideal para una colación fresca, frutal y llena de vitalidad.",
-        "price": 1500
+        "price": 1600
       },
       {
         "name": "Laddubar Gold Almendras (30g)",
@@ -4036,7 +4036,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/976/439/products/laddubar-gold-almendras-1f195941b2a81ffcf117419585896970-1024-1024.webp"
         ],
         "desc": "Esta barra raw y vegana es una opción premium para un snack saludable. Combina la dulzura natural de los dátiles con almendras seleccionadas y cacao puro, creando una textura suave y un sabor intenso. Al ser libre de gluten, sin azúcar agregada y con certificación Kosher, es una golosina nutritiva y de alta calidad, perfecta para recargar energías de forma natural.",
-        "price": 1500
+        "price": 1600
       },
       {
         "name": "Laddubar Gold Avellanas (30g)",
@@ -4044,7 +4044,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/976/439/products/laddubar-gold-avellanas-ae14592e51ea07f95417419587806521-1024-1024.png"
         ],
         "desc": "Disfruta de un sabor sofisticado con esta barra raw y vegana de avellanas. La base de dátiles se enriquece con el sabor tostado de las avellanas y la intensidad del cacao, logrando una combinación irresistible. Es un snack sin gluten y sin azúcar agregada, ideal para satisfacer antojos de chocolate y frutos secos de una manera saludable y gourmet.",
-        "price": 1500
+        "price": 1600
       },
       {
         "name": "Laddubar Menta Granizada (30g)",
@@ -4052,7 +4052,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/976/439/products/caja-abierta-frente-1-ffe399b410aeb3311d17177045539886-1024-1024.jpg"
         ],
         "desc": "Refresca tu paladar con esta barra raw y vegana de menta granizada. La combinación de dátiles, menta y cacao crea un sabor que evoca al clásico postre, pero en una versión completamente natural y saludable. Con certificación Kosher y libre de gluten, es la opción perfecta para después de una comida o para un snack revitalizante y sin azúcar agregada.",
-        "price": 1500
+        "price": 1600
       }
     ],
     "epuyen": [
@@ -4317,7 +4317,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/arro06_1-9acf48afc46426110a17610351250539-1024-1024.webp"
         ],
         "desc": "Endulza tus momentos con un snack irresistiblemente crujiente y lleno de sabor. Las Mini Arrocitas Caramel son el bocado perfecto para una pausa energizante o para acompañar tu café, ofreciendo una experiencia deliciosa sin grasas trans. Su exquisita cobertura de caramelo sobre una base de arroz integral las convierte en la opción ideal para calmar tus antojos dulces de manera equilibrada. Un gusto ligero y sin gluten que te encantará.",
-        "price": 1700
+        "price": 2000
       },
       {
         "name": "Arrocitas Choco",
@@ -4325,7 +4325,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/arro08_1-d8864cb8d760d5931d17610351273886-1024-1024.webp"
         ],
         "desc": "Permítete un capricho dulce y ligero que no arruinará tu rutina. Las Mini Arrocitas Choco son la solución perfecta para satisfacer esas ganas de algo dulce de forma inteligente, con solo 12 kcal por galleta. La deliciosa cobertura de chocolate sobre una crujiente galleta de arroz integral crea una combinación perfecta para tus postres o meriendas. Disfruta del placer del chocolate sin remordimientos, en un snack libre de gluten.",
-        "price": 1700
+        "price": 2000
       },
       {
         "name": "Arrocitas Finas Hierbas",
@@ -4333,7 +4333,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/arro05_1-e7d066ed845476263217610351208313-1024-1024.webp"
         ],
         "desc": "Dale un toque fresco y gourmet a tus pausas con un snack que revitaliza. Las Mini Arrocitas Finas Hierbas son ideales para quienes buscan un sabor ligero y aromático en un bocado crujiente y saludable. Su refinada mezcla de hierbas sobre una base de arroz integral las hace perfectas para comer solas o para acompañar dips y ensaladas. Una alternativa naturalmente deliciosa y libre de colesterol para cuidarte con gusto.",
-        "price": 1700
+        "price": 2000
       },
       {
         "name": "Arrocitas Queso Romero",
@@ -4341,7 +4341,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/arro07_1-fbda1c83b75685ab6f17610351230131-1024-1024.webp"
         ],
         "desc": "Satisface tus antojos salados de una forma deliciosa y sin culpas. Las Mini Arrocitas Queso Romero te ofrecen una explosión de sabor en cada bocado, perfectas para disfrutar como un snack rápido o para sorprender en tus picadas. Su distintiva combinación de queso y el toque aromático del romero sobre una base de arroz integral crujiente las hace irresistibles. Un placer saludable y sofisticado para cualquier momento.",
-        "price": 1700
+        "price": 2000
       }
     ],
     "crackines": [
@@ -4471,7 +4471,7 @@
           "https://elbanquito.com.ar/wp-content/uploads/2020/06/Nuestros-Sabores-Raices-Remolacha-Batata-80Grs-el-banquito-market.jpg"
         ],
         "desc": "Deleita tus sentidos con un snack que es tan vibrante en color como en sabor. Esta mezcla combina la dulzura terrenal de la remolacha con la suavidad de la batata, creando un chip visualmente impactante y deliciosamente complejo. Es la opción ideal para añadir un toque gourmet a tus ensaladas o para servir como un aperitivo elegante y lleno de sabor. Una forma artística y natural de disfrutar de tus vegetales.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Chips de Batatas con Merken Patagónico - 80g",
@@ -4479,7 +4479,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/nues08_1-ff6d9f8b5fd9e03ba417228696800196-1024-1024.webp"
         ],
         "desc": "Viaja al sur del mundo con cada bocado. Estos chips de batata dulce se fusionan con el sabor único del merkén, un condimento ahumado y ligeramente picante originario de la Patagonia. El resultado es una combinación exótica de dulzor, humo y un toque especiado que crea una experiencia inolvidable. Ideal para paladares aventureros que buscan un snack con historia y carácter",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Chips de Batatitas y Sal Marina - 80g",
@@ -4487,7 +4487,7 @@
           "https://alpuntodeventa.com.ar/wp-content/uploads/0539-1-1.jpg"
         ],
         "desc": "Descubre la galardonada dulzura natural de la batata en un chip excepcionalmente crujiente. Cada bocado te ofrece el balance perfecto entre notas dulces y el toque justo de sal marina, creando una experiencia de sabor reconfortante y sofisticada. Son el snack ideal para disfrutar de una pausa gourmet o para acompañar dips cremosos. La elección perfecta para quienes aprecian un clásico reinventado con maestría.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Chips de Mandioca y Sal Marina - 80g",
@@ -4495,7 +4495,7 @@
           "https://alpuntodeventa.com.ar/wp-content/uploads/0538-2-1.jpg"
         ],
         "desc": "Embárcate en un viaje de sabor exótico con nuestros chips de mandioca. Este tubérculo tropical se transforma en un snack con una textura única, más densa y satisfactoriamente crujiente que la papa tradicional. Su delicado sabor terroso, realzado con sal marina, es ideal para acompañar con ceviche, guacamole o simplemente para escapar de la rutina. Una aventura crujiente que te transporta al trópico.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Chips de Papas Pimienta Negra y Sal Marina - 80g",
@@ -4503,7 +4503,7 @@
           "https://elbanquito.com.ar/wp-content/uploads/2020/06/Nuestros-Sabores-Chips-de-Papas-Pimienta-80-Grs.jpg"
         ],
         "desc": "Para los que buscan un sabor audaz e intenso, estos chips son la respuesta. La clásica papa crujiente se encuentra con el carácter potente y aromático de la pimienta negra recién molida, creando una experiencia de sabor vibrante y estimulante. Son el compañero perfecto para una cerveza fría o para darle un giro atrevido a tu picada. Un clásico con una personalidad inolvidable.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Chips de Papas Rústicas con Sal Marina - 80g",
@@ -4511,12 +4511,12 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/nues04_1-5f7f438d84eba727f016964488646505-1024-1024.webp"
         ],
         "desc": "A veces, la perfección reside en lo simple. Nuestros chips de papas rústicas celebran el sabor auténtico de la papa, cortada de forma gruesa para una crocancia superior y un gusto más intenso. Sazonadas únicamente con sal marina para realzar su esencia, son el acompañante ideal para cualquier momento, desde una picada con amigos hasta el complemento de tu sándwich favorito. El placer atemporal de un clásico bien hecho.",
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Chips de Papas Thai - 80g",
         "desc": "Viaja con el paladar al sudeste asiático con esta edición especial. Estas papas fritas ofrecen una experiencia de sabor exótico inspirada en Tailandia, con un nivel de picante \"tranqui\" que aporta carácter sin invadir. Son el snack perfecto para quienes buscan salir de lo común, certificadas Sin TACC (libres de gluten) y con la crocancia artesanal que caracteriza a la marca. Ideal para elevar tu picada con un toque oriental y sofisticado.",
-        "price": 1700,
+        "price": 1800,
         "img": [
           "https://acdn-us.mitiendanube.com/stores/004/900/094/products/papas-thai-01-6ccc2e0e9626c3ed8417611776398911-1024-1024.webp"
         ],
@@ -4528,7 +4528,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/nues05_1-8abaaca9cece9fe14d16964488709236-1024-1024.jpg"
         ],
         "desc": "Sorpréndete con la dulzura natural de la zanahoria, transformada en un chip ligero y adictivamente crujiente. Cada bocado captura la esencia de la zanahoria fresca con un delicado toque de sal marina, ofreciendo una alternativa vibrante y deliciosa a los snacks convencionales. Perfectos para dipear en salsas de yogurt o para disfrutar como una colación saludable que encantará a toda la familia.",
-        "price": 1700
+        "price": 1800
       }
     ],
     "prepizza": [
@@ -4666,7 +4666,7 @@
           "https://www.maniking.com.ar/storage/categorias/13/IpRA0ZVmhltZGpscwqDRyd8pymoBDLLQiUfYGSEp.png"
         ],
         "desc": "Disfruta de la fuente de energía más pura y deliciosa para tus días. Esta pasta de maní 100% natural está elaborada únicamente con maní de alto oleico, sin sodio añadido y libre de gluten, conservando todos sus beneficios. Es el untable perfecto para tus desayunos, smoothies o para comer directo del frasco. Solo revuelve para integrar su aceite natural y prepárate para un sabor auténtico y una textura increíblemente cremosa.",
-        "price": 3300
+        "price": 4200
       }
     ],
     "entrenuts": [
@@ -5136,7 +5136,8 @@
         "img": [
           "https://yerbaverdeflor.com/wp-content/uploads/2025/08/2025-04-14-RR01-RENDER-Verdeflor-3-4-1Kg-TRadicional-copia-de-tamano-grande.jpeg"
         ],
-        "desc": "Disfruta del auténtico sabor del mate argentino con la calidad de siempre. Esta yerba 100% tradicional y elaborada con palo te ofrece el gusto equilibrado y el amargor justo que buscas para tus rondas diarias. Su molienda garantiza un mate rendidor que acompaña tus momentos. El formato de 1kg es ideal para que nunca te falte tu compañera de todos los días."
+        "desc": "Disfruta del auténtico sabor del mate argentino con la calidad de siempre. Esta yerba 100% tradicional y elaborada con palo te ofrece el gusto equilibrado y el amargor justo que buscas para tus rondas diarias. Su molienda garantiza un mate rendidor que acompaña tus momentos. El formato de 1kg es ideal para que nunca te falte tu compañera de todos los días.",
+        "price": 2800
       }
     ],
     "9-yuyos": [
@@ -5146,7 +5147,7 @@
           "https://elpastorcito.com.ar/wp-content/uploads/2023/12/yerba-burrito.png"
         ],
         "desc": "Disfruta de la frescura digestiva de las sierras en tu mate. Esta mezcla combina la yerba mate con el aroma inconfundible del burrito, té verde, menta y peperina. Es la opción ideal para quienes buscan un mate más suave, libre de acidez y con propiedades que ayudan a la digestión. Un blend 100% vegano y natural para una pausa reconfortante.",
-        "price": 5900
+        "price": 6800
       },
       {
         "name": "9 Yuyos Yerba Mate con Jengibre, Limón y Miel - 500g",
@@ -5154,7 +5155,7 @@
           "https://elpastorcito.com.ar/wp-content/uploads/2021/11/YERBA-JENGIBRE-500x500.png"
         ],
         "desc": "Revitaliza tu día con una combinación de sabores vibrante y reconfortante. Esta yerba fusiona el mate y el té verde con el toque picante del jengibre, el cítrico del limón y una nota dulce de miel. Es la mezcla perfecta para fortalecer tus defensas o para disfrutar de un mate con una personalidad única. Un blend funcional y delicioso.",
-        "price": 5900
+        "price": 6800
       },
       {
         "name": "9 Yuyos Yerba Mate Guaraná - 500g",
@@ -5162,7 +5163,7 @@
           "https://elpastorcito.com.ar/wp-content/uploads/2023/12/Guarana.png"
         ],
         "desc": "Activa tu energía al máximo con esta potente mezcla estimulante. Esta yerba combina el mate con té verde y el poder natural del guaraná, creando la infusión ideal para arrancar la mañana o potenciar tu rendimiento. Es un blend 100% vegano, libre de acidez y Sin TACC, diseñado para darte ese \"Natural Power\" que necesitas.",
-        "price": 5900
+        "price": 6800
       },
       {
         "name": "9 Yuyos Yerba Mate Sabor Limón - 500g",
@@ -5170,7 +5171,7 @@
           "https://elpastorcito.com.ar/wp-content/uploads/2021/11/YERBA-LIMON-768x768.png"
         ],
         "desc": "Dale un giro refrescante a tus mates con esta mezcla cítrica y natural. Esta yerba combina el mate con té verde, carqueja y un blend de 9 hierbas, destacando la frescura de la cáscara de limón y pomelo. Es la opción perfecta para quienes buscan una infusión que ayude al bienestar digestivo y ofrezca un sabor vibrante.",
-        "price": 5900
+        "price": 6800
       },
       {
         "name": "9 Yuyos Yerba Mate Sabor Naranja - 500g",
@@ -5178,7 +5179,7 @@
           "https://elpastorcito.com.ar/wp-content/uploads/2021/11/YERBA-NARANJA-500x500.png"
         ],
         "desc": "Disfruta de una infusión cítrica y funcional que cuida tu bienestar. Esta yerba combina la energía del mate con una mezcla de 9 hierbas, té verde y el toque aromático de la naranja y pomelo. Es ideal para quienes buscan un mate con un perfil de sabor refrescante y propiedades beneficiosas. Un blend 100% natural, pensado para ayudarte a sentirte más liviano.",
-        "price": 5900
+        "price": 6800
       },
       {
         "name": "9 Yuyos Yerba Mate Tradicional - 500g",
@@ -5186,7 +5187,7 @@
           "https://elpastorcito.com.ar/wp-content/uploads/2021/11/yerbamate-9-yuyos-1.png"
         ],
         "desc": "Disfruta de la mezcla original que lo empezó todo, ideal para sentirte bien y liviano. Esta yerba combina el mate con un blend de 9 hierbas seleccionadas como carqueja, té verde y rosa mosqueta, diseñada para ofrecer beneficios digestivos y depurativos. Es la opción perfecta para quienes buscan una infusión 100% natural, sin acidez y con todo el sabor de las sierras.",
-        "price": 5900
+        "price": 6800
       }
     ],
     "moms": [
@@ -5316,7 +5317,7 @@
           "https://http2.mlstatic.com/D_NQ_NP_960576-MLA89853403407_082025-O.webp"
         ],
         "desc": "Enriquece tus pausas con el poder de las semillas. Estas galletitas de Sésamo y Lino son ideales para una merienda nutritiva, aportando un alto contenido de fibra y Omega 9. Su textura crujiente y su sabor tostado las hacen perfectas para acompañar el mate o un yogur. Una opción deliciosa para cuidarte, 0% grasas trans y 0% colesterol.",
-        "price": 1500
+        "price": 1600
       }
     ],
     "tostadas-alimentos-naturales": [
@@ -5326,7 +5327,7 @@
           "https://amore.com.ar/6282-home_default/tostadas-de-mesa-x-200-grs-con-sal-naturales.jpg"
         ],
         "desc": "El clásico bizcochito salado, ahora en su versión más ligera. Estas tostaditas son ideales para acompañar una picada, un queso untable o tu mate de la tarde. Su toque justo de sal y su textura crujiente las convierten en la opción perfecta para un antojo, sabiendo que son 0% grasas trans y 0% colesterol.",
-        "price": 1800
+        "price": 2000
       },
       {
         "name": "Tostadas de Salvado Light x 200 g",
@@ -5334,7 +5335,7 @@
           "https://amore.com.ar/6285-home_default/tostadas-de-salvado-x-200-grs-naturales.jpg"
         ],
         "desc": "Añade un plus de fibra a tus pausas diarias. Estas tostaditas de salvado son el snack ideal para quienes buscan una mayor saciedad y un mejor tránsito intestinal. Su textura rústica y su fórmula light, 0% colesterol y 0% grasas trans, las convierten en la opción inteligente para acompañar tu yogur o infusión.",
-        "price": 1800
+        "price": 2000
       },
       {
         "name": "Tostadas Dulces Light - Bajas en sodio x 200 g",
@@ -5342,7 +5343,7 @@
           "https://amore.com.ar/6281-thickbox_default/tostadas-dulces-light-x-200-grs-naturales.jpg"
         ],
         "desc": "Disfruta de un bocado dulce y liviano en cualquier momento. Estas tostaditas son la compañía ideal para tu desayuno o merienda, ofreciendo un sabor azucarado sutil sin excesos. Su fórmula es baja en sodio, 0% grasas trans y 0% colesterol, permitiéndote un gusto saludable para acompañar tus infusiones favoritas.",
-        "price": 1800
+        "price": 2000
       },
       {
         "name": "Tostadas Light x 200 g (Con Gluten)",
@@ -5350,7 +5351,7 @@
           "https://amore.com.ar/6280-large_default/tostadas-light-o-grasas-y-colesterol-x-200-grs-naturales.jpg"
         ],
         "desc": "Disfruta de un snack liviano y crujiente, ahora apto para celíacos. Estas tostaditas light están elaboradas sin TACC (Sin Gluten), permitiéndote acompañar tus infusiones o comidas sin preocupaciones. Su receta 0% grasas trans y 0% colesterol te da el gusto de un bizcochito clásico en una versión segura y saludable para tu dieta.",
-        "price": 1800
+        "price": 2000
       },
       {
         "name": "Tostadas Semillas y Cereales - 200g",
@@ -5358,7 +5359,7 @@
           "https://amore.com.ar/6284-home_default/tostadas-de-semillas-x-200-grs-naturales.jpg"
         ],
         "desc": "La base perfecta para un desayuno completo y lleno de energía. Estas tostadas de semillas y cereales te ofrecen una fuente de fibra y una textura multicereal increíblemente crujiente. Son ideales para untar con palta, queso o mermelada, convirtiendo tu primera comida del día en un momento nutritivo, 0% grasas trans y 0% colesterol.",
-        "price": 1800
+        "price": 2000
       },
       {
         "name": "Tostadas Sin Sal - Light x 200 g",
@@ -5366,7 +5367,7 @@
           "https://amore.com.ar/6283-home_default/tostadas-sin-sal-x-200-grs-naturales.jpg"
         ],
         "desc": "La opción ideal para quienes buscan el placer de un bizcocho crujiente sin nada de sal. Estas tostaditas light te ofrecen una base neutra y liviana, perfecta para acompañar con mermeladas o quesos sin sodio. Son 0% colesterol y 0% grasas trans, convirtiéndose en el snack confiable para tu dieta baja en sodio.",
-        "price": 1800
+        "price": 2000
       }
     ],
     "bio-nativa-coco-nut": [
@@ -5430,7 +5431,7 @@
           "https://pampagourmet.com.ar/wp-content/uploads/2020/08/Chimichurri-1-1-6.jpg"
         ],
         "desc": "Realza tus ensaladas con la sofisticación de este aceto balsámico elaborado a partir de uvas Malbec orgánicas. Estacionado en barricas de roble, ofrece un equilibrio perfecto entre acidez y dulzor con notas amaderadas profundas. Es ideal para finalizar platos gourmet, marinar carnes rojas o dar un toque especial a frutillas y postres. Una experiencia de sabor auténtica, sin conservantes y certificada orgánica.",
-        "price": 6200
+        "price": 7200
       },
       {
         "name": "Vinagre de Sidra de Manzana Orgánico - 250ml",
@@ -5684,7 +5685,7 @@
           "https://canalcocina.es/medias/_cache/zoom-763d78f94278243a26387948c912c9bc-920-518.jpg"
         ],
         "stock": true,
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Arroz fino integral 500grs",
@@ -6425,7 +6426,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/324/020/products/azucar-mascabo-2-e011f21f07a2c6ff1616982730517187-640-0.webp"
         ],
         "stock": true,
-        "price": 3000
+        "price": 3500
       },
       {
         "name": "Azúcar negra 500grs",
