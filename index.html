@@ -364,22 +364,72 @@
         <img id="zoomImg" class="modal-content" alt="Imagen ampliada">
     </div>
     
-    <div id="cartModal" class="modal">
+   <div id="cartModal" class="modal">
         <div class="modal-content">
             <span class="close-button">×</span>
             <h3>Mi Pedido</h3>
+            
+            <div id="shippingProgressContainer" style="margin-bottom: 15px; background: #3a3a3a; padding: 10px; border-radius: 8px; font-size: 0.9rem; text-align: left;">
+                <p id="shippingProgressText" style="margin: 0 0 5px 0; color: var(--naranja-cacahuate); font-weight: bold;"></p>
+                <div style="width: 100%; background: #222; height: 8px; border-radius: 4px; overflow: hidden;">
+                    <div id="shippingProgressBar" style="background: var(--naranja-cacahuate); height: 100%; width: 0%; transition: width 0.3s ease;"></div>
+                </div>
+            </div>
+
             <div id="cartItemsContainer">
                 <p id="emptyCartMessage">Tu carrito está vacío.</p>
             </div>
+            
             <div id="clearCartContainer" style="text-align: right; margin-top: 10px; margin-bottom: 15px;">
                 <button id="clearCartBtn" style="display: none;">
                     <i class="fas fa-trash-alt"></i> Vaciar Carrito
                 </button>
             </div>
-            <div class="cart-summary">
+
+            <div id="cartDeliveryForm" style="display: none; border-top: 1px solid #333; padding-top: 15px; text-align: left; font-family: 'Inter', sans-serif;">
+                <h4 style="color: var(--naranja-cacahuate); margin: 0 0 10px 0;">Datos de Entrega y Pago</h4>
+                
+                <div style="margin-bottom: 12px;">
+                    <label style="display:block; font-size:0.85rem; color:#ccc; margin-bottom:4px;">Tu Nombre *</label>
+                    <input type="text" id="customerName" placeholder="Ej: Juan Pérez" style="width:100%; padding:8px 12px; background:#222; border:1px solid #444; border-radius:6px; color:#fff; outline:none;">
+                </div>
+
+                <div style="margin-bottom: 12px;">
+                    <label style="display:block; font-size:0.85rem; color:#ccc; margin-bottom:4px;">Método de Entrega</label>
+                    <select id="deliveryMethod" style="width:100%; padding:8px 12px; background:#222; border:1px solid #444; border-radius:6px; color:#fff; outline:none; cursor:pointer;">
+                        <option value="retiro">Retiro en Local (Coronel D' Elia 2039)</option>
+                        <option value="envio">Envío a Domicilio</option>
+                    </select>
+                </div>
+
+                <div id="deliveryAddressBlock" style="margin-bottom: 12px; display: none;">
+                    <label style="display:block; font-size:0.85rem; color:#ccc; margin-bottom:4px;">Dirección Completa y Localidad *</label>
+                    <input type="text" id="customerAddress" placeholder="Ej: San Martín 123, Lanús Oeste" style="width:100%; padding:8px 12px; background:#222; border:1px solid #444; border-radius:6px; color:#fff; outline:none;">
+                </div>
+
+                <div style="margin-bottom: 12px;">
+                    <label style="display:block; font-size:0.85rem; color:#ccc; margin-bottom:4px;">Método de Pago</label>
+                    <select id="paymentMethod" style="width:100%; padding:8px 12px; background:#222; border:1px solid #444; border-radius:6px; color:#fff; outline:none; cursor:pointer;">
+                        <option value="otros">Transferencia / Tarjeta / Otro</option>
+                        <option value="efectivo">Efectivo</option>
+                    </select>
+                </div>
+
+                <div id="cashChangeBlock" style="margin-bottom: 12px; display: none;">
+                    <label style="display:block; font-size:0.85rem; color:#ccc; margin-bottom:4px;">¿Con cuánto vas a abonar? (Para llevarte el cambio justo)</label>
+                    <input type="number" id="cashAmount" placeholder="Ej: 20000" style="width:100%; padding:8px 12px; background:#222; border:1px solid #444; border-radius:6px; color:#fff; outline:none;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label style="display:block; font-size:0.85rem; color:#ccc; margin-bottom:4px;">Notas o Aclaraciones Especiales (Opcional)</label>
+                    <textarea id="orderNotes" placeholder="Ej: El timbre no funciona / Entregar por la tarde..." rows="2" style="width:100%; padding:8px 12px; background:#222; border:1px solid #444; border-radius:6px; color:#fff; outline:none; resize:none; font-family:'Inter',sans-serif; font-size:0.9rem;"></textarea>
+                </div>
+            </div>
+
+            <div class="cart-summary" style="border-top: 1px solid #333; padding-top: 10px;">
                 <h4 id="cartTotal">Total: $0</h4>
             </div>
-            <a id="checkoutBtn" href="#" target="_blank" class="modal-whatsapp-btn"><i class="fab fa-whatsapp"></i> Realizar Pedido</a>
+            <a id="checkoutBtn" href="#" class="modal-whatsapp-btn"><i class="fab fa-whatsapp"></i> Realizar Pedido</a>
         </div>
     </div>
 
@@ -585,8 +635,13 @@
                        '<button class="details-btn" style="flex-shrink:0; margin:0;"><i class="fas fa-eye"></i></button>' +
                        '</div></div></div>';
             },
+
             renderCartItems() {
                 const clearBtn = document.getElementById('clearCartBtn');
+                const deliveryForm = document.getElementById('cartDeliveryForm');
+                const progressContainer = document.getElementById('shippingProgressContainer');
+                const progressText = document.getElementById('shippingProgressText');
+                const progressBar = document.getElementById('shippingProgressBar');
 
                 if (Store.state.cart.length === 0) {
                     this.elements.cartItemsContainer.innerHTML = '';
@@ -595,24 +650,87 @@
                     this.elements.checkoutBtn.style.display = 'none';
                     this.elements.cartTotal.style.display = 'none';
                     if (clearBtn) clearBtn.style.display = 'none';
+                    if (deliveryForm) deliveryForm.style.display = 'none';
+                    if (progressContainer) progressContainer.style.display = 'none';
                 } else {
                     this.elements.emptyCartMessage.style.display = 'none';
                     this.elements.checkoutBtn.style.display = 'inline-block';
                     this.elements.cartTotal.style.display = 'block';
                     if (clearBtn) clearBtn.style.display = 'inline-block';
+                    if (deliveryForm) deliveryForm.style.display = 'block';
+                    if (progressContainer) progressContainer.style.display = 'block';
                     
+                    // Render de productos
                     this.elements.cartItemsContainer.innerHTML = Store.state.cart.map(item => {
                         const mainImage = Array.isArray(item.product.img) ? item.product.img[0] : item.product.img;
                         return `<div class="cart-item" data-name="${item.product.name}"><img src="${mainImage}" alt="${item.product.name}"><div class="cart-item-info"><h4>${item.product.name}</h4><span>${this.formatCurrency(item.product.price || 0)}</span></div><div class="quantity-selector"><button class="quantity-btn decrease-qty">-</button><input type="number" class="quantity-input" value="${item.quantity}" min="0" name="cart-quantity"><button class="quantity-btn increase-qty">+</button></div></div>`;
                     }).join('');
+                    
                     const total = Store.getCartTotal();
                     this.elements.cartTotal.textContent = `Total: ${this.formatCurrency(total)}`;
-                    let productList = "Hola, quisiera realizar un pedido:\n\n";
-                    Store.state.cart.forEach(item => {
-                        productList += `- ${item.product.name} (x${item.quantity}) = ${this.formatCurrency(item.product.price * item.quantity)}\n`;
-                    });
-                    productList += `\n*Total estimado: ${this.formatCurrency(total)}*`;
-                    this.elements.checkoutBtn.href = `https://wa.me/${API.getPhoneNumber()}?text=${encodeURIComponent(productList)}`;
+                    
+                    // 📉 LÓGICA DE BARRA DE ENVÍO GRATIS (Ejemplo: Envío gratis desde $15.000)
+                    const META_ENVIO_GRATIS = 15000;
+                    if (total >= META_ENVIO_GRATIS) {
+                        progressText.innerHTML = `<i class="fas fa-truck"></i> ¡Genial! Tienes Envío Gratis en Lanús`;
+                        progressBar.style.width = "100%";
+                    } else {
+                        const faltante = META_ENVIO_GRATIS - total;
+                        progressText.innerHTML = `¡Estás a ${this.formatCurrency(faltante)} de conseguir Envío Gratis!`;
+                        const porcentaje = (total / META_ENVIO_GRATIS) * 100;
+                        progressBar.style.width = `${porcentaje}%`;
+                    }
+
+                    // 📅 LOGICA INTERNA DEL MENSAJE DE EMISIÓN DE COMPRA
+                    const buildWhatsAppLink = () => {
+                        const nameVal = document.getElementById('customerName').value.trim();
+                        const methodVal = document.getElementById('deliveryMethod').value;
+                        const addressVal = document.getElementById('customerAddress').value.trim();
+                        const paymentVal = document.getElementById('paymentMethod').value;
+                        const cashVal = parseFloat(document.getElementById('cashAmount').value) || 0;
+                        const notesVal = document.getElementById('orderNotes').value.trim();
+
+                        let productList = `*NUEVO PEDIDO - CACAHUATE DIETÉTICA*\n`;
+                        productList += `==================================\n\n`;
+                        productList += `👤 *Cliente:* ${nameVal || 'No especificado'}\n`;
+                        productList += `🛵 *Entrega:* ${methodVal === 'envio' ? 'Envío a Domicilio' : 'Retiro en Local'}\n`;
+                        
+                        if (methodVal === 'envio' && addressVal !== '') {
+                            productList += `📍 *Dirección:* ${addressVal}\n`;
+                        }
+                        
+                        productList += `💳 *Pago:* ${paymentVal === 'efectivo' ? 'Efectivo' : 'Transferencia / Tarjeta'}\n`;
+                        
+                        if (paymentVal === 'efectivo' && cashVal > 0) {
+                            productList += `💵 *Paga con:* ${this.formatCurrency(cashVal)}\n`;
+                            if (cashVal >= total) {
+                                productList += `🪙 *Vuelto:* ${this.formatCurrency(cashVal - total)}\n`;
+                            }
+                        }
+
+                        if (notesVal !== '') {
+                            productList += `📝 *Notas:* ${notesVal}\n`;
+                        }
+
+                        productList += `\n----------------------------------\n`;
+                        productList += `📦 *PRODUCTOS:* \n`;
+                        
+                        Store.state.cart.forEach(item => {
+                            productList += `- ${item.product.name} (x${item.quantity}) = ${this.formatCurrency(item.product.price * item.quantity)}\n`;
+                        });
+                        
+                        productList += `\n==================================\n`;
+                        productList += `*TOTAL A ABONAR: ${this.formatCurrency(total)}*`;
+                        
+                        if (total >= META_ENVIO_GRATIS && methodVal === 'envio') {
+                            productList += `\n_(Envío Gratis Incluido)_`;
+                        }
+
+                        this.elements.checkoutBtn.href = `https://wa.me/${API.getPhoneNumber()}?text=${encodeURIComponent(productList)}`;
+                    };
+
+                    // Ejecutamos la función para tener el link inicial listo
+                    buildWhatsAppLink();
                 }
             },
 
@@ -889,7 +1007,7 @@
                 });
                 box.style.display = 'block';
             },
-handleSearch(scrollToFirst = false) {
+            handleSearch(scrollToFirst = false) {
                 const rawSearch = UI.elements.globalSearchInput.value || '';
                 
                 // Normalizamos el término de búsqueda global (minúsculas y sin acentos)
@@ -1199,11 +1317,10 @@ handleSearch(scrollToFirst = false) {
                 }
 
                 /* ==========================================================================
-                   📍 NUEVO: CONTROL DINÁMICO DEL BOTÓN VOLVER ARRIBA EN EL SCRIPT
+                   📍 CONTROL DINÁMICO DEL BOTÓN VOLVER ARRIBA
                    ========================================================================== */
                 const scrollTopBtn = document.getElementById('scrollToTopBtn');
                 if (scrollTopBtn) {
-                    // Muestra u oculta el botón elástico según la posición del scroll
                     window.addEventListener('scroll', () => {
                         if (window.pageYOffset > 400) {
                             scrollTopBtn.classList.add('show');
@@ -1212,12 +1329,61 @@ handleSearch(scrollToFirst = false) {
                         }
                     });
 
-                    // Gatilla la subida fluida de alta velocidad al hacer clic
                     scrollTopBtn.addEventListener('click', () => {
                         window.scrollTo({
                             top: 0,
                             behavior: 'smooth'
                         });
+                    });
+                }
+
+                /* ==========================================================================
+                   📍 OBSERVADORES DINÁMICOS DEL FORMULARIO DEL CARRITO
+                   ========================================================================== */
+                document.body.addEventListener('input', (e) => {
+                    if (e.target.closest('#cartDeliveryForm')) {
+                        const total = Store.getCartTotal();
+                        if (total > 0) UI.renderCartItems();
+                    }
+                });
+
+                document.body.addEventListener('change', (e) => {
+                    if (e.target.id === 'deliveryMethod') {
+                        const addressBlock = document.getElementById('deliveryAddressBlock');
+                        if (addressBlock) {
+                            addressBlock.style.display = e.target.value === 'envio' ? 'block' : 'none';
+                        }
+                        UI.renderCartItems();
+                    }
+                    if (e.target.id === 'paymentMethod') {
+                        const cashBlock = document.getElementById('cashChangeBlock');
+                        if (cashBlock) {
+                            cashBlock.style.display = e.target.value === 'efectivo' ? 'block' : 'none';
+                        }
+                        UI.renderCartItems();
+                    }
+                });
+
+                const checkoutButtonElement = document.getElementById('checkoutBtn');
+                if (checkoutButtonElement) {
+                    checkoutButtonElement.addEventListener('click', (e) => {
+                        const nameVal = document.getElementById('customerName').value.trim();
+                        const methodVal = document.getElementById('deliveryMethod').value;
+                        const addressVal = document.getElementById('customerAddress').value.trim();
+
+                        if (nameVal === '') {
+                            e.preventDefault();
+                            alert('Por favor, ingresa tu Nombre antes de enviar el pedido.');
+                            document.getElementById('customerName').focus();
+                            return;
+                        }
+
+                        if (methodVal === 'envio' && addressVal === '') {
+                            e.preventDefault();
+                            alert('Por favor, ingresa tu Dirección y Localidad para realizar el envío.');
+                            document.getElementById('customerAddress').focus();
+                            return;
+                        }
                     });
                 }
             },
