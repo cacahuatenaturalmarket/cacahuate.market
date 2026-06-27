@@ -369,12 +369,7 @@
             <span class="close-button">×</span>
             <h3>Mi Pedido</h3>
             
-            <div id="shippingProgressContainer" style="margin-bottom: 15px; background: #3a3a3a; padding: 10px; border-radius: 8px; font-size: 0.9rem; text-align: left;">
-                <p id="shippingProgressText" style="margin: 0 0 5px 0; color: var(--naranja-cacahuate); font-weight: bold;"></p>
-                <div style="width: 100%; background: #222; height: 8px; border-radius: 4px; overflow: hidden;">
-                    <div id="shippingProgressBar" style="background: var(--naranja-cacahuate); height: 100%; width: 0%; transition: width 0.3s ease;"></div>
-                </div>
-            </div>
+            
 
             <div id="cartItemsContainer">
                 <p id="emptyCartMessage">Tu carrito está vacío.</p>
@@ -635,13 +630,9 @@
                        '<button class="details-btn" style="flex-shrink:0; margin:0;"><i class="fas fa-eye"></i></button>' +
                        '</div></div></div>';
             },
-
-            renderCartItems() {
+renderCartItems() {
                 const clearBtn = document.getElementById('clearCartBtn');
                 const deliveryForm = document.getElementById('cartDeliveryForm');
-                const progressContainer = document.getElementById('shippingProgressContainer');
-                const progressText = document.getElementById('shippingProgressText');
-                const progressBar = document.getElementById('shippingProgressBar');
 
                 if (Store.state.cart.length === 0) {
                     this.elements.cartItemsContainer.innerHTML = '';
@@ -651,14 +642,12 @@
                     this.elements.cartTotal.style.display = 'none';
                     if (clearBtn) clearBtn.style.display = 'none';
                     if (deliveryForm) deliveryForm.style.display = 'none';
-                    if (progressContainer) progressContainer.style.display = 'none';
                 } else {
                     this.elements.emptyCartMessage.style.display = 'none';
                     this.elements.checkoutBtn.style.display = 'inline-block';
                     this.elements.cartTotal.style.display = 'block';
                     if (clearBtn) clearBtn.style.display = 'inline-block';
                     if (deliveryForm) deliveryForm.style.display = 'block';
-                    if (progressContainer) progressContainer.style.display = 'block';
                     
                     // Render de productos
                     this.elements.cartItemsContainer.innerHTML = Store.state.cart.map(item => {
@@ -668,18 +657,6 @@
                     
                     const total = Store.getCartTotal();
                     this.elements.cartTotal.textContent = `Total: ${this.formatCurrency(total)}`;
-                    
-                    // 📉 LÓGICA DE BARRA DE ENVÍO GRATIS (Ejemplo: Envío gratis desde $15.000)
-                    const META_ENVIO_GRATIS = 15000;
-                    if (total >= META_ENVIO_GRATIS) {
-                        progressText.innerHTML = `<i class="fas fa-truck"></i> ¡Genial! Tienes Envío Gratis en Lanús`;
-                        progressBar.style.width = "100%";
-                    } else {
-                        const faltante = META_ENVIO_GRATIS - total;
-                        progressText.innerHTML = `¡Estás a ${this.formatCurrency(faltante)} de conseguir Envío Gratis!`;
-                        const porcentaje = (total / META_ENVIO_GRATIS) * 100;
-                        progressBar.style.width = `${porcentaje}%`;
-                    }
 
                     // 📅 LOGICA INTERNA DEL MENSAJE DE EMISIÓN DE COMPRA
                     const buildWhatsAppLink = () => {
@@ -721,10 +698,6 @@
                         
                         productList += `\n==================================\n`;
                         productList += `*TOTAL A ABONAR: ${this.formatCurrency(total)}*`;
-                        
-                        if (total >= META_ENVIO_GRATIS && methodVal === 'envio') {
-                            productList += `\n_(Envío Gratis Incluido)_`;
-                        }
 
                         this.elements.checkoutBtn.href = `https://wa.me/${API.getPhoneNumber()}?text=${encodeURIComponent(productList)}`;
                     };
