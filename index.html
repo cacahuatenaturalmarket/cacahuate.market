@@ -369,8 +369,6 @@
             <span class="close-button">×</span>
             <h3>Mi Pedido</h3>
             
-            
-
             <div id="cartItemsContainer">
                 <p id="emptyCartMessage">Tu carrito está vacío.</p>
             </div>
@@ -403,11 +401,18 @@
                 </div>
 
                 <div style="margin-bottom: 12px;">
-                    <label style="display:block; font-size:0.85rem; color:#ccc; margin-bottom:4px;">Método de Pago</label>
+                    <label style="display:block; font-size:0.85rem; color:#ccc; margin-bottom:4px;">Método de Pago *</label>
                     <select id="paymentMethod" style="width:100%; padding:8px 12px; background:#222; border:1px solid #444; border-radius:6px; color:#fff; outline:none; cursor:pointer;">
+                        <option value="" selected disabled>-- Selecciona un método de pago --</option>
                         <option value="otros">Transferencia / Tarjeta / Otro</option>
                         <option value="efectivo">Efectivo</option>
                     </select>
+                </div>
+
+                <div id="transferDataBlock" style="display: none; margin-bottom: 12px; background: #2a2a2a; padding: 12px; border-radius: 6px; border: 1px dashed var(--naranja-cacahuate); text-align: left;">
+                    <p style="margin: 0 0 6px 0; font-size: 0.9rem; color: var(--naranja-cacahuate); font-weight: bold;"><i class="fas fa-university"></i> Datos para la Transferencia:</p>
+                    <p style="margin: 0 0 4px 0; font-size: 0.85rem; color: #fff;"><strong>Alias:</strong> <span style="color: #fff;">cacahuate.provincia</span></p>
+                    <p style="margin: 0; font-size: 0.85rem; color: #fff;"><strong>CUIT:</strong> <span style="color: #fff;">27-95959308-1</span></p>
                 </div>
 
                 <div id="cashChangeBlock" style="margin-bottom: 12px; display: none;">
@@ -630,7 +635,8 @@
                        '<button class="details-btn" style="flex-shrink:0; margin:0;"><i class="fas fa-eye"></i></button>' +
                        '</div></div></div>';
             },
-renderCartItems() {
+
+            renderCartItems() {
                 const clearBtn = document.getElementById('clearCartBtn');
                 const deliveryForm = document.getElementById('cartDeliveryForm');
 
@@ -676,7 +682,7 @@ renderCartItems() {
                             productList += `📍 *Dirección:* ${addressVal}\n`;
                         }
                         
-                        productList += `💳 *Pago:* ${paymentVal === 'efectivo' ? 'Efectivo' : 'Transferencia / Tarjeta'}\n`;
+                        productList += `💳 *Pago:* ${paymentVal === 'efectivo' ? 'Efectivo' : paymentVal === 'otros' ? 'Transferencia / Tarjeta' : 'No seleccionado'}\n`;
                         
                         if (paymentVal === 'efectivo' && cashVal > 0) {
                             productList += `💵 *Paga con:* ${this.formatCurrency(cashVal)}\n`;
@@ -1330,8 +1336,17 @@ renderCartItems() {
                     }
                     if (e.target.id === 'paymentMethod') {
                         const cashBlock = document.getElementById('cashChangeBlock');
-                        if (cashBlock) {
-                            cashBlock.style.display = e.target.value === 'efectivo' ? 'block' : 'none';
+                        const transferBlock = document.getElementById('transferDataBlock');
+                        
+                        if (e.target.value === 'efectivo') {
+                            if (cashBlock) cashBlock.style.display = 'block';
+                            if (transferBlock) transferBlock.style.display = 'none';
+                        } else if (e.target.value === 'otros') {
+                            if (cashBlock) cashBlock.style.display = 'none';
+                            if (transferBlock) transferBlock.style.display = 'block';
+                        } else {
+                            if (cashBlock) cashBlock.style.display = 'none';
+                            if (transferBlock) transferBlock.style.display = 'none';
                         }
                         UI.renderCartItems();
                     }
@@ -1343,6 +1358,7 @@ renderCartItems() {
                         const nameVal = document.getElementById('customerName').value.trim();
                         const methodVal = document.getElementById('deliveryMethod').value;
                         const addressVal = document.getElementById('customerAddress').value.trim();
+                        const paymentVal = document.getElementById('paymentMethod').value;
 
                         if (nameVal === '') {
                             e.preventDefault();
@@ -1355,6 +1371,13 @@ renderCartItems() {
                             e.preventDefault();
                             alert('Por favor, ingresa tu Dirección y Localidad para realizar el envío.');
                             document.getElementById('customerAddress').focus();
+                            return;
+                        }
+
+                        if (paymentVal === '') {
+                            e.preventDefault();
+                            alert('Por favor, selecciona un método de pago para procesar tu pedido.');
+                            document.getElementById('paymentMethod').focus();
                             return;
                         }
                     });
