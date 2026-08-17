@@ -912,7 +912,7 @@
         ],
         "desc": "Lleva la dulzura saludable a todas partes con la Stevia Líquida Pocket de Jual, el formato más pequeño y conveniente de 60ml. Diseñado para caber perfectamente en tu bolsillo, cartera o mochila, este endulzante de mesa te permite disfrutar de tus bebidas favoritas sin azúcar y sin calorías estés donde estés. Su fórmula de origen vegetal se disuelve al instante y es apta para cocinar, ofreciendo la misma calidad y sabor natural que las versiones más grandes. Es la solución definitiva para quienes mantienen un estilo de vida dinámico y no quieren renunciar a cuidarse, endulzando de forma práctica y controlada cada momento del día.",
         "stock": true,
-        "price": 3900
+        "price": 4000
       }
     ],
     "modelife-edulcorantes": [
@@ -1060,7 +1060,7 @@
           "https://i.imgur.com/9HGEU8T.jpeg"
         ],
         "desc": "Potente digestivo y hepatoprotector, ayuda en disfunciones hepáticas, digestiones lentas y cálculos biliares.",
-        "price": 1200
+        "price": 1500
       },
       {
         "name": "Burrito 50grs",
@@ -1100,7 +1100,7 @@
           "https://i.imgur.com/OyoFT4s.jpeg"
         ],
         "desc": "Reconocida por sus propiedades cicatrizantes, regeneradoras y circulatorias, usada para heridas, varices y celulitis.",
-        "price": 1500
+        "price": 2000
       },
       {
         "name": "Cola de Caballo 50grs",
@@ -1406,7 +1406,7 @@
           "https://i.imgur.com/KqRgMSq.jpeg"
         ],
         "desc": "Semillas rojizas que aportan color y un sabor terroso y ligeramente dulce a guisos y arroces.",
-        "price": 1000
+        "price": 1200
       },
       {
         "name": "Ají molido dulce 50grs",
@@ -1478,7 +1478,7 @@
           "https://i.imgur.com/JN7BACv.jpeg"
         ],
         "desc": "Trozos de corteza de canela. Se usan enteros para aromatizar líquidos como leche, infusiones, o para cocer con carnes y postres.",
-        "price": 1200
+        "price": 1500
       },
       {
         "name": "Canela molida 50grs",
@@ -1486,7 +1486,7 @@
           "https://i.imgur.com/fuLvyy2.jpeg"
         ],
         "desc": "Corteza de canela reducida a polvo. Indispensable en repostería, postres, bebidas calientes y algunas recetas de carne.",
-        "price": 1200
+        "price": 1500
       },
       {
         "name": "Cayena roja molida 50grs",
@@ -1816,7 +1816,7 @@
           "https://i.imgur.com/8OpRRH6.jpeg"
         ],
         "desc": "Pequeños, dulces y llenos de poder. Ideales para snacks y postres, son famosos por su alto contenido de antioxidantes, que ayudan a proteger tu sistema urinario y a mantenerte saludable.",
-        "price": 1800
+        "price": 2500
       },
       {
         "name": "Ciruelas Pasas 100grs",
@@ -1840,7 +1840,7 @@
           "https://i.imgur.com/GbP9d0U.jpeg"
         ],
         "desc": "Trocitos de sol con un sabor inconfundible. Ricos en vitamina A para el cuidado de tu vista y piel. Un snack masticable y dulce que te llenará de vitalidad.",
-        "price": 1800
+        "price": 2000
       },
       {
         "name": "Fruta Abrillantada (Confitada) 100grs",
@@ -1863,7 +1863,7 @@
           "https://i.imgur.com/aPY2SJd.jpeg"
         ],
         "desc": "Un manjar mediterráneo, dulce e intenso. Su riqueza en fibra, calcio y potasio los hace ideales como un snack nutritivo o para acompañar quesos.",
-        "price": 1600
+        "price": 1800
       },
       {
         "name": "Pasas Negras Jumbo 100grs",
@@ -1887,7 +1887,7 @@
           "https://i.imgur.com/oc9v5lP.jpeg"
         ],
         "desc": "Suavidad y dulzura en cada rebanada. Una deliciosa fuente de fibra dietética que contribuye a tu bienestar digestivo. Ideales como snack ligero o para endulzar tus ensaladas.",
-        "price": 1600
+        "price": 2500
       },
       {
         "name": "Tomate 100grs",
@@ -1969,7 +1969,7 @@
           "https://i.ibb.co/PyNVxXw/Nuez-Pecan.webp"
         ],
         "desc": "Con un distintivo sabor dulce y mantecoso, la nuez pecan aporta un toque gourmet a cualquier preparación. Es indispensable en postres como el \"pecan pie\" y perfecta para realzar helados o ensaladas.",
-        "price": 8300
+        "price": 3500
       }
     ],
     "mix-frutos-secos": [
@@ -2115,7 +2115,7 @@
         ],
         "desc": "Disfruta de la chispeante dulzura de la naranja en esta gaseosa saludable que cuida de ti. Cada sorbo de Cocoon Naranja te ofrece el sabor cítrico y familiar que tanto te gusta, pero con el increíble beneficio añadido de prebióticos y probióticos que trabajan para equilibrar tu sistema digestivo. Es la bebida perfecta para refrescarte, mejorar tu salud intestinal y darte un impulso de vitalidad natural sin los azúcares y aditivos de los refrescos convencionales.",
         "stock": false,
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Cocoon Sabor Pomelo",
@@ -2124,7 +2124,7 @@
         ],
         "desc": "Atrévete a probar el sabor audaz y sofisticado de Cocoon Pomelo. Esta gaseosa fusiona el característico gusto agridulce del pomelo con una efervescencia perfecta, ofreciendo una experiencia única para tu paladar. Es la alternativa ideal para quienes buscan un refresco con carácter, que además de ser delicioso, está cargado de prebióticos y probióticos para promover una digestión saludable y un sistema inmune fuerte.",
         "stock": false,
-        "price": 3200
+        "price": 3500
       }
     ],
     "tinturas-oasis": [
@@ -2134,7 +2134,7 @@
           "https://i.ibb.co/21J3M3FZ/ACORO.webp"
         ],
         "desc": "Ideal para la salud digestiva. Ayuda a aliviar la indigestión y los gases.",
-        "price": 7200
+        "price": 8200
       },
       {
         "name": "Alcachofa Liquido 60cc",
@@ -2368,7 +2368,7 @@
           "https://pgnsa.com.ar/wp-content/uploads/2020/11/ANDINO_24-300x400.png"
         ],
         "desc": "<strong>Ingredientes:</strong> Romero, Uva Ursi, Citrulina.<br><strong>Indicaciones:</strong> Alivia gota y dolores articulares.",
-        "price": 7200
+        "price": 8200
       },
       {
         "name": "Acidez-Úlcera",
@@ -2376,7 +2376,7 @@
           "https://pgnsa.com.ar/wp-content/uploads/2020/11/ANDINO_29-300x400.png"
         ],
         "desc": "<strong>Ingredientes:</strong> Caléndula, Ginkgo, Taurina.<br><strong>Indicaciones:</strong> Protege mucosas, alivia acidez, gastritis y hernia de hiato.",
-        "price": 7200
+        "price": 8200
       },
       {
         "name": "Ansiolítico",
@@ -2756,7 +2756,7 @@
           "https://argenfarma.com.ar/wp-content/uploads/2022/09/fotos-10-573x400.jpg"
         ],
         "desc": "Cuida tu Corazón con el Poder del Omega 3. Protege tu salud cardiovascular con ChiaCuore. Cada cápsula está cargada con aceite de chía, una fuente natural de Omega 3, esencial para el buen funcionamiento del corazón. Incorpora ChiaCuore a tu rutina diaria y dale a tu cuerpo el cuidado que necesita para mantenerse fuerte y saludable.",
-        "price": 15500
+        "price": 18500
       }
     ],
     "suplementos-pgn": [
@@ -2856,7 +2856,7 @@
           "https://acdn-us.mitiendanube.com/stores/001/021/255/products/fotos-productos-web-2024-12-04t120143-498-e574e20ebf57bd11ad17333245489550-1024-1024.png"
         ],
         "desc": "Descubre el poder de Super Calcio Cubano, el suplemento alimenticio en polvo diseñado para ser tu aliado en el cuidado integral de tu sistema óseo y articular. Su fórmula única, enfocada en la \"calcificación de los huesos\", es ideal para adultos que buscan un soporte nutricional avanzado para condiciones como artritis, artrosis y osteoporosis, o simplemente para quienes desean complementar su ingesta de calcio y vitaminas. Intégralo a tu rutina diaria y apoya el bienestar de tu estructura ósea para mantener un estilo de vida activo y saludable.",
-        "price": 2000
+        "price": 2200
       }
     ],
     "natural-whey": [
@@ -3026,7 +3026,7 @@
         ],
         "desc": "Para los paladares más aventureros, estos tirabuzones integrales con algas de la Patagonia ofrecen un sabor y una nutrición excepcionales. La forma de espiral se combina con el toque mineral y único de las algas, creando una pasta con una personalidad inconfundible. Son una excelente fuente de fibra y minerales, ideales para salteados con mariscos, pescados o para crear ensaladas frías con un toque gourmet y marino.",
         "stock": false,
-        "price": 4900
+        "price": 5500
       },
       {
         "name": "Tirabuzones Integrales con Espinaca Lilen (250g)",
@@ -3035,7 +3035,7 @@
         ],
         "desc": "Estos tirabuzones integrales con espinaca son la forma perfecta de añadir color y nutrientes a tus platos de pasta. Su divertida forma de espiral es ideal para que las salsas se adhieran, garantizando una explosión de sabor en cada bocado. Elaborados con harina integral y espinaca, son ricos en fibra y hierro, convirtiéndose en una opción muy saludable. Son deliciosos tanto en platos calientes con salsas cremosas como en ensaladas frías de pasta.",
         "stock": false,
-        "price": 4900
+        "price": 5500
       },
       {
         "name": "Tirabuzones Integrales con Tomate Lilen (250g)",
@@ -3044,7 +3044,7 @@
         ],
         "desc": "Llena tus platos de sabor y color con estos tirabuzones integrales con tomate. Su intenso color rojo y su sabor que evoca el Mediterráneo los convierten en una opción deliciosa y saludable. La forma de tirabuzón es perfecta para atrapar todo el sabor de tus salsas preferidas, desde un pesto tradicional hasta una salsa de vegetales. Hechos con harina integral, aseguran un alto aporte de fibra, siendo ideales para una comida nutritiva y llena de carácter.",
         "stock": false,
-        "price": 4900
+        "price": 5500
       },
       {
         "name": "Tirabuzones Integrales Multicolor Lilen (250g)",
@@ -3053,7 +3053,7 @@
         ],
         "desc": "Alegra tu mesa con los tirabuzones integrales multicolor, una fiesta de sabores y nutrientes en un solo plato. Esta pasta combina las variedades de espinaca, tomate, morrón, remolacha y zanahoria, creando una mezcla visualmente atractiva y con un perfil de sabor complejo y delicioso. Es la opción perfecta para los niños y para cualquiera que busque una comida divertida sin dejar de lado la nutrición, al estar elaborada con harina 100% integral. Ideal para ensaladas frías o para salsas ligeras que permitan apreciar su variedad de colores.",
         "stock": false,
-        "price": 4900
+        "price": 5500
       }
     ],
     "betic": [
@@ -3063,7 +3063,7 @@
           "https://i.ibb.co/xqgzMT3y/BETIC-CODITOS-ESPINACA.png"
         ],
         "desc": "Estos coditos de espinaca son la forma más divertida y saludable de incorporar vegetales en la comida diaria. Su llamativo color verde y su suave sabor a espinaca los hacen perfectos para crear platos nutritivos que encantarán a toda la familia. Son ideales para preparar ensaladas de pasta coloridas y frescas, para añadir a sopas o para gratinar con queso, ofreciendo una opción dietética, sin conservantes y llena de sabor.",
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Coditos de Morrón Betic (300g)",
@@ -3071,7 +3071,7 @@
           "https://i.ibb.co/1tjx0nSX/BETIC-CODITOS-MORR-N.jpg"
         ],
         "desc": "Aporta un toque de dulzura y un hermoso color anaranjado a tus platos con los coditos de morrón. Esta pasta corta dietética es perfecta para dar un giro creativo a tus recetas habituales, desde ensaladas frías hasta guisos y sopas. El sutil sabor a pimiento morrón combina a la perfección con una gran variedad de ingredientes, permitiéndote crear comidas saludables, sabrosas y visualmente atractivas de forma muy sencilla.",
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Coditos de Sémola Betic (300g)",
@@ -3079,7 +3079,7 @@
           "https://i.ibb.co/0R8HTx6B/BETIC-CODOS-SEMOLA.png"
         ],
         "desc": "Los coditos de sémola son un clásico versátil que no puede faltar en tu despensa. Gracias a su elaboración con sémola de trigo candeal de alta calidad, esta pasta corta tiene un mayor contenido de proteínas y una textura perfecta que se mantiene firme tras la cocción. Su forma curva es ideal para ensaladas frías, sopas, guisos o el tradicional \"mac and cheese\", convirtiéndose en el favorito de grandes y chicos para comidas prácticas y deliciosas.",
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Fideos Finos de Albahaca Betic (300g)",
@@ -3154,7 +3154,7 @@
         ],
         "desc": "Combina nutrición y sabor con estos tirabuzones integrales enriquecidos con espinaca. Su llamativo color verde y su alto contenido en fibra los convierten en una opción fantástica para preparar ensaladas de pasta frías, platos gratinados o para acompañar con salsas cremosas. Son una forma fácil y deliciosa de crear comidas saludables y atractivas para toda la familia.",
         "stock": false,
-        "price": 4300
+        "price": 4800
       },
       {
         "name": "Tirabuzones Integrales con Morrón Ceral (300g)",
@@ -3172,7 +3172,7 @@
         ],
         "desc": "Estos tirabuzones integrales son la opción perfecta para una comida nutritiva y sustanciosa, gracias a su alto contenido en fibra. Su divertida forma en espiral es excelente para que las salsas se adhieran, garantizando que cada bocado esté lleno de sabor. Al ser un producto 'light' y vegano, es ideal para dietas de control de peso y para quienes siguen un estilo de vida saludable.",
         "stock": false,
-        "price": 4300
+        "price": 4800
       }
     ],
     "mi-fideo": [
@@ -3216,7 +3216,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/955/111/products/tirabuzonarroz-922ad14c54a1f9df9216988598527024-480-0.webp"
         ],
         "desc": "Disfruta de una pasta ligera y de fácil digestión con estos tirabuzones hechos completamente de arroz. Son la opción ideal para celíacos y personas que siguen dietas libres de alérgenos, ya que no contienen T.A.C.C., derivados de lácteos, huevo ni soja. Su sabor neutro y su textura suave los hacen increíblemente versátiles para combinar con cualquier tipo de salsa, desde las más intensas hasta las más delicadas, garantizando siempre un plato saludable, rápido de preparar y apto para todos.",
-        "price": 4500
+        "price": 4800
       }
     ],
     "wakas": [
@@ -3382,7 +3382,7 @@
           "https://acdn-us.mitiendanube.com/stores/093/780/products/alfajordantellidulcedefrutilla-2c977d23bcca6d67e317559157283297-640-0.jpg"
         ],
         "desc": "Esta es una alternativa fresca y frutal al alfajor tradicional, perfecta para quienes buscan un sabor diferente. Sus tapas de suave bizcocho sin gluten envuelven un corazón de dulce de frutilla, vibrante y delicioso. La cobertura de chocolate semiamargo complementa a la perfección la acidez de la fruta, creando una golosina equilibrada, original y apta para celíacos.",
-        "price": 1800
+        "price": 2000
       },
       {
         "name": "Alfajor de Dulce de Leche con Chocolate Semiamargo Dantelli (60g)",
@@ -3390,7 +3390,7 @@
           "https://acdn-us.mitiendanube.com/stores/093/780/products/alfajordantelli-ae34b1d1d2a1ed237f17512988667298-1024-1024.webp"
         ],
         "desc": "Disfruta del sabor clásico y atemporal en esta versión sin gluten. Este alfajor cuenta con dos tapas de bizcocho suave y esponjoso, unidas por un generoso y cremoso relleno de dulce de leche. La cobertura de chocolate semiamargo equilibra el dulzor a la perfección, creando una golosina tradicional y reconfortante, ideal para cualquier momento del día y segura para celíacos.",
-        "price": 1800
+        "price": 2000
       },
       {
         "name": "Alfajor de Dulce de Leche y Frutilla Dantelli (60g)",
@@ -4258,7 +4258,7 @@
           "https://dcdn-us.mitiendanube.com/stores/492/516/products/img_07941-5035f18377369f72ce16896965870486-480-0.jpeg"
         ],
         "desc": "Dale un giro creativo y nutritivo a un clásico familiar con esta base de pre-pizza de quinoa y zanahoria. Su ligero sabor dulce y su vibrante color la convierten en el lienzo ideal para combinaciones de ingredientes únicas y deliciosas. Al estar hecha con quinoa, es una alternativa sin T.A.C.C. y más nutritiva que las masas tradicionales. Perfecta para sorprender a todos en casa con una pizza tan original como saludable.",
-        "price": 5400
+        "price": 5800
       }
     ],
     "roapipo": [
@@ -4294,7 +4294,7 @@
           "https://saviaconexion.com/wp-content/uploads/2023/06/img_9968.png"
         ],
         "desc": "Protege tu salud bucal con la sabiduría milenaria del Ayurveda. Esta pasta dental combina las reconocidas propiedades antibacterianas y protectoras de la canela y el clavo de olor para un cuidado completo de dientes y encías. Su fórmula libre de flúor ayuda a prevenir la caries y mantener tu boca sana de forma natural. Ideal para quienes buscan una protección integral con un sabor cálido y especiado.",
-        "price": 9000
+        "price": 11500
       },
       {
         "name": "Pasta Dental Efecto Blanqueador Carbón Activado y Menta - 200g",
@@ -4302,7 +4302,7 @@
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ0rjBBUbis5Dbb9o-JerP8rXfTa0DccOtsw&s"
         ],
         "desc": "Luce una sonrisa más blanca y radiante de forma natural. Esta pasta dental en gel combina el poder purificante del carbón activado para remover manchas superficiales, con el frescor de la menta para un aliento impecable. Su fórmula ayurvédica y libre de flúor te ofrece un blanqueamiento suave pero efectivo, cuidando tu boca de manera integral. La elección ideal para una limpieza profunda y un blanco natural.",
-        "price": 9000
+        "price": 11500
       },
       {
         "name": "Pasta Dental Encías Sanas Hinojo y Menta - 200g",
@@ -4310,7 +4310,7 @@
           "https://srisritattva.com.py/cdn/shop/files/encias-sanas-100-gr-5d051985b1a94384bd17340946829326-1024-1024_5edba130-c495-4e4a-8179-5154829491ad.png?v=1750946967"
         ],
         "desc": "Bríndale a tus encías el cuidado calmante y protector que merecen. Esta pasta dental en gel está especialmente formulada con las propiedades antiinflamatorias del hinojo y el frescor de la menta para fortalecer y proteger las encías sensibles. Su uso diario ayuda a mantenerlas sanas y a prevenir la irritación. Una elección ayurvédica y libre de flúor para asegurar la base de una sonrisa saludable.",
-        "price": 9000
+        "price": 11500
       },
       {
         "name": "Pasta Dental Extra Fresh Pimienta y Mentol - 200g",
@@ -4318,7 +4318,7 @@
           "https://acdn-us.mitiendanube.com/stores/004/048/745/products/50gr-e3d4fc8f780906f04917424796370075-480-0.png"
         ],
         "desc": "Siente una explosión de frescura intensa y duradera que revitaliza toda tu boca. Esta pasta dental ayurvédica fusiona el poder refrescante del mentol con las propiedades vigorizantes de la pimienta para combatir el mal aliento y dejar una sensación de limpieza inigualable. Su fórmula libre de flúor te asegura un cuidado completo y un aliento fresco que perdura mucho después del cepillado.",
-        "price": 9000
+        "price": 11500
       },
       {
         "name": "Pasta Dental Ultra Blanqueadora Papaya y Ananá - 200g",
@@ -4326,7 +4326,7 @@
           "https://acdn-us.mitiendanube.com/stores/735/492/products/nnnn-81-2078c4cad50174b32e17518956980929-640-0.png"
         ],
         "desc": "Consigue una sonrisa visiblemente más luminosa con el poder de las enzimas frutales. Esta pasta dental ayurvédica utiliza las propiedades naturales de la papaya y la ananá para pulir suavemente tus dientes y devolverles su blanco natural. Su fórmula libre de flúor es ideal para un cuidado bucal efectivo que respeta el balance de tu boca. Disfruta de un aliento fresco y un blanqueamiento suave día tras día.",
-        "price": 9000
+        "price": 11500
       }
     ],
     "cuarto-creciente-mermeladas": [
@@ -4386,7 +4386,7 @@
           "https://www.maniking.com.ar/storage/categorias/13/IpRA0ZVmhltZGpscwqDRyd8pymoBDLLQiUfYGSEp.png"
         ],
         "desc": "Disfruta de la fuente de energía más pura y deliciosa para tus días. Esta pasta de maní 100% natural está elaborada únicamente con maní de alto oleico, sin sodio añadido y libre de gluten, conservando todos sus beneficios. Es el untable perfecto para tus desayunos, smoothies o para comer directo del frasco. Solo revuelve para integrar su aceite natural y prepárate para un sabor auténtico y una textura increíblemente cremosa.",
-        "price": 4000
+        "price": 4200
       }
     ],
     "entrenuts": [
@@ -4396,7 +4396,7 @@
           "https://http2.mlstatic.com/D_NQ_NP_843682-MLA99878865841_112025-O.webp"
         ],
         "desc": "Sorprende a tu paladar con un sabor innovador y versátil. La Pasta de Maní Ahumada es el ingrediente secreto para tus platos salados, ideal para crear salsas, aderezos o para untar en sándwiches gourmet. Su distintivo toque ahumado transforma el sabor tradicional del maní en una experiencia gastronómica única. Perfecta para quienes aman experimentar en la cocina.",
-        "price": 3300
+        "price": 3400
       },
       {
         "name": "Pasta de Maní Cacao Entrenuts - 370g",
@@ -4404,7 +4404,7 @@
           "https://http2.mlstatic.com/D_NQ_NP_898314-MLA78829968177_082024-O.webp"
         ],
         "desc": "Satisface tus antojos de chocolate de la forma más saludable. La Pasta de Maní con Cacao es perfecta para tus postres, rellenar panqueques o para untar en frutas, dándote un placer sin culpas. Su distintiva mezcla de maní tostado y cacao puro, endulzada naturalmente con stevia, la hace irresistible. Un capricho nutritivo y libre de gluten.",
-        "price": 3300
+        "price": 3400
       },
       {
         "name": "Pasta de Maní Coco Entrenuts - 370g",
@@ -4412,7 +4412,7 @@
           "https://masonlineprod.vtexassets.com/arquivos/ids/324243-800-auto?v=638520213785570000&width=800&height=auto&aspect=true"
         ],
         "desc": "Disfruta de una energía tropical en cada cucharada. La Pasta de Maní con Coco es ideal para tus bowls de desayuno, para untar en tostadas o para darle un toque dulce a tus frutas. Su combinación única de maní cremoso y el sabor exótico del coco la convierte en un untable delicioso y diferente. Una forma saludable de escapar de la rutina, libre de gluten.",
-        "price": 3300
+        "price": 3400
       },
       {
         "name": "Pasta de Maní Crocante Entrenuts - 370g",
@@ -4420,7 +4420,7 @@
           "https://masonlineprod.vtexassets.com/arquivos/ids/324244/Pasta-De-Man-Entrenuts-Crocante-370-G-1-57336.jpg?v=638520213789930000"
         ],
         "desc": "Siente el poder del maní con una textura que te encantará. La Pasta de Maní Crocante es la opción ideal para quienes buscan un bocado extra en sus tostadas, sándwiches o recetas de repostería. A diferencia de las cremosas, esta versión está cargada con trocitos de maní tostado que explotan en tu boca. Pura energía y sabor en su estado más auténtico.",
-        "price": 3300
+        "price": 3400
       },
       {
         "name": "Pasta de Maní Mix Semillas Entrenuts - 370g",
@@ -4428,7 +4428,7 @@
           "https://http2.mlstatic.com/D_NQ_NP_722348-MLA82763140303_022025-O.webp"
         ],
         "desc": "Potencia tu nutrición con un untable cargado de superalimentos. La Pasta de Maní con Mix de Semillas es perfecta para enriquecer tus desayunos, bowls de avena o tostadas, aportando fibra y textura. Su innovadora mezcla de maní cremoso con semillas seleccionadas la convierte en una fuente de energía superior. El bocado ideal para un día activo.",
-        "price": 3300
+        "price": 3400
       },
       {
         "name": "Pasta de Maní Protein Cookies and Cream (Sin TACC) - 370g",
@@ -4454,7 +4454,7 @@
           "https://http2.mlstatic.com/D_NQ_NP_873599-MLA111749163233_052026-O.webp"
         ],
         "desc": "Disfruta del equilibrio perfecto entre lo dulce y lo natural. La Pasta de Maní con Stevia te ofrece el sabor clásico del maní con un ligero toque dulce, pero sin azúcar añadida. Es el untable ideal para tus desayunos, snacks o para preparar postres saludables. Su fórmula endulzada naturalmente la convierte en la opción inteligente para cuidarte sin sacrificar el sabor.",
-        "price": 3300
+        "price": 3400
       }
     ],
     "orieta": [
@@ -4530,7 +4530,7 @@
           "https://delicel.com.ar/wp-content/uploads/2024/06/Premezclas4.webp"
         ],
         "desc": "Satisface tus antojos de chocolate con la torta más fácil y deliciosa. Esta premezcla para bizcochuelo Delicel te permite crear un postre intenso y esponjoso en minutos. Es la solución ideal para un cumpleaños o una merienda, garantizando un sabor a chocolate profundo y una textura perfecta, todo libre de gluten. Disfruta del placer de un buen bizcocho sin TACC.",
-        "price": 4200
+        "price": 4800
       },
       {
         "name": "Bizcochuelo Vainilla Libre de Gluten - 500g",
@@ -4538,7 +4538,7 @@
           "https://delicel.com.ar/wp-content/uploads/2024/06/Premezclas5.webp"
         ],
         "desc": "Disfruta del sabor clásico y reconfortante de la vainilla en un bizcochuelo esponjoso y perfecto. Esta premezcla Delicel es la base ideal para tus tortas de cumpleaños o para una merienda sencilla, garantizando una miga húmeda y un aroma delicioso. Es la forma más fácil de preparar un postre casero que encantará a todos, totalmente libre de gluten.",
-        "price": 4200
+        "price": 4800
       },
       {
         "name": "Rebozador Horneados & Frituras Libre de Gluten - 500g",
@@ -4562,7 +4562,7 @@
           "https://pedidos.delicel.com.ar/thumb/1739293807467_800x800.jpg"
         ],
         "desc": "Prepara un bizcochuelo esponjoso y lleno de sabor a naranja sin complicaciones. Esta premezcla Delicel te soluciona la merienda, ofreciéndote la base perfecta para una torta deliciosa y apta para celíacos. Solo necesitas seguir las instrucciones y tendrás un postre casero, húmedo y con un aroma increíble. La forma más fácil de disfrutar la repostería sin gluten.",
-        "price": 4200
+        "price": 4800
       }
     ],
     "panko": [
@@ -4617,7 +4617,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/069/219/products/cookies-coco-0c194faba0253d580e17371282131626-480-0.webp"
         ],
         "desc": "Satisface tus ganas de chocolate de la forma más nutritiva. Estas cookies veganas son el bocado ideal para los amantes del cacao, combinando su intensidad con el dulzor natural de la algarroba y la textura del coco. Hechas con harina integral y endulzadas con mascabo, son perfectas para un postre saludable o una merienda energética.",
-        "price": 2700
+        "price": 3000
       },
       {
         "name": "Cookies Integrales con Almendras, Nueces y Maní Limbus - 160g",
@@ -4625,7 +4625,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/069/219/products/cookies-fsecos-9992e84bd64681450517371278925835-480-0.webp"
         ],
         "desc": "Una verdadera bomba de energía y sabor en cada bocado. Estas cookies integrales son ideales para tus días más activos, cargadas con una mezcla premium de almendras, nueces y maní. Su base de avena y harina integral, 100% vegetal, te ofrece un snack saciante, crujiente y nutritivo, perfecto para recargar energías de forma saludable.",
-        "price": 2700
+        "price": 3000
       },
       {
         "name": "Cookies Integrales con Chips de Chocolate y Avena Limbus - 160g",
@@ -4633,7 +4633,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/069/219/products/cookies-chips-c6c1174795a1e1df4617371273058465-480-0.webp"
         ],
         "desc": "El placer de siempre, ahora más saludable y 100% de origen vegetal. Estas cookies integrales con chips de chocolate son el capricho perfecto para cualquier momento del día, sin grasas trans ni colesterol. La avena nutritiva se une a los chips de chocolate, todo endulzado con mascabo, creando el bocado ideal para acompañar tu café o leche vegetal.",
-        "price": 2700
+        "price": 3000
       },
       {
         "name": "Cookies Integrales con Dátiles, Cranberries y Avena Limbus - 160g",
@@ -4641,7 +4641,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/069/219/products/cookies-datiles-e773a39fb51b21578017371272067516-480-0.webp"
         ],
         "desc": "Disfruta de una pausa nutritiva y llena de sabor. Estas cookies 100% vegetales son ideales para un desayuno energético o un snack saludable entre horas. Su deliciosa combinación de avena integral, la dulzura natural de los dátiles y el toque ácido de los cranberries, todo endulzado con mascabo y melaza, las hace únicas. Un bocado saludable sin grasas trans.",
-        "price": 2700
+        "price": 3000
       },
       {
         "name": "Cookies Integrales con Limón, Jengibre y Avena Limbus - 150g",
@@ -4649,7 +4649,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/069/219/products/cookies-limon-1a2a6505066762a07317371281844298-480-0.webp"
         ],
         "desc": "Revitaliza tus sentidos con una cookie que despierta el paladar. Esta opción vegana y sin azúcar agregado es perfecta para acompañar tus infusiones o para una pausa refrescante. La chispeante combinación del jengibre picante y el toque cítrico del limón sobre una base de avena integral te ofrece un bocado ligero, saludable y lleno de personalidad.",
-        "price": 2700
+        "price": 3200
       },
       {
         "name": "Cookies Integrales con Pasas, Avena y Maní Limbus - 160g",
@@ -4657,7 +4657,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/069/219/products/cookies-pasas-999eaee739674e05ae17371272502384-480-0.webp"
         ],
         "desc": "Vuelve al sabor clásico de la galleta de avena en su mejor versión. Esta cookie integral 100% vegetal es perfecta para recargar energías a media mañana. La combinación tradicional de pasas dulces, avena y el toque crujiente del maní, endulzada con mascabo, te da la energía que necesitas en un formato delicioso, saludable y sin colesterol.",
-        "price": 2700
+        "price": 3000
       }
     ],
     "delicel-galletas": [
@@ -4667,7 +4667,7 @@
           "https://delicel.com.ar/wp-content/uploads/2024/06/Paquete-pepas-batata-1.webp"
         ],
         "desc": "Un clásico de la infancia que vuelve en su versión libre de gluten. Las Pepas de Batata Delicel son la opción perfecta para quienes aman el sabor de este tradicional dulce. La galletita suave y dulce con un generoso centro de dulce de batata es ideal para tus desayunos y meriendas. Disfruta de un bocado lleno de ternura y apto para celíacos.",
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Cookies Pepas Membrillo Libres de Gluten - 150g",
@@ -4675,7 +4675,7 @@
           "https://delicel.com.ar/wp-content/uploads/2024/06/Cookies1.webp"
         ],
         "desc": "Vuelve a disfrutar del clásico de las meriendas argentinas, ahora sin gluten. Las Pepas de Membrillo Delicel te traen el sabor de siempre en una galletita apta para celíacos. La suave masa sabor vainilla se combina a la perfección con el corazón de dulce de membrillo. El bocado ideal para acompañar el mate o el café con un gusto tradicional.",
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Cookies Sabor Chocolate Libres de Gluten - 150g",
@@ -4683,7 +4683,7 @@
           "https://delicel.com.ar/wp-content/uploads/2024/06/Cookies2.webp"
         ],
         "desc": "Satisface tu antojo de chocolate de la forma más deliciosa y sin TACC. Estas cookies Delicel te ofrecen un sabor intenso a cacao en una galletita crujiente y liviana. Son perfectas para acompañar tu café o para darte un gusto a media tarde. Disfruta del placer del chocolate sabiendo que son totalmente libres de gluten.",
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Cookies Sabor Coco Libres de Gluten - 150g",
@@ -4691,7 +4691,7 @@
           "https://delicel.com.ar/wp-content/uploads/2024/06/Cookies3.webp"
         ],
         "desc": "Déjate llevar por el sabor dulce y tropical del coco. Estas cookies Delicel son el bocado perfecto para una pausa deliciosa y apta para celíacos. Su suave textura y su auténtico gusto a coco las hacen ideales para acompañar tu infusión favorita. Un capricho ligero, libre de gluten y lleno de sabor para disfrutar sin preocupaciones.",
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Cookies Sabor Limón Libres de Gluten - 150g",
@@ -4699,7 +4699,7 @@
           "https://delicel.com.ar/wp-content/uploads/2024/06/Cookies5.webp"
         ],
         "desc": "Dale un toque fresco y cítrico a tus meriendas. Las cookies Delicel sabor Limón son la opción ideal para quienes buscan un bocado liviano y refrescante. Su delicado equilibrio entre dulzura y acidez las hace perfectas para acompañar un té. Disfruta de una galletita deliciosa, con todo el sabor del limón y completamente libre de gluten.",
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Cookies Sabor Naranja Libres de Gluten - 150g",
@@ -4707,7 +4707,7 @@
           "https://delicel.com.ar/wp-content/uploads/2024/06/Cookies7.webp"
         ],
         "desc": "Despierta tus sentidos con el vibrante sabor de la naranja. Las cookies Delicel sabor Naranja te ofrecen una experiencia cítrica y dulce en una galletita 100% libre de gluten. Su textura liviana y su aroma inconfundible las convierten en el snack ideal para una pausa refrescante a media mañana o para acompañar tu desayuno. El gusto perfecto para cuidarte.",
-        "price": 3200
+        "price": 3500
       },
       {
         "name": "Cookies Sabor Vainilla & Chips Libres de Gluten - 150g",
@@ -4715,7 +4715,7 @@
           "https://delicel.com.ar/wp-content/uploads/2024/06/Cookies8.webp"
         ],
         "desc": "Disfruta del clásico favorito de todos, ahora en su versión sin TACC. Las cookies Delicel de Vainilla con Chips de Chocolate son la combinación perfecta para un momento de placer. Su base de vainilla y la generosa cantidad de chips de chocolate las hacen irresistibles. Ideales para la merienda o para darte un gusto, con la confianza de ser 100% libres de gluten.",
-        "price": 3200
+        "price": 3500
       }
     ],
     "integralia-diabest": [
@@ -4791,7 +4791,7 @@
           "https://static.wixstatic.com/media/fdb90a_4ac7f461813f40dabe7e34a6155f9cbd~mv2.png/v1/fill/w_630,h_694,al_c,lg_1,q_90,enc_avif,quality_auto/fdb90a_4ac7f461813f40dabe7e34a6155f9cbd~mv2.png"
         ],
         "desc": "Descubre una experiencia de mate más pura y aromática. La yerba mate Buenas y Santas es ideal para quienes buscan un sabor herbal refrescante en sus rondas diarias. Su gran diferencial es que está elaborada con una selección de hierbas reales, como burrito, menta y cedrón, en lugar de saborizantes artificiales. Disfruta de una infusión 100% natural, sin TACC y con un gusto auténtico que cuida tu bienestar.",
-        "price": 3200
+        "price": 3500
       }
     ],
     "verdeflor": [
@@ -5311,7 +5311,7 @@
           "https://i.ibb.co/N6wc1BMb/Bananitas-con-chocolate.png"
         ],
         "desc": "Disfruta de un bocado crujiente y lleno de sabor con estas Bananitas de Cereal bañadas en chocolate. Su centro de cereal aireado con sabor a banana se complementa a la perfección con la dulzura de la cobertura de chocolate con leche, creando un snack liviano y adictivo. Son ideales para acompañar el café, decorar postres temáticos o simplemente para disfrutar de un capricho dulce, original y con una textura inigualable.",
-        "price": 2500
+        "price": 2800
       },
       {
         "name": "Cereal con Cobertura de Chocolate 100grs",
@@ -5319,7 +5319,7 @@
           "https://i.ibb.co/G3HzGV9G/Cereal-con-chocolate.png"
         ],
         "desc": "Disfruta de la máxima crocancia con estos confites de cereal bañados en chocolate con leche. Su núcleo de cereal expandido los hace increíblemente livianos, esféricos y aireados, permitiéndote disfrutar del sabor del chocolate sin sentir pesadez. Son perfectos como topping crocante para yogures y helados, para decorar tortas modernas o para un picoteo dulce, ligero y divertido que gusta a grandes y chicos.",
-        "price": 2500
+        "price": 2800
       },
       {
         "name": "Chips de Chocolate Blanco 100grs",
@@ -5367,7 +5367,7 @@
           "https://i.ibb.co/v696DdGS/Rocklets.png"
         ],
         "desc": "Ponle color y alegría a tus postres con estos confites de chocolate tipo lentejas. Cada botón ofrece un centro de chocolate suave protegido por una capa de azúcar crujiente y colorida que estalla en la boca. Son el topping por excelencia para decorar tortas de cumpleaños, helados y cupcakes, o el snack divertido perfecto para los más chicos, aportando textura crocante y diversión visual a cualquier momento.",
-        "price": 2600
+        "price": 2800
       }
     ],
     "legumbres-y-cereales": [
@@ -5378,7 +5378,7 @@
           "https://i0.wp.com/alimentoszucchi.com.ar/wp-content/uploads/2021/12/BASMATI.jpg?fit=800%2C540&ssl=1"
         ],
         "stock": true,
-        "price": 3900
+        "price": 4400
       },
       {
         "name": "Arroz blanco tradicional 500grs",
@@ -5405,7 +5405,7 @@
           "https://canalcocina.es/medias/_cache/zoom-763d78f94278243a26387948c912c9bc-920-518.jpg"
         ],
         "stock": true,
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Arroz fino integral 500grs",
@@ -5414,7 +5414,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/625/145/products/arroz-largo-fino-integral1-d30905c57977db83c516790801851388-1024-1024.webp"
         ],
         "stock": true,
-        "price": 1700
+        "price": 1800
       },
       {
         "name": "Arroz para Sushi 500grs",
@@ -5456,7 +5456,7 @@
           "https://www.cono-group.com/cono-group/01_products/chickpeas/image-thumb__256__content_image/cono-health-seeds-chickpeas-alnatura-200803-phk1198_1.jpg"
         ],
         "desc": "Disfruta de la legumbre más versátil y amada de la cocina internacional. El Garbanzo se destaca por su textura cremosa y suave que no se desarma en la cocción, siendo el ingrediente insustituible para preparar un hummus auténtico, un falafel crujiente o cazuelas reconfortantes. Rico en fibra y proteínas, aporta saciedad y un sabor delicado a nuez que realza cualquier plato, desde ensaladas frías hasta platos de cuchara.",
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Lenteja 500grs",
@@ -5496,7 +5496,7 @@
           "https://http2.mlstatic.com/D_NQ_NP_953303-MLA48355472896_112021-O.webp"
         ],
         "desc": "Transforma tus noches de película con el snack más divertido y natural. Este Maíz Pisingallo de calidad premium garantiza un estallido perfecto, logrando unas palomitas grandes, blancas y extra crujientes con muy pocos granos sin explotar. Es una fuente de fibra integral que puedes personalizar a tu gusto, ya sea dulce, salado o con mantequilla, para disfrutar de un momento compartido irresistible.",
-        "price": 1500
+        "price": 2000
       },
       {
         "name": "Poroto Aduki 500grs",
@@ -5710,7 +5710,7 @@
       {
         "name": "Cacao Amargo Puro en Polvo (Sin TACC) - 200g",
         "desc": "Disfruta de la intensidad y los beneficios del auténtico 100% Cacao Brasilero. Este cacao en polvo es un superalimento natural, excelente fuente de fibra, proteínas y minerales esenciales (como potasio, calcio y magnesio). Es la opción ideal para quienes buscan pureza: totalmente vegano, sin azúcar agregada, libre de sodio y certificado Gluten Free (Sin TACC). Perfecto para enriquecer tus desayunos, batidos proteicos o para una repostería saludable y llena de sabor.",
-        "price": 7500,
+        "price": 7800,
         "img": [
           "https://acdn-us.mitiendanube.com/stores/001/058/870/products/dico26_1-ccbd859c6166afbb7717610358061151-1024-1024.webp"
         ],
@@ -5916,7 +5916,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/324/020/products/zapallo-1-830725e5ecf5e714b416982410982341-640-0.webp"
         ],
         "stock": true,
-        "price": 1800
+        "price": 2000
       },
       {
         "name": "Sésamo Blanco 100grs",
@@ -5925,7 +5925,7 @@
           "https://issuperfoods.com.bo/wp-content/uploads/2021/11/sesamoblanco002.jpg"
         ],
         "stock": true,
-        "price": 1400
+        "price": 1500
       },
       {
         "name": "Sésamo Integral 100grs",
@@ -5954,7 +5954,7 @@
           "https://www.cocinista.es/download/bancorecursos/ingredientes/ingrediente-almidon-maiz.jpg"
         ],
         "stock": true,
-        "price": 1800
+        "price": 2000
       },
       {
         "name": "Avena Gruesa 500grs",
@@ -6126,7 +6126,7 @@
           "https://laperegrina.pe/wp-content/uploads/2026/02/Polvo-de-Hornear.jpg"
         ],
         "stock": true,
-        "price": 1000
+        "price": 1200
       }
     ],
     "azucares": [
@@ -6137,7 +6137,7 @@
           "https://frutosare.com.ar/wp-content/uploads/2017/03/impalpable.jpg"
         ],
         "stock": true,
-        "price": 2000
+        "price": 2200
       },
       {
         "name": "Azúcar mascabo 500grs",
@@ -6146,7 +6146,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/324/020/products/azucar-mascabo-2-e011f21f07a2c6ff1616982730517187-640-0.webp"
         ],
         "stock": true,
-        "price": 3800
+        "price": 4000
       },
       {
         "name": "Azúcar negra 500grs",
