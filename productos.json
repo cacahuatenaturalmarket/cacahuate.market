@@ -885,7 +885,7 @@
         ],
         "desc": "Disfruta de una dulzura natural y sin calorías con la Stevia Líquida de Jual en su conveniente presentación familiar de 600ml, perfecta para el uso diario en tu hogar. Este endulzante de mesa en formato líquido es increíblemente fácil de dosificar, permitiéndote endulzar con solo unas gotas tu café, jugos, batidos y postres, disolviéndose al instante. Su fórmula de origen vegetal es apta para cocinar, ya que mantiene su poder endulzante a altas temperaturas sin aportar sabores extraños. Es la alternativa ideal para toda la familia que busca reemplazar el azúcar, controlar la ingesta calórica o seguir un estilo de vida más saludable sin sacrificar el sabor dulce en sus comidas y bebidas.",
         "stock": true,
-        "price": 14500
+        "price": 17000
       },
       {
         "name": "Stevia Líquida Jual (250ml)",
@@ -894,7 +894,7 @@
         ],
         "desc": "Disfruta de la dulzura natural y sin calorías de la Stevia Líquida Jual en su práctico formato de 250ml, ideal para el uso personal o en cocinas con espacio reducido. Este endulzante de mesa, de origen 100% vegetal, es perfecto para quienes buscan una alternativa saludable al azúcar sin sacrificar el sabor. Su presentación líquida asegura una disolución instantánea y una dosificación fácil con solo unas gotas, siendo perfecta para endulzar café, té, batidos y postres. Además, su fórmula es apta para cocinar y hornear, ya que mantiene su poder endulzante a altas temperaturas, lo que te permite crear recetas deliciosas y saludables.",
         "stock": true,
-        "price": 7900
+        "price": 8600
       },
       {
         "name": "Stevia Líquida Jual (125ml)",
@@ -912,7 +912,7 @@
         ],
         "desc": "Lleva la dulzura saludable a todas partes con la Stevia Líquida Pocket de Jual, el formato más pequeño y conveniente de 60ml. Diseñado para caber perfectamente en tu bolsillo, cartera o mochila, este endulzante de mesa te permite disfrutar de tus bebidas favoritas sin azúcar y sin calorías estés donde estés. Su fórmula de origen vegetal se disuelve al instante y es apta para cocinar, ofreciendo la misma calidad y sabor natural que las versiones más grandes. Es la solución definitiva para quienes mantienen un estilo de vida dinámico y no quieren renunciar a cuidarse, endulzando de forma práctica y controlada cada momento del día.",
         "stock": true,
-        "price": 4000
+        "price": 4500
       }
     ],
     "modelife-edulcorantes": [
@@ -938,7 +938,7 @@
           "https://http2.mlstatic.com/D_Q_NP_2X_638852-MLA99995719640_122025-P.webp"
         ],
         "desc": "Disfruta de la dulzura natural y sin culpas con la Stevia líquida de Modelife en su práctica presentación de 125ml, ideal para llevar contigo. Este edulcorante de mesa sin calorías es la alternativa perfecta al azúcar, garantizando una fórmula que no contiene ciclamato ni aspartamo. Su tamaño conveniente lo hace perfecto para usarlo en la oficina, en la universidad o mientras viajas, asegurando que siempre tengas una opción saludable para endulzar tu café, té y otras bebidas. Es la elección ideal para quienes desean mantener un control sobre su consumo de azúcar y aditivos artificiales sin sacrificar el sabor dulce en su rutina diaria.",
-        "price": 4500
+        "price": 5600
       }
     ],
     "pampa-miel": [
@@ -5916,7 +5916,7 @@
           "https://acdn-us.mitiendanube.com/stores/002/324/020/products/zapallo-1-830725e5ecf5e714b416982410982341-640-0.webp"
         ],
         "stock": true,
-        "price": 2000
+        "price": 2500
       },
       {
         "name": "Sésamo Blanco 100grs",
